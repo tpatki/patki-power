@@ -1,5 +1,6 @@
 #Ignore the following files and the bin folder in cg
 *.o
 sweep
-cg/bin/
+bmark/cg/bin/cg*
+
 

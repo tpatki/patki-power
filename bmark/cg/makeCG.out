@@ -1,0 +1,16 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd CG; make NPROCS=1 CLASS=D
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
+cc -g  -o setparams setparams.c
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
+../sys/setparams cg 1 D 
+mpif77 -c  -O3 -fPIC cg.f
+cd ../common; mpif77 -c  -O3 -fPIC print_results.f
+cd ../common; mpif77 -c  -O3 -fPIC randi8.f
+cd ../common; mpif77 -c  -O3 -fPIC timers.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
