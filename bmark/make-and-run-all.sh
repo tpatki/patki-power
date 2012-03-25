@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Make sure we are using mvapich2 of the gnu persuasion.
+source /usr/local/tools/dotkit/init.sh
+use mvapich2-gnu-debug
+
 mkdir ./cg/bin
 cd ./cg
 sh makeCG.sh > makeCG.out
