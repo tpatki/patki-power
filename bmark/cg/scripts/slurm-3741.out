@@ -1,0 +1,135 @@
+nodes=128 ntasks=256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_01_41_270447906
++ mkdir 2012_03_19_06_01_41_270447906
++ cd 2012_03_19_06_01_41_270447906
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_01_41_270447906
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 128'
++ srun --nodes=128 --ntasks=256 -ppbatch --cpu_bind=sockets ../cgCL.sh 256
+nodes=64 ntasks=256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_02_33_396263963
++ mkdir 2012_03_19_06_02_33_396263963
++ cd 2012_03_19_06_02_33_396263963
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_02_33_396263963
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 64'
++ srun --nodes=64 --ntasks=256 -ppbatch --cpu_bind=sockets ../cgCL.sh 256
+nodes=32 ntasks=256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_03_28_295556253
++ mkdir 2012_03_19_06_03_28_295556253
++ cd 2012_03_19_06_03_28_295556253
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_03_28_295556253
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch --cpu_bind=sockets ../cgCL.sh 256
+nodes=16 ntasks=256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_04_26_951812673
++ mkdir 2012_03_19_06_04_26_951812673
++ cd 2012_03_19_06_04_26_951812673
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_04_26_951812673
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch --cpu_bind=sockets ../cgCL.sh 256
+nodes=128 ntasks=128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_05_34_358446564
++ mkdir 2012_03_19_06_05_34_358446564
++ cd 2012_03_19_06_05_34_358446564
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_05_34_358446564
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 128'
++ srun --nodes=128 --ntasks=128 -ppbatch --cpu_bind=sockets ../cgCL.sh 128
+nodes=64 ntasks=128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_07_30_638875463
++ mkdir 2012_03_19_06_07_30_638875463
++ cd 2012_03_19_06_07_30_638875463
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_07_30_638875463
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 64'
++ srun --nodes=64 --ntasks=128 -ppbatch --cpu_bind=sockets ../cgCL.sh 128
+nodes=32 ntasks=128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_08_47_822095779
++ mkdir 2012_03_19_06_08_47_822095779
++ cd 2012_03_19_06_08_47_822095779
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_08_47_822095779
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch --cpu_bind=sockets ../cgCL.sh 128
+nodes=16 ntasks=128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_10_11_039326181
++ mkdir 2012_03_19_06_10_11_039326181
++ cd 2012_03_19_06_10_11_039326181
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_10_11_039326181
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch --cpu_bind=sockets ../cgCL.sh 128
+nodes=8 ntasks=128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_19_06_11_41_888346380
++ mkdir 2012_03_19_06_11_41_888346380
++ cd 2012_03_19_06_11_41_888346380
++ touch out.dat
++ env
++ hostname
++ echo 2012_03_19_06_11_41_888346380
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 8'
++ srun --nodes=8 --ntasks=128 -ppbatch --cpu_bind=sockets ../cgCL.sh 128

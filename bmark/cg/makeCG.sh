@@ -1,0 +1,14 @@
+#!/bin/bash
+
+make cg CLASS=D NPROCS=1
+make cg CLASS=D NPROCS=2
+make cg CLASS=D NPROCS=4
+make cg CLASS=D NPROCS=8
+make cg CLASS=D NPROCS=16
+make cg CLASS=D NPROCS=32
+make cg CLASS=D NPROCS=64
+make cg CLASS=D NPROCS=128
+make cg CLASS=D NPROCS=256
+make cg CLASS=D NPROCS=512
+make cg CLASS=D NPROCS=1024
+make cg CLASS=D NPROCS=2048

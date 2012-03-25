@@ -1,0 +1,1408 @@
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+Fatal error in MPI_Init:
+Internal MPI error!, error stack:
+MPIR_Init_thread(400)......: 
+MPID_Init(288).............: channel initialization failed
+MPIDI_CH3_Init(148)........: 
+MPIDI_CH3I_CM_Init(1187)...: 
+rdma_iba_hca_init_noqp(657): Not enough ports are in active stateneeded active ports %d
+ (errno 1)
+
+PMGR_COLLECTIVE ERROR: rank 248 on hyperion84: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 248 on hyperion84: rank 248 of 256 reducing data from child rank 249 of 256 at 192.168.112.85:56803 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 250 on hyperion84: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 250 on hyperion84: rank 250 of 256 reducing data from child rank 251 of 256 at 192.168.112.85:52163 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 164 on hyperion63: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 164 on hyperion63: rank 164 of 256 reducing data from child rank 165 of 256 at 192.168.112.64:51764 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 166 on hyperion63: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 166 on hyperion63: rank 166 of 256 reducing data from child rank 167 of 256 at 192.168.112.64:51888 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 28 on hyperion29: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 28 on hyperion29: rank 28 of 256 reducing data from child rank 29 of 256 at 192.168.112.30:54006 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 30 on hyperion29: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 30 on hyperion29: rank 30 of 256 reducing data from child rank 31 of 256 at 192.168.112.30:33272 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 202 on hyperion72: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 202 on hyperion72: rank 202 of 256 reducing data from child rank 203 of 256 at 192.168.112.73:40472 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 200 on hyperion72: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 200 on hyperion72: rank 200 of 256 reducing data from child rank 201 of 256 at 192.168.112.73:39066 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 90 on hyperion44: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 90 on hyperion44: rank 90 of 256 reducing data from child rank 91 of 256 at 192.168.112.45:40920 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 88 on hyperion44: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 88 on hyperion44: rank 88 of 256 reducing data from child rank 89 of 256 at 192.168.112.45:53854 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 114 on hyperion50: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 114 on hyperion50: rank 114 of 256 reducing data from child rank 115 of 256 at 192.168.112.51:38467 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 112 on hyperion50: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 112 on hyperion50: rank 112 of 256 reducing data from child rank 113 of 256 at 192.168.112.51:33204 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 100 on hyperion47: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 100 on hyperion47: rank 100 of 256 reducing data from child rank 101 of 256 at 192.168.112.48:35635 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 102 on hyperion47: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 102 on hyperion47: rank 102 of 256 reducing data from child rank 103 of 256 at 192.168.112.48:56882 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 124 on hyperion53: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 124 on hyperion53: rank 124 of 256 reducing data from child rank 125 of 256 at 192.168.112.54:42632 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 126 on hyperion53: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 126 on hyperion53: rank 126 of 256 reducing data from child rank 127 of 256 at 192.168.112.54:52480 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 122 on hyperion52: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 96 on hyperion46: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 122 on hyperion52: rank 122 of 256 reducing data from child rank 123 of 256 at 192.168.112.53:45015 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 96 on hyperion46: rank 96 of 256 reducing data from child rank 97 of 256 at 192.168.112.47:56632 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 120 on hyperion52: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 98 on hyperion46: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 120 on hyperion52: rank 120 of 256 reducing data from child rank 121 of 256 at 192.168.112.53:57134 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 98 on hyperion46: rank 98 of 256 reducing data from child rank 99 of 256 at 192.168.112.47:51489 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 118 on hyperion51: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 118 on hyperion51: rank 118 of 256 reducing data from child rank 119 of 256 at 192.168.112.52:36328 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 116 on hyperion51: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 116 on hyperion51: rank 116 of 256 reducing data from child rank 117 of 256 at 192.168.112.52:33693 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 212 on hyperion75: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 212 on hyperion75: rank 212 of 256 reducing data from child rank 213 of 256 at 192.168.112.76:54152 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 110 on hyperion49: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 214 on hyperion75: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 108 on hyperion49: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 108 on hyperion49: rank 108 of 256 reducing data from child rank 109 of 256 at 192.168.112.50:46603 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 214 on hyperion75: rank 214 of 256 reducing data from child rank 215 of 256 at 192.168.112.76:60872 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 178 on hyperion66: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 178 on hyperion66: rank 178 of 256 reducing data from child rank 179 of 256 at 192.168.112.67:41733 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 176 on hyperion66: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 176 on hyperion66: rank 176 of 256 reducing data from child rank 177 of 256 at 192.168.112.67:44618 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 110 on hyperion49: rank 110 of 256 reducing data from child rank 111 of 256 at 192.168.112.50:48762 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 192 on hyperion70: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 192 on hyperion70: rank 192 of 256 reducing data from child rank 193 of 256 at 192.168.112.71:53588 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 194 on hyperion70: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 194 on hyperion70: rank 194 of 256 reducing data from child rank 195 of 256 at 192.168.112.71:39751 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 204 on hyperion73: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 204 on hyperion73: rank 204 of 256 reducing data from child rank 205 of 256 at 192.168.112.74:35312 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 140 on hyperion57: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 140 on hyperion57: rank 140 of 256 reducing data from child rank 141 of 256 at 192.168.112.58:38427 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 142 on hyperion57: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 206 on hyperion73: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 206 on hyperion73: rank 206 of 256 reducing data from child rank 207 of 256 at 192.168.112.74:49568 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 142 on hyperion57: rank 142 of 256 reducing data from child rank 143 of 256 at 192.168.112.58:47141 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 128 on hyperion54: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 92 on hyperion45: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 92 on hyperion45: rank 92 of 256 reducing data from child rank 93 of 256 at 192.168.112.46:58906 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 128 on hyperion54: rank 128 of 256 reducing data from child rank 129 of 256 at 192.168.112.55:50993 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 94 on hyperion45: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 94 on hyperion45: rank 94 of 256 reducing data from child rank 95 of 256 at 192.168.112.46:47299 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 130 on hyperion54: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 130 on hyperion54: rank 130 of 256 reducing data from child rank 131 of 256 at 192.168.112.55:37112 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 134 on hyperion55: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 134 on hyperion55: rank 134 of 256 reducing data from child rank 135 of 256 at 192.168.112.56:56640 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 216 on hyperion76: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 216 on hyperion76: rank 216 of 256 reducing data from child rank 217 of 256 at 192.168.112.77:42837 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 218 on hyperion76: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 218 on hyperion76: rank 218 of 256 reducing data from child rank 219 of 256 at 192.168.112.77:42165 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 132 on hyperion55: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 132 on hyperion55: rank 132 of 256 reducing data from child rank 133 of 256 at 192.168.112.56:50396 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 158 on hyperion61: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 158 on hyperion61: rank 158 of 256 reducing data from child rank 159 of 256 at 192.168.112.62:35415 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 196 on hyperion71: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 196 on hyperion71: rank 196 of 256 reducing data from child rank 197 of 256 at 192.168.112.72:53359 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 198 on hyperion71: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 198 on hyperion71: rank 198 of 256 reducing data from child rank 199 of 256 at 192.168.112.72:57257 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 156 on hyperion61: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 156 on hyperion61: rank 156 of 256 reducing data from child rank 157 of 256 at 192.168.112.62:55563 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 68 on hyperion39: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 68 on hyperion39: rank 68 of 256 reducing data from child rank 69 of 256 at 192.168.112.40:43780 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 70 on hyperion39: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 70 on hyperion39: rank 70 of 256 reducing data from child rank 71 of 256 at 192.168.112.40:48097 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 66 on hyperion38: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 66 on hyperion38: rank 66 of 256 reducing data from child rank 67 of 256 at 192.168.112.39:59929 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 226 on hyperion78: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 226 on hyperion78: rank 226 of 256 reducing data from child rank 227 of 256 at 192.168.112.79:38764 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 224 on hyperion78: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 224 on hyperion78: rank 224 of 256 reducing data from child rank 225 of 256 at 192.168.112.79:58817 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 106 on hyperion48: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 106 on hyperion48: rank 106 of 256 reducing data from child rank 107 of 256 at 192.168.112.49:37205 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 104 on hyperion48: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 104 on hyperion48: rank 104 of 256 reducing data from child rank 105 of 256 at 192.168.112.49:34477 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 242 on hyperion82: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 242 on hyperion82: rank 242 of 256 reducing data from child rank 243 of 256 at 192.168.112.83:54981 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 240 on hyperion82: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 162 on hyperion62: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 240 on hyperion82: rank 240 of 256 reducing data from child rank 241 of 256 at 192.168.112.83:42263 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 162 on hyperion62: rank 162 of 256 reducing data from child rank 163 of 256 at 192.168.112.63:34698 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 160 on hyperion62: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 160 on hyperion62: rank 160 of 256 reducing data from child rank 161 of 256 at 192.168.112.63:48415 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 64 on hyperion38: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 64 on hyperion38: rank 64 of 256 reducing data from child rank 65 of 256 at 192.168.112.39:34606 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 222 on hyperion77: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 222 on hyperion77: rank 222 of 256 reducing data from child rank 223 of 256 at 192.168.112.78:38108 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 220 on hyperion77: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 220 on hyperion77: rank 220 of 256 reducing data from child rank 221 of 256 at 192.168.112.78:41788 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 78 on hyperion41: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 78 on hyperion41: rank 78 of 256 reducing data from child rank 79 of 256 at 192.168.112.42:51998 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 76 on hyperion41: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 76 on hyperion41: rank 76 of 256 reducing data from child rank 77 of 256 at 192.168.112.42:56707 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 136 on hyperion56: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 136 on hyperion56: rank 136 of 256 reducing data from child rank 137 of 256 at 192.168.112.57:54197 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 138 on hyperion56: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 138 on hyperion56: rank 138 of 256 reducing data from child rank 139 of 256 at 192.168.112.57:33294 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 34 on hyperion30: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 34 on hyperion30: rank 34 of 256 reducing data from child rank 35 of 256 at 192.168.112.31:41151 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 32 on hyperion30: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 32 on hyperion30: rank 32 of 256 reducing data from child rank 33 of 256 at 192.168.112.31:53002 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 230 on hyperion79: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 230 on hyperion79: rank 230 of 256 reducing data from child rank 231 of 256 at 192.168.112.80:53273 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 172 on hyperion65: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 172 on hyperion65: rank 172 of 256 reducing data from child rank 173 of 256 at 192.168.112.66:37586 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 146 on hyperion58: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 144 on hyperion58: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 144 on hyperion58: rank 144 of 256 reducing data from child rank 145 of 256 at 192.168.112.59:55496 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 174 on hyperion65: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 174 on hyperion65: rank 174 of 256 reducing data from child rank 175 of 256 at 192.168.112.66:37627 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 146 on hyperion58: rank 146 of 256 reducing data from child rank 147 of 256 at 192.168.112.59:50751 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 84 on hyperion43: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 84 on hyperion43: rank 84 of 256 reducing data from child rank 85 of 256 at 192.168.112.44:34555 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 86 on hyperion43: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 86 on hyperion43: rank 86 of 256 reducing data from child rank 87 of 256 at 192.168.112.44:44317 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 46 on hyperion33: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 46 on hyperion33: rank 46 of 256 reducing data from child rank 47 of 256 at 192.168.112.34:41828 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 44 on hyperion33: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 40 on hyperion32: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 44 on hyperion33: rank 44 of 256 reducing data from child rank 45 of 256 at 192.168.112.34:50630 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 42 on hyperion32: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 228 on hyperion79: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 42 on hyperion32: rank 42 of 256 reducing data from child rank 43 of 256 at 192.168.112.33:39519 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 40 on hyperion32: rank 40 of 256 reducing data from child rank 41 of 256 at 192.168.112.33:49029 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 228 on hyperion79: rank 228 of 256 reducing data from child rank 229 of 256 at 192.168.112.80:36101 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 190 on hyperion69: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 190 on hyperion69: rank 190 of 256 reducing data from child rank 191 of 256 at 192.168.112.70:57594 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 186 on hyperion68: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 186 on hyperion68: rank 186 of 256 reducing data from child rank 187 of 256 at 192.168.112.69:46437 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 188 on hyperion69: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 188 on hyperion69: rank 188 of 256 reducing data from child rank 189 of 256 at 192.168.112.70:36738 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 184 on hyperion68: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 184 on hyperion68: rank 184 of 256 reducing data from child rank 185 of 256 at 192.168.112.69:37481 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 48 on hyperion34: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 48 on hyperion34: rank 48 of 256 reducing data from child rank 49 of 256 at 192.168.112.35:33189 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 180 on hyperion67: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 10 on hyperion24: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 10 on hyperion24: rank 10 of 256 reducing data from child rank 11 of 256 at 192.168.112.25:48744 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 50 on hyperion34: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 8 on hyperion24: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 50 on hyperion34: rank 50 of 256 reducing data from child rank 51 of 256 at 192.168.112.35:53565 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 180 on hyperion67: rank 180 of 256 reducing data from child rank 181 of 256 at 192.168.112.68:51848 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 8 on hyperion24: rank 8 of 256 reducing data from child rank 9 of 256 at 192.168.112.25:44469 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 182 on hyperion67: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 182 on hyperion67: rank 182 of 256 reducing data from child rank 183 of 256 at 192.168.112.68:53937 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 74 on hyperion40: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 74 on hyperion40: rank 74 of 256 reducing data from child rank 75 of 256 at 192.168.112.41:51222 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 72 on hyperion40: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 72 on hyperion40: rank 72 of 256 reducing data from child rank 73 of 256 at 192.168.112.41:52640 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 36 on hyperion31: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 36 on hyperion31: rank 36 of 256 reducing data from child rank 37 of 256 at 192.168.112.32:45705 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 38 on hyperion31: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 38 on hyperion31: rank 38 of 256 reducing data from child rank 39 of 256 at 192.168.112.32:40669 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 246 on hyperion83: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 246 on hyperion83: rank 246 of 256 reducing data from child rank 247 of 256 at 192.168.112.84:33883 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 244 on hyperion83: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 244 on hyperion83: rank 244 of 256 reducing data from child rank 245 of 256 at 192.168.112.84:51875 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 254 on hyperion85: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 254 on hyperion85: rank 254 of 256 reducing data from child rank 255 of 256 at 192.168.112.86:52913 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 148 on hyperion59: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 148 on hyperion59: rank 148 of 256 reducing data from child rank 149 of 256 at 192.168.112.60:49401 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 150 on hyperion59: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 150 on hyperion59: rank 150 of 256 reducing data from child rank 151 of 256 at 192.168.112.60:50855 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 252 on hyperion85: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 252 on hyperion85: rank 252 of 256 reducing data from child rank 253 of 256 at 192.168.112.86:52149 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 80 on hyperion42: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 80 on hyperion42: rank 80 of 256 reducing data from child rank 81 of 256 at 192.168.112.43:39662 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 82 on hyperion42: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 82 on hyperion42: rank 82 of 256 reducing data from child rank 83 of 256 at 192.168.112.43:53082 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 26 on hyperion28: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 26 on hyperion28: rank 26 of 256 reducing data from child rank 27 of 256 at 192.168.112.29:45576 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 24 on hyperion28: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 24 on hyperion28: rank 24 of 256 reducing data from child rank 25 of 256 at 192.168.112.29:40515 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 12 on hyperion25: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 12 on hyperion25: rank 12 of 256 reducing data from child rank 13 of 256 at 192.168.112.26:53657 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 4 on hyperion23: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 6 on hyperion23: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 6 on hyperion23: rank 6 of 256 reducing data from child rank 7 of 256 at 192.168.112.24:38175 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 14 on hyperion25: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 14 on hyperion25: rank 14 of 256 reducing data from child rank 15 of 256 at 192.168.112.26:51914 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 4 on hyperion23: rank 4 of 256 reducing data from child rank 5 of 256 at 192.168.112.24:52317 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 2 on hyperion22: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 0 on hyperion22: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 0 on hyperion22: rank 0 of 256 reducing data from child rank 1 of 256 at 192.168.112.23:55573 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 208 on hyperion74: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 208 on hyperion74: rank 208 of 256 reducing data from child rank 209 of 256 at 192.168.112.75:47057 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 210 on hyperion74: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 210 on hyperion74: rank 210 of 256 reducing data from child rank 211 of 256 at 192.168.112.75:47436 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 16 on hyperion26: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 168 on hyperion64: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 16 on hyperion26: rank 16 of 256 reducing data from child rank 17 of 256 at 192.168.112.27:55618 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 168 on hyperion64: rank 168 of 256 reducing data from child rank 169 of 256 at 192.168.112.65:60384 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 170 on hyperion64: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 170 on hyperion64: rank 170 of 256 reducing data from child rank 171 of 256 at 192.168.112.65:39608 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 2 on hyperion22: rank 2 of 256 reducing data from child rank 3 of 256 at 192.168.112.23:38091 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 58 on hyperion36: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 58 on hyperion36: rank 58 of 256 reducing data from child rank 59 of 256 at 192.168.112.37:44809 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 56 on hyperion36: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 56 on hyperion36: rank 56 of 256 reducing data from child rank 57 of 256 at 192.168.112.37:54958 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 18 on hyperion26: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 18 on hyperion26: rank 18 of 256 reducing data from child rank 19 of 256 at 192.168.112.27:58434 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 54 on hyperion35: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 54 on hyperion35: rank 54 of 256 reducing data from child rank 55 of 256 at 192.168.112.36:40135 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 60 on hyperion37: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 60 on hyperion37: rank 60 of 256 reducing data from child rank 61 of 256 at 192.168.112.38:33618 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 62 on hyperion37: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 62 on hyperion37: rank 62 of 256 reducing data from child rank 63 of 256 at 192.168.112.38:55267 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 52 on hyperion35: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 52 on hyperion35: rank 52 of 256 reducing data from child rank 53 of 256 at 192.168.112.36:44629 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 232 on hyperion80: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 232 on hyperion80: rank 232 of 256 reducing data from child rank 233 of 256 at 192.168.112.81:49367 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 238 on hyperion81: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 238 on hyperion81: rank 238 of 256 reducing data from child rank 239 of 256 at 192.168.112.82:49183 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 236 on hyperion81: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 236 on hyperion81: rank 236 of 256 reducing data from child rank 237 of 256 at 192.168.112.82:56863 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 154 on hyperion60: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 154 on hyperion60: rank 154 of 256 reducing data from child rank 155 of 256 at 192.168.112.61:55523 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 234 on hyperion80: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 234 on hyperion80: rank 234 of 256 reducing data from child rank 235 of 256 at 192.168.112.81:58142 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 20 on hyperion27: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 20 on hyperion27: rank 20 of 256 reducing data from child rank 21 of 256 at 192.168.112.28:32950 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 22 on hyperion27: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 22 on hyperion27: rank 22 of 256 reducing data from child rank 23 of 256 at 192.168.112.28:58578 @ file pmgr_collective_client_tree.c:1670
+PMGR_COLLECTIVE ERROR: rank 152 on hyperion60: Failed to read packet header rc=-1 @ file pmgr_collective_client_tree.c:227
+PMGR_COLLECTIVE ERROR: rank 152 on hyperion60: rank 152 of 256 reducing data from child rank 153 of 256 at 192.168.112.61:55977 @ file pmgr_collective_client_tree.c:1670
