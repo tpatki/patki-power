@@ -2,12 +2,14 @@
 
 mkdir ./cg/bin
 cd ./cg
-sh makeCG.sh
+sh makeCG.sh > makeCG.out
+git commmit -a -m "Just made CG"
 
 cd ..
 
 cd ./sweep/sweep3d-2.2b
-sh makeSweep.sh
+sh makeSweep.sh > makeSweep.out
+git commmit -a -m "Just made Sweep"
 
 cd ../..
 
