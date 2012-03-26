@@ -1,0 +1,56 @@
+#! /usr/bin/env perl
+
+###################################################
+# Generate sample weak-scaling inputs for SWEEP3D #
+# By Scott Pakin <pakin@lanl.gov>                 #
+###################################################
+
+use File::Basename;
+use Getopt::Long;
+use warnings;
+use strict;
+
+# Define variables for storing our command-line parameters.
+my $size = 50;             # Grid points in each dimension
+my $procs = 1;             # Total number of processes
+my $mk = 1;                # K planes for blocking
+my $mmi = 1;               # Angles for blocking
+my $ncpu = 1;              # Number of CPUs per node
+
+# Parse the command line.
+my $progname = basename $0;
+my $usagestr = "Usage: $progname [--size=<grid_points>] [--procs=<total_procs>] [--mk=<k_planes>] [--mmi=<blocking_angles>] [--ncpu=<cpus/nodes>]";
+GetOptions ("size=s"  => \$size,
+	    "procs=i" => \$procs,
+	    "mk=i"    => \$mk,
+	    "mmi=i"   => \$mmi,
+	    "ncpu=i"  => \$ncpu) || die "$usagestr\n";
+
+# Expand the size argument if necessary.
+my @sizes = split /\D/, $size;
+@sizes = ($size) x 3 if $#sizes==0;
+
+# Find a number of processes per edge close to the square root of $procs.
+my $edge1 = int (sqrt $procs);
+my $edge2 = int ($procs / $edge1);
+if ($edge1 < $edge2) {
+    my $old1 = $edge1;
+    $edge1 = $edge2;
+    $edge2 = $old1;
+}
+if ($edge1*$edge2 != $procs) {
+    while ($edge1*$edge2 != $procs) {
+	$edge2--;
+	$edge1 = int ($procs / $edge2);
+    }
+    warn "${progname}: unable to find a square layout for $procs processes; using $edge1 x $edge2\n";
+}
+
+# Write an input file to the standard output device.
+my $template5 = "%5d  \t" x 4 . "%5d\n";
+printf $template5, $edge1, $edge2, $mk, $mmi, $ncpu;
+printf $template5, $edge1*$sizes[0], $edge2*$sizes[1], $sizes[2], 6, 1;
+printf "%7.1f\t" x 3 . "%7.1f\n", (0.1) x 3, -12.0;
+my $template3 = "%5d  \t%5d  \t%5d\n";
+printf $template3, (0) x 3;
+printf $template3, 0, 1, -13;
