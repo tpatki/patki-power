@@ -27,6 +27,7 @@ hostinfo               = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /usr/local/tools/mvapich2-intel-1.7/bin
 PATH: /usr/local/tools/mvapich2-intel-debug-1.7/bin
 PATH: /usr/local/tools/ifort-12.1.273/bin
 PATH: /usr/local/tools/icc-12.1.273/bin
