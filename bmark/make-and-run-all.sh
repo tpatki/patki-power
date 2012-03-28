@@ -4,6 +4,8 @@
 #source /usr/local/tools/dotkit/init.sh
 #use mvapich2-gnu-debug
 
+use
+
 mkdir ./cg/bin
 cd ./cg
 sh makeCG.sh > makeCG.out 2>&1
