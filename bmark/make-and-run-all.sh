@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Make sure we are using mvapich2 of the gnu persuasion.
-source /usr/local/tools/dotkit/init.sh
+#source /usr/local/tools/dotkit/init.sh
 #use mvapich2-gnu-debug
 
 use ic-12.1.273
-use mvapich2-intel-debug-1.7
+use mvapich2-intel-1.7
 
 mkdir ./cg/bin
 cd ./cg
