@@ -487,13 +487,13 @@ s,@INSTALL_SCRIPT@,${INSTALL},;t t
 s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@PACKAGE@,sweep3d,;t t
 s,@VERSION@,2.2b,;t t
-s,@ACLOCAL@,${SHELL} /g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6,;t t
-s,@AUTOCONF@,${SHELL} /g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6,;t t
-s,@AUTOHEADER@,${SHELL} /g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/missing --run autoheader,;t t
-s,@MAKEINFO@,${SHELL} /g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/missing --run makeinfo,;t t
-s,@AMTAR@,${SHELL} /g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/missing --run tar,;t t
-s,@install_sh@,/g/g24/rountree/dkl/bmark/sweep/sweep3d-2.2b/install-sh,;t t
+s,@ACLOCAL@,${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6,;t t
+s,@AUTOCONF@,${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run autoconf,;t t
+s,@AUTOMAKE@,${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6,;t t
+s,@AUTOHEADER@,${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run autoheader,;t t
+s,@MAKEINFO@,${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run makeinfo,;t t
+s,@AMTAR@,${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run tar,;t t
+s,@install_sh@,/home/patki1/power/power/bmark/sweep/sweep3d-2.2b/install-sh,;t t
 s,@STRIP@,,;t t
 s,@ac_ct_STRIP@,,;t t
 s,@INSTALL_STRIP_PROGRAM@,${SHELL} $(install_sh) -c -s,;t t

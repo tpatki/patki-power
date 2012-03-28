@@ -27,8 +27,10 @@ hostinfo               = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /opt/mvapich-intel-gen2-1.2/bin
-PATH: /opt/intel-11.1.046/bin/intel64
+PATH: /usr/local/tools/mvapich2-intel-debug-1.7/bin
+PATH: /usr/local/tools/ifort-12.1.273/bin
+PATH: /usr/local/tools/icc-12.1.273/bin
+PATH: /usr/local/tools/ld-auto-rpath/bin
 PATH: /usr/lib64/qt-3.3/bin
 PATH: /usr/local/bin
 PATH: /bin
@@ -56,94 +58,196 @@ configure:1512: checking whether make sets $(MAKE)
 configure:1532: result: yes
 configure:1776: checking for Fortran 77 compiler version
 configure:1779: mpif77 --version </dev/null >&5
+ifort (IFORT) 12.1.2 20111128
+Copyright (C) 1985-2011 Intel Corporation.  All rights reserved.
 
-Error: A license for FCompL could not be obtained (-1,359,2).
-
-Is your license file in the right location and readable?
-The location of your license file should be specified via
-the $INTEL_LICENSE_FILE environment variable.
-
-License file(s) used were (in this order):
-    1.  /opt/intel-10.0.025/licenses/*.lic
-    2.  /opt/intel/licenses/*.lic
-    3.  /home/patki1/intel/licenses
-    4.  /Users/Shared/Library/Application Support/Intel/Licenses
-
-Please visit http://support.intel.com/support/performancetools/support.htm if you require technical assistance.
-
-ifort: error #10052: could not checkout FLEXlm license
-configure:1782: $? = 1
+configure:1782: $? = 0
 configure:1784: mpif77 -v </dev/null >&5
-mpif77 for 1.2.7 (release) of : 2005/06/22 16:33:49
-
-Error: A license for FCompL could not be obtained (-1,359,2).
-
-Is your license file in the right location and readable?
-The location of your license file should be specified via
-the $INTEL_LICENSE_FILE environment variable.
-
-License file(s) used were (in this order):
-    1.  /opt/intel-10.0.025/licenses/*.lic
-    2.  /opt/intel/licenses/*.lic
-    3.  /home/patki1/intel/licenses
-    4.  /Users/Shared/Library/Application Support/Intel/Licenses
-
-Please visit http://support.intel.com/support/performancetools/support.htm if you require technical assistance.
-
-ifort: error #10052: could not checkout FLEXlm license
+mpif77 for MPICH2 version 1.7rc1
+ifort version 12.1.2
+ld    /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o --eh-frame-hdr -dynamic-linker /lib64/ld-linux-x86-64.so.2 -L/usr/local/tools/icc-12.1.273/lib -o a.out /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/for_main.o -L/usr/local/tools/ifort-12.1.273/compiler/lib/intel64 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.. -L/lib64 -L/lib -L/usr/lib64 -L/usr/lib -rpath /usr/local/tools/ifort-12.1.273/lib -rpath /usr/local/tools/icc-12.1.273/lib -Bstatic -lifport -lifcore -limf -lsvml -Bdynamic -lm -Bstatic -lipgo -lirc -u __pthread_once -Bdynamic -lpthread -lc -lgcc -lgcc_s -Bstatic -lirc_s -Bdynamic -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o
+/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/for_main.o: In function `main':
+/export/users/nbtester/efi2linux_nightly/branch-12_1/20111129_010000/libdev/frtl/src/libfor/for_main.c:(.text+0x38): undefined reference to `MAIN__'
 configure:1787: $? = 1
 configure:1789: mpif77 -V </dev/null >&5
-Intel(R) Fortran Compiler for applications running on Intel(R) 64, Version 10.0    Build 20070613 
-Copyright (C) 1985-2007 Intel Corporation.  All rights reserved.
+Intel(R) Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 12.1.2.273 Build 20111128
+Copyright (C) 1985-2011 Intel Corporation.  All rights reserved.
 
-Error: A license for FCompL could not be obtained (-1,359,2).
-
-Is your license file in the right location and readable?
-The location of your license file should be specified via
-the $INTEL_LICENSE_FILE environment variable.
-
-License file(s) used were (in this order):
-    1.  /opt/intel-10.0.025/licenses/*.lic
-    2.  /opt/intel/licenses/*.lic
-    3.  /home/patki1/intel/licenses
-    4.  /Users/Shared/Library/Application Support/Intel/Licenses
-
-Please visit http://support.intel.com/support/performancetools/support.htm if you require technical assistance.
-
-ifort: error #10052: could not checkout FLEXlm license
-configure:1792: $? = 1
+configure:1792: $? = 0
 configure:1806: checking for Fortran 77 compiler default output file name
 configure:1809: mpif77  -lpmi conftest.f -L/usr/lib64/slurm >&5
-
-Error: A license for FCompL could not be obtained (-1,359,2).
-
-Is your license file in the right location and readable?
-The location of your license file should be specified via
-the $INTEL_LICENSE_FILE environment variable.
-
-License file(s) used were (in this order):
-    1.  /opt/intel-10.0.025/licenses/*.lic
-    2.  /opt/intel/licenses/*.lic
-    3.  /home/patki1/intel/licenses
-    4.  /Users/Shared/Library/Application Support/Intel/Licenses
-
-Please visit http://support.intel.com/support/performancetools/support.htm if you require technical assistance.
-
-ifort: error #10052: could not checkout FLEXlm license
-configure:1812: $? = 1
+/usr/local/tools/ifort-12.1.273/lib/libimf.so: warning: warning: feupdateenv is not implemented and will always fail
+configure:1812: $? = 0
+configure:1858: result: a.out
+configure:1863: checking whether the Fortran 77 compiler works
+configure:1869: ./a.out
+configure:1872: $? = 0
+configure:1889: result: yes
+configure:1896: checking whether we are cross compiling
+configure:1898: result: no
+configure:1901: checking for suffix of executables
+configure:1903: mpif77 -o conftest  -lpmi conftest.f -L/usr/lib64/slurm >&5
+/usr/local/tools/ifort-12.1.273/lib/libimf.so: warning: warning: feupdateenv is not implemented and will always fail
+configure:1906: $? = 0
+configure:1931: result: 
+configure:1937: checking for suffix of object files
+configure:1948: mpif77 -c  conftest.f >&5
+configure:1951: $? = 0
+configure:1973: result: o
+configure:1981: checking whether we are using the GNU Fortran 77 compiler
+configure:1995: mpif77 -c  conftest.F >&5
+conftest.F(3): error #5082: Syntax error, found END-OF-STATEMENT when expecting one of: ( % [ : . = =>
+       choke me
+---------------^
+conftest.F(3): error #6218: This statement is positioned incorrectly and/or has syntax errors.
+       choke me
+---------------^
+compilation aborted for conftest.F (code 1)
+configure:2001: $? = 1
 configure: failed program was:
 |       program main
+| #ifndef __GNUC__
+|        choke me
+| #endif
 | 
 |       end
-configure:1851: error: Fortran 77 compiler cannot create executables
-See `config.log' for more details.
+configure:2027: result: no
+configure:2033: checking whether mpif77 accepts -g
+configure:2045: mpif77 -c -g conftest.f >&5
+configure:2051: $? = 0
+configure:2055: test -z 
+			 || test ! -s conftest.err
+configure:2058: $? = 0
+configure:2061: test -s conftest.o
+configure:2064: $? = 0
+configure:2076: result: yes
+configure:2147: checking for gcc
+configure:2163: found /usr/local/bin/gcc
+configure:2173: result: gcc
+configure:2417: checking for C compiler version
+configure:2420: gcc --version </dev/null >&5
+gcc (GCC) 4.1.2 20080704 (Red Hat 4.1.2-50)
+Copyright (C) 2006 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+configure:2423: $? = 0
+configure:2425: gcc -v </dev/null >&5
+Using built-in specs.
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)
+configure:2428: $? = 0
+configure:2430: gcc -V </dev/null >&5
+gcc: '-V' option must have argument
+configure:2433: $? = 1
+configure:2436: checking whether we are using the GNU C compiler
+configure:2460: gcc -c   conftest.c >&5
+configure:2466: $? = 0
+configure:2470: test -z 
+			 || test ! -s conftest.err
+configure:2473: $? = 0
+configure:2476: test -s conftest.o
+configure:2479: $? = 0
+configure:2492: result: yes
+configure:2498: checking whether gcc accepts -g
+configure:2519: gcc -c -g  conftest.c >&5
+configure:2525: $? = 0
+configure:2529: test -z 
+			 || test ! -s conftest.err
+configure:2532: $? = 0
+configure:2535: test -s conftest.o
+configure:2538: $? = 0
+configure:2549: result: yes
+configure:2566: checking for gcc option to accept ANSI C
+configure:2636: gcc  -c -g -O2  conftest.c >&5
+configure:2642: $? = 0
+configure:2646: test -z 
+			 || test ! -s conftest.err
+configure:2649: $? = 0
+configure:2652: test -s conftest.o
+configure:2655: $? = 0
+configure:2673: result: none needed
+configure:2691: gcc -c -g -O2  conftest.c >&5
+conftest.c:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'me'
+configure:2697: $? = 1
+configure: failed program was:
+| #ifndef __cplusplus
+|   choke me
+| #endif
+configure:2849: checking for style of include used by make
+configure:2877: result: GNU
+configure:2905: checking dependency style of gcc
+configure:2967: result: gcc3
+configure:2977: checking how to run the C preprocessor
+configure:3012: gcc -E  conftest.c
+configure:3018: $? = 0
+configure:3050: gcc -E  conftest.c
+conftest.c:11:28: error: ac_nonexistent.h: No such file or directory
+configure:3056: $? = 1
+configure: failed program was:
+| /* confdefs.h.  */
+| 
+| #define PACKAGE_NAME "SWEEP3D"
+| #define PACKAGE_TARNAME "sweep3d"
+| #define PACKAGE_VERSION "2.2b"
+| #define PACKAGE_STRING "SWEEP3D 2.2b"
+| #define PACKAGE_BUGREPORT "pakin@lanl.gov"
+| #define PACKAGE "sweep3d"
+| #define VERSION "2.2b"
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:3095: result: gcc -E
+configure:3119: gcc -E  conftest.c
+configure:3125: $? = 0
+configure:3157: gcc -E  conftest.c
+conftest.c:11:28: error: ac_nonexistent.h: No such file or directory
+configure:3163: $? = 1
+configure: failed program was:
+| /* confdefs.h.  */
+| 
+| #define PACKAGE_NAME "SWEEP3D"
+| #define PACKAGE_TARNAME "sweep3d"
+| #define PACKAGE_VERSION "2.2b"
+| #define PACKAGE_STRING "SWEEP3D 2.2b"
+| #define PACKAGE_BUGREPORT "pakin@lanl.gov"
+| #define PACKAGE "sweep3d"
+| #define VERSION "2.2b"
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:3207: checking if cpp works as expected
+configure:3221: result: yes
+configure:3542: WARNING: sequential build; specify --with-mpi or --with-pvm to build the parallel version of Sweep3D
+configure:3654: creating ./config.status
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by SWEEP3D config.status 2.2b, which was
+generated by GNU Autoconf 2.59.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status 
+
+on hyperion0
+
+config.status:684: creating Makefile
+config.status:788: creating config.h
+config.status:874: config.h is unchanged
+config.status:1038: executing depfiles commands
 
 ## ---------------- ##
 ## Cache variables. ##
 ## ---------------- ##
 
-ac_cv_env_CC_set=set
-ac_cv_env_CC_value=/opt/intel-11.1.046/bin/intel64/icc
+ac_cv_c_compiler_gnu=yes
+ac_cv_env_CC_set=
+ac_cv_env_CC_value=
 ac_cv_env_CFLAGS_set=
 ac_cv_env_CFLAGS_value=
 ac_cv_env_CPPFLAGS_set=
@@ -162,36 +266,46 @@ ac_cv_env_host_alias_set=
 ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
+ac_cv_exeext=
+ac_cv_f77_compiler_gnu=no
+ac_cv_objext=o
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_prog_AWK=gawk
+ac_cv_prog_CPP='gcc -E'
+ac_cv_prog_ac_ct_CC=gcc
+ac_cv_prog_cc_g=yes
+ac_cv_prog_cc_stdc=
+ac_cv_prog_f77_g=yes
 ac_cv_prog_make_make_set=yes
+am_cv_CC_dependencies_compiler_type=gcc3
+ax_cv_prog_cpp_works=yes
 
 ## ----------------- ##
 ## Output variables. ##
 ## ----------------- ##
 
 ACLOCAL='${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6'
-AMDEPBACKSLASH=''
-AMDEP_FALSE=''
+AMDEPBACKSLASH='\'
+AMDEP_FALSE='#'
 AMDEP_TRUE=''
 AMTAR='${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run tar'
 AUTOCONF='${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run autoconf'
 AUTOHEADER='${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run autoheader'
 AUTOMAKE='${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6'
 AWK='gawk'
-CC='/opt/intel-11.1.046/bin/intel64/icc'
-CCDEPMODE=''
-CFLAGS=''
-CPP=''
+CC='gcc'
+CCDEPMODE='depmode=gcc3'
+CFLAGS='-g -O2'
+CPP='gcc -E'
 CPPFLAGS=''
-DEFS=''
-DEPDIR=''
+DEFS='-DHAVE_CONFIG_H'
+DEPDIR='.deps'
 ECHO_C=''
 ECHO_N='-n'
 ECHO_T=''
 EXEEXT=''
 F77='mpif77'
-FFLAGS=''
+FFLAGS='-g'
 INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
@@ -201,7 +315,7 @@ LIBOBJS=''
 LIBS='-L/usr/lib64/slurm'
 LTLIBOBJS=''
 MAKEINFO='${SHELL} /home/patki1/power/power/bmark/sweep/sweep3d-2.2b/missing --run makeinfo'
-OBJEXT=''
+OBJEXT='o'
 PACKAGE='sweep3d'
 PACKAGE_BUGREPORT='pakin@lanl.gov'
 PACKAGE_NAME='SWEEP3D'
@@ -213,15 +327,15 @@ SET_MAKE=''
 SHELL='/bin/sh'
 STRIP=''
 VERSION='2.2b'
-ac_ct_CC=''
+ac_ct_CC='gcc'
 ac_ct_F77=''
 ac_ct_STRIP=''
-am__include=''
+am__include='include'
 am__quote=''
 bindir='${exec_prefix}/bin'
 build_alias=''
 datadir='${prefix}/share'
-exec_prefix='NONE'
+exec_prefix='${prefix}'
 host_alias=''
 includedir='${prefix}/include'
 infodir='${prefix}/info'
@@ -231,7 +345,7 @@ libexecdir='${exec_prefix}/libexec'
 localstatedir='${prefix}/var'
 mandir='${prefix}/man'
 oldincludedir='/usr/include'
-prefix='NONE'
+prefix='/usr/local'
 program_transform_name='s,x,x,'
 sbindir='${exec_prefix}/sbin'
 sharedstatedir='${prefix}/com'
@@ -250,4 +364,4 @@ target_alias=''
 #define PACKAGE_VERSION "2.2b"
 #define VERSION "2.2b"
 
-configure: exit 77
+configure: exit 0
