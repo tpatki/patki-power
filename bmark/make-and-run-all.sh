@@ -27,8 +27,8 @@ cd ../..
 #msub cg-experiment.sh
 #git add .
 #git commit -a -m "Data commit"
-#
-#
+
+
 #cd ../../sweep/sweep3d-2.2b/scripts
 #msub sweep-experiment.sh
 #git add .
