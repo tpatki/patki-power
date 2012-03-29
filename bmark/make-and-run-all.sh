@@ -4,19 +4,22 @@
 #source /usr/local/tools/dotkit/init.sh
 #use mvapich2-gnu-debug
 
-use ic-12.1.273
-use mvapich2-intel-1.7
+#export MAGIC=source /usr/local/tools/dotkit/init.sh && use ic-12.1.273 && use mvapich2-intel-1.7
+#$MAGIC && which icc
+#source /usr/local/tools/dotkit/init.sh && use ic-12.1.273 && use mvapich2-intel-1.7 && which icc
+#
 
 mkdir ./cg/bin
 cd ./cg
+
 sh makeCG.sh > makeCG.out 2>&1
 git commit -a -m "Just made CG"
 
 cd ..
 
-cd ./sweep/sweep3d-2.2b
-sh makeSweep.sh > makeSweep.out 2>&1
-git commit -a -m "Just made Sweep"
+#cd ./sweep/sweep3d-2.2b
+#sh makeSweep.sh > makeSweep.out 2>&1
+#git commit -a -m "Just made Sweep"
 
 #cd ../..
 #
