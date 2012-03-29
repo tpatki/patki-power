@@ -32,9 +32,9 @@ c number of nodes for which this version is compiled
         parameter (cs3='(none)')
         character*6 cs4
         parameter (cs4='(none)')
-        character*9 cs5
-        parameter (cs5='-O3 -fPIC')
-        character*9 cs6
-        parameter (cs6='-O3 -fPIC')
+        character*44 cs5
+        parameter (cs5='-O3 -fPIC -fpic -shared-intel -mcmodel=large')
+        character*44 cs6
+        parameter (cs6='-O3 -fPIC -fpic -shared-intel -mcmodel=large')
         character*6 cs7
         parameter (cs7='randi8')

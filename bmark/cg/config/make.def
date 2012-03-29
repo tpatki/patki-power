@@ -48,13 +48,13 @@ FLINK	= $(MPIF77)
 #---------------------------------------------------------------------------
 # Global *compile time* flags for Fortran programs
 #---------------------------------------------------------------------------
-FFLAGS	= -O3 -fPIC
+FFLAGS	= -O3 -fPIC -fpic -shared-intel -mcmodel=large
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
-FLINKFLAGS = -O3 -fPIC
+FLINKFLAGS = -O3 -fPIC -fpic -shared-intel -mcmodel=large
 
 
 #---------------------------------------------------------------------------
@@ -94,13 +94,13 @@ CMPI_INC = -I/opt/mvapich-gnu-gen2-1.2/include
 #---------------------------------------------------------------------------
 # Global *compile time* flags for C programs
 #---------------------------------------------------------------------------
-CFLAGS	= -O3 -fPIC
+CFLAGS	= -O3 -fPIC -fpic -shared-intel -mcmodel=large
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
-CLINKFLAGS = -O3 -fPIC
+CLINKFLAGS = -O3 -fPIC -fpic -shared-intel -mcmodel=large
 
 
 #---------------------------------------------------------------------------

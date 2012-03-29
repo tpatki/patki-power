@@ -6,37 +6,11 @@
 cd CG; make NPROCS=1 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
-cc -g  -o setparams setparams.c
+make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 1 D 
-mpif77 -c  -O3 -fPIC cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-cd ../common; mpif77 -c  -O3 -fPIC print_results.f
-cd ../common; mpif77 -c  -O3 -fPIC randi8.f
-cd ../common; mpif77 -c  -O3 -fPIC timers.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x228c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2293): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_preconnected_units_init.o): In function `for__preconnected_units_create':
-for_preconnected_units_init.c:(.text+0x73): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xa4): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xc9): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x10b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x175): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x1dc): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x232): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x5c): additional relocation overflows omitted from the output
-make[1]: *** [../bin/cg.D.1] Error 1
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
-make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -48,31 +22,15 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 2 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x228c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2293): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_preconnected_units_init.o): In function `for__preconnected_units_create':
-for_preconnected_units_init.c:(.text+0x73): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xa4): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xc9): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x10b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x175): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x1dc): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x232): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x5c): additional relocation overflows omitted from the output
-make[1]: *** [../bin/cg.D.2] Error 1
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
-make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -84,31 +42,15 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 4 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x228c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2293): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_preconnected_units_init.o): In function `for__preconnected_units_create':
-for_preconnected_units_init.c:(.text+0x73): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xa4): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xc9): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x10b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x175): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x1dc): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x232): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x5c): additional relocation overflows omitted from the output
-make[1]: *** [../bin/cg.D.4] Error 1
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
-make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -120,31 +62,15 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 8 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x228c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2293): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_preconnected_units_init.o): In function `for__preconnected_units_create':
-for_preconnected_units_init.c:(.text+0x73): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xa4): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0xc9): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x10b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x175): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x1dc): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_preconnected_units_init.c:(.text+0x232): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-12.1.273/compiler/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x5c): additional relocation overflows omitted from the output
-make[1]: *** [../bin/cg.D.8] Error 1
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
-make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -156,14 +82,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 16 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -176,14 +102,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 32 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -196,14 +122,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 64 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -216,14 +142,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 128 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -236,14 +162,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 256 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -256,14 +182,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 512 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -276,14 +202,14 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 1024 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -296,12 +222,12 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 2048 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
 cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  9001 format( 4x, i5, 7x, e20.14, f20.13 )
 ---------------------------^
 cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
  1005 format(' Eigenvalue shift: ', e8.3)
 -------------------------------------^
-mpif77 -O3 -fPIC -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
