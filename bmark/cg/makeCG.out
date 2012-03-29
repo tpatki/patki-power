@@ -9,6 +9,13 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 1 D 
+mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
+cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 9001 format( 4x, i5, 7x, e20.14, f20.13 )
+---------------------------^
+cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 1005 format(' Eigenvalue shift: ', e8.3)
+-------------------------------------^
 mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
