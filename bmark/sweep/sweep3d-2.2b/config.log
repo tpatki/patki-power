@@ -35,7 +35,6 @@ PATH: /g/g24/rountree/local/install/byobu-4.54/bin
 PATH: /usr/local/tools/mvapich2-gnu-debug/bin
 PATH: /usr/global/tools/totalview/m/rzmerl/dflt/bin
 PATH: /g/g24/rountree/local/install/byobu-4.54/bin
-PATH: /g/g24/rountree/local/install/byobu-4.54/bin
 PATH: /usr/lib64/qt-3.3/bin
 PATH: /usr/local/bin
 PATH: /bin
@@ -44,7 +43,6 @@ PATH: /usr/local/sbin
 PATH: /usr/sbin
 PATH: /sbin
 PATH: .
-PATH: /g/g24/rountree/local/bin
 PATH: /g/g24/rountree/local/bin
 PATH: /g/g24/rountree/local/bin
 
