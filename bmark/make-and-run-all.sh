@@ -17,12 +17,12 @@ git commit -a -m "Just made CG"
 
 cd ..
 
-#cd ./sweep/sweep3d-2.2b
-#sh makeSweep.sh > makeSweep.out 2>&1
-#git commit -a -m "Just made Sweep"
+cd ./sweep/sweep3d-2.2b
+sh makeSweep.sh > makeSweep.out 2>&1
+git commit -a -m "Just made Sweep"
 
-#cd ../..
-#
+cd ../..
+
 #cd ./cg/scripts
 #msub cg-experiment.sh
 #git add .
