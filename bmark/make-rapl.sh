@@ -9,7 +9,10 @@
 #source /usr/local/tools/dotkit/init.sh && use ic-12.1.273 && use mvapich2-intel-1.7 && which icc
 #
 
-cd ../rapl/libmsr/mpi
+cd ../rapl/libmsr/
+make > makeMSR.out 2>&1
+git commit -a -m "Just made msr common "
+cd ./mpi/
 make  > makeRAPL.out 2>&1
 git commit -a -m "Just made Librapl"
 
