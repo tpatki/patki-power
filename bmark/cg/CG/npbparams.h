@@ -29,7 +29,7 @@ c number of nodes for which this version is compiled
         character*9 cs2
         parameter (cs2='$(MPIF77)')
         character*46 cs3
-        parameter (cs3='-Xlinker -rpath=../../rapl/another/libmsr/l...')
+        parameter (cs3='-Xlinker -rpath=$(HOME)/local/src/power/rap...')
         character*6 cs4
         parameter (cs4='(none)')
         character*44 cs5
