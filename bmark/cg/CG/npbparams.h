@@ -21,15 +21,15 @@ c number of nodes for which this version is compiled
         logical  convertdouble
         parameter (convertdouble = .false.)
         character*11 compiletime
-        parameter (compiletime='29 Mar 2012')
+        parameter (compiletime='04 Apr 2012')
         character*3 npbversion
         parameter (npbversion='3.3')
         character*6 cs1
         parameter (cs1='mpif77')
         character*9 cs2
         parameter (cs2='$(MPIF77)')
-        character*6 cs3
-        parameter (cs3='(none)')
+        character*46 cs3
+        parameter (cs3='-Xlinker -rpath=../../rapl/another/libmsr/l...')
         character*6 cs4
         parameter (cs4='(none)')
         character*44 cs5

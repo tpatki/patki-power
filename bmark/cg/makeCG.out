@@ -6,17 +6,14 @@
 cd CG; make NPROCS=1 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
-make[2]: Nothing to be done for `all'.
+cc -g  -o setparams setparams.c
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 1 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+cd ../common; mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large print_results.f
+cd ../common; mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large randi8.f
+cd ../common; mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large timers.f
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -30,13 +27,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 2 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -50,13 +41,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 4 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -70,13 +55,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 8 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -90,13 +69,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 16 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -110,13 +83,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 32 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -130,13 +97,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 64 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -150,13 +111,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 128 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -170,13 +125,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 256 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -190,13 +139,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 512 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -210,13 +153,7 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 1024 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -230,11 +167,5 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/sys'
 ../sys/setparams cg 2048 D 
 mpif77 -c  -O3 -fPIC -fpic -shared-intel -mcmodel=large cg.f
-cg.f(522): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 9001 format( 4x, i5, 7x, e20.14, f20.13 )
----------------------------^
-cg.f(280): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
- 1005 format(' Eigenvalue shift: ', e8.3)
--------------------------------------^
-mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+mpif77 -O3 -fPIC -fpic -shared-intel -mcmodel=large -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=../../rapl/another/libmsr/lib -L../../../rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/cg/CG'
