@@ -38,7 +38,7 @@ FLINK	= $(MPIF77)
 #---------------------------------------------------------------------------
 #FMPI_LIB  = -L/opt/mvapich-gnu-gen2-1.2/lib
 #FMPI_LIB  = -L/usr/local/lib64/ -L/usr/lib64/slurm -lpmi
-FMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/another/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
+FMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
 
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler to help find 'mpif.h'
