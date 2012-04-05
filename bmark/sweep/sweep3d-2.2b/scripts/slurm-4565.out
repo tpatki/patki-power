@@ -1,0 +1,16 @@
+srun: error: rzmerl100: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl113: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl116: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl114: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl108: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl107: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl102: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl103: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl106: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl115: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl112: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl110: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl111: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl109: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl104: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl105: tasks 64-79: Exited with exit code 127

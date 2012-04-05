@@ -1,0 +1,9 @@
+*.o
+msr
+.*.swp
+TAGS
+lib/
+*.dat
+*.pdf
+*.log
+*~

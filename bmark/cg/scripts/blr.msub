@@ -1,0 +1,14 @@
+#!/bin/bash
+#MSUB -l nodes=100
+#MSUB -q pbatch
+#MSUB -l walltime=1
+            
+declare -i count=100
+ 
+echo -n 'The start time is: ';date
+for (( i=1 ; i <= $count; i++ ))
+do
+    srun -l --exclusive -N1 -n16 -o out.%N sleep 10 &
+done
+wait
+echo -n 'The completion time is: ';date

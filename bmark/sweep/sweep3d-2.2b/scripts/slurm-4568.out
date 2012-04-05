@@ -1,0 +1,34 @@
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_03_30_16_20_18_333871096
++ mkdir 2012_03_30_16_20_18_333871096
++ cd 2012_03_30_16_20_18_333871096
++ env
++ hostname
++ echo 2012_03_30_16_20_18_333871096
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ echo 16
+16
++ echo 2012_03_30_16_20_18_333871096
+2012_03_30_16_20_18_333871096
++ cp ../../../input/input-256 ./input
++ srun --nodes=16 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+srun: error: rzmerl97: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl110: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl100: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl98: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl103: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl102: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl107: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl106: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl111: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl109: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl112: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl99: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl104: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl108: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl105: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl113: tasks 240-255: Exited with exit code 127
