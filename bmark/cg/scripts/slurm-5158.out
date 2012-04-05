@@ -1,0 +1,33 @@
+nodes=1 ntasks=16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_05_12_01_31_670259155
++ mkdir 2012_04_05_12_01_31_670259155
++ cd 2012_04_05_12_01_31_670259155
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_05_12_01_31_670259155
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 1'
++ srun --nodes=1 --ntasks=16 -ppbatch -e cg.err -o out.dat --sockets-per-node=1 ../cgCL.sh 16
+srun: error: rzmerl46: tasks 0-15: Exited with exit code 127
+nodes=2 ntasks=16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_05_12_01_32_231650894
++ mkdir 2012_04_05_12_01_32_231650894
++ cd 2012_04_05_12_01_32_231650894
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_05_12_01_32_231650894
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 2'
++ srun --nodes=2 --ntasks=16 -ppbatch -e cg.err -o out.dat --sockets-per-node=1 ../cgCL.sh 16
+srun: error: rzmerl46: tasks 0-7: Exited with exit code 127
+srun: error: rzmerl47: tasks 8-15: Exited with exit code 127
