@@ -1,0 +1,30 @@
+nodes=1 ntasks=16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_05_23_35_34_266158793
++ mkdir 2012_04_05_23_35_34_266158793
++ cd 2012_04_05_23_35_34_266158793
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_05_23_35_34_266158793
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 1'
++ srun --nodes=1 --ntasks=16 -ppbatch -e cg.err -o out.dat --sockets-per-node=1 ../cgCL.sh 16
+nodes=2 ntasks=16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_05_23_53_44_994985429
++ mkdir 2012_04_05_23_53_44_994985429
++ cd 2012_04_05_23_53_44_994985429
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_05_23_53_44_994985429
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 2'
++ srun --nodes=2 --ntasks=16 -ppbatch -e cg.err -o out.dat --sockets-per-node=1 ../cgCL.sh 16
