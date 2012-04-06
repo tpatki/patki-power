@@ -11,10 +11,11 @@ export MSR_PP0_POWER_LIMIT=0x0
 export MSR_DRAM_POWER_LIMIT=0x0
 export MSR_RANK_MOD=16
 export BLR_BENCHMARK=../bin/cg.D.16
+#LD_LIB_PATH should not be needed, ideally
+#export LD_LIBRARY_PATH=$(HOME)/local/src/power/rapl/libmsr/lib:LD_LIBRARY_PATH
 
 #Run 16 tasks with CG.D to see whether the min power is more than 51W
 #Also test what happens to power if you have two nodes
-sh ./runCG.sh 1 1 16 16 
-sh ./runCG.sh 2 2 8 8 
+sh ./runCG.sh 1 1 16 16
+sh ./runCG.sh 2 2 8 8
 
-            
