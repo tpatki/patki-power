@@ -4,132 +4,157 @@
    =========================================
 
 cd IS; make NPROCS=4 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 4 C 
-mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  is.c
-mpicc -O3 -fPIC -o ../bin/is.C.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=8 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 8 C 
-mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  is.c
-mpicc -O3 -fPIC -o ../bin/is.C.8 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=16 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 16 C 
-mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  is.c
-mpicc -O3 -fPIC -o ../bin/is.C.16 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=32 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 32 C 
-mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  is.c
-mpicc -O3 -fPIC -o ../bin/is.C.32 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=64 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 64 C 
-mpicc -O3 -fPIC -o ../bin/is.C.64 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=128 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 128 C 
-mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  is.c
-mpicc -O3 -fPIC -o ../bin/is.C.128 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=256 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 256 C 
-mpicc -O3 -fPIC -o ../bin/is.C.256 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=512 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 512 C 
-mpicc -O3 -fPIC -o ../bin/is.C.512 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=1024 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 1024 C 
-mpicc -O3 -fPIC -o ../bin/is.C.1024 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=2048 CLASS=C
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 2048 C 
-mpicc -O3 -fPIC -o ../bin/is.C.2048 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/IS'
+/home/tpatki/tapasya/test-mvapich/bin/mpicc  -c -I/home/tpatki/tapasya/test-mvapich/include -O3 is.c
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpicc: Command not found
+make[1]: *** [is.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
