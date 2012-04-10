@@ -1,0 +1,296 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=1 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 1 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC nodedim.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC l2norm.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC blts.f
+mpif77 -c  -O3 -fPIC jacu.f
+mpif77 -c  -O3 -fPIC buts.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC pintgr.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=2 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 2 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC jacu.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC pintgr.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=4 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 4 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC jacu.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC pintgr.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=8 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 8 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC jacu.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=16 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 16 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC jacu.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC pintgr.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.16 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=32 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 32 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC jacu.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.32 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=64 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 64 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+mpif77 -c  -O3 -fPIC bcast_inputs.f
+mpif77 -c  -O3 -fPIC proc_grid.f
+mpif77 -c  -O3 -fPIC neighbors.f
+mpif77 -c  -O3 -fPIC subdomain.f
+mpif77 -c  -O3 -fPIC setcoeff.f
+mpif77 -c  -O3 -fPIC sethyper.f
+mpif77 -c  -O3 -fPIC setbv.f
+mpif77 -c  -O3 -fPIC exact.f
+mpif77 -c  -O3 -fPIC setiv.f
+mpif77 -c  -O3 -fPIC erhs.f
+mpif77 -c  -O3 -fPIC ssor.f
+mpif77 -c  -O3 -fPIC exchange_1.f
+mpif77 -c  -O3 -fPIC exchange_3.f
+mpif77 -c  -O3 -fPIC exchange_4.f
+mpif77 -c  -O3 -fPIC exchange_5.f
+mpif77 -c  -O3 -fPIC exchange_6.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC jacld.f
+mpif77 -c  -O3 -fPIC pintgr.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -O3 -fPIC  -o ../bin/lu.C.64 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd LU; make NPROCS=128 CLASS=C VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams lu 128 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/LU'
+mpif77 -c  -O3 -fPIC lu.f
+mpif77 -c  -O3 -fPIC init_comm.f
+mpif77 -c  -O3 -fPIC read_input.f
+make[2]: *** [read_input.o] Interrupt
+make[1]: *** [../bin/lu.C.128] Interrupt
+make: *** [lu] Interrupt
