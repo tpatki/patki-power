@@ -36,8 +36,8 @@ FLINK	= $(MPIF77)
 #---------------------------------------------------------------------------
 # These macros are passed to the linker to help link with MPI correctly
 #---------------------------------------------------------------------------
-#FMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
-FMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+FMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
+#FMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
 
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler to help find 'mpif.h'
@@ -86,8 +86,8 @@ CLINK	= $(MPICC)
 #---------------------------------------------------------------------------
 # These macros are passed to the linker to help link with MPI correctly
 #---------------------------------------------------------------------------
-#CMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
-CMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+CMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
+#CMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
 
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler to help find 'mpi.h'
