@@ -29,34 +29,35 @@
 #---------------------------------------------------------------------------
 # This is the fortran compiler used for MPI programs
 #---------------------------------------------------------------------------
-MPIF77 = mpif77
+MPIF77 = /home/tpatki/tapasya/test-mvapich/bin/mpif77
 # This links MPI fortran programs; usually the same as ${MPIF77}
 FLINK	= $(MPIF77)
 
 #---------------------------------------------------------------------------
 # These macros are passed to the linker to help link with MPI correctly
 #---------------------------------------------------------------------------
-FMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
-#FMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+#FMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib -lrapl
+FMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+#FMPI_LIB  = -Xlinker -rpath=/home/tpatki/tapasya/rapl/another/libmsr/lib -L/home/tpatki/tapasya/rapl/another/libmsr/lib -lrapl
 
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler to help find 'mpif.h'
 #---------------------------------------------------------------------------
-#FMPI_INC = -I/opt/mvapich-gnu-gen2-1.2/include
+FMPI_INC = -I/home/tpatki/tapasya/test-mvapich/include
 #FMPI_INC = -I/usr/lib 
 
 #---------------------------------------------------------------------------
 # Global *compile time* flags for Fortran programs
 #---------------------------------------------------------------------------
 #FFLAGS	= -O3 -fPIC -shared-intel -mcmodel=large
-FFLAGS	= -O3 -fPIC
+FFLAGS	= -O3 
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
 #FLINKFLAGS = -O3 -fPIC -fpic -shared-intel -mcmodel=large
-FLINKFLAGS = -O3 -fPIC 
+FLINKFLAGS = -O3
 
 
 #---------------------------------------------------------------------------
@@ -79,7 +80,7 @@ FLINKFLAGS = -O3 -fPIC
 #---------------------------------------------------------------------------
 # This is the C compiler used for MPI programs
 #---------------------------------------------------------------------------
-MPICC = mpicc
+MPICC = /home/tpatki/tapasya/test-mvapich/bin/mpicc
 # This links MPI C programs; usually the same as ${MPICC}
 CLINK	= $(MPICC)
 
@@ -92,20 +93,20 @@ CMPI_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/lo
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler to help find 'mpi.h'
 #---------------------------------------------------------------------------
-CMPI_INC = -I/opt/mvapich-gnu-gen2-1.2/include
+CMPI_INC = -I/home/tpatki/tapasya/test-mvapich/include
 
 #---------------------------------------------------------------------------
 # Global *compile time* flags for C programs
 #---------------------------------------------------------------------------
 #CFLAGS	= -O3 -fPIC -fpic -shared-intel -mcmodel=large
-CFLAGS	= -O3 -fPIC 
+CFLAGS	= -O3
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
 #CLINKFLAGS = -O3 -fPIC -fpic -shared-intel -mcmodel=large
-CLINKFLAGS = -O3 -fPIC
+CLINKFLAGS = -O3
 
 
 #---------------------------------------------------------------------------

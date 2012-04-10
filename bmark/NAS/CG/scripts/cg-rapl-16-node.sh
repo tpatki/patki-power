@@ -27,15 +27,15 @@ export MSR_RANK_MOD=16
 #LD_LIB_PATH should not be needed, ideally
 #export LD_LIBRARY_PATH=$(HOME)/local/src/power/rapl/libmsr/lib:LD_LIBRARY_PATH
 
- for pkg in 0x038198 0x038208 0x038280 0x0382f8
+ for pkg in 0x038208 0x038280 0x0382f8
        do
                export MSR_PKG_POWER_LIMIT=${pkg}
-               for dram in 0x038078 0x0380a0 0x0380c8 0x0380f0
-		do
+#               for dram in 0x038078 0x0380a0 0x0380c8 0x0380f0
+#		do
                     export MSR_DRAM_POWER_LIMIT=${dram}
 		    #Run CG with 16 nodes, with 4,8,16 cores/node
-		    sh ./runCG.sh 16 16 4 16
-		done
+		    sh ./runCG.sh 1 1 2 2
+#		done
 	done
 
 export MSR_PKG_POWER_LIMIT=0x0

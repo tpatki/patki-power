@@ -18,7 +18,12 @@ endif
 CFLAGS=-fPIC -Wall ${DEFINES} ${COMPILER_SPECIFIC_FLAGS}
 CC=gcc
 
-all: $(target) $(library) turbo rapl_clamp
+.PHONY: mpi
+
+all: $(target) $(library) turbo rapl_clamp mpi
+
+mpi:
+	$(MAKE) -C mpi
 
 msr_common.o: msr_rapl.h msr_common.c msr_common.h Makefile
 msr_core.o: msr_core.c msr_core.h Makefile
@@ -27,9 +32,10 @@ msr_pebs.o: msr_core.h msr_pebs.c msr_pebs.h Makefile
 msr_turbo.o: msr_core.h msr_turbo.c msr_turbo.h Makefile
 msr_opt.o: msr_core.h msr_rapl.h msr_opt.c msr_opt.h Makefile
 blr_util.o: blr_util.h blr_util.c Makefile
+cpuid.o: cpuid.h Makefile
 
 $(target): msr_rapl.o msr_core.o msr_common.o msr_pebs.o blr_util.o msr_turbo.o\
- msr_opt.o blr_util.o
+ msr_opt.o blr_util.o cpuid.o
 	gcc -fPIC -Wall ${DEFINES} -o $(target) msr_pebs.c msr_rapl.o\
  msr_common.o msr_core.o msr_opt.o blr_util.o -lrt
 
