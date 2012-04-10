@@ -1,0 +1,155 @@
+##############################################################################
+#
+# sphot Makefile for MPI with OpenMP source files
+#
+##############################################################################
+
+
+B = ../bin/
+I = ../includes/*
+
+#####
+# ***Modifications Required***
+# Specify Fortran77 compiler and desired flags. 
+# These can change depending on your preference and platform.
+#####
+F77 = newmpxlf
+FFLAGS   = -C -qsmp=omp -qnosave -c -I../includes
+##### End of required modifications section
+
+
+FOBJS = \
+	$(B)allocdyn.o \
+	$(B)copyglob.o \
+	$(B)copypriv.o \
+	$(B)copyseed.o \
+	$(B)execute.o \
+	$(B)genmesh.o \
+	$(B)genxsec.o \
+	$(B)interp.o \
+	$(B)iranfeven.o \
+	$(B)iranfodd.o \
+	$(B)plnkut.o \
+	$(B)pranf.o \
+	$(B)ranf.o \
+	$(B)ranfatok.o \
+	$(B)ranfk.o \
+	$(B)ranfkbinary.o \
+	$(B)ranfmodmult.o \
+	$(B)rans.o \
+	$(B)rdinput.o \
+	$(B)rdopac.o \
+	$(B)second.o \
+	$(B)seedranf.o \
+	$(B)sphot.o \
+	$(B)thom.o \
+	$(B)writeout.o \
+	$(B)wroutput.o \
+	$(B)zonevols.o 
+
+#####
+# *** Optional: Specifying C parameters is only required if you are
+# using your own profiling tools or introducing C code for some
+# similar purpose.
+#####
+#CC  = 
+#CCFLAGS  = 
+#COBJS = 
+##### End of optional C parameter section
+
+
+##############################################################################
+# Rules for Fortran and C object file dependencies.
+# Note that sphot does not require any C files - references to C files are
+# provided as a convenience should you desire to introduce C files for
+# profilers, timing tools or something similar.  If you are introducing
+# C files, you will need to create the necessary dependency lines below.
+##############################################################################
+
+#all:  $(COBJS) $(FOBJS) $(I)
+
+all:  $(FOBJS) $(I)
+
+$(B)allocdyn.o: allocdyn.f $(I)params.inc $(I)globals.inc $(I)geomz.inc $(I)randseed.inc
+	${F77} ${FFLAGS} -o $(B)allocdyn.o  allocdyn.f 
+
+$(B)copyglob.o: copyglob.f $(I)params.inc $(I)geomz.inc  $(I)times.inc
+	${F77} ${FFLAGS} -o $(B)copyglob.o  copyglob.f 
+
+$(B)copypriv.o: copypriv.f $(I)shared.inc $(I)geomz.inc $(I)params.inc $(I)globals.inc $(I)times.inc
+	${F77} ${FFLAGS} -o $(B)copypriv.o copypriv.f
+
+$(B)copyseed.o: copyseed.f $(I)params.inc $(I)randseed.inc $(I)shared.inc 
+	${F77} ${FFLAGS} -o $(B)copyseed.o copyseed.f
+
+$(B)execute.o: execute.f $(I)params.inc $(I)geomz.inc $(I)globals.inc 
+	${F77} ${FFLAGS} -o $(B)execute.o execute.f
+
+$(B)genmesh.o: genmesh.f $(I)params.inc $(I)geomz.inc $(I)globals.inc
+	${F77} ${FFLAGS} -o $(B)genmesh.o genmesh.f
+
+$(B)genxsec.o: genxsec.f $(I)params.inc $(I)geomz.inc $(I)globals.inc
+	${F77} ${FFLAGS} -o $(B)genxsec.o genxsec.f
+
+$(B)interp.o: interp.f 
+	${F77} ${FFLAGS} -o $(B)interp.o interp.f
+
+$(B)iranfeven.o: iranfeven.f
+	${F77} ${FFLAGS} -o $(B)iranfeven.o iranfeven.f
+
+$(B)iranfodd.o: iranfodd.f
+	${F77} ${FFLAGS} -o $(B)iranfodd.o iranfodd.f
+
+$(B)plnkut.o: plnkut.f
+	${F77} ${FFLAGS} -o $(B)plnkut.o plnkut.f
+
+$(B)pranf.o: pranf.f $(I)pranf.inc
+	${F77} ${FFLAGS} -o $(B)pranf.o pranf.f
+
+$(B)ranf.o: ranf.f $(I)params.inc $(I)randseed.inc
+	${F77} ${FFLAGS} -o $(B)ranf.o ranf.f
+
+$(B)ranfatok.o: ranfatok.f $(I)pranf.inc
+	${F77} ${FFLAGS} -o $(B)ranfatok.o ranfatok.f
+
+$(B)ranfk.o: ranfk.f $(I)pranf.inc
+	${F77} ${FFLAGS} -o $(B)ranfk.o ranfk.f
+
+$(B)ranfkbinary.o: ranfkbinary.f $(I)pranf.inc
+	${F77} ${FFLAGS} -o $(B)ranfkbinary.o ranfkbinary.f
+
+$(B)ranfmodmult.o: ranfmodmult.f $(I)pranf.inc
+	${F77} ${FFLAGS} -o $(B)ranfmodmult.o ranfmodmult.f
+
+$(B)rans.o: rans.f $(I)pranf.inc
+	${F77} ${FFLAGS} -o $(B)rans.o rans.f
+
+$(B)rdinput.o: rdinput.f $(I)params.inc $(I)geomz.inc $(I)globals.inc 
+	${F77} ${FFLAGS} -o $(B)rdinput.o rdinput.f
+
+$(B)rdopac.o: rdopac.f
+	${F77} ${FFLAGS} -o $(B)rdopac.o rdopac.f
+
+$(B)second.o: second.f
+	${F77} ${FFLAGS} -o $(B)second.o second.f
+
+$(B)seedranf.o: seedranf.f $(I)randseed.inc
+	${F77} ${FFLAGS} -o $(B)seedranf.o seedranf.f
+
+$(B)sphot.o: sphot.f $(I)params.inc $(I)globals.inc $(I)shared.inc $(I)geomz.inc $(I)randseed.inc $(I)times.inc 
+	${F77} ${FFLAGS} -o $(B)sphot.o sphot.f
+
+$(B)thom.o: thom.f
+	${F77} ${FFLAGS} -o $(B)thom.o thom.f
+
+$(B)writeout.o: writeout.f $(I)params.inc $(I)globals.inc $(I)shared.inc $(I)geomz.inc $(I)randseed.inc $(I)times.inc
+	${F77} ${FFLAGS} -o $(B)writeout.o writeout.f
+
+$(B)wroutput.o: wroutput.f $(I)params.inc $(I)geomz.inc $(I)globals.inc $(I)shared.inc
+	${F77} ${FFLAGS} -o $(B)wroutput.o wroutput.f
+
+$(B)zonevols.o: zonevols.f $(I)params.inc $(I)geomz.inc
+	${F77} ${FFLAGS} -o $(B)zonevols.o zonevols.f
+
+
+
