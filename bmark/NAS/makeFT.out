@@ -4,166 +4,15 @@
    =========================================
 
 cd FT; make NPROCS=1 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 1 D 
-mpif77 -c  -O3 -fPIC ft.f
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:87:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-ft.f:103.31:
-
-      double precision twiddle(ntdivnp)                                 
-                               1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-ft.f:103.39:
-
-      double precision twiddle(ntdivnp)                                 
-                                       1
-Error: The module or main program array 'twiddle' at (1) must have constant shape
-ft.f:100.26:
-
-      double complex   u0(ntdivnp),                                     
-                          1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-ft.f:100.34:
-
-      double complex   u0(ntdivnp),                                     
-                                  1
-Error: The module or main program array 'u0' at (1) must have constant shape
-ft.f:101.26:
-
-     >                 u1(ntdivnp),                                     
-                          1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-ft.f:101.34:
-
-     >                 u1(ntdivnp),                                     
-                                  1
-Error: The module or main program array 'u1' at (1) must have constant shape
-ft.f:102.26:
-
-     >                 u2(ntdivnp)                                      
-                          1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-ft.f:102.34:
-
-     >                 u2(ntdivnp)                                      
-                                  1
-Error: The module or main program array 'u2' at (1) must have constant shape
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:209:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:243:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:350:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:659:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:736:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:775:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-ft.f:777.24:
-
-      double complex x1(ntdivnp), x2(ntdivnp)                           
-                        1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-ft.f:777.37:
-
-      double complex x1(ntdivnp), x2(ntdivnp)                           
-                                     1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:870:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:917:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:964:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:1014:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:1063:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-npbparams.h:12.28:
-    Included at global.h:1:
-    Included at ft.f:1200:
-
-        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
-                            1
-Error: Arithmetic overflow at (1)
-ft.f:1202.25:
-
-      double complex xin(ntdivnp), xout(ntdivnp)                        
-                         1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-ft.f:1202.40:
-
-      double complex xin(ntdivnp), xout(ntdivnp)                        
-                                        1
-Error: Variable 'ntdivnp' cannot appear in the expression at (1)
-Fatal Error: Error count reached limit of 25.
-make[1]: *** [ft.o] Error 1
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -171,141 +20,173 @@ make: *** [ft] Error 2
    =========================================
 
 cd FT; make NPROCS=2 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 2 D 
-mpif77 -c  -O3 -fPIC ft.f
-mpif77 -O3 -fPIC  -o ../bin/ft.D.2 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=4 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 4 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.4 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=8 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 8 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.8 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=16 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 16 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.16 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=32 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 32 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.32 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=64 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 64 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.64 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=128 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 128 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.128 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=256 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 256 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.256 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=512 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 512 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.512 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=1024 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 1024 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.1024 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd FT; make NPROCS=2048 CLASS=D
-make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
-make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 2048 D 
-mpif77 -O3 -fPIC  -o ../bin/ft.D.2048 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/FT'
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  ft.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [ft.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
