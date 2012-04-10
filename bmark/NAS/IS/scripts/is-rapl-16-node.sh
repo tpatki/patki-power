@@ -38,3 +38,6 @@ export MSR_RANK_MOD=16
 		done
 	done
 
+export MSR_PKG_POWER_LIMIT=0x0
+export MSR_PP0_POWER_LIMIT=0x0
+export MSR_DRAM_POWER_LIMIT=0x0
