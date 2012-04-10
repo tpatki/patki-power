@@ -1,5 +1,5 @@
 #!/bin/bash
-#MSUB -l nodes=16
+#MSUB -l nodes=32
 #MSUB -q pbatch
 #MSUB -l walltime=01:30:00
 
@@ -34,7 +34,7 @@ export MSR_RANK_MOD=16
 		do
                     export MSR_DRAM_POWER_LIMIT=${dram}
 		    #Run CG with 16 nodes, with 4,8,16 cores/node
-		    sh ./runCG.sh 16 16 4 16
+		    sh ./runCG.sh 32 32 4 16
 		done
 	done
 
