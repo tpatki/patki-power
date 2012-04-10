@@ -3,6 +3,8 @@
 # $2 = number of CPU cores desired
 set -x
 
+export BLR_BENCHMARK=$(HOME)/local/src/power/bmark/sweep/sweep3d-2.2b/sweep
+
 name=`date +%Y_%m_%d_%H_%M_%S_%N`
 mkdir $name
 cd $name
