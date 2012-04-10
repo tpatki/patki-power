@@ -9,16 +9,18 @@
 #source /usr/local/tools/dotkit/init.sh && use ic-12.1.273 && use mvapich2-intel-1.7 && which icc
 #
 
-mkdir ./cg/bin
-cd ./cg
+mkdir ./NAS/bin
+cd ./NAS
 
 sh makeCG.sh > makeCG.out 2>&1
+git add makeCG.out
 git commit -a -m "Just made CG"
 
 cd ..
 
 cd ./sweep/sweep3d-2.2b
 sh makeSweep.sh > makeSweep.out 2>&1
+git add makeSweep.out
 git commit -a -m "Just made Sweep"
 
 cd ../..

@@ -26,12 +26,49 @@ git commit -a -m "Just made Librapl"
 
 cd ../../../bmark
 
-mkdir ./cg/bin
-cd ./cg/
+mkdir ./NAS/bin
+cd ./NAS/
 make clean
 sh makeCG.sh > makeCG.out 2>&1
 git add makeCG.out
 git commit -a -m "Just made CG with RAPL"
+
+sh makeBT.sh > makeBT.out 2>&1
+git add makeBT.out
+git commit -a -m "Just made BT with RAPL"
+
+sh makeDT.sh > makeDT.out 2>&1
+git add makeDT.out
+git commit -a -m "Just made DT with RAPL"
+
+sh makeEP.sh > makeEP.out 2>&1
+git add makeEP.out
+git commit -a -m "Just made EP with RAPL"
+
+sh makeFT.sh > makeFT.out 2>&1
+git add makeFT.out
+git commit -a -m "Just made FT with RAPL"
+
+sh makeIS.sh > makeIS.out 2>&1
+git add makeIS.out
+git commit -a -m "Just made IS with RAPL"
+
+sh makeLU.sh > makeLU.out 2>&1
+git add makeLU.out
+git commit -a -m "Just made LU with RAPL"
+
+sh makeMG.sh > makeMG.out 2>&1
+git add makeMG.out
+git commit -a -m "Just made MG with RAPL"
+
+sh makeSP.sh > makeSP.out 2>&1
+git add makeSP.out
+git commit -a -m "Just made SP with RAPL"
+
+cd ../sweep/sweep3d-2.2b/
+sh makeSweep.sh > makeSweep.out 2>&1
+git add makeSweep.out
+git commit -a -m "Just made sweep with RAPL"
 
 cd ../../
 

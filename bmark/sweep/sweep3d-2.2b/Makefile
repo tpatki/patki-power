@@ -18,7 +18,7 @@
 # Build and install SWEEP3D	  #
 # By Scott Pakin <pakin@lanl.gov> #
 ###################################
-SHELL = /bin/sh
+SHELL = /bin/bash
 
 srcdir = .
 top_srcdir = .
@@ -43,10 +43,10 @@ pkglibdir = $(libdir)/sweep3d
 pkgincludedir = $(includedir)/sweep3d
 top_builddir = .
 
-ACLOCAL = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6
-AUTOCONF = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run autoconf
-AUTOMAKE = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6
-AUTOHEADER = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run autoheader
+ACLOCAL = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6
+AUTOCONF = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run autoconf
+AUTOMAKE = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6
+AUTOHEADER = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run autoheader
 
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = /usr/bin/install -c
@@ -68,10 +68,10 @@ POST_UNINSTALL = :
 EXEEXT = 
 OBJEXT = o
 PATH_SEPARATOR = :
-AMTAR = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run tar
+AMTAR = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run tar
 AWK = gawk
-CC = icc
-CPP = icc -E
+CC = gcc
+CPP = gcc -E
 DEPDIR = .deps
 F77 = mpif77
 INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
@@ -80,7 +80,7 @@ STRIP =
 VERSION = 2.2b
 am__include = include
 am__quote = 
-install_sh = /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/install-sh
+install_sh = /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/install-sh
 
 AUTOMAKE_OPTIONS = foreign
 bin_PROGRAMS = sweep
@@ -121,8 +121,8 @@ SCRIPTS = $(bin_SCRIPTS)
 DEFS = -DHAVE_CONFIG_H
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I.
 CPPFLAGS =  -DMPI
-LDFLAGS = 
-LIBS = 
+LDFLAGS = -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib
+LIBS = -lmpi -lrapl
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
 DEP_FILES = ./$(DEPDIR)/timers.Po
@@ -134,7 +134,7 @@ CFLAGS = -g -O2
 F77COMPILE = $(F77) $(AM_FFLAGS) $(FFLAGS)
 F77LD = $(F77)
 F77LINK = $(F77LD) $(AM_FFLAGS) $(FFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-FFLAGS = -g
+FFLAGS = -g -O2
 DIST_SOURCES = $(sweep_SOURCES)
 DATA = $(sweep_IO_DATA)
 
