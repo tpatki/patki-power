@@ -10,5 +10,7 @@ bmark/NAS/bin/is*
 bmark/NAS/bin/lu*
 bmark/NAS/bin/mg*
 bmark/NAS/bin/sp*
-
-
+rapl/libmsr/lib/librapl.so
+rapl/libmsr/turbo
+rapl/libmsr/rapl_clamp
+rapl/libmsr/libmsr.so 
