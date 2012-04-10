@@ -1,12 +1,12 @@
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_rapl.o msr_rapl.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_core.o msr_core.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_common.o msr_common.c
-msr_common.c: In function 'poll':
-msr_common.c:103: warning: unused variable 'i'
-msr_common.c: In function 'msSample':
-msr_common.c:290: warning: unused variable 'i'
+msr_common.c: In function ‘poll’:
+msr_common.c:103: warning: unused variable ‘i’
+msr_common.c: In function ‘msSample’:
+msr_common.c:290: warning: unused variable ‘i’
 msr_common.c: At top level:
-msr_common.c:92: warning: 'poll' defined but not used
+msr_common.c:92: warning: ‘poll’ defined but not used
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_pebs.o msr_pebs.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o blr_util.o blr_util.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_turbo.o msr_turbo.c

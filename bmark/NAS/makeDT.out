@@ -1,0 +1,162 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 1 D 
+mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  dt.c
+mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  DGraph.c
+cd ../common; mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  c_print_results.c
+cd ../common; mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  c_timers.c
+cd ../common; mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  -o c_randdp.o randdp.c
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 2 D 
+mpicc  -c -I/opt/mvapich-gnu-gen2-1.2/include -O3 -fPIC  dt.c
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 4 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 8 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 16 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 32 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 64 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 128 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 256 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 512 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 1024 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd DT; make CLASS=D
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams dt 2048 D 
+mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/DT'

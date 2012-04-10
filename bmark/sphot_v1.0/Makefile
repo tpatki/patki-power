@@ -14,7 +14,7 @@ PROG     = sphot
 LDR      ?=mpif77
 #LDRFLAGS = -qsmp=omp
 LDRFLAGS = -fopenmp
-LIB_DIRS = $(HOME)/local/src/power/rapl/libmsr/lib
+LIB_DIRS = -L$(HOME)/local/src/power/rapl/libmsr/lib
 LIBS     = -lrapl
 ##### End of required modifications section
 

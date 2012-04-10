@@ -70,7 +70,12 @@ sh makeSweep.sh > makeSweep.out 2>&1
 git add makeSweep.out
 git commit -a -m "Just made sweep with RAPL"
 
-cd ../../
+cd ../../sphot_v1.0/
+make >makeSphot.out 2>&1
+git add makeSphot.out
+git commit -a -m "Just made Sphot with RAPL"
+
+cd ../
 
 #cd ./cg/scripts
 #msub cg-experiment.sh
