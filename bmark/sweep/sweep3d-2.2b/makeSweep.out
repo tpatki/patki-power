@@ -1,0 +1,13 @@
+makeSweep.sh: line 11: HOME: command not found
+makeSweep.sh: line 12: HOME: command not found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for Fortran 77 compiler default output file name... 
+configure: error: in `/g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b':
+configure: error: Fortran 77 compiler cannot create executables
+See `config.log' for more details.
+cd . && /bin/bash /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6 
+/bin/bash: /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing: No such file or directory
+make: *** [aclocal.m4] Error 127
