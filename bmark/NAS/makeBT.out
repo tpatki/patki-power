@@ -1,0 +1,341 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=1 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 1 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.1 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=4 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 4 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.4 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=16 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 16 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.16 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=36 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 36 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.36 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=64 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 64 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -O3 -fPIC  -o ../bin/bt.C.64 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=121 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 121 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.121 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=256 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 256 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.256 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=529 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 529 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -O3 -fPIC  -o ../bin/bt.C.529 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=1024 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 1024 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC y_solve.f
+mpif77 -c  -O3 -fPIC z_solve.f
+mpif77 -c  -O3 -fPIC add.f
+mpif77 -c  -O3 -fPIC error.f
+mpif77 -c  -O3 -fPIC verify.f
+mpif77 -c  -O3 -fPIC setup_mpi.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC btio.f
+mpif77 -O3 -fPIC  -o ../bin/bt.C.1024 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd BT; make NPROCS=2025 CLASS=C SUBTYPE= VERSION=
+make[1]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/sys'
+../sys/setparams bt 2025 C 
+make[2]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -c  -O3 -fPIC bt.f
+mpif77 -c  -O3 -fPIC make_set.f
+mpif77 -c  -O3 -fPIC initialize.f
+mpif77 -c  -O3 -fPIC exact_solution.f
+mpif77 -c  -O3 -fPIC exact_rhs.f
+mpif77 -c  -O3 -fPIC set_constants.f
+mpif77 -c  -O3 -fPIC adi.f
+mpif77 -c  -O3 -fPIC define.f
+mpif77 -c  -O3 -fPIC copy_faces.f
+mpif77 -c  -O3 -fPIC rhs.f
+mpif77 -c  -O3 -fPIC solve_subs.f
+mpif77 -c  -O3 -fPIC x_solve.f
+mpif77 -c  -O3 -fPIC y_solve.f
+make[3]: Entering directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+mpif77 -O3 -fPIC  -o ../bin/bt.C.2025 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib -lrapl
+make[3]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[2]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
+make[1]: Leaving directory `/home/tpatki/tapasya/patki-power/bmark/NAS/BT'
