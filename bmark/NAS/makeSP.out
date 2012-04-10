@@ -1,0 +1,160 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=1 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 1 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=4 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 4 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=16 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 16 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=36 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 36 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=64 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 64 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=121 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 121 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=256 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 256 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=529 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 529 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=1024 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 1024 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+cd SP; make NPROCS=2025 CLASS=C
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+../sys/setparams sp 2025 C 
+/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  sp.f
+make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
+make[1]: *** [sp.o] Error 127
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
