@@ -1,0 +1,4 @@
+./wrap.py -f -g -c /home/tpatki/tapasya/test-mvapich/bin/mpicc -o rapl.c rapl.w
+rapl.w:0: MPI_Init is not an MPI function
+    While handling MPI_Init.
+make: *** [rapl.c] Error 1
