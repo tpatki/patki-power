@@ -525,7 +525,8 @@ void write_bt_info(FILE *fp, int nprocs, char class, int io)
   else if (class == 'W') { problem_size = 24;  dt = "0.0008d0";   niter = 200; }
   else if (class == 'A') { problem_size = 64;  dt = "0.0008d0";   niter = 200; }
   else if (class == 'B') { problem_size = 102; dt = "0.0003d0";   niter = 200; }
-  else if (class == 'C') { problem_size = 162; dt = "0.0001d0";   niter = 200; }
+  //else if (class == 'C') { problem_size = 162; dt = "0.0001d0";   niter = 200; }
+  else if (class == 'C') { problem_size = 162; dt = "0.0001d0";   niter = 250; }
   //else if (class == 'D') { problem_size = 408; dt = "0.00002d0";  niter = 250; }
   else if (class == 'D') { problem_size = 408; dt = "0.00002d0";  niter = 200; }
   else if (class == 'E') { problem_size = 1020; dt = "0.4d-5";    niter = 250; }
@@ -583,7 +584,8 @@ void write_lu_info(FILE *fp, int nprocs, char class)
   else if (class == 'W') { problem_size = 33;  dt_default = "1.5d-3"; itmax = 300; }
   else if (class == 'A') { problem_size = 64;  dt_default = "2.0d0";  itmax = 250; }
   else if (class == 'B') { problem_size = 102; dt_default = "2.0d0";  itmax = 250; }
-  else if (class == 'C') { problem_size = 162; dt_default = "2.0d0";  itmax = 250; }
+  else if (class == 'C') { problem_size = 162; dt_default = "2.0d0";  itmax = 300; }
+  //else if (class == 'C') { problem_size = 162; dt_default = "2.0d0";  itmax = 250; }
   //else if (class == 'D') { problem_size = 408; dt_default = "1.0d0";  itmax = 300; }
   else if (class == 'D') { problem_size = 408; dt_default = "1.0d0";  itmax = 250; }
   else if (class == 'E') { problem_size = 1020; dt_default = "0.5d0"; itmax = 300; }

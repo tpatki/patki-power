@@ -2,15 +2,16 @@
 
 #mkdir bin
 
-make sp CLASS=D NPROCS=1
-make sp CLASS=D NPROCS=2
-make sp CLASS=D NPROCS=4
-make sp CLASS=D NPROCS=8
-make sp CLASS=D NPROCS=16
-make sp CLASS=D NPROCS=32
-make sp CLASS=D NPROCS=64
-make sp CLASS=D NPROCS=128
-make sp CLASS=D NPROCS=256
-make sp CLASS=D NPROCS=512
-make sp CLASS=D NPROCS=1024
-make sp CLASS=D NPROCS=2048
+#nprocs must be square
+
+make sp CLASS=C NPROCS=1
+make sp CLASS=C NPROCS=4
+make sp CLASS=C NPROCS=16
+make sp CLASS=C NPROCS=36
+make sp CLASS=C NPROCS=64
+make sp CLASS=C NPROCS=121
+make sp CLASS=C NPROCS=256
+make sp CLASS=C NPROCS=529
+make sp CLASS=C NPROCS=1024
+make sp CLASS=C NPROCS=2025
+

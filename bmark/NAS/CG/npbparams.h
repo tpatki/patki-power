@@ -9,7 +9,7 @@ c
         double precision   shift, rcond
         parameter(  na=1500000,
      >              nonzer=21,
-     >              niter=100,
+     >              niter=75,
      >              shift=500.,
      >              rcond=1.0d-1 )
 
@@ -21,7 +21,7 @@ c number of nodes for which this version is compiled
         logical  convertdouble
         parameter (convertdouble = .false.)
         character*11 compiletime
-        parameter (compiletime='05 Apr 2012')
+        parameter (compiletime='09 Apr 2012')
         character*3 npbversion
         parameter (npbversion='3.3')
         character*6 cs1
@@ -29,12 +29,12 @@ c number of nodes for which this version is compiled
         character*9 cs2
         parameter (cs2='$(MPIF77)')
         character*46 cs3
-        parameter (cs3='-Xlinker -rpath=$(HOME)/local/src/power/rap...')
+        parameter (cs3='-Xlinker -rpath=/home/tpatki/tapasya/patki-...')
         character*6 cs4
         parameter (cs4='(none)')
-        character*44 cs5
-        parameter (cs5='-O3 -fPIC -fpic -shared-intel -mcmodel=large')
-        character*44 cs6
-        parameter (cs6='-O3 -fPIC -fpic -shared-intel -mcmodel=large')
+        character*9 cs5
+        parameter (cs5='-O3 -fPIC')
+        character*10 cs6
+        parameter (cs6='-O3 -fPIC ')
         character*6 cs7
         parameter (cs7='randi8')
