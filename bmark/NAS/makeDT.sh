@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#mkdir bin
+
+make dt CLASS=D NPROCS=1
+make dt CLASS=D NPROCS=2
+make dt CLASS=D NPROCS=4
+make dt CLASS=D NPROCS=8
+make dt CLASS=D NPROCS=16
+make dt CLASS=D NPROCS=32
+make dt CLASS=D NPROCS=64
+make dt CLASS=D NPROCS=128
+make dt CLASS=D NPROCS=256
+make dt CLASS=D NPROCS=512
+make dt CLASS=D NPROCS=1024
+make dt CLASS=D NPROCS=2048

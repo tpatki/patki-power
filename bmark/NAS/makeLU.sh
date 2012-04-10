@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#mkdir bin
+
+make lu CLASS=D NPROCS=1
+make lu CLASS=D NPROCS=2
+make lu CLASS=D NPROCS=4
+make lu CLASS=D NPROCS=8
+make lu CLASS=D NPROCS=16
+make lu CLASS=D NPROCS=32
+make lu CLASS=D NPROCS=64
+make lu CLASS=D NPROCS=128
+make lu CLASS=D NPROCS=256
+make lu CLASS=D NPROCS=512
+make lu CLASS=D NPROCS=1024
+make lu CLASS=D NPROCS=2048

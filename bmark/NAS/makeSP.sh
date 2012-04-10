@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#mkdir bin
+
+make sp CLASS=D NPROCS=1
+make sp CLASS=D NPROCS=2
+make sp CLASS=D NPROCS=4
+make sp CLASS=D NPROCS=8
+make sp CLASS=D NPROCS=16
+make sp CLASS=D NPROCS=32
+make sp CLASS=D NPROCS=64
+make sp CLASS=D NPROCS=128
+make sp CLASS=D NPROCS=256
+make sp CLASS=D NPROCS=512
+make sp CLASS=D NPROCS=1024
+make sp CLASS=D NPROCS=2048
