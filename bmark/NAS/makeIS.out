@@ -11,11 +11,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 4 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -29,11 +25,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 8 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.8 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -47,11 +39,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 16 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.16 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -65,11 +53,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 32 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.32 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -83,11 +67,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 64 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.64 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -101,11 +81,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 128 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.128 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -119,11 +95,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 256 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.256 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -137,11 +109,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 512 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.512 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -155,11 +123,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 1024 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.1024 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -173,8 +137,4 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 2048 C 
 mpicc  -c  -O3 -fPIC is.c
 mpicc -O3 -fPIC -o ../bin/is.C.2048 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/is.C.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make: *** [is] Error 2
