@@ -1,0 +1,80 @@
+filename=rzmerl60_rapl_(null)_0016__XXXXXX
+filename=rzmerl86_rapl_(null)_0176__XXXXXX
+filename=rzmerl61_rapl_(null)_0032__XXXXXX
+filename=rzmerl88_rapl_(null)_0208__XXXXXX
+filename=rzmerl59_rapl_(null)_0000__XXXXXX
+filename=rzmerl87_rapl_(null)_0192__XXXXXX
+filename=rzmerl123_rapl_(null)_0240__XXXXXX
+filename=rzmerl85_rapl_(null)_0160__XXXXXX
+filename=rzmerl119_rapl_(null)_0224__XXXXXX
+filename=rzmerl79_rapl_(null)_0064__XXXXXX
+filename=rzmerl80_rapl_(null)_0080__XXXXXX
+filename=rzmerl81_rapl_(null)_0096__XXXXXX
+filename=rzmerl82_rapl_(null)_0112__XXXXXX
+filename=rzmerl84_rapl_(null)_0144__XXXXXX
+filename=rzmerl83_rapl_(null)_0128__XXXXXX
+filename=rzmerl78_rapl_(null)_0048__XXXXXX
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
