@@ -5,7 +5,7 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src
 cd bin; \
 	mpif77 -fopenmp *.o -o sphot -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl ; \
 	mv sphot ../.
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 /usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
 mv: cannot stat `sphot': No such file or directory
 make: *** [sphot] Error 1
