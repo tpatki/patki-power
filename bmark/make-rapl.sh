@@ -26,6 +26,14 @@ git commit -a -m "Just made Librapl"
 
 cd ../../../bmark
 
+cd rapl-dummy/
+make clean
+make > makeDummy.out 2>&1
+git add makeDummy.out
+git commit -a -m "Just made rapl-dummy with RAPL"
+
+cd ..
+
 mkdir ./NAS/bin
 cd ./NAS/
 make clean
