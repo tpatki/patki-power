@@ -1,6 +1,7 @@
 #Ignore the following files and the bin folder in cg
 *.o
 #sweep
+.*.swp
 bmark/NAS/bin/bt*
 bmark/NAS/bin/cg*
 bmark/NAS/bin/dt*
