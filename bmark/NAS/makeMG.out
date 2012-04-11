@@ -12,6 +12,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.8 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -29,6 +30,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.16 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -46,6 +48,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.32 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -63,6 +66,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.64 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -80,6 +84,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.128 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -97,6 +102,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.256 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -114,6 +120,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.512 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -131,6 +138,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.1024 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -148,6 +156,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC -o ../bin/mg.D.2048 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/mg.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/MG'
 make: *** [mg] Error 2
