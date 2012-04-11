@@ -10,9 +10,159 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 1 D 
 mpif77 -c  -O3 -fPIC ft.f
-mpif77 -O3 -fPIC -o ../bin/ft.D.1 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-make[1]: *** [../bin/ft.D.1] Error 1
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:87:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+ft.f:103.31:
+
+      double precision twiddle(ntdivnp)                                 
+                               1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+ft.f:103.39:
+
+      double precision twiddle(ntdivnp)                                 
+                                       1
+Error: The module or main program array 'twiddle' at (1) must have constant shape
+ft.f:100.26:
+
+      double complex   u0(ntdivnp),                                     
+                          1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+ft.f:100.34:
+
+      double complex   u0(ntdivnp),                                     
+                                  1
+Error: The module or main program array 'u0' at (1) must have constant shape
+ft.f:101.26:
+
+     >                 u1(ntdivnp),                                     
+                          1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+ft.f:101.34:
+
+     >                 u1(ntdivnp),                                     
+                                  1
+Error: The module or main program array 'u1' at (1) must have constant shape
+ft.f:102.26:
+
+     >                 u2(ntdivnp)                                      
+                          1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+ft.f:102.34:
+
+     >                 u2(ntdivnp)                                      
+                                  1
+Error: The module or main program array 'u2' at (1) must have constant shape
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:209:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:243:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:350:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:659:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:736:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:775:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+ft.f:777.24:
+
+      double complex x1(ntdivnp), x2(ntdivnp)                           
+                        1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+ft.f:777.37:
+
+      double complex x1(ntdivnp), x2(ntdivnp)                           
+                                     1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:870:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:917:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:964:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:1014:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:1063:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+npbparams.h:12.28:
+    Included at global.h:1:
+    Included at ft.f:1200:
+
+        parameter (ntdivnp=((nx*ny)/np_min)*nz)                         
+                            1
+Error: Arithmetic overflow at (1)
+ft.f:1202.25:
+
+      double complex xin(ntdivnp), xout(ntdivnp)                        
+                         1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+ft.f:1202.40:
+
+      double complex xin(ntdivnp), xout(ntdivnp)                        
+                                        1
+Error: Variable 'ntdivnp' cannot appear in the expression at (1)
+Fatal Error: Error count reached limit of 25.
+make[1]: *** [ft.o] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
    =========================================
@@ -29,6 +179,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.2 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.2] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -46,6 +197,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.4 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -63,6 +215,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.8 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -80,6 +233,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.16 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -97,6 +251,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.32 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -114,6 +269,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.64 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -131,6 +287,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.128 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -148,6 +305,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.256 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -165,6 +323,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.512 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -182,6 +341,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.1024 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -199,6 +359,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.2048 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
 make: *** [ft] Error 2
