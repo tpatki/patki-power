@@ -11,11 +11,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 1 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.1 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.1] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -29,11 +25,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 2 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.2 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.2] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -47,11 +39,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 4 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.4 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -65,11 +53,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 8 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.8 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -83,11 +67,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 16 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.16 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -101,11 +81,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 32 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.32 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -119,11 +95,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 64 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.64 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -137,11 +109,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 128 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.128 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -155,11 +123,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 256 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.256 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -173,11 +137,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 512 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.512 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -191,11 +151,7 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 1024 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.1024 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -209,8 +165,4 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ep 2048 D 
 mpif77 -c  -O3 -fPIC ep.f
 mpif77 -O3 -fPIC -o ../bin/ep.D.2048 ep.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/ep.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/EP'
-make: *** [ep] Error 2
