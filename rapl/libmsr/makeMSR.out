@@ -21,6 +21,5 @@ rapl_clamp.c: In function 'main':
 rapl_clamp.c:33: warning: unused variable 'status'
 make -C mpi
 make[1]: Entering directory `/g/g24/rountree/local/src/power/rapl/libmsr/mpi'
-mpicc  -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
 mpicc  ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../cpuid.o rapl.o -shared -Wl,-soname,librapl.so -o ../lib/librapl.so  
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/rapl/libmsr/mpi'
