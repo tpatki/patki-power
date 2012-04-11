@@ -9,9 +9,13 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 cc -g  -o setparams setparams.c
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+cd ../common; mpif77 -c  -O3 -fPIC print_results.f
+cd ../common; mpif77 -c  -O3 -fPIC randi8.f
+cd ../common; mpif77 -c  -O3 -fPIC timers.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.1] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -25,9 +29,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.2] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -41,9 +46,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 4 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -57,9 +63,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 8 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -73,9 +80,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 16 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -89,9 +97,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 32 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -105,9 +114,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 64 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -121,9 +131,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 128 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -137,9 +148,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 256 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -153,9 +165,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 512 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -169,9 +182,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1024 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
@@ -185,8 +199,9 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2048 D 
-/home/tpatki/tapasya/test-mvapich/bin/mpif77 -c -I/home/tpatki/tapasya/test-mvapich/include -O3  cg.f
-make[1]: /home/tpatki/tapasya/test-mvapich/bin/mpif77: Command not found
-make[1]: *** [cg.o] Error 127
+mpif77 -c  -O3 -fPIC cg.f
+mpif77 -O3 -fPIC -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+make[1]: *** [../bin/cg.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
