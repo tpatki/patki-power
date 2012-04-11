@@ -2,7 +2,7 @@
 
 #mkdir bin
 
-make ft CLASS=D NPROCS=1
+#make ft CLASS=D NPROCS=1
 make ft CLASS=D NPROCS=2
 make ft CLASS=D NPROCS=4
 make ft CLASS=D NPROCS=8
