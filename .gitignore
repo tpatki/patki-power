@@ -15,3 +15,4 @@ rapl/libmsr/lib/librapl.so
 rapl/libmsr/turbo
 rapl/libmsr/rapl_clamp
 rapl/libmsr/libmsr.so 
+bmark/rapl-dummy/rapl-dummy
