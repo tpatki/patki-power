@@ -74,11 +74,13 @@ git add makeSP.out
 git commit -a -m "Just made SP with RAPL"
 
 cd ../sweep/sweep3d-2.2b/
+make clean
 sh makeSweep.sh > makeSweep.out 2>&1
 git add makeSweep.out
 git commit -a -m "Just made sweep with RAPL"
 
 cd ../../sphot_v1.0/
+make clean
 make >makeSphot.out 2>&1
 git add makeSphot.out
 git commit -a -m "Just made Sphot with RAPL"
