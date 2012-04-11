@@ -45,5 +45,6 @@ export DRAM_MINW_MINS=0x38078
 export MSR_PKG_POWER_LIMIT=0x0
 export MSR_PP0_POWER_LIMIT=0x0
 export MSR_DRAM_POWER_LIMIT=0x0
+export MSR_RANK_MOD=16
 
 srun --nodes=16 --ntasks=256 -o rapl-dummy.out -e rapl-dummy.err ../../../rapl-dummy/rapl-dummy
