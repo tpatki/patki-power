@@ -10,6 +10,8 @@ make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 4 C 
 mpicc  -c  -O3 -fPIC is.c
+cd ../common; mpicc  -c  -O3 -fPIC c_print_results.c
+cd ../common; mpicc  -c  -O3 -fPIC c_timers.c
 mpicc -O3 -fPIC -o ../bin/is.C.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
