@@ -7,6 +7,8 @@
 
 export POWER_DIR=${HOME}/local/src/power
 
+echo $POWER_DIR
+
 cd ${POWER_DIR}/bmark/NAS/CG/scripts
 sh cg-rapl-16-node.sh
 cd ${POWER_DIR}/dummy-tmp
