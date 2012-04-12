@@ -5,17 +5,9 @@
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 1 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc  -c  -O3 -fPIC DGraph.c
-cd ../common; mpicc  -c  -O3 -fPIC c_print_results.c
-cd ../common; mpicc  -c  -O3 -fPIC c_timers.c
-cd ../common; mpicc  -c  -O3 -fPIC -o c_randdp.o randdp.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -23,13 +15,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 2 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -37,13 +25,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 4 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -51,13 +35,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 8 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -65,13 +45,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 16 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -79,13 +55,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 32 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -93,13 +65,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 64 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -107,13 +75,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 128 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -121,13 +85,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 256 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -135,13 +95,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 512 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -149,13 +105,9 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 1024 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -163,10 +115,6 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
 
 cd DT; make CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams dt 2048 D 
-mpicc  -c  -O3 -fPIC dt.c
-mpicc -O3 -fPIC -o ../bin/dt.D dt.o DGraph.o ../common/c_print_results.o ../common/c_timers.o ../common/c_randdp.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+make[1]: *** No targets specified and no makefile found.  Stop.
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
+make: *** [dt] Error 2
