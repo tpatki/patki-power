@@ -1,0 +1,104 @@
+filename=rzmerl103_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0000__XXXXXX
+filename=rzmerl107_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0016__XXXXXX
+filename=rzmerl111_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0032__XXXXXX
+filename=rzmerl115_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0048__XXXXXX
+blr_util.c::21  Error opening rzmerl103_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0000__mbF5gf for reading.
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00002AAAAC0FCD29  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC107988  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF21C90  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22F77  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22D61  Unknown               Unknown  Unknown
+cg.D.64            00000000004099CC  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E90  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E2C  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC0D7CDD  Unknown               Unknown  Unknown
+cg.D.64            0000000000404D29  Unknown               Unknown  Unknown
+blr_util.c::21  Error opening rzmerl115_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0048__M05GWc for reading.
+blr_util.c::21  Error opening rzmerl111_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0032__YA1sIg for reading.
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00002AAAAC0FCD29  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC107988  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF21C90  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22F77  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22D61  Unknown               Unknown  Unknown
+cg.D.64            00000000004099CC  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E90  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E2C  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC0D7CDD  Unknown               Unknown  Unknown
+cg.D.64            0000000000404D29  Unknown               Unknown  Unknown
+blr_util.c::21  Error opening rzmerl107_rapl_/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64_0016__weeozf for reading.
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00002AAAAC0FCD29  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC107988  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF21C90  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22F77  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22D61  Unknown               Unknown  Unknown
+cg.D.64            00000000004099CC  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E90  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E2C  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC0D7CDD  Unknown               Unknown  Unknown
+cg.D.64            0000000000404D29  Unknown               Unknown  Unknown
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00002AAAAC0FCD29  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC107988  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF21C90  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22F77  Unknown               Unknown  Unknown
+librapl.so         00002AAAAAF22D61  Unknown               Unknown  Unknown
+cg.D.64            00000000004099CC  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E90  Unknown               Unknown  Unknown
+cg.D.64            0000000000404E2C  Unknown               Unknown  Unknown
+libc.so.6          00002AAAAC0D7CDD  Unknown               Unknown  Unknown
+cg.D.64            0000000000404D29  Unknown               Unknown  Unknown
+slurmd[rzmerl103]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl106]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl107]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl112]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl111]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl105]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl108]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl109]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl110]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl104]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl113]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl117]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl115]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl116]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl118]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl114]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl107]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl111]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl115]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl103]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl106]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl104]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl112]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl113]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl105]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl118]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl108]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl109]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl114]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl110]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl117]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
+slurmd[rzmerl116]: *** STEP 5434.61 KILLED AT 2012-04-12T14:56:06 WITH SIGNAL 9 ***
