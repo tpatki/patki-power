@@ -1,7 +1,4 @@
 #!/bin/bash
-#MSUB -l nodes=16
-#MSUB -q pbatch
-#MSUB -l walltime=02:30:00
 
 #BLR_BENCHMARK is exported by runCL.sh
 
@@ -27,7 +24,7 @@ export MSR_RANK_MOD=16
 #LD_LIB_PATH should not be needed, ideally
 #export LD_LIBRARY_PATH=$(HOME)/local/src/power/rapl/libmsr/lib:LD_LIBRARY_PATH
 
- for pkg in 0x038198 0x038208 0x038280 0x0382f8
+ for pkg in 0x38198 0x038208 0x038280 0x0382f8
        do
                export MSR_PKG_POWER_LIMIT=${pkg}
                for dram in 0x038078 0x0380a0 0x0380c8 0x0380f0
@@ -38,6 +35,4 @@ export MSR_RANK_MOD=16
 		done
 	done
 
-export MSR_PKG_POWER_LIMIT=0x0
-export MSR_PP0_POWER_LIMIT=0x0
-export MSR_DRAM_POWER_LIMIT=0x0
+#Resetting is done by the top-level script

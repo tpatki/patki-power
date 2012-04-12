@@ -18,5 +18,5 @@ echo 'cores: '$2 >> info
 echo 'nodes: '$1 >> info
 
 
-srun --nodes=$1 --ntasks=$tasks -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh $tasks
+srun --nodes=$1 --ntasks=$2 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh $2
 
