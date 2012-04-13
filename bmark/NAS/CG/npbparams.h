@@ -21,7 +21,7 @@ c number of nodes for which this version is compiled
         logical  convertdouble
         parameter (convertdouble = .false.)
         character*11 compiletime
-        parameter (compiletime='12 Apr 2012')
+        parameter (compiletime='13 Apr 2012')
         character*3 npbversion
         parameter (npbversion='3.3')
         character*6 cs1
