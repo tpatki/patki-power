@@ -742,8 +742,8 @@ void write_cg_info(FILE *fp, int nprocs, char class)
   else if( class == 'C' )
   { na=150000;  nonzer=15; niter=75;  shift=shiftC; }
   else if( class == 'D' )
-  //{ na=1500000; nonzer=21; niter=75; shift=shiftD; }
-  { na=1500000; nonzer=21; niter=100; shift=shiftD; }
+  { na=1500000; nonzer=21; niter=75; shift=shiftD; }
+  //{ na=1500000; nonzer=21; niter=100; shift=shiftD; }
   else if( class == 'E' )
   { na=9000000; nonzer=26; niter=100; shift=shiftE; }
   else
