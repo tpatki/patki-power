@@ -24,5 +24,5 @@ export MSR_DRAM_POWER_LIMIT=0x0
 export MSR_RANK_MOD=16
 
 echo 'Resetting now...'
-srun --nodes=16 --ntasks=256 -o rapl-dummy.out -e rapl-dummy.err ../bmark/rapl-dummy/rapl-dummy
+srun --nodes=1 --ntasks=16 -o rapl-dummy.out -e rapl-dummy.err ../bmark/rapl-dummy/rapl-dummy
 cd ..
