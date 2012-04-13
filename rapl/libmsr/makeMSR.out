@@ -1,0 +1,175 @@
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o msr_core.o msr_core.c
+msr_core.c(67): remark #181: argument is incompatible with corresponding format string conversion
+  				__FILE__, __LINE__, rc, socket, fd[socket], socket, msr, msr, val, val, errno );
+  				                                                              ^
+
+msr_core.c(79): remark #181: argument is incompatible with corresponding format string conversion
+  				__FILE__, __LINE__, rc, socket, msr, msr, *val, *val );
+  				                                          ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o msr_rapl.o msr_rapl.c
+msr_rapl.c(541): remark #181: argument is incompatible with corresponding format string conversion
+  	    s->power_info[socket][PKG_DOMAIN].max_time_window,
+  	    ^
+
+msr_rapl.c(543): remark #181: argument is incompatible with corresponding format string conversion
+  	    s->power_info[socket][PKG_DOMAIN].max_power,
+  	    ^
+
+msr_rapl.c(545): remark #181: argument is incompatible with corresponding format string conversion
+  	    s->power_info[socket][PKG_DOMAIN].min_power,
+  	    ^
+
+msr_rapl.c(547): remark #181: argument is incompatible with corresponding format string conversion
+  	    s->power_info[socket][PKG_DOMAIN].thermal_spec_power);
+  	    ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o msr_common.o msr_common.c
+msr_common.c(39): remark #177: variable "info" was declared but never referenced
+  	struct power_info_s info[NUM_DOMAINS];
+  	                    ^
+
+msr_common.c(40): remark #177: variable "joules" was declared but never referenced
+  	double joules[NUM_DOMAINS]; 
+  	       ^
+
+msr_common.c(41): remark #177: variable "last_raw_joules" was declared but never referenced
+  	uint64_t last_raw_joules[NUM_DOMAINS];
+  	         ^
+
+msr_common.c(42): remark #177: variable "now" was declared but never referenced
+  	struct timeval now;
+  	               ^
+
+msr_common.c(117): remark #1419: external declaration in primary source file
+  extern void rapl_poll(const char * const filename, int log);
+              ^
+
+msr_common.c(118): remark #1419: external declaration in primary source file
+  extern void msSample(const char * const filename, int log);
+              ^
+
+msr_common.c(120): remark #1418: external function definition with no prior declaration
+  void usage(const char *name){
+       ^
+
+msr_pebs.h(15): remark #177: variable "INSTR_RETIRED__ANY_P" was declared but never referenced
+  static const uint16_t INSTR_RETIRED__ANY_P		= 0x00c0;
+                        ^
+
+msr_pebs.h(16): remark #177: variable "X87_OPS_RETIRED__ANY" was declared but never referenced
+  static const uint16_t X87_OPS_RETIRED__ANY		= 0xfec1;
+                        ^
+
+msr_pebs.h(17): remark #177: variable "BR_INST_RETIRED__MISPRED" was declared but never referenced
+  static const uint16_t BR_INST_RETIRED__MISPRED		= 0x00c5;
+                        ^
+
+msr_pebs.h(18): remark #177: variable "SIMD_INST_RETIRED__ANY" was declared but never referenced
+  static const uint16_t SIMD_INST_RETIRED__ANY		= 0x1fc7;
+                        ^
+
+msr_pebs.h(19): remark #177: variable "MEM_LOAD_RETIRED__L1D_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L1D_MISS	= 0x01cb;
+                        ^
+
+msr_pebs.h(20): remark #177: variable "MEM_LOAD_RETIRED__L1D_LINE_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L1D_LINE_MISS	= 0x02cb;
+                        ^
+
+msr_pebs.h(21): remark #177: variable "MEM_LOAD_RETIRED__L2_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L2_MISS		= 0x04cb;
+                        ^
+
+msr_pebs.h(23): remark #177: variable "MEM_LOAD_RETIRED__DTLB_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__DTLB_MISS	= 0x10cb;
+                        ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o msr_pebs.o msr_pebs.c
+msr_pebs.h(14): remark #177: variable "UNUSED_COUNTER" was declared but never referenced
+  static const uint16_t UNUSED_COUNTER			= 0x0000;
+                        ^
+
+msr_pebs.h(15): remark #177: variable "INSTR_RETIRED__ANY_P" was declared but never referenced
+  static const uint16_t INSTR_RETIRED__ANY_P		= 0x00c0;
+                        ^
+
+msr_pebs.h(16): remark #177: variable "X87_OPS_RETIRED__ANY" was declared but never referenced
+  static const uint16_t X87_OPS_RETIRED__ANY		= 0xfec1;
+                        ^
+
+msr_pebs.h(17): remark #177: variable "BR_INST_RETIRED__MISPRED" was declared but never referenced
+  static const uint16_t BR_INST_RETIRED__MISPRED		= 0x00c5;
+                        ^
+
+msr_pebs.h(18): remark #177: variable "SIMD_INST_RETIRED__ANY" was declared but never referenced
+  static const uint16_t SIMD_INST_RETIRED__ANY		= 0x1fc7;
+                        ^
+
+msr_pebs.h(19): remark #177: variable "MEM_LOAD_RETIRED__L1D_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L1D_MISS	= 0x01cb;
+                        ^
+
+msr_pebs.h(20): remark #177: variable "MEM_LOAD_RETIRED__L1D_LINE_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L1D_LINE_MISS	= 0x02cb;
+                        ^
+
+msr_pebs.h(21): remark #177: variable "MEM_LOAD_RETIRED__L2_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L2_MISS		= 0x04cb;
+                        ^
+
+msr_pebs.h(22): remark #177: variable "MEM_LOAD_RETIRED__L2_LINE_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__L2_LINE_MISS	= 0x08cb;
+                        ^
+
+msr_pebs.h(23): remark #177: variable "MEM_LOAD_RETIRED__DTLB_MISS" was declared but never referenced
+  static const uint16_t MEM_LOAD_RETIRED__DTLB_MISS	= 0x10cb;
+                        ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o blr_util.o blr_util.c
+blr_util.c(13): remark #177: variable "fd" was declared but never referenced
+  	int fd=-1;
+  	    ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o msr_turbo.o msr_turbo.c
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o msr_opt.o msr_opt.c
+msr_opt.c(34): remark #593: variable "msr_dram_power_limit" was set but never used
+  	uint64_t msr_pkg_power_limit=-1, msr_pp0_power_limit=-1, msr_dram_power_limit=-1;
+  	                                                         ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o cpuid.o cpuid.c
+cpuid.c(26): remark #1418: external function definition with no prior declaration
+  int whitespace(char c)
+      ^
+
+cpuid.c(37): remark #1418: external function definition with no prior declaration
+  int readline(FILE *fd, char *line, int len)
+      ^
+
+mpicc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -O2    -c -o rapl_poll.o rapl_poll.c
+rapl_poll.c(24): remark #1418: external function definition with no prior declaration
+  void rapl_poll(const char * const filename, int log){
+       ^
+
+rapl_poll.c(81): warning #267: the format string requires additional arguments
+  	    );
+  	    ^
+
+rapl_poll.c(97): remark #1572: floating-point equality and inequality comparisons are unreliable
+    while(!joules[PKG_DOMAIN]){    
+           ^
+
+rapl_poll.c(149): error: expected an expression
+         ){
+         ^
+
+rapl_poll.c(202): warning #267: the format string requires additional arguments
+  	      );
+  	      ^
+
+rapl_poll.c(208): remark #111: statement is unreachable
+    return;
+    ^
+
+compilation aborted for rapl_poll.c (code 2)
+make: *** [rapl_poll.o] Error 2
