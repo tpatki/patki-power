@@ -50,10 +50,10 @@ static int msr_rank_mod=1;
 
 static int fortran_init = 0;
 /* ================== C Wrappers for MPI_Init ================== */
-_EXTERN_C_ int PMPI_Init(int *argc, char ***argv);
-_EXTERN_C_ int MPI_Init(int *argc, char ***argv) { 
+_EXTERN_C_ int PMPI_Init(int *arg_0, char ***arg_1);
+_EXTERN_C_ int MPI_Init(int *arg_0, char ***arg_1) { 
     int _wrap_py_return_val = 0;
-    if (in_wrapper) return PMPI_Init(argc, argv);
+    if (in_wrapper) return PMPI_Init(arg_0, arg_1);
     in_wrapper = 1;
 
      parse_proc_cpuinfo();
@@ -75,7 +75,7 @@ _EXTERN_C_ int MPI_Init(int *argc, char ***argv) {
         pmpi_init_(&_wrap_py_return_val);
 #endif /* !PIC */
     } else {
-        _wrap_py_return_val = PMPI_Init(argc, argv);
+        _wrap_py_return_val = PMPI_Init(arg_0, arg_1);
     }
 
 	rank = -1;
