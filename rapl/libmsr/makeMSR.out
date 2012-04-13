@@ -9,6 +9,8 @@ msr_common.c: At top level:
 msr_common.c:92: warning: 'poll' defined but not used
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_pebs.o msr_pebs.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o blr_util.o blr_util.c
+blr_util.c: In function 'safe_mkstemp':
+blr_util.c:13: warning: unused variable 'fd'
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_turbo.o msr_turbo.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_opt.o msr_opt.c
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o cpuid.o cpuid.c
@@ -19,6 +21,8 @@ gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -
 gcc -fPIC -Wall -DTEST_HARNESS -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2  -o rapl_clamp rapl_clamp.c msr_core.c cpuid.c msr_rapl.c msr_opt.c blr_util.c
 rapl_clamp.c: In function 'main':
 rapl_clamp.c:33: warning: unused variable 'status'
+blr_util.c: In function 'safe_mkstemp':
+blr_util.c:13: warning: unused variable 'fd'
 make -C mpi
 make[1]: Entering directory `/g/g24/rountree/local/src/power/rapl/libmsr/mpi'
 mpicc  ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../cpuid.o rapl.o -shared -Wl,-soname,librapl.so -o ../lib/librapl.so  
