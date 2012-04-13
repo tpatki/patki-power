@@ -1,0 +1,3 @@
+/g/g24/rountree/local/src/power
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+slurmd[rzmerl140]: *** JOB 5680 CANCELLED AT 2012-04-13T09:46:31 DUE TO TIME LIMIT ***

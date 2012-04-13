@@ -1,7 +1,7 @@
 #!/bin/bash
 #MSUB -l nodes=1
 #MSUB -q pbatch
-#MSUB -l walltime=00:15:00
+#MSUB -l walltime=00:55:00
 
 #Call the child script that does the runs
 
