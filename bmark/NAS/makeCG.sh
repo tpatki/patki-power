@@ -2,6 +2,8 @@
 
 #mkdir bin
 
+make cg CLASS=A NPROCS=16
+
 make cg CLASS=D NPROCS=1
 make cg CLASS=D NPROCS=2
 make cg CLASS=D NPROCS=4
