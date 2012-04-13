@@ -11,7 +11,23 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 2 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.2 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__io_return':
+for_diags_intel.c:(.text+0x9f7): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xab9): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xb0a): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__issue_diagnostic':
+for_diags_intel.c:(.text+0xc2f): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xc94): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1035): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x10bd): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x119d): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x11e1): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__get_msg':
+for_diags_intel.c:(.text+0x12a8): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1392): additional relocation overflows omitted from the output
+make[1]: *** [../bin/ft.D.2] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -25,7 +41,23 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 4 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.4 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__io_return':
+for_diags_intel.c:(.text+0x9f7): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xab9): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xb0a): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__issue_diagnostic':
+for_diags_intel.c:(.text+0xc2f): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xc94): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1035): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x10bd): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x119d): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x11e1): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__get_msg':
+for_diags_intel.c:(.text+0x12a8): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1392): additional relocation overflows omitted from the output
+make[1]: *** [../bin/ft.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -39,7 +71,23 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 8 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.8 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__io_return':
+for_diags_intel.c:(.text+0x9f7): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xab9): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xb0a): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__issue_diagnostic':
+for_diags_intel.c:(.text+0xc2f): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xc94): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1035): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x10bd): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x119d): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x11e1): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__get_msg':
+for_diags_intel.c:(.text+0x12a8): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1392): additional relocation overflows omitted from the output
+make[1]: *** [../bin/ft.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -53,7 +101,23 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 16 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.16 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__io_return':
+for_diags_intel.c:(.text+0x9f7): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xab9): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xb0a): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__issue_diagnostic':
+for_diags_intel.c:(.text+0xc2f): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xc94): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1035): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x10bd): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x119d): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x11e1): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__get_msg':
+for_diags_intel.c:(.text+0x12a8): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1392): additional relocation overflows omitted from the output
+make[1]: *** [../bin/ft.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -67,7 +131,23 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams ft 32 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC -o ../bin/ft.D.32 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__io_return':
+for_diags_intel.c:(.text+0x9f7): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xab9): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xb0a): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__issue_diagnostic':
+for_diags_intel.c:(.text+0xc2f): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xc94): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1035): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x10bd): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x119d): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x11e1): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__get_msg':
+for_diags_intel.c:(.text+0x12a8): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0x1392): additional relocation overflows omitted from the output
+make[1]: *** [../bin/ft.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/FT'
+make: *** [ft] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
