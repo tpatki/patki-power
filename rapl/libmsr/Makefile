@@ -16,7 +16,7 @@ DEFINES +=-O2
 endif
 
 CFLAGS=-fPIC -Wall ${DEFINES} ${COMPILER_SPECIFIC_FLAGS}
-CC=gcc
+CC=mpicc
 
 .PHONY: mpi
 
@@ -36,7 +36,7 @@ cpuid.o: cpuid.h Makefile
 
 $(target): msr_rapl.o msr_core.o msr_common.o msr_pebs.o blr_util.o msr_turbo.o\
  msr_opt.o blr_util.o cpuid.o
-	gcc -fPIC -Wall ${DEFINES} -o $(target) msr_pebs.c msr_rapl.o\
+	$(CC) -fPIC -Wall ${DEFINES} -o $(target) msr_pebs.c msr_rapl.o\
  msr_common.o msr_core.o msr_opt.o blr_util.o -lrt
 
 install: $(library) $(target) msr_rapl.h msr_core.h blr_util.h msr_freq.h msr_common.h turbo rapl_clamp plot.R
@@ -46,7 +46,7 @@ install: $(library) $(target) msr_rapl.h msr_core.h blr_util.h msr_freq.h msr_co
 	install -m 0744 -t $(HOME)/local/bin/ turbo rapl_clamp $(target) plot.R
 
 $(library): msr_rapl.o blr_util.o msr_core.o msr_turbo.o msr_pebs.o msr_opt.o
-	gcc -shared -Wl,-soname,$(library) -o $(library) $^
+	$(CC) -shared -Wl,-soname,$(library) -o $(library) $^
 
 turbo: turbo.c cpuid.c msr_turbo.c msr_core.c
 	$(CC) $(CFLAGS) -o $@ $^
