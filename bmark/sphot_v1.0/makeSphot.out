@@ -1,33 +1,73 @@
 make -C src -f Makefile.src
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/allocdyn.o  allocdyn.f 
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/copyglob.o  copyglob.f 
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/copypriv.o copypriv.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/copyseed.o copyseed.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/execute.o execute.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/genmesh.o genmesh.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/genxsec.o genxsec.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/interp.o interp.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/iranfeven.o iranfeven.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/iranfodd.o iranfodd.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/plnkut.o plnkut.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/pranf.o pranf.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/ranf.o ranf.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/ranfatok.o ranfatok.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/ranfk.o ranfk.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/ranfkbinary.o ranfkbinary.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/ranfmodmult.o ranfmodmult.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/rans.o rans.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/rdinput.o rdinput.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/rdopac.o rdopac.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/msecond.o msecond.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/seedranf.o seedranf.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/sphot.o sphot.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/thom.o thom.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/writeout.o writeout.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/wroutput.o wroutput.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/zonevols.o zonevols.f
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src'
 cd bin; \
 	mpif77 -fopenmp *.o -o sphot -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl ; \
 	mv sphot ../.
+ifort: command line warning #10006: ignoring unknown option '-fopenmp'
+copypriv.o: In function `copypriv':
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/copypriv.f:78: undefined reference to `omp_get_num_threads_'
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/copypriv.f:79: undefined reference to `omp_get_thread_num_'
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/copypriv.f:128: undefined reference to `omp_get_thread_num_'
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/copypriv.f:142: undefined reference to `omp_get_thread_num_'
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/copypriv.f:239: undefined reference to `omp_get_thread_num_'
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/copypriv.f:281: undefined reference to `omp_get_thread_num_'
+sphot.o:/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/sphot.f:169: more undefined references to `omp_get_thread_num_' follow
+sphot.o: In function `sphot':
+/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src/sphot.f:170: undefined reference to `omp_get_num_threads_'
+mv: cannot stat `sphot': No such file or directory
+make: *** [sphot] Error 1
