@@ -1,7 +1,7 @@
 #!/bin/bash
 #MSUB -l nodes=16
 #MSUB -q pbatch
-#MSUB -l walltime=00:50:00
+#MSUB -l walltime=02:40:00
 
 #Call the child script that does the runs
 
@@ -9,8 +9,8 @@ export POWER_DIR=${HOME}/local/src/power
 
 echo $POWER_DIR
 
-cd ${POWER_DIR}/bmark/NAS/EP/scripts
-sh ep-rapl-128-node.sh
+cd ${POWER_DIR}/bmark/NAS/IS/scripts
+sh is-rapl-16-node.sh
 cd ${POWER_DIR}/dummy-tmp
 
 
@@ -24,5 +24,5 @@ export MSR_DRAM_POWER_LIMIT=0x0
 export MSR_RANK_MOD=16
 
 echo 'Resetting now...'
-srun --nodes=128 --ntasks=2048 -o rapl-dummy.out -e rapl-dummy.err ../bmark/rapl-dummy/rapl-dummy
+srun --nodes=16 --ntasks=256 -o rapl-dummy.out -e rapl-dummy.err ../bmark/rapl-dummy/rapl-dummy
 cd ..
