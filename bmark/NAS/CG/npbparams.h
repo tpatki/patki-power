@@ -9,7 +9,7 @@ c
         double precision   shift, rcond
         parameter(  na=1500000,
      >              nonzer=21,
-     >              niter=75,
+     >              niter=100,
      >              shift=500.,
      >              rcond=1.0d-1 )
 
