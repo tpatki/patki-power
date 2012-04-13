@@ -1,18 +1,2 @@
 mpicc  -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
-rapl.c(62): warning #279: controlling expression is constant
-          if (!PMPI_INIT && !pmpi_init && !pmpi_init_ && !pmpi_init__) {
-               ^
-
-rapl.c(62): warning #279: controlling expression is constant
-          if (!PMPI_INIT && !pmpi_init && !pmpi_init_ && !pmpi_init__) {
-                             ^
-
-rapl.c(62): warning #279: controlling expression is constant
-          if (!PMPI_INIT && !pmpi_init && !pmpi_init_ && !pmpi_init__) {
-                                           ^
-
-rapl.c(62): warning #279: controlling expression is constant
-          if (!PMPI_INIT && !pmpi_init && !pmpi_init_ && !pmpi_init__) {
-                                                          ^
-
 mpicc  ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../cpuid.o rapl.o -shared -Wl,-soname,librapl.so -o ../lib/librapl.so  
