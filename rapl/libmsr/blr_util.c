@@ -14,7 +14,10 @@ safe_mkstemp( const char *hostname, const char *tag, int mpi_rank ){
 	char filename[1024];
 	char *benchmark;
 	benchmark = getenv("BLR_BENCHMARK");
-	sprintf(filename, "%s_%s_%s_%04d__XXXXXX", hostname, tag, benchmark, mpi_rank);
+
+//Patki commented the following out
+
+/*	sprintf(filename, "%s_%s_%s_%04d__XXXXXX", hostname, tag, benchmark, mpi_rank);
 	fd=mkstemp(filename);
 	fprintf(stderr, "filename=%s\n", filename);
 	if(fd==-1){
@@ -22,6 +25,11 @@ safe_mkstemp( const char *hostname, const char *tag, int mpi_rank ){
 		return (FILE*)-1;
 	}
 	close(fd);
+*/
+
+	//We are creating a unique directory for each run, so the following should work, ideally
+
+	sprintf(filename, "%s_%s_%s_%04d", hostname, tag, benchmark, mpi_rank);
 	f = fopen(filename, "w");
 	return f;
 }
