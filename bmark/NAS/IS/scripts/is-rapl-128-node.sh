@@ -31,7 +31,7 @@ export MSR_RANK_MOD=16
 		do
                     export MSR_DRAM_POWER_LIMIT=${dram}
 		    #Run CG with 16 nodes, with 4,8,16 cores/node
-		    sh ./runIS.sh 32 32 4 16
+		    sh ./runIS.sh 128 128 4 16
 		done
 	done
 
