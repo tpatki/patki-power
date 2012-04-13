@@ -262,3 +262,7 @@ msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x
 : Illegal seek
 msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
 : Illegal seek
+msr_core.c::79  pread returned -1.  cpu=1, msr=416 (0x1a0), val=274886623369 (0x4000850089).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, cpu=1, msr=416 (1a0), val=274886623369 (0x4000850089).  errno=29
+: Illegal seek
