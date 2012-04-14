@@ -5,9 +5,9 @@
  No input file. Using compiled defaults 
  Size: 1024x1024x1024  (class D)
  Iterations:   50
- Number of processes:    512
+ Number of processes:   1024
 
- Initialization time:           0.249 seconds
+ Initialization time:           0.287 seconds
 
   iter    1
   iter    5
@@ -23,19 +23,19 @@
 
  Benchmark completed 
  VERIFICATION SUCCESSFUL 
- L2 Norm is  0.1583275060422E-09
- Error is    0.1139102278795E-10
+ L2 Norm is  0.1583275060430E-09
+ Error is    0.6469878902695E-11
 
 
  MG Benchmark Completed.
  Class           =                        D
  Size            =           1024x1024x1024
  Iterations      =                       50
- Time in seconds =                     3.68
- Total processes =                      512
- Compiled procs  =                      512
- Mop/s total     =                847272.07
- Mop/s/process   =                  1654.83
+ Time in seconds =                     3.20
+ Total processes =                     1024
+ Compiled procs  =                     1024
+ Mop/s total     =                972202.63
+ Mop/s/process   =                   949.42
  Operation type  =           floating point
  Verification    =               SUCCESSFUL
  Version         =                      3.3
