@@ -1,13 +1,54 @@
-makeSweep.sh: line 11: HOME: command not found
-makeSweep.sh: line 12: HOME: command not found
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for gawk... gawk
 checking whether make sets $(MAKE)... yes
-checking for Fortran 77 compiler default output file name... 
-configure: error: in `/g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b':
-configure: error: Fortran 77 compiler cannot create executables
-See `config.log' for more details.
-cd . && /bin/bash /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6 
-/bin/bash: /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing: No such file or directory
-make: *** [aclocal.m4] Error 127
+checking for Fortran 77 compiler default output file name... a.out
+checking whether the Fortran 77 compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether mpif77 accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking if cpp works as expected... yes
+checking for main in -lmpi... no
+
+   Build type: parallel (MPI)
+
+   F77       = mpif77
+   FFLAGS    = -g -O2
+   CPP       = gcc -E
+   CC        = gcc
+
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+gcc -E -DMPI -P msg_stuff.cpp > msg_stuff.f
+make  all-am
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b'
+mpif77  -g -O2 -c -o decomp.o `test -f 'decomp.f' || echo './'`decomp.f
+mpif77  -g -O2 -c -o flux_err.o `test -f 'flux_err.f' || echo './'`flux_err.f
+mpif77  -g -O2 -c -o inner_auto.o `test -f 'inner_auto.f' || echo './'`inner_auto.f
+mpif77  -g -O2 -c -o octant.o `test -f 'octant.f' || echo './'`octant.f
+mpif77  -g -O2 -c -o source.o `test -f 'source.f' || echo './'`source.f
+mpif77  -g -O2 -c -o driver.o `test -f 'driver.f' || echo './'`driver.f
+mpif77  -g -O2 -c -o initialize.o `test -f 'initialize.f' || echo './'`initialize.f
+mpif77  -g -O2 -c -o inner.o `test -f 'inner.f' || echo './'`inner.f
+mpif77  -g -O2 -c -o read_input.o `test -f 'read_input.f' || echo './'`read_input.f
+mpif77  -g -O2 -c -o sweep.o `test -f 'sweep.f' || echo './'`sweep.f
+source='timers.c' object='timers.o' libtool=no \
+	depfile='.deps/timers.Po' tmpdepfile='.deps/timers.TPo' \
+	depmode=gcc3 /bin/sh ./depcomp \
+	gcc -DHAVE_CONFIG_H -I. -I. -I.   -DMPI  -g -O2 -c `test -f 'timers.c' || echo './'`timers.c
+mpif77  -g -O2 -c -o msg_stuff.o `test -f 'msg_stuff.f' || echo './'`msg_stuff.f
+mpif77  -g -O2  -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -o sweep  decomp.o flux_err.o inner_auto.o octant.o source.o driver.o initialize.o inner.o read_input.o sweep.o timers.o msg_stuff.o  -lrapl
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b'
