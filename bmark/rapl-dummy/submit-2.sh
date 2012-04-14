@@ -5,6 +5,6 @@
 
 export BLR_BENCHMARK=$HOME/local/src/power/bmark/rapl-dummy/rapl-dummy
 
-srun --nodes=2 --ntasks=2 -e dummy.err -o out.dat ./rapl-dummy
+srun --nodes=2 --ntasks=2 -e dummy2.err -o out2.dat ./rapl-dummy
 
 
