@@ -121,7 +121,7 @@ SCRIPTS = $(bin_SCRIPTS)
 DEFS = -DHAVE_CONFIG_H
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I.
 CPPFLAGS =  -DMPI
-LDFLAGS = -L/g/g24/rountree/local/src/power/rapl/libmsr/lib
+LDFLAGS = -=Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib
 LIBS = -lrapl
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
