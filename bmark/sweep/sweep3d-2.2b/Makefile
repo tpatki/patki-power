@@ -18,7 +18,7 @@
 # Build and install SWEEP3D	  #
 # By Scott Pakin <pakin@lanl.gov> #
 ###################################
-SHELL = /bin/bash
+SHELL = /bin/sh
 
 srcdir = .
 top_srcdir = .
@@ -43,10 +43,10 @@ pkglibdir = $(libdir)/sweep3d
 pkgincludedir = $(includedir)/sweep3d
 top_builddir = .
 
-ACLOCAL = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6
-AUTOCONF = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run autoconf
-AUTOMAKE = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6
-AUTOHEADER = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run autoheader
+ACLOCAL = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6
+AUTOCONF = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run autoconf
+AUTOMAKE = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run automake-1.6
+AUTOHEADER = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run autoheader
 
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = /usr/bin/install -c
@@ -68,7 +68,7 @@ POST_UNINSTALL = :
 EXEEXT = 
 OBJEXT = o
 PATH_SEPARATOR = :
-AMTAR = ${SHELL} /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/missing --run tar
+AMTAR = ${SHELL} /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run tar
 AWK = gawk
 CC = gcc
 CPP = gcc -E
@@ -80,7 +80,7 @@ STRIP =
 VERSION = 2.2b
 am__include = include
 am__quote = 
-install_sh = /home/tpatki/tapasya/patki-power/bmark/sweep/sweep3d-2.2b/install-sh
+install_sh = /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/install-sh
 
 AUTOMAKE_OPTIONS = foreign
 bin_PROGRAMS = sweep
@@ -121,8 +121,8 @@ SCRIPTS = $(bin_SCRIPTS)
 DEFS = -DHAVE_CONFIG_H
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I.
 CPPFLAGS =  -DMPI
-LDFLAGS = -L/home/tpatki/tapasya/patki-power/rapl/libmsr/lib
-LIBS = -lmpi -lrapl
+LDFLAGS = -L/g/g24/rountree/local/src/power/rapl/libmsr/lib
+LIBS = -lrapl
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
 DEP_FILES = ./$(DEPDIR)/timers.Po

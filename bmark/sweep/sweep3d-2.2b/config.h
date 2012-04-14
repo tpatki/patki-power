@@ -8,7 +8,7 @@
 /* #undef HAVE_LIBGPVM3 */
 
 /* Define to 1 if you have the `mpi' library (-lmpi). */
-#define HAVE_LIBMPI 1
+/* #undef HAVE_LIBMPI */
 
 /* Define to 1 if you have the `pvm3' library (-lpvm3). */
 /* #undef HAVE_LIBPVM3 */
