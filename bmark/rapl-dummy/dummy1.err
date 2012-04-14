@@ -17,3 +17,14 @@ msr_rapl.c::399 returned from parse_opts
 ZZZ 0.000001 0.000000 0.000000 0.000000 0.045898 47 180.000000 1440 51.000000 408 115.000000 920 0.039062 40 75.000000 600 15.000000 120 35.000000 280 3 16 10 0.125000 0.000015 0.000977 0 0 0 0 0 1.000000 0.000000 0.000000 0 1 0 0 0 1.000000 0.000000 0.000000 0 0 0 0 0 1.000000 0.000000 0.000000 0 0 0 0 0 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.045898 47 180.000000 1440 51.000000 408 115.000000 920 0.039062 40 75.000000 600 15.000000 120 35.000000 280 3 16 10 0.125000 0.000015 0.000977 0 0 0 0 0 1.000000 0.000000 0.000000 0 1 0 0 0 1.000000 0.000000 0.000000 0 0 0 0 0 1.000000 0.000000 0.000000 0 0 0 0 0 1.000000 0.000000 0.000000 
 slurmd[rzmerl150]: execve(): ./rapl-dummy: No such file or directory
 slurmd[rzmerl150]: execve(): ./rapl-dummy: No such file or directory
+filename=rzmerl150_rapl_/g/g24/rountree/local/src/power/bmark/rapl-dummy/rapl-dummy_0000__XXXXXX
+blr_util.c::21  Error opening rzmerl150_rapl_/g/g24/rountree/local/src/power/bmark/rapl-dummy/rapl-dummy_0000__pIIo7A for reading.
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+[rzmerl150:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
