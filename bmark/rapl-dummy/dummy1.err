@@ -1,0 +1,7 @@
+msr_core.c::67  pwrite returned -1.  fd[0]=5, socket=0, msr=409 (199), val=4294973952 (0x100001a00).  errno=5
+: Input/output error
+msr_core.c::79  pread returned -1.  socket=1, msr=409 (0x199), val=4294973952 (0x100001a00).
+: Illegal seek
+msr_core.c::67  pwrite returned -1.  fd[1]=0, socket=1, msr=409 (199), val=4294973952 (0x100001a00).  errno=29
+: Illegal seek
+[rzmerl150:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
