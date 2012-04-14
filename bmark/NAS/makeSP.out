@@ -34,7 +34,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.1 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.1] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -71,7 +75,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.4 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -108,7 +116,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.16 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -145,7 +157,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.36 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.36] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -182,7 +198,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.64 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -219,7 +239,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.121 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.121] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -256,7 +280,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.256 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -293,7 +321,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.529 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.529] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -330,7 +362,11 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.1024 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -367,4 +403,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC -o ../bin/sp.C.2025 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/sp.C.2025] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/SP'
+make: *** [sp] Error 2
