@@ -1,0 +1,11 @@
+/g/g24/rountree/local/src/power
+srun: error: rzmerl39: tasks 0-15: Exited with exit code 2
+srun: error: rzmerl40: tasks 16-31: Exited with exit code 2
+srun: error: rzmerl42: tasks 48-58,60-63: Exited with exit code 2
+srun: error: rzmerl41: tasks 32-47: Exited with exit code 2
+srun: First task exited 30s ago
+srun: task 59: running
+srun: tasks 0-58,60-63: exited abnormally
+srun: Terminating job step 5854.0
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+Resetting now...

@@ -1,0 +1,818 @@
+/g/g24/rountree/local/src/power
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_20_34_186080103
++ mkdir 2012_04_13_23_20_34_186080103
++ cd 2012_04_13_23_20_34_186080103
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_20_34_186080103
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_20_42_432252482
++ mkdir 2012_04_13_23_20_42_432252482
++ cd 2012_04_13_23_20_42_432252482
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_20_42_432252482
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_20_50_444907934
++ mkdir 2012_04_13_23_20_50_444907934
++ cd 2012_04_13_23_20_50_444907934
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_20_50_444907934
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_20_58_722178411
++ mkdir 2012_04_13_23_20_58_722178411
++ cd 2012_04_13_23_20_58_722178411
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_20_58_722178411
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_06_538445223
++ mkdir 2012_04_13_23_21_06_538445223
++ cd 2012_04_13_23_21_06_538445223
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_06_538445223
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_14_552549828
++ mkdir 2012_04_13_23_21_14_552549828
++ cd 2012_04_13_23_21_14_552549828
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_14_552549828
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_23_170608987
++ mkdir 2012_04_13_23_21_23_170608987
++ cd 2012_04_13_23_21_23_170608987
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_23_170608987
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_30_799209213
++ mkdir 2012_04_13_23_21_30_799209213
++ cd 2012_04_13_23_21_30_799209213
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_30_799209213
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_38_928426863
++ mkdir 2012_04_13_23_21_38_928426863
++ cd 2012_04_13_23_21_38_928426863
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_38_928426863
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_47_497863597
++ mkdir 2012_04_13_23_21_47_497863597
++ cd 2012_04_13_23_21_47_497863597
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_47_497863597
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_21_55_267191000
++ mkdir 2012_04_13_23_21_55_267191000
++ cd 2012_04_13_23_21_55_267191000
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_21_55_267191000
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_03_273337506
++ mkdir 2012_04_13_23_22_03_273337506
++ cd 2012_04_13_23_22_03_273337506
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_03_273337506
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_11_696519709
++ mkdir 2012_04_13_23_22_11_696519709
++ cd 2012_04_13_23_22_11_696519709
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_11_696519709
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_19_457498432
++ mkdir 2012_04_13_23_22_19_457498432
++ cd 2012_04_13_23_22_19_457498432
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_19_457498432
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_27_414974500
++ mkdir 2012_04_13_23_22_27_414974500
++ cd 2012_04_13_23_22_27_414974500
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_27_414974500
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_35_769022445
++ mkdir 2012_04_13_23_22_35_769022445
++ cd 2012_04_13_23_22_35_769022445
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_35_769022445
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_43_536153558
++ mkdir 2012_04_13_23_22_43_536153558
++ cd 2012_04_13_23_22_43_536153558
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_43_536153558
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_22_51_672843475
++ mkdir 2012_04_13_23_22_51_672843475
++ cd 2012_04_13_23_22_51_672843475
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_22_51_672843475
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_00_434502330
++ mkdir 2012_04_13_23_23_00_434502330
++ cd 2012_04_13_23_23_00_434502330
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_00_434502330
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_08_129829008
++ mkdir 2012_04_13_23_23_08_129829008
++ cd 2012_04_13_23_23_08_129829008
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_08_129829008
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_15_980724408
++ mkdir 2012_04_13_23_23_15_980724408
++ cd 2012_04_13_23_23_15_980724408
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_15_980724408
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_24_356496961
++ mkdir 2012_04_13_23_23_24_356496961
++ cd 2012_04_13_23_23_24_356496961
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_24_356496961
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_31_920105729
++ mkdir 2012_04_13_23_23_31_920105729
++ cd 2012_04_13_23_23_31_920105729
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_31_920105729
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_39_659840928
++ mkdir 2012_04_13_23_23_39_659840928
++ cd 2012_04_13_23_23_39_659840928
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_39_659840928
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_47_640196225
++ mkdir 2012_04_13_23_23_47_640196225
++ cd 2012_04_13_23_23_47_640196225
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_47_640196225
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_23_55_156460836
++ mkdir 2012_04_13_23_23_55_156460836
++ cd 2012_04_13_23_23_55_156460836
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_23_55_156460836
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_02_881192091
++ mkdir 2012_04_13_23_24_02_881192091
++ cd 2012_04_13_23_24_02_881192091
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_02_881192091
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_10_673181294
++ mkdir 2012_04_13_23_24_10_673181294
++ cd 2012_04_13_23_24_10_673181294
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_10_673181294
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_18_550540923
++ mkdir 2012_04_13_23_24_18_550540923
++ cd 2012_04_13_23_24_18_550540923
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_18_550540923
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_26_343457083
++ mkdir 2012_04_13_23_24_26_343457083
++ cd 2012_04_13_23_24_26_343457083
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_26_343457083
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_34_101572623
++ mkdir 2012_04_13_23_24_34_101572623
++ cd 2012_04_13_23_24_34_101572623
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_34_101572623
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_41_138864930
++ mkdir 2012_04_13_23_24_41_138864930
++ cd 2012_04_13_23_24_41_138864930
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_41_138864930
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_48_346883836
++ mkdir 2012_04_13_23_24_48_346883836
++ cd 2012_04_13_23_24_48_346883836
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_48_346883836
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_24_55_890725181
++ mkdir 2012_04_13_23_24_55_890725181
++ cd 2012_04_13_23_24_55_890725181
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_24_55_890725181
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_02_392918094
++ mkdir 2012_04_13_23_25_02_392918094
++ cd 2012_04_13_23_25_02_392918094
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_02_392918094
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_09_494155834
++ mkdir 2012_04_13_23_25_09_494155834
++ cd 2012_04_13_23_25_09_494155834
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_09_494155834
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_16_886772109
++ mkdir 2012_04_13_23_25_16_886772109
++ cd 2012_04_13_23_25_16_886772109
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_16_886772109
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_24_002344100
++ mkdir 2012_04_13_23_25_24_002344100
++ cd 2012_04_13_23_25_24_002344100
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_24_002344100
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_31_106261988
++ mkdir 2012_04_13_23_25_31_106261988
++ cd 2012_04_13_23_25_31_106261988
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_31_106261988
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_38_488782460
++ mkdir 2012_04_13_23_25_38_488782460
++ cd 2012_04_13_23_25_38_488782460
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_38_488782460
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_45_372758171
++ mkdir 2012_04_13_23_25_45_372758171
++ cd 2012_04_13_23_25_45_372758171
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_45_372758171
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_52_453282932
++ mkdir 2012_04_13_23_25_52_453282932
++ cd 2012_04_13_23_25_52_453282932
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_52_453282932
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_25_59_918093871
++ mkdir 2012_04_13_23_25_59_918093871
++ cd 2012_04_13_23_25_59_918093871
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_25_59_918093871
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_26_06_449857711
++ mkdir 2012_04_13_23_26_06_449857711
++ cd 2012_04_13_23_26_06_449857711
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_26_06_449857711
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_26_13_538976148
++ mkdir 2012_04_13_23_26_13_538976148
++ cd 2012_04_13_23_26_13_538976148
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_26_13_538976148
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=is.C.64
++ BMARK_STRING=is.C.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_26_21_047544704
++ mkdir 2012_04_13_23_26_21_047544704
++ cd 2012_04_13_23_26_21_047544704
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_26_21_047544704
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=is.C.128
++ BMARK_STRING=is.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_26_27_598709229
++ mkdir 2012_04_13_23_26_27_598709229
++ cd 2012_04_13_23_26_27_598709229
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_26_27_598709229
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=is.C.256
++ BMARK_STRING=is.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_23_26_34_710254395
++ mkdir 2012_04_13_23_26_34_710254395
++ cd 2012_04_13_23_26_34_710254395
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_23_26_34_710254395
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e is.err -o out.dat --cpu_bind=sockets ../isCL.sh 256
+Resetting now...

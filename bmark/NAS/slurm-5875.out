@@ -1,0 +1,818 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_50_36_108560804
++ mkdir 2012_04_14_00_50_36_108560804
++ cd 2012_04_14_00_50_36_108560804
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_50_36_108560804
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_52_05_186987928
++ mkdir 2012_04_14_00_52_05_186987928
++ cd 2012_04_14_00_52_05_186987928
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_52_05_186987928
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_53_02_218486922
++ mkdir 2012_04_14_00_53_02_218486922
++ cd 2012_04_14_00_53_02_218486922
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_53_02_218486922
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_53_53_983815501
++ mkdir 2012_04_14_00_53_53_983815501
++ cd 2012_04_14_00_53_53_983815501
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_53_53_983815501
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_55_21_866946197
++ mkdir 2012_04_14_00_55_21_866946197
++ cd 2012_04_14_00_55_21_866946197
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_55_21_866946197
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_56_19_256644724
++ mkdir 2012_04_14_00_56_19_256644724
++ cd 2012_04_14_00_56_19_256644724
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_56_19_256644724
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_57_07_901058369
++ mkdir 2012_04_14_00_57_07_901058369
++ cd 2012_04_14_00_57_07_901058369
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_57_07_901058369
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_58_35_967901275
++ mkdir 2012_04_14_00_58_35_967901275
++ cd 2012_04_14_00_58_35_967901275
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_58_35_967901275
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_00_59_33_336949898
++ mkdir 2012_04_14_00_59_33_336949898
++ cd 2012_04_14_00_59_33_336949898
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_00_59_33_336949898
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_00_22_525747383
++ mkdir 2012_04_14_01_00_22_525747383
++ cd 2012_04_14_01_00_22_525747383
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_00_22_525747383
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_01_50_915641364
++ mkdir 2012_04_14_01_01_50_915641364
++ cd 2012_04_14_01_01_50_915641364
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_01_50_915641364
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_02_48_068467589
++ mkdir 2012_04_14_01_02_48_068467589
++ cd 2012_04_14_01_02_48_068467589
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_02_48_068467589
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_03_36_781833146
++ mkdir 2012_04_14_01_03_36_781833146
++ cd 2012_04_14_01_03_36_781833146
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_03_36_781833146
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_05_06_240329510
++ mkdir 2012_04_14_01_05_06_240329510
++ cd 2012_04_14_01_05_06_240329510
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_05_06_240329510
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_06_02_037349621
++ mkdir 2012_04_14_01_06_02_037349621
++ cd 2012_04_14_01_06_02_037349621
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_06_02_037349621
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_06_46_084020880
++ mkdir 2012_04_14_01_06_46_084020880
++ cd 2012_04_14_01_06_46_084020880
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_06_46_084020880
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_08_14_130839598
++ mkdir 2012_04_14_01_08_14_130839598
++ cd 2012_04_14_01_08_14_130839598
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_08_14_130839598
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_09_09_788313735
++ mkdir 2012_04_14_01_09_09_788313735
++ cd 2012_04_14_01_09_09_788313735
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_09_09_788313735
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_09_54_148198712
++ mkdir 2012_04_14_01_09_54_148198712
++ cd 2012_04_14_01_09_54_148198712
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_09_54_148198712
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_11_22_249548070
++ mkdir 2012_04_14_01_11_22_249548070
++ cd 2012_04_14_01_11_22_249548070
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_11_22_249548070
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_12_18_372031016
++ mkdir 2012_04_14_01_12_18_372031016
++ cd 2012_04_14_01_12_18_372031016
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_12_18_372031016
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_13_02_719952648
++ mkdir 2012_04_14_01_13_02_719952648
++ cd 2012_04_14_01_13_02_719952648
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_13_02_719952648
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_14_30_840625298
++ mkdir 2012_04_14_01_14_30_840625298
++ cd 2012_04_14_01_14_30_840625298
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_14_30_840625298
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_15_26_421593437
++ mkdir 2012_04_14_01_15_26_421593437
++ cd 2012_04_14_01_15_26_421593437
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_15_26_421593437
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_16_10_544588628
++ mkdir 2012_04_14_01_16_10_544588628
++ cd 2012_04_14_01_16_10_544588628
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_16_10_544588628
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_17_38_500569702
++ mkdir 2012_04_14_01_17_38_500569702
++ cd 2012_04_14_01_17_38_500569702
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_17_38_500569702
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_18_34_469222386
++ mkdir 2012_04_14_01_18_34_469222386
++ cd 2012_04_14_01_18_34_469222386
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_18_34_469222386
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_19_15_486183946
++ mkdir 2012_04_14_01_19_15_486183946
++ cd 2012_04_14_01_19_15_486183946
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_19_15_486183946
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_20_42_897755942
++ mkdir 2012_04_14_01_20_42_897755942
++ cd 2012_04_14_01_20_42_897755942
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_20_42_897755942
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_21_37_992613037
++ mkdir 2012_04_14_01_21_37_992613037
++ cd 2012_04_14_01_21_37_992613037
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_21_37_992613037
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_22_18_501543326
++ mkdir 2012_04_14_01_22_18_501543326
++ cd 2012_04_14_01_22_18_501543326
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_22_18_501543326
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_23_46_082698744
++ mkdir 2012_04_14_01_23_46_082698744
++ cd 2012_04_14_01_23_46_082698744
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_23_46_082698744
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_24_41_215301697
++ mkdir 2012_04_14_01_24_41_215301697
++ cd 2012_04_14_01_24_41_215301697
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_24_41_215301697
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_25_21_883628656
++ mkdir 2012_04_14_01_25_21_883628656
++ cd 2012_04_14_01_25_21_883628656
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_25_21_883628656
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_26_49_758574753
++ mkdir 2012_04_14_01_26_49_758574753
++ cd 2012_04_14_01_26_49_758574753
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_26_49_758574753
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_27_44_479520334
++ mkdir 2012_04_14_01_27_44_479520334
++ cd 2012_04_14_01_27_44_479520334
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_27_44_479520334
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_28_24_873018732
++ mkdir 2012_04_14_01_28_24_873018732
++ cd 2012_04_14_01_28_24_873018732
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_28_24_873018732
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_29_52_616591814
++ mkdir 2012_04_14_01_29_52_616591814
++ cd 2012_04_14_01_29_52_616591814
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_29_52_616591814
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_30_47_507418631
++ mkdir 2012_04_14_01_30_47_507418631
++ cd 2012_04_14_01_30_47_507418631
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_30_47_507418631
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_31_27_780285435
++ mkdir 2012_04_14_01_31_27_780285435
++ cd 2012_04_14_01_31_27_780285435
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_31_27_780285435
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_32_55_462205015
++ mkdir 2012_04_14_01_32_55_462205015
++ cd 2012_04_14_01_32_55_462205015
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_32_55_462205015
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_33_50_411143416
++ mkdir 2012_04_14_01_33_50_411143416
++ cd 2012_04_14_01_33_50_411143416
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_33_50_411143416
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_34_30_417213797
++ mkdir 2012_04_14_01_34_30_417213797
++ cd 2012_04_14_01_34_30_417213797
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_34_30_417213797
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_35_57_976586324
++ mkdir 2012_04_14_01_35_57_976586324
++ cd 2012_04_14_01_35_57_976586324
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_35_57_976586324
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_36_53_169024511
++ mkdir 2012_04_14_01_36_53_169024511
++ cd 2012_04_14_01_36_53_169024511
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_36_53_169024511
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_37_32_999660299
++ mkdir 2012_04_14_01_37_32_999660299
++ cd 2012_04_14_01_37_32_999660299
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_37_32_999660299
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_39_00_642622140
++ mkdir 2012_04_14_01_39_00_642622140
++ cd 2012_04_14_01_39_00_642622140
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_39_00_642622140
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ft.D.512
++ BMARK_STRING=ft.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_01_39_55_752600467
++ mkdir 2012_04_14_01_39_55_752600467
++ cd 2012_04_14_01_39_55_752600467
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_14_01_39_55_752600467
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 512
+Resetting now...
