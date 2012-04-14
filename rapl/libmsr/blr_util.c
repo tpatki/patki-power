@@ -13,7 +13,7 @@ safe_mkstemp( const char *hostname, const char *tag, int mpi_rank ){
 	int fd=-1;
 	char filename[1024];
 	char *benchmark;
-	benchmark = getenv("BLR_BENCHMARK");
+	benchmark = getenv("BMARK_STRING");
 	sprintf(filename, "%s_%s_%s_%04d__XXXXXX", hostname, tag, benchmark, mpi_rank);
 	fprintf(stderr, "filename=%s\n", filename);
 	fd=mkstemp(filename);
