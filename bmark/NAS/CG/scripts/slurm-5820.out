@@ -1,0 +1,452 @@
+/g/g24/rountree/local/src/power
+nodes=16 ntasks=64
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_55_33_696638552
++ mkdir 2012_04_13_16_55_33_696638552
++ cd 2012_04_13_16_55_33_696638552
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_55_33_696638552
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+srun: error: rzmerl79: task 48: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl71: task 16: Exited with exit code 174
+srun: error: rzmerl75: task 32: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63: running
+srun: tasks 0,16,32,48: exited abnormally
+srun: Terminating job step 5820.1
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=128
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_56_09_070102647
++ mkdir 2012_04_13_16_56_09_070102647
++ cd 2012_04_13_16_56_09_070102647
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_56_09_070102647
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+srun: error: rzmerl79: task 96: Exited with exit code 174
+srun: error: rzmerl81: task 112: Exited with exit code 174
+srun: error: rzmerl73: task 48: Exited with exit code 174
+srun: error: rzmerl75: task 64: Exited with exit code 174
+srun: error: rzmerl71: task 32: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl77: task 80: Exited with exit code 174
+srun: error: rzmerl69: task 16: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127: running
+srun: tasks 0,16,32,48,64,80,96,112: exited abnormally
+srun: Terminating job step 5820.3
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=256
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_56_44_242974527
++ mkdir 2012_04_13_16_56_44_242974527
++ cd 2012_04_13_16_56_44_242974527
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_56_44_242974527
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+srun: error: rzmerl80: task 208: Exited with exit code 174
+srun: error: rzmerl142: task 240: Exited with exit code 174
+srun: error: rzmerl79: task 192: Exited with exit code 174
+srun: error: rzmerl78: task 176: Exited with exit code 174
+srun: error: rzmerl81: task 224: Exited with exit code 174
+srun: error: rzmerl76: task 144: Exited with exit code 174
+srun: error: rzmerl77: task 160: Exited with exit code 174
+srun: error: rzmerl68: task 16: Exited with exit code 174
+srun: error: rzmerl69: task 32: Exited with exit code 174
+srun: error: rzmerl73: task 96: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl70: task 48: Exited with exit code 174
+srun: error: rzmerl71: task 64: Exited with exit code 174
+srun: error: rzmerl75: task 128: Exited with exit code 174
+srun: error: rzmerl74: task 112: Exited with exit code 174
+srun: error: rzmerl72: task 80: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127,129-143,145-159,161-175,177-191,193-207,209-223,225-239,241-255: running
+srun: tasks 0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240: exited abnormally
+srun: Terminating job step 5820.5
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=64
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_57_19_776830500
++ mkdir 2012_04_13_16_57_19_776830500
++ cd 2012_04_13_16_57_19_776830500
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_57_19_776830500
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl75: task 32: Exited with exit code 174
+srun: error: rzmerl71: task 16: Exited with exit code 174
+srun: error: rzmerl79: task 48: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63: running
+srun: tasks 0,16,32,48: exited abnormally
+srun: Terminating job step 5820.7
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=128
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_57_54_009164999
++ mkdir 2012_04_13_16_57_54_009164999
++ cd 2012_04_13_16_57_54_009164999
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_57_54_009164999
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl81: task 112: Exited with exit code 174
+srun: error: rzmerl79: task 96: Exited with exit code 174
+srun: error: rzmerl75: task 64: Exited with exit code 174
+srun: error: rzmerl71: task 32: Exited with exit code 174
+srun: error: rzmerl69: task 16: Exited with exit code 174
+srun: error: rzmerl73: task 48: Exited with exit code 174
+srun: error: rzmerl77: task 80: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127: running
+srun: tasks 0,16,32,48,64,80,96,112: exited abnormally
+srun: Terminating job step 5820.9
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=256
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_58_28_586533953
++ mkdir 2012_04_13_16_58_28_586533953
++ cd 2012_04_13_16_58_28_586533953
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_58_28_586533953
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+srun: error: rzmerl74: task 112: Exited with exit code 174
+srun: error: rzmerl77: task 160: Exited with exit code 174
+srun: error: rzmerl72: task 80: Exited with exit code 174
+srun: error: rzmerl76: task 144: Exited with exit code 174
+srun: error: rzmerl73: task 96: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl71: task 64: Exited with exit code 174
+srun: error: rzmerl78: task 176: Exited with exit code 174
+srun: error: rzmerl70: task 48: Exited with exit code 174
+srun: error: rzmerl75: task 128: Exited with exit code 174
+srun: error: rzmerl79: task 192: Exited with exit code 174
+srun: error: rzmerl80: task 208: Exited with exit code 174
+srun: error: rzmerl68: task 16: Exited with exit code 174
+srun: error: rzmerl81: task 224: Exited with exit code 174
+srun: error: rzmerl69: task 32: Exited with exit code 174
+srun: error: rzmerl142: task 240: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127,129-143,145-159,161-175,177-191,193-207,209-223,225-239,241-255: running
+srun: tasks 0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240: exited abnormally
+srun: Terminating job step 5820.11
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=64
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_59_04_062992170
++ mkdir 2012_04_13_16_59_04_062992170
++ cd 2012_04_13_16_59_04_062992170
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_59_04_062992170
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl75: task 32: Exited with exit code 174
+srun: error: rzmerl79: task 48: Exited with exit code 174
+srun: error: rzmerl71: task 16: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63: running
+srun: tasks 0,16,32,48: exited abnormally
+srun: Terminating job step 5820.13
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=128
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_16_59_38_808025693
++ mkdir 2012_04_13_16_59_38_808025693
++ cd 2012_04_13_16_59_38_808025693
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_16_59_38_808025693
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl77: task 80: Exited with exit code 174
+srun: error: rzmerl81: task 112: Exited with exit code 174
+srun: error: rzmerl79: task 96: Exited with exit code 174
+srun: error: rzmerl73: task 48: Exited with exit code 174
+srun: error: rzmerl75: task 64: Exited with exit code 174
+srun: error: rzmerl71: task 32: Exited with exit code 174
+srun: error: rzmerl69: task 16: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127: running
+srun: tasks 0,16,32,48,64,80,96,112: exited abnormally
+srun: Terminating job step 5820.15
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=256
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_00_13_268858923
++ mkdir 2012_04_13_17_00_13_268858923
++ cd 2012_04_13_17_00_13_268858923
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_00_13_268858923
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+srun: error: rzmerl69: task 32: Exited with exit code 174
+srun: error: rzmerl68: task 16: Exited with exit code 174
+srun: error: rzmerl76: task 144: Exited with exit code 174
+srun: error: rzmerl72: task 80: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl75: task 128: Exited with exit code 174
+srun: error: rzmerl77: task 160: Exited with exit code 174
+srun: error: rzmerl74: task 112: Exited with exit code 174
+srun: error: rzmerl78: task 176: Exited with exit code 174
+srun: error: rzmerl73: task 96: Exited with exit code 174
+srun: error: rzmerl80: task 208: Exited with exit code 174
+srun: error: rzmerl81: task 224: Exited with exit code 174
+srun: error: rzmerl71: task 64: Exited with exit code 174
+srun: error: rzmerl142: task 240: Exited with exit code 174
+srun: error: rzmerl70: task 48: Exited with exit code 174
+srun: error: rzmerl79: task 192: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127,129-143,145-159,161-175,177-191,193-207,209-223,225-239,241-255: running
+srun: tasks 0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240: exited abnormally
+srun: Terminating job step 5820.17
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=64
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_00_48_147713006
++ mkdir 2012_04_13_17_00_48_147713006
++ cd 2012_04_13_17_00_48_147713006
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_00_48_147713006
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl79: task 48: Exited with exit code 174
+srun: error: rzmerl71: task 16: Exited with exit code 174
+srun: error: rzmerl75: task 32: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63: running
+srun: tasks 0,16,32,48: exited abnormally
+srun: Terminating job step 5820.19
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=128
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_01_22_155963604
++ mkdir 2012_04_13_17_01_22_155963604
++ cd 2012_04_13_17_01_22_155963604
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_01_22_155963604
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+srun: error: rzmerl69: task 16: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl75: task 64: Exited with exit code 174
+srun: error: rzmerl79: task 96: Exited with exit code 174
+srun: error: rzmerl77: task 80: Exited with exit code 174
+srun: error: rzmerl73: task 48: Exited with exit code 174
+srun: error: rzmerl71: task 32: Exited with exit code 174
+srun: error: rzmerl81: task 112: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127: running
+srun: tasks 0,16,32,48,64,80,96,112: exited abnormally
+srun: Terminating job step 5820.21
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=256
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_01_56_712955638
++ mkdir 2012_04_13_17_01_56_712955638
++ cd 2012_04_13_17_01_56_712955638
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_01_56_712955638
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+srun: error: rzmerl74: task 112: Exited with exit code 174
+srun: error: rzmerl68: task 16: Exited with exit code 174
+srun: error: rzmerl77: task 160: Exited with exit code 174
+srun: error: rzmerl70: task 48: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl69: task 32: Exited with exit code 174
+srun: error: rzmerl71: task 64: Exited with exit code 174
+srun: error: rzmerl76: task 144: Exited with exit code 174
+srun: error: rzmerl73: task 96: Exited with exit code 174
+srun: error: rzmerl142: task 240: Exited with exit code 174
+srun: error: rzmerl80: task 208: Exited with exit code 174
+srun: error: rzmerl81: task 224: Exited with exit code 174
+srun: error: rzmerl72: task 80: Exited with exit code 174
+srun: error: rzmerl79: task 192: Exited with exit code 174
+srun: error: rzmerl78: task 176: Exited with exit code 174
+srun: error: rzmerl75: task 128: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127,129-143,145-159,161-175,177-191,193-207,209-223,225-239,241-255: running
+srun: tasks 0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240: exited abnormally
+srun: Terminating job step 5820.23
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=64
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_02_31_596061895
++ mkdir 2012_04_13_17_02_31_596061895
++ cd 2012_04_13_17_02_31_596061895
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_02_31_596061895
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl71: task 16: Exited with exit code 174
+srun: error: rzmerl75: task 32: Exited with exit code 174
+srun: error: rzmerl79: task 48: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63: running
+srun: tasks 0,16,32,48: exited abnormally
+srun: Terminating job step 5820.25
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=128
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_03_05_920455539
++ mkdir 2012_04_13_17_03_05_920455539
++ cd 2012_04_13_17_03_05_920455539
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_03_05_920455539
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+srun: error: rzmerl73: task 48: Exited with exit code 174
+srun: error: rzmerl69: task 16: Exited with exit code 174
+srun: error: rzmerl67: task 0: Exited with exit code 174
+srun: error: rzmerl81: task 112: Exited with exit code 174
+srun: error: rzmerl79: task 96: Exited with exit code 174
+srun: error: rzmerl75: task 64: Exited with exit code 174
+srun: error: rzmerl77: task 80: Exited with exit code 174
+srun: error: rzmerl71: task 32: Exited with exit code 174
+srun: First task exited 30s ago
+srun: tasks 1-15,17-31,33-47,49-63,65-79,81-95,97-111,113-127: running
+srun: tasks 0,16,32,48,64,80,96,112: exited abnormally
+srun: Terminating job step 5820.27
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=16 ntasks=256
++ export BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
++ BLR_BENCHMARK=/g/g24/rountree/local/src/power/bmark/NAS/bin/cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_13_17_03_41_183136260
++ mkdir 2012_04_13_17_03_41_183136260
++ cd 2012_04_13_17_03_41_183136260
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_13_17_03_41_183136260
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+slurmd[rzmerl67]: *** JOB 5820 CANCELLED AT 2012-04-13T17:03:43 ***
