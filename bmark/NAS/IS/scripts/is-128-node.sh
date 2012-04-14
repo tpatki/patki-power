@@ -1,5 +1,5 @@
 #!/bin/bash
-#MSUB -l nodes=16
+#MSUB -l nodes=128
 #MSUB -q pbatch
 #MSUB -l walltime=00:50:00
 
