@@ -31,9 +31,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.1 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.1] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -67,9 +73,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.4 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.4] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -103,9 +115,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.16 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.16] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -139,9 +157,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.36 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.36] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -175,9 +199,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.64 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.64] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -211,9 +241,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.121 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.121] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -247,9 +283,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.256 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.256] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -283,9 +325,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.529 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.529] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -319,9 +367,15 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.1024 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.1024] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -355,6 +409,12 @@ mpif77 -c  -O3 -fPIC setup_mpi.f
 make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
 mpif77 -O3 -fPIC -o ../bin/bt.C.2025 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[3]: *** [bt-bt] Error 1
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[2]: *** [exec] Error 2
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make[1]: *** [../bin/bt.C.2025] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/BT'
+make: *** [bt] Error 2
