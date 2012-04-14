@@ -11,8 +11,9 @@ make clean
 make
 cd mpi
 make clean
-make rapl-gnu
+make
 cd ..
+mv lib/librapl.so lib/librapl.mvapich2-gnu-debug-1.7.so
 
 #
 # icc version
@@ -24,6 +25,7 @@ make clean
 make
 cd mpi
 make clean
-make rapl-icc
+make
 cd ..
+mv lib/librapl.so lib/librapl.mvapich2-icc-debug-1.7.so
 

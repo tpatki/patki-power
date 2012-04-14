@@ -1,18 +1,16 @@
-all:	../lib/librapl.so
+ICC_FLAGS=-diag-disable 177 -diag-disable 279 -diag-disable 181
+GNU_FLAGS=
 
-objects=../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../cpuid.o rapl.o
-
-../lib:
+rapl-icc:
 	mkdir -p ../lib
-
-rapl.c: rapl.w
 	./wrap.py -f -g -o rapl.c rapl.w
-
-rapl.o: rapl.c
-	mpicc ${COMPILER_SPECIFIC_FLAGS} -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
-
-../lib/librapl.so: ../lib $(objects) wrap.py
-	mpicc ${COMPILER_SPECIFIC_FLAGS} $(objects) -shared -Wl,-soname,librapl.so -o ../lib/librapl.so  
+	mpicc $(ICC_FLAGS) -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
+	mpicc -shared -Wl,-soname,librapl.mvapich2-icc-debug-1.7.so -o ../lib/librapl.mvapich2-icc-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o rapl.o 
+rapl-gnu:
+	mkdir -p ../lib
+	./wrap.py -f -g -o rapl.c rapl.w
+	mpicc $(GNU_FLAGS) -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
+	mpicc -shared -Wl,-soname,librapl.mvapich2-gnu-debug-1.7.so -o ../lib/librapl.mvapich2-gnu-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o rapl.o 
 clean:
 	rm -f *.o 
 
