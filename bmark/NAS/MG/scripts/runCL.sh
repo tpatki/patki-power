@@ -3,7 +3,7 @@
 # $2 = number of CPU cores desired
 set -x
 
-export BLR_BENCHMARK=$HOME/local/src/power/bmark/NAS/bin/mg.D.$2
+export BMARK_STRING=mg.D.$2
 
 name=`date +%Y_%m_%d_%H_%M_%S_%N`
 mkdir $name
