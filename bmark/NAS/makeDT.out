@@ -4,117 +4,465 @@
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd DT; make CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make[1]: *** No targets specified and no makefile found.  Stop.
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/DT'
-make: *** [dt] Error 2
+/bin/sh: line 0: cd: DT: No such file or directory
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS'
+   =========================================
+   =      NAS Parallel Benchmarks 3.3      =
+   =      MPI/F77/C                        =
+   =========================================
+
+
+   To make a NAS benchmark type 
+
+         make <benchmark-name> NPROCS=<number> CLASS=<class> [SUBTYPE=<type>]
+
+   where <benchmark-name>  is "bt", "cg", "ep", "ft", "is", "lu",
+                              "mg", or "sp"
+         <number>          is the number of processors
+         <class>           is "S", "W", "A", "B", "C", or "D"
+
+   Only when making the I/O benchmark:
+
+         <benchmark-name>  is "bt"
+         <number>, <class> as above
+         <type>            is "full", "simple", "fortran", or "epio"
+
+   To make a set of benchmarks, create the file config/suite.def
+   according to the instructions in config/suite.def.template and type
+
+         make suite
+
+ ***************************************************************
+ * Remember to edit the file config/make.def for site specific *
+ * information as described in the README file                 *
+ ***************************************************************
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS'
