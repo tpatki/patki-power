@@ -2,7 +2,7 @@ c This is 'params.inc'
 c
 		implicit double precision (a-h,o-z)
 		integer nzmax, nrzmax, nmrmax, negrps, negp1, nsvmax, maxruns
-		PARAMETER (nzmax  = 10000)
+		PARAMETER (nzmax  = 20000)
 		PARAMETER (nrzmax =  100)
 		PARAMETER (nmrmax =   50)
 		PARAMETER (negrps =   12)

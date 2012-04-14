@@ -21,6 +21,7 @@ echo $name
 
 #Copy the right input file
 cp ../../input.dat ./input.dat
+cp ../../opac.txt ./opac.txt
 
 srun --nodes=$1 --ntasks=$2 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
 
