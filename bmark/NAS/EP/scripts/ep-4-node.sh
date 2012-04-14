@@ -11,7 +11,7 @@ echo $POWER_DIR
 
 export BMARK_STRING=ep.D.64
 
-cd ${POWER_DIR}/bmark/NAS/CG/scripts
+cd ${POWER_DIR}/bmark/NAS/EP/scripts
 sh ep-rapl-4-node.sh
 cd ${POWER_DIR}/dummy-tmp
 
