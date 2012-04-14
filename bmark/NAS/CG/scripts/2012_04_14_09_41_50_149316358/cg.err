@@ -1,0 +1,832 @@
+filename=rzmerl27_rapl_cg.D.1024_0000__XXXXXX
+filename=rzmerl33_rapl_cg.D.1024_0096__XXXXXX
+filename=rzmerl77_rapl_cg.D.1024_0800__XXXXXX
+filename=rzmerl47_rapl_cg.D.1024_0320__XXXXXX
+filename=rzmerl79_rapl_cg.D.1024_0832__XXXXXX
+filename=rzmerl81_rapl_cg.D.1024_0864__XXXXXX
+filename=rzmerl53_rapl_cg.D.1024_0416__XXXXXX
+filename=rzmerl41_rapl_cg.D.1024_0224__XXXXXX
+filename=rzmerl45_rapl_cg.D.1024_0288__XXXXXX
+filename=rzmerl49_rapl_cg.D.1024_0352__XXXXXX
+filename=rzmerl73_rapl_cg.D.1024_0736__XXXXXX
+filename=rzmerl39_rapl_cg.D.1024_0192__XXXXXX
+filename=rzmerl31_rapl_cg.D.1024_0064__XXXXXX
+filename=rzmerl75_rapl_cg.D.1024_0768__XXXXXX
+filename=rzmerl89_rapl_cg.D.1024_0992__XXXXXX
+filename=rzmerl29_rapl_cg.D.1024_0032__XXXXXX
+filename=rzmerl43_rapl_cg.D.1024_0256__XXXXXX
+filename=rzmerl37_rapl_cg.D.1024_0160__XXXXXX
+filename=rzmerl35_rapl_cg.D.1024_0128__XXXXXX
+filename=rzmerl55_rapl_cg.D.1024_0448__XXXXXX
+filename=rzmerl69_rapl_cg.D.1024_0672__XXXXXX
+filename=rzmerl83_rapl_cg.D.1024_0896__XXXXXX
+filename=rzmerl87_rapl_cg.D.1024_0960__XXXXXX
+filename=rzmerl57_rapl_cg.D.1024_0480__XXXXXX
+filename=rzmerl61_rapl_cg.D.1024_0544__XXXXXX
+filename=rzmerl71_rapl_cg.D.1024_0704__XXXXXX
+filename=rzmerl67_rapl_cg.D.1024_0640__XXXXXX
+filename=rzmerl65_rapl_cg.D.1024_0608__XXXXXX
+filename=rzmerl85_rapl_cg.D.1024_0928__XXXXXX
+filename=rzmerl30_rapl_cg.D.1024_0048__XXXXXX
+filename=rzmerl46_rapl_cg.D.1024_0304__XXXXXX
+filename=rzmerl34_rapl_cg.D.1024_0112__XXXXXX
+filename=rzmerl50_rapl_cg.D.1024_0368__XXXXXX
+filename=rzmerl82_rapl_cg.D.1024_0880__XXXXXX
+filename=rzmerl38_rapl_cg.D.1024_0176__XXXXXX
+filename=rzmerl40_rapl_cg.D.1024_0208__XXXXXX
+filename=rzmerl66_rapl_cg.D.1024_0624__XXXXXX
+filename=rzmerl42_rapl_cg.D.1024_0240__XXXXXX
+filename=rzmerl88_rapl_cg.D.1024_0976__XXXXXX
+filename=rzmerl78_rapl_cg.D.1024_0816__XXXXXX
+filename=rzmerl84_rapl_cg.D.1024_0912__XXXXXX
+filename=rzmerl74_rapl_cg.D.1024_0752__XXXXXX
+filename=rzmerl36_rapl_cg.D.1024_0144__XXXXXX
+filename=rzmerl60_rapl_cg.D.1024_0528__XXXXXX
+filename=rzmerl52_rapl_cg.D.1024_0400__XXXXXX
+filename=rzmerl58_rapl_cg.D.1024_0496__XXXXXX
+filename=rzmerl28_rapl_cg.D.1024_0016__XXXXXX
+filename=rzmerl72_rapl_cg.D.1024_0720__XXXXXX
+filename=rzmerl64_rapl_cg.D.1024_0592__XXXXXX
+filename=rzmerl80_rapl_cg.D.1024_0848__XXXXXX
+filename=rzmerl70_rapl_cg.D.1024_0688__XXXXXX
+filename=rzmerl54_rapl_cg.D.1024_0432__XXXXXX
+filename=rzmerl62_rapl_cg.D.1024_0560__XXXXXX
+filename=rzmerl68_rapl_cg.D.1024_0656__XXXXXX
+filename=rzmerl32_rapl_cg.D.1024_0080__XXXXXX
+filename=rzmerl90_rapl_cg.D.1024_1008__XXXXXX
+filename=rzmerl76_rapl_cg.D.1024_0784__XXXXXX
+filename=rzmerl86_rapl_cg.D.1024_0944__XXXXXX
+filename=rzmerl44_rapl_cg.D.1024_0272__XXXXXX
+filename=rzmerl56_rapl_cg.D.1024_0464__XXXXXX
+filename=rzmerl59_rapl_cg.D.1024_0512__XXXXXX
+filename=rzmerl63_rapl_cg.D.1024_0576__XXXXXX
+filename=rzmerl51_rapl_cg.D.1024_0384__XXXXXX
+filename=rzmerl48_rapl_cg.D.1024_0336__XXXXXX
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=62, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[0]=10, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=12, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=11, cpu=0, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=63, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x380c8 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_core.c::64  pwrite returned -1.  fd[1]=11, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=13, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=12, cpu=1, msr=1560 (618), val=229576 (0x380c8).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
