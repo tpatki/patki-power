@@ -31,7 +31,7 @@ export MSR_RANK_MOD=16
 		do
                     export MSR_DRAM_POWER_LIMIT=${dram}
 		    #Run CG with 16 nodes, with 4,8,16 cores/node
-		    srun --nodes=4 --ntasks=64 --cpu_bind=sockets -o cg-1-node.out -e cg-1-node.err ../../bin/cg.D.64
+		    srun --nodes=4 --ntasks=64 --cpu_bind=sockets -o cg-4-node.out -e cg-4-node.err ../../bin/cg.D.64
 		done
 	done
 

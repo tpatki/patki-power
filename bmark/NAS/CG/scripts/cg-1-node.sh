@@ -13,6 +13,7 @@ cd ${POWER_DIR}/bmark/NAS/CG/scripts
 sh cg-rapl-1-node.sh
 cd ${POWER_DIR}/dummy-tmp
 
+export BMARK_STRING=cg.A.16
 
 #Reset by running a 256 task cg benchmark...
 export PKG_MINW_MINS=0x0
