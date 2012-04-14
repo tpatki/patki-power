@@ -2,7 +2,7 @@
 
 
 find . -name 'out.dat*' -print | sort -n > tmp
-cat tmp | xargs grep seconds | cut -d "=" -f 2 | sed 's/[ \t]*//g' > .time
+cat tmp | xargs grep seconds | cut -d "=" -f 2 |  sed -n '0~2p' | sed 's/[ \t]*//g' > .time
 
 find . -name 'info*' -print | sort -n > tmp2
 cat tmp2 | xargs grep cores | cut -d ":" -f 3 | sed 's/[ \t]*//g' > .cores
