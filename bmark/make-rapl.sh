@@ -11,7 +11,6 @@
 
 
 
-
 cd ../rapl/libmsr/
 make clean
 make > makeMSR.out 2>&1
@@ -20,9 +19,11 @@ git commit -a -m "Just made msr common "
 
 cd ./mpi/
 make clean
-make  > makeRAPL.out 2>&1
+make rapl-gnu  > makeRAPL.out 2>&1
 git add makeRAPL.out
 git commit -a -m "Just made Librapl"
+
+ln -s ../rapl/libmsr/lib/librapl.mvapich2-gnu-debug-1.7.so ../rapl/libmsr/lib/librapl.so
 
 cd ../../../bmark
 
