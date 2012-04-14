@@ -1,0 +1,78 @@
+
+
+ NAS Parallel Benchmarks 3.3 -- BT Benchmark 
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  408x 408x 408
+ Iterations:  250    dt:   0.0000200
+ Number of active processes:   256
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+ Verification being performed for class D
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.2533188551738E+05 0.2533188551738E+05 0.1493571395141E-12
+           2 0.2346393716980E+04 0.2346393716980E+04 0.8430601233037E-13
+           3 0.6294554366904E+04 0.6294554366904E+04 0.3178760921378E-14
+           4 0.5352565376030E+04 0.5352565376030E+04 0.8427909616939E-13
+           5 0.3905864038618E+05 0.3905864038618E+05 0.6613043688917E-13
+ Comparison of RMS-norms of solution error
+           1 0.3100009377557E+03 0.3100009377557E+03 0.1367905232067E-12
+           2 0.2424086324913E+02 0.2424086324913E+02 0.1606285284459E-12
+           3 0.7782212022645E+02 0.7782212022645E+02 0.4181697594864E-13
+           4 0.6835623860116E+02 0.6835623860116E+02 0.3658935133147E-13
+           5 0.6065737200368E+03 0.6065737200368E+03 0.2530232119434E-13
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        D
+ Size            =            408x 408x 408
+ Iterations      =                      250
+ Time in seconds =                   202.70
+ Total processes =                      256
+ Compiled procs  =                      256
+ Mop/s total     =                287800.38
+ Mop/s/process   =                  1124.22
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                      3.3
+ Compile date    =              14 Apr 2012
+
+ Compile options:
+    MPIF77       = mpif77
+    FLINK        = $(MPIF77)
+    FMPI_LIB     = -Xlinker -rpath=$(HOME)/local/src/power/rap...
+    FMPI_INC     = (none)
+    FFLAGS       = -O3 -fPIC
+    FLINKFLAGS   = -O3 -fPIC  -Wl,--build-id=none
+    RAND         = (none)
+
+
+ Please send the results of this run to:
+
+ NPB Development Team 
+ Internet: npb@nas.nasa.gov
+ 
+ If email is not available, send this to:
+
+ MS T27A-1
+ NASA Ames Research Center
+ Moffett Field, CA  94035-1000
+
+ Fax: 650-604-3957
+
+
