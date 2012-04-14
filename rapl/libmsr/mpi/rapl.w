@@ -22,11 +22,12 @@ static int msr_rank_mod=1;
 	get_env_int("MSR_RANK_MOD", &msr_rank_mod);
 	if(rank%msr_rank_mod == 0){
 		gethostname( hostname, 1024 );
-		//f = safe_mkstemp(hostname, "rapl", rank);
+		f = safe_mkstemp(hostname, "rapl", rank);
 		init_msr();
 		disable_turbo(0);
 		disable_turbo(1);
-		s=rapl_init( *{{0}}, *{{1}}, NULL );
+		//s=rapl_init( *{{0}}, *{{1}}, NULL );
+		s=rapl_init( *{{0}}, *{{1}}, f);
 	}
 {{endfn}}
 
