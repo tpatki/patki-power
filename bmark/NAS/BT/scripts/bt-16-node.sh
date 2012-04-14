@@ -9,8 +9,8 @@ export POWER_DIR=${HOME}/local/src/power
 
 echo $POWER_DIR
 
-cd ${POWER_DIR}/bmark/NAS/EP/scripts
-sh ep-rapl-16-node.sh
+cd ${POWER_DIR}/bmark/NAS/BT/scripts
+sh by-rapl-16-node.sh
 cd ${POWER_DIR}/dummy-tmp
 
 
