@@ -50,14 +50,14 @@ FMPI_INC =
 # Global *compile time* flags for Fortran programs
 #---------------------------------------------------------------------------
 #FFLAGS	= -O3 -fPIC -shared-intel -mcmodel=large
-FFLAGS	= -O3 -fPIC -Wl,--build-id=none
+FFLAGS	= -O3 -fPIC
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
 #FLINKFLAGS = -O3 -fPIC -fpic -shared-intel -mcmodel=large
-FLINKFLAGS = -O3 -fPIC
+FLINKFLAGS = -O3 -fPIC  -Wl,--build-id=none
 
 
 #---------------------------------------------------------------------------
@@ -99,15 +99,14 @@ CMPI_INC =
 # Global *compile time* flags for C programs
 #---------------------------------------------------------------------------
 #CFLAGS	= -O3 -fPIC -fpic -shared-intel -mcmodel=large
-CFLAGS	= -O3 -fPIC -Wl,--build-id=none
+CFLAGS	= -O3 -fPIC
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
 #CLINKFLAGS = -O3 -fPIC -fpic -shared-intel -mcmodel=large
-CLINKFLAGS = -O3 -fPIC
-
+CLINKFLAGS = -O3 -fPIC  -Wl,--build-id=none
 
 #---------------------------------------------------------------------------
 # MPI dummy library:
