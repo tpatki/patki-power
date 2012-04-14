@@ -25,7 +25,7 @@ git commit -a -m "Just made Librapl"
 cd ../../../bmark
 
 cd ../rapl/libmsr/lib/
-ln -s  librapl.mvapich2-gnu-debug-1.7.so librapl.so
+ln -s librapl.mvapich2-gnu-debug-1.7.so librapl.so
 cd -
 
 cd rapl-dummy/

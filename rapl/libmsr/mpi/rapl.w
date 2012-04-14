@@ -18,6 +18,7 @@ static int msr_rank_mod=1;
 {{fn foo MPI_Init}}
 	{{callfn}}
 	rank = -1;
+	FILE *f;
 	PMPI_Comm_rank( MPI_COMM_WORLD, &rank );
 	get_env_int("MSR_RANK_MOD", &msr_rank_mod);
 	if(rank%msr_rank_mod == 0){
