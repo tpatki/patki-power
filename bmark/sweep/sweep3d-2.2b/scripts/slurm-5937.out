@@ -1,0 +1,23 @@
+/g/g24/rountree/local/src/power
+nodes=4 ntasks=64
++ export BMARK_STRING=sweep.64
++ BMARK_STRING=sweep.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_14_50_348084363
++ mkdir 2012_04_14_16_14_50_348084363
++ cd 2012_04_14_16_14_50_348084363
++ env
++ hostname
++ echo 2012_04_14_16_14_50_348084363
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_14_16_14_50_348084363
+2012_04_14_16_14_50_348084363
++ cp ../../../input/input-64 ./input
++ srun --nodes=4 --ntasks=64 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+Resetting now...
