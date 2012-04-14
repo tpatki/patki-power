@@ -11,8 +11,7 @@ export MSR_PP0_POWER_LIMIT=0x0
 export MSR_DRAM_POWER_LIMIT=0x0
 export MSR_RANK_MOD=1
 
-
-export BLR_BENCHMARK=$HOME/local/src/power/bmark/rapl-dummy/rapl-dummy
+export BLR_BENCHMARK=rapl-dummy
 
 srun --nodes=16 --ntasks=16 -e dummy16.err -o out16.dat ./rapl-dummy
 
