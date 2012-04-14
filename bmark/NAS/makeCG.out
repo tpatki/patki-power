@@ -9,10 +9,10 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 cc -g  -o setparams setparams.c
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 16 A 
-mpif77 -c  -O3 -fPIC cg.f
-cd ../common; mpif77 -c  -O3 -fPIC print_results.f
-cd ../common; mpif77 -c  -O3 -fPIC randi8.f
-cd ../common; mpif77 -c  -O3 -fPIC timers.f
+mpif77 -c  -O3 -fPIC -Wl,--build-id=none cg.f
+cd ../common; mpif77 -c  -O3 -fPIC -Wl,--build-id=none print_results.f
+cd ../common; mpif77 -c  -O3 -fPIC -Wl,--build-id=none randi8.f
+cd ../common; mpif77 -c  -O3 -fPIC -Wl,--build-id=none timers.f
 mpif77 -O3 -fPIC -o ../bin/cg.A.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
@@ -26,7 +26,7 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -Wl,--build-id=none cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
@@ -40,7 +40,7 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -Wl,--build-id=none cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
@@ -54,132 +54,8 @@ make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 4 D 
-mpif77 -c  -O3 -fPIC cg.f
+mpif77 -c  -O3 -fPIC -Wl,--build-id=none cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=8 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 8 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=16 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 16 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=32 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 32 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=64 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 64 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=128 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 128 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=256 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 256 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=512 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 512 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=1024 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 1024 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-   =========================================
-   =      NAS Parallel Benchmarks 3.3      =
-   =      MPI/F77/C                        =
-   =========================================
-
-cd CG; make NPROCS=2048 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams cg 2048 D 
-mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[1]: *** Deleting file `../bin/cg.D.4'
+make[1]: *** [../bin/cg.D.4] Interrupt
+make: *** [cg] Interrupt
