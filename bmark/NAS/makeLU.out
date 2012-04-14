@@ -3,12 +3,12 @@
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=1 CLASS=C VERSION=
+cd LU; make NPROCS=1 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 1 C 
+../sys/setparams lu 1 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -39,7 +39,7 @@ mpif77 -c  -O3 -fPIC buts.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -47,12 +47,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=2 CLASS=C VERSION=
+cd LU; make NPROCS=2 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 2 C 
+../sys/setparams lu 2 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -79,7 +79,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -87,12 +87,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=4 CLASS=C VERSION=
+cd LU; make NPROCS=4 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 4 C 
+../sys/setparams lu 4 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -119,7 +119,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -127,12 +127,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=8 CLASS=C VERSION=
+cd LU; make NPROCS=8 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 8 C 
+../sys/setparams lu 8 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -159,7 +159,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -167,12 +167,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=16 CLASS=C VERSION=
+cd LU; make NPROCS=16 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 16 C 
+../sys/setparams lu 16 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -199,7 +199,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.16 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.16 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -207,12 +207,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=32 CLASS=C VERSION=
+cd LU; make NPROCS=32 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 32 C 
+../sys/setparams lu 32 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -239,7 +239,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.32 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.32 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -247,12 +247,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=64 CLASS=C VERSION=
+cd LU; make NPROCS=64 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 64 C 
+../sys/setparams lu 64 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -279,7 +279,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.64 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.64 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -287,12 +287,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=128 CLASS=C VERSION=
+cd LU; make NPROCS=128 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 128 C 
+../sys/setparams lu 128 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -319,7 +319,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.128 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.128 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -327,12 +327,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=256 CLASS=C VERSION=
+cd LU; make NPROCS=256 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 256 C 
+../sys/setparams lu 256 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -359,7 +359,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.256 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.256 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -367,12 +367,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=512 CLASS=C VERSION=
+cd LU; make NPROCS=512 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 512 C 
+../sys/setparams lu 512 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -399,7 +399,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.512 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.512 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -407,12 +407,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=1024 CLASS=C VERSION=
+cd LU; make NPROCS=1024 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 1024 C 
+../sys/setparams lu 1024 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -439,7 +439,7 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.1024 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.1024 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =========================================
@@ -447,12 +447,12 @@ make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
    =      MPI/F77/C                        =
    =========================================
 
-cd LU; make NPROCS=2048 CLASS=C VERSION=
+cd LU; make NPROCS=2048 CLASS=D VERSION=
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams lu 2048 C 
+../sys/setparams lu 2048 D 
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 mpif77 -c  -O3 -fPIC lu.f
 mpif77 -c  -O3 -fPIC init_comm.f
@@ -479,6 +479,6 @@ mpif77 -c  -O3 -fPIC jacu.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.C.2048 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.2048 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
