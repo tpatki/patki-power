@@ -22,11 +22,11 @@ make rapl-gnu  > makeRAPL.out 2>&1
 git add makeRAPL.out
 git commit -a -m "Just made Librapl"
 
+cd ../../../bmark
+
 cd ../rapl/libmsr/lib/
 ln -s  librapl.mvapich2-gnu-debug-1.7.so librapl.so
 cd -
-
-cd ../../../bmark
 
 cd rapl-dummy/
 make clean
