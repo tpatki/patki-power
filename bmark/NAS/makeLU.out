@@ -40,8 +40,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.1] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -80,8 +85,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.2] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -120,8 +130,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.4] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -160,8 +175,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.8] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -200,8 +220,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.16 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.16] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -240,8 +265,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.32 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.32] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -280,8 +310,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.64 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.64] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -320,8 +355,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.128 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.128] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -360,8 +400,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.256 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.256] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -400,8 +445,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.512 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.512] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -440,8 +490,13 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.1024 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.1024] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -480,5 +535,10 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC -o ../bin/lu.C.2048 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make[1]: *** [../bin/lu.C.2048] Error 2
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/LU'
+make: *** [lu] Error 2
