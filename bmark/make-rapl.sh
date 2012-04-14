@@ -10,7 +10,6 @@
 #
 
 
-
 cd ../rapl/libmsr/
 make clean
 make > makeMSR.out 2>&1
@@ -23,7 +22,9 @@ make rapl-gnu  > makeRAPL.out 2>&1
 git add makeRAPL.out
 git commit -a -m "Just made Librapl"
 
-ln -s ../rapl/libmsr/lib/librapl.mvapich2-gnu-debug-1.7.so ../rapl/libmsr/lib/librapl.so
+cd ../rapl/libmsr/lib/
+ln -s  librapl.mvapich2-gnu-debug-1.7.so librapl.so
+cd -
 
 cd ../../../bmark
 
@@ -42,49 +43,49 @@ sh makeCG.sh > makeCG.out 2>&1
 git add makeCG.out
 git commit -a -m "Just made CG with RAPL"
 
-sh makeBT.sh > makeBT.out 2>&1
-git add makeBT.out
-git commit -a -m "Just made BT with RAPL"
+#sh makeBT.sh > makeBT.out 2>&1
+#git add makeBT.out
+#git commit -a -m "Just made BT with RAPL"
 
-sh makeDT.sh > makeDT.out 2>&1
-git add makeDT.out
-git commit -a -m "Just made DT with RAPL"
+#sh makeDT.sh > makeDT.out 2>&1
+#git add makeDT.out
+#git commit -a -m "Just made DT with RAPL"
 
-sh makeEP.sh > makeEP.out 2>&1
-git add makeEP.out
-git commit -a -m "Just made EP with RAPL"
+#sh makeEP.sh > makeEP.out 2>&1
+#git add makeEP.out
+#git commit -a -m "Just made EP with RAPL"
 
-sh makeFT.sh > makeFT.out 2>&1
-git add makeFT.out
-git commit -a -m "Just made FT with RAPL"
+#sh makeFT.sh > makeFT.out 2>&1
+#git add makeFT.out
+#git commit -a -m "Just made FT with RAPL"
 
-sh makeIS.sh > makeIS.out 2>&1
-git add makeIS.out
-git commit -a -m "Just made IS with RAPL"
+#sh makeIS.sh > makeIS.out 2>&1
+#git add makeIS.out
+#git commit -a -m "Just made IS with RAPL"
 
-sh makeLU.sh > makeLU.out 2>&1
-git add makeLU.out
-git commit -a -m "Just made LU with RAPL"
+#sh makeLU.sh > makeLU.out 2>&1
+#git add makeLU.out
+#git commit -a -m "Just made LU with RAPL"
 
-sh makeMG.sh > makeMG.out 2>&1
-git add makeMG.out
-git commit -a -m "Just made MG with RAPL"
+#sh makeMG.sh > makeMG.out 2>&1
+#git add makeMG.out
+#git commit -a -m "Just made MG with RAPL"
 
-sh makeSP.sh > makeSP.out 2>&1
-git add makeSP.out
-git commit -a -m "Just made SP with RAPL"
+#sh makeSP.sh > makeSP.out 2>&1
+#git add makeSP.out
+#git commit -a -m "Just made SP with RAPL"
 
-cd ../sweep/sweep3d-2.2b/
-make clean
-sh makeSweep.sh > makeSweep.out 2>&1
-git add makeSweep.out
-git commit -a -m "Just made sweep with RAPL"
+#cd ../sweep/sweep3d-2.2b/
+#make clean
+#sh makeSweep.sh > makeSweep.out 2>&1
+#git add makeSweep.out
+#git commit -a -m "Just made sweep with RAPL"
 
-cd ../../sphot_v1.0/
-make clean
-make >makeSphot.out 2>&1
-git add makeSphot.out
-git commit -a -m "Just made Sphot with RAPL"
+#cd ../../sphot_v1.0/
+#make clean
+#make >makeSphot.out 2>&1
+#git add makeSphot.out
+#git commit -a -m "Just made Sphot with RAPL"
 
 cd ../
 
