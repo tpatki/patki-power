@@ -14,7 +14,11 @@ cd ../common; mpif77 -c  -O3 -fPIC print_results.f
 cd ../common; mpif77 -c  -O3 -fPIC randi8.f
 cd ../common; mpif77 -c  -O3 -fPIC timers.f
 mpif77 -O3 -fPIC -o ../bin/cg.A.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.A.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -28,20 +32,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x227b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2282): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_lub_mgt.o): In function `for__preconnected_units_create':
-for_lub_mgt.c:(.text+0x1a7c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1aac): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1ae7): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b22): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b89): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1bf0): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1c52): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x68): additional relocation overflows omitted from the output
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.1] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
@@ -58,20 +50,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x227b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2282): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_lub_mgt.o): In function `for__preconnected_units_create':
-for_lub_mgt.c:(.text+0x1a7c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1aac): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1ae7): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b22): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b89): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1bf0): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1c52): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x68): additional relocation overflows omitted from the output
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.2] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
@@ -88,20 +68,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 4 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x227b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2282): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_lub_mgt.o): In function `for__preconnected_units_create':
-for_lub_mgt.c:(.text+0x1a7c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1aac): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1ae7): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b22): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b89): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1bf0): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1c52): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x68): additional relocation overflows omitted from the output
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
@@ -118,20 +86,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 8 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o): In function `for_rtl_init_':
-for_init.c:(.text+0x227b): relocation truncated to fit: R_X86_64_PC32 against symbol `for__l_argc' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-for_init.c:(.text+0x2282): relocation truncated to fit: R_X86_64_PC32 against symbol `for__a_argv' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_init.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_lub_mgt.o): In function `for__preconnected_units_create':
-for_lub_mgt.c:(.text+0x1a7c): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1aac): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1ae7): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b22): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1b89): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1bf0): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_lub_mgt.c:(.text+0x1c52): relocation truncated to fit: R_X86_64_PC32 against symbol `for__aio_lub_table' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-/usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o): In function `for__aio_acquire_lun_fname':
-for_aio.c:(.text+0x38): relocation truncated to fit: R_X86_64_PC32 against symbol `for__pthread_mutex_lock_ptr' defined in COMMON section in /usr/local/tools/ifort-11.1.046/lib/intel64/libifcore.a(for_aio.o)
-for_aio.c:(.text+0x68): additional relocation overflows omitted from the output
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
 make: *** [cg] Error 2
@@ -148,7 +104,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 16 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -162,7 +122,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 32 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -176,7 +140,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 64 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -190,7 +158,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 128 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -204,7 +176,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 256 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -218,7 +194,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 512 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -232,7 +212,11 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1024 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
@@ -246,4 +230,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2048 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/cg.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make: *** [cg] Error 2
