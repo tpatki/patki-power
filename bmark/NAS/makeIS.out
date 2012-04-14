@@ -3,140 +3,140 @@
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=4 CLASS=C
+cd IS; make NPROCS=4 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 4 C 
+../sys/setparams is 4 D 
 mpicc  -c  -O3 -fPIC is.c
 cd ../common; mpicc  -c  -O3 -fPIC c_print_results.c
 cd ../common; mpicc  -c  -O3 -fPIC c_timers.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=8 CLASS=C
+cd IS; make NPROCS=8 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 8 C 
+../sys/setparams is 8 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.8 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.8 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=16 CLASS=C
+cd IS; make NPROCS=16 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 16 C 
+../sys/setparams is 16 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.16 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.16 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=32 CLASS=C
+cd IS; make NPROCS=32 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 32 C 
+../sys/setparams is 32 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.32 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.32 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=64 CLASS=C
+cd IS; make NPROCS=64 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 64 C 
+../sys/setparams is 64 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.64 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.64 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=128 CLASS=C
+cd IS; make NPROCS=128 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 128 C 
+../sys/setparams is 128 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.128 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.128 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=256 CLASS=C
+cd IS; make NPROCS=256 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 256 C 
+../sys/setparams is 256 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.256 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.256 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=512 CLASS=C
+cd IS; make NPROCS=512 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 512 C 
+../sys/setparams is 512 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.512 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.512 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=1024 CLASS=C
+cd IS; make NPROCS=1024 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 1024 C 
+../sys/setparams is 1024 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.1024 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.1024 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
-cd IS; make NPROCS=2048 CLASS=C
+cd IS; make NPROCS=2048 CLASS=D
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
 make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
-../sys/setparams is 2048 C 
+../sys/setparams is 2048 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.C.2048 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.2048 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
