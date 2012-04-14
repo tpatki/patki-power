@@ -1,0 +1,77 @@
+
+
+ NAS Parallel Benchmarks 3.3 -- SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  408x 408x 408
+ Iterations:  250    dt:   0.0003000
+ Number of active processes:   256
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Unknown class
+ RMS-norms of residual
+           1 0.2200422062549E+05
+           2 0.5771455199450E+04
+           3 0.8792649704134E+04
+           4 0.7908278206233E+04
+           5 0.1639976450520E+05
+ RMS-norms of solution error
+           1 0.3469753670104E+02
+           2 0.3207212398744E+01
+           3 0.8604282909763E+01
+           4 0.7861072514167E+01
+           5 0.8129058808429E+02
+ No reference values provided
+ No verification performed
+
+
+ SP Benchmark Completed.
+ Class           =                        U
+ Size            =            408x 408x 408
+ Iterations      =                      250
+ Time in seconds =                    43.32
+ Total processes =                      256
+ Compiled procs  =                      256
+ Mop/s total     =                340899.82
+ Mop/s/process   =                  1331.64
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                      3.3
+ Compile date    =              14 Apr 2012
+
+ Compile options:
+    MPIF77       = mpif77
+    FLINK        = $(MPIF77)
+    FMPI_LIB     = -Xlinker -rpath=$(HOME)/local/src/power/rap...
+    FMPI_INC     = (none)
+    FFLAGS       = -O3 -fPIC
+    FLINKFLAGS   = -O3 -fPIC  -Wl,--build-id=none
+    RAND         = (none)
+
+
+ Please send the results of this run to:
+
+ NPB Development Team 
+ Internet: npb@nas.nasa.gov
+ 
+ If email is not available, send this to:
+
+ MS T27A-1
+ NASA Ames Research Center
+ Moffett Field, CA  94035-1000
+
+ Fax: 650-604-3957
+
+
