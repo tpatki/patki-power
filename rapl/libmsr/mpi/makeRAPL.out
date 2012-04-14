@@ -1,8 +1,4 @@
 mkdir -p ../lib
 ./wrap.py -f -g -o rapl.c rapl.w
 mpicc  -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
-rapl.c: In function 'MPI_Init':
-rapl.c:84: error: 'f' undeclared (first use in this function)
-rapl.c:84: error: (Each undeclared identifier is reported only once
-rapl.c:84: error: for each function it appears in.)
-make: *** [rapl-gnu] Error 1
+mpicc -shared -Wl,-soname,librapl.mvapich2-gnu-debug-1.7.so -o ../lib/librapl.mvapich2-gnu-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o rapl.o 
