@@ -9,7 +9,7 @@ rm -rf $IRS_DIR/patki/irs-build
 
 ../scripts/irs_build irs-build $IRS_DIR 
 cd $IRS_DIR/patki/irs-build/build
-../../../scripts/irs_config chaos_3_x86_64
+../../../scripts/irs_config chaos_3_x86_64_wo_silo
 make depend
 make
 
