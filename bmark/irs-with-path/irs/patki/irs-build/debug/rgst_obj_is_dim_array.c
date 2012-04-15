@@ -1,0 +1,1 @@
+../sources/rgst/rgst_obj_is_dim_array.c

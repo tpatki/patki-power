@@ -1,0 +1,1 @@
+../sources/rgst/rgst_create_typedef_name_str.c

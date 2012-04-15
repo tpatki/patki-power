@@ -1,0 +1,1 @@
+../sources/rgst/rgst_del_attr.c

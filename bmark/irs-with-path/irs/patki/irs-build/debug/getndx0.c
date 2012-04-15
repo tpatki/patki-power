@@ -1,0 +1,1 @@
+../sources/sys/getndx0.c

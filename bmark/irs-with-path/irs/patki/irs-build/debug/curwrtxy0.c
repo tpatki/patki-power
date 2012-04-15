@@ -1,0 +1,1 @@
+../sources/cur/curwrtxy0.c

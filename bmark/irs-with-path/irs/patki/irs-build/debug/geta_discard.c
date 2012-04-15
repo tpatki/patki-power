@@ -1,0 +1,1 @@
+../sources/ctl/geta_discard.c

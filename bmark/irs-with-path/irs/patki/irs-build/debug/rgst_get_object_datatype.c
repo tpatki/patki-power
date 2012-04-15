@@ -1,0 +1,1 @@
+../sources/rgst/rgst_get_object_datatype.c

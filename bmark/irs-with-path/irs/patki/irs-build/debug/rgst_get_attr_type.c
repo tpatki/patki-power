@@ -1,0 +1,1 @@
+../sources/rgst/rgst_get_attr_type.c

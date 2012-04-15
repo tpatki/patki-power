@@ -1,0 +1,1 @@
+../sources/cur/setcur0.c

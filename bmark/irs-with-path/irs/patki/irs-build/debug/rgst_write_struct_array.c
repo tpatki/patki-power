@@ -1,0 +1,1 @@
+../sources/rgst/rgst_write_struct_array.c

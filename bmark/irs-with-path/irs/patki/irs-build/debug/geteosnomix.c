@@ -1,0 +1,1 @@
+../sources/eos/geteosnomix.c

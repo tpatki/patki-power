@@ -1,0 +1,1 @@
+../sources/rgst/rgst_get_nelms_in_rgst_obj.c

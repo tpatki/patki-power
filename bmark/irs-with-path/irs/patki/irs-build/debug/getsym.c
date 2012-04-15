@@ -1,0 +1,1 @@
+../sources/ctl/getsym.c

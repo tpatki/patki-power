@@ -1,0 +1,1 @@
+../sources/rgst/hash_print_structs_of_type.c

@@ -1,0 +1,1 @@
+../sources/dmp/rdparms.c

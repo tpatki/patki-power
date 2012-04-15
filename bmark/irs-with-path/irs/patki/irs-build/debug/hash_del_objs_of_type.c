@@ -1,0 +1,1 @@
+../sources/hash/hash_del_objs_of_type.c

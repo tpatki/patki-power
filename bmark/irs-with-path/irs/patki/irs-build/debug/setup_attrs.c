@@ -1,0 +1,1 @@
+../sources/ctl/setup_attrs.c

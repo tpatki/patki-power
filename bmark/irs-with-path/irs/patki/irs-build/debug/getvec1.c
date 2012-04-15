@@ -1,0 +1,1 @@
+../sources/cur/getvec1.c

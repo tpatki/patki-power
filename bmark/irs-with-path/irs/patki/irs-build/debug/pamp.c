@@ -1,0 +1,1 @@
+../sources/cur/pamp.c
