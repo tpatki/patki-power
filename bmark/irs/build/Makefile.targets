@@ -386,7 +386,7 @@ program_coverage:
 #-------------------------
 
 irs_version: 
-	irs_version $(irs_target) 
+	../../../scripts/irs_version $(irs_target) 
 
 $(RGSTLIB): [A-Z]*.h pint.h
 	cat [A-Z]*.h pint.h > temp.h
