@@ -18,3 +18,8 @@ rapl/libmsr/rapl_clamp
 rapl/libmsr/libmsr.so 
 bmark/rapl-dummy/rapl-dummy
 dummy-tmp/*
+*.log
+*.bak
+*~
+bmark/irs-with-path/irs/patki/irs-build/
+

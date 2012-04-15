@@ -1,0 +1,7 @@
+/g/g24/rountree/local/src/power
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+srun: error: rzmerl138: tasks 48-63: Terminated
+srun: error: rzmerl136: tasks 16-31: Terminated
+srun: error: rzmerl137: tasks 32-47: Terminated
+srun: error: Timed out waiting for job step to complete
+slurmd[rzmerl135]: *** JOB 5951 CANCELLED AT 2012-04-15T12:48:09 DUE TO TIME LIMIT ***
