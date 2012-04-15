@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 
 $script_name = "irs_hhinit";
 $scripts_dir = $0;

@@ -1,4 +1,4 @@
-#! /usr/local/bin/perl -w
+#! /usr/bin/perl -w
 
 # ------------------------------------------------------------------------------
 # - Global vars needed to establish the push of the required perl directory
