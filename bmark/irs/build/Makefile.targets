@@ -390,8 +390,8 @@ irs_version:
 
 $(RGSTLIB): [A-Z]*.h pint.h
 	cat [A-Z]*.h pint.h > temp.h
-	irs_hrcreate temp.h
-	irs_hrparse temp.hr
+	../../../scripts/irs_hrcreate temp.h
+	../../../scripts/irs_hrparse temp.hr
 	cp rgst_types.c  ../debug
 	$$irs_cc -I../ rgst_types.c
 	$$irs_ar $(RGSTLIB) rgst_types.o
@@ -399,8 +399,8 @@ $(RGSTLIB): [A-Z]*.h pint.h
 
 rgst_types.inst.i: [A-Z]*.h pint.h
 	cat [A-Z]*.h pint.h > temp.h
-	irs_hrcreate temp.h
-	irs_hrparse temp.hr
+	../../../scripts/irs_hrcreate temp.h
+	../../../scripts/irs_hrparse temp.hr
 	mv rgst_types.c rgst_types.inst.c
 	rm -f rgst_types.inst.i
 	$$irs_pre -I../ rgst_types.inst.c >> rgst_types.inst.i
