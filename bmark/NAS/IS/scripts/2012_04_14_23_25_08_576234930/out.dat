@@ -1,0 +1,11 @@
+
+
+ NAS Parallel Benchmarks 3.3 -- IS Benchmark
+
+ Size:  134217728  (class C)
+ Iterations:   10
+ Number of processes:     2048
+
+ ERROR: number of processes 2048 not within range 1-1024
+ Exiting program!
+

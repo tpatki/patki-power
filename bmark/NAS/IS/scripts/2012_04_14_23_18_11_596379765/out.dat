@@ -1,0 +1,57 @@
+
+
+ NAS Parallel Benchmarks 3.3 -- IS Benchmark
+
+ Size:  134217728  (class C)
+ Iterations:   10
+ Number of processes:     1024
+
+   iteration
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+
+
+ IS Benchmark Completed
+ Class           =                        C
+ Size            =                134217728
+ Iterations      =                       10
+ Time in seconds =                     0.28
+ Total processes =                     1024
+ Compiled procs  =                     1024
+ Mop/s total     =                  4875.87
+ Mop/s/process   =                     4.76
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                      3.3
+ Compile date    =              13 Apr 2012
+
+ Compile options:
+    MPICC        = mpicc
+    CLINK        = $(MPICC)
+    CMPI_LIB     = -Xlinker -rpath=$(HOME)/local/src/power/rap...
+    CMPI_INC     = (none)
+    CFLAGS       = -O3 -fPIC
+    CLINKFLAGS   = -O3 -fPIC  -Wl,--build-id=none
+
+
+ Please send the results of this run to:
+
+ NPB Development Team
+ Internet: npb@nas.nasa.gov
+ 
+ If email is not available, send this to:
+
+ MS T27A-1
+ NASA Ames Research Center
+ Moffett Field, CA  94035-1000
+
+ Fax: 650-604-3957
+
