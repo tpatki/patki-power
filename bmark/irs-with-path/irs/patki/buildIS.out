@@ -41,7 +41,7 @@ irs_target="Optimized"; \
 	CODE_DIR="../codes_opt" ; \
 	RGSTLIB="../lib_opt/libctl.a"; \
 	irs_link="mpicc -g -O2 -fopenmp ";\
-	irs_libs="-lctl -lblk -lbndry -llag -lcom -lcur -ldmp -ledits -leos -lgen -lgenrd -lhash -lparm -lreg -lrgst -lsrc -lsys -ltdiff -ltimers -llag -lgen -leos -lbndry -lblk -lparm -lreg -lparm -lctl -lcom -lcur -ldmp -lsys -lreg -lbndry -lparm -lsrc -lblk -lparm -ltdiff -llag -lobjects -ldmp -lgenrd -ledits -lrgst -ledits -lhash -ltimers -lcom -lctl   -lpthread -libverbs -lm "; \
+	irs_libs="-lctl -lblk -lbndry -llag -lcom -lcur -ldmp -ledits -leos -lgen -lgenrd -lhash -lparm -lreg -lrgst -lsrc -lsys -ltdiff -ltimers -llag -lgen -leos -lbndry -lblk -lparm -lreg -lparm -lctl -lcom -lcur -ldmp -lsys -lreg -lbndry -lparm -lsrc -lblk -lparm -ltdiff -llag -lobjects -ldmp -lgenrd -ledits -lrgst -ledits -lhash -ltimers -lcom -lctl   -lpthread -libverbs -lm -lrapl"; \
 	export irs_target irs_fcompile irs_cc irs_ar irs_link irs_libs\
 		irs_arx LIB_DIR CODE_DIR RGSTLIB; \
         make build
@@ -193,8 +193,8 @@ cp ../../includes/CycleMesg.h ../../includes/CycleMesg.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/CycleMesg.hh
 irs_hhinit ../../includes/CycleMesg.hh
 cp ../../includes/FreqMesg.h ../../includes/FreqMesg.hh
-perl -p -i -e 's/extern\s+//g' ../../includes/FreqMesg.hh
 cp ../../includes/TimePlot.h ../../includes/TimePlot.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/FreqMesg.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/TimePlot.hh
 irs_hhinit ../../includes/FreqMesg.hh
 irs_hhinit ../../includes/TimePlot.hh
@@ -211,8 +211,8 @@ $irs_cc getnxtm.c
 $irs_cc getsym.c
 cp ../../includes/VersionData.h ../../includes/VersionData.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/VersionData.hh
-$irs_cc gpdef.c
 irs_hhinit ../../includes/VersionData.hh
+$irs_cc gpdef.c
 $irs_cc gpdef0.c
 $irs_cc ifnotin.c
 $irs_cc initget.c
@@ -224,8 +224,8 @@ cp ../../includes/irsctl.h ../../includes/irsctl.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/irsctl.hh
 irs_hhinit ../../includes/irsctl.hh
 cp ../../includes/Gparm.h ../../includes/Gparm.hh
-$irs_cc newfile.c
 perl -p -i -e 's/extern\s+//g' ../../includes/Gparm.hh
+$irs_cc newfile.c
 irs_hhinit ../../includes/Gparm.hh
 $irs_cc newline.c
 lineop.c: In function 'lineop_pop':
@@ -520,9 +520,9 @@ cp ../../includes/Region.h ../../includes/Region.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/Region.hh
 irs_hhinit ../../includes/Region.hh
 cp ../../includes/Source.h ../../includes/Source.hh
+$irs_cc SourceNew.c
 perl -p -i -e 's/extern\s+//g' ../../includes/Source.hh
 irs_hhinit ../../includes/Source.hh
-$irs_cc SourceNew.c
 $irs_cc Species.c
 $irs_cc Spline.c
 $irs_cc SubMesh.c
@@ -809,7 +809,7 @@ make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
 cd ../lib_opt; $irs_arx libctl.a main.o
 da=`date +%m%d`; \
-	$irs_link ../lib_opt/main.o -L../lib_opt -L../libs -L/usr/lib -L/usr/lib64    $irs_libs \
+	$irs_link ../lib_opt/main.o -L../lib_opt -L../libs -L/usr/lib -L/usr/lib64  -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib  $irs_libs \
 		 -o ../codes_opt/irs$da > load.map.$da; \
 	ln -sf ../codes_opt/irs$da ../codes_opt/irs; \
 	echo "irs$da"

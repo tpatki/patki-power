@@ -395,7 +395,7 @@ rapl_init(int argc, char **argv, FILE *f){
 	static struct rapl_state s;
 	int cpu;
 	init_msr();
-	parse_opts( argc, argv );
+	//parse_opts( argc, argv );
 	fprintf(stderr, "%s::%d returned from parse_opts\n", __FILE__, __LINE__);
 	if( f == NULL){
 		// Ok, need to make a FILE* point to stderr.

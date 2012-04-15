@@ -47,24 +47,23 @@ uint64_t msr_pkg_power_limit=-1, msr_pp0_power_limit=-1, msr_dram_power_limit=-1
 	printf("MSR_PP0_POWER_LIMIT is %llu\n", msr_pp0_power_limit);
 	printf("MSR_DRAM_POWER_LIMIT is %llu\n", msr_dram_power_limit);
 
-/*	if(rank%msr_rank_mod == 0){
+	if(rank%msr_rank_mod == 0){
 		gethostname( hostname, 1024 );
 		f = safe_mkstemp(hostname, "rapl", rank);
 		init_msr();
 		disable_turbo(0);
 		disable_turbo(1);
-		//s=rapl_init( *{{0}}, *{{1}}, NULL );
 		s=rapl_init( *{{0}}, *{{1}}, f);
 	}
-*/
+
 
 {{endfn}}
 
 {{fn foo MPI_Finalize}}
-/*	double elapsed;
+	double elapsed;
 	if(rank%msr_rank_mod == 0){
 		rapl_finalize(s);
 	}
-*/
+
 	{{callfn}}
 {{endfn}}

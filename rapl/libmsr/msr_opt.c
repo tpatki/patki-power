@@ -5,14 +5,14 @@
 #include "msr_rapl.h"
 #include "msr_core.h"
 #include "msr_opt.h"
-
+/*
 static struct option long_options[] = {
 	{"MSR_PKG_POWER_LIMIT",		1, 0, MSR_PKG_POWER_LIMIT}, 	// RW
 	{"MSR_PP0_POWER_LIMIT",		1, 0, MSR_PP0_POWER_LIMIT},	// RW
 	{"MSR_DRAM_POWER_LIMIT",	1, 0, MSR_DRAM_POWER_LIMIT},	// RW
 	{ 0,				0, 0, 0}
  };
-
+*/
 static char *
 msr2str( uint64_t msr ){
 	switch(msr){
@@ -25,8 +25,9 @@ msr2str( uint64_t msr ){
 
 void
 parse_opts( int argc, char **argv ){
-	int option_index, c, cpu;
-	char short_options[] = "";
+	//int option_index, c;
+	//char short_options[] = "";
+	int cpu;
 	uint64_t msr_pkg_power_limit=-1, msr_pp0_power_limit=-1, msr_dram_power_limit=-1;
 	char *env;
 
@@ -45,7 +46,7 @@ parse_opts( int argc, char **argv ){
 	if(env){
 		msr_dram_power_limit = strtoll( env, NULL, 0 );
 	}
-
+/*
 	// Override this with the command line.
 	optind = 1;	// Reset the options index --- is this a nice thing to do?
 	while(1){
@@ -70,7 +71,7 @@ parse_opts( int argc, char **argv ){
 		}
 	}
 	optind = 1;	// Set it back, just to be nice.
-	
+*/	
 	// Now write the MSRs.  Zero is a valid value
 	for( cpu=0; cpu<NUM_PACKAGES; cpu++ ){
 		if( msr_pkg_power_limit != -1 ){
@@ -78,6 +79,7 @@ parse_opts( int argc, char **argv ){
 				__FILE__, __LINE__, msr2str(MSR_PKG_POWER_LIMIT), msr_pkg_power_limit, cpu);
 			write_msr( cpu, MSR_PKG_POWER_LIMIT, msr_pkg_power_limit );
 		}
+		
 		if( msr_pp0_power_limit != -1 ){
 			fprintf(stderr, "%s::%d setting %s to 0x%lx on cpu %d\n", 
 				__FILE__, __LINE__, msr2str(MSR_PP0_POWER_LIMIT), msr_pp0_power_limit, cpu);
@@ -88,6 +90,7 @@ parse_opts( int argc, char **argv ){
 				__FILE__, __LINE__, msr2str(MSR_DRAM_POWER_LIMIT), msr_dram_power_limit, cpu);
 			write_msr( cpu, MSR_DRAM_POWER_LIMIT, msr_dram_power_limit );
 		}
+		
 	}
 }
 

@@ -16337,3 +16337,63 @@ msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
 msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
 msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
 msr_rapl.c::399 returned from parse_opts
+filename=rzmerl135_rapl_irs.64_0000__XXXXXX
+filename=rzmerl137_rapl_irs.64_0032__XXXXXX
+filename=rzmerl138_rapl_irs.64_0048__XXXXXX
+filename=rzmerl136_rapl_irs.64_0016__XXXXXX
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::54 c=-1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+filename=rzmerl90_rapl_irs.64_0048__XXXXXX
+filename=rzmerl89_rapl_irs.64_0032__XXXXXX
+filename=rzmerl88_rapl_irs.64_0016__XXXXXX
+filename=rzmerl87_rapl_irs.64_0000__XXXXXX
+filename=rzmerl88_rapl_irs.64_0016__XXXXXX
+filename=rzmerl90_rapl_irs.64_0048__XXXXXX
+filename=rzmerl89_rapl_irs.64_0032__XXXXXX
+filename=rzmerl87_rapl_irs.64_0000__XXXXXX
+filename=rzmerl90_rapl_irs.64_0048__XXXXXX
+filename=rzmerl89_rapl_irs.64_0032__XXXXXX
+filename=rzmerl88_rapl_irs.64_0016__XXXXXX
+msr_rapl.c::399 returned from parse_opts
+filename=rzmerl87_rapl_irs.64_0000__XXXXXX
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+filename=rzmerl88_rapl_irs.64_0016__XXXXXX
+filename=rzmerl90_rapl_irs.64_0048__XXXXXX
+filename=rzmerl89_rapl_irs.64_0032__XXXXXX
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+filename=rzmerl87_rapl_irs.64_0000__XXXXXX
+msr_rapl.c::399 returned from parse_opts
