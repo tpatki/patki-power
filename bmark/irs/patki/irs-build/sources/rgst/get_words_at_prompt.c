@@ -1,0 +1,1 @@
+/home/tpatki/tapasya/test-p/patki-power/bmark/irs/sources/rgst/get_words_at_prompt.c
