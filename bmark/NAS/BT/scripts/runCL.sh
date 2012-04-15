@@ -78,9 +78,9 @@ hostname >> info
 echo $name >> info
 uname -a >> info
 srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo | grep MHz >> info
-echo 'cores: '$2 >> info
-echo 'nodes: '$1 >> info
+echo 'cores: '$cores >> info
+echo 'nodes: '$n >> info
 
 
-srun --nodes=$n --ntasks=$cores -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh $2
+srun --nodes=$n --ntasks=$cores -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh $cores
 
