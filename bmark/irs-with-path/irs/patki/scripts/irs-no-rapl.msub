@@ -1,0 +1,8 @@
+#!/bin/bash
+#MSUB -l nodes=4
+#MSUB -q pbatch
+#MSUB -l walltime=00:15:00
+
+
+srun --nodes=4 --ntasks=64 --cpu_bind=sockets -o irs-4-node.out -e irs-4-node.err ../irs-build/codes_opt/irs0415 ../../decks/zrad3d -def NZONES_PER_DOM=25 -def NDOMS=64 -k 0064MPI -child_io_off
+
