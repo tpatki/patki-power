@@ -1,13 +1,13 @@
 
 
-Makefile for chaos_3_x86_64_wo_silo complete.
+Makefile for hyperion_x86_64_wo_silo complete.
 
 
 Enter 'make depend' now 
 
 Then enter 'make' or 'make debug'
 
-DEPFLAGS="-DUNIX -DFUNCTION_TIMERS -Dlinux -DCOMMPI -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include    "; \
+DEPFLAGS="-DUNIX -DFUNCTION_TIMERS -Dlinux  -DCOMMPI -DOPENMP -DOMP2COMPILER -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include    "; \
 	export DEPFLAGS; \
 	make depend2
 make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
@@ -34,14 +34,14 @@ cd ../sources/timers; 		make -f Makefile.timers 	depend > depend.log 2>&1
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
 irs_target="Optimized"; \
 	irs_fcompile="f77 ";  \
-	irs_cc="/usr/local/bin/mpiicc -c -g -O2  -DUNIX -DFUNCTION_TIMERS -Dlinux -DCOMMPI -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include    "; \
+	irs_cc="mpicc -c -g -O2 -fopenmp -DUNIX -DFUNCTION_TIMERS -Dlinux  -DCOMMPI -DOPENMP -DOMP2COMPILER -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include    "; \
 	irs_ar="ar rc"; \
 	irs_arx="ar x"; \
 	LIB_DIR="../lib_opt" ; \
 	CODE_DIR="../codes_opt" ; \
 	RGSTLIB="../lib_opt/libctl.a"; \
-	irs_link="/usr/local/bin/mpiicc -static -g ";\
-	irs_libs="-lctl -lblk -lbndry -llag -lcom -lcur -ldmp -ledits -leos -lgen -lgenrd -lhash -lparm -lreg -lrgst -lsrc -lsys -ltdiff -ltimers -llag -lgen -leos -lbndry -lblk -lparm -lreg -lparm -lctl -lcom -lcur -ldmp -lsys -lreg -lbndry -lparm -lsrc -lblk -lparm -ltdiff -llag -lobjects -ldmp -lgenrd -ledits -lrgst -ledits -lhash -ltimers -lcom -lctl    "; \
+	irs_link="mpicc -g -O2 -fopenmp ";\
+	irs_libs="-lctl -lblk -lbndry -llag -lcom -lcur -ldmp -ledits -leos -lgen -lgenrd -lhash -lparm -lreg -lrgst -lsrc -lsys -ltdiff -ltimers -llag -lgen -leos -lbndry -lblk -lparm -lreg -lparm -lctl -lcom -lcur -ldmp -lsys -lreg -lbndry -lparm -lsrc -lblk -lparm -ltdiff -llag -lobjects -ldmp -lgenrd -ledits -lrgst -ledits -lhash -ltimers -lcom -lctl   -lpthread -libverbs -lm "; \
 	export irs_target irs_fcompile irs_cc irs_ar irs_link irs_libs\
 		irs_arx LIB_DIR CODE_DIR RGSTLIB; \
         make build
@@ -144,8 +144,8 @@ perl -p -i -e 's/extern\s+//g' ../../includes/Bndlist.hh
 irs_hhinit ../../includes/Bndlist.hh
 cp ../../includes/VdenData.h ../../includes/VdenData.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/VdenData.hh
-irs_hhinit ../../includes/VdenData.hh
 $irs_cc getdata.c
+irs_hhinit ../../includes/VdenData.hh
 cp ../../includes/irscom.h ../../includes/irscom.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/irscom.hh
 irs_hhinit ../../includes/irscom.hh
@@ -191,14 +191,14 @@ $irs_cc exit_cleanup.c
 $irs_cc expressions.c
 cp ../../includes/CycleMesg.h ../../includes/CycleMesg.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/CycleMesg.hh
-cp ../../includes/FreqMesg.h ../../includes/FreqMesg.hh
 irs_hhinit ../../includes/CycleMesg.hh
+cp ../../includes/FreqMesg.h ../../includes/FreqMesg.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/FreqMesg.hh
-irs_hhinit ../../includes/FreqMesg.hh
 cp ../../includes/TimePlot.h ../../includes/TimePlot.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/TimePlot.hh
-$irs_cc geta.c
+irs_hhinit ../../includes/FreqMesg.hh
 irs_hhinit ../../includes/TimePlot.hh
+$irs_cc geta.c
 $irs_cc geta_discard.c
 $irs_cc geta_leftparen.c
 $irs_cc geta_rightparen.c
@@ -211,8 +211,8 @@ $irs_cc getnxtm.c
 $irs_cc getsym.c
 cp ../../includes/VersionData.h ../../includes/VersionData.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/VersionData.hh
-irs_hhinit ../../includes/VersionData.hh
 $irs_cc gpdef.c
+irs_hhinit ../../includes/VersionData.hh
 $irs_cc gpdef0.c
 $irs_cc ifnotin.c
 $irs_cc initget.c
@@ -224,14 +224,12 @@ cp ../../includes/irsctl.h ../../includes/irsctl.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/irsctl.hh
 irs_hhinit ../../includes/irsctl.hh
 cp ../../includes/Gparm.h ../../includes/Gparm.hh
+$irs_cc newfile.c
 perl -p -i -e 's/extern\s+//g' ../../includes/Gparm.hh
 irs_hhinit ../../includes/Gparm.hh
-$irs_cc newfile.c
-lineop.c(217): warning #2218: result of call is not used
-            REALLOT(lnbuf, char, lineop_stack[lineop_stack_ptr].len+1);
-            ^
-
 $irs_cc newline.c
+lineop.c: In function 'lineop_pop':
+lineop.c:217: warning: ignoring return value of 'realloc', declared with attribute warn_unused_result
 $irs_cc noop.c
 $irs_cc nxtsym.c
 $irs_cc outfile.c
@@ -512,8 +510,8 @@ $irs_cc FunctionTimer.c
 $irs_cc GlobalArrays.c
 cp ../../includes/NodeList.h ../../includes/NodeList.hh
 perl -p -i -e 's/extern\s+//g' ../../includes/NodeList.hh
-$irs_cc NodeWindow.c
 irs_hhinit ../../includes/NodeList.hh
+$irs_cc NodeWindow.c
 $irs_cc ObjectName.c
 $irs_cc OpacityGroup.c
 $irs_cc ProblemArray.c
@@ -574,10 +572,6 @@ $irs_cc OpacTypesIn.c
 $irs_cc eos_init.c
 $irs_cc eosin.c
 $irs_cc eosin0.c
-eos_init.c(173): warning #592: variable "dpdr0" is used before its value is set
-                 dpdr0 += t0 * dpdt0 * dpdt0 / ( d0 * d0 * dedt0 ) ;
-                 ^
-
 $irs_cc maxmin.c
 $irs_cc opacin.c
 $irs_cc regcnst.c
@@ -620,6 +614,8 @@ $irs_cc rgst_construct.c
 $irs_cc rgst_conv_enum_type_to_str.c
 $irs_cc rgst_copy.c
 $irs_cc rgst_copy_attr_elm_list.c
+rgst_construct.c: In function 'rgst_construct':
+rgst_construct.c:36: warning: cast to pointer from integer of different size
 $irs_cc rgst_create_RGST_ATTR_ELM_TYPE.c
 $irs_cc rgst_create_typedef_name_str.c
 $irs_cc rgst_del.c
@@ -692,10 +688,6 @@ $irs_cc psrc.c
 $irs_cc srccopy.c
 $irs_cc srcin.c
 $irs_cc tmsrc.c
-srcin.c(307): warning #592: variable "ivalue" is used before its value is set
-           idat1[0] = ivalue;
-                      ^
-
 ar rc ar ../../lib_opt/libsrc.a dsrc.o erate.o esrc.o psrc.o srccopy.o srcin.o tmsrc.o
 src library current
 make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/src'
@@ -817,64 +809,9 @@ make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/
 make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
 cd ../lib_opt; $irs_arx libctl.a main.o
 da=`date +%m%d`; \
-	$irs_link ../lib_opt/main.o -L../lib_opt -L../libs -L/usr/lib -L/usr/local/intel/compiler91_64/lib    $irs_libs \
+	$irs_link ../lib_opt/main.o -L../lib_opt -L../libs -L/usr/lib -L/usr/lib64    $irs_libs \
 		 -o ../codes_opt/irs$da > load.map.$da; \
 	ln -sf ../codes_opt/irs$da ../codes_opt/irs; \
 	echo "irs$da"
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `get_us':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:453: warning: Using 'gethostbyname' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
-/usr/local/tools/mvapich-intel/lib/libmpich.a(create_2level_comm.o): In function `free_2level_comm':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:97: undefined reference to `pthread_spin_lock'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:99: undefined reference to `pthread_spin_unlock'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(create_2level_comm.o): In function `create_2level_comm':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:200: undefined reference to `pthread_spin_lock'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:211: undefined reference to `pthread_spin_unlock'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `MPID_PSM_Finalize':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xbc): undefined reference to `psm_ep_close'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xc1): undefined reference to `psm_finalize'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `MPID_PSM_Init':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x6cc): undefined reference to `psm_init'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x715): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x781): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x7b6): undefined reference to `psm_uuid_generate'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x7f0): undefined reference to `psm_ep_open'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x8f1): undefined reference to `psm_ep_connect'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x93a): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x9a6): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x9fe): undefined reference to `psm_mq_init'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xa47): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xab3): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xbd9): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xc45): undefined reference to `psm_error_get_string'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xda6): undefined reference to `psm_error_get_string'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o):/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xe12): more undefined references to `psm_error_get_string' follow
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `psm_mq_init_barrier':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x1268): undefined reference to `psm_mq_irecv'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x1293): undefined reference to `psm_mq_send'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x12ad): undefined reference to `psm_mq_wait'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmcheck.o): In function `MPID_DeviceCheck':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmcheck.c:46: undefined reference to `psm_mq_ipeek'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmcheck.c:51: undefined reference to `psm_mq_wait'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(mpid_recv.o): In function `MPID_RecvCancel':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/mpid_recv.c:113: undefined reference to `psm_mq_cancel'
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/mpid_recv.c:123: undefined reference to `psm_mq_test'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(shmem_coll.o): In function `MPID_SHMEM_COLL_Mmap':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/shmem_coll.c:221: undefined reference to `pthread_spin_init'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmwait.o): In function `MPID_PSM_Wait':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmwait.c:25: undefined reference to `psm_mq_wait'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Send':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:45: undefined reference to `psm_mq_send'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Isend':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:64: undefined reference to `psm_mq_isend'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_SendIcomplete':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:78: undefined reference to `psm_mq_test'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Ssend':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:101: undefined reference to `psm_mq_send'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Issend':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:120: undefined reference to `psm_mq_isend'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmrecv.o): In function `MPID_PSM_Irecv':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmrecv.c:68: undefined reference to `psm_mq_irecv'
-/usr/local/tools/mvapich-intel/lib/libmpich.a(psmrecv.o): In function `MPID_PSM_RecvIcomplete':
-/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmrecv.c:84: undefined reference to `psm_mq_test'
 irs0415
 make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'

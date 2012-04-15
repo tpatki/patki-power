@@ -1,1 +1,1 @@
-/home/tpatki/tapasya/test-p/patki-power/bmark/irs/sources/sys/getcpu.c
+/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/sources/sys/getcpu.c

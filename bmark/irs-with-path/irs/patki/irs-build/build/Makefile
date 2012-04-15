@@ -12,65 +12,60 @@ SHELL 		= /bin/sh
 
 
 #-----------------------------------------------------------------------
-# DESCRIPTION standard compile on LC chaos_3_x86_64_ib machines WITH SILO
+# DESCRIPTION threaded compile on LC hyperion_x86_64_ib_threads WITHOUT SILO
 #-----------------------------------------------------------------------
 
 GMAKE		= make -j 4
 
-CC		= /usr/local/bin/mpiicc
-LINK		= /usr/local/bin/mpiicc -static
+CC              = mpicc
+LINK            = mpicc
 
-BASE_LIBPATH    = -L../libs -L/usr/lib \
-                -L/usr/local/intel/compiler91_64/lib
+BASE_LIBPATH    = -L../libs -L/usr/lib -L/usr/lib64
 
 BASE_INCPATH    = -I../.. -I../../includes -I/usr/local/include \
-                -I/usr/local/apps/include \
+                -I/usr/local/apps/include 
 
-BASE_LIBS       = 
+BASE_LIBS       = -lpthread -libverbs -lm
 
-SILO_DEFINE     = -DSILO
-SILO_VERSION    = 4.5.1
-SILO_LIBS 	= -lsilo
-SILO_LIBPATH 	= -L/usr/gapps/silo/$(SILO_VERSION)/$(SYS_TYPE)/lib
-SILO_INCPATH 	= -I/usr/gapps/silo/$(SILO_VERSION)/$(SYS_TYPE)/include
+
+CC_FLAGS_OPT    = -c -g -O2 -fopenmp
+CC_FLAGS_DEB    = -c -g -O2 -fopenmp
+
+LINK_FLAGS_OPT	= -g -O2 -fopenmp
+LINK_FLAGS_DEB	= -g -O2 -fopenmp
 
 MPI_DEFINE      = -DCOMMPI
-MPI_LIBS        = 
-MPI_LIBPATH     = 
-MPI_INCPATH     = 
+MPI_LIBS        =
+MPI_LIBPATH     =
+MPI_INCPATH     =
+
+OPENMP_DEFINE   = -DOPENMP -DOMP2COMPILER
+OPENMP_LIBS     = 
+OPENMP_LIBPATH  =
+OPENMP_INCPATH  =
+
 
 OTHER_LIBS 	=
 OTHER_LIBPATH 	=
 OTHER_INCPATH 	= 
 
-DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux 
 
-IRS_LIBS 	= 	$(SILO_LIBS) \
-			$(READLINE_LIBS) \
-			$(MPI_LIBS) \
+IRS_LIBS 	=       $(MPI_LIBS) \
 			$(BASE_LIBS) \
 			$(OTHER_LIBS)
 
 IRS_INCPATH 	= 	$(BASE_INCPATH) \
-			$(SILO_INCPATH) \
 			$(MPI_INCPATH) \
 			$(OPENMP_INCPATH) \
 			$(OTHER_INCPATH)
 
 IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
-			$(SILO_LIBPATH) \
 			$(MPI_LIBPATH) \
 			$(OTHER_LIBPATH)
 
-IRS_DEFINES	=	$(DEFINES_BASE) $(MPI_DEFINE) $(SILO_DEFINE)
+IRS_DEFINES	=	$(DEFINES_BASE) $(MPI_DEFINE) $(OPENMP_DEFINE)
 
-
-
-CC_FLAGS_OPT    = -c -g -O2 
-CC_FLAGS_DEB    = -c -g -O2
-
-LINK_FLAGS_OPT	= -g
-LINK_FLAGS_DEB	= -g
 
 ARCHIVE		= ar rc
 ARCHIVE_X	= ar x

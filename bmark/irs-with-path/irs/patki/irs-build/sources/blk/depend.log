@@ -1,5 +1,70 @@
-make[2]: Entering directory `/home/tpatki/tapasya/test-p/patki-power/bmark/irs/patki/irs-build/sources/blk'
-makedepend -- -DUNIX -DFUNCTION_TIMERS -Dlinux -DCOMMPI -DSILO -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include  -I/usr/gapps/silo/4.5.1//include    -- Blocks.c blkdiv.c blkdivin.c blkgen.c blockin0.c domain.c domaincopy.c extents.c initblk.c reblkdiv.c  
-make[2]: makedepend: Command not found
-make[2]: *** [depend] Error 127
-make[2]: Leaving directory `/home/tpatki/tapasya/test-p/patki-power/bmark/irs/patki/irs-build/sources/blk'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/blk'
+makedepend -- -DUNIX -DFUNCTION_TIMERS -Dlinux  -DCOMMPI -DOPENMP -DOMP2COMPILER -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include     -- Blocks.c blkdiv.c blkdivin.c blkgen.c blockin0.c domain.c domaincopy.c extents.c initblk.c reblkdiv.c  
+makedepend: warning:  Blocks.c (reading /usr/include/stdio.h, line 34): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/_G_config.h, line 15): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/wchar.h, line 52): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/libio.h, line 53): cannot find include file "stdarg.h"
+	not in ../../stdarg.h
+	not in ../../includes/stdarg.h
+	not in /usr/local/include/stdarg.h
+	not in /usr/local/apps/include/stdarg.h
+	not in /usr/include/stdarg.h
+makedepend: warning:  Blocks.c (reading /usr/include/stdlib.h, line 33): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/sys/types.h, line 147): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/alloca.h, line 25): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/string.h, line 34): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading /usr/include/malloc.h, line 25): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  Blocks.c (reading ../../includes/FunctionTimer.h, line 27): cannot find include file "mpi.h"
+	not in ../../mpi.h
+	not in ../../includes/mpi.h
+	not in /usr/local/include/mpi.h
+	not in /usr/local/apps/include/mpi.h
+	not in /usr/include/mpi.h
+makedepend: warning:  blkdiv.c (reading /usr/include/unistd.h, line 227): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/local/apps/include/stddef.h
+	not in /usr/include/stddef.h
+irs_fixdepend Makefile
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/blk'

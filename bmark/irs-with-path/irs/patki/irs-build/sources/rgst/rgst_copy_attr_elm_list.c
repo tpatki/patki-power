@@ -1,1 +1,1 @@
-/home/tpatki/tapasya/test-p/patki-power/bmark/irs/sources/rgst/rgst_copy_attr_elm_list.c
+/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/sources/rgst/rgst_copy_attr_elm_list.c
