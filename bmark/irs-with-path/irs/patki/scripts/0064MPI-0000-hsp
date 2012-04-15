@@ -1,5 +1,5 @@
 (c) Copyright 1996-2007 Regents of University of California
-MPI ID:PID MAPPING          0:     22681
+MPI ID:PID MAPPING          0:     25284
 
 IRS Sequoia Benchmark Version 1.0
 
@@ -118,21 +118,21 @@ time = 1.331086e-04 cycle = 3 subcycle = 3 dt0:0(24,100,100) = 2.167106e-05
 -----------------------------
  
  
-BENCHMARK microseconds per zone-iteration = 2.9302204928664e-05
-BENCHMARK FOM = 2184135977337.1
+BENCHMARK microseconds per zone-iteration = 2.9385214007782e-05
+BENCHMARK FOM = 2177966101694.9
 BENCHMARK CORRECTNESS : PASSED
 
-wall        time used: 8.330000e-04 seconds
-total   cpu time used: 4.060000e+00 seconds
-physics cpu time used: 3.520000e+00 seconds
-NODE 0: Total time 1.334521e+09 seconds.
-NODE 0: Total physics time 3.523687e+00 seconds.
-NODE 0: Microseconds/zone/cycle = 7.517199e+01.
+wall        time used: 7.730000e-04 seconds
+total   cpu time used: 4.090000e+00 seconds
+physics cpu time used: 3.530000e+00 seconds
+NODE 0: Total time 1.334529e+09 seconds.
+NODE 0: Total physics time 3.533066e+00 seconds.
+NODE 0: Microseconds/zone/cycle = 7.537207e+01.
 NODE 0: Total zones 1.562500e+04.
 Total zones 1.000000e+06.
-Average physics time 3.523693e+00 +/- 1.872509e-06 seconds.
+Average physics time 3.533068e+00 +/- 1.505295e-06 seconds.
 Timer resolution 1.000000e-06 seconds.
-Min physics time 3.523670e+00 seconds.
-Max physics time 3.523720e+00 seconds.
-Overall Microseconds/zone/cycle 1.174573e+00.
-Average Microseconds/zone/cycle 1.174564e+00 +/- 6.241697e-07.
+Min physics time 3.533050e+00 seconds.
+Max physics time 3.533101e+00 seconds.
+Overall Microseconds/zone/cycle 1.177700e+00.
+Average Microseconds/zone/cycle 1.177689e+00 +/- 5.017649e-07.
