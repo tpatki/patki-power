@@ -1,0 +1,3582 @@
+#! /usr/local/bin/perl -w
+
+# ------------------------------------------------------------------------------
+# - Standared Perl 5 modules to be used
+# ------------------------------------------------------------------------------
+  use POSIX;
+  use FileHandle;
+
+# ------------------------------------------------------------------------------
+# - Global vars needed to establish the push of the required perl directory
+# - Also, the few very common vars that I find useful in all perl scripts
+# - (ie, uname, date, pid, me [name of the perl script])
+# ------------------------------------------------------------------------------
+  $GV_me      = "";           # The name of this perl script
+  $GV_tmpstr  = "";           # Temp string used when getting the perldir
+  $GV_perldir = "";           # Directory containing this perl script
+  $GV_uname   = "";           # The name of the operating system
+  $GV_nname   = "";           # Node name
+  $GV_date    = "";           # Current date and time
+  $GV_pid     = 0;            # Process id of the running perl script
+  $GV_i       = 0;            # temp index used when getting the perldir
+
+# ------------------------------------------------------------------------------
+# - Get the process id of this script
+# - Get the name of the operating system
+# - Get the date
+# - Get the node
+# ------------------------------------------------------------------------------
+  $GV_pid   = $$;
+
+  $GV_uname = `uname -s`;
+  chop($GV_uname);
+
+  $GV_nname = `uname -n`;
+  chop($GV_nname);
+
+  $GV_date = `date`;
+  chop($GV_date);
+
+  $GV_node = `uname -n`;
+  chop($GV_node);
+
+# ------------------------------------------------------------------------------
+# - Get the directory containing the perl script
+# - Get the name of this perl script
+# ------------------------------------------------------------------------------
+  $GV_tmpstr  = $0;
+  $GV_i       = rindex($GV_tmpstr,"/");  
+  $GV_perldir = substr($GV_tmpstr,0,$GV_i);
+  $GV_me      = substr($GV_tmpstr,$GV_i+1,100);
+
+# ------------------------------------------------------------------------------
+# - Push the directory which contained the perl script and the require
+# - subdirectory off of this directory into the perl script include path
+# - Also push any other directories to search for perl routines here
+# ------------------------------------------------------------------------------
+  push (@INC, $GV_perldir);
+  push (@INC, $GV_perldir . "/require");
+
+# ------------------------------------------------------------------------------
+# - Required perl subroutines
+# ------------------------------------------------------------------------------
+  require ("VerifyFileExists.pl");
+  require ("Abend.pl");
+  require ("Notice.pl");
+
+# ------------------------------------------------------------------------------
+# - GLOBAL CONSTANTS
+# ------------------------------------------------------------------------------
+  $GC_hrcreate = "irs_hrcreate"; # name of perl script to create the .hr files
+  $GC_int_err  = -9999999999;
+
+  @GA_hrfiles = { };
+
+# ------------------------------------------------------------------------------
+# - GLOBAL CONSTANTS treated as pseudo-enumerated types
+# ------------------------------------------------------------------------------
+  $FIELD_OFFSET        = 0;	# Used to track the 'array_size' of a ptr
+  $GLOBAL_VAR          = 1;	# used as an array.
+  $ABSOLUTE_VALUE      = 2;
+  $NUM_ARRAY_SIZE_ENUM = 3;
+
+  $ENUM_TD	= 0;		# To mark a typedef as either an enumerated,
+  $CTYPE_TD	= 1;		# structure, or standard C type typedef.
+  $STRUCT_TD	= 2;
+  $NUM_TD	= 3;
+
+  $MY_TRUE  = 0;		# For boolean values
+  $MY_FALSE = 1;
+
+# ------------------------------------------------------------------------------
+# - GLOBAL VARIABLES and GLOBAL ARRAYS
+# -
+# - Declaring these here shows the layout of the data structures which irs
+# - implemented as hashes in perl.
+# ------------------------------------------------------------------------------
+  $GV_debug_flag = "false";
+
+  $GV_char = 'a';         # Global character.
+
+  $GV_ungot_str = "";     # A word that was read and then needs to be replaced
+                          # on the file.  
+
+  $GV_forward_declared_data_type = $MY_FALSE;	
+
+			  # Set to true when a field within a data structure
+                          # is a forward declared (or otherwise unknown)
+                          # data type
+
+  #-----------------------------------------------------------------------------
+  # A Word is a basic structure, it is not composed of sub-structures
+  #-----------------------------------------------------------------------------
+  %GV_word                			= ();
+  $GV_word_empty{name}    			= "";
+  $GV_word_empty{nptrs}   			= 0;
+  $GV_word_empty{ndims}   			= 0;
+  $GV_word_empty{dims}{0} 			= 0;
+  $GV_word_empty{dims}{1} 			= 0;
+  $GV_word_empty{dims}{2} 			= 0;
+  
+  #-----------------------------------------------------------------------------
+  # A Data type is also a basic structure.
+  #-----------------------------------------------------------------------------
+  %GV_data                			= ();
+  $GV_data{e_data_type}   			= "";
+  $GV_data{name}          			= "";
+
+  #-----------------------------------------------------------------------------
+  # A Field is composed of a data type, a word, and a few other members
+  #-----------------------------------------------------------------------------
+  %GV_field                         		= ();
+  $GV_field{data_type}{e_data_type} 		= "";
+  $GV_field{data_type}{name}        		= "";
+  $GV_field{word}{name}             		= "";
+  $GV_field{word}{nptrs}            		= 0;
+  $GV_field{word}{ndims}            		= 0;
+  $GV_field{word}{dims}{0}          		= 0;
+  $GV_field{word}{dims}{1}          		= 0;
+  $GV_field{word}{dims}{2}          		= 0;
+  $GV_field{array_size}             		= "";
+  $GV_field{str_array_size}         		= "";
+
+  #-----------------------------------------------------------------------------
+  # A Structure is composed of a word and several fields
+  #-----------------------------------------------------------------------------
+  %GV_struct                                    = ();
+  $GV_struct{word}{name}                        = "";    
+  $GV_struct{word}{nptrs}                       = 0;
+  $GV_struct{word}{ndims}                       = 0;
+  $GV_struct{word}{dims}{0}                     = 0;
+  $GV_struct{word}{dims}{1}                     = 0;
+  $GV_struct{word}{dims}{2}                     = 0;
+  $GV_struct{num_fields}                        = 0;
+  $GV_struct{fields}{0}{data_type}{e_data_type} = "";
+  $GV_struct{fields}{0}{data_type}{name}        = "";
+  $GV_struct{fields}{0}{word}{name}             = "";    
+  $GV_struct{fields}{0}{word}{nptrs}            = 0;
+  $GV_struct{fields}{0}{word}{ndims}            = 0;
+  $GV_struct{fields}{0}{word}{dims}{0}          = 0;
+  $GV_struct{fields}{0}{word}{dims}{1}          = 0;
+  $GV_struct{fields}{0}{word}{dims}{2}          = 0;
+  $GV_struct{fields}{0}{array_size}             = "";
+  $GV_struct{fields}{0}{str_array_size}         = ""; 
+
+  #-----------------------------------------------------------------------------
+  # A 'C' type typedef is the same structure as a Field
+  #-----------------------------------------------------------------------------
+  %GV_ctype_typedef                         	= (); 
+  $GV_ctype_typedef{data_type}{e_data_type} 	= ""; 
+  $GV_ctype_typedef{data_type}{name}        	= "";
+  $GV_ctype_typedef{word}{name}             	= "";
+  $GV_ctype_typedef{word}{nptrs}            	= 0;
+  $GV_ctype_typedef{word}{ndims}            	= 0;
+  $GV_ctype_typedef{word}{dims}{0}          	= 0;
+  $GV_ctype_typedef{word}{dims}{1}          	= 0;
+  $GV_ctype_typedef{word}{dims}{2}          	= 0;
+  $GV_ctype_typedef{array_size}             	= "";
+  $GV_ctype_typedef{str_array_size}         	= "";
+ 
+  #-----------------------------------------------------------------------------
+  # An enumerated typedef is composed of a word plus the number of 
+  # enumerated entries.  It further contains num_entries number of
+  # strings which are the name of each enumerated entry.
+  #-----------------------------------------------------------------------------
+  %GV_enum_typedef 				= ();
+  $GV_enum_typedef{word}{name}                  = "";
+  $GV_enum_typedef{word}{nptrs}                 = 0;
+  $GV_enum_typedef{word}{ndims}                 = 0;
+  $GV_enum_typedef{word}{dims}{0}               = 0;
+  $GV_enum_typedef{word}{dims}{1}               = 0;
+  $GV_enum_typedef{word}{dims}{2}               = 0;
+  $GV_enum_typedef{num_entries} 		= 0;
+  $GV_enum_typedef{enum_str}{0}                 = "";
+
+  #-----------------------------------------------------------------------------
+  # A Structure typedef is composed of a word and a structure
+  #-----------------------------------------------------------------------------
+  %GV_struct_typedef 					 	   = ();
+  $GV_struct_typedef{word}{name}                                   = "";      
+  $GV_struct_typedef{word}{nptrs}               		   = 0;      
+  $GV_struct_typedef{word}{ndims}               		   = 0;      
+  $GV_struct_typedef{word}{dims}{0}            		           = 0;      
+  $GV_struct_typedef{word}{dims}{1}             		   = 0;      
+  $GV_struct_typedef{word}{dims}{2}             		   = 0;      
+  $GV_struct_typedef{structure}{word}{name}                        = "";
+  $GV_struct_typedef{structure}{word}{nptrs}                       = 0;
+  $GV_struct_typedef{structure}{word}{ndims}                       = 0;
+  $GV_struct_typedef{structure}{word}{dims}{0}                     = 0;
+  $GV_struct_typedef{structure}{word}{dims}{1}                     = 0;
+  $GV_struct_typedef{structure}{word}{dims}{2}                     = 0;
+  $GV_struct_typedef{structure}{num_fields}                        = 0;
+  $GV_struct_typedef{structure}{fields}{0}{data_type}{e_data_type} = "";
+  $GV_struct_typedef{structure}{fields}{0}{data_type}{name}        = "";
+  $GV_struct_typedef{structure}{fields}{0}{word}{name}             = "";
+  $GV_struct_typedef{structure}{fields}{0}{word}{nptrs}            = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{ndims}            = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{dims}{0}          = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{dims}{1}          = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{dims}{2}          = 0;
+  $GV_struct_typedef{structure}{fields}{0}{array_size}             = "";
+  $GV_struct_typedef{structure}{fields}{0}{str_array_size}         = "";
+
+  #-----------------------------------------------------------------------------
+  # Global Arrays, used to store and retrieve data structures.
+  #-----------------------------------------------------------------------------
+  %GA_structs             		= ();
+  $GA_structs{num_entries}		= 0;
+  $GA_structs{0}           		= ();
+
+  %GA_enum_typedefs   			= ();
+  $GA_enum_typedefs{num_entries}	= 0;
+  $GA_enum_typedefs{0}           	= ();
+
+  %GA_ctype_typedefs  			= ();
+  $GA_ctype_typedefs{num_entries}	= 0;
+  $GA_ctype_typedefs{0}           	= ();
+
+  %GA_struct_typedefs              	= ();
+  $GA_struct_typedefs{num_entries} 	= 0;
+  $GA_struct_typedefs{0}           	= ();
+
+################################################################################
+# SUBROUTINE Main
+################################################################################
+
+  #-----------------------------------------------------------------------------
+  # Local variables
+  #-----------------------------------------------------------------------------
+  my $me   = "Main";	# Name of this subroutine.
+  my $i    = 0;
+  
+  my $ifn  = "";        # Name of input '.hr' file from command line.
+  my $ihfn = "";        # Name of input '.h' file that created the .hr file
+  my $hrfn = "";
+  
+  my $ofn  = "rgst_types.c"; # Name of output '.c' file to be created
+  my $ohfn = "rgst_types.h"; # Name of output '.h' file to be created
+
+  #-----------------------------------------------------------------------------
+  # Open and place headers into generated .h and .c files.
+  #-----------------------------------------------------------------------------
+  &open_output_files ($ohfn, $ofn);
+
+  #-----------------------------------------------------------------------------
+  # Get name of this perl script
+  # If no arguments were given, print the usage of this script.
+  #-----------------------------------------------------------------------------
+  if ($#ARGV == -1) { &print_purpose_and_exit; }
+
+  #-----------------------------------------------------------------------------
+  # Loop over each input file on the command line
+  #-----------------------------------------------------------------------------
+  # for ($i=0; $i<=$#ARGV; $i++) {
+  for ($i=1; $i<=$#GA_hrfiles; $i++) {
+
+    $ifn  = $GA_hrfiles[$i];
+    $hrfn = $ifn . ".hr";
+    # $ihfn =  $ifn . ".h";
+
+    print "\t$GV_me processing file '$hrfn'\n";
+
+    #---------------------------------------------------------------------------
+    # Clear any global data arrays allocated from file processing in
+    # previous loop.
+    #---------------------------------------------------------------------------
+    &clear_GA_arrays();
+
+    #---------------------------------------------------------------------------
+    # Parse the input file
+    #---------------------------------------------------------------------------
+    if (&parse_file($hrfn) != 0) {
+      &Notice($me, "parse of file $ifn failed, will not create file $ofn");
+      next;
+    }
+
+    #---------------------------------------------------------------------------
+    # Write the output file
+    #---------------------------------------------------------------------------
+    if (&write_output_file($ohfn, $ofn, $ifn) != 0) { 
+      &Notice($me, "write of file $ofn failed"); 
+    }
+
+  }
+
+  #-----------------------------------------------------------------------------
+  # Write the closing bracket for the rgst_add_h_file_types 'C' routine
+  # Place footers in generated .h and .c files and close them.
+  #-----------------------------------------------------------------------------
+  &close_output_files($ohfn, $ofn);
+
+  exit;
+
+################################################################################
+#
+# SUBROUTINE parse_file
+#
+# Open the file and call routine to parse it.
+#
+################################################################################
+sub parse_file
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $fn = $_[0];
+ 
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me  = "parse_file";
+  my $err = 0;
+
+  #-----------------------------------------------------------------------------
+  # Open the .hr file for input
+  #-----------------------------------------------------------------------------
+  open INPUT, $fn || &Abend($me, "Could not open $fn for input");
+
+  #-----------------------------------------------------------------------------
+  # Read to the end of the file, parsing the structs & typedefs in the file
+  #-----------------------------------------------------------------------------
+  while (!(eof INPUT)) {
+    $err += &parse_struct_or_typedef();
+  }
+
+  #-----------------------------------------------------------------------------
+  # Close the input .hr file 
+  #-----------------------------------------------------------------------------
+  close INPUT || &Abend($me, "Close of $fn returned an error");
+
+  return($err);
+}
+
+################################################################################
+#
+# SUBROUTINE open_output_files
+#
+################################################################################
+sub open_output_files
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $hfn     = $_[0];  # name of .h file to be created 
+  my $fn      = $_[1];  # name of .c file to be created
+
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me  = "open_output_files";
+  my $i    = 0;
+
+  my $ifn  = "";        # Name of input '.hr' file from command line.
+  my $tstr = "";        
+  my $base_fn = "";
+  
+  #-----------------------------------------------------------------------------
+  # Open the  file for output
+  #-----------------------------------------------------------------------------
+  open HOUTPUT, ">$hfn" || &Abend($me, "Could not open $hfn for output");
+  open  OUTPUT, ">$fn"  || &Abend($me, "Could not open $fn for output");
+
+  #-----------------------------------------------------------------------------
+  # Place the comments into the output .h file
+  #-----------------------------------------------------------------------------
+  print HOUTPUT "/*********************************************************" .
+                "**********************\n";
+  print HOUTPUT " * This file [$hfn] was automagically generated\n";
+  print HOUTPUT " * by '$GV_me'\n";
+  print HOUTPUT " *********************************************************" .
+                "*********************/\n\n";
+
+  print HOUTPUT "/*********************************************************" .
+                "**********************\n";
+  print HOUTPUT " * The following 'char *' provide strings that\n";
+  print HOUTPUT " * represent each enumerated type derived from .h files\n";
+  print HOUTPUT " * \n";
+  print HOUTPUT " * The actual strings were placed by the registry perl\n";
+  print HOUTPUT " * scripts in the file $fn automatically.\n";
+  print HOUTPUT " * \n";
+  print HOUTPUT " * User written .c files that wish to access these strings\n";
+  print HOUTPUT " * may do so by including this .h file.\n";
+  print HOUTPUT " *********************************************************" .
+                "*********************/\n\n";
+
+  #-----------------------------------------------------------------------------
+  # Place the necessary include files into the output .c file
+  #-----------------------------------------------------------------------------
+  print OUTPUT "/*********************************************************" .
+               "**********************\n";
+  print OUTPUT " * This file [$fn] was automagically generated\n";
+  print OUTPUT " * by '$GV_me'\n";
+  print OUTPUT " *********************************************************" .
+               "*********************/\n\n";
+
+  print OUTPUT "#include <stdio.h>\n";
+  print OUTPUT "#include <stddef.h>               /* for offsetof macro */\n";
+  print OUTPUT "#include <string.h>\n";
+
+  print OUTPUT "#ifdef SILO\n";
+  print OUTPUT "#include <silo.h>\n";
+  print OUTPUT "#endif\n";
+
+  # print OUTPUT "#include \"includes/irs.h\"\n";
+  # print OUTPUT "#include \"includes/irstypes.h\"\n";
+  # print OUTPUT "#include \"includes/irsproto.h\"\n";
+  # print OUTPUT "#include \"includes/Hash.h\"\n";
+
+  print OUTPUT "#include \"includes/irsrgst.h\"\n\n";
+  print OUTPUT "#include \"includes/$hfn\"\n\n";
+
+  #-----------------------------------------------------------------------------
+  # Loop over the argument list and find the non-zero length .hr files.
+  # Use these to build prototype functions.
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<=$#ARGV; $i++) {
+
+    $ifn = $ARGV[$i];
+
+    if (&VerifyFileExists($ifn) != 0) { 
+      &Notice($me,"Bypassing input file '$ifn' because it doesn't exist");
+      next;
+    }
+
+    if (!($ifn =~/.hr$/)) { 
+      &Notice($me,"Bypassing input file '$ifn' because it does not end in .hr");
+      next;
+    }
+
+    if (-z $ifn) { # bypass zero length files
+      next;
+    }
+
+    $base_fn = $ifn;
+    chop($base_fn);
+    chop($base_fn);
+    chop($base_fn);
+
+    push(@GA_hrfiles,$base_fn);
+    
+    #$ihfn = $base_fn . ".h";
+    #  
+    #print OUTPUT "\n#include \"includes/$ihfn\"\n\n";    
+  }
+
+  #-----------------------------------------------------------------------------
+  # Add the processed .h files as include files in the output .c file
+  #-----------------------------------------------------------------------------
+  print OUTPUT "\n/*********************************************************" .
+               "**********************\n";
+  print OUTPUT " * These include files are the ones processed which\n";
+  print OUTPUT " * contained RGST_START and RGST_END statements\n";
+  print OUTPUT " *********************************************************" .
+               "*********************/\n\n";
+
+  for ($i=1; $i<=$#GA_hrfiles; $i++) {
+    $tstr = $GA_hrfiles[$i] . ".h";
+    print OUTPUT "#include \"includes/$tstr\"\n";    
+  }
+
+  #-----------------------------------------------------------------------------
+  # Add the void_struct to the output .c file
+  #-----------------------------------------------------------------------------
+  print OUTPUT "\nstruct void_struct { void *void_field; };\n";
+
+  #-----------------------------------------------------------------------------
+  # Add the prototypes for the generated .c routines
+  #-----------------------------------------------------------------------------
+  print OUTPUT "\n/*********************************************************" .
+               "**********************\n";
+  print OUTPUT " * These are the prototypes for the routines which will add\n";
+  print OUTPUT " * types to the registry\n";
+  print OUTPUT " *********************************************************" .
+               "*********************/\n\n";
+  for ($i=1; $i<=$#GA_hrfiles; $i++) {
+    $tstr = "rgst_add_" .  $GA_hrfiles[$i] . "_types(void)";
+    print OUTPUT "void $tstr ;\n\n";
+  }
+
+  #-----------------------------------------------------------------------------
+  # Now add the one routine that calls all of the above routines.
+  #-----------------------------------------------------------------------------
+  print OUTPUT "\n/*********************************************************" .
+               "**********************\n";
+  print OUTPUT " * This is the prototype and definition of the one routine\n";
+  print OUTPUT " * that will be called by the code to add all the types\n";
+  print OUTPUT " * to the registry\n";
+  print OUTPUT " *********************************************************" .
+               "*********************/\n\n";
+ 
+  print OUTPUT "void rgst_add_h_file_types(void);\n\n";   # prototype it first
+
+  print OUTPUT "void rgst_add_h_file_types(void) {\n\n";  # Then code it
+  for ($i=1; $i<=$#GA_hrfiles; $i++) {
+    $tstr = "rgst_add_" .  $GA_hrfiles[$i] . "_types()";
+    print OUTPUT "   $tstr ;\n";
+  }
+
+  print OUTPUT "}\n";
+
+  return;
+}
+
+################################################################################
+#
+# SUBROUTINE close_output_files
+#
+################################################################################
+sub close_output_files
+{
+
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $hfn     = $_[0];  # name of .h file to be created 
+  my $fn      = $_[1];  # name of .c file to be created
+   
+
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me  = "close_output_files";
+   
+  #-----------------------------------------------------------------------------
+  #
+  #-----------------------------------------------------------------------------
+  close  OUTPUT || &Abend($me, "Close of $fn returned an error");
+  close HOUTPUT || &Abend($me, "Close of $hfn returned an error");
+  exit; # ambyr
+  return;
+}  
+
+################################################################################
+#
+# SUBROUTINE write_output_file
+#
+# Write all the parsed typedefs, structs, enumerated types, etc. to the
+# output .c file.  This file will be compiled and linked with the main code.
+#
+################################################################################
+sub write_output_file
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $hfn     = $_[0];  # name of .h file to be created 
+  my $fn      = $_[1];  # name of .c file to be created
+  my $base_fn = $_[2];  # name of file from which $hfn and $fn were derived
+
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me  = "write_output_file";
+  my $i   = 0;
+  my $j   = 0;
+  my $err = 0;
+  my $msg = "";
+  my $tstr = "";
+
+  # print "TRACE [$me] entered\n";  ambyr
+  
+  #-----------------------------------------------------------------------------
+  # Open the  file for output
+  #-----------------------------------------------------------------------------
+  #open HOUTPUT, ">$hfn" || &Abend($me, "Could not open $hfn for output");
+  #open  OUTPUT, ">$fn"  || &Abend($me, "Could not open $fn for output");
+
+  #-----------------------------------------------------------------------------
+  # Comment to C file
+  #-----------------------------------------------------------------------------
+  print OUTPUT "\n/*********************************************************" .
+               "**********************\n";
+  print OUTPUT " * These are the types and rgst_add functions generated\n";
+  print OUTPUT " * from the " . $base_fn . ".h file\n";
+  print OUTPUT " *********************************************************" .
+               "*********************/\n\n";
+
+  #-----------------------------------------------------------------------------
+  # Write the external declaration of the typedef strings to the .h file
+  # Write all the enumerated typedefs and enumerated typedef strings to 
+  # the output .c file
+  #
+  # Wrap up with ifndef to prevent duplicate definitions when hash.h is
+  # included by irstypes.h, and other similar includes that would define
+  # the structure twice.
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<$GA_enum_typedefs{num_entries}; $i++) {
+
+    if ($GV_debug_flag eq "true") {
+      print "DEBUG wrote Eumerated type: '$GA_enum_typedefs{$i}{word}{name}'\n";
+    }
+
+    printf HOUTPUT "extern char * %s_strs[%d];\n\n",
+                  $GA_enum_typedefs{$i}{word}{name},
+                  $GA_enum_typedefs{$i}{num_entries};
+
+
+    printf OUTPUT "#ifndef %s_STRS_DEFN\n",$GA_enum_typedefs{$i}{word}{name};
+    printf OUTPUT "#define %s_STRS_DEFN\n",$GA_enum_typedefs{$i}{word}{name};
+
+    printf OUTPUT "char * %s_strs[%d] = {\n\t",
+                  $GA_enum_typedefs{$i}{word}{name},
+                  $GA_enum_typedefs{$i}{num_entries};
+
+    for ($j=0; $j<$GA_enum_typedefs{$i}{num_entries}; $j++) {
+      printf OUTPUT "\"%s\"",$GA_enum_typedefs{$i}{enum_str}{$j};
+      if ($j < $GA_enum_typedefs{$i}{num_entries}-1) {
+        printf OUTPUT ",\n\t";
+      }
+    }
+    printf OUTPUT "};\n\n";
+
+    printf OUTPUT "RGST_EnumTypeDef_t %s_defn = {\"%s\", %d, %s_strs, NULL };\n",
+                  $GA_enum_typedefs{$i}{word}{name},
+                  $GA_enum_typedefs{$i}{word}{name},
+                  $GA_enum_typedefs{$i}{num_entries},
+                  $GA_enum_typedefs{$i}{word}{name};
+
+    printf OUTPUT "#endif /* End %s definition */ \n\n",$GA_enum_typedefs{$i}{word}{name};
+
+  }
+  printf OUTPUT "\n\n";
+
+  #-----------------------------------------------------------------------------
+  # Write all the C type typedefs to the output .c file 
+  #
+  # Wrap up with ifndef to prevent duplicate definitions when hash.h is
+  # included by irstypes.h, and other similar includes that would define
+  # the structure twice.
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<$GA_ctype_typedefs{num_entries}; $i++) {
+
+    if ($GV_debug_flag eq "true") {
+      print "DEBUG wrote C type: '$GA_ctype_typedefs{$i}{word}{name}'\n";
+    }
+
+    $msg = &create_sizeof_string(
+      $GA_ctype_typedefs{$i}{data_type}{e_data_type},
+      "",
+      $GA_ctype_typedefs{$i}{word}{nptrs});
+
+    printf OUTPUT "#ifndef %s_CTYPE_DEFN\n",$GA_ctype_typedefs{$i}{word}{name};
+    printf OUTPUT "#define %s_CTYPE_DEFN\n",$GA_ctype_typedefs{$i}{word}{name};
+
+    printf OUTPUT "RGST_CTypeDef_t %s_defn = { " 
+               .  "\"%s\", " 
+               .  "R_%s, %s, %d, %d, {%d, %d, %d}, NULL };\n",
+                  $GA_ctype_typedefs{$i}{word}{name},
+                  $GA_ctype_typedefs{$i}{word}{name},
+               uc $GA_ctype_typedefs{$i}{data_type}{e_data_type},
+                  $msg,
+                  $GA_ctype_typedefs{$i}{word}{nptrs},
+                  $GA_ctype_typedefs{$i}{word}{ndims},
+                  $GA_ctype_typedefs{$i}{word}{dims}{0},
+                  $GA_ctype_typedefs{$i}{word}{dims}{1},
+                  $GA_ctype_typedefs{$i}{word}{dims}{2};
+                  # $GA_ctype_typedefs{$i};
+
+    printf OUTPUT "#endif /* End %s definition */ \n\n",$GA_ctype_typedefs{$i}{word}{name};
+  }
+  print OUTPUT "\n\n";
+
+  #-----------------------------------------------------------------------------
+  # Write all the structure typedef definitions to the output .c file
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<$GA_struct_typedefs{num_entries}; $i++) {
+
+    if ($GV_debug_flag eq "true") {
+      print "DEBUG wrote Typedef type: '$GA_struct_typedefs{$i}{word}{name}'\n";
+    }
+
+    &write_output_struct_or_struct_td(
+      $GA_struct_typedefs{$i}{word},
+      $GA_struct_typedefs{$i}{structure},
+      "STRUCT_TYPEDEF"
+    );
+  }
+
+  #-----------------------------------------------------------------------------
+  # Write all the structure definitions to the output .c file
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<$GA_structs{num_entries}; $i++) {
+
+    if ($GV_debug_flag eq "true") {
+      print "DEBUG wrote Structure type: '$GA_structs{$i}{word}{name}'\n";
+    }
+
+    &write_output_struct_or_struct_td (
+      $GA_structs{$i}{word},
+      $GA_structs{$i},
+      "STRUCT"
+    ); 
+  }
+
+  #-----------------------------------------------------------------------------
+  # Create a routine which can be called to add all of the various typedef
+  # definitions to the registry at run time.
+  #
+  # Before doing so, create the prototype for this routine so the cc compiler
+  # won't complain.
+  # ambyr delete the following two commented lines
+  #-----------------------------------------------------------------------------
+  print OUTPUT "void rgst_add_" . $base_fn . "_types(void);\n\n";
+  print OUTPUT "void rgst_add_" . $base_fn . "_types(void) {\n\n";
+
+       #------------------------------------------------------------------------
+       # Calls to add all the enumerated typedefs to the registry
+       #------------------------------------------------------------------------
+  for ($i=0; $i<$GA_enum_typedefs{num_entries}; $i++) {
+
+    $tstr = $GA_enum_typedefs{$i}{word}{name};
+    printf OUTPUT "#ifndef %s_ENUM_ADD\n",$tstr;
+    printf OUTPUT "#define %s_ENUM_ADD\n",$tstr;
+    printf OUTPUT "  rgst_add_enum_td_defn (%s_defn);\n",$tstr;
+    printf OUTPUT "#endif\n";
+  }
+       #------------------------------------------------------------------------
+       # Calls to add all the ctype typedefs to the registry
+       #------------------------------------------------------------------------
+  for ($i=0; $i<$GA_ctype_typedefs{num_entries}; $i++) {
+    
+    $tstr = $GA_ctype_typedefs{$i}{word}{name};
+    printf OUTPUT "#ifndef %s_CTYPE_ADD\n",$tstr;
+    printf OUTPUT "#define %s_CTYPE_ADD\n",$tstr;
+    printf OUTPUT "  rgst_add_ctype_td_defn (%s_defn);\n",$tstr;
+    printf OUTPUT "#endif\n";
+  }
+       #------------------------------------------------------------------------
+       # Calls to add all the structure typedefs to the registry
+       #------------------------------------------------------------------------
+  for ($i=0; $i<$GA_struct_typedefs{num_entries}; $i++) {
+
+    $tstr = $GA_struct_typedefs{$i}{word}{name};
+    printf OUTPUT "#ifndef %s_TYPEDEF_ADD\n",$tstr;
+    printf OUTPUT "#define %s_TYPEDEF_ADD\n",$tstr;
+    printf OUTPUT "  rgst_add_struct_td_defn (R_STRUCT_TYPEDEF, "
+                . "\"%s\", %s_defn, %d, sizeof(%s));\n",
+                  $tstr, $tstr, $GA_struct_typedefs{$i}{structure}{num_fields}, $tstr;
+    printf OUTPUT "#endif\n";
+  }
+       #------------------------------------------------------------------------
+       # Calls to add all the structures to the registry
+       #------------------------------------------------------------------------
+  for ($i=0; $i<$GA_structs{num_entries}; $i++) {
+
+    $tstr = $GA_structs{$i}{word}{name};
+    printf OUTPUT "#ifndef %s_STRUCT_ADD\n",$tstr;
+    printf OUTPUT "#define %s_STRUCT_ADD\n",$tstr;
+    printf OUTPUT "  rgst_add_struct_td_defn (R_STRUCT, " .
+                  "\"%s\", %s_defn, %d, sizeof(struct %s));\n",
+                  $tstr, $tstr, $GA_structs{$i}{num_fields}, $tstr;
+    printf OUTPUT "#endif\n";
+  }
+
+  #-----------------------------------------------------------------------------
+  # Write the closing bracket for the "void rgst_add_$base_fn" 'C' routine
+  #-----------------------------------------------------------------------------
+  print OUTPUT "}\n";
+
+  return ($err);
+}
+
+################################################################################
+#
+# SUBROUTINE write_output_struct_or_struct_td
+#
+# Writes the typedef structure to the output '.c' file.
+#
+################################################################################
+sub write_output_struct_or_struct_td
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $word_list = $_[0];
+  my $str_list  = $_[1];
+  my $dt        = $_[2];
+
+  my %word = %$word_list;      # Convert the word_list to a hash structure 
+  my %str  = %$str_list;       # Convert the str_list to a hash structure
+  
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "write_output_struct_or_struct_td";
+  my $i = 0;
+  my $j = 0;
+  my $k = 0;
+  my $ndx = 0;
+  my $struct_string  = "";
+  my %struct_td_defn = ();
+  my %field          = ();
+
+  # print "TRACE [$me] entered : arg0 = $_[0] arg1 = $_[1] arg2 = $_[2]\n";
+
+  #-----------------------------------------------------------------------------
+  # Debugging print statements
+  #-----------------------------------------------------------------------------
+  # print "      Writing typedef structure ";
+  # print_word($word_list);
+
+  #-----------------------------------------------------------------------------
+  # Error check
+  #-----------------------------------------------------------------------------
+  if    ($dt eq "STRUCT")         { $struct_string = "struct"; }
+  elsif ($dt eq "STRUCT_TYPEDEF") { $struct_string = ""; }
+  else { &Abend($me, "programmer error '$dt' is not STRUCT or STRUCT_TYPEDEF"); }
+  
+  #-----------------------------------------------------------------------------
+  # Setup the header part of the output typedef structure
+  #-----------------------------------------------------------------------------
+  %struct_td_defn         = ();
+  $struct_td_defn{word}   = ();
+  $struct_td_defn{fields} = ();
+
+  $struct_td_defn{num_fields} = 0;
+  &copy_word($struct_td_defn{word}, \%word);
+
+  #-----------------------------------------------------------------------------
+  # Fill in the field part of the output typedef structure
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<$str{num_fields}; $i++) {
+
+    #---------------------------------------------------------------------------
+    # Setup some shorthand info for use later in this loop
+    # Ensure the field within the struct_td_defn we are about to setup is empty.
+    #---------------------------------------------------------------------------
+    $field = $str{fields}{$i};
+    %field = %$field;
+
+    $ndx = $struct_td_defn{num_fields};
+
+    $struct_td_defn{fields}{$ndx} = ();
+    
+    #---------------------------------------------------------------------------
+    # Initialize the array_size field info to default values
+    # Then fill in the array_size field if it was specified
+    #---------------------------------------------------------------------------
+    $struct_td_defn{fields}{$ndx}{array_size_type}         = $NUM_ARRAY_SIZE_ENUM;
+    $struct_td_defn{fields}{$ndx}{array_size_absolute_val} = -1;
+    $struct_td_defn{fields}{$ndx}{array_size_field}        = -1;
+    $struct_td_defn{fields}{$ndx}{array_size_field_offset} = "-1";
+    $struct_td_defn{fields}{$ndx}{array_size_global_var}   = "";
+
+    if ($field{array_size} ne "") {
+
+      #-------------------------------------------------------------------------
+      # See if this references a field within the current structure
+      #
+      # If so the array_size field referenced must be either
+      #
+      # 1) A simple int
+      # 2) A ptr to an int with a RGST_LEN of  '1'.
+      # 3) An int array with the same dimensions as the current
+      #    field.
+      #
+      # Case 1) is used for most structures, and looks like:
+      #
+      # typedef struct {
+      #    int num ;
+      #    int form ;
+      #    double *data ;       RGST_LEN ndat
+      #    int ndat ;
+      # } EOSDAT ;
+      #
+      #
+      # Case 2) is to accomodate the following structure:
+      #
+      # typedef struct IPA_STRUCT {
+      #    char name[MAXWORD] ;         name of variable stored in array
+      #    int *iloc ;                  RGST_LEN len
+      #                                 pointer to 1-D array of values
+      #    int *len ;                   RGST_LEN 1
+      #                                 length of floc array
+      # } IProbArray_t ;
+      #
+      #
+      # Case 3) is to accomodate the following structure:
+      #
+      # typedef struct ZIPA_STRUCT {
+      #    char name[MAXWORD] ;
+      #    int *iloc[MAXBLKS] ;         RGST_LEN len
+      #                                 2-D array, 1 for each block
+      #    int len[MAXBLKS] ;           Length of each array in iloc
+      #    int array_type;
+      #    int on_dump;
+      # } ZIProbArray_t ;
+      #
+      # In this case both iloc[] and len[] must be the same dimensionality.
+      # 
+      #-------------------------------------------------------------------------
+
+      for ($j=0; $j<$str{num_fields}; $j++) {
+
+        if ($field{array_size} eq $str{fields}{$j}{word}{name}) {
+
+          #---------------------------------------------------------------------
+          # The array_size field must be of type int
+          #---------------------------------------------------------------------
+          if ($str{fields}{$j}{data_type}{e_data_type} ne "int") {
+
+            &Abend($me,"\n\tField '$field{word}{name}' " 
+                   .   "references array_size_field '$field{array_size}' "
+                   .   "\n\twhich is not an int");
+          }
+
+          #---------------------------------------------------------------------
+          # The array_size field must have the same dimensionality as the
+          # field it defines
+          #---------------------------------------------------------------------
+          if ($str{fields}{$j}{word}{ndims} != $field{word}{ndims}) {
+            
+            &Abend($me,"\n\tField '$field{word}{name}' "
+                   .   "is an array of $field{word}{ndims} dims."
+                   .   "\n\tarray_size field '$field{array_size}' "
+                   .   "is an array of $str{fields}{$j}{word}{ndims} dims."
+                   .   "\n\tThey must be the same dimensionality");
+          }
+
+          for ($k=0; $k<$field{word}{ndims}; $k++) {
+     
+            if ($str{fields}{$j}{word}{dims}{$k} != $field{word}{dims}{$k}) {
+
+              &Abend($me,"\n\tField '$field{word}{name}' dimension $k is "
+                     .   "$field{word}{dims}{$k}"
+                     .   "\n\tArray size field '$field{array_size}' dimension "
+                     .   "$k is $str{fields}{$j}{word}{dims}{$k}."
+                     .   "\n\tThey must be the same dimensionality");
+            }
+          }
+
+          #---------------------------------------------------------------------
+          # If the array_size field is a pointer, it must be a single ptr
+          # of RGST_LEN "1"
+          #---------------------------------------------------------------------
+          if ($str{fields}{$j}{word}{nptrs} == 1) {
+ 
+            if ($str{fields}{$j}{array_size} ne "1") {
+
+              &Abend($me,"\n\tField '$field{word}{name}' references array_size"
+                     .   " field '$field{array_size}'"
+                     .   "\n\twhich is not an (int *) or (long *)"
+                     .   "\n\tof RGST_LEN of 1");
+
+            }
+          }
+
+          if ($str{fields}{$j}{word}{nptrs} > 1) {
+
+            &Abend($me,"\n\tField '$field{word}{name}' references array_size"
+                   .   " field  '$field{array_size}'"
+                   .   "\n\twhich is a doubly de-referenced field.  I dont "
+                   .   "know how to handle this");
+          }
+
+          #---------------------------------------------------------------------
+          # OK, the array_size field looks valid, write out its offset.
+          #---------------------------------------------------------------------
+          $struct_td_defn{fields}{$ndx}{array_size_type}  = $FIELD_OFFSET;
+          $struct_td_defn{fields}{$ndx}{array_size_field} = $j;
+ 
+          $struct_td_defn{fields}{$ndx}{array_size_field_offset} = 
+            "offsetof($struct_string $word{name}, $field{array_size})";
+
+          #---------------------------------------------------------------------
+          # Since we found the array_size field, break out of the for loop
+          # that was searching for this field in the data structure.
+          #---------------------------------------------------------------------
+          last;
+        }
+      }
+
+      #-------------------------------------------------------------------------
+      # If the above check failed, check to see if the array size is an
+      # absolute value such as 1 or 10.
+      #-------------------------------------------------------------------------
+      if ($struct_td_defn{fields}{$ndx}{array_size_type} == $NUM_ARRAY_SIZE_ENUM) {
+
+        if ($field{array_size} =~ /^[\d]+$/) {
+
+          $struct_td_defn{fields}{$ndx}{array_size_type} = $ABSOLUTE_VALUE;
+          $struct_td_defn{fields}{$ndx}{array_size_absolute_val} = $field{array_size};
+        }
+      }
+
+      #-------------------------------------------------------------------------
+      # If the above checks failed, the array size must be a global var.
+      # Simply copy it and it will be checked at runtime.
+      #-------------------------------------------------------------------------
+      if ($struct_td_defn{fields}{$ndx}{array_size_type} == $NUM_ARRAY_SIZE_ENUM) {
+
+        $struct_td_defn{fields}{$ndx}{array_size_type}       = $GLOBAL_VAR;
+        $struct_td_defn{fields}{$ndx}{array_size_global_var} = $field{array_size};
+      }
+    }
+
+    #---------------------------------------------------------------------------
+    # Initialize the str_array_size field info to default values
+    # Then fill in the str_array_size field if it was specified
+    #---------------------------------------------------------------------------
+    $struct_td_defn{fields}{$ndx}{str_array_size_field}        = -1;
+    $struct_td_defn{fields}{$ndx}{str_array_size_field_offset} = "-1";
+
+    if ($field{str_array_size} ne "") {
+
+      #-------------------------------------------------------------------------
+      #
+      # See if this references a field within the current structure
+      # 
+      # If so the str_array_size field referenced must be
+      # 
+      # 1) A ptr to an int or long with a RGST_LEN the same size as
+      #    the current field.  For example:
+      # 
+      #
+      #   typedef struct tpcur_struct {
+      #     char      *tp_name;
+      #     char      *tp_lab;
+      #     int        tp_type;
+      #     char      *edit_name;
+      #     Edit_t *edit;            RGST_LEN 1
+      #     double    *tp_data;         RGST_LEN tp_len
+      #     int        tp_ntimes;
+      #     int        tp_len;
+      #     int        num_gblks;
+      #     int        num_lblks;
+      #     char      **lblk_edit_name; RGST_LEN num_lblks lblk_tp_len
+      #     Edit_t **lblk_edit;      RGST_LEN num_lblks lblk_tp_len         >
+      #     double    **lblk_tp_data;   RGST_LEN num_lblks lblk_tp_len         >
+      #     int        *lblk_tp_len;    RGST_LEN num_lblks                     >
+      #
+      #   } TimePlotCurve_t;
+      #
+      #
+      # In this structure lblk_edit_name, lblk_edit, and
+      # lblk_tp_data are all of length num_lblks in the first dimension.
+      #
+      # The size of each 2nd dimension is defined by the array 'lblk_tp_len'.
+      # So lblk_edit_name[0] is of length lblk_tp_len[0].  For this to
+      # work, lblk_tp_len must be of the same length as the first dimension
+      # length of lblk_edit_name, lblk_edit, and lblk_tp_data.
+      #-------------------------------------------------------------------------
+      
+      for ($j=0; $j<$str{num_fields}; $j++) {
+
+        if ($field{str_array_size} eq $str{fields}{$j}{word}{name}) {
+
+          #---------------------------------------------------------------------
+          # The str_array_size field must be of type int
+          #---------------------------------------------------------------------
+          if (  ($str{fields}{$j}{data_type}{e_data_type} ne "int") 
+             && ($str{fields}{$j}{data_type}{e_data_type} ne "long") ) {
+             
+
+            &Abend($me,"\n\tField '$field{word}{name}' references "
+                   .   "str_array_size_field '$field{str_array_size}'"
+                   .   "'\n\twhich is not an int or long");
+          }
+
+          #---------------------------------------------------------------------
+          # The str_array_size field must be a single ptr.
+          #---------------------------------------------------------------------
+          if (  ($str{fields}{$j}{word}{nptrs} != 1)
+             || ($str{fields}{$j}{word}{ndims} != 0) ) {
+
+            &Abend($me,"\n\tField '$field{word}{name}' references "
+                   .   "str_array_size field '$field{str_array_size}'"
+                   .   "\n\twhich must be an 'int *' or 'long *'");
+          }
+
+          #---------------------------------------------------------------------
+          # The str_array_size field must be the same array_size length as
+          # the field it describes.
+          #---------------------------------------------------------------------
+          if ($str{fields}{$j}{array_size} ne $field{array_size}) {
+
+            &Abend($me,"\n\ttField '$field{word}{name}' references "
+                   .   "str_array_size field '$field{str_array_size}' "
+                   .   "\n\tField '$field{word}{name}' is of RGST_LEN "
+                   .   "'$field{array_size}' so the str_array_size_field "
+                   .   "$field{str_array_size}' must also be of this RGST_LEN. "
+                   .   "\n\tBut str_array_size field '$field{str_array_size}' is "
+                   .   "of RGST_LEN '$str{fields}{$j}{array_size}' which is "
+                   .   "invalid.");
+          }
+
+          #---------------------------------------------------------------------
+          # OK, the str_array_size field looks valid, write out its offset.
+          #---------------------------------------------------------------------
+          $struct_td_defn{fields}{$ndx}{str_array_size_field} = $j;
+          $struct_td_defn{fields}{$ndx}{str_array_size_field_offset} = 
+            "offsetof($struct_string $word{name}, $field{str_array_size})";
+
+          #---------------------------------------------------------------------
+          # Since we found the str_array_size field, break out of the for loop
+          # that was searching for this field in the data structure.
+          #---------------------------------------------------------------------
+         last;
+
+        }	
+      }		
+
+      #-------------------------------------------------------------------------
+      # Check that the str_array_size did indeed reference a field within
+      # this data structure.  If it did not, then report error and exit.
+      #-------------------------------------------------------------------------
+      if ($struct_td_defn{fields}{$ndx}{str_array_size_field} < 0) {
+
+        &Abend($me,"\n\tThe 2nd field after RGST_LEN is the str_array_size"
+               .   "\n\tWhich must reference a field within the same"
+               .   "\n\tdata structure."
+               .   "\n\ttField '$field{word}{name}' references str_array_size"
+               .   "field '$field{str_array_size}'"
+               .   "\n\ttwhich is not a field within the data structure.");
+      }
+    }
+
+    #---------------------------------------------------------------------------
+    # Fill in other field data 
+    #---------------------------------------------------------------------------
+    $struct_td_defn{fields}{$ndx}{name} = $field{word}{name};
+    $struct_td_defn{fields}{$ndx}{type} = $field{data_type}{e_data_type};
+
+    $struct_td_defn{fields}{$ndx}{size} = 
+      &create_sizeof_string($struct_td_defn{fields}{$ndx}{type},
+                            $field{data_type}{name},
+                            $field{word}{nptrs});
+
+    if ($field{word}{name} eq "void_field") {
+      $struct_td_defn{fields}{$ndx}{offset} = "0",
+    }
+    else {
+      $struct_td_defn{fields}{$ndx}{offset} = 
+          "offsetof("
+        . $struct_string     . " "  
+        . $word{name}        . ", " 
+        . $field{word}{name} . ")";
+    }
+ 
+    $struct_td_defn{fields}{$ndx}{nptrs} = $field{word}{nptrs};
+    $struct_td_defn{fields}{$ndx}{ndims} = $field{word}{ndims};
+
+    $struct_td_defn{fields}{$ndx}{dims} = ();
+    $struct_td_defn{fields}{$ndx}{dims}{0} = $field{word}{dims}{0};
+    $struct_td_defn{fields}{$ndx}{dims}{1} = $field{word}{dims}{1};
+    $struct_td_defn{fields}{$ndx}{dims}{2} = $field{word}{dims}{2};
+
+    $struct_td_defn{fields}{$ndx}{td_name} = "";
+
+    if (  ( $field{data_type}{e_data_type} =~ /^struct/) 
+       || ( $field{data_type}{e_data_type} =~ /^ctype_typedef/) 
+       || ( $field{data_type}{e_data_type} =~ /^enum_typedef/) 
+       || ( $field{data_type}{e_data_type} =~ /^struct_typedef/)) {
+
+      $struct_td_defn{fields}{$ndx}{td_name} = $field{data_type}{name};
+    }
+        
+    #---------------------------------------------------------------------------
+    # Increment the field counter
+    #---------------------------------------------------------------------------
+    $struct_td_defn{num_fields}++;
+
+  } # end loop across fields
+
+  #-----------------------------------------------------------------------------
+  # Now use the structure just created to write the registry definition to the 
+  # output .c file
+  #
+  # Wrap up with ifndef to prevent duplicate definitions when hash.h is
+  # included by irstypes.h, and other similar includes that would define
+  # the structure twice.
+  #-----------------------------------------------------------------------------
+  printf OUTPUT "#ifndef %s_STRUCT_DEFN\n",$struct_td_defn{word}{name};
+  printf OUTPUT "#define %s_STRUCT_DEFN\n",$struct_td_defn{word}{name};
+
+  printf OUTPUT "\nRGST_Field_t %s_defn [%d] = {\n\n",
+                 $struct_td_defn{word}{name},
+                 $struct_td_defn{num_fields};
+
+
+  for ($i=0; $i<$struct_td_defn{num_fields}; $i++) {
+
+    printf OUTPUT "  {\"%s\",\n\tR_%s, %s,\n\t\"%s\",\n\t%s,\n\t%d,",
+                  $struct_td_defn{fields}{$i}{name},
+                  uc $struct_td_defn{fields}{$i}{type},
+                  $struct_td_defn{fields}{$i}{size},
+                  $struct_td_defn{fields}{$i}{td_name},
+                  $struct_td_defn{fields}{$i}{offset},
+                  $struct_td_defn{fields}{$i}{nptrs};
+
+    printf OUTPUT "\n\t%d, {%d, %d, %d},",
+                  $struct_td_defn{fields}{$i}{ndims},
+                  $struct_td_defn{fields}{$i}{dims}{0},
+                  $struct_td_defn{fields}{$i}{dims}{1},
+                  $struct_td_defn{fields}{$i}{dims}{2};
+
+    printf OUTPUT "\n\t(ARRAY_SIZE_ENUM)%d, %d, %s, \"%s\", %ld,",
+                  $struct_td_defn{fields}{$i}{array_size_type},
+                  $struct_td_defn{fields}{$i}{array_size_field},
+                  $struct_td_defn{fields}{$i}{array_size_field_offset},
+                  $struct_td_defn{fields}{$i}{array_size_global_var},
+                  $struct_td_defn{fields}{$i}{array_size_absolute_val};
+     
+    printf OUTPUT "\n\t%d, %s",
+                  $struct_td_defn{fields}{$i}{str_array_size_field},
+                  $struct_td_defn{fields}{$i}{str_array_size_field_offset};
+
+
+    if ($i == $struct_td_defn{num_fields} - 1) { print OUTPUT ", NULL }\n"; }
+    else                                       { print OUTPUT ", NULL },\n"; }
+
+  }
+  
+  print OUTPUT "\n};\n\n";
+
+  printf OUTPUT "#endif /* end %s definition */\n\n",$struct_td_defn{word}{name};
+
+  #-----------------------------------------------------------------------------
+  #
+  #-----------------------------------------------------------------------------
+
+  return;
+}
+
+
+################################################################################
+# 
+# SUBROUTINE copy_data
+#
+# Copy the hash structure in argument 1 into the hash structure in argument 2.
+# 
+################################################################################
+sub copy_data
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  # my $me = "copy_data";
+  # print "TRACE [$me] entered\n";
+  # print "      [$me] arg1 = ";
+  # print "$_[1] ";
+  # print "'$_[1]{e_data_type}' ";
+  # print "'$_[1]{name}'\n";
+
+  $_[0]{e_data_type} = $_[1]{e_data_type};
+  $_[0]{name}        = $_[1]{name};
+
+  return;
+}
+
+
+################################################################################
+#
+# SUBROUTINE copy_word 
+#
+# Copy the hash structure in argument 1 into the hash structure in argument 2.
+#
+################################################################################
+sub copy_word
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  # my $me = "copy_word";
+  # print "TRACE [$me] entered\n";
+  # print "      [$me] arg1 = ";
+  # print "$_[1] ";
+  # print "'$_[1]{name}' ";
+  # print "$_[1]{nptrs} ";
+  # print "$_[1]{ndims} ";
+  # print "$_[1]{dims}{0} ";
+  # print "$_[1]{dims}{1} ";
+  # print "$_[1]{dims}{2}\n";
+
+  $_[0]{dims} = ();
+
+  $_[0]{name}    = $_[1]{name};
+  $_[0]{nptrs}   = $_[1]{nptrs};
+  $_[0]{ndims}   = $_[1]{ndims};
+  $_[0]{dims}{0} = $_[1]{dims}{0};
+  $_[0]{dims}{1} = $_[1]{dims}{1};
+  $_[0]{dims}{2} = $_[1]{dims}{2};
+
+  return;
+}
+
+################################################################################
+#
+# SUBROUTINE copy_field
+# 
+# Copy the hash structure in argument 1 into the hash structure in argument 2.
+#
+################################################################################
+sub copy_field
+{         
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "copy_field";
+  # print "TRACE [$me] entered\n";
+  # print "      [$me] arg1 = ";
+  # print "$_[1] ";
+  # print "$_[1]{data_type} ";
+  # print "'$_[1]{data_type}{e_data_type}' ";
+  # print "'$_[1]{data_type}{name}' ";
+  # print "$_[1]{word} ";
+  # print "'$_[1]{word}{name}' ";
+  # print "$_[1]{word}{nptrs} ";
+  # print "$_[1]{word}{ndims} ";
+  # print "$_[1]{word}{dims}{0} ";
+  # print "$_[1]{word}{dims}{1} ";
+  # print "$_[1]{word}{dims}{2} ";
+  # print "'$_[1]{array_size}' ";
+  # print "'$_[1]{str_array_size}'\n";
+
+  $_[0]{data_type}  = ();
+  $_[0]{word}       = ();
+  $_[0]{word}{dims} = ();
+
+  $_[0]{data_type}{e_data_type} = $_[1]{data_type}{e_data_type};
+  $_[0]{data_type}{name}        = $_[1]{data_type}{name};
+  $_[0]{word}{name}             = $_[1]{word}{name};
+  $_[0]{word}{nptrs}            = $_[1]{word}{nptrs};
+  $_[0]{word}{ndims}            = $_[1]{word}{ndims};
+  $_[0]{word}{dims}{0}          = $_[1]{word}{dims}{0};
+  $_[0]{word}{dims}{1}          = $_[1]{word}{dims}{1};
+  $_[0]{word}{dims}{2}          = $_[1]{word}{dims}{2};
+  $_[0]{array_size}             = $_[1]{array_size};
+  $_[0]{str_array_size}         = $_[1]{str_array_size};
+
+  return;
+}
+
+################################################################################
+# 
+# SUBROUTINE copy_struct
+#
+# Copy the hash structure in argument 1 into the hash structure in argument 2.
+#
+################################################################################
+sub copy_struct
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  # my $me = "copy_struct";
+  # print "TRACE [$me] entered\n";
+
+  my $i = 0;
+
+  $_[0]{word}       = ();
+  $_[0]{word}{dims} = ();
+  $_[0]{fields}     = ();
+
+  $_[0]{num_fields} =  $_[1]{num_fields} ;
+
+  $_[0]{word}{name}             = $_[1]{word}{name};
+  $_[0]{word}{nptrs}            = $_[1]{word}{nptrs};
+  $_[0]{word}{ndims}            = $_[1]{word}{ndims};
+  $_[0]{word}{dims}{0}          = $_[1]{word}{dims}{0};
+  $_[0]{word}{dims}{1}          = $_[1]{word}{dims}{1};
+  $_[0]{word}{dims}{2}          = $_[1]{word}{dims}{2};
+
+  for ($i=0; $i<$_[1]{num_fields}; $i++) {
+
+    $_[0]{fields}{$i}{data_type}  = ();
+    $_[0]{fields}{$i}{word}       = ();
+    $_[0]{fields}{$i}{word}{dims} = ();
+
+    $_[0]{fields}{$i}{data_type}{e_data_type} = $_[1]{fields}{$i}{data_type}{e_data_type};
+    $_[0]{fields}{$i}{data_type}{name}        = $_[1]{fields}{$i}{data_type}{name};
+    $_[0]{fields}{$i}{word}{name}             = $_[1]{fields}{$i}{word}{name};
+    $_[0]{fields}{$i}{word}{nptrs}            = $_[1]{fields}{$i}{word}{nptrs};
+    $_[0]{fields}{$i}{word}{ndims}            = $_[1]{fields}{$i}{word}{ndims};
+    $_[0]{fields}{$i}{word}{dims}{0}          = $_[1]{fields}{$i}{word}{dims}{0};
+    $_[0]{fields}{$i}{word}{dims}{1}          = $_[1]{fields}{$i}{word}{dims}{1};
+    $_[0]{fields}{$i}{word}{dims}{2}          = $_[1]{fields}{$i}{word}{dims}{2};
+    $_[0]{fields}{$i}{array_size}             = $_[1]{fields}{$i}{array_size};
+    $_[0]{fields}{$i}{str_array_size}         = $_[1]{fields}{$i}{str_array_size};
+
+  }
+}
+
+################################################################################
+# 
+# SUBROUTINE copy_ctype_typedef
+#
+# Copy the hash structure in argument 1 into the hash structure in argument 2.
+#
+################################################################################
+sub copy_ctype_typedef
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "copy_ctype_typedef";
+  # print "TRACE [$me] entered\n";
+  
+  $_[0]{data_type}  = ();
+  $_[0]{word}       = ();
+  $_[0]{word}{dims} = ();
+  
+  $_[0]{data_type}{e_data_type} = $_[1]{data_type}{e_data_type};
+  $_[0]{data_type}{name}        = $_[1]{data_type}{name};
+
+  $_[0]{word}{name}             = $_[1]{word}{name};
+  $_[0]{word}{nptrs}            = $_[1]{word}{nptrs};
+  $_[0]{word}{ndims}            = $_[1]{word}{ndims};
+  $_[0]{word}{dims}{0}          = $_[1]{word}{dims}{0};
+  $_[0]{word}{dims}{1}          = $_[1]{word}{dims}{1};
+  $_[0]{word}{dims}{2}          = $_[1]{word}{dims}{2};
+  
+  $_[0]{array_size}             = $_[1]{array_size}; 
+  $_[0]{str_array_size}         = $_[1]{str_array_size}; 
+}
+
+################################################################################
+#
+# SUBROUTINE clear_GA_arrays
+#
+# Clear out all the global arrays, and initialize counts and other array
+# data to default empty values (such as num_entires being zero).
+#
+################################################################################
+sub clear_GA_arrays
+{
+  %GA_structs                           = ();
+  $GA_structs{num_entries}              = 0;
+  $GA_structs{0}                        = ();
+
+  %GA_enum_typedefs                     = ();
+  $GA_enum_typedefs{num_entries}        = 0;
+  $GA_enum_typedefs{0}                  = ();
+
+  %GA_ctype_typedefs                    = ();
+  $GA_ctype_typedefs{num_entries}       = 0;
+  $GA_ctype_typedefs{0}                 = ();
+   
+  %GA_struct_typedefs                   = ();
+  $GA_struct_typedefs{num_entries}      = 0;
+  $GA_struct_typedefs{0}                = ();
+
+  #-----------------------------------------------------------------------------
+  # Add the following struct to the GA structs array 
+  #
+  # struct void_struct {
+  #  void *void_field;
+  # };
+  #
+  # to the irstypes.h array
+  #
+  # This will be used to replace abstract structures, such as 
+  # 'struct _pthread_descr_struct' which is found in the pthread.h file.
+  #
+  # This is only valid if this structure is used as a PTR to a field or
+  # typedef, since ptrs are always the same size.
+  #-----------------------------------------------------------------------------
+  # if ($ihfn =~ /irstypes.h/) {
+ 
+    %GV_struct                                    = ();
+    $GV_struct{word}{name}                        = "void_struct";    
+    $GV_struct{word}{nptrs}                       = 0;
+    $GV_struct{word}{ndims}                       = 0;
+    $GV_struct{word}{dims}{0}                     = 0;
+    $GV_struct{word}{dims}{1}                     = 0;
+    $GV_struct{word}{dims}{2}                     = 0;
+    $GV_struct{num_fields}                        = 1;
+    $GV_struct{fields}{0}{data_type}{e_data_type} = "void";
+    $GV_struct{fields}{0}{data_type}{name}        = "void";
+    $GV_struct{fields}{0}{word}{name}             = "void_field";    
+    $GV_struct{fields}{0}{word}{nptrs}            = 1;
+    $GV_struct{fields}{0}{word}{ndims}            = 0;
+    $GV_struct{fields}{0}{word}{dims}{0}          = 0;
+    $GV_struct{fields}{0}{word}{dims}{1}          = 0;
+    $GV_struct{fields}{0}{word}{dims}{2}          = 0;
+    $GV_struct{fields}{0}{array_size}             = "";
+    $GV_struct{fields}{0}{str_array_size}         = ""; 
+
+    &add_to_ga_structs_array(\%GV_struct);
+
+  # }
+}
+
+
+################################################################################
+#
+# SUBROUTINE clear_GV_ctype_typedef
+#
+# Totally empty the global var hash structure, then initialize all fields to
+# default values.
+#
+################################################################################
+sub clear_GV_ctype_typedef
+{
+  %GV_ctype_typedef                         = (); 
+  $GV_ctype_typedef{data_type}{e_data_type} = "";
+  $GV_ctype_typedef{data_type}{name}        = "";
+  $GV_ctype_typedef{word}{name}             = "";
+  $GV_ctype_typedef{word}{nptrs}            = 0;
+  $GV_ctype_typedef{word}{ndims}            = 0;
+  $GV_ctype_typedef{word}{dims}{0}          = 0;
+  $GV_ctype_typedef{word}{dims}{1}          = 0;
+  $GV_ctype_typedef{word}{dims}{2}          = 0;
+  $GV_ctype_typedef{array_size}             = "";
+  $GV_ctype_typedef{str_array_size}         = "";
+}
+
+################################################################################
+#
+# SUBROUTINE clear_GV_enum_typedef
+#
+# Totally empty the global var hash structure, then initialize all fields to
+# default values.
+#
+################################################################################
+sub clear_GV_enum_typedef
+{
+  %GV_enum_typedef                              = ();
+  $GV_enum_typedef{word}{name}                  = "";
+  $GV_enum_typedef{word}{nptrs}                 = 0;
+  $GV_enum_typedef{word}{ndims}                 = 0;
+  $GV_enum_typedef{word}{dims}{0}               = 0;
+  $GV_enum_typedef{word}{dims}{1}               = 0;
+  $GV_enum_typedef{word}{dims}{2}               = 0;
+  $GV_enum_typedef{num_entries}                 = 0;
+  $GV_enum_typedef{enum_str}{0}                 = "";
+}
+
+################################################################################
+#
+# SUBROUTINE clear_GV_struct_typedef
+#
+# Totally empty the global var hash structure, then initialize all fields to
+# default values.
+#
+################################################################################
+sub clear_GV_struct_typedef
+{
+  %GV_struct_typedef                                               = ();
+  $GV_struct_typedef{word}{name}                                   = "";
+  $GV_struct_typedef{word}{nptrs}                                  = 0;
+  $GV_struct_typedef{word}{ndims}                                  = 0;
+  $GV_struct_typedef{word}{dims}{0}                                = 0;
+  $GV_struct_typedef{word}{dims}{1}                                = 0;
+  $GV_struct_typedef{word}{dims}{2}                                = 0;
+  $GV_struct_typedef{structure}{word}{name}                        = "";
+  $GV_struct_typedef{structure}{word}{nptrs}                       = 0;
+  $GV_struct_typedef{structure}{word}{ndims}                       = 0;
+  $GV_struct_typedef{structure}{word}{dims}{0}                     = 0;
+  $GV_struct_typedef{structure}{word}{dims}{1}                     = 0;
+  $GV_struct_typedef{structure}{word}{dims}{2}                     = 0;
+  $GV_struct_typedef{structure}{num_fields}                        = 0;
+  $GV_struct_typedef{structure}{fields}{0}{data_type}{e_data_type} = "";
+  $GV_struct_typedef{structure}{fields}{0}{data_type}{name}        = "";
+  $GV_struct_typedef{structure}{fields}{0}{word}{name}             = "";
+  $GV_struct_typedef{structure}{fields}{0}{word}{nptrs}            = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{ndims}            = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{dims}{0}          = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{dims}{1}          = 0;
+  $GV_struct_typedef{structure}{fields}{0}{word}{dims}{2}          = 0;
+  $GV_struct_typedef{structure}{fields}{0}{array_size}             = "";
+  $GV_struct_typedef{structure}{fields}{0}{str_array_size}         = "";
+}
+
+################################################################################
+#
+# SUBROUTINE search_ga_structs
+#
+# Search the global hash array for the argument passed into this routine.
+# This argument is in $_[0].  
+# Return -1 if it is not found, and 0 or greater if it is found.
+# autumn
+################################################################################
+sub search_ga_structs
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "search_ga_structs";
+  my $field;
+  my $i = 0;
+
+  # print "TRACE [$me] entered : arg0 = $_[0] num_entries = $GA_structs{num_entries}\n";
+  for ($i=0; $i<$GA_structs{num_entries}; $i++) {
+    # print "DEBUG [$me] checking $GA_structs{$i}{word}{name} : $_[0]\n";
+    if ($GA_structs{$i}{word}{name} eq $_[0]) { return($i); }
+  }
+  return(-1);
+}
+
+################################################################################
+#
+# SUBROUTINE search_ga_enum_typedefs
+#
+# Search the global hash array for the argument passed into this routine.
+# This argument is in $_[0].  
+# Return -1 if it is not found, and 0 or greater if it is found.
+#
+################################################################################
+sub search_ga_enum_typedefs
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "search_ga_enum_typedefs";
+  my $field;
+  my $i = 0;
+
+  # print "TRACE [$me] entered : arg0 = $_[0]\n";
+
+  for ($i=0; $i<$GA_enum_typedefs{num_entries}; $i++) {
+    if ($GA_enum_typedefs{$i}{word}{name} eq $_[0]) { return($i); }
+  }
+  return(-1);
+}
+
+################################################################################
+#
+# SUBROUTINE search_ga_ctype_typedefs
+#
+# Search the global hash array for the argument passed into this routine.
+# This argument is in $_[0].  
+# Return -1 if it is not found, and 0 or greater if it is found.
+#
+################################################################################
+sub search_ga_ctype_typedefs
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "search_ga_ctype_typedefs";
+  my $field;
+  my $i = 0;
+    
+  # print "TRACE [$me] entered : arg0 = $_[0]\n";
+
+  for ($i=0; $i<$GA_ctype_typedefs{num_entries}; $i++) {
+    # print "TRACE [$me] ($GA_ctype_typedefs{$i}{data_type}{name} eq $_[0] ?\n"; 
+    if ($GA_ctype_typedefs{$i}{data_type}{name} eq $_[0]) { return($i); }
+  }
+  return(-1);
+}
+
+################################################################################
+#
+# SUBROUTINE search_ga_struct_typedefs
+#
+# Search the global hash array for the argument passed into this routine.
+# This argument is in $_[0].  
+# Return -1 if it is not found, and 0 or greater if it is found.
+#
+################################################################################
+sub search_ga_struct_typedefs
+{
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "search_ga_struct_typedefs";
+  my $field;
+  my $i = 0;
+    
+  # print "TRACE [$me] entered : arg0 = $_[0]\n";
+
+  for ($i=0; $i<$GA_struct_typedefs{num_entries}; $i++) {
+    if ($GA_struct_typedefs{$i}{word}{name} eq $_[0]) { return($i); }
+  }
+  return(-1);
+}
+
+
+################################################################################
+#
+# SUBROUTINE add_to_ga_structs_array
+#
+# Add the argument passed into this routine into the global hash array.
+#
+################################################################################
+sub add_to_ga_structs_array
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my ($struct_array) = @_;
+
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "add_to_ga_structs_array";
+  my %struct_hash = %$struct_array;
+  my $name;
+
+#autumn
+#   print "TRACE [$me] entered: arg0 = ";
+#   print "\tGA_structs{GA_structs{num_entries}} = $GA_structs{$GA_structs{num_entries}}\n";
+#   print "\tGA_structs{num_entries} = $GA_structs{num_entries}\n";
+#   print "\t'$struct_hash{word}' ";
+#   print "\t'$struct_hash{word}{name}' ";
+#   print "\t'$struct_hash{fields}' ";
+#   print "\t'$struct_hash{num_fields}'\n";
+
+  $name = $struct_hash{word}{name};
+
+  if (search_ga_structs($name) >= 0) { 
+    if ($name eq "void_struct")  { return; }
+    &Abend($me, "Attempt to add '$name' twice to GA_structs array"); 
+  }
+
+  $GA_structs{$GA_structs{num_entries}} = \%struct_hash;
+  $GA_structs{num_entries}++;
+
+#  print "\tGA_structs{GA_structs{num_entries}} = $GA_structs{$GA_structs{num_entries}}\n";
+#  print "\tGA_structs{num_entries} = $GA_structs{num_entries}\n";
+
+}
+
+################################################################################
+#
+# SUBROUTINE add_to_ga_ctype_typedefs_array
+#
+# Add the argument passed into this routine into the global hash array.
+#
+################################################################################
+sub add_to_ga_ctype_typedefs_array
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my ($ctype_array) = @_;
+
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "add_to_ctype_typedefs_array";
+  my %ctype_hash = %$ctype_array;
+  my $name;
+
+  # print "TRACE [$me] entered: arg0 = ";
+  # print "'$ctype_hash{data_type}' ";
+  # print "'$ctype_hash{data_type}{name}' ";
+  # print "'$ctype_hash{word}' ";
+  # print "'$ctype_hash{word}{name}' ";
+  # print "'$ctype_hash{array_size}' ";
+  # print "'$ctype_hash{str_array_size}'\n";
+
+  $name = $ctype_hash{data_type}{name};
+
+  if (search_ga_ctype_typedefs($name) >= 0)
+    { &Abend($me, "Attempt to add '$name' twice to GA_ctype_typedefs array"); }
+
+  $GA_ctype_typedefs{$GA_ctype_typedefs{num_entries}} = \%ctype_hash;
+  $GA_ctype_typedefs{num_entries}++;
+}
+
+################################################################################
+#
+# SUBROUTINE add_to_ga_enum_typedefs_array
+#
+# Add the argument passed into this routine into the global hash array.
+#
+################################################################################
+sub add_to_ga_enum_typedefs_array
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my ($enum_array) = @_;
+
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "add_to_ga_enum_typedefs_array";
+  my %enum_hash = %$enum_array;
+  my $name;
+
+  # print "TRACE [$me] entered: arg0 = ";
+  # print "'$enum_hash{word}' ";
+  # print "'$enum_hash{word}{name}' ";
+  # print "'$enum_hash{num_entries}'\n";
+
+  $name = $enum_hash{word}{name};
+
+  if (search_ga_enum_typedefs($name) >= 0)
+    { &Abend($me, "Attempt to add '$name' twice to GA_enum_typedefs array"); }
+
+  $GA_enum_typedefs{$GA_enum_typedefs{num_entries}} = \%enum_hash;
+  $GA_enum_typedefs{num_entries}++;
+
+  # &debug_print_enum_typedef($enum_array); 
+}
+
+################################################################################
+#
+# SUBROUTINE add_to_ga_struct_typedefs_array
+#  
+# Add the argument passed into this routine into the global hash array.
+#
+################################################################################
+sub add_to_ga_struct_typedefs_array
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my ($struct_array) = @_;
+
+  #-----------------------------------------------------------------------------
+  # Local Vars
+  #-----------------------------------------------------------------------------
+  my $me = "add_to_ga_struct_typedefs_array";
+  my %struct_hash = %$struct_array;
+  my $name;
+
+  # print "TRACE [$me] entered: arg0 = ";
+  # print "'$struct_hash{word}' ";
+  # print "'$struct_hash{word}{name}' ";
+  # print "'$struct_hash{structure}'\n";
+
+  $name = $struct_hash{word}{name};
+ 
+  if (search_ga_struct_typedefs($name) >= 0)
+    { &Abend($me, "Attempt to add '$name' twice to GA_struct_typedefs array"); }  
+
+  $GA_struct_typedefs{$GA_struct_typedefs{num_entries}} = \%struct_hash;
+  $GA_struct_typedefs{num_entries}++;
+} 
+
+
+################################################################################
+#
+# SUBROUTINE print_word
+#
+# Prints the data in a word hash to the screen as one line.
+#
+################################################################################
+sub print_word
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my ($word_array) = @_;
+  my %word = %$word_array;
+      
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $i  = 0;
+  
+  #-----------------------------------------------------------------------------
+  #   
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<$word{nptrs}; $i++) {
+   print "*";   
+  }
+  
+  if ($word{name} =~ /^$/) { print "NO NAME";   }
+  else                       { print $word{name}; }
+  
+  for ($i=0; $i<$word{ndims}; $i++) {
+    print "[$word{dims}{$i}]";
+  }
+  print "\n";
+  
+  return(0);
+}
+
+################################################################################
+#
+# SUBROUTINE parse_RGST_LEN
+#
+# Parse the RGST_LEN field annotation.  This word is followed by 1 or 2
+# other words.
+#
+# If followed by 1 field, then the preceding field must be
+# a pointer field such as 'int *elms' or 'struct mystruct *mys'.
+#
+# If followed by 2 fields, then the preceding field must be a ptr-to-ptr
+# field such as 'int **elms' or 'struct mystruct **mys'.
+#
+################################################################################
+sub parse_RGST_LEN
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me = "parse_RGST_LEN";
+
+  # print "TRACE [$me] entered\n";
+  
+  #-----------------------------------------------------------------------------
+  # Verify that at least one word exists after 'RGST_LEN' and that
+  # it begins with an alphanumeric character.
+  #-----------------------------------------------------------------------------
+  if (&get_next_char_on_line() != 0) {
+    &Abend($me,"Unexpected End-Of-Line found after RGST_LEN for field "
+           .   "$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}");
+  }
+
+  if ($GV_char =~ /[^a-zA-Z0-9]/) {
+  
+    &Abend($me,"\n\tFound invalid 1st word after RGST_LEN for field"
+           .   "$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}"
+           .   "\n\tFound char '$GV_char'");
+  }
+
+  #-----------------------------------------------------------------------------
+  # Replace the character, it will be retrieved again by get_next_word
+  #-----------------------------------------------------------------------------
+  FileHandle::ungetc(INPUT, ord $GV_char);
+
+  #-----------------------------------------------------------------------------
+  # Get the first word after RGST_LEN
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0)  { 
+    &Abend($me,"Did not find word after RGST_LEN for field "
+           .   "$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}");
+  }
+
+  #-----------------------------------------------------------------------------
+  # Verify that the field immediately prior to RGST_LEN has at least one 
+  # dereference pointer.
+  #-----------------------------------------------------------------------------
+  if ($GV_struct{fields}{$GV_struct{num_fields}-1}{word}{nptrs} < 1) {
+  
+    &Abend($me,"\n\tRGST_LEN is invalid for field "
+           .   "'$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}'"
+           .   "\n\tsince it is not a de-referenced field"); 
+  }
+
+  #-----------------------------------------------------------------------------
+  # OK, place the word just read after RGST_LEN in the array_size field
+  # For the field immediately prior to RGST_LEN.
+  #-----------------------------------------------------------------------------
+  $GV_struct{fields}{$GV_struct{num_fields}-1}{array_size} = $GV_word{name};
+
+  #-----------------------------------------------------------------------------
+  # Next, see if there is another word ON THE CURRENT LINE!
+  # If so it must be the str_array_size.  The stipulation that it be
+  # on the current line is necessary, since it is valid for the next
+  # word to be a typedef field.
+  # 
+  # This breaks the traditional C parsers syntax, which doesn't care about
+  # line breaks, but makes it simpler and should be acceptable for this parser.
+  # 
+  # If no char is found, return from this routine, if one is found, go through
+  # logic similar to what we did for the first word to process this second word.
+  #-----------------------------------------------------------------------------
+  if (&get_next_char_on_line() != 0) { return; }
+
+  if ($GV_char =~ /[^a-zA-Z0-9]/) {
+
+    &Abend($me,"\n\tFound invalid 2nd word after RGST_LEN for field "
+           .   "$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}"
+           .   "\n\tFound char '$GV_char'");
+  }
+
+  #-----------------------------------------------------------------------------
+  # Replace the character, it will be retrieved again by get_next_word
+  #-----------------------------------------------------------------------------
+  FileHandle::ungetc(INPUT, ord $GV_char);
+
+  #-----------------------------------------------------------------------------
+  # Get the second word after RGST_LEN
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0)  { 
+     &Abend($me,"Error reading 2nd word after RGST_LEN for field "
+            .   "$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}");
+  }
+
+  #-----------------------------------------------------------------------------
+  # Verify that the field immediately prior to RGST_LEN has two de-reference
+  # pointers.
+  #-----------------------------------------------------------------------------
+  if ($GV_struct{fields}{$GV_struct{num_fields}-1}{word}{nptrs} != 2) {
+
+    &Abend($me,"\n\t2nd word following RGST_LEN is invalid because field "
+           .   "$GV_struct{fields}{$GV_struct{num_fields}-1}{word}{name}"
+           .   "\n\tdoesn not have two de-reference pointers");
+  }
+
+  #-----------------------------------------------------------------------------
+  # OK, place the word just read after RGST_LEN in the str_array_size field
+  # For the field immediately prior to RGST_LEN.
+  #-----------------------------------------------------------------------------
+  $GV_struct{fields}{$GV_struct{num_fields}-1}{str_array_size} = $GV_word{name};
+
+  #-----------------------------------------------------------------------------
+  # At this point there should be nothing else on this line.
+  #-----------------------------------------------------------------------------
+  return;
+}
+
+################################################################################
+#
+# SUBROUTINE parse_enum
+#
+# Parse an enumerated typedef that looks like:
+#
+# typedef enum { one, two, three } my_type;
+#
+# The words "typedef enum" have already been read from the file.
+#
+# Read up through the trailing '}' and return. 
+#
+# RETURNS:
+#
+#  Fills in the Global Variable 'gv_enum_typedef' data structure.
+#
+################################################################################
+sub parse_enum
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me = "parse_enum";
+  my $i  = 0;
+
+  # print "TRACE [$me] entered\n";
+  
+  #-----------------------------------------------------------------------------
+  # The next word must be '{'
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0)  { &Abend($me, "Expected '{', found EOF"); } 
+
+  if ($GV_word{name} ne "{") { &Abend($me, "Expected '{' found '$GV_word{name}'"); }
+
+  #-----------------------------------------------------------------------------
+  # Now we must read pairs of words such as "one ," "two ," "three }"
+  #-----------------------------------------------------------------------------
+  $GV_enum_typedef{num_entries} = 0;
+
+  while (&get_next_word() == 0) {
+
+    $GV_enum_typedef{enum_str}{$GV_enum_typedef{num_entries}} = $GV_word{name};
+    $GV_enum_typedef{num_entries}++;
+    
+    if (&get_next_word() < 0) { &Abend($me, "Expected ',' or '}', found EOF"); }
+
+    if ($GV_word{name} eq "}") { 
+
+      return; 
+    }
+    elsif ($GV_word{name} ne ",") { 
+      &Abend($me, "Expected ',' or '}', found $GV_word{name}");
+    }
+  } 
+
+  &Abend($me, "Expected trailing '}', found EOF"); 
+}
+
+################################################################################
+#
+# SUBROUTINE parse_struct 
+#
+# Parse a structure definition that looks like:
+#
+# a) struct my_struct  { ... } my_type; 
+# b) struct my_struct  { ... };
+# c) struct { ... }   my_type;
+# d) struct my_struct my_type;
+#
+# ---
+#
+# The word 'struct' has already been read from the file.
+#
+# ---
+#
+# In cases a) & b) store the parsed structure in gv_struct and in the array
+# ga_structs.
+#
+# In case c) store the parsed structure ONLY in gv_struct, since there is
+# no name associated with this structure (it is within a typedef statement).
+#
+# In case d) the struct must already be in the aray ga_structs.  Extract
+# it and store it in gv_struct as well.
+#
+# ---
+#
+# In cases a), c), & d) leave the trailing 'my_type' in the file so the type
+# name can be read by the procedure parse_type() which called this routine.
+#
+# In case b) go ahead and read the ';' from the file.
+#
+# RETURNS
+#
+#   bypass flag : MY_TRUE  if this structure should be bypassed
+#                 MY_FALSE if this structure should be used
+#
+#   GV_struct   : This global var will contain the parsed structure.
+# 
+################################################################################
+sub parse_struct
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me = "parse_struct";
+  my $temp_name = "";
+  my $i    = 0;
+  my $ndx  = 0;
+  my $rc   = 0;
+  my $bypass = $MY_FALSE;
+  my $num_fields = 0;
+
+  # print "TRACE [$me] entered\n";
+
+  #-----------------------------------------------------------------------------
+  # Initialize the global var 'GV_struct'
+  #-----------------------------------------------------------------------------
+  %GV_struct             = ();
+  $GV_struct{word}       = ();
+  $GV_struct{fields}     = ();
+  $GV_struct{num_fields} = 0;
+
+  #-----------------------------------------------------------------------------
+  # 'struct' must be followed by something -- read the word and place it
+  # in the structure hash. 
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0) 
+    { &Abend($me, "Expected '{' or name of struct, found EOF"); } 
+
+  &copy_word($GV_struct{word}, \%GV_word);
+ 
+  #-----------------------------------------------------------------------------
+  # This handles 
+  #   struct { ...} my_type;
+  #-----------------------------------------------------------------------------
+  if ($GV_struct{word}{name} =~ /^{/) {
+    $GV_struct{word}{name}  = "";
+  }
+
+  #-----------------------------------------------------------------------------
+  # This handles
+  #   struct my_struct { ... } my_type;
+  #   struct my_struct { ... };
+  #   struct my_struct my_type;
+  #-----------------------------------------------------------------------------
+  else {
+
+    #---------------------------------------------------------------------------
+    # Read the next character.  If it is '{' then move on to get each
+    # field in the structure.  If it is anything else, then the structure name
+    # just read must be a structure that has already been defined.
+    #
+    # IE. we are parsing "struct my_struct my_type;"
+    #
+    # Search for the structure in the global array and copy this structure
+    # into gv_struct.
+    #
+    # Then return from this procedure, since there is no structure
+    # to be parsed.
+    #
+    # Ungetc because the character just read is the first letter of the
+    # typedef and it will be needed by the routine which called
+    # this routine.
+    #---------------------------------------------------------------------------
+    if (&get_next_char < 0) {
+      &Abend($me, "Expected typedef name or '{' in definition of structure '" 
+             .    $GV_struct{word}{name} . "' found EOF");
+    }
+
+    if (!($GV_char =~ /^{/)) {
+
+      FileHandle::ungetc(INPUT, ord $GV_char);
+
+      if (($ndx = (search_ga_structs($GV_struct{word}{name}))) < 0) {
+
+        #-----------------------------------------------------------------------
+        # Bypass forward declaration of Domain_s
+        #-----------------------------------------------------------------------
+        if ($GV_struct{word}{name} eq "Domain_s") {
+          $bypass = $MY_TRUE;
+          # &Notice($me,"Bypassing forward declaration of Domain_s");
+          goto PARSE_STRUCT_EXIT_1;
+        }
+
+        #-----------------------------------------------------------------------
+        # Bypass forward declaration of DBfile
+        #-----------------------------------------------------------------------
+        if ($GV_struct{word}{name} eq "DBfile") {
+          $bypass = $MY_TRUE;
+          # &Notice($me,"Bypassing forward declaration of DBfile");
+          goto PARSE_STRUCT_EXIT_1;
+        }
+
+        #-----------------------------------------------------------------------
+        #
+        #-----------------------------------------------------------------------
+        if (($ndx = (search_ga_structs("void_struct"))) < 0) {
+        
+          &Abend($me, "Did not find 'void_struct' in GA_struct array");
+        }
+        else {
+          # &Notice($me,"Using void_struct in place of forward declaration "
+          #         .   "of structure $GV_struct{word}{name}");
+          goto PARSE_STRUCT_EXIT_1;
+        }
+      }
+
+      &copy_struct(\%GV_struct, $GA_structs{$ndx});
+
+      return($bypass);
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # Now get each field in the structure
+  #-----------------------------------------------------------------------------
+  while (&get_next_data_type() == 0) {
+
+    #---------------------------------------------------------------------------
+    # For now we don't handle structures with unions -- Abend the program.
+    #---------------------------------------------------------------------------
+    if ($GV_data{e_data_type} =~ /union/)  
+       { &Abend($me, "Union found, parser doesn't handle unions yet"); }
+
+    #---------------------------------------------------------------------------
+    # Read each field for the data type 
+    #---------------------------------------------------------------------------
+    $rc = get_next_field();
+    while ($rc == 0) {
+
+      if ($GV_forward_declared_data_type == $MY_TRUE) {
+ 
+        if ($GV_field{word}{nptrs} < 1) {
+ 
+          $temp_name = $GV_struct{word}{name};
+          if ($temp_name =~ /^$/) { $temp_name = "NO NAME"; }
+
+          &Notice($me,"\n\tField '$GV_field{word}{name}' of structure "
+                  .   "'$temp_name' "
+                  .   "\n\tis of unknown or forward declared data type "
+                  .   "'$GV_field{data_type}{name}'."
+                  .   "\n\tThis only works if the field is a pointer, but field "
+                  .   "\n\t'$GV_field{word}{name}' is not a pointer. " );
+
+          $bypass = $MY_TRUE;
+          &get_next_char();				      
+          while ($GV_char ne "}") { &get_next_char(); }
+          last;
+        }
+
+      } 
+
+      if ($GV_field{word}{name} eq "RGST_LEN") {
+
+        &parse_RGST_LEN();
+      }
+      elsif ($GV_field{word}{name} =~ /^\(/) {
+
+        &Notice($me,"\n\tStructure '$GV_struct{word}{name}' has a field of "
+                .   "type '$GV_data{e_data_type}' with parentheses -- "
+                .   "\n\tBypassing because registry cannot handle parentheses yet");
+
+        $bypass = $MY_TRUE;
+        &get_next_char();				      
+        while ($GV_char ne "}") { &get_next_char(); }
+        last;
+      }
+      else {
+
+        $num_fields = $GV_struct{num_fields}; 
+        $GV_struct{num_fields}++;
+
+        $GV_struct{fields}{$num_fields} = ();
+        &copy_field($GV_struct{fields}{$num_fields}, \%GV_field);
+      }
+      $rc = get_next_field();
+    }
+    #---------------------------------------------------------------------------
+    # When get_next_field returns -1, that simply means the last field for
+    # the data type was read.  So continue
+    #
+    # A return value of -2 or less, means that the field could not be
+    # properly parsed and handled by the registry, so this entire data structure
+    # should be bypassed and not put in the registry.  Set the bypass flag
+    # to true and scan up to the '}' that ends this structure definition.    
+    #---------------------------------------------------------------------------	     
+    if ( ($rc < -1) || ($bypass == $MY_TRUE) ) {
+
+      $bypass = $MY_TRUE;
+     		
+      &get_next_char();				      
+      while ($GV_char ne "}") { &get_next_char(); }
+    
+      last;		
+    }
+	     
+  }
+
+  #-----------------------------------------------------------------------------
+  # Read the next char, if it is ';', then simply move on.
+  # If it is anything else, it must be the beginning of a 'my_type', so put
+  # it back on the file so it can be read by the procedure which called this
+  # procedure.
+  #-----------------------------------------------------------------------------
+  if (&get_next_char < 0) {
+    &Abend($me, "Expected typedef name or ';' after definition of structure '"
+           .    $GV_struct{word}{name} . "' found EOF");
+  }
+
+  if (!($GV_char =~/;/)) { FileHandle::ungetc(INPUT, ord $GV_char); }
+
+  #-----------------------------------------------------------------------------
+  # If a structure name was given, then add this to the global array of 
+  # structure definitions.
+  #-----------------------------------------------------------------------------
+  if ($bypass == $MY_FALSE) { 
+
+    if ($GV_struct{word}{name} ne "") {
+
+      &add_to_ga_structs_array(\%GV_struct); 
+    }
+  }
+  
+  #-----------------------------------------------------------------------------
+  # Goto label used to short circuit above processing when errors or
+  # other conditions such as forward declarations are encountered.
+  #-----------------------------------------------------------------------------
+  PARSE_STRUCT_EXIT_1:
+  return($bypass);
+}
+
+################################################################################
+#
+# SUBROUTINE parse_typedef
+#
+# Parse a typedef that looks like one of the following:
+#
+# typedef struct my_struct { ... } my_type;
+# typedef struct           { ... } my_type;
+# typedef enum             { ... } my_type;
+# typedef int                      my_type;
+# typedef my_struct                my_type;
+# typedef my_type                  my_other_type;
+#
+# The word 'typedef' has already been read from the file.
+#
+# Returns ( 0) if the typedef was successfully parsed 
+#         (-1) if it could not be parsed (because it contained a union).
+#
+################################################################################
+sub parse_typedef
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me = "parse_typedef";
+  my $i  = 0;
+  my $ndx = 0;
+  my $type = $NUM_TD;
+  my $bypass = $MY_FALSE;
+  my $typedef_name = "";
+  my $temp_word = "";
+  
+  # print "TRACE [$me] entered\n";
+
+  #-----------------------------------------------------------------------------
+  # Error check
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0) { &Abend($me,"EOF found after typedef"); }
+  
+  #-----------------------------------------------------------------------------
+  # Clear global vars that may be setup by this subroutine
+  #-----------------------------------------------------------------------------
+  &clear_GV_ctype_typedef();
+  &clear_GV_enum_typedef();
+  &clear_GV_struct_typedef();
+
+  #-----------------------------------------------------------------------------
+  # This catches 'typedef enum my_enum my_type'
+  #-----------------------------------------------------------------------------
+  if ($GV_word{name} eq "enum") {
+
+    &parse_enum();
+    # &debug_print_gv_enum_typedef();
+    $type = $ENUM_TD; 
+  }
+  #-----------------------------------------------------------------------------
+  # This catches 'typedef struct my_struct { ... } my_type'
+  # and          'typedef struct           { ... } my_type'
+  # This catches 'typedef struct mytype ;      <-- forward declaration, bypass
+  #-----------------------------------------------------------------------------
+#autumn amethyst
+  elsif ($GV_word{name} eq "struct") {
+
+    $bypass = &parse_struct();
+    $type   = $STRUCT_TD; 
+
+  }
+  #-----------------------------------------------------------------------------
+  # This catches 'typedef int my_type"
+  # But, since the 'int' could be any standard C data type, for example,
+  # 'unsigned long long int' call the get_next_data_type() routine to handle
+  # the read of this data type from the file. 
+  #-----------------------------------------------------------------------------
+  elsif (  ($GV_word{name} eq "char") 
+        || ($GV_word{name} eq "short")
+        || ($GV_word{name} eq "int")
+        || ($GV_word{name} eq "long")
+        || ($GV_word{name} eq "float")
+        || ($GV_word{name} eq "double")
+        || ($GV_word{name} eq "void")
+        || ($GV_word{name} eq "unsigned") ) {
+
+    &unget_GV_word();
+    &get_next_data_type();
+    $GV_ctype_typedef{data_type}{e_data_type} = $GV_data{e_data_type};
+    $type = $CTYPE_TD;
+  }
+  #-----------------------------------------------------------------------------
+  # See if it is a previously defined structure or typedef
+  #-----------------------------------------------------------------------------
+  else {
+
+    #---------------------------------------------------------------------------
+    # This catches 'struct my_struct { ... };' 
+    # followed by  'typedef my_type  my_other_type;'
+    #---------------------------------------------------------------------------
+    if (($ndx = (search_ga_structs($GV_word{name}))) >= 0) {
+
+      &copy_struct(\%GV_struct, $GA_structs{$ndx});
+      $type = $STRUCT_TD;
+    }
+    #---------------------------------------------------------------------------
+    # This catches 'typedef enum { ... } my_enum;'
+    # followed by  'typedef my_enum my_type;'
+    #---------------------------------------------------------------------------
+    elsif (search_ga_enum_typedefs($GV_word{name}) >= 0) {
+    
+      &copy_enum_typedef(\%GV_enum_typedef, $GA_enum_typedefs{$GV_word{name}});
+      $type = $ENUM_TD;
+    }
+    #---------------------------------------------------------------------------
+    # This catches 'typedef int         my_int_type;'
+    # followed by  'typedef my_int_type my_other_int_type;'
+    #---------------------------------------------------------------------------
+    elsif (($ndx = (search_ga_ctype_typedefs($GV_word{name}))) >= 0) {
+
+      &copy_ctype_typedef(\%GV_ctype_typedef, $GA_ctype_typedefs{$ndx});
+      $type = $CTYPE_TD;  
+    }
+    #---------------------------------------------------------------------------
+    # This catches 'typedef struct { ... } my_type;'
+    # followed by  'typedef my_type my_other_type;'
+    #---------------------------------------------------------------------------
+    elsif (($ndx = (search_ga_struct_typedefs($GV_word{name}))) >= 0) {
+
+      &copy_struct(\%GV_struct, $GA_struct_typedefs{$ndx});
+      $type = $STRUCT_TD;
+    }
+    #---------------------------------------------------------------------------
+    # This catches 'typedef mytype ;
+    # That is, forward declarations of a type.  
+    # Just bypass this declaration for now
+    #---------------------------------------------------------------------------
+    else {
+
+      $temp_word = $GV_word{name};
+
+      if (&get_next_word() < 0) { &Abend($me,"Unexpected EOF"); }
+
+      if ($GV_word{name} eq ";") {
+        &Notice($me,"Bypassing forward declaration of typedef '$temp_word'");
+        $bypass = $MY_TRUE;
+        return($bypass);
+      }
+      else {
+        &Notice($me,"Typedef '$temp_word' is unknown");
+        $bypass = $MY_TRUE;
+      }
+
+    }
+  }
+  #-----------------------------------------------------------------------------
+  # Now read the name of this typedef
+  #-----------------------------------------------------------------------------
+  if ($bypass == $MY_FALSE) {
+    if (&get_next_word() < 0) { &Abend($me,"Expected typedef name, found EOF"); }
+  }
+
+  #-----------------------------------------------------------------------------
+  # If the typedef has a parentheses in its name--abend.  Ie:
+  # typedef object *(*pfrpo)(void);
+  #-----------------------------------------------------------------------------
+  if ($bypass == $MY_FALSE) {
+    if ($GV_word{name} =~ /[()]/)  {
+      &Abend($me,"\n\tCannot handle parentheses in typedef names yet"
+             .   "\n\tRemove typedef of '$GV_word{name}' from input file");
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  #
+  #-----------------------------------------------------------------------------
+  $typedef_name = $GV_word{name};
+  
+  #-----------------------------------------------------------------------------
+  # Now build the appropriate typedef structure and add it to the appropriate
+  # array.
+  #-----------------------------------------------------------------------------
+  if ($bypass == $MY_FALSE) {
+
+    if    ($type == $ENUM_TD) {
+
+      &copy_word($GV_enum_typedef{word}, \%GV_word);
+
+      &add_to_ga_enum_typedefs_array(\%GV_enum_typedef);
+    }
+    elsif ($type == $CTYPE_TD) {
+
+      $GV_ctype_typedef{data_type}{name} = $typedef_name;
+      
+      if ($GV_word{ndims} > 0) 
+        { &Abend($me,"C type typedef can not have dims"); }
+
+      &copy_word($GV_ctype_typedef{word}, \%GV_word);
+
+      &add_to_ga_ctype_typedefs_array(\%GV_ctype_typedef);
+    }
+    #-----------------------------------------------------------------------------
+    # If a 'void_struct' is used in leiu of an abstract structure, verify that
+    # this typedef is actually a PTR, because void_struct only works as a
+    # replacement for ptrs (since all ptrs are the same size).
+    #-----------------------------------------------------------------------------
+    elsif ($type == $STRUCT_TD) {
+
+      if ($GV_struct{word}{name} eq "void_struct") {
+        if ($GV_word{nptrs} < 1) {
+          &Abend($me,"void_struct to a non-ptr typedef $GV_word{name} is invalid");
+        }    
+      }
+
+      &copy_word($GV_struct_typedef{word}, \%GV_word);
+
+      &copy_struct($GV_struct_typedef{structure}, \%GV_struct);
+    
+      add_to_ga_struct_typedefs_array(\%GV_struct_typedef);
+
+    }
+    else {
+      &Abend($me,"PROGRAMMER ERROR: type of $type is bad");
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # Now read the trailing ';' which ends the typedef definition
+  #-----------------------------------------------------------------------------
+  if ($bypass == $MY_TRUE) {
+    &Notice($me,"Bypassing typedef '$typedef_name'");
+    &get_next_char();
+    while ($GV_char ne ";") {
+      print "$GV_char";
+      &get_next_char(); 
+    }
+  }
+  else {
+    if (&get_next_word() < 0) { 
+      &Abend($me,"Did not find ';' to end typedef '$typedef_name'--found EOF");
+    }
+
+    if ($GV_word{name} ne ";") {
+      &Abend($me,"Did not find ';' to end typedef '$typedef_name'--found '$GV_word{name}'");
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # 
+  #-----------------------------------------------------------------------------
+  return($bypass);
+}
+
+################################################################################
+# 
+# SUBROUTINE parse_struct_or_typedef
+#
+# Call routine to parse either a structure or typedef. 
+# That is, one of the following sequence of words from the file:
+#
+#
+# typedef struct my_struct { ... } my_type;
+# typedef struct           { ... } my_type
+# typedef enum             { ... } my_type
+# typedef int                      my_type;
+#
+# struct  my_struct        { ... } ;   
+# typedef my_struct                my_type;
+#
+################################################################################
+sub parse_struct_or_typedef 
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local Variables
+  #-----------------------------------------------------------------------------
+  my $me = "parse_struct_or_typedef";
+  my $i = 0;
+  my $err = 0;
+
+  #-----------------------------------------------------------------------------
+  # Simply return if there are no more typedefs or structs in the file
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0) { return(0); }
+
+  #-----------------------------------------------------------------------------
+  # Otherwise, the next word must be typedef or struct
+  #
+  # If it is 'extern' then this is a prototype or external variable declaration.
+  # Simply bypass it (read up to the ending semi-colon) and continue processing
+  #-----------------------------------------------------------------------------
+  if    ($GV_word{name} eq "typedef") {
+    &parse_typedef();  
+  }
+  elsif ($GV_word{name} eq "struct") {
+    &parse_struct(); 
+  }
+  elsif ($GV_word{name} eq "extern") {
+      			
+    &get_next_char();				      
+    while ($GV_char ne ";") { &get_next_char(); }
+  }  
+
+  return $err;
+}
+
+
+################################################################################
+#
+# SUBROUTINE get_next_field
+#
+# Get the next word(s), which must be a variable name, ie. a field in
+# the data structure.
+#
+# To keep on track, verify that we did not just read a C data type.  If
+# we did, this is an indicator that this program is incorrect.
+#
+# commas      are used to separate fields.
+# semi-colons indicate the end of the fields for the current data type.
+#
+# RETURNS: (0)  if a field was found.  It will be placed in the global var
+#               gv_field.
+#
+#          (-1) if there are no more fields for the current datatype
+#          (-2) if there is a field, but it is not one the registry can
+#               handle yet.  For instance:
+#
+#               __fd_mask fds_bits[1024  / (8 * sizeof (__fd_mask)) ];
+#
+#               The registry only handles fairly simple dimenstion statements
+#               for now, the above dimensions will generate a -2 error.
+#
+#               The calling routine should interpret this -2 as a message
+#               to bypass the rest of this definition and not add it to 
+#               the registry.
+#
+################################################################################
+sub get_next_field
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me = "get_next_field";
+
+  # print "TRACE [$me] entered\n";
+
+  #-----------------------------------------------------------------------------
+  # Get the next word.  
+  # If it is ';', there are no more fields for the current data type.
+  # A single comma is allowed, in this case, simply move on to the next word.
+  #-----------------------------------------------------------------------------
+  if (&get_next_word() < 0)  { return (-2); }
+
+  if ($GV_word{name} eq ";") { return (-1); }
+
+  if ($GV_word{name} eq ",") {
+   
+    if (&get_next_word() < 0) { return (-2); }
+    
+  }
+
+  #-----------------------------------------------------------------------------
+  # Build the GV_field data structure and return
+  #-----------------------------------------------------------------------------
+  %GV_field            = ();
+  $GV_field{data_type} = ();
+  $GV_field{word}      = ();
+
+  &copy_data($GV_field{data_type}, \%GV_data);
+  &copy_word($GV_field{word}, \%GV_word);
+
+  $GV_field{array_size}     = "";
+  $GV_field{str_array_size} = "";
+
+  return(0);
+}
+
+################################################################################
+#
+# SUBROUTINE get_next_data_type
+# 
+# Get's the next word(s), which must be a 'C' type or a user type or
+# struct.  IE. the next words must be something like the following:
+#
+# - char int long float double          <- standard C types
+# - BOOLEAN                             <- Enumerated type
+# - struct user_struct                  <- User defined structure
+#
+# The only other acceptable word is '}' which signals the end of the
+# typedef.  In this case, NULL will be returned.
+#
+# RETURNS (0)  if data type is successfully read
+#         (-1) at end of structure or typedef to indicate there are no
+#              more fields in the structure.
+#
+################################################################################
+sub get_next_data_type
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me  = "get_next_data_type";
+  my $ndx = 0;
+
+  # print "TRACE [$me] entered\n";
+
+  $GV_forward_declared_data_type = $MY_FALSE;
+
+  #-----------------------------------------------------------------------------
+  # When '}' is reached, the typedef or structure is complete.
+  # Return (-1) to indicate this.
+  #-----------------------------------------------------------------------------
+  if (&get_next_string() < 0) 
+    { &Abend($me, "Expected to find a data type, found EOF"); }
+
+  if ($GV_word{name} eq "}") { return(-1); }
+
+  #-----------------------------------------------------------------------------
+  # Handle '__const char *__tm_zone;' and similar declarations.
+  # Simply bypass a single '__const' and go on to the next word of the data type
+  #-----------------------------------------------------------------------------
+  if ($GV_word{name} eq "__const") {
+    if (&get_next_string() < 0)
+      { &Abend($me, "Expected to find a data type after 'const', found EOF"); }
+  }
+
+  #-----------------------------------------------------------------------------
+  # Compare the word just read from the file to the list of all known data 
+  # types.
+  #
+  # First see if it is a simple "C" data type
+  #-----------------------------------------------------------------------------
+  $GV_data{name} = "";
+
+  if (  ($GV_word{name} eq "unsigned")
+     || ($GV_word{name} eq "char")
+     || ($GV_word{name} eq "short")
+     || ($GV_word{name} eq "int")
+     || ($GV_word{name} eq "long")
+     || ($GV_word{name} eq "float")
+     || ($GV_word{name} eq "double")
+     || ($GV_word{name} eq "void") ) {
+
+    $GV_data{e_data_type} = $GV_word{name};
+    $GV_data{name}        = $GV_word{name}; 
+ 
+    &get_next_string();
+    while (  ($GV_word{name} eq "char")
+	  || ($GV_word{name} eq "short")
+	  || ($GV_word{name} eq "int")
+	  || ($GV_word{name} eq "long")
+	  || ($GV_word{name} eq "float")
+	  || ($GV_word{name} eq "double") ) {
+      
+      $GV_data{e_data_type} = $GV_data{e_data_type} . "_" . $GV_word{name};
+      $GV_data{name}        = $GV_data{name}        . "_" . $GV_word{name};
+      &get_next_string();
+    }
+    
+    &unget_GV_word();
+    &verify_simple_c_type($GV_data{name});    
+  }
+  #-----------------------------------------------------------------------------
+  # See if it is a union
+  #-----------------------------------------------------------------------------
+  elsif ($GV_word{name} eq "union") {
+
+    $GV_data{e_data_type} = "union";
+    $GV_data{name}        = "union";
+  }
+
+  #-----------------------------------------------------------------------------
+  # See if it is a structure
+  #-----------------------------------------------------------------------------
+  elsif ($GV_word{name} eq "struct") {
+
+    $GV_data{e_data_type} = "struct";
+
+    if (&get_next_word() < 0)
+      { &Abend($me, "Expected to find user type after 'struct', found EOF"); }
+
+    $GV_data{name} = $GV_word{name};
+    
+    #---------------------------------------------------------------------------
+    # Verify that the structure was either
+    # 
+    # 1) previously defined and placed in ga_structs array or
+    # 2) refers to the current structure being processed, ie.
+    # 
+    #    struct my_struct {
+    #      struct my_struct *next;
+    #    }
+    #
+    # 3) Added 08/24/98
+    #
+    #    Added acceptance of unknown structures, but set the flag, since
+    #    will only work if the field is a pointer.
+    #
+    #---------------------------------------------------------------------------
+    if (&search_ga_structs($GV_data{name}) < 0) {
+
+      if ($GV_data{name} ne $GV_struct{word}{name}) {
+
+        # Caution: We'll OK this without a warning, but set the flag.
+        # Later, when the fields for this type are read, they will
+        # only be accepted if they are pointers.
+
+        $GV_forward_declared_data_type = $MY_TRUE;
+      }
+    }
+  } 
+  #-----------------------------------------------------------------------------
+  # See if it is a user defined typedef that was previously defined
+  #-----------------------------------------------------------------------------
+  else {
+
+    if    (&search_ga_ctype_typedefs($GV_word{name}) >= 0) {
+   
+      $GV_data{e_data_type} = "ctype_typedef";
+      $GV_data{name}        = $GV_word{name};
+    }
+    elsif (&search_ga_enum_typedefs($GV_word{name}) >= 0) {
+
+      $GV_data{e_data_type} = "enum_typedef";
+      $GV_data{name}        = $GV_word{name};
+    }
+    elsif (&search_ga_struct_typedefs($GV_word{name}) >= 0) {
+
+      $GV_data{e_data_type} = "struct_typedef";
+      $GV_data{name}        = $GV_word{name};
+    }
+    #---------------------------------------------------------------------------
+    # See if it is RGST_LEN which specifies the length of the previous field.
+    # If so, then call routine to parse this data,
+    # Then, call THIS ROUTINE (get_next_data_type) AGAIN, since we
+    #  are still looking for the next data type, and return the results
+    #  of that call to the routine that called this routine.
+    #---------------------------------------------------------------------------
+    else {
+
+      if ($GV_word{name} eq "RGST_LEN") {
+      
+        parse_RGST_LEN();
+        return(&get_next_data_type());
+      }
+      #-------------------------------------------------------------------------
+      # I don't know what the type is, exit the program.
+      #-------------------------------------------------------------------------
+      else {
+
+       &Abend($me,"\n\tFound unknown type '$GV_word{name}' while parsing"
+               .   "\n\tstruct '$GV_struct{word}{name}'");
+
+#        $GV_data{e_data_type} = "ctype_typedef";
+#        $GV_data{name}        = $GV_word{name};
+      }
+    }
+  }
+
+  return(0);
+}
+
+################################################################################
+#
+# SUBROUTINE get_next_string
+#
+#
+# Reads the next whitespace delimited string from the INPUT file, 
+# leaving it in the global hash structure GV_word.
+#
+# Returns (0) on success, (-1) on error (or if no more words are in file)
+#
+# This differs from get_next_word, in that it doesn't detect dimensions
+# [], or de-references *, it just stores the next string into
+# GV_word{name}.
+#
+################################################################################
+sub get_next_string {
+
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me    = "get_next_string";
+  my $ch    = '0';
+  my $i     = 0;
+
+  # print "TRACE [$me] entered\n"; 
+
+  #-----------------------------------------------------------------------------
+  # Initialize the next word global var
+  #-----------------------------------------------------------------------------
+  %GV_word          = ();
+  $GV_word{dims}    = ();
+  $GV_word{name}    = "";
+  $GV_word{nptrs}   = 0;
+  $GV_word{ndims}   = 0;
+  $GV_word{dims}{0} = 0;
+  $GV_word{dims}{1} = 0;
+  $GV_word{dims}{2} = 0;
+
+  #-----------------------------------------------------------------------------
+  # Skip whitespace
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && (($ch = my_getc()) ne '')) { 
+
+    next if ($ch =~ /\s/);
+
+    #---------------------------------------------------------------------------
+    # Return ',' ';' '{', '}','*',[',']' as one char strings
+    #---------------------------------------------------------------------------
+    if ($ch =~ /[,;{}\*\[\]]/) {
+     
+      $GV_word{name} .= $ch;
+      # print "TRACE [$me] found string '$GV_word{name}' \n";
+      return(0);    
+    }
+    #---------------------------------------------------------------------------
+    # Break this while loop when first valid character of a word is hit
+    #---------------------------------------------------------------------------
+    else {
+      last;
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # Now that we skipped white-space,
+  # Read up to white space or other word separator chars such as , or ;.
+  # Leave these other word separators in the file (using ungetc)
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && ($ch ne '\0')) {
+    
+    last if ($ch =~ /[ \r\t\f]/);
+
+    if ($ch =~ /[,;*\n\[\]]/) {
+
+      FileHandle::ungetc(INPUT, ord $ch);
+      last;
+    }
+
+    $GV_word{name} .= $ch;
+
+    $ch = my_getc();
+  }
+
+  if ($GV_word{name} eq "") { return (-1); }
+  else                      { return (0);  } 
+}
+
+################################################################################
+#
+# SUBROUTINE get_next_word
+#
+#
+# Reads the next word from the INPUT file, leaving it in the global hash 
+# structure GV_word.
+#
+# Returns (0) on success, (-1) on error (or if no more words are in file)
+#
+################################################################################
+sub get_next_word
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $me    = "get_next_word";
+  my $ch    = '0';
+  my $i     = 0;
+  my $dim   = 0;
+  my $ndims = 0;
+
+  # print "TRACE [$me] entered\n"; 
+
+  #-----------------------------------------------------------------------------
+  # Initialize the next word global var
+  #-----------------------------------------------------------------------------
+  %GV_word          = ();
+  $GV_word{dims}    = ();
+  $GV_word{name}    = "";
+  $GV_word{nptrs}   = 0;
+  $GV_word{ndims}   = 0;
+  $GV_word{dims}{0} = 0;
+  $GV_word{dims}{1} = 0;
+  $GV_word{dims}{2} = 0;
+
+  #-----------------------------------------------------------------------------
+  # Skip whitespace, count dereference ptrs (*), look for syntax errors
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && (($ch = my_getc()) ne '')) {
+
+    next if ($ch =~ /\s/);
+
+    #---------------------------------------------------------------------------
+    # Return ',' ';' '{' and '}' as words
+    #---------------------------------------------------------------------------
+    if ($ch =~ /[,;{}]/) {
+     
+      if ($GV_word{nptrs} != 0) { &Abend($me, "',' or ';' found after '*'"); }
+
+      $GV_word{name} .= $ch;
+      return(0);
+    }
+    #---------------------------------------------------------------------------
+    # Count dereference ptrs (*)
+    #---------------------------------------------------------------------------
+    elsif ($ch =~ /\*/) {
+       
+      $GV_word{nptrs}++;
+      if ($GV_word{nptrs} > 2) { &Abend($me, "Cannot handle *** deference"); }
+    }
+    #---------------------------------------------------------------------------
+    # A Word can't start with certain characters
+    #---------------------------------------------------------------------------
+    elsif ($ch =~/[\[\]]/) {
+      &Abend($me, "Found '[' or ']' before a variable name");
+    }
+    #---------------------------------------------------------------------------
+    # Break this while loop when first valid character of a word is hit
+    #---------------------------------------------------------------------------
+    else {
+      last;
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # Now that we skipped white-space and counted the '*', get the next word.
+  # Read up to white space or other word separator chars such as , or ;.
+  # Leave these other word separators in the file (using ungetc)
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && ($ch ne '\0')) {
+
+    last if ($ch =~ /[ \r\t\f]/);
+
+    if ($ch =~ /[,;*\n\[\]]/) {
+
+      # print "DEBUG $me ungetting char $ch\n";
+      FileHandle::ungetc(INPUT, ord $ch);
+      last;
+    }
+
+    $GV_word{name} .= $ch;
+
+    $ch = my_getc();
+  }
+
+  #-----------------------------------------------------------------------------
+  # Peek ahead to see if this is an array.
+  # If so, get the dimensions of the array.
+  # If not, put the character peeked at back in the file.
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && (($ch = my_getc()) ne '\0')) {
+
+    next if ($ch =~ /[ \r\t\f]/);
+   
+    if ($ch =~ /\[/) {
+
+      $ndims++;
+      $GV_word{ndims} = $ndims;
+
+      if ($GV_word{ndims} > 3) 
+        { &Abend($me, "Cannot handle arrays greater than 3 dimensions"); }
+
+      $dim = &get_int_from_file();
+      $GV_word{dims}{$ndims-1} = $dim;
+   
+      if ($dim < 0) {
+        &Notice($me, "Registry cannot handle dimension $ndims of "
+                .    "array $GV_word{name}");
+        return(-1); 
+      }
+
+      while ((! (eof INPUT)) && (($ch = my_getc() ) ne '\0')) {
+
+        next if ($ch =~ / \r\t\f/);
+	
+	last if ($ch =~ /\]/);
+	
+	&Notice($me, "Registry cannot handle dimension  $ndims of " 
+                .    "array $GV_word{name}");
+	return(-1);
+      }
+    }
+    else {
+      # print "DEBUG $me ungetting char $ch\n";
+      FileHandle::ungetc(INPUT, ord $ch);
+      last;
+    }
+  }
+
+  if ($GV_word{name} eq "") { return (-1); }
+  else                      { return (0);  }
+
+}
+
+################################################################################
+# 
+# SUBROUTINE get_next_char
+# 
+# Get the next non-whitespace char from the INPUT file.  
+# Place the char in the global var GV_char;
+#
+# Return (0) on success, (-1) on error.
+# 
+################################################################################
+sub get_next_char
+{
+  #-----------------------------------------------------------------------------
+  # Keep reading characters from the file, bypassing whitespace.  Return
+  # when first non-whitespace character has been read.  
+  #
+  # Return -1 if EOF is reached.
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && (($GV_char = my_getc() ) ne '\0')) {
+
+    next if ($GV_char =~ /\s/);
+
+    return (0); 
+  }
+
+  return(-1);
+}
+
+################################################################################
+#
+# SUBROUTINE get_next_char_on_line
+#
+# Get the next non-whitespace char before the 'newline' is read.
+#
+# Place the char in gv_char;
+#
+# Return (0) on success, (-1) on failure
+#
+################################################################################
+sub get_next_char_on_line
+{
+  while ((! (eof INPUT)) && (($GV_char = my_getc() ) ne '\0')) {
+
+    if ($GV_char =~ /\n/) { return (-1); }
+
+    if ($GV_char =~ /\s/) { next; } 
+
+    return (0);
+  }
+ 
+  return(-1);
+}
+
+
+################################################################################
+#
+# SUBROUTINE get_int_from_file
+#
+# Reads the next characters from the file opened as INPUT, converts them
+# to an integer and returns the integer.
+#
+# Returns $GC_int_err (-9999999999) on error.
+#
+################################################################################
+sub get_int_from_file
+{
+  #-----------------------------------------------------------------------------
+  # Subroutine local variables
+  #-----------------------------------------------------------------------------
+  my $ch = '0';  
+  my $int = 0;
+  my $str = "";
+  my $negative = "false";
+  my $number_found = "false";
+
+  #-----------------------------------------------------------------------------
+  # Read one character at a time, processing '-', '+', and digits.
+  # Build the integer as we go.
+  # Break the while loop when the first non-digit or non-'-' or non-'+' char is
+  #   found, leaving the char in the file.
+  #-----------------------------------------------------------------------------
+  while ((! (eof INPUT)) && (($ch = my_getc() ) ne '\0')) {
+
+    next if ($ch =~ /[+\s]/);	             # Bypass white space & '+' sign
+
+    if ($ch =~ /-/) {                        # '-' means a negative number
+
+      $negative = "true";
+    }
+    elsif ($ch =~ /\d/) {                    # Process digits
+
+     $number_found = "true";
+     $int = ($int * 10) + ((ord $ch) - (ord '0'));
+    }
+    else {
+      FileHandle::ungetc(INPUT, ord $ch);    #   Leave the char in the file
+      last;                                  #   Break the while loop
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  #  
+  #-----------------------------------------------------------------------------
+  if ($negative eq "true")                   # Convert to negative if '-' was 
+    { $int = $int * -1; }                    # read
+  
+  if ($number_found eq "false")              # Return err if no digit was found
+    { return $GC_int_err; }
+
+  return $int;                               # Return integer
+}
+
+################################################################################
+#
+# SUBROUTINE create_sizeof_string
+#
+# Given a data type, and the number of ptrs, creates a string which defines
+# the size of the data type, such as:
+#
+# "sizeof(void *)"
+# "sizeof(unsigned char)"
+#
+################################################################################
+sub create_sizeof_string
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $dt      = $_[0];
+  my $dt_name = $_[1];
+  my $nptrs   = $_[2];
+
+  #-----------------------------------------------------------------------------
+  # local variables
+  #-----------------------------------------------------------------------------
+  my $me = "create_sizeof_string";
+  my $buff = "sizeof(";
+
+  # print "TRACE [$me] entered arg0=$_[0] arg1=$_[1] arg2=$_[2]\n";
+
+  #-----------------------------------------------------------------------------
+  #
+  #-----------------------------------------------------------------------------
+  
+  if    ($dt =~ /^char$/)                   { $buff .= "char"; }
+  elsif ($dt =~ /^short$/)                  { $buff .= "short"; }
+  elsif ($dt =~ /^int$/)                    { $buff .= "int"; }
+  elsif ($dt =~ /^long$/)                   { $buff .= "long"; }
+  elsif ($dt =~ /^float$/)                  { $buff .= "float"; }
+  elsif ($dt =~ /^double$/)                 { $buff .= "double"; }
+  elsif ($dt =~ /^void$/)                   { $buff .= "void"; }
+  elsif ($dt =~ /^short_int$/)              { $buff .= "short int"; }
+  elsif ($dt =~ /^long_int$/)               { $buff .= "long int"; }
+  elsif ($dt =~ /^long_long$/)              { $buff .= "long long"; }
+  elsif ($dt =~ /^long_long_int$/)          { $buff .= "long long int"; }
+  elsif ($dt =~ /^unsigned_char$/)          { $buff .= "unsigned char"; }
+  elsif ($dt =~ /^unsigned_short$/)         { $buff .= "unsigned short"; }
+  elsif ($dt =~ /^unsigned_short_int$/)     { $buff .= "unsigned short int"; }
+  elsif ($dt =~ /^unsigned_long$/)          { $buff .= "unsigned long"; }
+  elsif ($dt =~ /^unsigned_long_int$/)      { $buff .= "unsigned long int"; }
+  elsif ($dt =~ /^unsigned_long_long$/)     { $buff .= "unsigned long long"; }
+  elsif ($dt =~ /^unsigned_long_long_int$/) { $buff .= "unsigned long long int"; }
+  elsif ($dt =~ /^unsigned_int$/)           { $buff .= "unsigned int"; }
+  elsif ($dt =~ /^struct$/)                 { $buff .= "struct "; 
+                                              $buff .= $dt_name; }
+  elsif ($dt =~ /^ctype_typedef$/)          { $buff .= $dt_name; }
+  elsif ($dt =~ /^enum_typedef$/)           { $buff .= $dt_name; }
+  elsif ($dt =~ /^struct_typedef$/)         { $buff .= $dt_name; }
+  elsif ($dt =~ /^union$/)                  { &Abend($me,"can't handle unions"); }
+  else                                      { &Abend($me,"'$dt' is a bad type"); }
+  
+  if ($nptrs > 0) { $buff .= " *"; } 
+ 
+  $buff .= ")"; 
+
+  return($buff);
+}
+
+################################################################################
+#
+# SUBROUTINE unget_GV_word
+#
+# Returns the last word read (assumed to be in the global var GV_word) to 
+# the input file.
+#
+################################################################################
+sub unget_GV_word
+{
+  my $me = "unget_GV_word";
+  my $ch;
+
+  # print "TRACE [$me] entered -- will unget $GV_word{name}\n";
+
+  if ($GV_ungot_str ne "") {
+    &Abend($me,"ungot word '$GV_ungot_str' not used yet");
+  }
+
+  $GV_ungot_str = $GV_word{name};
+
+}
+
+################################################################################
+#
+# SUBROUTINE my_getc
+#
+#
+# Returns the next char from the last ungot string.
+# Or if that is empty, returns the next char from INPUT
+#
+################################################################################
+sub my_getc 
+{
+  #-----------------------------------------------------------------------------
+  # local variables
+  #-----------------------------------------------------------------------------
+  my $me = "my_getc";
+  my $ch = '0';
+
+  # print "TRACE [$me] entered\n";
+
+  if ($GV_ungot_str ne "") {
+
+    $ch = substr($GV_ungot_str,0,1);
+    substr($GV_ungot_str,0,1) = "";
+
+    # print "TRACE [$me] ch = '$ch' GV_ungot_str = '$GV_ungot_str'\n";
+  }
+  else {
+    $ch = getc INPUT;
+  } 
+
+  return($ch)
+}
+
+################################################################################
+#
+# SUBROUTINE verify_simple_c_type
+#
+################################################################################
+sub verify_simple_c_type
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  my $type = $_[0];
+
+  #-----------------------------------------------------------------------------
+  # local variables
+  #-----------------------------------------------------------------------------
+  my $me = "verify_simple_c_type";
+  
+  # print "TRACE [$me] entered\n";
+
+  #-----------------------------------------------------------------------------
+  # Verify that the simple C type is one that will be able to be handled
+  # by the registry.
+  #-----------------------------------------------------------------------------  
+  if (  ($type eq "char")
+     || ($type eq "short")
+     || ($type eq "int")
+     || ($type eq "long")
+     || ($type eq "float")
+     || ($type eq "double")
+     || ($type eq "void")
+     || ($type eq "short_int")
+     || ($type eq "long_int") 
+     || ($type eq "long_long")
+     || ($type eq "long_long_int")
+     || ($type eq "unsigned_char")
+     || ($type eq "unsigned_short")
+     || ($type eq "unsigned_int")
+     || ($type eq "unsigned_short_int")
+     || ($type eq "unsigned_long")
+     || ($type eq "unsigned_long_int")
+     || ($type eq "unsigned_long_long")
+     || ($type eq "unsigned_long_long_int") ) {
+
+    # print "TRACE [$me] $type is valid\n";
+  }
+  else {
+    &Abend($me,"registry cannot handle simple C type: '$type'");
+  }
+}      
+      
+
+################################################################################
+#
+# SUBROUTINE print_purpose_and_exit
+#
+################################################################################
+sub print_purpose_and_exit
+{
+  print "\n\tPERL SCRIPT : $GV_me";
+  print "\n";
+  print "\n\tThis program processes *.hr files which were created by the";
+  print "\n\t$GC_hrcreate perl script";
+  print "\n";
+  print "\n\tThis program parses files that contain typedef structures";
+  print "\n\tto build a code registry.  It takes as input any number of";
+  print "\n\t*.hr files and outputs *.c files.  These output *.c files";
+  print "\n\tare to be compiled and linked with your code";
+  print "\n\n";
+  print "\n\tUSAGE: $GV_me file1.hr <file2.hr> ... <fileN.hr>";
+  print "\n\n";
+
+  exit;
+}
+
+################################################################################
+#
+# SUBROUTINE debug_print_xxxx
+#
+# Print routines used for debugging purposes
+#
+################################################################################
+
+sub debug_print_word
+{
+  my ($word_array) = @_;
+  my %word = %$word_array;
+  my $i = 0;
+
+  print "  word: ";     
+  print_word(\%word);
+
+  foreach $field (keys %word) {
+
+    print "  $field: $word{$field}\n";
+    if ($field =~ /^dims/) {
+      for ($i=0; $i<$word{ndims}; $i++) {
+        print "    dims[$i] : $word{$field}{$i}\n"; 
+      }
+    }
+  }
+}
+
+sub debug_print_data 
+{
+  my ($data_type_array) = @_;
+  my %data_type = %$data_type_array;
+  
+  foreach $field (keys %data_type) {
+    print "  $field: $data_type{$field}\n";
+  }
+}
+
+sub debug_print_field
+{
+  my ($field_array) = @_;
+  my %field_hash  = %$field_array;
+
+  foreach $field (keys %field_hash) {
+    if    ($field =~ /^data_type/) { 
+      debug_print_data ($field_hash{$field}); 
+    }
+    elsif ($field =~ /^word/) { 
+      debug_print_word ($field_hash{$field}); 
+    }
+    else { 
+      print "  $field: $field_hash{$field}\n"; 
+    }
+  }
+}
+
+sub debug_print_struct
+{
+  my ($struct_array) = @_;
+  my %struct_hash = %$struct_array;
+  my $i = 0;
+
+  foreach $field (keys %struct_hash) {
+
+    if    ($field =~ /^word/) {
+      debug_print_word ($struct_hash{$field});
+    }
+    elsif ($field =~ /^fields/) {  
+
+      for ($i=0; $i<$struct_hash{num_fields}; $i++) {
+        print "\n\n  FIELD $i\n\n";
+        &debug_print_field($struct_hash{fields}{$i});
+      }
+    }
+    else {
+      print "  $field: $struct_hash{$field}\n";
+    }
+  }
+}
+
+sub debug_print_out_field
+{
+  my ($out_field_list) = @_;
+  my %out_field = %$out_field_list;
+
+  foreach $field (keys %out_field) {
+    print "  $field: $out_field{$field}\n";
+    if ($field =~ /^dims/ ) {
+      print "    dims[0]: $out_field{$field}{0}\n";
+      print "    dims[1]: $out_field{$field}{1}\n";
+      print "    dims[2]: $out_field{$field}{2}\n";
+    }
+  }
+}
+
+sub debug_print_out_td_struct
+{
+  my ($out_td_struct_list) = @_;
+  my %out_td_struct =  %$out_td_struct_list;
+  my $i = 0;
+ 
+  foreach $field (keys %out_td_struct) {
+
+    if ($field =~ /^word/ ) {
+      debug_print_word ($out_td_struct{$field});
+    }
+    elsif ($field =~ /^fields/) {
+
+      for ($i=0; $i<$out_td_struct{num_fields}; $i++) {
+        print "\n\n  OUT_FIELD $i\n\n";
+        &debug_print_out_field($out_td_struct{fields}{$i});
+      }
+    }
+    else {
+      print "  $field: $out_td_struct{$field}\n";
+    }
+  } 
+}
+
+sub debug_print_enum_typedef
+{
+  my ($enum_typedef_list) = @_;
+  my %enum_typedef_hash = %$enum_typedef_list;
+  my $i = 0;
+
+  print " ENUM_TYPEDEF : TYPEDEF NAME = $enum_typedef_hash{word}{name}\n";
+  print " ENUM_TYPEDEF : NUM ENTRIES  = $enum_typedef_hash{num_entries}\n";
+  for ($i=0; $i<$GV_enum_typedef{num_entries}; $i++) {
+    print " ENUM_TYPEDEF : ENTRY $i     = $enum_typedef_hash{enum_str}{$i}\n";
+  }
+}
+
+sub debug_print_gv_enum_typedef
+{
+  my $i = 0;
+
+  print " GV_ENUM_TYPEDEF : TYPEDEF NAME = $GV_enum_typedef{word}{name}\n";
+  print " GV_ENUM_TYPEDEF : NUM ENTRIES  = $GV_enum_typedef{num_entries}\n";
+  for ($i=0; $i<$GV_enum_typedef{num_entries}; $i++) {
+    print " GV_ENUM_TYPEDEF : ENTRY $i     = $GV_enum_typedef{enum_str}{$i}\n";
+  }
+}
+
+################################################################################
+#                          E N D   O F   F I L E
+################################################################################

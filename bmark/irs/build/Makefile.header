@@ -1,0 +1,12 @@
+
+#--------------------------------------------
+# The name of the executable file to produce
+#--------------------------------------------
+
+CODENAME 	= irs
+
+#--------------------------
+# Must use the bourne shell
+#--------------------------
+SHELL 		= /bin/sh
+

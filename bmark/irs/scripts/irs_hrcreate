@@ -1,0 +1,434 @@
+#! /usr/local/bin/perl -w
+
+# ------------------------------------------------------------------------------
+# - Global vars needed to establish the push of the required perl directory
+# - Also, the few very common vars that I find useful in all perl scripts
+# - (ie, uname, date, pid, me [name of the perl script])
+# ------------------------------------------------------------------------------
+  $GV_me      = "";           # The name of this perl script
+  $GV_me_fullpath = "";       # Full path to this perl script
+  $GV_tmpstr  = "";           # Temp string used when getting the perldir
+  $GV_perldir = "";           # Directory containing this perl script
+  $GV_uname   = "";           # The name of the operating system
+  $GV_nname   = "";           # Node name
+  $GV_date    = "";           # Current date and time
+  $GV_pid     = 0;            # Process id of the running perl script
+  $GV_i       = 0;            # temp index used when getting the perldir
+
+# ------------------------------------------------------------------------------
+# - Get the process id of this script
+# - Get the name of the operating system
+# - Get the date
+# - Get the node
+# ------------------------------------------------------------------------------
+  $GV_pid   = $$;
+
+  $GV_uname = `uname -s`;
+  chop($GV_uname);
+
+  $GV_nname = `uname -n`;
+  chop($GV_nname);
+
+  $GV_date = `date`;
+  chop($GV_date);
+
+  $GV_node = `uname -n`;
+  chop($GV_node);
+
+# ------------------------------------------------------------------------------
+# - Get the directory containing the perl script
+# - Get the name of this perl script
+# ------------------------------------------------------------------------------
+  $GV_me_fullpath = $0;
+  $GV_tmpstr  = $0;
+  $GV_i       = rindex($GV_tmpstr,"/");  
+  $GV_perldir = substr($GV_tmpstr,0,$GV_i);
+  $GV_me      = substr($GV_tmpstr,$GV_i+1,100);
+
+# ------------------------------------------------------------------------------
+# - Push the directory which contained the perl script and the require
+# - subdirectory off of this directory into the perl script include path
+# - Also push any other directories to search for perl routines here
+# ------------------------------------------------------------------------------
+  push (@INC, $GV_perldir);
+  push (@INC, $GV_perldir . "/require");
+
+# ------------------------------------------------------------------------------
+# - Required perl subroutines
+# ------------------------------------------------------------------------------
+  require ("VerifyFileExists.pl");
+  require ("Abend.pl");
+
+# ------------------------------------------------------------------------------
+# - GLOBAL CONSTANTS
+# ------------------------------------------------------------------------------
+  $GC_parse = "irs_hrparse";	# name of perl script to parse the .hr files
+
+################################################################################
+# SUBROUTINE Main
+################################################################################
+
+  #-----------------------------------------------------------------------------
+  # Local Variables
+  #-----------------------------------------------------------------------------
+  local($me)  = "Main";
+  local($i)   = 0;
+  local($tfn) = "";	# 
+  local($tfn2) = "";	# 
+  local($tfn3) = "";	# 
+  local($tfn4) = "";	# 
+  local($ofn) = "";	# output file name (with .hr ending) 
+
+  local($osname) = `uname -s`;
+  chop($osname);
+
+  if ($#ARGV == -1) { &PrintPurposeAndExit; }
+
+  #-----------------------------------------------------------------------------
+  # Loop over each input file on the command line
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<= $#ARGV; $i++) {
+  
+    if ($i == 0) {
+      print "$GV_me checking files\n";
+    }
+
+    print "\t$ARGV[$i] ";
+
+    #-----------------------------------------------------------------------------
+    # Verify the file name ends in .h 
+    #-----------------------------------------------------------------------------
+    if ($ARGV[$i] !~ /.+\.h/) {
+      print ("\n  ERROR");
+      print ("\tAll input file names must end in '.h'\n");
+      print ("\tBypassing file '$ARGV[$i]' which does not end in '.h'\n\n");
+      next;
+    }
+
+    #-----------------------------------------------------------------------------
+    # Create file with similar name which ends in .c
+    #-----------------------------------------------------------------------------
+    $tfn2 = $ARGV[$i];
+    chop($tfn2);
+    chop($tfn2);
+    $tfn3 = $tfn2;
+    $tfn4 = $tfn2;
+
+    $tfn2 .= "_temp2.c";
+    $tfn3 .= "_temp3.c";
+    $tfn4 .= "_temp4.c";
+
+    link($ARGV[$i],$tfn2);
+    
+    #---------------------------------------------------------------------------
+    # Setup cc_command to preprocess the file so all include files, which
+    # may also contain RGST sections will be processed correctly.
+    #
+    # Preprocess the file the first time, preserving all comments.
+    #---------------------------------------------------------------------------
+    if (defined $ENV{'irs_cc'}) {
+      $cc_command = $ENV{'irs_cc'} . " -E -C $tfn2 2>&1 |";
+    }
+    else {
+      $cc_command = "cc -E -C $tfn2 2>&1 |"; 
+    } 
+
+    $cc_command =~ s/ -c//;	        # Remove -c compiler option
+    $cc_command =~ s/-o rgst_types.i//; # Remove -o used with proprocesing
+
+    if ($osname =~ /linux/i) {
+      $cc_command =~ s/mpicc/cc/;       # mpicc compiler on linux doesn't work with -E
+                                        # Use cc instead for preprocessing
+      $cc_command =~ s/omcc/cc/;        # omcc compiler on linux doesn't work with -E
+    }                                   # Use cc instead for preprocessing
+
+    # print "\nDEBUG A $cc_command\n";
+
+    open OUTPUT, ">$tfn4" || &Abend($me, "Could not open $tfn4 for output");
+    open  INPUT, $cc_command || &Abend($me,"Failure executing $cc_command");
+
+    while (<INPUT>) {
+      # print "DEBUG $_\n";
+      if (!($_ =~ /^#/)) {   # Remove the #line pre-processor macro lines
+        print OUTPUT $_;
+       }
+    }
+
+    close INPUT  ;
+    close OUTPUT ;
+ 
+    #---------------------------------------------------------------------------
+    # ProcessFile scans for RGST START, RGST END, & RGST LEN
+    # and takes appropriate action, creating a temp file, the name of which is
+    # returned and placed in $tfn.  
+    #
+    # If ProcessFile fails, it will return the string "error".
+    #---------------------------------------------------------------------------
+    $tfn = &ProcessFile($tfn4); 
+
+    if ($tfn eq "error") {
+      print "-- bypassing, error found in file\n";
+      next;
+    }
+
+    if (-z $tfn) { 	# Bypass zero-length files which contained 
+                        # no RGST_START statements
+      print "\n";
+      unlink($tfn);
+      unlink($tfn2);
+      unlink($tfn4);
+      next;
+    }
+
+    print "-- found RGST_START statements in EXPANDED .h file\n";
+
+    #---------------------------------------------------------------------------
+    # If ProcessFile ran successfully
+    #
+    # Create the output file name with the .hr ending
+    # Open the output file 
+    # Run cc on the temp file to remove comments and copy each remaining line
+    #   to the output file
+    # Close the cc process, and the output file
+    # Remove the temp file created by ProcessFile
+    # Remove all blank lines from the .hr file
+    #---------------------------------------------------------------------------
+    $cc_command =~ s/ -C//g;		# Remove -C compiler option
+    $cc_command =~ s/$tfn2/$tfn/;	# Compile $tfn this time, not tfn2	
+
+    # print "\nDEBUG B $cc_command\n";
+  
+    if ($tfn ne "error") {
+   
+       $ofn = $ARGV[$i];
+       chop($ofn); 
+       $ofn = $ofn . "hr";
+
+       open OUTPUT, ">$ofn"     || &Abend($me, "Could not open $ofn for output");
+       open  INPUT, $cc_command || &Abend($me,"Failure executing $cc_command");
+
+       while (<INPUT>) { 
+         # print "DEBUG $_\n";
+         if (!($_ =~ /^#/)) {   # Remove the #line pre-processor macro lines
+           print OUTPUT $_; 
+         }
+       }
+
+       close INPUT  ;
+       close OUTPUT ;
+
+       unlink($tfn);
+       unlink($tfn2);
+       unlink($tfn4);
+
+       &RemoveBlankLines($ofn);
+    }
+
+  }
+
+  #-----------------------------------------------------------------------------
+  # exit
+  #-----------------------------------------------------------------------------
+  exit;
+
+################################################################################
+# SUBROUTINE ProcessFile
+#
+# Search for 'RGST START', 'RGST END', and 'RGST LEN' comments in the
+# input file, and copy the appropriate lines to the output file.
+#
+# 03/06/01 Revised to use startcntr rather than startflag to account
+#          for rgst_start block within a register start block. 
+#          Ie, .h files may include other .h files with rgst_start statements.
+#
+#          We don't stop processing at the first rgst_end, we stop when
+#          the counter gets back to 0.
+#
+################################################################################
+sub ProcessFile
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  local($ifn) = $_[0];			# Input filename
+
+  #-----------------------------------------------------------------------------
+  # Subroutine Local Variables
+  #-----------------------------------------------------------------------------
+  local($me)        = "ProcessFile";            # Name of this subroutine
+  local($cfile)     = "hrcreate_temp.c";	# Name of temporary .c file
+  local($tfn)       = "hrcreate_temp_";		# Temp filename returned by routine
+  local($startcntr)   = 0;
+  local($excludecntr) = 0;
+
+  #-----------------------------------------------------------------------------
+  # Create link to .h file with a file name that ends in .c
+  # This is because some compilers (KAI) won't preprocess .h files.
+  #-----------------------------------------------------------------------------
+  link($ifn,$cfile);
+
+  $tfn .= $ifn;
+  chop($tfn);
+  $tfn .= "c";
+
+  #-----------------------------------------------------------------------------
+  # Open the input file and output file
+  #-----------------------------------------------------------------------------
+  if (&VerifyFileExists($cfile) != 0) { 
+    print ("\n  ERROR");
+    print ("\tBypassing file '$cfile' which does not exist\n\n");
+    return("error"); 
+  }
+
+  open INPUT,   $cfile || &Abend($me, "Could not open $cfile for input"); 
+  open OUTPUT, ">$tfn" || &Abend($me, "Could not open $tfn for output");
+
+  #-----------------------------------------------------------------------------
+  # Set the startflag to FALSE and then loop over each line in the input file.
+  #-----------------------------------------------------------------------------
+  $startcntr = 0;
+  $excludecntr = 0;
+
+  while (<INPUT>) {
+
+    #---------------------------------------------------------------------------
+    # If we have not yet encountered /* RGST START */ then do not copy
+    # the line to the output file.
+    # Look to see if the current line is /* RGST START */ and set
+    # the start flag to true if it is.
+    #---------------------------------------------------------------------------
+    if ($startcntr == 0) {
+
+      if ($_ =~ /\/\*.*RGST.START.*\*\/.*/i) {
+        $startcntr++;
+      } 
+ 
+      if ($_ =~ /\/\*.*RGST.EXCLUDE.START.*\*\/.*/i) {
+        $excludecntr++;
+      } 
+    }
+    #---------------------------------------------------------------------------
+    # The start flag is on, so this line may be written to the output file.
+    #
+    # If the current line is /* RGST END */ then do not write it, just 
+    # turn off the start flag.
+    #
+    # If the current line contains /* RGST LEN ... */ then remove
+    # the /* and */ from around the /* RGST LEN ... */ and write this modified
+    # line to the output file.
+    #
+    # Otherwise, simply copy the input line to the output file.
+    #
+    #---------------------------------------------------------------------------
+    else {
+
+       if ($_ =~ /\/\*.*RGST.END.*\*\/.*/i) {
+         $startcntr--;
+       } 
+       elsif ($_ =~ /\/\*.*RGST.EXCLUDE.END.*\*\/.*/i) {
+         $excludecntr--;
+       } 
+       else  {
+
+         if ($_ =~ /\/\*.*RGST.LEN .*\*\/.*/i) {
+          $_ =~ s/\/\*/ /;
+          $_ =~ s/\*\// /;
+         }
+         
+         #---------------------------------------------------------------
+         # Do not print out line if in an EXCLUDE section of the .h file
+         #---------------------------------------------------------------
+         if ($excludecntr == 0) {	
+           print OUTPUT $_
+         }
+      }
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # Close the input and output files
+  # Remove the temporary .c file
+  #-----------------------------------------------------------------------------
+  close INPUT  || &Abend($me, "close of INPUT  file '$cfile' failed");
+  close OUTPUT || &Abend($me, "close of OUTPUT file '$tfn' failed");
+
+  unlink($cfile);
+
+  return($tfn);
+}
+
+################################################################################
+# SUBROUTINE RemoveBlankLines
+#
+# Remove all blank lines from a file.  This is usefult to strip out all the
+# blank lines put in by the cc command.  Without the blanks it makes it
+# easier to compare the .hr file created on one machine against the
+# hr file created on another.
+#
+################################################################################
+sub RemoveBlankLines
+{
+  #-----------------------------------------------------------------------------
+  # Get the parameters
+  #-----------------------------------------------------------------------------
+  local($fn) = $_[0];                  # filename
+
+  #-----------------------------------------------------------------------------
+  # Subroutine Local Variables
+  #-----------------------------------------------------------------------------
+  local($me)        = "RemoveBlankLines";     # Name of this subroutine
+  local($tfn)       = "RemoveBlankLines.tmp"; # Temp filename
+
+  #-----------------------------------------------------------------------------
+  # Open the input file and temp file
+  #-----------------------------------------------------------------------------
+  if (&VerifyFileExists($fn) != 0) {
+    print ("\n\t RemoveBlankLines ERROR");
+    print ("\t file '$fn' does not exist\n\n");
+    return(-1);
+  }
+
+  open INPUT,   $fn    || &Abend($me, "Could not open $fn for input");
+  open OUTPUT, ">$tfn" || &Abend($me, "Could not open $tfn for output");
+
+  #-----------------------------------------------------------------------------
+  # Remove blank lines
+  #-----------------------------------------------------------------------------
+  while (<INPUT>) {
+
+    if ( ( !($_ =~ /^\s*$/) ) &&
+         ( !($_ =~ /lm is not valid/) ) 
+       ) 
+       { print OUTPUT $_ }
+  }
+  #-----------------------------------------------------------------------------
+  # Copy the temp file to the original file
+  #-----------------------------------------------------------------------------
+  system("mv -f $tfn $fn");  
+
+  return(0);
+}
+
+
+################################################################################
+# SUBROUTINE PrintPurposeAndExit
+#
+################################################################################
+sub PrintPurposeAndExit
+{
+  #  system ("clear");
+  print "\n\tPERL SCRIPT : $GV_me\n";
+  print "\n\tThis program process C header files (.h files)";
+  print "\n\tand creates output '.hr' files.  These .hr files are used";
+  print "\n\tby the perl script $GC_parse to define irs registry";
+  print "\n\tdata for user defined typedefs and structures";
+  print "\n\n";
+  print "\n\tUSAGE: $GV_me file1.h <file2.h> ... <fileN.h>";
+  print "\n\n";
+
+  exit;
+}
+
+################################################################################
+#                          E N D   O F   F I L E
+################################################################################

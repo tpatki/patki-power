@@ -1,0 +1,97 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION standard compile on LC chaos_3_x86 system WITH SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= make -j 4
+
+#-----------------------------------------------------------------------
+# Library and include paths
+#-----------------------------------------------------------------------
+
+BASE_LIBPATH 	= -L../libs -L/usr/lib 
+BASE_INCPATH 	= -I../.. -I../../includes -I/usr/local/include -I/usr/include
+BASE_LIBS 	= -lc -lm
+
+SILO_DEFINE     = -DSILO
+SILO_VERSION    = 4.5.1
+SILO_LIBS 	= -lsilo
+SILO_LIBPATH 	= -L/usr/gapps/silo/$(SILO_VERSION)/chaos_3_x86/icc/lib
+SILO_INCPATH 	= -I/usr/gapps/silo/$(SILO_VERSION)/chaos_3_x86/icc/include
+
+#-----------------------------------------------------------------------
+# MPI Library:  If you do not wish to compile with MPI
+#               comment out all the following MPI_ assignments
+#-----------------------------------------------------------------------
+
+MPI_DEFINE 	= -DCOMMPI
+MPI_LIBS	= -lmpich
+MPI_LIBPATH 	= -L/usr/local/mpi/lib
+MPI_INCPATH 	= -I/usr/local/mpi/include
+
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+
+OTHER_LIBS 	=
+OTHER_LIBPATH 	=
+OTHER_INCPATH 	= 
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux
+
+IRS_LIBS 	= 	$(SILO_LIBS) \
+			$(READLINE_LIBS) \
+			$(MPI_LIBS) \
+			$(GANG_LIBS) \
+			$(PCS_LIBS) \
+			$(OPENMP_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH 	= 	$(BASE_INCPATH) \
+			$(SILO_INCPATH) \
+			$(PCS_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(READLINE_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
+			$(SILO_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(GANG_LIBPATH) \
+			$(PCS_LIBPATH) \
+			$(OPENMP_LIBPATH) \
+			$(READLINE_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) \
+			$(MPI_DEFINE) $(SILO_DEFINE) \
+			$(OPENMP_DEFINE) \
+			$(READLINE_DEFINE) \
+			$(PCS_DEFINE) 
+
+
+#-----------------------------------------------------------------------
+# Compiler and link flags
+#
+# If you are compiling for MPI on linux change both CC and LINK
+# to mpicc rather than cc.
+#
+#-----------------------------------------------------------------------
+
+CC		= /usr/local/intel/compiler90/bin/icc 
+LINK		= /usr/local/intel/compiler90/bin/icc
+
+CC_FLAGS_OPT	= -c -g -O3 -funroll-loops -finline-functions
+CC_FLAGS_DEB	= -c -g -O0
+
+F77		= f77
+F77_FLAGS_OPT	= -c -O2 -r8 -Nn4200
+F77_FLAGS_DEB	= -c -O2 -r8 -Nn4200
+
+LINK_FLAGS_OPT	= -g
+LINK_FLAGS_DEB	= -g
+
+ARCHIVE		= ar rc
+ARCHIVE_X	= ar x
+

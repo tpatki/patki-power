@@ -1,0 +1,88 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION threaded compile on LC chaos_3_x86_elan3_threads system WITHOUT SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= make -j 2
+
+#-----------------------------------------------------------------------
+# Library and include paths
+#-----------------------------------------------------------------------
+
+BASE_LIBPATH    = -L../libs -L/usr/lib \
+		-L/usr/local/intel/compiler90/lib
+
+BASE_INCPATH    = -I../.. -I../../includes -I/usr/local/include \
+		-I/usr/local/apps/include \
+
+BASE_LIBS       = -lsvml -lm -lc -limf
+
+#-----------------------------------------------------------------------
+# MPI Library:  If you do not wish to compile with MPI
+#               comment out all the following MPI_ assignments
+#-----------------------------------------------------------------------
+MPI_DEFINE      = -DCOMMPI
+MPI_LIBS        = -lmpi -lelan -lelan3 -lrmscall
+MPI_LIBPATH     = -L/usr/lib/mpi/lib
+MPI_INCPATH     = -I/usr/lib/mpi/include
+
+#-----------------------------------------------------------------------
+# OPENMP Library:  If you do not wish to compile with OPENMP
+#                  comment out all the following OPENMP_ assignments
+#-----------------------------------------------------------------------
+
+OPENMP_DEFINE	= -DOPENMP -DOMP2COMPILER
+OPENMP_LIBS	=  -lguide
+OPENMP_LIBPATH	=
+OPENMP_INCPATH	=
+
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+
+
+OTHER_LIBS 	=
+OTHER_LIBPATH 	=
+OTHER_INCPATH 	= 
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux
+
+IRS_LIBS 	= 	$(MPI_LIBS) \
+			$(OPENMP_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH 	= 	$(BASE_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(OPENMP_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) \
+			$(MPI_DEFINE) \
+			$(OPENMP_DEFINE) 
+
+
+#-----------------------------------------------------------------------
+# Compiler and link flags
+#-----------------------------------------------------------------------
+
+CC		= /usr/local/intel/compiler90/bin/icc 
+LINK		= /usr/local/intel/compiler90/bin/icc
+LOAD		= /usr/local/intel/compiler90/bin/icc \
+                -Wl,-Map,load.map.$$irs_target
+
+CC_FLAGS_OPT    = -c -g -O2 -xW -Zp16 -openmp -openmp_report2
+CC_FLAGS_DEB    = -c -g -O2 -xW -Zp16 -openmp -openmp_report2
+LINK_FLAGS_OPT  =    -g -O2 -xW -Zp16 -openmp -openmp_report2 -no_cpprt
+LINK_FLAGS_DEB  =    -g -O2 -xW -Zp16 -openmp -openmp_report2 -no_cpprt
+
+LINK_FLAGS_OPT	= -g
+LINK_FLAGS_DEB	= -g
+
+ARCHIVE		= ar rc
+ARCHIVE_X	= ar x
+

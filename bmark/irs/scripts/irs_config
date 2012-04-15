@@ -1,0 +1,135 @@
+#!/usr/local/bin/perl
+
+
+if (!(@ARGV)) {
+
+
+   #
+   # Print list of available configurations
+   #
+
+   if (-e "./arch") {
+
+      $list = `cd ./arch; ls make.*`;
+
+   } else {
+
+      print("Cannot find ./arch directory.\n");
+      exit(0);
+
+   } 
+
+   @opts = split(' ',$list);
+   
+   print("\nAvailable Makefile Configurations\n");
+   print("----------------------------------\n\n");
+
+   foreach $opt (@opts) {
+      ($junk,$option) = split('\.',$opt);
+      @desc = split(' ',`grep DESCRIPTION ./arch/$opt`);
+      shift(@desc);
+      shift(@desc);
+      $descript = join(' ',@desc);
+      printf ("  %-30s - %-20s\n",$option,$descript);
+   }         
+
+   print("----------------------------------\n\n");
+   exit(0);
+}
+
+#
+# Set defaults
+#
+
+$makeflag = 0;
+$makeopt = "";
+
+#
+#  Grap command line options
+#
+
+while ((@ARGV) && ($ARGV[0] =~ /^-(.*)/)) {
+
+   $arg = 1;
+   shift(@ARGV);
+
+   if ($arg eq "m") {
+
+      $makeflag = 1;
+      $makeopt = shift(@ARGV);
+
+   } else {
+
+      print("Bad flag -- $arg\n");
+      exit(0);
+
+   } 
+}
+
+#
+# What remains is the chosen configuration
+#
+
+$config = shift(@ARGV);
+
+# check to make sure the targets and header file exist
+
+if (!(-e "./Makefile.header")) {
+   print("Makefile.header must exist in this directory.\n");   
+   exit(0);
+}
+
+if (!(-e "./Makefile.targets")) {
+   print("Makefile.targets must exist in this directory.\n");   
+   exit(0);
+}
+
+$name = "./arch/make.".$config ;
+
+###############################################################################
+#
+###############################################################################
+if (-e $name) {
+
+   if (-e "./Makefile") {
+
+      `mv ./Makefile ./Makefile~`;
+
+   }
+
+   `cat ./Makefile.header > Makefile`;
+   `cat $name >> Makefile`;
+   `cat ./Makefile.targets >> Makefile`;
+
+    print("\n\nMakefile for $config complete.\n\n");
+
+#    print("Building dependencies for sub directory makefiles by executing\n");
+#    print("\nmake depend\n\n");
+#
+#    system("make depend");
+
+    ############################################################################
+    # If requested to make the code then do so 
+    ############################################################################
+    if ($makeflag == 1) {
+
+       `make $makeopt`;
+
+    }
+    else {
+
+#     print "\nDependencies built!\n";
+      print "\nEnter 'make depend' now \n";
+      print "\nThen enter 'make' or 'make debug'\n\n";
+
+    }
+
+} else {
+
+   print("Configuration file for $config not found.\n");
+
+} 
+
+###############################################################################
+# end of script
+###############################################################################

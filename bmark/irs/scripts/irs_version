@@ -1,0 +1,51 @@
+#!/usr/local/bin/perl
+
+$hfile = 'irsversion.h';
+
+$date = `date +%m/%d/%y`;
+chop($date);
+
+$time = `date +%H:%M:%S`;
+chop($time);
+
+$opt = $ARGV[0];
+
+# $proc = `uname -p`;
+# chop($proc);
+
+$rel = `uname -r`;
+chop($rel);
+
+$ver = `uname -v`;
+chop($ver);
+
+$name = `uname -n`;
+chop($name);
+
+$os = `uname -s`;
+chop($os);
+
+$person = (getpwuid($<))[0];
+
+if (-e $hfile) {
+   system ("mv $hfile $hfile~");
+}
+
+# ------------------------------------------------------------------------------
+# - Remove 'unknown ' from version info and ensure the version contains
+# - no preceding spaces on the linux system.
+# - There is no 'uname -p' option on linux, so linux returns 'unknown' instead.
+# ------------------------------------------------------------------------------
+$ver_os = "\"$os $rel $ver\"";
+$ver_os =~ s/unknown //g;
+
+open(HFILE,"> $hfile");
+
+print HFILE ("#define VER_NODENAME \"$name\"\n");
+print HFILE ("#define VER_DATE \"$date\"\n");
+print HFILE ("#define VER_TIME \"$time\"\n");
+print HFILE ("#define VER_OS $ver_os\n");
+print HFILE ("#define VER_OPT \"$opt\"\n");
+print HFILE ("#define VER_PERSON \"$person\"\n");
+
+close(HFILE);
