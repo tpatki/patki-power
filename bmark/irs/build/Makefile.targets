@@ -67,7 +67,7 @@ build:
 	if [ ! -e $(CODE_DIR) ]; then  mkdir $(CODE_DIR); fi
 	if [ ! -e ../debug ]; then  mkdir ../debug; fi
 	cd ../includes; make -f ../build/Makefile $(RGSTLIB);
-	cd ../includes; make -f ../build/Makefile ../../../scripts/irs_version;
+	cd ../includes; make -f ../build/Makefile irs_version;
 	make sources; 
 	cd $(LIB_DIR); $$irs_arx libctl.a main.o
 	da=`date +%m%d`; \
@@ -187,7 +187,7 @@ preprocess_build:
 	if [ ! -e $(INST_DIR) ];      then  mkdir $(INST_DIR); fi 
 	if [ ! -e $(PRE_DIR) ];       then  mkdir $(PRE_DIR); fi 
 	cd ../includes; make -f ../build/Makefile rgst_types.inst.i
-	cd ../includes; make -f ../build/Makefile ../../../scripts/irs_version;
+	cd ../includes; make -f ../build/Makefile irs_version;
 	make sources_preprocess;
 
 #---------------------------------------------------------------
