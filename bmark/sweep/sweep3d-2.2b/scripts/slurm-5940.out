@@ -1,0 +1,1010 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_55_48_228716133
++ mkdir 2012_04_14_16_55_48_228716133
++ cd 2012_04_14_16_55_48_228716133
++ env
++ hostname
++ echo 2012_04_14_16_55_48_228716133
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_55_48_228716133
+2012_04_14_16_55_48_228716133
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_55_59_897164484
++ mkdir 2012_04_14_16_55_59_897164484
++ cd 2012_04_14_16_55_59_897164484
++ env
++ hostname
++ echo 2012_04_14_16_55_59_897164484
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_55_59_897164484
+2012_04_14_16_55_59_897164484
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_56_09_174148565
++ mkdir 2012_04_14_16_56_09_174148565
++ cd 2012_04_14_16_56_09_174148565
++ env
++ hostname
++ echo 2012_04_14_16_56_09_174148565
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_56_09_174148565
+2012_04_14_16_56_09_174148565
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_56_19_645780248
++ mkdir 2012_04_14_16_56_19_645780248
++ cd 2012_04_14_16_56_19_645780248
++ env
++ hostname
++ echo 2012_04_14_16_56_19_645780248
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_56_19_645780248
+2012_04_14_16_56_19_645780248
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_56_29_594022329
++ mkdir 2012_04_14_16_56_29_594022329
++ cd 2012_04_14_16_56_29_594022329
++ env
++ hostname
++ echo 2012_04_14_16_56_29_594022329
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_56_29_594022329
+2012_04_14_16_56_29_594022329
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_56_38_653291741
++ mkdir 2012_04_14_16_56_38_653291741
++ cd 2012_04_14_16_56_38_653291741
++ env
++ hostname
++ echo 2012_04_14_16_56_38_653291741
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_56_38_653291741
+2012_04_14_16_56_38_653291741
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_56_49_716825899
++ mkdir 2012_04_14_16_56_49_716825899
++ cd 2012_04_14_16_56_49_716825899
++ env
++ hostname
++ echo 2012_04_14_16_56_49_716825899
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_56_49_716825899
+2012_04_14_16_56_49_716825899
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_56_59_983057362
++ mkdir 2012_04_14_16_56_59_983057362
++ cd 2012_04_14_16_56_59_983057362
++ env
++ hostname
++ echo 2012_04_14_16_56_59_983057362
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_56_59_983057362
+2012_04_14_16_56_59_983057362
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_57_09_246010504
++ mkdir 2012_04_14_16_57_09_246010504
++ cd 2012_04_14_16_57_09_246010504
++ env
++ hostname
++ echo 2012_04_14_16_57_09_246010504
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_57_09_246010504
+2012_04_14_16_57_09_246010504
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_57_19_445978672
++ mkdir 2012_04_14_16_57_19_445978672
++ cd 2012_04_14_16_57_19_445978672
++ env
++ hostname
++ echo 2012_04_14_16_57_19_445978672
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_57_19_445978672
+2012_04_14_16_57_19_445978672
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_57_29_434234143
++ mkdir 2012_04_14_16_57_29_434234143
++ cd 2012_04_14_16_57_29_434234143
++ env
++ hostname
++ echo 2012_04_14_16_57_29_434234143
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_57_29_434234143
+2012_04_14_16_57_29_434234143
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_57_38_480816565
++ mkdir 2012_04_14_16_57_38_480816565
++ cd 2012_04_14_16_57_38_480816565
++ env
++ hostname
++ echo 2012_04_14_16_57_38_480816565
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_57_38_480816565
+2012_04_14_16_57_38_480816565
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_57_48_895697873
++ mkdir 2012_04_14_16_57_48_895697873
++ cd 2012_04_14_16_57_48_895697873
++ env
++ hostname
++ echo 2012_04_14_16_57_48_895697873
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_57_48_895697873
+2012_04_14_16_57_48_895697873
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_57_58_965364688
++ mkdir 2012_04_14_16_57_58_965364688
++ cd 2012_04_14_16_57_58_965364688
++ env
++ hostname
++ echo 2012_04_14_16_57_58_965364688
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_57_58_965364688
+2012_04_14_16_57_58_965364688
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_58_07_898443452
++ mkdir 2012_04_14_16_58_07_898443452
++ cd 2012_04_14_16_58_07_898443452
++ env
++ hostname
++ echo 2012_04_14_16_58_07_898443452
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_58_07_898443452
+2012_04_14_16_58_07_898443452
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_58_17_632205481
++ mkdir 2012_04_14_16_58_17_632205481
++ cd 2012_04_14_16_58_17_632205481
++ env
++ hostname
++ echo 2012_04_14_16_58_17_632205481
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_58_17_632205481
+2012_04_14_16_58_17_632205481
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_58_27_734912063
++ mkdir 2012_04_14_16_58_27_734912063
++ cd 2012_04_14_16_58_27_734912063
++ env
++ hostname
++ echo 2012_04_14_16_58_27_734912063
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_58_27_734912063
+2012_04_14_16_58_27_734912063
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_58_36_942786923
++ mkdir 2012_04_14_16_58_36_942786923
++ cd 2012_04_14_16_58_36_942786923
++ env
++ hostname
++ echo 2012_04_14_16_58_36_942786923
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_58_36_942786923
+2012_04_14_16_58_36_942786923
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_58_47_186819561
++ mkdir 2012_04_14_16_58_47_186819561
++ cd 2012_04_14_16_58_47_186819561
++ env
++ hostname
++ echo 2012_04_14_16_58_47_186819561
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_58_47_186819561
+2012_04_14_16_58_47_186819561
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_58_57_475552206
++ mkdir 2012_04_14_16_58_57_475552206
++ cd 2012_04_14_16_58_57_475552206
++ env
++ hostname
++ echo 2012_04_14_16_58_57_475552206
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_58_57_475552206
+2012_04_14_16_58_57_475552206
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_59_07_042379693
++ mkdir 2012_04_14_16_59_07_042379693
++ cd 2012_04_14_16_59_07_042379693
++ env
++ hostname
++ echo 2012_04_14_16_59_07_042379693
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_59_07_042379693
+2012_04_14_16_59_07_042379693
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_59_17_037284286
++ mkdir 2012_04_14_16_59_17_037284286
++ cd 2012_04_14_16_59_17_037284286
++ env
++ hostname
++ echo 2012_04_14_16_59_17_037284286
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_59_17_037284286
+2012_04_14_16_59_17_037284286
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_59_27_256881858
++ mkdir 2012_04_14_16_59_27_256881858
++ cd 2012_04_14_16_59_27_256881858
++ env
++ hostname
++ echo 2012_04_14_16_59_27_256881858
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_59_27_256881858
+2012_04_14_16_59_27_256881858
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_59_37_560988446
++ mkdir 2012_04_14_16_59_37_560988446
++ cd 2012_04_14_16_59_37_560988446
++ env
++ hostname
++ echo 2012_04_14_16_59_37_560988446
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_59_37_560988446
+2012_04_14_16_59_37_560988446
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_59_48_604311162
++ mkdir 2012_04_14_16_59_48_604311162
++ cd 2012_04_14_16_59_48_604311162
++ env
++ hostname
++ echo 2012_04_14_16_59_48_604311162
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_59_48_604311162
+2012_04_14_16_59_48_604311162
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_59_59_208993627
++ mkdir 2012_04_14_16_59_59_208993627
++ cd 2012_04_14_16_59_59_208993627
++ env
++ hostname
++ echo 2012_04_14_16_59_59_208993627
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_59_59_208993627
+2012_04_14_16_59_59_208993627
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_00_09_435554508
++ mkdir 2012_04_14_17_00_09_435554508
++ cd 2012_04_14_17_00_09_435554508
++ env
++ hostname
++ echo 2012_04_14_17_00_09_435554508
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_00_09_435554508
+2012_04_14_17_00_09_435554508
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_00_19_885320012
++ mkdir 2012_04_14_17_00_19_885320012
++ cd 2012_04_14_17_00_19_885320012
++ env
++ hostname
++ echo 2012_04_14_17_00_19_885320012
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_00_19_885320012
+2012_04_14_17_00_19_885320012
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_00_30_612850985
++ mkdir 2012_04_14_17_00_30_612850985
++ cd 2012_04_14_17_00_30_612850985
++ env
++ hostname
++ echo 2012_04_14_17_00_30_612850985
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_00_30_612850985
+2012_04_14_17_00_30_612850985
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_00_41_291987899
++ mkdir 2012_04_14_17_00_41_291987899
++ cd 2012_04_14_17_00_41_291987899
++ env
++ hostname
++ echo 2012_04_14_17_00_41_291987899
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_00_41_291987899
+2012_04_14_17_00_41_291987899
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_00_51_701772533
++ mkdir 2012_04_14_17_00_51_701772533
++ cd 2012_04_14_17_00_51_701772533
++ env
++ hostname
++ echo 2012_04_14_17_00_51_701772533
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_00_51_701772533
+2012_04_14_17_00_51_701772533
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_01_02_539642409
++ mkdir 2012_04_14_17_01_02_539642409
++ cd 2012_04_14_17_01_02_539642409
++ env
++ hostname
++ echo 2012_04_14_17_01_02_539642409
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_01_02_539642409
+2012_04_14_17_01_02_539642409
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_01_12_870574787
++ mkdir 2012_04_14_17_01_12_870574787
++ cd 2012_04_14_17_01_12_870574787
++ env
++ hostname
++ echo 2012_04_14_17_01_12_870574787
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_01_12_870574787
+2012_04_14_17_01_12_870574787
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_01_23_368682266
++ mkdir 2012_04_14_17_01_23_368682266
++ cd 2012_04_14_17_01_23_368682266
++ env
++ hostname
++ echo 2012_04_14_17_01_23_368682266
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_01_23_368682266
+2012_04_14_17_01_23_368682266
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_01_33_948732452
++ mkdir 2012_04_14_17_01_33_948732452
++ cd 2012_04_14_17_01_33_948732452
++ env
++ hostname
++ echo 2012_04_14_17_01_33_948732452
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_01_33_948732452
+2012_04_14_17_01_33_948732452
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_01_44_029333596
++ mkdir 2012_04_14_17_01_44_029333596
++ cd 2012_04_14_17_01_44_029333596
++ env
++ hostname
++ echo 2012_04_14_17_01_44_029333596
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_01_44_029333596
+2012_04_14_17_01_44_029333596
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_01_54_710149088
++ mkdir 2012_04_14_17_01_54_710149088
++ cd 2012_04_14_17_01_54_710149088
++ env
++ hostname
++ echo 2012_04_14_17_01_54_710149088
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_01_54_710149088
+2012_04_14_17_01_54_710149088
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_02_05_598740010
++ mkdir 2012_04_14_17_02_05_598740010
++ cd 2012_04_14_17_02_05_598740010
++ env
++ hostname
++ echo 2012_04_14_17_02_05_598740010
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_02_05_598740010
+2012_04_14_17_02_05_598740010
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_02_15_938309666
++ mkdir 2012_04_14_17_02_15_938309666
++ cd 2012_04_14_17_02_15_938309666
++ env
++ hostname
++ echo 2012_04_14_17_02_15_938309666
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_02_15_938309666
+2012_04_14_17_02_15_938309666
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_02_26_268888262
++ mkdir 2012_04_14_17_02_26_268888262
++ cd 2012_04_14_17_02_26_268888262
++ env
++ hostname
++ echo 2012_04_14_17_02_26_268888262
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_02_26_268888262
+2012_04_14_17_02_26_268888262
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_02_36_845042205
++ mkdir 2012_04_14_17_02_36_845042205
++ cd 2012_04_14_17_02_36_845042205
++ env
++ hostname
++ echo 2012_04_14_17_02_36_845042205
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_02_36_845042205
+2012_04_14_17_02_36_845042205
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_02_46_843984569
++ mkdir 2012_04_14_17_02_46_843984569
++ cd 2012_04_14_17_02_46_843984569
++ env
++ hostname
++ echo 2012_04_14_17_02_46_843984569
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_02_46_843984569
+2012_04_14_17_02_46_843984569
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_03_00_717388745
++ mkdir 2012_04_14_17_03_00_717388745
++ cd 2012_04_14_17_03_00_717388745
++ env
++ hostname
++ echo 2012_04_14_17_03_00_717388745
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_03_00_717388745
+2012_04_14_17_03_00_717388745
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_03_11_035036304
++ mkdir 2012_04_14_17_03_11_035036304
++ cd 2012_04_14_17_03_11_035036304
++ env
++ hostname
++ echo 2012_04_14_17_03_11_035036304
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_03_11_035036304
+2012_04_14_17_03_11_035036304
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_03_21_166310334
++ mkdir 2012_04_14_17_03_21_166310334
++ cd 2012_04_14_17_03_21_166310334
++ env
++ hostname
++ echo 2012_04_14_17_03_21_166310334
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_03_21_166310334
+2012_04_14_17_03_21_166310334
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_03_31_491005395
++ mkdir 2012_04_14_17_03_31_491005395
++ cd 2012_04_14_17_03_31_491005395
++ env
++ hostname
++ echo 2012_04_14_17_03_31_491005395
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_03_31_491005395
+2012_04_14_17_03_31_491005395
++ cp ../../../input/input-128 ./input
++ srun --nodes=32 --ntasks=128 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sweep.256
++ BMARK_STRING=sweep.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_03_42_084291384
++ mkdir 2012_04_14_17_03_42_084291384
++ cd 2012_04_14_17_03_42_084291384
++ env
++ hostname
++ echo 2012_04_14_17_03_42_084291384
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_03_42_084291384
+2012_04_14_17_03_42_084291384
++ cp ../../../input/input-256 ./input
++ srun --nodes=32 --ntasks=256 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sweep.512
++ BMARK_STRING=sweep.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_03_51_951179938
++ mkdir 2012_04_14_17_03_51_951179938
++ cd 2012_04_14_17_03_51_951179938
++ env
++ hostname
++ echo 2012_04_14_17_03_51_951179938
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_17_03_51_951179938
+2012_04_14_17_03_51_951179938
++ cp ../../../input/input-512 ./input
++ srun --nodes=32 --ntasks=512 -ppbatch -e sweep.err -o sweep.dat --cpu_bind=sockets sh ../sweepCL.sh
+Resetting now...
