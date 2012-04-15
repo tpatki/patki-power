@@ -82,5 +82,5 @@ echo 'cores: '$2 >> info
 echo 'nodes: '$1 >> info
 
 
-srun --nodes=$n --ntasks=$cores -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh $2
+srun --nodes=$n --ntasks=$cores -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh $cores
 
