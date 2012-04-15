@@ -1,0 +1,1298 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_18_13_245124932
++ mkdir 2012_04_14_16_18_13_245124932
++ cd 2012_04_14_16_18_13_245124932
++ env
++ hostname
++ echo 2012_04_14_16_18_13_245124932
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_18_13_245124932
+2012_04_14_16_18_13_245124932
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.1
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_18_48_877617888
++ mkdir 2012_04_14_16_18_48_877617888
++ cd 2012_04_14_16_18_48_877617888
++ env
++ hostname
++ echo 2012_04_14_16_18_48_877617888
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_18_48_877617888
+2012_04_14_16_18_48_877617888
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.3
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_19_23_316838456
++ mkdir 2012_04_14_16_19_23_316838456
++ cd 2012_04_14_16_19_23_316838456
++ env
++ hostname
++ echo 2012_04_14_16_19_23_316838456
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_19_23_316838456
+2012_04_14_16_19_23_316838456
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.5
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_19_59_387257198
++ mkdir 2012_04_14_16_19_59_387257198
++ cd 2012_04_14_16_19_59_387257198
++ env
++ hostname
++ echo 2012_04_14_16_19_59_387257198
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_19_59_387257198
+2012_04_14_16_19_59_387257198
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.7
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_20_33_844678626
++ mkdir 2012_04_14_16_20_33_844678626
++ cd 2012_04_14_16_20_33_844678626
++ env
++ hostname
++ echo 2012_04_14_16_20_33_844678626
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_20_33_844678626
+2012_04_14_16_20_33_844678626
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.9
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_21_08_373969994
++ mkdir 2012_04_14_16_21_08_373969994
++ cd 2012_04_14_16_21_08_373969994
++ env
++ hostname
++ echo 2012_04_14_16_21_08_373969994
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_21_08_373969994
+2012_04_14_16_21_08_373969994
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.11
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_21_44_053758096
++ mkdir 2012_04_14_16_21_44_053758096
++ cd 2012_04_14_16_21_44_053758096
++ env
++ hostname
++ echo 2012_04_14_16_21_44_053758096
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_21_44_053758096
+2012_04_14_16_21_44_053758096
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.13
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_22_18_560222872
++ mkdir 2012_04_14_16_22_18_560222872
++ cd 2012_04_14_16_22_18_560222872
++ env
++ hostname
++ echo 2012_04_14_16_22_18_560222872
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_22_18_560222872
+2012_04_14_16_22_18_560222872
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.15
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_22_52_981628265
++ mkdir 2012_04_14_16_22_52_981628265
++ cd 2012_04_14_16_22_52_981628265
++ env
++ hostname
++ echo 2012_04_14_16_22_52_981628265
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_22_52_981628265
+2012_04_14_16_22_52_981628265
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.17
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_23_28_618384410
++ mkdir 2012_04_14_16_23_28_618384410
++ cd 2012_04_14_16_23_28_618384410
++ env
++ hostname
++ echo 2012_04_14_16_23_28_618384410
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_23_28_618384410
+2012_04_14_16_23_28_618384410
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.19
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_24_03_089526966
++ mkdir 2012_04_14_16_24_03_089526966
++ cd 2012_04_14_16_24_03_089526966
++ env
++ hostname
++ echo 2012_04_14_16_24_03_089526966
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_24_03_089526966
+2012_04_14_16_24_03_089526966
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.21
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_24_37_640501298
++ mkdir 2012_04_14_16_24_37_640501298
++ cd 2012_04_14_16_24_37_640501298
++ env
++ hostname
++ echo 2012_04_14_16_24_37_640501298
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_24_37_640501298
+2012_04_14_16_24_37_640501298
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.23
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_25_13_673529663
++ mkdir 2012_04_14_16_25_13_673529663
++ cd 2012_04_14_16_25_13_673529663
++ env
++ hostname
++ echo 2012_04_14_16_25_13_673529663
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_25_13_673529663
+2012_04_14_16_25_13_673529663
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.25
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_25_48_172608979
++ mkdir 2012_04_14_16_25_48_172608979
++ cd 2012_04_14_16_25_48_172608979
++ env
++ hostname
++ echo 2012_04_14_16_25_48_172608979
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_25_48_172608979
+2012_04_14_16_25_48_172608979
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.27
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_26_22_590393992
++ mkdir 2012_04_14_16_26_22_590393992
++ cd 2012_04_14_16_26_22_590393992
++ env
++ hostname
++ echo 2012_04_14_16_26_22_590393992
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_26_22_590393992
+2012_04_14_16_26_22_590393992
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.29
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_26_58_504234664
++ mkdir 2012_04_14_16_26_58_504234664
++ cd 2012_04_14_16_26_58_504234664
++ env
++ hostname
++ echo 2012_04_14_16_26_58_504234664
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_26_58_504234664
+2012_04_14_16_26_58_504234664
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.31
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_27_33_312468342
++ mkdir 2012_04_14_16_27_33_312468342
++ cd 2012_04_14_16_27_33_312468342
++ env
++ hostname
++ echo 2012_04_14_16_27_33_312468342
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_27_33_312468342
+2012_04_14_16_27_33_312468342
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.33
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_28_08_191404418
++ mkdir 2012_04_14_16_28_08_191404418
++ cd 2012_04_14_16_28_08_191404418
++ env
++ hostname
++ echo 2012_04_14_16_28_08_191404418
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_28_08_191404418
+2012_04_14_16_28_08_191404418
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.35
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_28_43_968068927
++ mkdir 2012_04_14_16_28_43_968068927
++ cd 2012_04_14_16_28_43_968068927
++ env
++ hostname
++ echo 2012_04_14_16_28_43_968068927
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_28_43_968068927
+2012_04_14_16_28_43_968068927
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.37
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_29_18_457207540
++ mkdir 2012_04_14_16_29_18_457207540
++ cd 2012_04_14_16_29_18_457207540
++ env
++ hostname
++ echo 2012_04_14_16_29_18_457207540
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_29_18_457207540
+2012_04_14_16_29_18_457207540
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.39
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_29_53_376214473
++ mkdir 2012_04_14_16_29_53_376214473
++ cd 2012_04_14_16_29_53_376214473
++ env
++ hostname
++ echo 2012_04_14_16_29_53_376214473
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_29_53_376214473
+2012_04_14_16_29_53_376214473
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.41
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_30_29_123254676
++ mkdir 2012_04_14_16_30_29_123254676
++ cd 2012_04_14_16_30_29_123254676
++ env
++ hostname
++ echo 2012_04_14_16_30_29_123254676
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_30_29_123254676
+2012_04_14_16_30_29_123254676
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.43
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_31_03_669655994
++ mkdir 2012_04_14_16_31_03_669655994
++ cd 2012_04_14_16_31_03_669655994
++ env
++ hostname
++ echo 2012_04_14_16_31_03_669655994
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_31_03_669655994
+2012_04_14_16_31_03_669655994
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.45
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_31_38_384205185
++ mkdir 2012_04_14_16_31_38_384205185
++ cd 2012_04_14_16_31_38_384205185
++ env
++ hostname
++ echo 2012_04_14_16_31_38_384205185
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_31_38_384205185
+2012_04_14_16_31_38_384205185
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.47
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_32_14_001610586
++ mkdir 2012_04_14_16_32_14_001610586
++ cd 2012_04_14_16_32_14_001610586
++ env
++ hostname
++ echo 2012_04_14_16_32_14_001610586
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_32_14_001610586
+2012_04_14_16_32_14_001610586
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.49
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_32_48_515637770
++ mkdir 2012_04_14_16_32_48_515637770
++ cd 2012_04_14_16_32_48_515637770
++ env
++ hostname
++ echo 2012_04_14_16_32_48_515637770
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_32_48_515637770
+2012_04_14_16_32_48_515637770
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.51
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_33_23_590767540
++ mkdir 2012_04_14_16_33_23_590767540
++ cd 2012_04_14_16_33_23_590767540
++ env
++ hostname
++ echo 2012_04_14_16_33_23_590767540
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_33_23_590767540
+2012_04_14_16_33_23_590767540
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.53
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_34_02_300328555
++ mkdir 2012_04_14_16_34_02_300328555
++ cd 2012_04_14_16_34_02_300328555
++ env
++ hostname
++ echo 2012_04_14_16_34_02_300328555
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_34_02_300328555
+2012_04_14_16_34_02_300328555
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.55
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_34_37_487703623
++ mkdir 2012_04_14_16_34_37_487703623
++ cd 2012_04_14_16_34_37_487703623
++ env
++ hostname
++ echo 2012_04_14_16_34_37_487703623
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_34_37_487703623
+2012_04_14_16_34_37_487703623
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.57
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_35_12_473243891
++ mkdir 2012_04_14_16_35_12_473243891
++ cd 2012_04_14_16_35_12_473243891
++ env
++ hostname
++ echo 2012_04_14_16_35_12_473243891
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_35_12_473243891
+2012_04_14_16_35_12_473243891
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.59
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_35_49_089696201
++ mkdir 2012_04_14_16_35_49_089696201
++ cd 2012_04_14_16_35_49_089696201
++ env
++ hostname
++ echo 2012_04_14_16_35_49_089696201
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_35_49_089696201
+2012_04_14_16_35_49_089696201
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.61
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_36_23_883318047
++ mkdir 2012_04_14_16_36_23_883318047
++ cd 2012_04_14_16_36_23_883318047
++ env
++ hostname
++ echo 2012_04_14_16_36_23_883318047
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_36_23_883318047
+2012_04_14_16_36_23_883318047
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.63
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_36_59_117609771
++ mkdir 2012_04_14_16_36_59_117609771
++ cd 2012_04_14_16_36_59_117609771
++ env
++ hostname
++ echo 2012_04_14_16_36_59_117609771
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_36_59_117609771
+2012_04_14_16_36_59_117609771
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.65
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_37_35_216930271
++ mkdir 2012_04_14_16_37_35_216930271
++ cd 2012_04_14_16_37_35_216930271
++ env
++ hostname
++ echo 2012_04_14_16_37_35_216930271
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_37_35_216930271
+2012_04_14_16_37_35_216930271
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.67
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_38_09_986944323
++ mkdir 2012_04_14_16_38_09_986944323
++ cd 2012_04_14_16_38_09_986944323
++ env
++ hostname
++ echo 2012_04_14_16_38_09_986944323
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_38_09_986944323
+2012_04_14_16_38_09_986944323
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.69
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_38_45_078660698
++ mkdir 2012_04_14_16_38_45_078660698
++ cd 2012_04_14_16_38_45_078660698
++ env
++ hostname
++ echo 2012_04_14_16_38_45_078660698
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_38_45_078660698
+2012_04_14_16_38_45_078660698
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.71
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_39_20_762433686
++ mkdir 2012_04_14_16_39_20_762433686
++ cd 2012_04_14_16_39_20_762433686
++ env
++ hostname
++ echo 2012_04_14_16_39_20_762433686
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_39_20_762433686
+2012_04_14_16_39_20_762433686
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.73
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_39_55_721988083
++ mkdir 2012_04_14_16_39_55_721988083
++ cd 2012_04_14_16_39_55_721988083
++ env
++ hostname
++ echo 2012_04_14_16_39_55_721988083
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_39_55_721988083
+2012_04_14_16_39_55_721988083
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.75
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_40_30_820959082
++ mkdir 2012_04_14_16_40_30_820959082
++ cd 2012_04_14_16_40_30_820959082
++ env
++ hostname
++ echo 2012_04_14_16_40_30_820959082
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_40_30_820959082
+2012_04_14_16_40_30_820959082
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.77
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_41_07_306357610
++ mkdir 2012_04_14_16_41_07_306357610
++ cd 2012_04_14_16_41_07_306357610
++ env
++ hostname
++ echo 2012_04_14_16_41_07_306357610
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_41_07_306357610
+2012_04_14_16_41_07_306357610
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.79
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_41_42_087294601
++ mkdir 2012_04_14_16_41_42_087294601
++ cd 2012_04_14_16_41_42_087294601
++ env
++ hostname
++ echo 2012_04_14_16_41_42_087294601
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_41_42_087294601
+2012_04_14_16_41_42_087294601
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.81
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_42_17_353641447
++ mkdir 2012_04_14_16_42_17_353641447
++ cd 2012_04_14_16_42_17_353641447
++ env
++ hostname
++ echo 2012_04_14_16_42_17_353641447
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_42_17_353641447
+2012_04_14_16_42_17_353641447
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.83
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_42_53_811870035
++ mkdir 2012_04_14_16_42_53_811870035
++ cd 2012_04_14_16_42_53_811870035
++ env
++ hostname
++ echo 2012_04_14_16_42_53_811870035
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_42_53_811870035
+2012_04_14_16_42_53_811870035
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.85
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_43_28_672269929
++ mkdir 2012_04_14_16_43_28_672269929
++ cd 2012_04_14_16_43_28_672269929
++ env
++ hostname
++ echo 2012_04_14_16_43_28_672269929
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_43_28_672269929
+2012_04_14_16_43_28_672269929
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.87
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_44_03_906063206
++ mkdir 2012_04_14_16_44_03_906063206
++ cd 2012_04_14_16_44_03_906063206
++ env
++ hostname
++ echo 2012_04_14_16_44_03_906063206
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_44_03_906063206
+2012_04_14_16_44_03_906063206
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.89
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_44_40_407163213
++ mkdir 2012_04_14_16_44_40_407163213
++ cd 2012_04_14_16_44_40_407163213
++ env
++ hostname
++ echo 2012_04_14_16_44_40_407163213
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_44_40_407163213
+2012_04_14_16_44_40_407163213
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-127: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.91
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_45_15_071844979
++ mkdir 2012_04_14_16_45_15_071844979
++ cd 2012_04_14_16_45_15_071844979
++ env
++ hostname
++ echo 2012_04_14_16_45_15_071844979
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_45_15_071844979
+2012_04_14_16_45_15_071844979
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-255: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.93
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_16_45_50_262234340
++ mkdir 2012_04_14_16_45_50_262234340
++ cd 2012_04_14_16_45_50_262234340
++ env
++ hostname
++ echo 2012_04_14_16_45_50_262234340
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_14_16_45_50_262234340
+2012_04_14_16_45_50_262234340
++ cp ../../input.dat ./input.dat
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl27: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-511: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5933.95
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+Resetting now...

@@ -1,0 +1,29 @@
+/g/g24/rountree/local/src/power
+nodes=4 ntasks=64
++ export BMARK_STRING=sphot.64
++ BMARK_STRING=sphot.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_15_35_32_661232413
++ mkdir 2012_04_14_15_35_32_661232413
++ cd 2012_04_14_15_35_32_661232413
++ env
++ hostname
++ echo 2012_04_14_15_35_32_661232413
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_14_15_35_32_661232413
+2012_04_14_15_35_32_661232413
++ cp ../../input.dat ./input.dat
++ srun --nodes=4 --ntasks=64 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: rzmerl23: task 0: Exited with exit code 2
+srun: First task exited 30s ago
+srun: tasks 1-63: running
+srun: task 0: exited abnormally
+srun: Terminating job step 5934.1
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+Resetting now...

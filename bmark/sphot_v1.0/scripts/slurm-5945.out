@@ -1,0 +1,24 @@
+/g/g24/rountree/local/src/power
+nodes=4 ntasks=64
++ export BMARK_STRING=sphot.64
++ BMARK_STRING=sphot.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_36_06_396927392
++ mkdir 2012_04_14_17_36_06_396927392
++ cd 2012_04_14_17_36_06_396927392
++ env
++ hostname
++ echo 2012_04_14_17_36_06_396927392
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_14_17_36_06_396927392
+2012_04_14_17_36_06_396927392
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=4 --ntasks=64 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+Resetting now...

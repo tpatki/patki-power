@@ -1,0 +1,23 @@
+nodes=4 ntasks=64
++ export BMARK_STRING=sphot.64
++ BMARK_STRING=sphot.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_14_17_30_26_429284989
++ mkdir 2012_04_14_17_30_26_429284989
++ cd 2012_04_14_17_30_26_429284989
++ env
++ hostname
++ echo 2012_04_14_17_30_26_429284989
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_14_17_30_26_429284989
+2012_04_14_17_30_26_429284989
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=4 --ntasks=64 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+srun: error: Only allocated 1 nodes asked for 4

@@ -42,11 +42,11 @@
  Class           =                        D
  Size            =            408x 408x 408
  Iterations      =                      250
- Time in seconds =                   511.11
+ Time in seconds =                   511.29
  Total processes =                       64
  Compiled procs  =                       64
- Mop/s total     =                114135.54
- Mop/s/process   =                  1783.37
+ Mop/s total     =                114095.75
+ Mop/s/process   =                  1782.75
  Operation type  =           floating point
  Verification    =               SUCCESSFUL
  Version         =                      3.3
