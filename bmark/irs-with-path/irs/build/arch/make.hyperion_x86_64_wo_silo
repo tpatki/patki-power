@@ -33,8 +33,8 @@ OPENMP_LIBPATH  =
 OPENMP_INCPATH  =
 
 
-OTHER_LIBS 	=
-OTHER_LIBPATH 	=
+OTHER_LIBS 	= -lrapl
+OTHER_LIBPATH 	= -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr/lib -L$(HOME)/local/src/power/rapl/libmsr/lib
 OTHER_INCPATH 	= 
 
 DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux 
