@@ -11,7 +11,7 @@ echo $POWER_DIR
 
 export BMARK_STRING=irs.64
 
-cd ${POWER_DIR}/bmark/NAS/EP/scripts
+cd ${POWER_DIR}/bmark/irs-with-path/irs/patki/scripts
 sh irs-rapl-4-node.sh
 cd ${POWER_DIR}/dummy-tmp
 
