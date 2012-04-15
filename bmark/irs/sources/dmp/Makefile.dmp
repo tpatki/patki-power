@@ -72,7 +72,7 @@ $(B)(Restart.o):Restart.c
 ../../includes/irsdmp.hh:../../includes/irsdmp.h
 	cp ../../includes/irsdmp.h ../../includes/irsdmp.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsdmp.hh
-	irs_hhinit ../../includes/irsdmp.hh
+	../../../scripts/irs_hhinit ../../includes/irsdmp.hh
 
 $(B)(conddmp.o):../../includes/irsdmp.hh
 
@@ -643,5 +643,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.dmp Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

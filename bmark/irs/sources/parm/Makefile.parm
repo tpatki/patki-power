@@ -84,7 +84,7 @@ $(B)(memclr.o):memclr.c
 ../../includes/BiQuadradic.hh:../../includes/BiQuadradic.h
 	cp ../../includes/BiQuadradic.h ../../includes/BiQuadradic.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/BiQuadradic.hh
-	irs_hhinit ../../includes/BiQuadradic.hh
+	../../../scripts/irs_hhinit ../../includes/BiQuadradic.hh
 
 $(B)(memexp.o):../../includes/BiQuadradic.hh
 
@@ -106,28 +106,28 @@ $(B)(parm.o):parm.c
 ../../includes/irs.hh:../../includes/irs.h
 	cp ../../includes/irs.h ../../includes/irs.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irs.hh
-	irs_hhinit ../../includes/irs.hh
+	../../../scripts/irs_hhinit ../../includes/irs.hh
 
 $(B)(parminit.o):../../includes/irs.hh
 
 ../../includes/irslag.hh:../../includes/irslag.h
 	cp ../../includes/irslag.h ../../includes/irslag.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irslag.hh
-	irs_hhinit ../../includes/irslag.hh
+	../../../scripts/irs_hhinit ../../includes/irslag.hh
 
 $(B)(parminit.o):../../includes/irslag.hh
 
 ../../includes/irsparm.hh:../../includes/irsparm.h
 	cp ../../includes/irsparm.h ../../includes/irsparm.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsparm.hh
-	irs_hhinit ../../includes/irsparm.hh
+	../../../scripts/irs_hhinit ../../includes/irsparm.hh
 
 $(B)(parminit.o):../../includes/irsparm.hh
 
 ../../includes/TimeStepControl.hh:../../includes/TimeStepControl.h
 	cp ../../includes/TimeStepControl.h ../../includes/TimeStepControl.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/TimeStepControl.hh
-	irs_hhinit ../../includes/TimeStepControl.hh
+	../../../scripts/irs_hhinit ../../includes/TimeStepControl.hh
 
 $(B)(parminit.o):../../includes/TimeStepControl.hh
 
@@ -402,5 +402,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.parm Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

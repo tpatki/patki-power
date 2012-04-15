@@ -256,5 +256,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.src Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

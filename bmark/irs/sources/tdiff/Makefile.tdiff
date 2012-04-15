@@ -90,7 +90,7 @@ $(B)(ConductionCoef.o):ConductionCoef.c
 ../../includes/DiffusionData.hh:../../includes/DiffusionData.h
 	cp ../../includes/DiffusionData.h ../../includes/DiffusionData.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/DiffusionData.hh
-	irs_hhinit ../../includes/DiffusionData.hh
+	../../../scripts/irs_hhinit ../../includes/DiffusionData.hh
 
 $(B)(DiffCoef.o):../../includes/DiffusionData.hh
 
@@ -167,7 +167,7 @@ $(B)(MatterWainwright.o):MatterWainwright.c
 ../../includes/RadiationData.hh:../../includes/RadiationData.h
 	cp ../../includes/RadiationData.h ../../includes/RadiationData.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/RadiationData.hh
-	irs_hhinit ../../includes/RadiationData.hh
+	../../../scripts/irs_hhinit ../../includes/RadiationData.hh
 
 $(B)(RadiationMemory.o):../../includes/RadiationData.hh
 
@@ -1666,5 +1666,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.tdiff Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

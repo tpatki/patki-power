@@ -161,14 +161,14 @@ $(B)(decomp.o):decomp.c
 ../../includes/Bndlist.hh:../../includes/Bndlist.h
 	cp ../../includes/Bndlist.h ../../includes/Bndlist.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/Bndlist.hh
-	irs_hhinit ../../includes/Bndlist.hh
+	../../../scripts/irs_hhinit ../../includes/Bndlist.hh
 
 $(B)(facecom.o):../../includes/Bndlist.hh
 
 ../../includes/VdenData.hh:../../includes/VdenData.h
 	cp ../../includes/VdenData.h ../../includes/VdenData.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/VdenData.hh
-	irs_hhinit ../../includes/VdenData.hh
+	../../../scripts/irs_hhinit ../../includes/VdenData.hh
 
 $(B)(facecom.o):../../includes/VdenData.hh
 
@@ -185,14 +185,14 @@ $(B)(getdata.o):getdata.c
 ../../includes/irscom.hh:../../includes/irscom.h
 	cp ../../includes/irscom.h ../../includes/irscom.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irscom.hh
-	irs_hhinit ../../includes/irscom.hh
+	../../../scripts/irs_hhinit ../../includes/irscom.hh
 
 $(B)(initcom.o):../../includes/irscom.hh
 
 ../../includes/Tagorder.hh:../../includes/Tagorder.h
 	cp ../../includes/Tagorder.h ../../includes/Tagorder.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/Tagorder.hh
-	irs_hhinit ../../includes/Tagorder.hh
+	../../../scripts/irs_hhinit ../../includes/Tagorder.hh
 
 $(B)(initcom.o):../../includes/Tagorder.hh
 
@@ -971,5 +971,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.com Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

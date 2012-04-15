@@ -83,7 +83,7 @@ $(B)(curbop.o):curbop.c
 ../../includes/irscur.hh:../../includes/irscur.h
 	cp ../../includes/irscur.h ../../includes/irscur.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irscur.hh
-	irs_hhinit ../../includes/irscur.hh
+	../../../scripts/irs_hhinit ../../includes/irscur.hh
 
 $(B)(curgetxy.o):../../includes/irscur.hh
 
@@ -788,5 +788,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.cur Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

@@ -75,7 +75,7 @@ $(B)(fprint.o):fprint.c
 ../../includes/irssys.hh:../../includes/irssys.h
 	cp ../../includes/irssys.h ../../includes/irssys.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irssys.hh
-	irs_hhinit ../../includes/irssys.hh
+	../../../scripts/irs_hhinit ../../includes/irssys.hh
 
 $(B)(getcpu.o):../../includes/irssys.hh
 
@@ -424,5 +424,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.sys Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

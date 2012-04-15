@@ -70,7 +70,7 @@ libobjects:$(B)(AEStackElm.o) $(B)(AttrArray.o) $(B)(Boundary.o)                
 ../../includes/AEStackElm.hh:../../includes/AEStackElm.h
 	cp ../../includes/AEStackElm.h ../../includes/AEStackElm.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/AEStackElm.hh
-	irs_hhinit ../../includes/AEStackElm.hh
+	../../../scripts/irs_hhinit ../../includes/AEStackElm.hh
 
 $(B)(AEStackElm.o):../../includes/AEStackElm.hh
 
@@ -127,7 +127,7 @@ $(B)(GlobalArrays.o):GlobalArrays.c
 ../../includes/NodeList.hh:../../includes/NodeList.h
 	cp ../../includes/NodeList.h ../../includes/NodeList.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/NodeList.hh
-	irs_hhinit ../../includes/NodeList.hh
+	../../../scripts/irs_hhinit ../../includes/NodeList.hh
 
 $(B)(NodeList.o):../../includes/NodeList.hh
 
@@ -164,7 +164,7 @@ $(B)(RGST_Object.o):RGST_Object.c
 ../../includes/Region.hh:../../includes/Region.h
 	cp ../../includes/Region.h ../../includes/Region.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/Region.hh
-	irs_hhinit ../../includes/Region.hh
+	../../../scripts/irs_hhinit ../../includes/Region.hh
 
 $(B)(Region.o):../../includes/Region.hh
 
@@ -176,7 +176,7 @@ $(B)(Region.o):Region.c
 ../../includes/Source.hh:../../includes/Source.h
 	cp ../../includes/Source.h ../../includes/Source.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/Source.hh
-	irs_hhinit ../../includes/Source.hh
+	../../../scripts/irs_hhinit ../../includes/Source.hh
 
 $(B)(Source.o):../../includes/Source.hh
 
@@ -858,5 +858,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.objects Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

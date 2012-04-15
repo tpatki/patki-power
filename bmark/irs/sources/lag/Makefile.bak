@@ -120,7 +120,7 @@ $(B)(updateblk.o):updateblk.c
 ../../includes/irslag.hh:../../includes/irslag.h
 	cp ../../includes/irslag.h ../../includes/irslag.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irslag.hh
-	irs_hhinit ../../includes/irslag.hh
+	../../../scripts/irs_hhinit ../../includes/irslag.hh
 
 $(B)(xirs.o):../../includes/irslag.hh
 
@@ -410,5 +410,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.lag Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

@@ -103,7 +103,7 @@ $(B)(printcyclefreqs.o):printcyclefreqs.c
 ../../includes/BlockMapping.hh:../../includes/BlockMapping.h
 	cp ../../includes/BlockMapping.h ../../includes/BlockMapping.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/BlockMapping.hh
-	irs_hhinit ../../includes/BlockMapping.hh
+	../../../scripts/irs_hhinit ../../includes/BlockMapping.hh
 
 $(B)(printmapping.o):../../includes/BlockMapping.hh
 
@@ -632,5 +632,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.edits Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

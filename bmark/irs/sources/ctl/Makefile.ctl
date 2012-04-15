@@ -159,21 +159,21 @@ $(B)(expressions.o):expressions.c
 ../../includes/CycleMesg.hh:../../includes/CycleMesg.h
 	cp ../../includes/CycleMesg.h ../../includes/CycleMesg.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/CycleMesg.hh
-	irs_hhinit ../../includes/CycleMesg.hh
+	../../../scripts/irs_hhinit ../../includes/CycleMesg.hh
 
 $(B)(fqcyc.o):../../includes/CycleMesg.hh
 
 ../../includes/FreqMesg.hh:../../includes/FreqMesg.h
 	cp ../../includes/FreqMesg.h ../../includes/FreqMesg.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/FreqMesg.hh
-	irs_hhinit ../../includes/FreqMesg.hh
+	../../../scripts/irs_hhinit ../../includes/FreqMesg.hh
 
 $(B)(fqcyc.o):../../includes/FreqMesg.hh
 
 ../../includes/TimePlot.hh:../../includes/TimePlot.h
 	cp ../../includes/TimePlot.h ../../includes/TimePlot.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/TimePlot.hh
-	irs_hhinit ../../includes/TimePlot.hh
+	../../../scripts/irs_hhinit ../../includes/TimePlot.hh
 
 $(B)(fqcyc.o):../../includes/TimePlot.hh
 
@@ -240,7 +240,7 @@ $(B)(getsym.o):getsym.c
 ../../includes/VersionData.hh:../../includes/VersionData.h
 	cp ../../includes/VersionData.h ../../includes/VersionData.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/VersionData.hh
-	irs_hhinit ../../includes/VersionData.hh
+	../../../scripts/irs_hhinit ../../includes/VersionData.hh
 
 $(B)(getversion.o):../../includes/VersionData.hh
 
@@ -297,14 +297,14 @@ $(B)(lnadv.o):lnadv.c
 ../../includes/irsctl.hh:../../includes/irsctl.h
 	cp ../../includes/irsctl.h ../../includes/irsctl.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsctl.hh
-	irs_hhinit ../../includes/irsctl.hh
+	../../../scripts/irs_hhinit ../../includes/irsctl.hh
 
 $(B)(main.o):../../includes/irsctl.hh
 
 ../../includes/Gparm.hh:../../includes/Gparm.h
 	cp ../../includes/Gparm.h ../../includes/Gparm.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/Gparm.hh
-	irs_hhinit ../../includes/Gparm.hh
+	../../../scripts/irs_hhinit ../../includes/Gparm.hh
 
 $(B)(main.o):../../includes/Gparm.hh
 
@@ -1608,5 +1608,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.ctl Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

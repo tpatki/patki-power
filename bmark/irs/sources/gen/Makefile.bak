@@ -96,7 +96,7 @@ $(B)(fillvar.o):fillvar.c
 ../../includes/irsgen.hh:../../includes/irsgen.h
 	cp ../../includes/irsgen.h ../../includes/irsgen.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsgen.hh
-	irs_hhinit ../../includes/irsgen.hh
+	../../../scripts/irs_hhinit ../../includes/irsgen.hh
 
 $(B)(gen.o):../../includes/irsgen.hh
 
@@ -1019,5 +1019,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.gen Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

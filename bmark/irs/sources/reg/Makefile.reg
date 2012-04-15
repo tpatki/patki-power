@@ -109,7 +109,7 @@ $(B)(regndx.o):regndx.c
 ../../includes/irsreg.hh:../../includes/irsreg.h
 	cp ../../includes/irsreg.h ../../includes/irsreg.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsreg.hh
-	irs_hhinit ../../includes/irsreg.hh
+	../../../scripts/irs_hhinit ../../includes/irsreg.hh
 
 $(B)(species.o):../../includes/irsreg.hh
 
@@ -340,5 +340,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.reg Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

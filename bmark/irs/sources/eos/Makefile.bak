@@ -100,7 +100,7 @@ $(B)(getematnomix.o):getematnomix.c
 ../../includes/irseos.hh:../../includes/irseos.h
 	cp ../../includes/irseos.h ../../includes/irseos.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irseos.hh
-	irs_hhinit ../../includes/irseos.hh
+	../../../scripts/irs_hhinit ../../includes/irseos.hh
 
 $(B)(geteos.o):../../includes/irseos.hh
 
@@ -384,5 +384,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.eos Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

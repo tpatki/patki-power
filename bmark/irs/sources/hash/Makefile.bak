@@ -75,7 +75,7 @@ $(B)(get_num_elms_in_hashtable.o):get_num_elms_in_hashtable.c
 ../../includes/Hash.hh:../../includes/Hash.h
 	cp ../../includes/Hash.h ../../includes/Hash.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/Hash.hh
-	irs_hhinit ../../includes/Hash.hh
+	../../../scripts/irs_hhinit ../../includes/Hash.hh
 
 $(B)(hash_add.o):../../includes/Hash.hh
 
@@ -624,5 +624,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.hash Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

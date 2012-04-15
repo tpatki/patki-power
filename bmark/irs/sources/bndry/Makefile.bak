@@ -68,7 +68,7 @@ libbndry:$(B)(bcin.o) $(B)(bcin0.o) $(B)(bcnorm.o) $(B)(bndcopy.o) $(B)(bndin.o)
 ../../includes/irsbndry.hh:../../includes/irsbndry.h
 	cp ../../includes/irsbndry.h ../../includes/irsbndry.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsbndry.hh
-	irs_hhinit ../../includes/irsbndry.hh
+	../../../scripts/irs_hhinit ../../includes/irsbndry.hh
 
 $(B)(bcin.o):../../includes/irsbndry.hh
 
@@ -729,5 +729,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.bndry Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 

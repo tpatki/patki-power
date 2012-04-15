@@ -64,7 +64,7 @@ libgenrd:$(B)(deck.o) $(B)(docmd.o) $(B)(endchk.o) $(B)(help.o) $(B)(inst_c.o)  
 ../../includes/irsgenrd.hh:../../includes/irsgenrd.h
 	cp ../../includes/irsgenrd.h ../../includes/irsgenrd.hh
 	perl -p -i -e 's/extern\s+//g' ../../includes/irsgenrd.hh
-	irs_hhinit ../../includes/irsgenrd.hh
+	../../../scripts/irs_hhinit ../../includes/irsgenrd.hh
 
 $(B)(deck.o):../../includes/irsgenrd.hh
 
@@ -357,5 +357,5 @@ DEP_SRCS = \
 depend:
 	@cp -f Makefile.genrd Makefile
 	makedepend -- $(DEPFLAGS) -- $(DEP_SRCS)
-	irs_fixdepend Makefile
+	../../../scripts/irs_fixdepend Makefile
 
