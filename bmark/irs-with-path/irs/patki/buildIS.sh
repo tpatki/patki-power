@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#export IRS_DIR=/home/tpatki/tapasya/test-p/patki-power/bmark/irs
-export IRS_DIR=$HOME/local/src/power/bmark/irs
-
+#export IRS_DIR=/home/tpatki/tapasya/test-p/patki-power/bmark/irs-with-path
 
 #Remove the local version if it exists
 

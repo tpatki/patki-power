@@ -1,4 +1,5 @@
 #!/bin/bash
 
+export IRS_DIR=$HOME/local/src/power/bmark/irs-with-path/irs
 export PATH=$IRS_DIR/scripts:$PATH
 
