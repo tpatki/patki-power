@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PATH=$IRS_DIR/scripts:$PATH
+

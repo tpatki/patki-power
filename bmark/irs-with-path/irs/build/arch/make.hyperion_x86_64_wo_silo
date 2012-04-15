@@ -1,0 +1,60 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION threaded compile on LC hyperion_x86_64_ib_threads WITHOUT SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= make -j 4
+
+CC              = mpicc
+LINK            = mpicc
+
+BASE_LIBPATH    = -L../libs -L/usr/lib -L/usr/lib64
+
+BASE_INCPATH    = -I../.. -I../../includes -I/usr/local/include \
+                -I/usr/local/apps/include 
+
+BASE_LIBS       = -lpthread -libverbs -lm
+
+
+CC_FLAGS_OPT    = -c -g -O2 -fopenmp
+CC_FLAGS_DEB    = -c -g -O2 -fopenmp
+
+LINK_FLAGS_OPT	= -g -O2 -fopenmp
+LINK_FLAGS_DEB	= -g -O2 -fopenmp
+
+MPI_DEFINE      = -DCOMMPI
+MPI_LIBS        =
+MPI_LIBPATH     =
+MPI_INCPATH     =
+
+OPENMP_DEFINE   = -DOPENMP -DOMP2COMPILER
+OPENMP_LIBS     = 
+OPENMP_LIBPATH  =
+OPENMP_INCPATH  =
+
+
+OTHER_LIBS 	=
+OTHER_LIBPATH 	=
+OTHER_INCPATH 	= 
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux 
+
+IRS_LIBS 	=       $(MPI_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH 	= 	$(BASE_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) $(MPI_DEFINE) $(OPENMP_DEFINE)
+
+
+ARCHIVE		= ar rc
+ARCHIVE_X	= ar x
+

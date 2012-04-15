@@ -1,0 +1,1 @@
+/home/tpatki/tapasya/test-p/patki-power/bmark/irs/sources/rgst/rgst_print_1_ptr_array.c

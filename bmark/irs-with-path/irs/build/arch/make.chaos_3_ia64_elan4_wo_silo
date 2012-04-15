@@ -1,0 +1,54 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION standard compile on LC chaos_3_ia64_elan4 system WITHOUT SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= make -j 4
+
+BASE_LIBPATH    = -L../libs -L/usr/lib \
+                -L/usr/local/intel/compiler91/lib
+
+BASE_INCPATH    = -I../.. -I../../includes -I/usr/local/include \
+                -I/usr/local/apps/include \
+
+BASE_LIBS       = 
+
+MPI_DEFINE      = -DCOMMPI
+MPI_LIBS        = -lmpi -lelan -lelan3 -lrmscall
+MPI_LIBPATH     = -L/usr/lib/mpi/lib
+MPI_INCPATH     = -I/usr/lib/mpi/include
+
+OTHER_LIBS 	=
+OTHER_LIBPATH 	=
+OTHER_INCPATH 	= 
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux
+
+IRS_LIBS 	= 	$(MPI_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH 	= 	$(BASE_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) $(MPI_DEFINE)
+
+
+CC		= /usr/local/intel/compiler91/bin/icc
+LINK		= /usr/local/intel/compiler91/bin/icc
+
+CC_FLAGS_OPT    = -c -g -O2 -Zp16
+CC_FLAGS_DEB    = -c -g -O2 -Zp16
+
+LINK_FLAGS_OPT	= -g
+LINK_FLAGS_DEB	= -g
+
+ARCHIVE		= ar rc
+ARCHIVE_X	= ar x
+

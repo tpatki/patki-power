@@ -1,0 +1,110 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION Threaded compile on LC aix_5_64_fed system WITHOUT SILO
+#-----------------------------------------------------------------------
+
+#-----------------------------------------------------------------------
+# Compiler and link flags
+#-----------------------------------------------------------------------
+GMAKE		= /usr/local/gnu/bin/make -j 2
+
+CC              = newmpcc -c -g -q64 -O3 -qstrict \
+                        -qcache=auto -qarch=auto -qtune=auto \
+                        -qsmp=omp -qreport -qthreaded \
+                        -qalias=ansi -qunroll
+
+LINK            = newmpcc    -g -q64 -O3 -qstrict -qcache=auto \
+                        -qcache=auto -qarch=auto -qtune=auto \
+                        -qsmp=omp -qreport -qthreaded \
+                        -qalias=ansi -qunroll  -bloadmap:../build/build_load_map -m
+
+CC_FLAGS_OPT	= -c -g -O3 -q64 -qstrict -qalias=ansi -qunroll \
+			-qlanglvl=ansi -qmaxmem=32768 
+
+CC_FLAGS_DEB	= -c -g -q64 -qlanglvl=ansi -qmaxmem=32768 -qsrcmsg \
+			-qdbxextra \
+			-qflttrap=overflow:underflow:zerodivide:invalid
+
+LINK_FLAGS_OPT	= -q64 -blpdata 
+LINK_FLAGS_DEB	= -q64 -blpdata 
+
+ARCHIVE		= ar -X 64 -r -v
+ARCHIVE_X	= ar -X 64 x
+
+OPENMP_DEFINE   = -DOPENMP -DOMP2COMPILER
+OPENMP_LIBS     =
+OPENMP_LIBPATH  =
+OPENMP_INCPATH  =
+
+#-----------------------------------------------------------------------
+# Library and include paths
+#-----------------------------------------------------------------------
+
+BASE_LIBPATH	= -L../libs
+BASE_INCPATH	= -I../.. -I../../includes -I/usr/local/include -I/usr/include
+BASE_LIBS	= -lm -lptools_ptr
+
+
+#-----------------------------------------------------------------------
+# MPI Library:  If you do not wish to compile with MPI
+#               comment out all the following MPI_ assignments
+#-----------------------------------------------------------------------
+MPI_DEFINE	= -DCOMMPI
+MPI_LIBS	=
+MPI_LIBPATH	=
+MPI_INCPATH	=
+
+#-----------------------------------------------------------------------
+# TERRY AIX TRACE STUFF
+#-----------------------------------------------------------------------
+#OTHER_DEFINE	= -DTERRY_TRACE
+#OTHER_LIBS	= -lrts
+#OTHER_LIBPATH	=
+#OTHER_INCPATH	=
+
+#-----------------------------------------------------------------------
+# HPMCOUNT STUFF
+#-----------------------------------------------------------------------
+#OTHER_DEFINE	= -DHPMCOUNTERS
+#OTHER_LIBS	= -lhpm -lpmapi
+#OTHER_LIBPATH	= -L/usr/local/tools/HPM/HPM_DEFAULT/lib
+#OTHER_INCPATH	= -I/usr/local/tools/HPM/HPM_DEFAULT/include
+
+#-----------------------------------------------------------------------
+# HPMCOUNT STUFF & TERRY AIX TRACE STUFF
+#-----------------------------------------------------------------------
+#OTHER_DEFINE	= -DHPMCOUNTERS -DTERRY_TRACE
+#OTHER_LIBS	= -lhpm -lpmapi -lrts
+#OTHER_LIBPATH	= -L/usr/local/tools/HPM/HPM_DEFAULT/lib
+#OTHER_INCPATH	= -I/usr/local/tools/HPM/HPM_DEFAULT/include
+
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Daix
+
+IRS_LIBS	=	$(SILO_LIBS) \
+			$(READLINE_LIBS) \
+			$(MPI_LIBS) \
+			$(OPENMP_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH	=	$(BASE_INCPATH) \
+			$(SILO_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(READLINE_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH	=	$(BASE_LIBPATH) \
+			$(SILO_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(OPENMP_LIBPATH) \
+			$(READLINE_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) \
+			$(MPI_DEFINE) $(SILO_DEFINE) \
+			$(OPENMP_DEFINE) \
+			$(READLINE_DEFINE) \
+			$(OTHER_DEFINE) 
+

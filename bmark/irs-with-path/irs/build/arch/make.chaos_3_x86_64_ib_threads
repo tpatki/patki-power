@@ -1,0 +1,72 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION threaded compile on LC chaos_3_x86_64_ib machines WITH SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= make -j 4
+
+
+CC              = /usr/local/intel/compiler91_64/bin/icc
+LINK            = /usr/local/intel/compiler91_64/bin/icc
+
+BASE_LIBPATH    = -L../libs -L/usr/lib \
+                -L/usr/local/intel/compiler91_64/lib -L/usr/lib -L/usr/lib64
+
+BASE_INCPATH    = -I../.. -I../../includes -I/usr/local/include \
+                -I/usr/local/apps/include \
+
+BASE_LIBS       = -lpthread -libverbs
+
+CC_FLAGS_OPT    = -c -g -O2 -openmp -openmp_report2
+CC_FLAGS_DEB    = -c -g -O2 -openmp -openmp_report2
+
+LINK_FLAGS_OPT	= -g -O2 -openmp -openmp_report2
+LINK_FLAGS_DEB	= -g -O2 -openmp -openmp_report2
+
+SILO_DEFINE     = -DSILO
+SILO_VERSION    = 4.5.1
+SILO_LIBS 	= -lsilo
+SILO_LIBPATH 	= -L/usr/gapps/silo/$(SILO_VERSION)/$(SYS_TYPE)/lib
+SILO_INCPATH 	= -I/usr/gapps/silo/$(SILO_VERSION)/$(SYS_TYPE)/include
+
+MPI_DEFINE      = -DCOMMPI
+MPI_LIBS        = -lmpich
+MPI_LIBPATH     = -L/usr/stlocal/tools/mpi/mvapich-0.9.9_osu/usr/lib/mpi/icc/mvapich-gen2/lib
+MPI_INCPATH     = -I/usr/stlocal/tools/mpi/mvapich-0.9.9_osu/usr/lib/mpi/icc/mvapich-gen2/include
+
+OPENMP_DEFINE   = -DOPENMP -DOMP2COMPILER
+OPENMP_LIBS     = 
+OPENMP_LIBPATH  =
+OPENMP_INCPATH  =
+
+
+OTHER_LIBS 	=
+OTHER_LIBPATH 	=
+OTHER_INCPATH 	= 
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux
+
+IRS_LIBS 	= 	$(SILO_LIBS) \
+			$(MPI_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH 	= 	$(BASE_INCPATH) \
+			$(SILO_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
+			$(SILO_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) $(MPI_DEFINE) $(SILO_DEFINE)  $(OPENMP_DEFINE)
+
+
+
+
+ARCHIVE		= ar rc
+ARCHIVE_X	= ar x
+

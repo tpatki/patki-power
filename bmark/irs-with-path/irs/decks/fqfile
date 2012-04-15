@@ -1,0 +1,29 @@
+$
+      def fom_num {NCPUS * 1.0e6}$
+      def fom {fom_num/benchmark}$
+      echo " "$
+      echo " "$
+$
+$
+$
+      echo "BENCHMARK microseconds per zone-iteration = ",eval{benchmark}$
+      echo "BENCHMARK FOM = ",eval{fom}$
+$
+$
+$
+$
+$
+$
+      if {rdifit < rdifitx} $
+        echo "BENCHMARK CORRECTNESS : PASSED"$
+      endif$
+$
+      if {rdifit >= rdifitx} $
+        echo "BENCHMARK CORRECTNESS : FAILED"$
+      endif$
+$
+      echo ""$
+$
+$
+$
+   endmsg$
