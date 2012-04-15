@@ -1,0 +1,880 @@
+
+
+Makefile for chaos_3_x86_64_wo_silo complete.
+
+
+Enter 'make depend' now 
+
+Then enter 'make' or 'make debug'
+
+DEPFLAGS="-DUNIX -DFUNCTION_TIMERS -Dlinux -DCOMMPI -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include    "; \
+	export DEPFLAGS; \
+	make depend2
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
+cd ../sources/blk; 		make -f Makefile.blk 		depend > depend.log 2>&1
+cd ../sources/bndry; 		make -f Makefile.bndry 		depend > depend.log 2>&1
+cd ../sources/com; 		make -f Makefile.com 		depend > depend.log 2>&1
+cd ../sources/ctl; 		make -f Makefile.ctl 		depend > depend.log 2>&1
+cd ../sources/cur; 		make -f Makefile.cur 		depend > depend.log 2>&1
+cd ../sources/dmp; 		make -f Makefile.dmp 		depend > depend.log 2>&1
+cd ../sources/edits; 		make -f Makefile.edits 		depend > depend.log 2>&1
+cd ../sources/eos; 		make -f Makefile.eos 		depend > depend.log 2>&1
+cd ../sources/gen; 		make -f Makefile.gen 		depend > depend.log 2>&1
+cd ../sources/genrd; 		make -f Makefile.genrd 		depend > depend.log 2>&1
+cd ../sources/hash; 		make -f Makefile.hash 		depend > depend.log 2>&1
+cd ../sources/lag; 		make -f Makefile.lag 		depend > depend.log 2>&1
+cd ../sources/objects; 		make -f Makefile.objects 	depend > depend.log 2>&1
+cd ../sources/parm; 		make -f Makefile.parm 		depend > depend.log 2>&1
+cd ../sources/reg; 		make -f Makefile.reg 		depend > depend.log 2>&1
+cd ../sources/rgst; 		make -f Makefile.rgst 		depend > depend.log 2>&1
+cd ../sources/src; 		make -f Makefile.src 		depend > depend.log 2>&1
+cd ../sources/sys; 		make -f Makefile.sys 		depend > depend.log 2>&1
+cd ../sources/tdiff; 		make -f Makefile.tdiff 		depend > depend.log 2>&1
+cd ../sources/timers; 		make -f Makefile.timers 	depend > depend.log 2>&1
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
+irs_target="Optimized"; \
+	irs_fcompile="f77 ";  \
+	irs_cc="/usr/local/bin/mpiicc -c -g -O2  -DUNIX -DFUNCTION_TIMERS -Dlinux -DCOMMPI -I../.. -I../../includes -I/usr/local/include -I/usr/local/apps/include    "; \
+	irs_ar="ar rc"; \
+	irs_arx="ar x"; \
+	LIB_DIR="../lib_opt" ; \
+	CODE_DIR="../codes_opt" ; \
+	RGSTLIB="../lib_opt/libctl.a"; \
+	irs_link="/usr/local/bin/mpiicc -static -g ";\
+	irs_libs="-lctl -lblk -lbndry -llag -lcom -lcur -ldmp -ledits -leos -lgen -lgenrd -lhash -lparm -lreg -lrgst -lsrc -lsys -ltdiff -ltimers -llag -lgen -leos -lbndry -lblk -lparm -lreg -lparm -lctl -lcom -lcur -ldmp -lsys -lreg -lbndry -lparm -lsrc -lblk -lparm -ltdiff -llag -lobjects -ldmp -lgenrd -ledits -lrgst -ledits -lhash -ltimers -lcom -lctl    "; \
+	export irs_target irs_fcompile irs_cc irs_ar irs_link irs_libs\
+		irs_arx LIB_DIR CODE_DIR RGSTLIB; \
+        make build
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
+if [ ! -e ../lib_opt ]; then  mkdir ../lib_opt; fi
+if [ ! -e ../codes_opt ]; then  mkdir ../codes_opt; fi
+if [ ! -e ../debug ]; then  mkdir ../debug; fi
+cd ../includes; make -f ../build/Makefile ../lib_opt/libctl.a;
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/includes'
+cat [A-Z]*.h pint.h > temp.h
+irs_hrcreate temp.h
+irs_hrcreate checking files
+	temp.h -- found RGST_START statements in EXPANDED .h file
+irs_hrparse temp.hr
+	irs_hrparse processing file 'temp.hr'
+cp rgst_types.c  ../debug
+$irs_cc -I../ rgst_types.c
+$irs_ar ../lib_opt/libctl.a rgst_types.o
+rm temp.hr
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/includes'
+cd ../includes; make -f ../build/Makefile irs_version;
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/includes'
+irs_version Optimized 
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/includes'
+make sources; 
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
+cd ../sources/blk;     	   make -j 4 -f Makefile libblk ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/blk'
+$irs_cc Blocks.c
+$irs_cc blkdiv.c
+$irs_cc blkdivin.c
+$irs_cc blkgen.c
+$irs_cc blockin0.c
+$irs_cc domain.c
+$irs_cc domaincopy.c
+$irs_cc extents.c
+$irs_cc initblk.c
+$irs_cc reblkdiv.c
+ar rc ar ../../lib_opt/libblk.a Blocks.o blkdiv.o blkdivin.o blkgen.o blockin0.o domain.o domaincopy.o extents.o initblk.o reblkdiv.o
+blk library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/blk'
+cd ../sources/bndry;   	   make -j 4 -f Makefile libbndry ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/bndry'
+cp ../../includes/irsbndry.h ../../includes/irsbndry.hh
+$irs_cc bcin0.c
+$irs_cc bcnorm.c
+$irs_cc bndcopy.c
+perl -p -i -e 's/extern\s+//g' ../../includes/irsbndry.hh
+irs_hhinit ../../includes/irsbndry.hh
+$irs_cc bndin.c
+$irs_cc bndrydev.c
+$irs_cc bndryinit.c
+$irs_cc bndzonelist.c
+$irs_cc genradreflst.c
+$irs_cc genreflst.c
+$irs_cc getbcname.c
+$irs_cc initbc.c
+$irs_cc irefzq.c
+$irs_cc orient.c
+$irs_cc refadv2d.c
+$irs_cc refadv3d.c
+$irs_cc refnd2d.c
+$irs_cc refnd3d.c
+$irs_cc refnd3ds.c
+$irs_cc refradnq.c
+$irs_cc refzq.c
+$irs_cc setbndry.c
+$irs_cc setcrnlst.c
+$irs_cc setphony.c
+$irs_cc setphony2.c
+$irs_cc sewbndry.c
+$irs_cc vsamein0.c
+$irs_cc vsameorg.c
+$irs_cc bcin.c
+ar rc ar ../../lib_opt/libbndry.a bcin.o bcin0.o bcnorm.o bndcopy.o bndin.o bndrydev.o bndryinit.o bndzonelist.o genradreflst.o genreflst.o getbcname.o initbc.o irefzq.o orient.o refadv2d.o refadv3d.o refnd2d.o refnd3d.o refnd3ds.o refradnq.o refzq.o setbndry.o setcrnlst.o setphony.o setphony2.o sewbndry.o vsamein0.o vsameorg.o
+bndry library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/bndry'
+cd ../sources/com;         make -j 4 -f Makefile libcom ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/com'
+$irs_cc ComNodalZonal.c
+$irs_cc acumnm.c
+$irs_cc calculate_mappings.c
+$irs_cc checkpara.c
+$irs_cc combarrier.c
+$irs_cc combcast.c
+$irs_cc combuf.c
+$irs_cc comcleanup.c
+$irs_cc comgather.c
+$irs_cc comlen.c
+$irs_cc comlock.c
+$irs_cc commpigather.c
+$irs_cc commpigatherv.c
+$irs_cc comreduce.c
+$irs_cc comsummary.c
+$irs_cc comunlock.c
+$irs_cc comverify.c
+$irs_cc decomp.c
+cp ../../includes/Bndlist.h ../../includes/Bndlist.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/Bndlist.hh
+irs_hhinit ../../includes/Bndlist.hh
+cp ../../includes/VdenData.h ../../includes/VdenData.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/VdenData.hh
+irs_hhinit ../../includes/VdenData.hh
+$irs_cc getdata.c
+cp ../../includes/irscom.h ../../includes/irscom.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irscom.hh
+irs_hhinit ../../includes/irscom.hh
+cp ../../includes/Tagorder.h ../../includes/Tagorder.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/Tagorder.hh
+irs_hhinit ../../includes/Tagorder.hh
+$irs_cc matcom.c
+$irs_cc putdata.c
+$irs_cc qbnd.c
+$irs_cc radcom.c
+$irs_cc rbndcom.c
+$irs_cc setgmap.c
+$irs_cc setstdout.c
+$irs_cc setumap.c
+$irs_cc setvsamegrp.c
+$irs_cc setvsameorder.c
+$irs_cc speccom.c
+$irs_cc swapcoords.c
+$irs_cc varcom.c
+$irs_cc vsamecom.c
+$irs_cc facecom.c
+$irs_cc initcom.c
+ar rc ar ../../lib_opt/libcom.a ComNodalZonal.o acumnm.o calculate_mappings.o checkpara.o combarrier.o combcast.o combuf.o comcleanup.o comgather.o comlen.o comlock.o commpigather.o commpigatherv.o comreduce.o comsummary.o comunlock.o comverify.o decomp.o facecom.o getdata.o initcom.o matcom.o putdata.o qbnd.o radcom.o rbndcom.o setgmap.o setstdout.o setumap.o setvsamegrp.o setvsameorder.o speccom.o swapcoords.o varcom.o vsamecom.o
+com library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/com'
+cd ../sources/ctl;         make -j 4 -f Makefile libctl ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/ctl'
+$irs_cc SystemWrapper.c
+$irs_cc conditionals.c
+$irs_cc ctlecho.c
+$irs_cc ctlerror.c
+$irs_cc ctlmsg.c
+$irs_cc ctlmsg1.c
+$irs_cc ctlnotice.c
+$irs_cc ctloutput.c
+$irs_cc ctlwarning.c
+$irs_cc delfq.c
+$irs_cc domsg.c
+$irs_cc endfile.c
+$irs_cc endout.c
+$irs_cc eval.c
+$irs_cc exit_cleanup.c
+$irs_cc expressions.c
+cp ../../includes/CycleMesg.h ../../includes/CycleMesg.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/CycleMesg.hh
+cp ../../includes/FreqMesg.h ../../includes/FreqMesg.hh
+irs_hhinit ../../includes/CycleMesg.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/FreqMesg.hh
+irs_hhinit ../../includes/FreqMesg.hh
+cp ../../includes/TimePlot.h ../../includes/TimePlot.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/TimePlot.hh
+$irs_cc geta.c
+irs_hhinit ../../includes/TimePlot.hh
+$irs_cc geta_discard.c
+$irs_cc geta_leftparen.c
+$irs_cc geta_rightparen.c
+$irs_cc getf.c
+$irs_cc getflst.c
+$irs_cc getfq.c
+$irs_cc geti.c
+$irs_cc getnxcy.c
+$irs_cc getnxtm.c
+$irs_cc getsym.c
+cp ../../includes/VersionData.h ../../includes/VersionData.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/VersionData.hh
+irs_hhinit ../../includes/VersionData.hh
+$irs_cc gpdef.c
+$irs_cc gpdef0.c
+$irs_cc ifnotin.c
+$irs_cc initget.c
+$irs_cc irspcs.c
+$irs_cc lfchk.c
+$irs_cc lineop.c
+$irs_cc lnadv.c
+cp ../../includes/irsctl.h ../../includes/irsctl.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irsctl.hh
+irs_hhinit ../../includes/irsctl.hh
+cp ../../includes/Gparm.h ../../includes/Gparm.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/Gparm.hh
+irs_hhinit ../../includes/Gparm.hh
+$irs_cc newfile.c
+lineop.c(217): warning #2218: result of call is not used
+            REALLOT(lnbuf, char, lineop_stack[lineop_stack_ptr].len+1);
+            ^
+
+$irs_cc newline.c
+$irs_cc noop.c
+$irs_cc nxtsym.c
+$irs_cc outfile.c
+$irs_cc parmsym.c
+$irs_cc peekc.c
+$irs_cc peekc2.c
+$irs_cc printdate.c
+$irs_cc printhelp.c
+$irs_cc printmap.c
+$irs_cc printmsg.c
+$irs_cc printrc.c
+$irs_cc printtc.c
+$irs_cc prirup.c
+$irs_cc pversion.c
+$irs_cc redofq.c
+$irs_cc resetio.c
+$irs_cc resetmsg.c
+$irs_cc run.c
+$irs_cc setiomrk.c
+$irs_cc setirup.c
+$irs_cc setup_attrs.c
+$irs_cc showfq.c
+$irs_cc step.c
+$irs_cc terry_trace.c
+$irs_cc unsetio.c
+$irs_cc userexitfn.c
+$irs_cc walltime.c
+$irs_cc fqcyc.c
+$irs_cc getversion.c
+$irs_cc main.c
+ar rc ar ../../lib_opt/libctl.a SystemWrapper.o conditionals.o ctlecho.o ctlerror.o ctlmsg.o ctlmsg1.o ctlnotice.o ctloutput.o ctlwarning.o delfq.o domsg.o endfile.o endout.o eval.o exit_cleanup.o expressions.o fqcyc.o geta.o geta_discard.o geta_leftparen.o geta_rightparen.o getf.o getflst.o getfq.o geti.o getnxcy.o getnxtm.o getsym.o getversion.o gpdef.o gpdef0.o ifnotin.o initget.o irspcs.o lfchk.o lineop.o lnadv.o main.o newfile.o newline.o noop.o nxtsym.o outfile.o parmsym.o peekc.o peekc2.o printdate.o printhelp.o printmap.o printmsg.o printrc.o printtc.o prirup.o pversion.o redofq.o resetio.o resetmsg.o run.o setiomrk.o setirup.o setup_attrs.o showfq.o step.o terry_trace.o unsetio.o userexitfn.o walltime.o
+ctl library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/ctl'
+cd ../sources/cur;         make -j 4 -f Makefile libcur ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/cur'
+$irs_cc clrcur.c
+$irs_cc curbold.c
+$irs_cc curbop.c
+cp ../../includes/irscur.h ../../includes/irscur.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irscur.hh
+irs_hhinit ../../includes/irscur.hh
+$irs_cc curgetxy0.c
+$irs_cc curlmt.c
+$irs_cc curwrtxy.c
+$irs_cc curwrtxy0.c
+$irs_cc delcur.c
+$irs_cc delcur0.c
+$irs_cc dobop.c
+$irs_cc dorop.c
+$irs_cc getcur.c
+$irs_cc getcurroot.c
+$irs_cc getnxcn.c
+$irs_cc getvec.c
+$irs_cc getvec1.c
+$irs_cc getvectp.c
+$irs_cc irsfmax.c
+$irs_cc irsfmin.c
+$irs_cc pamp.c
+$irs_cc plot.c
+$irs_cc plotmd.c
+$irs_cc setcur.c
+$irs_cc setcur0.c
+$irs_cc stoplot.c
+$irs_cc tpamp.c
+$irs_cc tplot.c
+$irs_cc xlim.c
+$irs_cc ylim.c
+$irs_cc curgetxy.c
+ar rc ar ../../lib_opt/libcur.a clrcur.o curbold.o curbop.o curgetxy.o curgetxy0.o curlmt.o curwrtxy.o curwrtxy0.o delcur.o delcur0.o dobop.o dorop.o getcur.o getcurroot.o getnxcn.o getvec.o getvec1.o getvectp.o irsfmax.o irsfmin.o pamp.o plot.o plotmd.o setcur.o setcur0.o stoplot.o tpamp.o tplot.o xlim.o ylim.o
+cur library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/cur'
+cd ../sources/dmp;         make -j 4 -f Makefile libdmp ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/dmp'
+$irs_cc Restart.c
+cp ../../includes/irsdmp.h ../../includes/irsdmp.hh
+$irs_cc condgdmp.c
+$irs_cc dmpattr.c
+perl -p -i -e 's/extern\s+//g' ../../includes/irsdmp.hh
+irs_hhinit ../../includes/irsdmp.hh
+$irs_cc getdmplst.c
+$irs_cc openpdmp.c
+$irs_cc rdmaterial.c
+$irs_cc rdmeshvar.c
+$irs_cc rdparms.c
+$irs_cc rdsilomesh.c
+$irs_cc rdspecies.c
+$irs_cc rgfxstate.c
+$irs_cc rootfile.c
+$irs_cc rwgdmp.c
+$irs_cc set_silo_option.c
+$irs_cc wgdmp.c
+$irs_cc wgfxstate.c
+$irs_cc wtmaterial.c
+$irs_cc wtmeshvar.c
+$irs_cc wtparms.c
+$irs_cc wtsilomesh.c
+$irs_cc wtspecies.c
+$irs_cc conddmp.c
+ar rc ar ../../lib_opt/libdmp.a Restart.o conddmp.o condgdmp.o dmpattr.o getdmplst.o openpdmp.o rdmaterial.o rdmeshvar.o rdparms.o rdsilomesh.o rdspecies.o rgfxstate.o rootfile.o rwgdmp.o set_silo_option.o wgdmp.o wgfxstate.o wtmaterial.o wtmeshvar.o wtparms.o wtsilomesh.o wtspecies.o
+dmp library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/dmp'
+cd ../sources/edits;       make -j 4 -f Makefile libedits ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/edits'
+$irs_cc editor.c
+$irs_cc flagedit.c
+$irs_cc matedit.c
+$irs_cc mpi_edit.c
+$irs_cc print.c
+$irs_cc printcyclefreq.c
+$irs_cc printcyclefreqs.c
+cp ../../includes/BlockMapping.h ../../includes/BlockMapping.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/BlockMapping.hh
+irs_hhinit ../../includes/BlockMapping.hh
+$irs_cc printnodelist.c
+$irs_cc printspec.c
+$irs_cc printtimefreq.c
+$irs_cc printtimefreqs.c
+$irs_cc printtimeplot.c
+$irs_cc printtimeplots.c
+$irs_cc printtpcurve.c
+$irs_cc printtpcurves.c
+$irs_cc query_timer.c
+$irs_cc reducevar.c
+$irs_cc regedit.c
+$irs_cc regenrgy2d.c
+$irs_cc regenrgy3d.c
+$irs_cc stateedit.c
+$irs_cc printmapping.c
+ar rc ar ../../lib_opt/libedits.a editor.o flagedit.o matedit.o mpi_edit.o print.o printcyclefreq.o printcyclefreqs.o printmapping.o printnodelist.o printspec.o printtimefreq.o printtimefreqs.o printtimeplot.o printtimeplots.o printtpcurve.o printtpcurves.o query_timer.o reducevar.o regedit.o regenrgy2d.o regenrgy3d.o stateedit.o
+edits library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/edits'
+cd ../sources/eos;         make -j 4 -f Makefile libeos ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/eos'
+$irs_cc DensityEnergyMin.c
+$irs_cc EosDriver.c
+$irs_cc calc_dtdr_form.c
+$irs_cc eosfm5.c
+$irs_cc etaminchk.c
+$irs_cc getemat.c
+$irs_cc getematnomix.c
+cp ../../includes/irseos.h ../../includes/irseos.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irseos.hh
+irs_hhinit ../../includes/irseos.hh
+$irs_cc geteosnomix.c
+$irs_cc geteosx.c
+$irs_cc pminchk.c
+$irs_cc setvoid.c
+$irs_cc geteos.c
+ar rc ar ../../lib_opt/libeos.a DensityEnergyMin.o EosDriver.o calc_dtdr_form.o eosfm5.o etaminchk.o getemat.o getematnomix.o geteos.o geteosnomix.o geteosx.o pminchk.o setvoid.o
+eos library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/eos'
+cd ../sources/gen;         make -j 4 -f Makefile libgen ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/gen'
+$irs_cc altmesh.c
+$irs_cc arcal2ds.c
+$irs_cc doarg.c
+$irs_cc dopa.c
+$irs_cc fillvar.c
+cp ../../includes/irsgen.h ../../includes/irsgen.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irsgen.hh
+irs_hhinit ../../includes/irsgen.hh
+$irs_cc getarg.c
+$irs_cc getematblk.c
+$irs_cc getfarg.c
+$irs_cc getfpaa.c
+$irs_cc getiarg.c
+$irs_cc getrgstdata.c
+$irs_cc getspeed2.c
+$irs_cc gnorm.c
+$irs_cc isargfun.c
+$irs_cc isbeta.c
+$irs_cc meshgen.c
+$irs_cc mixzn.c
+$irs_cc mkpalab.c
+$irs_cc plgndr.c
+$irs_cc pole.c
+$irs_cc purify.c
+$irs_cc ratioeval.c
+$irs_cc ratiosum.c
+$irs_cc rdmesh.c
+$irs_cc rdsilogrid.c
+$irs_cc rdtruegrid.c
+$irs_cc realindex.c
+$irs_cc regen.c
+$irs_cc sanityck.c
+$irs_cc sewmeshes.c
+$irs_cc spline.c
+$irs_cc tagvoid.c
+$irs_cc volcal2d.c
+$irs_cc volcal3d.c
+$irs_cc wtmesh.c
+$irs_cc zone.c
+$irs_cc gen.c
+ar rc ar ../../lib_opt/libgen.a altmesh.o arcal2ds.o doarg.o dopa.o fillvar.o gen.o getarg.o getematblk.o getfarg.o getfpaa.o getiarg.o getrgstdata.o getspeed2.o gnorm.o isargfun.o isbeta.o meshgen.o mixzn.o mkpalab.o plgndr.o pole.o purify.o ratioeval.o ratiosum.o rdmesh.o rdsilogrid.o rdtruegrid.o realindex.o regen.o sanityck.o sewmeshes.o spline.o tagvoid.o volcal2d.o volcal3d.o wtmesh.o zone.o
+gen library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/gen'
+cd ../sources/genrd;       make -j 4 -f Makefile libgenrd ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/genrd'
+cp ../../includes/irsgenrd.h ../../includes/irsgenrd.hh
+$irs_cc docmd.c
+$irs_cc endchk.c
+$irs_cc help.c
+perl -p -i -e 's/extern\s+//g' ../../includes/irsgenrd.hh
+irs_hhinit ../../includes/irsgenrd.hh
+$irs_cc inst_c.c
+$irs_cc inst_com.c
+$irs_cc sargs.c
+$irs_cc sargse.c
+$irs_cc zargs.c
+$irs_cc zargse.c
+$irs_cc deck.c
+ar rc ar ../../lib_opt/libgenrd.a deck.o docmd.o endchk.o help.o inst_c.o inst_com.o sargs.o sargse.o zargs.o zargse.o
+genrd library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/genrd'
+cd ../sources/hash;        make -j 4 -f Makefile libhash ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/hash'
+$irs_cc get_num_elms_in_hashtable.c
+cp ../../includes/Hash.h ../../includes/Hash.hh
+$irs_cc hash_analyze.c
+$irs_cc hash_cond_print_by_type.c
+perl -p -i -e 's/extern\s+//g' ../../includes/Hash.hh
+irs_hhinit ../../includes/Hash.hh
+$irs_cc hash_del.c
+$irs_cc hash_del2.c
+$irs_cc hash_del_objs_of_type.c
+$irs_cc hash_get_elm_list.c
+$irs_cc hash_lookup_elm.c
+$irs_cc hash_lookup_obj.c
+$irs_cc hash_optimize.c
+$irs_cc hash_print.c
+$irs_cc hash_print_by_name.c
+$irs_cc hash_print_by_type.c
+$irs_cc hash_print_obj.c
+$irs_cc hash_print_structs_of_type.c
+$irs_cc hash_sort_array.c
+$irs_cc hash_sort_array_by_type.c
+$irs_cc hash_tbl_create.c
+$irs_cc hash_tbl_free.c
+$irs_cc printhash.c
+$irs_cc strsave.c
+$irs_cc hash_add.c
+ar rc ar ../../lib_opt/libhash.a get_num_elms_in_hashtable.o hash_add.o hash_analyze.o hash_cond_print_by_type.o hash_del.o hash_del2.o hash_del_objs_of_type.o hash_get_elm_list.o hash_lookup_elm.o hash_lookup_obj.o hash_optimize.o hash_print.o hash_print_by_name.o hash_print_by_type.o hash_print_obj.o hash_print_structs_of_type.o hash_sort_array.o hash_sort_array_by_type.o hash_tbl_create.o hash_tbl_free.o printhash.o strsave.o
+hash library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/hash'
+cd ../sources/lag;         make -j 4 -f Makefile liblag ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/lag'
+$irs_cc DtTempControls.c
+$irs_cc DtTempInitialize.c
+$irs_cc HydroDtControls.c
+$irs_cc InitCycle.c
+$irs_cc LengthScale.c
+$irs_cc PostSubcycle.c
+$irs_cc PreSubcycle.c
+$irs_cc getnm2d0.c
+$irs_cc getnm3d.c
+$irs_cc update.c
+$irs_cc updateblk.c
+cp ../../includes/irslag.h ../../includes/irslag.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irslag.hh
+irs_hhinit ../../includes/irslag.hh
+$irs_cc xirs.c
+ar rc ar ../../lib_opt/liblag.a DtTempControls.o DtTempInitialize.o HydroDtControls.o InitCycle.o LengthScale.o PostSubcycle.o PreSubcycle.o getnm2d0.o getnm3d.o update.o updateblk.o xirs.o
+lag library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/lag'
+cd ../sources/objects;	   make -j 4 -f Makefile libobjects ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/objects'
+cp ../../includes/AEStackElm.h ../../includes/AEStackElm.hh
+$irs_cc AttrArray.c
+$irs_cc Boundary.c
+$irs_cc BoundaryCondition.c
+perl -p -i -e 's/extern\s+//g' ../../includes/AEStackElm.hh
+irs_hhinit ../../includes/AEStackElm.hh
+$irs_cc Conditional.c
+$irs_cc Database.c
+$irs_cc Domain.c
+$irs_cc EosGroup.c
+$irs_cc FunctionTimer.c
+$irs_cc GlobalArrays.c
+cp ../../includes/NodeList.h ../../includes/NodeList.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/NodeList.hh
+$irs_cc NodeWindow.c
+irs_hhinit ../../includes/NodeList.hh
+$irs_cc ObjectName.c
+$irs_cc OpacityGroup.c
+$irs_cc ProblemArray.c
+$irs_cc RGST_Object.c
+cp ../../includes/Region.h ../../includes/Region.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/Region.hh
+irs_hhinit ../../includes/Region.hh
+cp ../../includes/Source.h ../../includes/Source.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/Source.hh
+irs_hhinit ../../includes/Source.hh
+$irs_cc SourceNew.c
+$irs_cc Species.c
+$irs_cc Spline.c
+$irs_cc SubMesh.c
+$irs_cc TimePlot.c
+$irs_cc TimePlotCurve.c
+$irs_cc TimeStepControl.c
+$irs_cc Transform.c
+$irs_cc UserList.c
+$irs_cc VersionData.c
+$irs_cc AEStackElm.c
+$irs_cc NodeList.c
+$irs_cc Region.c
+$irs_cc Source.c
+ar rc ar ../../lib_opt/libobjects.a AEStackElm.o AttrArray.o Boundary.o BoundaryCondition.o Conditional.o Database.o Domain.o EosGroup.o FunctionTimer.o GlobalArrays.o NodeList.o NodeWindow.o ObjectName.o OpacityGroup.o ProblemArray.o RGST_Object.o Region.o Source.o SourceNew.o Species.o Spline.o SubMesh.o TimePlot.o TimePlotCurve.o TimeStepControl.o Transform.o UserList.o VersionData.o
+objects library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/objects'
+cd ../sources/parm;    	   make -j 4 -f Makefile libparm ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/parm'
+$irs_cc boxid.c
+$irs_cc create_temp_pa.c
+$irs_cc free_temp_pa.c
+$irs_cc memclr.c
+cp ../../includes/BiQuadradic.h ../../includes/BiQuadradic.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/BiQuadradic.hh
+$irs_cc ndset.c
+irs_hhinit ../../includes/BiQuadradic.hh
+$irs_cc parm.c
+cp ../../includes/irs.h ../../includes/irs.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irs.hh
+irs_hhinit ../../includes/irs.hh
+cp ../../includes/irsparm.h ../../includes/irsparm.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irsparm.hh
+irs_hhinit ../../includes/irsparm.hh
+cp ../../includes/TimeStepControl.h ../../includes/TimeStepControl.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/TimeStepControl.hh
+irs_hhinit ../../includes/TimeStepControl.hh
+$irs_cc parmsanity.c
+$irs_cc set.c
+$irs_cc memexp.c
+$irs_cc parminit.c
+ar rc ar ../../lib_opt/libparm.a boxid.o create_temp_pa.o free_temp_pa.o memclr.o memexp.o ndset.o parm.o parminit.o parmsanity.o set.o
+parm library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/parm'
+cd ../sources/reg;         make -j 4 -f Makefile libreg ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/reg'
+$irs_cc OpacTypesIn.c
+$irs_cc eos_init.c
+$irs_cc eosin.c
+$irs_cc eosin0.c
+eos_init.c(173): warning #592: variable "dpdr0" is used before its value is set
+                 dpdr0 += t0 * dpdt0 * dpdt0 / ( d0 * d0 * dedt0 ) ;
+                 ^
+
+$irs_cc maxmin.c
+$irs_cc opacin.c
+$irs_cc regcnst.c
+$irs_cc region.c
+$irs_cc regndx.c
+cp ../../includes/irsreg.h ../../includes/irsreg.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/irsreg.hh
+irs_hhinit ../../includes/irsreg.hh
+$irs_cc species.c
+ar rc ar ../../lib_opt/libreg.a OpacTypesIn.o eos_init.o eosin.o eosin0.o maxmin.o opacin.o regcnst.o region.o regndx.o species.o
+reg library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/reg'
+cd ../sources/rgst;        make -j 4 -f Makefile librgst ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/rgst'
+$irs_cc build_proc_name.c
+$irs_cc copy_toc.c
+$irs_cc domain_hash_tbl_rgst.c
+$irs_cc free_toc.c
+$irs_cc get_words_at_prompt.c
+$irs_cc hash_print_obj.c
+$irs_cc hash_print_structs_of_type.c
+$irs_cc hash_tbl_create_n_rgst.c
+$irs_cc hash_tbl_rgst.c
+$irs_cc printattr.c
+$irs_cc printattrlist.c
+$irs_cc printhash.c
+$irs_cc printrgst.c
+$irs_cc rgst_add.c
+$irs_cc rgst_add_attr.c
+$irs_cc rgst_add_ctype_td_defn.c
+$irs_cc rgst_add_enum_td_defn.c
+$irs_cc rgst_add_struct_td_defn.c
+$irs_cc rgst_alloc.c
+$irs_cc rgst_check_attr_name.c
+$irs_cc rgst_check_for_obj.c
+$irs_cc rgst_check_for_td_defn.c
+$irs_cc rgst_check_ndxs.c
+$irs_cc rgst_cleanup.c
+$irs_cc rgst_construct.c
+$irs_cc rgst_conv_enum_type_to_str.c
+$irs_cc rgst_copy.c
+$irs_cc rgst_copy_attr_elm_list.c
+$irs_cc rgst_create_RGST_ATTR_ELM_TYPE.c
+$irs_cc rgst_create_typedef_name_str.c
+$irs_cc rgst_del.c
+$irs_cc rgst_del_attr.c
+$irs_cc rgst_extract_array_ndxs.c
+$irs_cc rgst_free_RGST_ATTR_ELM_TYPE.c
+$irs_cc rgst_free_RGST_ATTR_TYPE.c
+$irs_cc rgst_free_attr_elm_list.c
+$irs_cc rgst_get.c
+$irs_cc rgst_get_RGST_OBJECT.c
+$irs_cc rgst_get_RGST_STRUCT_TD_DEFN.c
+$irs_cc rgst_get_attr_type.c
+$irs_cc rgst_get_datatype_size.c
+$irs_cc rgst_get_dims_of_type.c
+$irs_cc rgst_get_ds_field_ndx.c
+$irs_cc rgst_get_field_addr.c
+$irs_cc rgst_get_field_array_elm_ptr.c
+$irs_cc rgst_get_field_array_size.c
+$irs_cc rgst_get_field_array_sizes.c
+$irs_cc rgst_get_long.c
+$irs_cc rgst_get_nelms_in_field.c
+$irs_cc rgst_get_nelms_in_rgst_obj.c
+$irs_cc rgst_get_object_datatype.c
+$irs_cc rgst_get_object_len.c
+$irs_cc rgst_get_struct_array_elm_ptr.c
+$irs_cc rgst_get_t.c
+$irs_cc rgst_get_td_defn.c
+$irs_cc rgst_init.c
+$irs_cc rgst_init_struct.c
+$irs_cc rgst_list_attr.c
+$irs_cc rgst_list_attr_and.c
+$irs_cc rgst_list_objs_by_type.c
+$irs_cc rgst_list_vars_with_attr.c
+$irs_cc rgst_num_with_attr.c
+$irs_cc rgst_obj_is_dim_array.c
+$irs_cc rgst_obj_is_ptr_array.c
+$irs_cc rgst_print.c
+$irs_cc rgst_print_0_ptr_array.c
+$irs_cc rgst_print_1_ptr_array.c
+$irs_cc rgst_print_2_ptr_array.c
+$irs_cc rgst_print_addr.c
+$irs_cc rgst_print_addr_member.c
+$irs_cc rgst_print_ctype_td_defn.c
+$irs_cc rgst_print_ds_member.c
+$irs_cc rgst_print_field.c
+$irs_cc rgst_print_function.c
+$irs_cc rgst_print_obj.c
+$irs_cc rgst_print_ptrs.c
+$irs_cc rgst_print_struct.c
+$irs_cc rgst_print_struct_td_defn.c
+$irs_cc rgst_print_structs.c
+$irs_cc rgst_print_type.c
+$irs_cc rgst_query_attr.c
+$irs_cc rgst_read_field.c
+$irs_cc rgst_read_struct.c
+$irs_cc rgst_read_struct_array.c
+$irs_cc rgst_split_type_n_fld.c
+$irs_cc rgst_verify_struct_td_defn.c
+$irs_cc rgst_write_struct.c
+$irs_cc rgst_write_struct_array.c
+ar rc ar ../../lib_opt/librgst.a build_proc_name.o copy_toc.o domain_hash_tbl_rgst.o free_toc.o get_words_at_prompt.o hash_print_obj.o hash_print_structs_of_type.o hash_tbl_create_n_rgst.o hash_tbl_rgst.o printattr.o printattrlist.o printhash.o printrgst.o rgst_add.o rgst_add_attr.o rgst_add_ctype_td_defn.o rgst_add_enum_td_defn.o rgst_add_struct_td_defn.o rgst_alloc.o rgst_check_attr_name.o rgst_check_for_obj.o rgst_check_for_td_defn.o rgst_check_ndxs.o rgst_cleanup.o rgst_construct.o rgst_conv_enum_type_to_str.o rgst_copy.o rgst_copy_attr_elm_list.o rgst_create_RGST_ATTR_ELM_TYPE.o rgst_create_typedef_name_str.o rgst_del.o rgst_del_attr.o rgst_extract_array_ndxs.o rgst_free_RGST_ATTR_ELM_TYPE.o rgst_free_RGST_ATTR_TYPE.o rgst_free_attr_elm_list.o rgst_get.o rgst_get_RGST_OBJECT.o rgst_get_RGST_STRUCT_TD_DEFN.o rgst_get_attr_type.o rgst_get_datatype_size.o rgst_get_dims_of_type.o rgst_get_ds_field_ndx.o rgst_get_field_addr.o rgst_get_field_array_elm_ptr.o rgst_get_field_array_size.o rgst_get_field_array_sizes.o rgst_get_long.o rgst_get_nelms_in_field.o rgst_get_nelms_in_rgst_obj.o rgst_get_object_datatype.o rgst_get_object_len.o rgst_get_struct_array_elm_ptr.o rgst_get_t.o rgst_get_td_defn.o rgst_init.o rgst_init_struct.o rgst_list_attr.o rgst_list_attr_and.o rgst_list_objs_by_type.o rgst_list_vars_with_attr.o rgst_num_with_attr.o rgst_obj_is_dim_array.o rgst_obj_is_ptr_array.o rgst_print.o rgst_print_0_ptr_array.o rgst_print_1_ptr_array.o rgst_print_2_ptr_array.o rgst_print_addr.o rgst_print_addr_member.o rgst_print_ctype_td_defn.o rgst_print_ds_member.o rgst_print_field.o rgst_print_function.o rgst_print_obj.o rgst_print_ptrs.o rgst_print_struct.o rgst_print_struct_td_defn.o rgst_print_structs.o rgst_print_type.o rgst_query_attr.o rgst_read_field.o rgst_read_struct.o rgst_read_struct_array.o rgst_split_type_n_fld.o rgst_verify_struct_td_defn.o rgst_write_struct.o rgst_write_struct_array.o
+rgst library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/rgst'
+cd ../sources/src;         make -j 4 -f Makefile libsrc ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/src'
+$irs_cc dsrc.c
+$irs_cc erate.c
+$irs_cc esrc.c
+$irs_cc psrc.c
+$irs_cc srccopy.c
+$irs_cc srcin.c
+$irs_cc tmsrc.c
+srcin.c(307): warning #592: variable "ivalue" is used before its value is set
+           idat1[0] = ivalue;
+                      ^
+
+ar rc ar ../../lib_opt/libsrc.a dsrc.o erate.o esrc.o psrc.o srccopy.o srcin.o tmsrc.o
+src library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/src'
+cd ../sources/sys;         make -j 4 -f Makefile libsys ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/sys'
+$irs_cc HardwareInit.c
+$irs_cc fprint.c
+cp ../../includes/irssys.h ../../includes/irssys.hh
+$irs_cc getndx.c
+perl -p -i -e 's/extern\s+//g' ../../includes/irssys.hh
+irs_hhinit ../../includes/irssys.hh
+$irs_cc getndx0.c
+$irs_cc getruntime.c
+$irs_cc icasum.c
+$irs_cc icdot.c
+$irs_cc icnrml2.c
+$irs_cc icsum.c
+$irs_cc lists.c
+$irs_cc sort2.c
+$irs_cc tstsum.c
+$irs_cc vmax.c
+$irs_cc vmin.c
+$irs_cc getcpu.c
+ar rc ar ../../lib_opt/libsys.a HardwareInit.o fprint.o getcpu.o getndx.o getndx0.o getruntime.o icasum.o icdot.o icnrml2.o icsum.o lists.o sort2.o tstsum.o vmax.o vmin.o
+sys library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/sys'
+cd ../sources/tdiff;       make -j 4 -f Makefile libtdiff ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/tdiff'
+$irs_cc ChemPotCalc.c
+$irs_cc ConductionCoef.c
+cp ../../includes/DiffusionData.h ../../includes/DiffusionData.hh
+$irs_cc DivgradDriver.c
+perl -p -i -e 's/extern\s+//g' ../../includes/DiffusionData.hh
+irs_hhinit ../../includes/DiffusionData.hh
+$irs_cc FemDivgrad3.c
+$irs_cc FemGrad3d.c
+$irs_cc FluxLimiter2d.c
+$irs_cc FluxLimiter3d.c
+$irs_cc FluxLimiterDriver.c
+$irs_cc GefaGedi.c
+$irs_cc KpAnalytic.c
+$irs_cc KrAnalytic.c
+$irs_cc MatrixSolve.c
+$irs_cc MatterConduction.c
+$irs_cc MatterDiagonal.c
+$irs_cc MatterWainwright.c
+cp ../../includes/RadiationData.h ../../includes/RadiationData.hh
+perl -p -i -e 's/extern\s+//g' ../../includes/RadiationData.hh
+irs_hhinit ../../includes/RadiationData.hh
+$irs_cc RadiationSourceBC.c
+$irs_cc RegionTable.c
+$irs_cc SetFaceTemperature.c
+$irs_cc bound_free.c
+$irs_cc cblkbc.c
+$irs_cc cblkbc2.c
+$irs_cc cblkbc3.c
+$irs_cc diagonal.c
+$irs_cc diff1g.c
+$irs_cc divgrad2.c
+$irs_cc divgrad3.c
+$irs_cc divgradpert2d.c
+$irs_cc divgradpert3d.c
+$irs_cc geteicouple.c
+$irs_cc gettfzstar.c
+$irs_cc getzabar0.c
+$irs_cc gtkappabnd.c
+$irs_cc kapmlt.c
+$irs_cc newMatrix.c
+$irs_cc norml2.c
+$irs_cc opac2t.c
+$irs_cc opaclmt.c
+$irs_cc planck_opacity.c
+$irs_cc radfree.c
+$irs_cc radinit.c
+$irs_cc rdiff.c
+$irs_cc rdiffbc.c
+$irs_cc rdiffbc2.c
+$irs_cc rdiffbc3.c
+$irs_cc rdiffset.c
+$irs_cc rdiffsrc.c
+$irs_cc reicouple.c
+$irs_cc retransfer.c
+$irs_cc rmatmult.c
+$irs_cc rmatmult2.c
+$irs_cc rmatmult3.c
+$irs_cc rsrcbc.c
+$irs_cc rsrcbc2.c
+$irs_cc rsrcbc3.c
+$irs_cc setpz1.c
+$irs_cc setpz2.c
+$irs_cc tblkinit.c
+$irs_cc tdiff.c
+$irs_cc teicouple.c
+$irs_cc zstarcal.c
+$irs_cc DiffCoef.c
+$irs_cc RadiationMemory.c
+ar rc ar ../../lib_opt/libtdiff.a ChemPotCalc.o ConductionCoef.o DiffCoef.o DivgradDriver.o FemDivgrad3.o FemGrad3d.o FluxLimiter2d.o FluxLimiter3d.o FluxLimiterDriver.o GefaGedi.o KpAnalytic.o KrAnalytic.o MatrixSolve.o MatterConduction.o MatterDiagonal.o MatterWainwright.o RadiationMemory.o RadiationSourceBC.o RegionTable.o SetFaceTemperature.o bound_free.o cblkbc.o cblkbc2.o cblkbc3.o diagonal.o diff1g.o divgrad2.o divgrad3.o divgradpert2d.o divgradpert3d.o geteicouple.o gettfzstar.o getzabar0.o gtkappabnd.o kapmlt.o newMatrix.o norml2.o opac2t.o opaclmt.o planck_opacity.o radfree.o radinit.o rdiff.o rdiffbc.o rdiffbc2.o rdiffbc3.o rdiffset.o rdiffsrc.o reicouple.o retransfer.o rmatmult.o rmatmult2.o rmatmult3.o rsrcbc.o rsrcbc2.o rsrcbc3.o setpz1.o setpz2.o tblkinit.o tdiff.o teicouple.o zstarcal.o
+tdiff library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/tdiff'
+cd ../sources/timers;      make -j 4 -f Makefile libtimers ; 
+make[3]: Entering directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/timers'
+$irs_cc FunctionTimer_clock.c
+$irs_cc FunctionTimer_construct.c
+$irs_cc FunctionTimer_error.c
+$irs_cc FunctionTimer_finalize.c
+$irs_cc FunctionTimer_free.c
+$irs_cc FunctionTimer_global_vars.c
+$irs_cc FunctionTimer_init.c
+$irs_cc FunctionTimer_initialize.c
+$irs_cc FunctionTimer_lookup.c
+$irs_cc FunctionTimer_maxclock.c
+$irs_cc FunctionTimer_mpi_wrappers.c
+$irs_cc FunctionTimer_out.c
+$irs_cc FunctionTimer_print.c
+$irs_cc FunctionTimer_setup.c
+ar rc ar ../../lib_opt/libtimers.a FunctionTimer_clock.o FunctionTimer_construct.o FunctionTimer_error.o FunctionTimer_finalize.o FunctionTimer_free.o FunctionTimer_global_vars.o FunctionTimer_init.o FunctionTimer_initialize.o FunctionTimer_lookup.o FunctionTimer_maxclock.o FunctionTimer_mpi_wrappers.o FunctionTimer_out.o FunctionTimer_print.o FunctionTimer_setup.o
+timers library current
+make[3]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/sources/timers'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
+cd ../lib_opt; $irs_arx libctl.a main.o
+da=`date +%m%d`; \
+	$irs_link ../lib_opt/main.o -L../lib_opt -L../libs -L/usr/lib -L/usr/local/intel/compiler91_64/lib    $irs_libs \
+		 -o ../codes_opt/irs$da > load.map.$da; \
+	ln -sf ../codes_opt/irs$da ../codes_opt/irs; \
+	echo "irs$da"
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `get_us':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:453: warning: Using 'gethostbyname' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+/usr/local/tools/mvapich-intel/lib/libmpich.a(create_2level_comm.o): In function `free_2level_comm':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:97: undefined reference to `pthread_spin_lock'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:99: undefined reference to `pthread_spin_unlock'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(create_2level_comm.o): In function `create_2level_comm':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:200: undefined reference to `pthread_spin_lock'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/src/context/create_2level_comm.c:211: undefined reference to `pthread_spin_unlock'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `MPID_PSM_Finalize':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xbc): undefined reference to `psm_ep_close'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xc1): undefined reference to `psm_finalize'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `MPID_PSM_Init':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x6cc): undefined reference to `psm_init'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x715): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x781): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x7b6): undefined reference to `psm_uuid_generate'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x7f0): undefined reference to `psm_ep_open'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x8f1): undefined reference to `psm_ep_connect'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x93a): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x9a6): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x9fe): undefined reference to `psm_mq_init'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xa47): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xab3): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xbd9): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xc45): undefined reference to `psm_error_get_string'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xda6): undefined reference to `psm_error_get_string'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o):/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0xe12): more undefined references to `psm_error_get_string' follow
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psminit.o): In function `psm_mq_init_barrier':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x1268): undefined reference to `psm_mq_irecv'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x1293): undefined reference to `psm_mq_send'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psminit.c:(.text+0x12ad): undefined reference to `psm_mq_wait'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmcheck.o): In function `MPID_DeviceCheck':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmcheck.c:46: undefined reference to `psm_mq_ipeek'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmcheck.c:51: undefined reference to `psm_mq_wait'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(mpid_recv.o): In function `MPID_RecvCancel':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/mpid_recv.c:113: undefined reference to `psm_mq_cancel'
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/mpid_recv.c:123: undefined reference to `psm_mq_test'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(shmem_coll.o): In function `MPID_SHMEM_COLL_Mmap':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/shmem_coll.c:221: undefined reference to `pthread_spin_init'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmwait.o): In function `MPID_PSM_Wait':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmwait.c:25: undefined reference to `psm_mq_wait'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Send':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:45: undefined reference to `psm_mq_send'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Isend':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:64: undefined reference to `psm_mq_isend'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_SendIcomplete':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:78: undefined reference to `psm_mq_test'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Ssend':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:101: undefined reference to `psm_mq_send'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmsend.o): In function `MPID_PSM_Issend':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmsend.c:120: undefined reference to `psm_mq_isend'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmrecv.o): In function `MPID_PSM_Irecv':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmrecv.c:68: undefined reference to `psm_mq_irecv'
+/usr/local/tools/mvapich-intel/lib/libmpich.a(psmrecv.o): In function `MPID_PSM_RecvIcomplete':
+/tmp/dpkg-mkdeb.kvmIw9KaZJ/src/build-mvapich-long-path-hack-enabled-psm-intel/mpid/ch_psm/psmrecv.c:84: undefined reference to `psm_mq_test'
+irs0415
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/patki/irs-build/build'
