@@ -1,0 +1,208 @@
+filename=rzmerl27_rapl_ft.D.256_0000__XXXXXX
+filename=rzmerl39_rapl_ft.D.256_0048__XXXXXX
+filename=rzmerl47_rapl_ft.D.256_0080__XXXXXX
+filename=rzmerl51_rapl_ft.D.256_0096__XXXXXX
+filename=rzmerl59_rapl_ft.D.256_0128__XXXXXX
+filename=rzmerl55_rapl_ft.D.256_0112__XXXXXX
+filename=rzmerl75_rapl_ft.D.256_0192__XXXXXX
+filename=rzmerl31_rapl_ft.D.256_0016__XXXXXX
+filename=rzmerl43_rapl_ft.D.256_0064__XXXXXX
+filename=rzmerl79_rapl_ft.D.256_0208__XXXXXX
+filename=rzmerl71_rapl_ft.D.256_0176__XXXXXX
+filename=rzmerl35_rapl_ft.D.256_0032__XXXXXX
+filename=rzmerl67_rapl_ft.D.256_0160__XXXXXX
+filename=rzmerl87_rapl_ft.D.256_0240__XXXXXX
+filename=rzmerl63_rapl_ft.D.256_0144__XXXXXX
+filename=rzmerl83_rapl_ft.D.256_0224__XXXXXX
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=16, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=15, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=15, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=17, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=16, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=68, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=15, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=14, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::54 c=-1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 0
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 0
+msr_core.c::64  pwrite returned -1.  fd[0]=15, cpu=0, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=69, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=17, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=18, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x38208 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=16, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=17, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=16, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=16, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x38078 on cpu 1
+msr_core.c::64  pwrite returned -1.  fd[1]=16, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
+msr_core.c::64  pwrite returned -1.  fd[1]=15, cpu=1, msr=1560 (618), val=229496 (0x38078).  errno=5
+: Input/output error
+msr_rapl.c::399 returned from parse_opts
