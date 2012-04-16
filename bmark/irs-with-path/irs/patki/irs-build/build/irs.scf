@@ -1,2 +1,0 @@
-PARSE   irs_c cfork *.i INST -suppress -npp -halstead -param -data -mc -pathvec -ckw irs.ckw
-INSTLIB cfork il5base.c instlib.c

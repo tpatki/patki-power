@@ -1,1 +1,0 @@
-/g/g24/rountree/local/src/power/bmark/irs-with-path/irs/sources/rgst/rgst_free_RGST_ATTR_TYPE.c
