@@ -586,7 +586,7 @@ void write_lu_info(FILE *fp, int nprocs, char class)
   else if (class == 'B') { problem_size = 102; dt_default = "2.0d0";  itmax = 250; }
   else if (class == 'C') { problem_size = 162; dt_default = "2.0d0";  itmax =200; }
   //else if (class == 'C') { problem_size = 162; dt_default = "2.0d0";  itmax = 250; }
-  else if (class == 'D') { problem_size = 408; dt_default = "1.0d0";  itmax = 300; }
+  else if (class == 'D') { problem_size = 408; dt_default = "1.0d0";  itmax = 400; }
   //else if (class == 'D') { problem_size = 408; dt_default = "1.0d0";  itmax = 250; }
   else if (class == 'E') { problem_size = 1020; dt_default = "0.5d0"; itmax = 300; }
   else {
@@ -639,7 +639,7 @@ void write_mg_info(FILE *fp, int nprocs, char class)
   else if (class == 'B') { problem_size = 256;  nit = 20; }
   else if (class == 'C') { problem_size = 512;  nit = 20; }
   //else if (class == 'D') { problem_size = 1024; nit = 25; }
-  else if (class == 'D') { problem_size = 1024; nit = 50; }
+  else if (class == 'D') { problem_size = 1024; nit = 60; }
   else if (class == 'E') { problem_size = 2048; nit = 50; }
   else {
     printf("setparams: Internal error: invalid class type %c\n", class);
