@@ -1,6 +1,0 @@
-/g/g24/rountree/local/src/power
-srun: error: rzmerl35: tasks 0-15: Exited with exit code 2
-srun: error: rzmerl36: tasks 16-31: Exited with exit code 2
-srun: error: rzmerl38: tasks 48-63: Exited with exit code 2
-srun: error: rzmerl37: tasks 32-47: Exited with exit code 2
-Resetting now...
