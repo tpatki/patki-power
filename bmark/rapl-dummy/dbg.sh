@@ -14,6 +14,6 @@ export MSR_RANK_MOD=1
 export BMARK_STRING=rapl-dummy
 
 
-srun -p pdebug -N1 -w rzmerl1 -e dbg1.err -o dbg1.dat ./rapl-dummy
-srun -p pdebug -N1 -w rzmerl3 -e dbg3.err -o dbg1.dat ./rapl-dummy
+#srun -p pdebug -N1 -w rzmerl1 -e dbg1.err -o dbg1.dat ./rapl-dummy
+srun -p pdebug -N1 -w rzmerl3 -e dbg3.err -o dbg3.dat ./rapl-dummy
 
