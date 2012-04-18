@@ -1,9 +1,0 @@
-filename=rzmerl150_rapl_rapl-dummy_0000__XXXXXX
-msr_opt.c::54 c=-1
-msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 0
-msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
-msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
-msr_opt.c::78 setting MSR_PKG_POWER_LIMIT to 0x0 on cpu 1
-msr_opt.c::83 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
-msr_opt.c::88 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
-msr_rapl.c::399 returned from parse_opts
