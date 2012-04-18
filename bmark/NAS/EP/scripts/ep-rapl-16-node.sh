@@ -27,12 +27,12 @@ export MSR_RANK_MOD=16
  for pkg in 0x38198 0x038208 0x038280 0x0382f8
        do
                export MSR_PKG_POWER_LIMIT=${pkg}
-               for dram in 0x038078 0x0380a0 0x0380c8 0x0380f0
-		do
-                    export MSR_DRAM_POWER_LIMIT=${dram}
+#               for dram in 0x038078 0x0380a0 0x0380c8 0x0380f0
+#		do
+#                    export MSR_DRAM_POWER_LIMIT=${dram}
 		    #Run CG with 16 nodes, with 4,8,16 cores/node
 		    sh ./runEP.sh 16 16 4 16
-		done
+#		done
 	done
 
 #Resetting is done by the top-level script
