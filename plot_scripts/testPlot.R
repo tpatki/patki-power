@@ -33,9 +33,12 @@ plot(a$nodes[sel1],
      log='x',
      col=colors[1],
      xlim=range(a$nodes[sel]),
-     ylim=range(a$totalEnergy[sel])
+     ylim=c(0, max(a$totalEnergy[sel]))
      )
 axis(1, at=unique(a$nodes[sel]))
+
+legend(x='bottomleft', legend=paste(coresPerNode, 'cores/node'),
+       col=colors, lty=1)
 
 for(i in 2:length(coresPerNode)){
   sel1 = intersect(sel, which(a$coresPerNode == coresPerNode[i]))
@@ -45,3 +48,4 @@ for(i in 2:length(coresPerNode)){
          col=colors[i]
          )
 }
+
