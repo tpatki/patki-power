@@ -23,5 +23,9 @@ echo 'nodes: '$1 >> info
 #srun --nodes=$1 --ntasks=$2 --time=10 -ppbatch --cpu_bind=sockets ../cgCL.sh $2 > out.dat
 
 
-srun --nodes=$1 --ntasks=$2 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh $2
+#srun --nodes=$1 --ntasks=$2 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh $2
+
+#Use auto-affinity instead of cpu_bind=sockets
+
+srun --nodes=$1 --ntasks=$2 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh $2
 
