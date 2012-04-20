@@ -1,0 +1,32 @@
+filename=rzmerl25_rapl_sphot.64_0000__XXXXXX
+filename=rzmerl29_rapl_sphot.64_0016__XXXXXX
+filename=rzmerl33_rapl_sphot.64_0032__XXXXXX
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+filename=rzmerl37_rapl_sphot.64_0048__XXXXXX
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x38198 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts

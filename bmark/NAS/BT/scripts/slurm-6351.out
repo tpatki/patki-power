@@ -1,0 +1,454 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_39_03_418754036
++ mkdir 2012_04_19_15_39_03_418754036
++ cd 2012_04_19_15_39_03_418754036
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_39_03_418754036
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_44_01_501311062
++ mkdir 2012_04_19_15_44_01_501311062
++ cd 2012_04_19_15_44_01_501311062
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_44_01_501311062
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_46_35_357247136
++ mkdir 2012_04_19_15_46_35_357247136
++ cd 2012_04_19_15_46_35_357247136
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_46_35_357247136
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 484
+srun: error: rzmerl84: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl79: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl81: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl23: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl22: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl43: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl82: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl75: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl44: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl33: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl30: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl34: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl78: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl21: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl83: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl85: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl80: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl32: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl40: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl38: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl35: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl29: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl76: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl25: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl24: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl36: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl42: tasks 288-303: Exited with exit code 127
+srun: error: rzmerl39: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl26: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl37: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl41: tasks 272-287: Exited with exit code 127
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_46_35_846336510
++ mkdir 2012_04_19_15_46_35_846336510
++ cd 2012_04_19_15_46_35_846336510
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_46_35_846336510
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_51_32_055611372
++ mkdir 2012_04_19_15_51_32_055611372
++ cd 2012_04_19_15_51_32_055611372
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_51_32_055611372
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_54_02_855817269
++ mkdir 2012_04_19_15_54_02_855817269
++ cd 2012_04_19_15_54_02_855817269
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_54_02_855817269
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 484
+srun: error: rzmerl20: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl43: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl82: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl23: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl30: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl33: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl75: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl34: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl40: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl22: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl38: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl79: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl26: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl78: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl81: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl44: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl35: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl80: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl42: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl32: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl76: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl83: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl84: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl29: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl21: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl25: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl24: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl39: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl37: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl36: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl41: tasks 288-303: Exited with exit code 127
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_54_03_431377650
++ mkdir 2012_04_19_15_54_03_431377650
++ cd 2012_04_19_15_54_03_431377650
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_54_03_431377650
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_59_00_056367673
++ mkdir 2012_04_19_15_59_00_056367673
++ cd 2012_04_19_15_59_00_056367673
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_59_00_056367673
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_01_31_521231791
++ mkdir 2012_04_19_16_01_31_521231791
++ cd 2012_04_19_16_01_31_521231791
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_01_31_521231791
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 484
+srun: error: rzmerl20: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl76: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl23: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl42: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl82: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl81: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl33: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl38: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl83: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl44: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl24: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl29: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl84: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl78: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl80: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl79: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl34: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl36: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl26: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl21: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl30: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl22: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl40: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl32: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl43: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl75: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl35: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl25: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl37: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl39: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl41: tasks 288-303: Exited with exit code 127
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_01_32_028623562
++ mkdir 2012_04_19_16_01_32_028623562
++ cd 2012_04_19_16_01_32_028623562
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_01_32_028623562
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_06_28_625139354
++ mkdir 2012_04_19_16_06_28_625139354
++ cd 2012_04_19_16_06_28_625139354
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_06_28_625139354
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_08_59_454516179
++ mkdir 2012_04_19_16_08_59_454516179
++ cd 2012_04_19_16_08_59_454516179
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_08_59_454516179
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 484
+srun: error: rzmerl20: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl81: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl44: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl22: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl42: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl23: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl80: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl25: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl79: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl82: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl33: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl83: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl35: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl34: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl24: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl78: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl84: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl30: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl76: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl75: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl40: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl38: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl39: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl29: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl21: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl32: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl26: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl43: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl37: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl36: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl41: tasks 288-303: Exited with exit code 127
+Resetting now...

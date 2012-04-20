@@ -1,0 +1,206 @@
+/g/g24/rountree/local/src/power
+nodes=16 ntasks=64
++ export BMARK_STRING=cg.D.64
++ BMARK_STRING=cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_47_36_405204992
++ mkdir 2012_04_19_14_47_36_405204992
++ cd 2012_04_19_14_47_36_405204992
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_47_36_405204992
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_50_10_643222735
++ mkdir 2012_04_19_14_50_10_643222735
++ cd 2012_04_19_14_50_10_643222735
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_50_10_643222735
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_51_41_321588867
++ mkdir 2012_04_19_14_51_41_321588867
++ cd 2012_04_19_14_51_41_321588867
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_51_41_321588867
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=cg.D.64
++ BMARK_STRING=cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_53_00_161034763
++ mkdir 2012_04_19_14_53_00_161034763
++ cd 2012_04_19_14_53_00_161034763
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_53_00_161034763
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_55_33_441696083
++ mkdir 2012_04_19_14_55_33_441696083
++ cd 2012_04_19_14_55_33_441696083
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_55_33_441696083
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_57_03_963900235
++ mkdir 2012_04_19_14_57_03_963900235
++ cd 2012_04_19_14_57_03_963900235
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_57_03_963900235
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=cg.D.64
++ BMARK_STRING=cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_58_14_823513276
++ mkdir 2012_04_19_14_58_14_823513276
++ cd 2012_04_19_14_58_14_823513276
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_58_14_823513276
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_00_48_077341974
++ mkdir 2012_04_19_15_00_48_077341974
++ cd 2012_04_19_15_00_48_077341974
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_00_48_077341974
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_02_18_570405134
++ mkdir 2012_04_19_15_02_18_570405134
++ cd 2012_04_19_15_02_18_570405134
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_02_18_570405134
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=cg.D.64
++ BMARK_STRING=cg.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_03_24_938837752
++ mkdir 2012_04_19_15_03_24_938837752
++ cd 2012_04_19_15_03_24_938837752
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_03_24_938837752
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_05_58_873961166
++ mkdir 2012_04_19_15_05_58_873961166
++ cd 2012_04_19_15_05_58_873961166
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_05_58_873961166
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_07_29_326661624
++ mkdir 2012_04_19_15_07_29_326661624
++ cd 2012_04_19_15_07_29_326661624
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_07_29_326661624
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh 256
+Resetting now...

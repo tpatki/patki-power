@@ -1,0 +1,314 @@
+/g/g24/rountree/local/src/power
+nodes=16 ntasks=64
++ export BMARK_STRING=sp.D.64
++ BMARK_STRING=sp.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_51_06_140342487
++ mkdir 2012_04_19_16_51_06_140342487
++ cd 2012_04_19_16_51_06_140342487
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_51_06_140342487
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=sp.D.128
++ BMARK_STRING=sp.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_54_00_566252409
++ mkdir 2012_04_19_16_54_00_566252409
++ cd 2012_04_19_16_54_00_566252409
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_54_00_566252409
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=sp.D.256
++ BMARK_STRING=sp.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_55_49_266277035
++ mkdir 2012_04_19_16_55_49_266277035
++ cd 2012_04_19_16_55_49_266277035
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_55_49_266277035
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=sp.D.64
++ BMARK_STRING=sp.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_57_15_932903564
++ mkdir 2012_04_19_16_57_15_932903564
++ cd 2012_04_19_16_57_15_932903564
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_57_15_932903564
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=sp.D.128
++ BMARK_STRING=sp.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_00_08_866042094
++ mkdir 2012_04_19_17_00_08_866042094
++ cd 2012_04_19_17_00_08_866042094
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_00_08_866042094
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=sp.D.256
++ BMARK_STRING=sp.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_01_52_579851447
++ mkdir 2012_04_19_17_01_52_579851447
++ cd 2012_04_19_17_01_52_579851447
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_01_52_579851447
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=sp.D.64
++ BMARK_STRING=sp.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_03_06_720978010
++ mkdir 2012_04_19_17_03_06_720978010
++ cd 2012_04_19_17_03_06_720978010
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_03_06_720978010
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=sp.D.128
++ BMARK_STRING=sp.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_05_59_652384305
++ mkdir 2012_04_19_17_05_59_652384305
++ cd 2012_04_19_17_05_59_652384305
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_05_59_652384305
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=sp.D.256
++ BMARK_STRING=sp.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_07_44_294186919
++ mkdir 2012_04_19_17_07_44_294186919
++ cd 2012_04_19_17_07_44_294186919
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_07_44_294186919
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=sp.D.64
++ BMARK_STRING=sp.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_08_54_053602765
++ mkdir 2012_04_19_17_08_54_053602765
++ cd 2012_04_19_17_08_54_053602765
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_08_54_053602765
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=sp.D.128
++ BMARK_STRING=sp.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_11_46_889199926
++ mkdir 2012_04_19_17_11_46_889199926
++ cd 2012_04_19_17_11_46_889199926
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_11_46_889199926
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=sp.D.256
++ BMARK_STRING=sp.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_13_31_339042354
++ mkdir 2012_04_19_17_13_31_339042354
++ cd 2012_04_19_17_13_31_339042354
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_17_13_31_339042354
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e sp.err -o out.dat --cpu_bind=sockets ../spCL.sh 256
+Resetting now...

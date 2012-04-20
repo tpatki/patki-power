@@ -1,0 +1,266 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_15_12_110376242
++ mkdir 2012_04_19_17_15_12_110376242
++ cd 2012_04_19_17_15_12_110376242
++ env
++ hostname
++ echo 2012_04_19_17_15_12_110376242
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_15_12_110376242
+2012_04_19_17_15_12_110376242
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_16_31_119749311
++ mkdir 2012_04_19_17_16_31_119749311
++ cd 2012_04_19_17_16_31_119749311
++ env
++ hostname
++ echo 2012_04_19_17_16_31_119749311
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_16_31_119749311
+2012_04_19_17_16_31_119749311
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_17_48_143086868
++ mkdir 2012_04_19_17_17_48_143086868
++ cd 2012_04_19_17_17_48_143086868
++ env
++ hostname
++ echo 2012_04_19_17_17_48_143086868
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_17_48_143086868
+2012_04_19_17_17_48_143086868
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_19_07_381071366
++ mkdir 2012_04_19_17_19_07_381071366
++ cd 2012_04_19_17_19_07_381071366
++ env
++ hostname
++ echo 2012_04_19_17_19_07_381071366
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_19_07_381071366
+2012_04_19_17_19_07_381071366
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_20_12_153241412
++ mkdir 2012_04_19_17_20_12_153241412
++ cd 2012_04_19_17_20_12_153241412
++ env
++ hostname
++ echo 2012_04_19_17_20_12_153241412
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_20_12_153241412
+2012_04_19_17_20_12_153241412
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_21_17_850442395
++ mkdir 2012_04_19_17_21_17_850442395
++ cd 2012_04_19_17_21_17_850442395
++ env
++ hostname
++ echo 2012_04_19_17_21_17_850442395
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_21_17_850442395
+2012_04_19_17_21_17_850442395
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_22_24_177569289
++ mkdir 2012_04_19_17_22_24_177569289
++ cd 2012_04_19_17_22_24_177569289
++ env
++ hostname
++ echo 2012_04_19_17_22_24_177569289
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_22_24_177569289
+2012_04_19_17_22_24_177569289
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_23_24_274946092
++ mkdir 2012_04_19_17_23_24_274946092
++ cd 2012_04_19_17_23_24_274946092
++ env
++ hostname
++ echo 2012_04_19_17_23_24_274946092
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_23_24_274946092
+2012_04_19_17_23_24_274946092
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_24_24_860580541
++ mkdir 2012_04_19_17_24_24_860580541
++ cd 2012_04_19_17_24_24_860580541
++ env
++ hostname
++ echo 2012_04_19_17_24_24_860580541
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_24_24_860580541
+2012_04_19_17_24_24_860580541
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=128
++ export BMARK_STRING=sphot.128
++ BMARK_STRING=sphot.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_25_28_811476430
++ mkdir 2012_04_19_17_25_28_811476430
++ cd 2012_04_19_17_25_28_811476430
++ env
++ hostname
++ echo 2012_04_19_17_25_28_811476430
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_25_28_811476430
+2012_04_19_17_25_28_811476430
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=128 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=256
++ export BMARK_STRING=sphot.256
++ BMARK_STRING=sphot.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_26_28_736750527
++ mkdir 2012_04_19_17_26_28_736750527
++ cd 2012_04_19_17_26_28_736750527
++ env
++ hostname
++ echo 2012_04_19_17_26_28_736750527
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_26_28_736750527
+2012_04_19_17_26_28_736750527
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=256 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+nodes=32 ntasks=512
++ export BMARK_STRING=sphot.512
++ BMARK_STRING=sphot.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_17_27_28_368823306
++ mkdir 2012_04_19_17_27_28_368823306
++ cd 2012_04_19_17_27_28_368823306
++ env
++ hostname
++ echo 2012_04_19_17_27_28_368823306
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ echo 32
+32
++ echo 2012_04_19_17_27_28_368823306
+2012_04_19_17_27_28_368823306
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ srun --nodes=32 --ntasks=512 -ppbatch -e sphot.err -o sphot.dat --cpu_bind=sockets sh ../sphotCL.sh
+Resetting now...
