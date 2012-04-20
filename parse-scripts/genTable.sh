@@ -36,6 +36,5 @@ paste -d ' ' .info clamp_data row.out  > .final-table
 
 sed '1 i freq nodes cores pkg-clamp-0 pkg-clamp-1 dram-clamp-0 dram-clamp-1 avg-time avg-pkg-0 avg-pp0-0 avg-dram-0 avg-pkg-1 avg-pp0-1 avg-dram-1 tot-pkg-0 tot-pp0-0 tot-dram-0 tot-pkg-1 tot-pp0-1 tot-dram-1' .final-table > table.out
 
-rm tmp2 tmp3 tmp4
-rm .freq .cores .nodes .final-table node_data.R.*
+rm -f tmp2 .freq .cores .nodes .final-table node_data.R.*
 
