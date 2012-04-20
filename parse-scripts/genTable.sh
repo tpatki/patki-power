@@ -12,7 +12,7 @@ fi
 
 execDir=`dirname $0`
 
-find $1 -type d -maxdepth 1 | egrep -o '([[:digit:]]+_){6}[[:digit:]]+' | sort > .id
+find $1 -maxdepth 1 -type d| egrep -o '([[:digit:]]+_){6}[[:digit:]]+' | sort > .id
 
 cat .id | xargs -I{} grep cores $1/{}/info | cut -d ":" -f 2 | sed 's/[ \t]*//g' > .cores
 cat .id | xargs -I{} grep nodes $1/{}/info | cut -d ":" -f 2 |sed 's/[ \t]*//g'  > .nodes
