@@ -22,4 +22,16 @@ dummy-tmp/*
 *.bak
 *~
 bmark/irs-with-path/irs/patki/irs-build/
-
+tmp*
+node_data*
+.nodes
+.info
+.freq
+.final-table
+.cores
+.clamp-table
+clamp_data
+enable_bits
+.RData
+.Rhistory
+row.out

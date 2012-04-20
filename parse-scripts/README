@@ -1,0 +1,8 @@
+Run genTable.sh <data directory>
+
+It should create table.out, which contains the power as well as timing data and general info.
+
+Situations to be wary of:
+
+(1) The script uses find command in a way that it will look recursively for any data files -- make sure you don't have erroneous runs or previous runs lingering on in the directory that you run this in. I know this deserves a fix, but that can wait for later.
+
