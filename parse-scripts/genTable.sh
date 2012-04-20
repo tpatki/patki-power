@@ -24,7 +24,7 @@ paste -d ' ' .id .freq .nodes .cores > .info
 
 rm -f clamp_data node_data.R.*
 i=0
-for d in `find $1 -name '2012*'`
+for d in `cat .id | xargs -I{} echo $1/{}`
 do
     i=`expr $i + 1`
 	sh $execDir/parsePowerData.sh $d `printf "%04u" $i`
