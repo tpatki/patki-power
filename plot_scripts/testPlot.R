@@ -16,13 +16,32 @@ a$coresPerNode = a$cores / a$nodes
 
 sel = which(a$pkg.clamp.0 == pkgLimit)
 coresPerNode = unique(a[sel, 'coresPerNode'])
+colors = rainbow(length(coresPerNode))
+
+#plot(1:length(colors), col=colors)
+
 sel1 = intersect(sel, which(a$coresPerNode == coresPerNode[1]))
 
-totalEnergy = a$avgNodePower[sel]*a$nodes[sel]*a$avg.time[sel]
-plot(a$cores[sel], totalEnergy, 
-		    main='total energy vs nodes & cores',
-#		    sub=paste(coresPerNode[1], 'cores per node'),
-		    xlab='cores',
-		    ylab='log total energy (joules)',
-		    log='y',
-		    ylim=c(1,10*max(totalEnergy)))
+a$totalEnergy = a$avgNodePower * a$nodes * a$avg.time
+
+plot(a$nodes[sel1],
+     a$totalEnergy[sel1], 
+     main='total energy vs nodes',
+     xlab='nodes',
+     ylab='total energy (joules)',
+     xaxt='n',
+     log='x',
+     col=colors[1],
+     xlim=range(a$nodes[sel]),
+     ylim=range(a$totalEnergy[sel])
+     )
+axis(1, at=unique(a$nodes[sel]))
+
+for(i in 2:length(coresPerNode)){
+  sel1 = intersect(sel, which(a$coresPerNode == coresPerNode[i]))
+  points(a$nodes[sel1],
+         a$totalEnergy[sel1], 
+         xaxt='n',
+         col=colors[i]
+         )
+}
