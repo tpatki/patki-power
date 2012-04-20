@@ -1,0 +1,8 @@
+#!/bin/bash
+#MSUB -l nodes=1
+#MSUB -q pbatch
+#MSUB -l walltime=00:05:00
+
+srun --nodes=1 --ntasks=4 --auto-affinity=start=0,verbose,cpt=1 -o out1.out -e err1.err hwloc-bind --get
+srun --nodes=1 --ntasks=8 --auto-affinity=start=0,verbose,cpt=1 -o out2.out -e err2.err hwloc-bind --get
+srun --nodes=1 --ntasks=16 --auto-affinity=start=0,verbose,cpt=1 -o out3.out -e err3.err hwloc-bind --get

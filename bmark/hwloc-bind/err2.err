@@ -1,0 +1,8 @@
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
