@@ -1,7 +1,4 @@
-To use the parse scripts, copy the three .sh files into a top-level directory 
-that contains the data (a directory that contains all the 2012* for that benchmark).
-
-Run genTable.sh
+Run genTable.sh <data directory>
 
 It should create table.out, which contains the power as well as timing data and general info.
 
