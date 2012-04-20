@@ -1,0 +1,206 @@
+/g/g24/rountree/local/src/power
+nodes=16 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_21_12_254692097
++ mkdir 2012_04_19_16_21_12_254692097
++ cd 2012_04_19_16_21_12_254692097
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_21_12_254692097
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_23_54_462405498
++ mkdir 2012_04_19_16_23_54_462405498
++ cd 2012_04_19_16_23_54_462405498
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_23_54_462405498
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_25_35_073858761
++ mkdir 2012_04_19_16_25_35_073858761
++ cd 2012_04_19_16_25_35_073858761
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_25_35_073858761
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_26_57_782269660
++ mkdir 2012_04_19_16_26_57_782269660
++ cd 2012_04_19_16_26_57_782269660
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_26_57_782269660
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_29_38_870171978
++ mkdir 2012_04_19_16_29_38_870171978
++ cd 2012_04_19_16_29_38_870171978
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_29_38_870171978
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_31_16_035863226
++ mkdir 2012_04_19_16_31_16_035863226
++ cd 2012_04_19_16_31_16_035863226
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_31_16_035863226
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_32_30_757060232
++ mkdir 2012_04_19_16_32_30_757060232
++ cd 2012_04_19_16_32_30_757060232
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_32_30_757060232
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_35_12_910286089
++ mkdir 2012_04_19_16_35_12_910286089
++ cd 2012_04_19_16_35_12_910286089
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_35_12_910286089
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_36_51_054831549
++ mkdir 2012_04_19_16_36_51_054831549
++ cd 2012_04_19_16_36_51_054831549
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_36_51_054831549
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_38_00_152948221
++ mkdir 2012_04_19_16_38_00_152948221
++ cd 2012_04_19_16_38_00_152948221
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_38_00_152948221
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=ft.D.128
++ BMARK_STRING=ft.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_40_42_682912863
++ mkdir 2012_04_19_16_40_42_682912863
++ cd 2012_04_19_16_40_42_682912863
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_40_42_682912863
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=128 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 128
+nodes=16 ntasks=256
++ export BMARK_STRING=ft.D.256
++ BMARK_STRING=ft.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_42_20_810860398
++ mkdir 2012_04_19_16_42_20_810860398
++ cd 2012_04_19_16_42_20_810860398
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_42_20_810860398
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e ft.err -o out.dat --cpu_bind=sockets ../ftCL.sh 256
+Resetting now...

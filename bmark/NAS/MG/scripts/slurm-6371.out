@@ -1,0 +1,206 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=mg.D.128
++ BMARK_STRING=mg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_47_23_182327786
++ mkdir 2012_04_19_16_47_23_182327786
++ cd 2012_04_19_16_47_23_182327786
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_47_23_182327786
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=mg.D.256
++ BMARK_STRING=mg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_47_42_030834277
++ mkdir 2012_04_19_16_47_42_030834277
++ cd 2012_04_19_16_47_42_030834277
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_47_42_030834277
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=mg.D.512
++ BMARK_STRING=mg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_47_56_451888570
++ mkdir 2012_04_19_16_47_56_451888570
++ cd 2012_04_19_16_47_56_451888570
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_47_56_451888570
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=mg.D.128
++ BMARK_STRING=mg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_48_12_488822615
++ mkdir 2012_04_19_16_48_12_488822615
++ cd 2012_04_19_16_48_12_488822615
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_48_12_488822615
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=mg.D.256
++ BMARK_STRING=mg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_48_30_396417063
++ mkdir 2012_04_19_16_48_30_396417063
++ cd 2012_04_19_16_48_30_396417063
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_48_30_396417063
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=mg.D.512
++ BMARK_STRING=mg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_48_44_303310061
++ mkdir 2012_04_19_16_48_44_303310061
++ cd 2012_04_19_16_48_44_303310061
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_48_44_303310061
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=mg.D.128
++ BMARK_STRING=mg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_48_58_979393397
++ mkdir 2012_04_19_16_48_58_979393397
++ cd 2012_04_19_16_48_58_979393397
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_48_58_979393397
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=mg.D.256
++ BMARK_STRING=mg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_49_16_796234936
++ mkdir 2012_04_19_16_49_16_796234936
++ cd 2012_04_19_16_49_16_796234936
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_49_16_796234936
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=mg.D.512
++ BMARK_STRING=mg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_49_30_954722757
++ mkdir 2012_04_19_16_49_30_954722757
++ cd 2012_04_19_16_49_30_954722757
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_49_30_954722757
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=mg.D.128
++ BMARK_STRING=mg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_49_44_402504996
++ mkdir 2012_04_19_16_49_44_402504996
++ cd 2012_04_19_16_49_44_402504996
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_49_44_402504996
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=mg.D.256
++ BMARK_STRING=mg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_50_02_227702053
++ mkdir 2012_04_19_16_50_02_227702053
++ cd 2012_04_19_16_50_02_227702053
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_50_02_227702053
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=mg.D.512
++ BMARK_STRING=mg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_50_16_087451309
++ mkdir 2012_04_19_16_50_16_087451309
++ cd 2012_04_19_16_50_16_087451309
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_50_16_087451309
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e mg.err -o out.dat --cpu_bind=sockets ../mgCL.sh 512
+Resetting now...

@@ -1,0 +1,206 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=ep.D.128
++ BMARK_STRING=ep.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_23_00_220365486
++ mkdir 2012_04_19_16_23_00_220365486
++ cd 2012_04_19_16_23_00_220365486
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_23_00_220365486
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ep.D.256
++ BMARK_STRING=ep.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_23_48_629394280
++ mkdir 2012_04_19_16_23_48_629394280
++ cd 2012_04_19_16_23_48_629394280
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_23_48_629394280
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ep.D.512
++ BMARK_STRING=ep.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_24_15_566121251
++ mkdir 2012_04_19_16_24_15_566121251
++ cd 2012_04_19_16_24_15_566121251
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_24_15_566121251
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ep.D.128
++ BMARK_STRING=ep.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_24_35_801850850
++ mkdir 2012_04_19_16_24_35_801850850
++ cd 2012_04_19_16_24_35_801850850
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_24_35_801850850
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ep.D.256
++ BMARK_STRING=ep.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_25_25_061346054
++ mkdir 2012_04_19_16_25_25_061346054
++ cd 2012_04_19_16_25_25_061346054
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_25_25_061346054
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ep.D.512
++ BMARK_STRING=ep.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_25_52_139902951
++ mkdir 2012_04_19_16_25_52_139902951
++ cd 2012_04_19_16_25_52_139902951
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_25_52_139902951
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ep.D.128
++ BMARK_STRING=ep.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_26_10_486997922
++ mkdir 2012_04_19_16_26_10_486997922
++ cd 2012_04_19_16_26_10_486997922
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_26_10_486997922
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ep.D.256
++ BMARK_STRING=ep.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_26_57_968745459
++ mkdir 2012_04_19_16_26_57_968745459
++ cd 2012_04_19_16_26_57_968745459
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_26_57_968745459
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ep.D.512
++ BMARK_STRING=ep.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_27_24_953330121
++ mkdir 2012_04_19_16_27_24_953330121
++ cd 2012_04_19_16_27_24_953330121
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_27_24_953330121
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=ep.D.128
++ BMARK_STRING=ep.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_27_42_408035891
++ mkdir 2012_04_19_16_27_42_408035891
++ cd 2012_04_19_16_27_42_408035891
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_27_42_408035891
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=ep.D.256
++ BMARK_STRING=ep.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_28_31_948061682
++ mkdir 2012_04_19_16_28_31_948061682
++ cd 2012_04_19_16_28_31_948061682
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_28_31_948061682
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=ep.D.512
++ BMARK_STRING=ep.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_28_59_214851382
++ mkdir 2012_04_19_16_28_59_214851382
++ cd 2012_04_19_16_28_59_214851382
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_28_59_214851382
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e ep.err -o out.dat --cpu_bind=sockets ../epCL.sh 512
+Resetting now...

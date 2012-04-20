@@ -1,0 +1,314 @@
+/g/g24/rountree/local/src/power
+nodes=16 ntasks=64
++ export BMARK_STRING=bt.D.64
++ BMARK_STRING=bt.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_47_36_404264266
++ mkdir 2012_04_19_14_47_36_404264266
++ cd 2012_04_19_14_47_36_404264266
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_47_36_404264266
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_14_56_17_427316547
++ mkdir 2012_04_19_14_56_17_427316547
++ cd 2012_04_19_14_56_17_427316547
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_14_56_17_427316547
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_02_28_418087572
++ mkdir 2012_04_19_15_02_28_418087572
++ cd 2012_04_19_15_02_28_418087572
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_02_28_418087572
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=bt.D.64
++ BMARK_STRING=bt.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_07_00_287245966
++ mkdir 2012_04_19_15_07_00_287245966
++ cd 2012_04_19_15_07_00_287245966
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_07_00_287245966
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_15_39_820158658
++ mkdir 2012_04_19_15_15_39_820158658
++ cd 2012_04_19_15_15_39_820158658
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_15_39_820158658
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_21_45_662202950
++ mkdir 2012_04_19_15_21_45_662202950
++ cd 2012_04_19_15_21_45_662202950
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_21_45_662202950
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=bt.D.64
++ BMARK_STRING=bt.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_24_43_887970323
++ mkdir 2012_04_19_15_24_43_887970323
++ cd 2012_04_19_15_24_43_887970323
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_24_43_887970323
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_33_23_454787444
++ mkdir 2012_04_19_15_33_23_454787444
++ cd 2012_04_19_15_33_23_454787444
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_33_23_454787444
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_38_29_274659669
++ mkdir 2012_04_19_15_38_29_274659669
++ cd 2012_04_19_15_38_29_274659669
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_38_29_274659669
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+nodes=16 ntasks=64
++ export BMARK_STRING=bt.D.64
++ BMARK_STRING=bt.D.64
++ n=16
++ cores=64
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 128 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 512 ']'
++ '[' 64 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_42_10_812539660
++ mkdir 2012_04_19_15_42_10_812539660
++ cd 2012_04_19_15_42_10_812539660
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_42_10_812539660
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=64 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 64
+nodes=16 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=16
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 16 -eq 16 ']'
++ cores=121
++ n=16
++ '[' 121 -eq 128 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_50_50_312501991
++ mkdir 2012_04_19_15_50_50_312501991
++ cd 2012_04_19_15_50_50_312501991
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_50_50_312501991
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=121 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 121
+nodes=16 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=16
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_15_55_55_873695273
++ mkdir 2012_04_19_15_55_55_873695273
++ cd 2012_04_19_15_55_55_873695273
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_15_55_55_873695273
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 16'
++ srun --nodes=16 --ntasks=256 -ppbatch -e bt.err -o out.dat --cpu_bind=sockets ../btCL.sh 256
+Resetting now...

@@ -1,0 +1,206 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=lu.C.128
++ BMARK_STRING=lu.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_44_02_202877671
++ mkdir 2012_04_19_16_44_02_202877671
++ cd 2012_04_19_16_44_02_202877671
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_44_02_202877671
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=lu.C.256
++ BMARK_STRING=lu.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_44_19_806806269
++ mkdir 2012_04_19_16_44_19_806806269
++ cd 2012_04_19_16_44_19_806806269
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_44_19_806806269
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=lu.C.512
++ BMARK_STRING=lu.C.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_44_32_455803779
++ mkdir 2012_04_19_16_44_32_455803779
++ cd 2012_04_19_16_44_32_455803779
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_44_32_455803779
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=lu.C.128
++ BMARK_STRING=lu.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_44_45_544880551
++ mkdir 2012_04_19_16_44_45_544880551
++ cd 2012_04_19_16_44_45_544880551
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_44_45_544880551
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=lu.C.256
++ BMARK_STRING=lu.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_45_02_010728529
++ mkdir 2012_04_19_16_45_02_010728529
++ cd 2012_04_19_16_45_02_010728529
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_45_02_010728529
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=lu.C.512
++ BMARK_STRING=lu.C.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_45_14_612428790
++ mkdir 2012_04_19_16_45_14_612428790
++ cd 2012_04_19_16_45_14_612428790
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_45_14_612428790
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=lu.C.128
++ BMARK_STRING=lu.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_45_26_530071677
++ mkdir 2012_04_19_16_45_26_530071677
++ cd 2012_04_19_16_45_26_530071677
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_45_26_530071677
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=lu.C.256
++ BMARK_STRING=lu.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_45_42_871533928
++ mkdir 2012_04_19_16_45_42_871533928
++ cd 2012_04_19_16_45_42_871533928
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_45_42_871533928
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=lu.C.512
++ BMARK_STRING=lu.C.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_45_55_624759418
++ mkdir 2012_04_19_16_45_55_624759418
++ cd 2012_04_19_16_45_55_624759418
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_45_55_624759418
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 512
+nodes=32 ntasks=128
++ export BMARK_STRING=lu.C.128
++ BMARK_STRING=lu.C.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_46_07_225666047
++ mkdir 2012_04_19_16_46_07_225666047
++ cd 2012_04_19_16_46_07_225666047
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_46_07_225666047
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=128 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 128
+nodes=32 ntasks=256
++ export BMARK_STRING=lu.C.256
++ BMARK_STRING=lu.C.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_46_23_788224206
++ mkdir 2012_04_19_16_46_23_788224206
++ cd 2012_04_19_16_46_23_788224206
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_46_23_788224206
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=256 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 256
+nodes=32 ntasks=512
++ export BMARK_STRING=lu.C.512
++ BMARK_STRING=lu.C.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_19_16_46_36_188948529
++ mkdir 2012_04_19_16_46_36_188948529
++ cd 2012_04_19_16_46_36_188948529
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_19_16_46_36_188948529
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ srun --nodes=32 --ntasks=512 -ppbatch -e lu.err -o out.dat --cpu_bind=sockets ../luCL.sh 512
+Resetting now...
