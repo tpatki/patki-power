@@ -1,0 +1,242 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_44_56_355653098
++ mkdir 2012_04_20_19_44_56_355653098
++ cd 2012_04_20_19_44_56_355653098
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_44_56_355653098
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ '[' 128 -le 8 ']'
++ srun --nodes=32 --ntasks=128 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 128
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_47_28_151327502
++ mkdir 2012_04_20_19_47_28_151327502
++ cd 2012_04_20_19_47_28_151327502
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_47_28_151327502
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 256
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=cg.D.512
++ BMARK_STRING=cg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_48_44_054824035
++ mkdir 2012_04_20_19_48_44_054824035
++ cd 2012_04_20_19_48_44_054824035
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_48_44_054824035
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ '[' 512 -le 8 ']'
++ srun --nodes=32 --ntasks=512 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 512
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_49_35_669348990
++ mkdir 2012_04_20_19_49_35_669348990
++ cd 2012_04_20_19_49_35_669348990
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_49_35_669348990
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ '[' 128 -le 8 ']'
++ srun --nodes=32 --ntasks=128 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 128
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_51_04_983841034
++ mkdir 2012_04_20_19_51_04_983841034
++ cd 2012_04_20_19_51_04_983841034
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_51_04_983841034
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 256
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=cg.D.512
++ BMARK_STRING=cg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_52_14_485687183
++ mkdir 2012_04_20_19_52_14_485687183
++ cd 2012_04_20_19_52_14_485687183
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_52_14_485687183
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ '[' 512 -le 8 ']'
++ srun --nodes=32 --ntasks=512 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 512
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_53_01_511205307
++ mkdir 2012_04_20_19_53_01_511205307
++ cd 2012_04_20_19_53_01_511205307
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_53_01_511205307
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ '[' 128 -le 8 ']'
++ srun --nodes=32 --ntasks=128 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 128
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_54_30_723039618
++ mkdir 2012_04_20_19_54_30_723039618
++ cd 2012_04_20_19_54_30_723039618
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_54_30_723039618
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 256
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=cg.D.512
++ BMARK_STRING=cg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_55_35_893789388
++ mkdir 2012_04_20_19_55_35_893789388
++ cd 2012_04_20_19_55_35_893789388
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_55_35_893789388
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ '[' 512 -le 8 ']'
++ srun --nodes=32 --ntasks=512 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 512
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=128
++ export BMARK_STRING=cg.D.128
++ BMARK_STRING=cg.D.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_56_20_730909316
++ mkdir 2012_04_20_19_56_20_730909316
++ cd 2012_04_20_19_56_20_730909316
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_56_20_730909316
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 32'
++ '[' 128 -le 8 ']'
++ srun --nodes=32 --ntasks=128 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 128
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=cg.D.256
++ BMARK_STRING=cg.D.256
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_57_50_306893872
++ mkdir 2012_04_20_19_57_50_306893872
++ cd 2012_04_20_19_57_50_306893872
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_57_50_306893872
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 256
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=cg.D.512
++ BMARK_STRING=cg.D.512
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_20_19_58_55_557878775
++ mkdir 2012_04_20_19_58_55_557878775
++ cd 2012_04_20_19_58_55_557878775
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_20_19_58_55_557878775
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 32'
++ '[' 512 -le 8 ']'
++ srun --nodes=32 --ntasks=512 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 512
++ sh ../../../../../setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+Resetting now...
