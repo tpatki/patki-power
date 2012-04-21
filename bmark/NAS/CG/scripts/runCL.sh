@@ -26,6 +26,12 @@ echo 'nodes: '$1 >> info
 #srun --nodes=$1 --ntasks=$2 -ppbatch -e cg.err -o out.dat --cpu_bind=sockets ../cgCL.sh $2
 
 #Use auto-affinity instead of cpu_bind=sockets
+#Also, if the second socket is not in use, then set the other socket at a lower frequency
+
+if [ $2 -le 8 ]
+then
+	sh ../../../../../setcpufreq.sh 1200000 8 15
+fi
 
 srun --nodes=$1 --ntasks=$2 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh $2
 
