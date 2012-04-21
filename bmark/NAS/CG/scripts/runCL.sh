@@ -35,3 +35,5 @@ fi
 
 srun --nodes=$1 --ntasks=$2 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh $2
 
+#Reset all cores back to original freq which is 2600000 after the run
+sh ../../../../../setcpufreq.sh 2600000 0 15
