@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cd ./NAS/BT/scripts
+cd ./NAS/BT/scripts
 #echo `pwd`
 
 #msub bt-4-node.msub
