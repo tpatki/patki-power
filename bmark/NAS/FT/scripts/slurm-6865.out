@@ -1,0 +1,242 @@
+/g/g24/rountree/local/src/power
+nodes=4 ntasks=16
++ export BMARK_STRING=ft.D.16
++ BMARK_STRING=ft.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_57_15_371861338
++ mkdir 2012_04_24_18_57_15_371861338
++ cd 2012_04_24_18_57_15_371861338
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_57_15_371861338
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 16
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=32
++ export BMARK_STRING=ft.D.32
++ BMARK_STRING=ft.D.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_08_40_449360277
++ mkdir 2012_04_24_19_08_40_449360277
++ cd 2012_04_24_19_08_40_449360277
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_08_40_449360277
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 4'
++ '[' 32 -le 8 ']'
++ srun --nodes=4 --ntasks=32 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_17_08_044970648
++ mkdir 2012_04_24_19_17_08_044970648
++ cd 2012_04_24_19_17_08_044970648
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_17_08_044970648
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=16
++ export BMARK_STRING=ft.D.16
++ BMARK_STRING=ft.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_21_57_336253991
++ mkdir 2012_04_24_19_21_57_336253991
++ cd 2012_04_24_19_21_57_336253991
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_21_57_336253991
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 16
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=32
++ export BMARK_STRING=ft.D.32
++ BMARK_STRING=ft.D.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_32_50_767043358
++ mkdir 2012_04_24_19_32_50_767043358
++ cd 2012_04_24_19_32_50_767043358
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_32_50_767043358
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 4'
++ '[' 32 -le 8 ']'
++ srun --nodes=4 --ntasks=32 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_40_11_487388400
++ mkdir 2012_04_24_19_40_11_487388400
++ cd 2012_04_24_19_40_11_487388400
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_40_11_487388400
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=16
++ export BMARK_STRING=ft.D.16
++ BMARK_STRING=ft.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_44_26_096661791
++ mkdir 2012_04_24_19_44_26_096661791
++ cd 2012_04_24_19_44_26_096661791
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_44_26_096661791
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 16
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=32
++ export BMARK_STRING=ft.D.32
++ BMARK_STRING=ft.D.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_19_55_19_703943058
++ mkdir 2012_04_24_19_55_19_703943058
++ cd 2012_04_24_19_55_19_703943058
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_19_55_19_703943058
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 4'
++ '[' 32 -le 8 ']'
++ srun --nodes=4 --ntasks=32 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_20_01_58_749604641
++ mkdir 2012_04_24_20_01_58_749604641
++ cd 2012_04_24_20_01_58_749604641
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_20_01_58_749604641
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=16
++ export BMARK_STRING=ft.D.16
++ BMARK_STRING=ft.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_20_05_53_513137724
++ mkdir 2012_04_24_20_05_53_513137724
++ cd 2012_04_24_20_05_53_513137724
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_20_05_53_513137724
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 16
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=32
++ export BMARK_STRING=ft.D.32
++ BMARK_STRING=ft.D.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_20_16_47_199153272
++ mkdir 2012_04_24_20_16_47_199153272
++ cd 2012_04_24_20_16_47_199153272
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_20_16_47_199153272
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 4'
++ '[' 32 -le 8 ']'
++ srun --nodes=4 --ntasks=32 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=ft.D.64
++ BMARK_STRING=ft.D.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_20_23_14_767199035
++ mkdir 2012_04_24_20_23_14_767199035
++ cd 2012_04_24_20_23_14_767199035
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_20_23_14_767199035
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e ft.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../ftCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+Resetting now...

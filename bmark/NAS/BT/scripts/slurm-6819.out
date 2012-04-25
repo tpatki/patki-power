@@ -1,0 +1,490 @@
+/g/g24/rountree/local/src/power
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_00_45_649419404
++ mkdir 2012_04_24_18_00_45_649419404
++ cd 2012_04_24_18_00_45_649419404
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_00_45_649419404
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ '[' 128 -le 8 ']'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 121
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_06_08_092677705
++ mkdir 2012_04_24_18_06_08_092677705
++ cd 2012_04_24_18_06_08_092677705
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_06_08_092677705
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 256
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_09_35_550201483
++ mkdir 2012_04_24_18_09_35_550201483
++ cd 2012_04_24_18_09_35_550201483
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_09_35_550201483
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ '[' 512 -le 8 ']'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 484
+srun: error: rzmerl58: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl79: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl81: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl82: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl66: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl88: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl69: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl85: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl74: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl80: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl83: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl86: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl60: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl89: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl78: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl84: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl87: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl62: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl59: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl76: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl73: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl71: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl67: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl77: tasks 288-303: Exited with exit code 127
+srun: error: rzmerl65: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl63: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl75: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl72: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl70: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl68: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl61: tasks 48-63: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_09_36_169997091
++ mkdir 2012_04_24_18_09_36_169997091
++ cd 2012_04_24_18_09_36_169997091
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_09_36_169997091
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ '[' 128 -le 8 ']'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 121
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_14_50_938361227
++ mkdir 2012_04_24_18_14_50_938361227
++ cd 2012_04_24_18_14_50_938361227
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_14_50_938361227
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 256
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_18_49_350937735
++ mkdir 2012_04_24_18_18_49_350937735
++ cd 2012_04_24_18_18_49_350937735
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_18_49_350937735
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ '[' 512 -le 8 ']'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 484
+srun: error: rzmerl58: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl79: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl82: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl81: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl87: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl89: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl84: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl86: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl80: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl78: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl85: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl88: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl83: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl60: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl66: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl70: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl69: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl68: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl65: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl59: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl61: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl67: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl71: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl74: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl75: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl76: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl62: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl77: tasks 288-303: Exited with exit code 127
+srun: error: rzmerl72: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl73: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl63: tasks 80-95: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_18_49_899168632
++ mkdir 2012_04_24_18_18_49_899168632
++ cd 2012_04_24_18_18_49_899168632
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_18_49_899168632
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ '[' 128 -le 8 ']'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 121
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_24_03_979248392
++ mkdir 2012_04_24_18_24_03_979248392
++ cd 2012_04_24_18_24_03_979248392
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_24_03_979248392
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 256
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_26_47_009503516
++ mkdir 2012_04_24_18_26_47_009503516
++ cd 2012_04_24_18_26_47_009503516
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_26_47_009503516
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ '[' 512 -le 8 ']'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 484
+srun: error: rzmerl58: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl81: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl82: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl86: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl79: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl59: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl80: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl88: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl87: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl84: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl74: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl89: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl61: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl85: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl83: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl78: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl69: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl68: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl70: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl62: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl60: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl73: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl76: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl67: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl65: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl66: tasks 112-127: Exited with exit code 127
+srun: error: rzmerl63: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl72: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl75: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl77: tasks 288-303: Exited with exit code 127
+srun: error: rzmerl71: tasks 192-207: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=128
++ export BMARK_STRING=bt.D.128
++ BMARK_STRING=bt.D.128
++ n=32
++ cores=128
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 16 ']'
++ '[' 128 -eq 128 ']'
++ '[' 32 -eq 32 ']'
++ cores=121
++ n=31
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 512 ']'
++ '[' 121 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_26_47_520310981
++ mkdir 2012_04_24_18_26_47_520310981
++ cd 2012_04_24_18_26_47_520310981
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_26_47_520310981
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 121'
++ echo 'nodes: 31'
++ '[' 128 -le 8 ']'
++ srun --nodes=31 --ntasks=121 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 121
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=256
++ export BMARK_STRING=bt.D.256
++ BMARK_STRING=bt.D.256
++ n=32
++ cores=256
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 128 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 512 ']'
++ '[' 256 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_32_01_617940929
++ mkdir 2012_04_24_18_32_01_617940929
++ cd 2012_04_24_18_32_01_617940929
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_32_01_617940929
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 256'
++ echo 'nodes: 32'
++ '[' 256 -le 8 ']'
++ srun --nodes=32 --ntasks=256 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 256
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=32 ntasks=512
++ export BMARK_STRING=bt.D.512
++ BMARK_STRING=bt.D.512
++ n=32
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 32 -eq 32 ']'
++ cores=484
++ n=31
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 512 ']'
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_35_43_724291917
++ mkdir 2012_04_24_18_35_43_724291917
++ cd 2012_04_24_18_35_43_724291917
++ touch out.dat
++ env
++ hostname
++ echo 2012_04_24_18_35_43_724291917
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 484'
++ echo 'nodes: 31'
++ '[' 512 -le 8 ']'
++ srun --nodes=31 --ntasks=484 -ppbatch -e bt.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../btCL.sh 484
+srun: error: rzmerl58: tasks 0-15: Exited with exit code 127
+srun: error: rzmerl81: tasks 349-363: Exited with exit code 127
+srun: error: rzmerl82: tasks 364-378: Exited with exit code 127
+srun: error: rzmerl86: tasks 424-438: Exited with exit code 127
+srun: error: rzmerl79: tasks 319-333: Exited with exit code 127
+srun: error: rzmerl88: tasks 454-468: Exited with exit code 127
+srun: error: rzmerl80: tasks 334-348: Exited with exit code 127
+srun: error: rzmerl60: tasks 32-47: Exited with exit code 127
+srun: error: rzmerl83: tasks 379-393: Exited with exit code 127
+srun: error: rzmerl85: tasks 409-423: Exited with exit code 127
+srun: error: rzmerl87: tasks 439-453: Exited with exit code 127
+srun: error: rzmerl70: tasks 176-191: Exited with exit code 127
+srun: error: rzmerl78: tasks 304-318: Exited with exit code 127
+srun: error: rzmerl69: tasks 160-175: Exited with exit code 127
+srun: error: rzmerl61: tasks 48-63: Exited with exit code 127
+srun: error: rzmerl68: tasks 144-159: Exited with exit code 127
+srun: error: rzmerl89: tasks 469-483: Exited with exit code 127
+srun: error: rzmerl84: tasks 394-408: Exited with exit code 127
+srun: error: rzmerl74: tasks 240-255: Exited with exit code 127
+srun: error: rzmerl59: tasks 16-31: Exited with exit code 127
+srun: error: rzmerl72: tasks 208-223: Exited with exit code 127
+srun: error: rzmerl73: tasks 224-239: Exited with exit code 127
+srun: error: rzmerl62: tasks 64-79: Exited with exit code 127
+srun: error: rzmerl75: tasks 256-271: Exited with exit code 127
+srun: error: rzmerl67: tasks 128-143: Exited with exit code 127
+srun: error: rzmerl65: tasks 96-111: Exited with exit code 127
+srun: error: rzmerl77: tasks 288-303: Exited with exit code 127
+srun: error: rzmerl63: tasks 80-95: Exited with exit code 127
+srun: error: rzmerl71: tasks 192-207: Exited with exit code 127
+srun: error: rzmerl76: tasks 272-287: Exited with exit code 127
+srun: error: rzmerl66: tasks 112-127: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+Resetting now...

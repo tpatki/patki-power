@@ -1,0 +1,290 @@
+/g/g24/rountree/local/src/power
+nodes=8 ntasks=32
++ export BMARK_STRING=sweep.32
++ BMARK_STRING=sweep.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_37_18_339373052
++ mkdir 2012_04_24_18_37_18_339373052
++ cd 2012_04_24_18_37_18_339373052
++ env
++ hostname
++ echo 2012_04_24_18_37_18_339373052
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_37_18_339373052
+2012_04_24_18_37_18_339373052
++ cp ../../../input/input-32 ./input
++ '[' 32 -le 8 ']'
++ srun --nodes=8 --ntasks=32 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=64
++ export BMARK_STRING=sweep.64
++ BMARK_STRING=sweep.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_38_03_018586604
++ mkdir 2012_04_24_18_38_03_018586604
++ cd 2012_04_24_18_38_03_018586604
++ env
++ hostname
++ echo 2012_04_24_18_38_03_018586604
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_38_03_018586604
+2012_04_24_18_38_03_018586604
++ cp ../../../input/input-64 ./input
++ '[' 64 -le 8 ']'
++ srun --nodes=8 --ntasks=64 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_38_38_887050009
++ mkdir 2012_04_24_18_38_38_887050009
++ cd 2012_04_24_18_38_38_887050009
++ env
++ hostname
++ echo 2012_04_24_18_38_38_887050009
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_38_38_887050009
+2012_04_24_18_38_38_887050009
++ cp ../../../input/input-128 ./input
++ '[' 128 -le 8 ']'
++ srun --nodes=8 --ntasks=128 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 128
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=32
++ export BMARK_STRING=sweep.32
++ BMARK_STRING=sweep.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_39_08_554304495
++ mkdir 2012_04_24_18_39_08_554304495
++ cd 2012_04_24_18_39_08_554304495
++ env
++ hostname
++ echo 2012_04_24_18_39_08_554304495
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_39_08_554304495
+2012_04_24_18_39_08_554304495
++ cp ../../../input/input-32 ./input
++ '[' 32 -le 8 ']'
++ srun --nodes=8 --ntasks=32 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=64
++ export BMARK_STRING=sweep.64
++ BMARK_STRING=sweep.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_39_51_931909785
++ mkdir 2012_04_24_18_39_51_931909785
++ cd 2012_04_24_18_39_51_931909785
++ env
++ hostname
++ echo 2012_04_24_18_39_51_931909785
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_39_51_931909785
+2012_04_24_18_39_51_931909785
++ cp ../../../input/input-64 ./input
++ '[' 64 -le 8 ']'
++ srun --nodes=8 --ntasks=64 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_40_24_257836791
++ mkdir 2012_04_24_18_40_24_257836791
++ cd 2012_04_24_18_40_24_257836791
++ env
++ hostname
++ echo 2012_04_24_18_40_24_257836791
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_40_24_257836791
+2012_04_24_18_40_24_257836791
++ cp ../../../input/input-128 ./input
++ '[' 128 -le 8 ']'
++ srun --nodes=8 --ntasks=128 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 128
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=32
++ export BMARK_STRING=sweep.32
++ BMARK_STRING=sweep.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_40_50_333366263
++ mkdir 2012_04_24_18_40_50_333366263
++ cd 2012_04_24_18_40_50_333366263
++ env
++ hostname
++ echo 2012_04_24_18_40_50_333366263
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_40_50_333366263
+2012_04_24_18_40_50_333366263
++ cp ../../../input/input-32 ./input
++ '[' 32 -le 8 ']'
++ srun --nodes=8 --ntasks=32 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=64
++ export BMARK_STRING=sweep.64
++ BMARK_STRING=sweep.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_41_34_007473297
++ mkdir 2012_04_24_18_41_34_007473297
++ cd 2012_04_24_18_41_34_007473297
++ env
++ hostname
++ echo 2012_04_24_18_41_34_007473297
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_41_34_007473297
+2012_04_24_18_41_34_007473297
++ cp ../../../input/input-64 ./input
++ '[' 64 -le 8 ']'
++ srun --nodes=8 --ntasks=64 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_42_05_325843025
++ mkdir 2012_04_24_18_42_05_325843025
++ cd 2012_04_24_18_42_05_325843025
++ env
++ hostname
++ echo 2012_04_24_18_42_05_325843025
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_42_05_325843025
+2012_04_24_18_42_05_325843025
++ cp ../../../input/input-128 ./input
++ '[' 128 -le 8 ']'
++ srun --nodes=8 --ntasks=128 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 128
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=32
++ export BMARK_STRING=sweep.32
++ BMARK_STRING=sweep.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_42_30_670998745
++ mkdir 2012_04_24_18_42_30_670998745
++ cd 2012_04_24_18_42_30_670998745
++ env
++ hostname
++ echo 2012_04_24_18_42_30_670998745
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_42_30_670998745
+2012_04_24_18_42_30_670998745
++ cp ../../../input/input-32 ./input
++ '[' 32 -le 8 ']'
++ srun --nodes=8 --ntasks=32 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=64
++ export BMARK_STRING=sweep.64
++ BMARK_STRING=sweep.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_43_15_437244000
++ mkdir 2012_04_24_18_43_15_437244000
++ cd 2012_04_24_18_43_15_437244000
++ env
++ hostname
++ echo 2012_04_24_18_43_15_437244000
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_43_15_437244000
+2012_04_24_18_43_15_437244000
++ cp ../../../input/input-64 ./input
++ '[' 64 -le 8 ']'
++ srun --nodes=8 --ntasks=64 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=8 ntasks=128
++ export BMARK_STRING=sweep.128
++ BMARK_STRING=sweep.128
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_18_43_47_396879498
++ mkdir 2012_04_24_18_43_47_396879498
++ cd 2012_04_24_18_43_47_396879498
++ env
++ hostname
++ echo 2012_04_24_18_43_47_396879498
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 128'
++ echo 'nodes: 8'
++ echo 8
+8
++ echo 2012_04_24_18_43_47_396879498
+2012_04_24_18_43_47_396879498
++ cp ../../../input/input-128 ./input
++ '[' 128 -le 8 ']'
++ srun --nodes=8 --ntasks=128 -ppbatch -e sweep.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sweepCL.sh 128
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+Resetting now...
