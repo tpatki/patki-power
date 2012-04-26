@@ -1,0 +1,56 @@
+#!/bin/bash
+#MSUB -l nodes=32
+#MSUB -q pbatch
+#MSUB -l walltime=01:00:00
+
+#Call the child script that does the runs
+
+export POWER_DIR=${HOME}/local/src/power
+
+echo $POWER_DIR
+
+cd ${POWER_DIR}/bmark/sweep/sweep3d-2.2b/scripts
+
+#51W 0x038198
+#65W 0x038208
+#80W 0x038280
+#95W 0x0382f8
+
+#15W 0x038078
+#20W 0x0380a0
+#25W 0x0380c8
+#30W 0x0380f0
+
+export PKG_MINW_MINS=0x38198
+export PP0_MINW_MINS=0x38198
+export DRAM_MINW_MINS=0x38078
+export MSR_PKG_POWER_LIMIT=0x0
+export MSR_PP0_POWER_LIMIT=0x0
+export MSR_DRAM_POWER_LIMIT=0x0
+export MSR_RANK_MOD=16
+
+
+ for pkg in 0x38198 0x038208 0x038280
+       do
+               export MSR_PKG_POWER_LIMIT=${pkg}
+                    #Run CG with 16 nodes, with 4,8,16 cores/node
+                    sh ./runSweep.sh 16 32 4 16
+        done
+
+#Resetting is done by the top-level script
+
+cd ${POWER_DIR}/dummy-tmp
+
+
+#Reset by running a 256 task cg benchmark...
+export PKG_MINW_MINS=0x0
+export PP0_MINW_MINS=0x0
+export DRAM_MINW_MINS=0x0
+export MSR_PKG_POWER_LIMIT=0x0
+export MSR_PP0_POWER_LIMIT=0x0
+export MSR_DRAM_POWER_LIMIT=0x0
+export MSR_RANK_MOD=16
+
+echo 'Resetting now...'
+srun --nodes=32 --ntasks=512 -o rapl-dummy.out -e rapl-dummy.err ../bmark/rapl-dummy/rapl-dummy
+cd ..

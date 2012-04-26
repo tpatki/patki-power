@@ -15,7 +15,8 @@ do
   while [ $j -le $4 ]
   do
       echo "nodes=$i ntasks=$(($i * $j))"
-      ./runCL.sh $i $(($i * $j))
+#      ./runCL.sh $i $(($i * $j))
+      ./runCL-2.sh $i $(($i * $j))
       j=$(( $j * 2))
   done
   i=$(($i*2))
