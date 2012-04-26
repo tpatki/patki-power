@@ -1,0 +1,768 @@
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 7: CPUs: 7
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 12: CPUs: 12
+auto-affinity: local task 11: CPUs: 11
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 9: CPUs: 9
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 13: CPUs: 13
+auto-affinity: local task 10: CPUs: 10
+auto-affinity: local task 15: CPUs: 15
+auto-affinity: local task 14: CPUs: 14
+auto-affinity: local task 4: CPUs: 4
+auto-affinity: local task 8: CPUs: 8
+auto-affinity: local task 5: CPUs: 5
+auto-affinity: local task 6: CPUs: 6
+auto-affinity: local task 7: CPUs: 7
+filename=rzmerl88_rapl_sphot.512_0400__XXXXXX
+filename=rzmerl91_rapl_sphot.512_0448__XXXXXX
+filename=rzmerl70_rapl_sphot.512_0112__XXXXXX
+filename=rzmerl80_rapl_sphot.512_0272__XXXXXX
+filename=rzmerl81_rapl_sphot.512_0288__XXXXXX
+filename=rzmerl63_rapl_sphot.512_0016__XXXXXX
+filename=rzmerl84_rapl_sphot.512_0336__XXXXXX
+filename=rzmerl82_rapl_sphot.512_0304__XXXXXX
+filename=rzmerl67_rapl_sphot.512_0064__XXXXXX
+filename=rzmerl72_rapl_sphot.512_0144__XXXXXX
+filename=rzmerl74_rapl_sphot.512_0176__XXXXXX
+filename=rzmerl68_rapl_sphot.512_0080__XXXXXX
+filename=rzmerl66_rapl_sphot.512_0048__XXXXXX
+filename=rzmerl62_rapl_sphot.512_0000__XXXXXX
+filename=rzmerl65_rapl_sphot.512_0032__XXXXXX
+filename=rzmerl69_rapl_sphot.512_0096__XXXXXX
+filename=rzmerl73_rapl_sphot.512_0160__XXXXXX
+filename=rzmerl77_rapl_sphot.512_0224__XXXXXX
+filename=rzmerl76_rapl_sphot.512_0208__XXXXXX
+filename=rzmerl71_rapl_sphot.512_0128__XXXXXX
+filename=rzmerl78_rapl_sphot.512_0240__XXXXXX
+filename=rzmerl83_rapl_sphot.512_0320__XXXXXX
+filename=rzmerl75_rapl_sphot.512_0192__XXXXXX
+filename=rzmerl89_rapl_sphot.512_0416__XXXXXX
+filename=rzmerl79_rapl_sphot.512_0256__XXXXXX
+filename=rzmerl92_rapl_sphot.512_0464__XXXXXX
+filename=rzmerl90_rapl_sphot.512_0432__XXXXXX
+filename=rzmerl94_rapl_sphot.512_0496__XXXXXX
+filename=rzmerl85_rapl_sphot.512_0352__XXXXXX
+filename=rzmerl87_rapl_sphot.512_0384__XXXXXX
+filename=rzmerl93_rapl_sphot.512_0480__XXXXXX
+filename=rzmerl86_rapl_sphot.512_0368__XXXXXX
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_rapl.c::399 returned from parse_opts
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 0
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 0
+msr_opt.c::79 setting MSR_PKG_POWER_LIMIT to 0x382f8 on cpu 1
+msr_opt.c::85 setting MSR_PP0_POWER_LIMIT to 0x0 on cpu 1
+msr_opt.c::90 setting MSR_DRAM_POWER_LIMIT to 0x0 on cpu 1
+msr_rapl.c::399 returned from parse_opts
