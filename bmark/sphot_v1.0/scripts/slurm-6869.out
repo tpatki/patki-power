@@ -122,3 +122,181 @@ nodes=4 ntasks=32
 + cp ../../opac.txt ./opac.txt
 + '[' 32 -le 8 ']'
 + srun --nodes=4 --ntasks=32 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=sphot.64
++ BMARK_STRING=sphot.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_20_38_36_845442142
++ mkdir 2012_04_24_20_38_36_845442142
++ cd 2012_04_24_20_38_36_845442142
++ env
++ hostname
++ echo 2012_04_24_20_38_36_845442142
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_20_38_36_845442142
+2012_04_24_20_38_36_845442142
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=16
++ export BMARK_STRING=sphot.16
++ BMARK_STRING=sphot.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_20_46_24_259988331
++ mkdir 2012_04_24_20_46_24_259988331
++ cd 2012_04_24_20_46_24_259988331
++ env
++ hostname
++ echo 2012_04_24_20_46_24_259988331
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_20_46_24_259988331
+2012_04_24_20_46_24_259988331
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 16
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=32
++ export BMARK_STRING=sphot.32
++ BMARK_STRING=sphot.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_21_14_28_151189903
++ mkdir 2012_04_24_21_14_28_151189903
++ cd 2012_04_24_21_14_28_151189903
++ env
++ hostname
++ echo 2012_04_24_21_14_28_151189903
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_21_14_28_151189903
+2012_04_24_21_14_28_151189903
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 32 -le 8 ']'
++ srun --nodes=4 --ntasks=32 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=sphot.64
++ BMARK_STRING=sphot.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_21_28_34_454373780
++ mkdir 2012_04_24_21_28_34_454373780
++ cd 2012_04_24_21_28_34_454373780
++ env
++ hostname
++ echo 2012_04_24_21_28_34_454373780
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_21_28_34_454373780
+2012_04_24_21_28_34_454373780
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=16
++ export BMARK_STRING=sphot.16
++ BMARK_STRING=sphot.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_21_35_41_342457870
++ mkdir 2012_04_24_21_35_41_342457870
++ cd 2012_04_24_21_35_41_342457870
++ env
++ hostname
++ echo 2012_04_24_21_35_41_342457870
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_21_35_41_342457870
+2012_04_24_21_35_41_342457870
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 16
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=32
++ export BMARK_STRING=sphot.32
++ BMARK_STRING=sphot.32
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_22_03_44_864526128
++ mkdir 2012_04_24_22_03_44_864526128
++ cd 2012_04_24_22_03_44_864526128
++ env
++ hostname
++ echo 2012_04_24_22_03_44_864526128
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 32'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_22_03_44_864526128
+2012_04_24_22_03_44_864526128
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 32 -le 8 ']'
++ srun --nodes=4 --ntasks=32 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 32
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=4 ntasks=64
++ export BMARK_STRING=sphot.64
++ BMARK_STRING=sphot.64
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_04_24_22_17_49_910499628
++ mkdir 2012_04_24_22_17_49_910499628
++ cd 2012_04_24_22_17_49_910499628
++ env
++ hostname
++ echo 2012_04_24_22_17_49_910499628
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 64'
++ echo 'nodes: 4'
++ echo 4
+4
++ echo 2012_04_24_22_17_49_910499628
+2012_04_24_22_17_49_910499628
++ cp ../../input.dat ./input.dat
++ cp ../../opac.txt ./opac.txt
++ '[' 64 -le 8 ']'
++ srun --nodes=4 --ntasks=64 -ppbatch -e sphot.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../sphotCL.sh 64
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+Resetting now...
