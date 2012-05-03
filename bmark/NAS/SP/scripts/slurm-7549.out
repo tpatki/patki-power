@@ -1,0 +1,854 @@
+/g/g24/rountree/local/src/power
+nodes=128 ntasks=512
++ export BMARK_STRING=sp.D.512
++ BMARK_STRING=sp.D.512
++ n=128
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 32 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 64 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 128 ']'
++ cores=484
++ n=121
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_05_43_686718430
++ mkdir 2012_05_03_13_05_43_686718430
++ cd 2012_05_03_13_05_43_686718430
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_05_43_686718430
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 128'
++ '[' 512 -le 8 ']'
++ srun --nodes=121 --ntasks=484 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 484
+srun: error: rzmerl17: tasks 0-3: Exited with exit code 127
+srun: error: rzmerl144: tasks 468-471: Exited with exit code 127
+srun: error: rzmerl58: tasks 128-131: Exited with exit code 127
+srun: error: rzmerl48: tasks 88-91: Exited with exit code 127
+srun: error: rzmerl79: tasks 212-215: Exited with exit code 127
+srun: error: rzmerl110: tasks 332-335: Exited with exit code 127
+srun: error: rzmerl52: tasks 104-107: Exited with exit code 127
+srun: error: rzmerl78: tasks 208-211: Exited with exit code 127
+srun: error: rzmerl113: tasks 344-347: Exited with exit code 127
+srun: error: rzmerl108: tasks 324-327: Exited with exit code 127
+srun: error: rzmerl24: tasks 28-31: Exited with exit code 127
+srun: error: rzmerl88: tasks 248-251: Exited with exit code 127
+srun: error: rzmerl56: tasks 120-123: Exited with exit code 127
+srun: error: rzmerl106: tasks 320-323: Exited with exit code 127
+srun: error: rzmerl87: tasks 244-247: Exited with exit code 127
+srun: error: rzmerl53: tasks 108-111: Exited with exit code 127
+srun: error: rzmerl132: tasks 420-423: Exited with exit code 127
+srun: error: rzmerl136: tasks 436-439: Exited with exit code 127
+srun: error: rzmerl101: tasks 300-303: Exited with exit code 127
+srun: error: rzmerl18: tasks 4-7: Exited with exit code 127
+srun: error: rzmerl134: tasks 428-431: Exited with exit code 127
+srun: error: rzmerl71: tasks 180-183: Exited with exit code 127
+srun: error: rzmerl139: tasks 448-451: Exited with exit code 127
+srun: error: rzmerl54: tasks 112-115: Exited with exit code 127
+srun: error: rzmerl142: tasks 460-463: Exited with exit code 127
+srun: error: rzmerl77: tasks 204-207: Exited with exit code 127
+srun: error: rzmerl102: tasks 304-307: Exited with exit code 127
+srun: error: rzmerl100: tasks 296-299: Exited with exit code 127
+srun: error: rzmerl51: tasks 100-103: Exited with exit code 127
+srun: error: rzmerl35: tasks 68-71: Exited with exit code 127
+srun: error: rzmerl143: tasks 464-467: Exited with exit code 127
+srun: error: rzmerl109: tasks 328-331: Exited with exit code 127
+srun: error: rzmerl57: tasks 124-127: Exited with exit code 127
+srun: error: rzmerl19: tasks 8-11: Exited with exit code 127
+srun: error: rzmerl138: tasks 444-447: Exited with exit code 127
+srun: error: rzmerl114: tasks 348-351: Exited with exit code 127
+srun: error: rzmerl94: tasks 272-275: Exited with exit code 127
+srun: error: rzmerl112: tasks 340-343: Exited with exit code 127
+srun: error: rzmerl75: tasks 196-199: Exited with exit code 127
+srun: error: rzmerl63: tasks 148-151: Exited with exit code 127
+srun: error: rzmerl137: tasks 440-443: Exited with exit code 127
+srun: error: rzmerl82: tasks 224-227: Exited with exit code 127
+srun: error: rzmerl47: tasks 84-87: Exited with exit code 127
+srun: error: rzmerl83: tasks 228-231: Exited with exit code 127
+srun: error: rzmerl81: tasks 220-223: Exited with exit code 127
+srun: error: rzmerl124: tasks 388-391: Exited with exit code 127
+srun: error: rzmerl32: tasks 56-59: Exited with exit code 127
+srun: error: rzmerl49: tasks 92-95: Exited with exit code 127
+srun: error: rzmerl126: tasks 396-399: Exited with exit code 127
+srun: error: rzmerl27: tasks 40-43: Exited with exit code 127
+srun: error: rzmerl80: tasks 216-219: Exited with exit code 127
+srun: error: rzmerl34: tasks 64-67: Exited with exit code 127
+srun: error: rzmerl50: tasks 96-99: Exited with exit code 127
+srun: error: rzmerl69: tasks 172-175: Exited with exit code 127
+srun: error: rzmerl46: tasks 80-83: Exited with exit code 127
+srun: error: rzmerl133: tasks 424-427: Exited with exit code 127
+srun: error: rzmerl117: tasks 360-363: Exited with exit code 127
+srun: error: rzmerl23: tasks 24-27: Exited with exit code 127
+srun: error: rzmerl127: tasks 400-403: Exited with exit code 127
+srun: error: rzmerl65: tasks 156-159: Exited with exit code 127
+srun: error: rzmerl135: tasks 432-435: Exited with exit code 127
+srun: error: rzmerl31: tasks 52-55: Exited with exit code 127
+srun: error: rzmerl118: tasks 364-367: Exited with exit code 127
+srun: error: rzmerl76: tasks 200-203: Exited with exit code 127
+srun: error: rzmerl44: tasks 72-75: Exited with exit code 127
+srun: error: rzmerl70: tasks 176-179: Exited with exit code 127
+srun: error: rzmerl104: tasks 312-315: Exited with exit code 127
+srun: error: rzmerl131: tasks 416-419: Exited with exit code 127
+srun: error: rzmerl45: tasks 76-79: Exited with exit code 127
+srun: error: rzmerl61: tasks 140-143: Exited with exit code 127
+srun: error: rzmerl128: tasks 404-407: Exited with exit code 127
+srun: error: rzmerl105: tasks 316-319: Exited with exit code 127
+srun: error: rzmerl72: tasks 184-187: Exited with exit code 127
+srun: error: rzmerl90: tasks 256-259: Exited with exit code 127
+srun: error: rzmerl22: tasks 20-23: Exited with exit code 127
+srun: error: rzmerl26: tasks 36-39: Exited with exit code 127
+srun: error: rzmerl74: tasks 192-195: Exited with exit code 127
+srun: error: rzmerl99: tasks 292-295: Exited with exit code 127
+srun: error: rzmerl129: tasks 408-411: Exited with exit code 127
+srun: error: rzmerl92: tasks 264-267: Exited with exit code 127
+srun: error: rzmerl125: tasks 392-395: Exited with exit code 127
+srun: error: rzmerl103: tasks 308-311: Exited with exit code 127
+srun: error: rzmerl73: tasks 188-191: Exited with exit code 127
+srun: error: rzmerl30: tasks 48-51: Exited with exit code 127
+srun: error: rzmerl93: tasks 268-271: Exited with exit code 127
+srun: error: rzmerl55: tasks 116-119: Exited with exit code 127
+srun: error: rzmerl97: tasks 284-287: Exited with exit code 127
+srun: error: rzmerl59: tasks 132-135: Exited with exit code 127
+srun: error: rzmerl130: tasks 412-415: Exited with exit code 127
+srun: error: rzmerl119: tasks 368-371: Exited with exit code 127
+srun: error: rzmerl123: tasks 384-387: Exited with exit code 127
+srun: error: rzmerl98: tasks 288-291: Exited with exit code 127
+srun: error: rzmerl86: tasks 240-243: Exited with exit code 127
+srun: error: rzmerl68: tasks 168-171: Exited with exit code 127
+srun: error: rzmerl140: tasks 452-455: Exited with exit code 127
+srun: error: rzmerl95: tasks 276-279: Exited with exit code 127
+srun: error: rzmerl146: tasks 476-479: Exited with exit code 127
+srun: error: rzmerl28: tasks 44-47: Exited with exit code 127
+srun: error: rzmerl67: tasks 164-167: Exited with exit code 127
+srun: error: rzmerl96: tasks 280-283: Exited with exit code 127
+srun: error: rzmerl62: tasks 144-147: Exited with exit code 127
+srun: error: rzmerl120: tasks 372-375: Exited with exit code 127
+srun: error: rzmerl66: tasks 160-163: Exited with exit code 127
+srun: error: rzmerl111: tasks 336-339: Exited with exit code 127
+srun: error: rzmerl85: tasks 236-239: Exited with exit code 127
+srun: error: rzmerl91: tasks 260-263: Exited with exit code 127
+srun: error: rzmerl33: tasks 60-63: Exited with exit code 127
+srun: error: rzmerl60: tasks 136-139: Exited with exit code 127
+srun: error: rzmerl20: tasks 12-15: Exited with exit code 127
+srun: error: rzmerl84: tasks 232-235: Exited with exit code 127
+srun: error: rzmerl147: tasks 480-483: Exited with exit code 127
+srun: error: rzmerl116: tasks 356-359: Exited with exit code 127
+srun: error: rzmerl21: tasks 16-19: Exited with exit code 127
+srun: error: rzmerl64: tasks 152-155: Exited with exit code 127
+srun: error: rzmerl121: tasks 376-379: Exited with exit code 127
+srun: error: rzmerl141: tasks 456-459: Exited with exit code 127
+srun: error: rzmerl25: tasks 32-35: Exited with exit code 127
+srun: error: rzmerl145: tasks 472-475: Exited with exit code 127
+srun: error: rzmerl89: tasks 252-255: Exited with exit code 127
+srun: error: rzmerl122: tasks 380-383: Exited with exit code 127
+srun: error: rzmerl115: tasks 352-355: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=1024
++ export BMARK_STRING=sp.D.1024
++ BMARK_STRING=sp.D.1024
++ n=128
++ cores=1024
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_05_45_389724699
++ mkdir 2012_05_03_13_05_45_389724699
++ cd 2012_05_03_13_05_45_389724699
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_05_45_389724699
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 1024'
++ echo 'nodes: 128'
++ '[' 1024 -le 8 ']'
++ srun --nodes=128 --ntasks=1024 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 1024
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=2048
++ export BMARK_STRING=sp.D.2048
++ BMARK_STRING=sp.D.2048
++ n=128
++ cores=2048
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 2048 ']'
++ '[' 128 -eq 128 ']'
++ cores=2025
++ n=127
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_06_17_654787320
++ mkdir 2012_05_03_13_06_17_654787320
++ cd 2012_05_03_13_06_17_654787320
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_06_17_654787320
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 2048'
++ echo 'nodes: 128'
++ '[' 2048 -le 8 ']'
++ srun --nodes=127 --ntasks=2025 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 2025
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=512
++ export BMARK_STRING=sp.D.512
++ BMARK_STRING=sp.D.512
++ n=128
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 32 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 64 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 128 ']'
++ cores=484
++ n=121
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_06_54_896410239
++ mkdir 2012_05_03_13_06_54_896410239
++ cd 2012_05_03_13_06_54_896410239
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_06_54_896410239
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 128'
++ '[' 512 -le 8 ']'
++ srun --nodes=121 --ntasks=484 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 484
+srun: error: rzmerl24: tasks 28-31: Exited with exit code 127
+srun: error: rzmerl54: tasks 112-115: Exited with exit code 127
+srun: error: rzmerl79: tasks 212-215: Exited with exit code 127
+srun: error: rzmerl110: tasks 332-335: Exited with exit code 127
+srun: error: rzmerl114: tasks 348-351: Exited with exit code 127
+srun: error: rzmerl88: tasks 248-251: Exited with exit code 127
+srun: error: rzmerl144: tasks 468-471: Exited with exit code 127
+srun: error: rzmerl58: tasks 128-131: Exited with exit code 127
+srun: error: rzmerl87: tasks 244-247: Exited with exit code 127
+srun: error: rzmerl19: tasks 8-11: Exited with exit code 127
+srun: error: rzmerl83: tasks 228-231: Exited with exit code 127
+srun: error: rzmerl53: tasks 108-111: Exited with exit code 127
+srun: error: rzmerl139: tasks 448-451: Exited with exit code 127
+srun: error: rzmerl143: tasks 464-467: Exited with exit code 127
+srun: error: rzmerl134: tasks 428-431: Exited with exit code 127
+srun: error: rzmerl109: tasks 328-331: Exited with exit code 127
+srun: error: rzmerl113: tasks 344-347: Exited with exit code 127
+srun: error: rzmerl57: tasks 124-127: Exited with exit code 127
+srun: error: rzmerl78: tasks 208-211: Exited with exit code 127
+srun: error: rzmerl138: tasks 444-447: Exited with exit code 127
+srun: error: rzmerl18: tasks 4-7: Exited with exit code 127
+srun: error: rzmerl48: tasks 88-91: Exited with exit code 127
+srun: error: rzmerl82: tasks 224-227: Exited with exit code 127
+srun: error: rzmerl17: tasks 0-3: Exited with exit code 127
+srun: error: rzmerl52: tasks 104-107: Exited with exit code 127
+srun: error: rzmerl56: tasks 120-123: Exited with exit code 127
+srun: error: rzmerl108: tasks 324-327: Exited with exit code 127
+srun: error: rzmerl142: tasks 460-463: Exited with exit code 127
+srun: error: rzmerl77: tasks 204-207: Exited with exit code 127
+srun: error: rzmerl106: tasks 320-323: Exited with exit code 127
+srun: error: rzmerl112: tasks 340-343: Exited with exit code 127
+srun: error: rzmerl133: tasks 424-427: Exited with exit code 127
+srun: error: rzmerl102: tasks 304-307: Exited with exit code 127
+srun: error: rzmerl47: tasks 84-87: Exited with exit code 127
+srun: error: rzmerl81: tasks 220-223: Exited with exit code 127
+srun: error: rzmerl132: tasks 420-423: Exited with exit code 127
+srun: error: rzmerl137: tasks 440-443: Exited with exit code 127
+srun: error: rzmerl46: tasks 80-83: Exited with exit code 127
+srun: error: rzmerl51: tasks 100-103: Exited with exit code 127
+srun: error: rzmerl76: tasks 200-203: Exited with exit code 127
+srun: error: rzmerl80: tasks 216-219: Exited with exit code 127
+srun: error: rzmerl136: tasks 436-439: Exited with exit code 127
+srun: error: rzmerl101: tasks 300-303: Exited with exit code 127
+srun: error: rzmerl50: tasks 96-99: Exited with exit code 127
+srun: error: rzmerl105: tasks 316-319: Exited with exit code 127
+srun: error: rzmerl71: tasks 180-183: Exited with exit code 127
+srun: error: rzmerl45: tasks 76-79: Exited with exit code 127
+srun: error: rzmerl75: tasks 196-199: Exited with exit code 127
+srun: error: rzmerl131: tasks 416-419: Exited with exit code 127
+srun: error: rzmerl32: tasks 56-59: Exited with exit code 127
+srun: error: rzmerl130: tasks 412-415: Exited with exit code 127
+srun: error: rzmerl100: tasks 296-299: Exited with exit code 127
+srun: error: rzmerl135: tasks 432-435: Exited with exit code 127
+srun: error: rzmerl70: tasks 176-179: Exited with exit code 127
+srun: error: rzmerl49: tasks 92-95: Exited with exit code 127
+srun: error: rzmerl44: tasks 72-75: Exited with exit code 127
+srun: error: rzmerl104: tasks 312-315: Exited with exit code 127
+srun: error: rzmerl126: tasks 396-399: Exited with exit code 127
+srun: error: rzmerl74: tasks 192-195: Exited with exit code 127
+srun: error: rzmerl99: tasks 292-295: Exited with exit code 127
+srun: error: rzmerl129: tasks 408-411: Exited with exit code 127
+srun: error: rzmerl31: tasks 52-55: Exited with exit code 127
+srun: error: rzmerl69: tasks 172-175: Exited with exit code 127
+srun: error: rzmerl125: tasks 392-395: Exited with exit code 127
+srun: error: rzmerl103: tasks 308-311: Exited with exit code 127
+srun: error: rzmerl73: tasks 188-191: Exited with exit code 127
+srun: error: rzmerl94: tasks 272-275: Exited with exit code 127
+srun: error: rzmerl98: tasks 288-291: Exited with exit code 127
+srun: error: rzmerl35: tasks 68-71: Exited with exit code 127
+srun: error: rzmerl68: tasks 168-171: Exited with exit code 127
+srun: error: rzmerl72: tasks 184-187: Exited with exit code 127
+srun: error: rzmerl124: tasks 388-391: Exited with exit code 127
+srun: error: rzmerl30: tasks 48-51: Exited with exit code 127
+srun: error: rzmerl93: tasks 268-271: Exited with exit code 127
+srun: error: rzmerl97: tasks 284-287: Exited with exit code 127
+srun: error: rzmerl128: tasks 404-407: Exited with exit code 127
+srun: error: rzmerl34: tasks 64-67: Exited with exit code 127
+srun: error: rzmerl63: tasks 148-151: Exited with exit code 127
+srun: error: rzmerl33: tasks 60-63: Exited with exit code 127
+srun: error: rzmerl67: tasks 164-167: Exited with exit code 127
+srun: error: rzmerl28: tasks 44-47: Exited with exit code 127
+srun: error: rzmerl123: tasks 384-387: Exited with exit code 127
+srun: error: rzmerl96: tasks 280-283: Exited with exit code 127
+srun: error: rzmerl92: tasks 264-267: Exited with exit code 127
+srun: error: rzmerl127: tasks 400-403: Exited with exit code 127
+srun: error: rzmerl23: tasks 24-27: Exited with exit code 127
+srun: error: rzmerl62: tasks 144-147: Exited with exit code 127
+srun: error: rzmerl118: tasks 364-367: Exited with exit code 127
+srun: error: rzmerl122: tasks 380-383: Exited with exit code 127
+srun: error: rzmerl66: tasks 160-163: Exited with exit code 127
+srun: error: rzmerl27: tasks 40-43: Exited with exit code 127
+srun: error: rzmerl95: tasks 276-279: Exited with exit code 127
+srun: error: rzmerl86: tasks 240-243: Exited with exit code 127
+srun: error: rzmerl26: tasks 36-39: Exited with exit code 127
+srun: error: rzmerl61: tasks 140-143: Exited with exit code 127
+srun: error: rzmerl91: tasks 260-263: Exited with exit code 127
+srun: error: rzmerl147: tasks 480-483: Exited with exit code 127
+srun: error: rzmerl117: tasks 360-363: Exited with exit code 127
+srun: error: rzmerl22: tasks 20-23: Exited with exit code 127
+srun: error: rzmerl65: tasks 156-159: Exited with exit code 127
+srun: error: rzmerl121: tasks 376-379: Exited with exit code 127
+srun: error: rzmerl64: tasks 152-155: Exited with exit code 127
+srun: error: rzmerl90: tasks 256-259: Exited with exit code 127
+srun: error: rzmerl146: tasks 476-479: Exited with exit code 127
+srun: error: rzmerl60: tasks 136-139: Exited with exit code 127
+srun: error: rzmerl21: tasks 16-19: Exited with exit code 127
+srun: error: rzmerl89: tasks 252-255: Exited with exit code 127
+srun: error: rzmerl116: tasks 356-359: Exited with exit code 127
+srun: error: rzmerl111: tasks 336-339: Exited with exit code 127
+srun: error: rzmerl85: tasks 236-239: Exited with exit code 127
+srun: error: rzmerl120: tasks 372-375: Exited with exit code 127
+srun: error: rzmerl25: tasks 32-35: Exited with exit code 127
+srun: error: rzmerl141: tasks 456-459: Exited with exit code 127
+srun: error: rzmerl20: tasks 12-15: Exited with exit code 127
+srun: error: rzmerl145: tasks 472-475: Exited with exit code 127
+srun: error: rzmerl55: tasks 116-119: Exited with exit code 127
+srun: error: rzmerl59: tasks 132-135: Exited with exit code 127
+srun: error: rzmerl115: tasks 352-355: Exited with exit code 127
+srun: error: rzmerl84: tasks 232-235: Exited with exit code 127
+srun: error: rzmerl140: tasks 452-455: Exited with exit code 127
+srun: error: rzmerl119: tasks 368-371: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=1024
++ export BMARK_STRING=sp.D.1024
++ BMARK_STRING=sp.D.1024
++ n=128
++ cores=1024
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_06_55_732420351
++ mkdir 2012_05_03_13_06_55_732420351
++ cd 2012_05_03_13_06_55_732420351
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_06_55_732420351
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 1024'
++ echo 'nodes: 128'
++ '[' 1024 -le 8 ']'
++ srun --nodes=128 --ntasks=1024 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 1024
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=2048
++ export BMARK_STRING=sp.D.2048
++ BMARK_STRING=sp.D.2048
++ n=128
++ cores=2048
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 2048 ']'
++ '[' 128 -eq 128 ']'
++ cores=2025
++ n=127
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_07_25_113487900
++ mkdir 2012_05_03_13_07_25_113487900
++ cd 2012_05_03_13_07_25_113487900
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_07_25_113487900
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 2048'
++ echo 'nodes: 128'
++ '[' 2048 -le 8 ']'
++ srun --nodes=127 --ntasks=2025 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 2025
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=512
++ export BMARK_STRING=sp.D.512
++ BMARK_STRING=sp.D.512
++ n=128
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 32 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 64 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 128 ']'
++ cores=484
++ n=121
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_07_55_634779062
++ mkdir 2012_05_03_13_07_55_634779062
++ cd 2012_05_03_13_07_55_634779062
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_07_55_634779062
++ uname -a
++ grep MHz
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ echo 'cores: 512'
++ echo 'nodes: 128'
++ '[' 512 -le 8 ']'
++ srun --nodes=121 --ntasks=484 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 484
+srun: error: rzmerl145: tasks 468-471: Exited with exit code 127
+srun: error: rzmerl111: tasks 332-335: Exited with exit code 127
+srun: error: rzmerl25: tasks 28-31: Exited with exit code 127
+srun: error: rzmerl20: tasks 8-11: Exited with exit code 127
+srun: error: rzmerl55: tasks 112-115: Exited with exit code 127
+srun: error: rzmerl89: tasks 248-251: Exited with exit code 127
+srun: error: rzmerl80: tasks 212-215: Exited with exit code 127
+srun: error: rzmerl59: tasks 128-131: Exited with exit code 127
+srun: error: rzmerl115: tasks 348-351: Exited with exit code 127
+srun: error: rzmerl110: tasks 328-331: Exited with exit code 127
+srun: error: rzmerl84: tasks 228-231: Exited with exit code 127
+srun: error: rzmerl79: tasks 208-211: Exited with exit code 127
+srun: error: rzmerl140: tasks 448-451: Exited with exit code 127
+srun: error: rzmerl54: tasks 108-111: Exited with exit code 127
+srun: error: rzmerl144: tasks 464-467: Exited with exit code 127
+srun: error: rzmerl88: tasks 244-247: Exited with exit code 127
+srun: error: rzmerl58: tasks 124-127: Exited with exit code 127
+srun: error: rzmerl114: tasks 344-347: Exited with exit code 127
+srun: error: rzmerl19: tasks 4-7: Exited with exit code 127
+srun: error: rzmerl135: tasks 428-431: Exited with exit code 127
+srun: error: rzmerl139: tasks 444-447: Exited with exit code 127
+srun: error: rzmerl49: tasks 88-91: Exited with exit code 127
+srun: error: rzmerl83: tasks 224-227: Exited with exit code 127
+srun: error: rzmerl143: tasks 460-463: Exited with exit code 127
+srun: error: rzmerl134: tasks 424-427: Exited with exit code 127
+srun: error: rzmerl109: tasks 324-327: Exited with exit code 127
+srun: error: rzmerl78: tasks 204-207: Exited with exit code 127
+srun: error: rzmerl53: tasks 104-107: Exited with exit code 127
+srun: error: rzmerl57: tasks 120-123: Exited with exit code 127
+srun: error: rzmerl113: tasks 340-343: Exited with exit code 127
+srun: error: rzmerl82: tasks 220-223: Exited with exit code 127
+srun: error: rzmerl108: tasks 320-323: Exited with exit code 127
+srun: error: rzmerl103: tasks 304-307: Exited with exit code 127
+srun: error: rzmerl138: tasks 440-443: Exited with exit code 127
+srun: error: rzmerl48: tasks 84-87: Exited with exit code 127
+srun: error: rzmerl18: tasks 0-3: Exited with exit code 127
+srun: error: rzmerl52: tasks 100-103: Exited with exit code 127
+srun: error: rzmerl137: tasks 436-439: Exited with exit code 127
+srun: error: rzmerl77: tasks 200-203: Exited with exit code 127
+srun: error: rzmerl102: tasks 300-303: Exited with exit code 127
+srun: error: rzmerl133: tasks 420-423: Exited with exit code 127
+srun: error: rzmerl47: tasks 80-83: Exited with exit code 127
+srun: error: rzmerl81: tasks 216-219: Exited with exit code 127
+srun: error: rzmerl51: tasks 96-99: Exited with exit code 127
+srun: error: rzmerl72: tasks 180-183: Exited with exit code 127
+srun: error: rzmerl106: tasks 316-319: Exited with exit code 127
+srun: error: rzmerl101: tasks 296-299: Exited with exit code 127
+srun: error: rzmerl136: tasks 432-435: Exited with exit code 127
+srun: error: rzmerl132: tasks 416-419: Exited with exit code 127
+srun: error: rzmerl76: tasks 196-199: Exited with exit code 127
+srun: error: rzmerl46: tasks 76-79: Exited with exit code 127
+srun: error: rzmerl33: tasks 56-59: Exited with exit code 127
+srun: error: rzmerl75: tasks 192-195: Exited with exit code 127
+srun: error: rzmerl131: tasks 412-415: Exited with exit code 127
+srun: error: rzmerl50: tasks 92-95: Exited with exit code 127
+srun: error: rzmerl105: tasks 312-315: Exited with exit code 127
+srun: error: rzmerl127: tasks 396-399: Exited with exit code 127
+srun: error: rzmerl71: tasks 176-179: Exited with exit code 127
+srun: error: rzmerl45: tasks 72-75: Exited with exit code 127
+srun: error: rzmerl100: tasks 292-295: Exited with exit code 127
+srun: error: rzmerl104: tasks 308-311: Exited with exit code 127
+srun: error: rzmerl74: tasks 188-191: Exited with exit code 127
+srun: error: rzmerl70: tasks 172-175: Exited with exit code 127
+srun: error: rzmerl126: tasks 392-395: Exited with exit code 127
+srun: error: rzmerl130: tasks 408-411: Exited with exit code 127
+srun: error: rzmerl32: tasks 52-55: Exited with exit code 127
+srun: error: rzmerl95: tasks 272-275: Exited with exit code 127
+srun: error: rzmerl69: tasks 168-171: Exited with exit code 127
+srun: error: rzmerl99: tasks 288-291: Exited with exit code 127
+srun: error: rzmerl44: tasks 68-71: Exited with exit code 127
+srun: error: rzmerl125: tasks 388-391: Exited with exit code 127
+srun: error: rzmerl94: tasks 268-271: Exited with exit code 127
+srun: error: rzmerl129: tasks 404-407: Exited with exit code 127
+srun: error: rzmerl35: tasks 64-67: Exited with exit code 127
+srun: error: rzmerl31: tasks 48-51: Exited with exit code 127
+srun: error: rzmerl64: tasks 148-151: Exited with exit code 127
+srun: error: rzmerl73: tasks 184-187: Exited with exit code 127
+srun: error: rzmerl98: tasks 284-287: Exited with exit code 127
+srun: error: rzmerl68: tasks 164-167: Exited with exit code 127
+srun: error: rzmerl124: tasks 384-387: Exited with exit code 127
+srun: error: rzmerl93: tasks 264-267: Exited with exit code 127
+srun: error: rzmerl128: tasks 400-403: Exited with exit code 127
+srun: error: rzmerl30: tasks 44-47: Exited with exit code 127
+srun: error: rzmerl63: tasks 144-147: Exited with exit code 127
+srun: error: rzmerl34: tasks 60-63: Exited with exit code 127
+srun: error: rzmerl97: tasks 280-283: Exited with exit code 127
+srun: error: rzmerl119: tasks 364-367: Exited with exit code 127
+srun: error: rzmerl123: tasks 380-383: Exited with exit code 127
+srun: error: rzmerl148: tasks 480-483: Exited with exit code 127
+srun: error: rzmerl24: tasks 24-27: Exited with exit code 127
+srun: error: rzmerl67: tasks 160-163: Exited with exit code 127
+srun: error: rzmerl28: tasks 40-43: Exited with exit code 127
+srun: error: rzmerl96: tasks 276-279: Exited with exit code 127
+srun: error: rzmerl118: tasks 360-363: Exited with exit code 127
+srun: error: rzmerl92: tasks 260-263: Exited with exit code 127
+srun: error: rzmerl23: tasks 20-23: Exited with exit code 127
+srun: error: rzmerl91: tasks 256-259: Exited with exit code 127
+srun: error: rzmerl27: tasks 36-39: Exited with exit code 127
+srun: error: rzmerl62: tasks 140-143: Exited with exit code 127
+srun: error: rzmerl66: tasks 156-159: Exited with exit code 127
+srun: error: rzmerl87: tasks 240-243: Exited with exit code 127
+srun: error: rzmerl122: tasks 376-379: Exited with exit code 127
+srun: error: rzmerl22: tasks 16-19: Exited with exit code 127
+srun: error: rzmerl147: tasks 476-479: Exited with exit code 127
+srun: error: rzmerl61: tasks 136-139: Exited with exit code 127
+srun: error: rzmerl117: tasks 356-359: Exited with exit code 127
+srun: error: rzmerl121: tasks 372-375: Exited with exit code 127
+srun: error: rzmerl86: tasks 236-239: Exited with exit code 127
+srun: error: rzmerl56: tasks 116-119: Exited with exit code 127
+srun: error: rzmerl65: tasks 152-155: Exited with exit code 127
+srun: error: rzmerl142: tasks 456-459: Exited with exit code 127
+srun: error: rzmerl90: tasks 252-255: Exited with exit code 127
+srun: error: rzmerl26: tasks 32-35: Exited with exit code 127
+srun: error: rzmerl146: tasks 472-475: Exited with exit code 127
+srun: error: rzmerl21: tasks 12-15: Exited with exit code 127
+srun: error: rzmerl112: tasks 336-339: Exited with exit code 127
+srun: error: rzmerl60: tasks 132-135: Exited with exit code 127
+srun: error: rzmerl116: tasks 352-355: Exited with exit code 127
+srun: error: rzmerl120: tasks 368-371: Exited with exit code 127
+srun: error: rzmerl85: tasks 232-235: Exited with exit code 127
+srun: error: rzmerl141: tasks 452-455: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=1024
++ export BMARK_STRING=sp.D.1024
++ BMARK_STRING=sp.D.1024
++ n=128
++ cores=1024
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_07_56_321128552
++ mkdir 2012_05_03_13_07_56_321128552
++ cd 2012_05_03_13_07_56_321128552
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_07_56_321128552
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 1024'
++ echo 'nodes: 128'
++ '[' 1024 -le 8 ']'
++ srun --nodes=128 --ntasks=1024 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 1024
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=2048
++ export BMARK_STRING=sp.D.2048
++ BMARK_STRING=sp.D.2048
++ n=128
++ cores=2048
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 2048 ']'
++ '[' 128 -eq 128 ']'
++ cores=2025
++ n=127
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_08_24_867174638
++ mkdir 2012_05_03_13_08_24_867174638
++ cd 2012_05_03_13_08_24_867174638
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_08_24_867174638
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 2048'
++ echo 'nodes: 128'
++ '[' 2048 -le 8 ']'
++ srun --nodes=127 --ntasks=2025 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 2025
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=512
++ export BMARK_STRING=sp.D.512
++ BMARK_STRING=sp.D.512
++ n=128
++ cores=512
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 128 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 32 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 64 ']'
++ '[' 512 -eq 512 ']'
++ '[' 128 -eq 128 ']'
++ cores=484
++ n=121
++ '[' 484 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_08_54_152875602
++ mkdir 2012_05_03_13_08_54_152875602
++ cd 2012_05_03_13_08_54_152875602
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_08_54_152875602
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 512'
++ echo 'nodes: 128'
++ '[' 512 -le 8 ']'
++ srun --nodes=121 --ntasks=484 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 484
+srun: error: rzmerl145: tasks 468-471: Exited with exit code 127
+srun: error: rzmerl25: tasks 28-31: Exited with exit code 127
+srun: error: rzmerl55: tasks 112-115: Exited with exit code 127
+srun: error: rzmerl80: tasks 212-215: Exited with exit code 127
+srun: error: rzmerl84: tasks 228-231: Exited with exit code 127
+srun: error: rzmerl89: tasks 248-251: Exited with exit code 127
+srun: error: rzmerl20: tasks 8-11: Exited with exit code 127
+srun: error: rzmerl111: tasks 332-335: Exited with exit code 127
+srun: error: rzmerl59: tasks 128-131: Exited with exit code 127
+srun: error: rzmerl115: tasks 348-351: Exited with exit code 127
+srun: error: rzmerl54: tasks 108-111: Exited with exit code 127
+srun: error: rzmerl140: tasks 448-451: Exited with exit code 127
+srun: error: rzmerl88: tasks 244-247: Exited with exit code 127
+srun: error: rzmerl19: tasks 4-7: Exited with exit code 127
+srun: error: rzmerl139: tasks 444-447: Exited with exit code 127
+srun: error: rzmerl79: tasks 208-211: Exited with exit code 127
+srun: error: rzmerl110: tasks 328-331: Exited with exit code 127
+srun: error: rzmerl144: tasks 464-467: Exited with exit code 127
+srun: error: rzmerl135: tasks 428-431: Exited with exit code 127
+srun: error: rzmerl114: tasks 344-347: Exited with exit code 127
+srun: error: rzmerl58: tasks 124-127: Exited with exit code 127
+srun: error: rzmerl49: tasks 88-91: Exited with exit code 127
+srun: error: rzmerl83: tasks 224-227: Exited with exit code 127
+srun: error: rzmerl113: tasks 340-343: Exited with exit code 127
+srun: error: rzmerl109: tasks 324-327: Exited with exit code 127
+srun: error: rzmerl134: tasks 424-427: Exited with exit code 127
+srun: error: rzmerl53: tasks 104-107: Exited with exit code 127
+srun: error: rzmerl143: tasks 460-463: Exited with exit code 127
+srun: error: rzmerl57: tasks 120-123: Exited with exit code 127
+srun: error: rzmerl78: tasks 204-207: Exited with exit code 127
+srun: error: rzmerl82: tasks 220-223: Exited with exit code 127
+srun: error: rzmerl48: tasks 84-87: Exited with exit code 127
+srun: error: rzmerl18: tasks 0-3: Exited with exit code 127
+srun: error: rzmerl138: tasks 440-443: Exited with exit code 127
+srun: error: rzmerl103: tasks 304-307: Exited with exit code 127
+srun: error: rzmerl108: tasks 320-323: Exited with exit code 127
+srun: error: rzmerl52: tasks 100-103: Exited with exit code 127
+srun: error: rzmerl133: tasks 420-423: Exited with exit code 127
+srun: error: rzmerl77: tasks 200-203: Exited with exit code 127
+srun: error: rzmerl81: tasks 216-219: Exited with exit code 127
+srun: error: rzmerl47: tasks 80-83: Exited with exit code 127
+srun: error: rzmerl102: tasks 300-303: Exited with exit code 127
+srun: error: rzmerl106: tasks 316-319: Exited with exit code 127
+srun: error: rzmerl137: tasks 436-439: Exited with exit code 127
+srun: error: rzmerl51: tasks 96-99: Exited with exit code 127
+srun: error: rzmerl136: tasks 432-435: Exited with exit code 127
+srun: error: rzmerl72: tasks 180-183: Exited with exit code 127
+srun: error: rzmerl132: tasks 416-419: Exited with exit code 127
+srun: error: rzmerl46: tasks 76-79: Exited with exit code 127
+srun: error: rzmerl105: tasks 312-315: Exited with exit code 127
+srun: error: rzmerl76: tasks 196-199: Exited with exit code 127
+srun: error: rzmerl131: tasks 412-415: Exited with exit code 127
+srun: error: rzmerl101: tasks 296-299: Exited with exit code 127
+srun: error: rzmerl50: tasks 92-95: Exited with exit code 127
+srun: error: rzmerl71: tasks 176-179: Exited with exit code 127
+srun: error: rzmerl100: tasks 292-295: Exited with exit code 127
+srun: error: rzmerl33: tasks 56-59: Exited with exit code 127
+srun: error: rzmerl127: tasks 396-399: Exited with exit code 127
+srun: error: rzmerl75: tasks 192-195: Exited with exit code 127
+srun: error: rzmerl45: tasks 72-75: Exited with exit code 127
+srun: error: rzmerl130: tasks 408-411: Exited with exit code 127
+srun: error: rzmerl70: tasks 172-175: Exited with exit code 127
+srun: error: rzmerl126: tasks 392-395: Exited with exit code 127
+srun: error: rzmerl104: tasks 308-311: Exited with exit code 127
+srun: error: rzmerl95: tasks 272-275: Exited with exit code 127
+srun: error: rzmerl32: tasks 52-55: Exited with exit code 127
+srun: error: rzmerl74: tasks 188-191: Exited with exit code 127
+srun: error: rzmerl99: tasks 288-291: Exited with exit code 127
+srun: error: rzmerl69: tasks 168-171: Exited with exit code 127
+srun: error: rzmerl31: tasks 48-51: Exited with exit code 127
+srun: error: rzmerl44: tasks 68-71: Exited with exit code 127
+srun: error: rzmerl125: tasks 388-391: Exited with exit code 127
+srun: error: rzmerl73: tasks 184-187: Exited with exit code 127
+srun: error: rzmerl94: tasks 268-271: Exited with exit code 127
+srun: error: rzmerl35: tasks 64-67: Exited with exit code 127
+srun: error: rzmerl129: tasks 404-407: Exited with exit code 127
+srun: error: rzmerl64: tasks 148-151: Exited with exit code 127
+srun: error: rzmerl98: tasks 284-287: Exited with exit code 127
+srun: error: rzmerl93: tasks 264-267: Exited with exit code 127
+srun: error: rzmerl68: tasks 164-167: Exited with exit code 127
+srun: error: rzmerl30: tasks 44-47: Exited with exit code 127
+srun: error: rzmerl124: tasks 384-387: Exited with exit code 127
+srun: error: rzmerl24: tasks 24-27: Exited with exit code 127
+srun: error: rzmerl97: tasks 280-283: Exited with exit code 127
+srun: error: rzmerl128: tasks 400-403: Exited with exit code 127
+srun: error: rzmerl34: tasks 60-63: Exited with exit code 127
+srun: error: rzmerl63: tasks 144-147: Exited with exit code 127
+srun: error: rzmerl119: tasks 364-367: Exited with exit code 127
+srun: error: rzmerl67: tasks 160-163: Exited with exit code 127
+srun: error: rzmerl123: tasks 380-383: Exited with exit code 127
+srun: error: rzmerl148: tasks 480-483: Exited with exit code 127
+srun: error: rzmerl92: tasks 260-263: Exited with exit code 127
+srun: error: rzmerl23: tasks 20-23: Exited with exit code 127
+srun: error: rzmerl28: tasks 40-43: Exited with exit code 127
+srun: error: rzmerl62: tasks 140-143: Exited with exit code 127
+srun: error: rzmerl96: tasks 276-279: Exited with exit code 127
+srun: error: rzmerl27: tasks 36-39: Exited with exit code 127
+srun: error: rzmerl118: tasks 360-363: Exited with exit code 127
+srun: error: rzmerl66: tasks 156-159: Exited with exit code 127
+srun: error: rzmerl87: tasks 240-243: Exited with exit code 127
+srun: error: rzmerl122: tasks 376-379: Exited with exit code 127
+srun: error: rzmerl91: tasks 256-259: Exited with exit code 127
+srun: error: rzmerl147: tasks 476-479: Exited with exit code 127
+srun: error: rzmerl22: tasks 16-19: Exited with exit code 127
+srun: error: rzmerl61: tasks 136-139: Exited with exit code 127
+srun: error: rzmerl117: tasks 356-359: Exited with exit code 127
+srun: error: rzmerl86: tasks 236-239: Exited with exit code 127
+srun: error: rzmerl142: tasks 456-459: Exited with exit code 127
+srun: error: rzmerl65: tasks 152-155: Exited with exit code 127
+srun: error: rzmerl121: tasks 372-375: Exited with exit code 127
+srun: error: rzmerl90: tasks 252-255: Exited with exit code 127
+srun: error: rzmerl26: tasks 32-35: Exited with exit code 127
+srun: error: rzmerl56: tasks 116-119: Exited with exit code 127
+srun: error: rzmerl112: tasks 336-339: Exited with exit code 127
+srun: error: rzmerl146: tasks 472-475: Exited with exit code 127
+srun: error: rzmerl60: tasks 132-135: Exited with exit code 127
+srun: error: rzmerl85: tasks 232-235: Exited with exit code 127
+srun: error: rzmerl116: tasks 352-355: Exited with exit code 127
+srun: error: rzmerl21: tasks 12-15: Exited with exit code 127
+srun: error: rzmerl120: tasks 368-371: Exited with exit code 127
+srun: error: rzmerl141: tasks 452-455: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=1024
++ export BMARK_STRING=sp.D.1024
++ BMARK_STRING=sp.D.1024
++ n=128
++ cores=1024
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 128 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 512 ']'
++ '[' 1024 -eq 2048 ']'
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_08_54_828495440
++ mkdir 2012_05_03_13_08_54_828495440
++ cd 2012_05_03_13_08_54_828495440
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_08_54_828495440
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 1024'
++ echo 'nodes: 128'
++ '[' 1024 -le 8 ']'
++ srun --nodes=128 --ntasks=1024 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 1024
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+nodes=128 ntasks=2048
++ export BMARK_STRING=sp.D.2048
++ BMARK_STRING=sp.D.2048
++ n=128
++ cores=2048
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 128 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 512 ']'
++ '[' 2048 -eq 2048 ']'
++ '[' 128 -eq 128 ']'
++ cores=2025
++ n=127
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_03_13_09_21_995454149
++ mkdir 2012_05_03_13_09_21_995454149
++ cd 2012_05_03_13_09_21_995454149
++ touch out.dat
++ env
++ hostname
++ echo 2012_05_03_13_09_21_995454149
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ echo 'cores: 2048'
++ echo 'nodes: 128'
++ '[' 2048 -le 8 ']'
++ srun --nodes=127 --ntasks=2025 -ppbatch -e sp.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../spCL.sh 2025
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+setting frequency to 2600000 KHz on cores 0 through 15
+Resetting now...

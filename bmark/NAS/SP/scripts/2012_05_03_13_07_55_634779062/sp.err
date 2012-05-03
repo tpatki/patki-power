@@ -1,0 +1,968 @@
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 1: CPUs: 1
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 1: CPUs: 1
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 1: CPUs: 1
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 0: CPUs: 0
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 3: CPUs: 3
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 0: CPUs: 0
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 3: CPUs: 3
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 0: CPUs: 0
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 0: CPUs: 0
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 3: CPUs: 3
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
+/g/g24/rountree/local/src/power/bmark/NAS/SP/scripts/2012_05_03_13_07_55_634779062/../spCL.sh: line 3: ../../../bin/sp.D.484: No such file or directory
