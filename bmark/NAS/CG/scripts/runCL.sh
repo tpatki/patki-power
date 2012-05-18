@@ -16,6 +16,11 @@ uname -a >> info
 #srun --nodes=1 --ntasks=1 -ppfio cat /proc/cpuinfo | grep MHz >> info
 #srun --nodes=1 --ntasks=1 --time=1 -ppbatch cat /proc/cpuinfo | grep MHz >> info
 srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo | grep MHz >> info
+
+#Add the hostnames to a file too -- TP -- May 18 2012
+srun --nodes=$1 --ntasks=$1 -o host_info hostname 
+####
+
 echo 'cores: '$2 >> info
 echo 'nodes: '$1 >> info
 
