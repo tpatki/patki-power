@@ -16,7 +16,10 @@
 export PKG_MINW_MINS=0x38198
 export PP0_MINW_MINS=0x38198
 export DRAM_MINW_MINS=0x38078
-export MSR_PKG_POWER_LIMIT=0x0
+
+#Default is  0x6845000148398
+export MSR_PKG_POWER_LIMIT=0x6845000148398
+
 export MSR_PP0_POWER_LIMIT=0x0
 export MSR_DRAM_POWER_LIMIT=0x0
 export MSR_RANK_MOD=16
@@ -31,7 +34,7 @@ export MSR_RANK_MOD=16
 #		do
 #                    export MSR_DRAM_POWER_LIMIT=${dram}
 		    #Run CG with 16 nodes, with 4,8,16 cores/node
-		    sh ./runCG.sh 4 4 4 16
+		    sh ./runCG.sh 4 4 4 4
 #		done
 	done
 
