@@ -436,8 +436,8 @@ rapl_finalize( struct rapl_state *s ){
 		s->avg_watts[cpu][PP0_DOMAIN] = joules2watts( s->energy_status[cpu][PP0_DOMAIN], &(s->start), &(s->finish) );
 		s->avg_watts[cpu][DRAM_DOMAIN] = joules2watts( s->energy_status[cpu][DRAM_DOMAIN], &(s->start), &(s->finish) );
 
-		// Rest all limits.
-		write_msr( cpu, MSR_PKG_POWER_LIMIT, 0 );
+		// Reset all limits.
+		write_msr( cpu, MSR_PKG_POWER_LIMIT, 0x6845000148398 );
 		write_msr( cpu, MSR_PP0_POWER_LIMIT, 0 );
 		write_msr( cpu, MSR_DRAM_POWER_LIMIT, 0 );
 	}
