@@ -10,7 +10,7 @@ mkdir $name
 cd $name
 touch out.dat
 env > env
-hostname >> info
+#hostname >> info
 echo $name >> info
 uname -a >> info
 #srun --nodes=1 --ntasks=1 -ppfio cat /proc/cpuinfo | grep MHz >> info
