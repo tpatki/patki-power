@@ -10,7 +10,7 @@
 #
 
 
-cd ../rapl/libmsr/
+cd ../rapl/libmsr_blr/
 make clean
 make > makeMSR.out 2>&1
 git add makeMSR.out
@@ -24,7 +24,7 @@ git commit -a -m "Just made Librapl"
 
 cd ../../../bmark
 
-cd ../rapl/libmsr/lib/
+cd ../rapl/libmsr_blr/lib/
 ln -s librapl.mvapich2-gnu-debug-1.7.so librapl.so
 cd -
 
