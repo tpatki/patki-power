@@ -1,10 +1,11 @@
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_core.o msr_core.c
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_rapl.o msr_rapl.c
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o blr_util.o blr_util.c
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_turbo.o msr_turbo.c
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_pebs.o msr_pebs.c
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_opt.o msr_opt.c
-icc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_clocks.o msr_clocks.c
-icc -fPIC -shared -Wl,-soname,libmsr.so -o ./lib/libmsr.so msr_rapl.o blr_util.o msr_core.o msr_turbo.o msr_pebs.o msr_opt.o msr_clocks.o
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_core.o msr_core.c
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_rapl.o msr_rapl.c
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o blr_util.o blr_util.c
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_turbo.o msr_turbo.c
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_pebs.o msr_pebs.c
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_opt.o msr_opt.c
+gcc -fPIC -Wall -DARCH_SANDY_BRIDGE -DPKG_PERF_STATUS_AVAILABLE -DARCH_062D -O2    -c -o msr_clocks.o msr_clocks.c
+gcc -fPIC -shared -Wl,-soname,libmsr.so -o ./lib/libmsr.so msr_rapl.o blr_util.o msr_core.o msr_turbo.o msr_pebs.o msr_opt.o msr_clocks.o
 /usr/bin/ld: cannot open output file ./lib/libmsr.so: No such file or directory
+collect2: ld returned 1 exit status
 make: *** [all] Error 1
