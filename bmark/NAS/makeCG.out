@@ -4,20 +4,20 @@
    =========================================
 
 cd CG; make NPROCS=16 CLASS=A
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 cc -g  -o setparams setparams.c
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 16 A 
 mpif77 -c  -O3 -fPIC cg.f
 cd ../common; mpif77 -c  -O3 -fPIC print_results.f
 cd ../common; mpif77 -c  -O3 -fPIC randi8.f
 cd ../common; mpif77 -c  -O3 -fPIC timers.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.A.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.A.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.A.16] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -25,17 +25,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=1 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 1 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.1] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -43,17 +43,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=2 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 2 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.2] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -61,17 +61,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=4 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 4 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.4] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -79,17 +79,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=8 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 8 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.8] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -97,17 +97,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=16 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 16 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.16] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -115,17 +115,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=32 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 32 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.32] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -133,17 +133,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=64 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 64 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.64] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -151,17 +151,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=128 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 128 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.128] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -169,17 +169,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=256 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 256 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.256] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -187,17 +187,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=512 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 512 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.512] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -205,17 +205,17 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=1024 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 1024 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.1024] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -223,15 +223,15 @@ make: *** [cg] Error 2
    =========================================
 
 cd CG; make NPROCS=2048 CLASS=D
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams cg 2048 D 
 mpif77 -c  -O3 -fPIC cg.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[1]: *** [../bin/cg.D.2048] Error 1
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/CG'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
 make: *** [cg] Error 2
