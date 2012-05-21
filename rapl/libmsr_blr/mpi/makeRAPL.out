@@ -1,9 +1,4 @@
 mkdir -p ../lib
 ./wrap.py -f -g -o rapl.c rapl.w
 mpicc  -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
-rapl.c: In function 'MPI_Init':
-rapl.c:84: error: too many arguments to function 'safe_mkstemp'
-rapl.c:88: warning: passing argument 1 of 'rapl_init' from incompatible pointer type
-../msr_rapl.h:152: note: expected 'const char *' but argument is of type 'struct rapl_state_s *'
-rapl.c:88: error: too many arguments to function 'rapl_init'
-make: *** [rapl-gnu] Error 1
+mpicc -shared -Wl,-soname,librapl.mvapich2-gnu-debug-1.7.so -o ../lib/librapl.mvapich2-gnu-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../msr_clocks.o rapl.o 
