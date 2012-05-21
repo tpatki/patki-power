@@ -4,12 +4,12 @@
    =========================================
 
 cd BT; make NPROCS=1 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 1 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -28,17 +28,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.1 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.1 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.1] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -46,12 +46,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=4 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 4 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -70,17 +70,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.4 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.4 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.4] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -88,12 +88,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=16 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 16 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -112,17 +112,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.16 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.16 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.16] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -130,12 +130,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=36 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 36 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -154,17 +154,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.36 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.36 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.36] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -172,12 +172,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=64 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 64 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -196,17 +196,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.64 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.64 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.64] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -214,12 +214,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=121 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 121 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -238,17 +238,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.121 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.121 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.121] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -256,12 +256,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=256 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 256 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -280,17 +280,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.256 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.256 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.256] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -298,12 +298,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=529 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 529 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -322,17 +322,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.529 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.529 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.529] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -340,12 +340,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=1024 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 1024 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -364,17 +364,17 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.1024 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.1024 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.1024] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
@@ -382,12 +382,12 @@ make: *** [bt] Error 2
    =========================================
 
 cd BT; make NPROCS=2025 CLASS=D SUBTYPE= VERSION=
-make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams bt 2025 D 
-make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC bt.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -406,15 +406,15 @@ mpif77 -c  -O3 -fPIC add.f
 mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
-make[3]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 mpif77 -c  -O3 -fPIC btio.f
-mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.2025 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/bt.D.2025 bt.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o solve_subs.o x_solve.o y_solve.o z_solve.o add.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o btio.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
 collect2: ld returned 1 exit status
 make[3]: *** [bt-bt] Error 1
-make[3]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[3]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[2]: *** [exec] Error 2
-make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make[1]: *** [../bin/bt.D.2025] Error 2
-make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/BT'
+make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/BT'
 make: *** [bt] Error 2
