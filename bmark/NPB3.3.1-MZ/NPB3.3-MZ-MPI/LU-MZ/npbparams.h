@@ -1,4 +1,4 @@
-c NPROCS = 1 CLASS = A
+c NPROCS = 2 CLASS = A
 c  
 c  
 c  This file is generated automatically by the setparams utility.
@@ -8,7 +8,7 @@ c
         character class
         parameter (class='A')
         integer num_procs, num_procs2
-        parameter (num_procs=1, num_procs2=1)
+        parameter (num_procs=2, num_procs2=2)
         integer x_zones, y_zones
         parameter (x_zones=4, y_zones=4)
         integer gx_size, gy_size, gz_size
@@ -17,13 +17,13 @@ c
         parameter (problem_size = 32)
         integer max_xysize, max_xybcsize
         integer proc_max_size, proc_max_size5, proc_max_bcsize
-        parameter (max_xysize=16896)
-        parameter (max_xybcsize=9760)
+        parameter (max_xysize=8448)
+        parameter (max_xybcsize=4880)
         parameter (proc_max_size=max_xysize*gz_size)
         parameter (proc_max_size5=proc_max_size*5)
         parameter (proc_max_bcsize=max_xybcsize*(gz_size-2))
         integer max_numzones
-        parameter (max_numzones=16)
+        parameter (max_numzones=8)
 
 c number of iterations and how often to print the norm
         integer itmax_default, inorm_default
@@ -41,16 +41,16 @@ c number of iterations and how often to print the norm
         character npbversion*5
         parameter (npbversion='3.3.1')
         character cs1*6
-        parameter (cs1='(none)')
-        character cs2*9
-        parameter (cs2='$(MPIF77)')
-        character cs3*6
-        parameter (cs3='(none)')
+        parameter (cs1='mpif77')
+        character cs2*6
+        parameter (cs2='$(F77)')
+        character cs3*46
+        parameter (cs3='-Xlinker -rpath=$(HOME)/local/src/power/rap...')
         character cs4*6
         parameter (cs4='(none)')
         character cs5*9
         parameter (cs5='-O3 -fPIC')
-        character cs6*30
-        parameter (cs6='-O3 -fPIC  -Wl,--build-id=none')
+        character cs6*2
+        parameter (cs6='-O')
         character cs7*6
         parameter (cs7='randi8')
