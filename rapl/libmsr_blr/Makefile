@@ -13,7 +13,7 @@ DEFINES +=-O2
 endif
 
 CFLAGS=-fPIC -Wall ${DEFINES} ${COMPILER_SPECIFIC_FLAGS}
-CC=icc
+CC=gcc
 
 all: msr_rapl.o blr_util.o msr_core.o msr_turbo.o msr_pebs.o msr_opt.o msr_clocks.o
 	$(CC) -fPIC -shared -Wl,-soname,$(library) -o ./lib/$(library) $^
