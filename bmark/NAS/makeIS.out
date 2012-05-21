@@ -4,139 +4,181 @@
    =========================================
 
 cd IS; make NPROCS=4 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 4 D 
 mpicc  -c  -O3 -fPIC is.c
 cd ../common; mpicc  -c  -O3 -fPIC c_print_results.c
 cd ../common; mpicc  -c  -O3 -fPIC c_timers.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.4 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.4] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=8 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 8 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.8 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.8 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.8] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=16 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 16 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.16 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.16 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.16] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=32 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 32 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00014 s in the future
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.32 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.32 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.32] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=64 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 64 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.64 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.64 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.64] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=128 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 128 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.128 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.128 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.128] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=256 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 256 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.256 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.256 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.256] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=512 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 512 D 
+make[1]: Warning: File `npbparams.h' has modification time 8.5e-05 s in the future
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.512 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.512 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.512] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=1024 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 1024 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.1024 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.1024 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.1024] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd IS; make NPROCS=2048 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
-make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make[2]: Entering directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/sys'
 ../sys/setparams is 2048 D 
 mpicc  -c  -O3 -fPIC is.c
-mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.2048 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib -lrapl
-make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/IS'
+mpicc -O3 -fPIC  -Wl,--build-id=none -o ../bin/is.D.2048 is.o ../common/c_print_results.o ../common/c_timers.o -Xlinker -rpath=/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -L/g/g90/patki1/local/src/power/rapl/libmsr_blr/lib -lrapl
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
+make[1]: *** [../bin/is.D.2048] Error 1
+make[1]: Leaving directory `/g/g90/patki1/local/src/power/bmark/NAS/IS'
+make: *** [is] Error 2
