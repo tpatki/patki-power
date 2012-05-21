@@ -2,7 +2,8 @@
 #MSUB -l nodes=4
 #MSUB -q pbatch
 #MSUB -l walltime=02:45:00
-
+#MSUB -l partition=cab
+#MSUB -A lc
 #Call the child script that does the runs
 
 export POWER_DIR=${HOME}/local/src/power
