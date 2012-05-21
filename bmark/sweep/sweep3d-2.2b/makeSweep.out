@@ -3,9 +3,9 @@ checking whether build environment is sane... yes
 checking for gawk... gawk
 checking whether make sets $(MAKE)... yes
 checking for Fortran 77 compiler default output file name... 
-configure: error: in `/g/g90/patki1/local/src/power/bmark/sweep/sweep3d-2.2b':
+configure: error: in `/g/g24/rountree/local/src/patki-power/bmark/sweep/sweep3d-2.2b':
 configure: error: Fortran 77 compiler cannot create executables
 See `config.log' for more details.
 cd . && /bin/sh /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6 
-/bin/sh: /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing: Permission denied
-make: *** [aclocal.m4] Error 126
+/bin/sh: /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing: No such file or directory
+make: *** [aclocal.m4] Error 127
