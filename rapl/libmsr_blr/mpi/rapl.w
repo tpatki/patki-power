@@ -12,6 +12,7 @@ static char hostname[1025];
 extern int msr_debug;
 static FILE* f;
 struct rapl_state_s s;
+char filetag[2048];
 
 static int msr_rank_mod=1;
 
@@ -22,11 +23,17 @@ static int msr_rank_mod=1;
 	get_env_int("MSR_RANK_MOD", &msr_rank_mod);
 	if(rank%msr_rank_mod == 0){
 		gethostname( hostname, 1024 );
-		f = safe_mkstemp(hostname, "rapl", rank);
+		//TP
+		sprintf(filetag, "%s_rapl_ %d", hostname, rank); 
+		//f = safe_mkstemp(hostname, "rapl", rank);
+		//TP
+		f = safe_mkstemp(filetag);
 		init_msr();
 		disable_turbo(0);
 		disable_turbo(1);
-		rapl_init(&s, f ,1);
+		//rapl_init(&s, f ,1);
+		//TP
+		rapl_init(filetag); 
 	}
 {{endfn}}
 
