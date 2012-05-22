@@ -24,7 +24,7 @@ static int msr_rank_mod=1;
 	if(rank%msr_rank_mod == 0){
 		gethostname( hostname, 1024 );
 		//TP
-		sprintf(filetag, "%s_rapl_ %d", hostname, rank); 
+		sprintf(filetag, "%s_rapl_%d", hostname, rank); 
 		//f = safe_mkstemp(hostname, "rapl", rank);
 		//TP
 		f = safe_mkstemp(filetag);
