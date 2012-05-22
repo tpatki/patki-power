@@ -1,0 +1,67 @@
+
+;; Function MPI_Init (MPI_Init)
+
+verify found no changes in insn with uid = 16.
+verify found no changes in insn with uid = 56.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 89.
+verify found no changes in insn with uid = 96.
+verify found no changes in insn with uid = 103.
+verify found no changes in insn with uid = 116.
+verify found no changes in insn with uid = 127.
+verify found no changes in insn with uid = 135.
+verify found no changes in insn with uid = 138.
+verify found no changes in insn with uid = 148.
+verify found no changes in insn with uid = 157.
+verify found no changes in insn with uid = 160.
+verify found no changes in insn with uid = 164.
+verify found no changes in insn with uid = 167.
+verify found no changes in insn with uid = 170.
+verify found no changes in insn with uid = 173.
+
+;; Function MPI_Init_fortran_wrapper (MPI_Init_fortran_wrapper)
+
+verify found no changes in insn with uid = 13.
+
+;; Function MPI_INIT (MPI_INIT)
+
+verify found no changes in insn with uid = 9.
+
+;; Function mpi_init (mpi_init)
+
+verify found no changes in insn with uid = 9.
+
+;; Function mpi_init_ (mpi_init_)
+
+verify found no changes in insn with uid = 9.
+
+;; Function mpi_init__ (mpi_init__)
+
+verify found no changes in insn with uid = 9.
+
+;; Function MPI_Finalize (MPI_Finalize)
+
+verify found no changes in insn with uid = 10.
+verify found no changes in insn with uid = 28.
+verify found no changes in insn with uid = 31.
+
+;; Function MPI_Finalize_fortran_wrapper (MPI_Finalize_fortran_wrapper)
+
+verify found no changes in insn with uid = 7.
+
+;; Function MPI_FINALIZE (MPI_FINALIZE)
+
+verify found no changes in insn with uid = 8.
+
+;; Function mpi_finalize (mpi_finalize)
+
+verify found no changes in insn with uid = 8.
+
+;; Function mpi_finalize_ (mpi_finalize_)
+
+verify found no changes in insn with uid = 8.
+
+;; Function mpi_finalize__ (mpi_finalize__)
+
+verify found no changes in insn with uid = 8.
