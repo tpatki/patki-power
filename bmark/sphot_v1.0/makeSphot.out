@@ -1,5 +1,5 @@
 make -C src -f Makefile.src
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/sphot_v1.0/src'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src'
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/allocdyn.o  allocdyn.f 
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/copyglob.o  copyglob.f 
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/copypriv.o copypriv.f
@@ -27,11 +27,7 @@ mpif77 -C -g -fopenmp -c -I../includes -o ../bin/thom.o thom.f
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/writeout.o writeout.f
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/wroutput.o wroutput.f
 mpif77 -C -g -fopenmp -c -I../includes -o ../bin/zonevols.o zonevols.f
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/sphot_v1.0/src'
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/sphot_v1.0/src'
 cd bin; \
 	mpif77 -fopenmp *.o -o sphot -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl ; \
 	mv sphot ../.
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-mv: cannot stat `sphot': No such file or directory
-make: *** [sphot] Error 1
