@@ -1,0 +1,12 @@
+#!/bin/bash
+#MSUB -lpartition=sierra
+#MSUB -A asccasc
+#MSUB -l nodes=3
+#MSUB -q pdebug
+#MSUB -l walltime=00:15:00
+
+export OMP_NUM_THREADS=1
+
+#srun --nodes=3 --ntasks=3 -o  lu-test.out -e lu-test.err ./lu-mz.A.3
+srun --nodes=3 --ntasks=3 ls -la /opt/mvapich-gnu-gen2-1.2/lib/shared/
+srun --nodes=3 --ntasks=3 -o  lu-test.out -e lu-test.err ./rapl-dummy
