@@ -11,8 +11,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 2 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.2 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.2] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -29,8 +29,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 4 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.4 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -47,8 +47,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 8 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.8 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -65,8 +65,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 16 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.16 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -83,8 +83,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 32 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.32 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -101,8 +101,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 64 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.64 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -119,8 +119,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 128 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.128 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -137,8 +137,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 256 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.256 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -155,8 +155,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 512 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.512 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -173,8 +173,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 1024 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.1024 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
@@ -191,8 +191,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams ft 2048 D 
 mpif77 -c  -O3 -fPIC ft.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/ft.D.2048 ft.o ../common/randi8.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/ft.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/FT'
 make: *** [ft] Error 2
