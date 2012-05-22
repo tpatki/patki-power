@@ -9,10 +9,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 8 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.0006 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.8 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.8] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -27,10 +28,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 16 D 
+make[1]: Warning: File `npbparams.h' has modification time 8.1e-05 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.16 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -47,8 +49,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 32 D 
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.32 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.32] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -65,8 +67,8 @@ make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 64 D 
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.64 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -81,10 +83,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 128 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00047 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.128 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.128] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -99,10 +102,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 256 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00055 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.256 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -117,10 +121,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 512 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00029 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.512 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.512] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -135,10 +140,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 1024 D 
+make[1]: Warning: File `npbparams.h' has modification time 5.4e-05 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.1024 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
@@ -153,10 +159,11 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams mg 2048 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00054 s in the future
 mpif77 -c  -O3 -fPIC mg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/mg.D.2048 mg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
+ipo: error #11024: Linker command line is badly formed
+ifort: error #10014: problem during multi-file optimization compilation (code 1)
 make[1]: *** [../bin/mg.D.2048] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/MG'
 make: *** [mg] Error 2
