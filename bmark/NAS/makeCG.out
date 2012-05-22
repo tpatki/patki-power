@@ -4,234 +4,206 @@
    =========================================
 
 cd CG; make NPROCS=16 CLASS=A
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 cc -g  -o setparams setparams.c
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 16 A 
+make[1]: Warning: File `npbparams.h' has modification time 0.00053 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 cd ../common; mpif77 -c  -O3 -fPIC print_results.f
 cd ../common; mpif77 -c  -O3 -fPIC randi8.f
 cd ../common; mpif77 -c  -O3 -fPIC timers.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.A.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.A.16] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=1 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.0012 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.1 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.1] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=2 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00092 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.2 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.2] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=4 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 4 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00045 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.4 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.4] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=8 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 8 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00024 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.8 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.8] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=16 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 16 D 
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.16 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.16] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=32 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 32 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00031 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.32 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.32] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=64 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 64 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.0002 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.64 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.64] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=128 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 128 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00039 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.128 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.128] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=256 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 256 D 
+make[1]: Warning: File `npbparams.h' has modification time 2e-06 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.256 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.256] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=512 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 512 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00055 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.512 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.512] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=1024 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 1024 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00074 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.1024 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.1024] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
    =========================================
    =      NAS Parallel Benchmarks 3.3      =
    =      MPI/F77/C                        =
    =========================================
 
 cd CG; make NPROCS=2048 CLASS=D
-make[1]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[1]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
+make[2]: Entering directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 make[2]: Nothing to be done for `all'.
-make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
+make[2]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/sys'
 ../sys/setparams cg 2048 D 
+make[1]: Warning: File `npbparams.h' has modification time 0.00029 s in the future
 mpif77 -c  -O3 -fPIC cg.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/cg.D.2048 cg.o ../common/print_results.o ../common/randi8.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-/usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
-make[1]: *** [../bin/cg.D.2048] Error 1
-make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/CG'
-make: *** [cg] Error 2
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/g/g24/rountree/local/src/power/bmark/NAS/CG'
