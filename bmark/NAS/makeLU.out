@@ -40,8 +40,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.1 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.1] Error 2
@@ -85,8 +85,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.2 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.2] Error 2
@@ -130,8 +130,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.4 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.4] Error 2
@@ -175,8 +175,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.8 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.8] Error 2
@@ -220,8 +220,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.16 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.16] Error 2
@@ -265,8 +265,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.32 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.32] Error 2
@@ -310,8 +310,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.64 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.64] Error 2
@@ -355,8 +355,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.128 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.128] Error 2
@@ -400,8 +400,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.256 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.256] Error 2
@@ -445,8 +445,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.512 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.512] Error 2
@@ -490,8 +490,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.1024 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.1024] Error 2
@@ -535,8 +535,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC pintgr.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/lu.D.2048 lu.o init_comm.o read_input.o bcast_inputs.o proc_grid.o neighbors.o nodedim.o subdomain.o setcoeff.o sethyper.o setbv.o exact.o setiv.o erhs.o ssor.o exchange_1.o exchange_3.o exchange_4.o exchange_5.o exchange_6.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[2]: *** [exec] Error 1
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/LU'
 make[1]: *** [../bin/lu.D.2048] Error 2
