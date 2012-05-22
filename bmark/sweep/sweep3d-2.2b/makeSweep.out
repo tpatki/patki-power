@@ -3,9 +3,17 @@ checking whether build environment is sane... yes
 checking for gawk... gawk
 checking whether make sets $(MAKE)... yes
 checking for Fortran 77 compiler default output file name... 
-configure: error: in `/g/g24/rountree/local/src/patki-power/bmark/sweep/sweep3d-2.2b':
+configure: error: in `/g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b':
 configure: error: Fortran 77 compiler cannot create executables
 See `config.log' for more details.
-cd . && /bin/sh /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing --run aclocal-1.6 
-/bin/sh: /g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b/missing: No such file or directory
-make: *** [aclocal.m4] Error 127
+/bin/sh ./config.status --recheck
+running CONFIG_SHELL=/bin/sh /bin/sh ./configure F77=mpif77 LDFLAGS=-Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr/lib LIBS=-lrapl --with-mpi --no-create --no-recursion
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for Fortran 77 compiler default output file name... 
+configure: error: in `/g/g24/rountree/local/src/power/bmark/sweep/sweep3d-2.2b':
+configure: error: Fortran 77 compiler cannot create executables
+See `config.log' for more details.
+make: *** [config.status] Error 77
