@@ -1,0 +1,32 @@
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 0: CPUs: 0
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+auto-affinity: local task 1: CPUs: 1
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+auto-affinity: local task 3: CPUs: 3
+auto-affinity: local task 2: CPUs: 2
+auto-affinity: local task 1: CPUs: 1
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory
+/g/g24/rountree/local/src/patki-power/bmark/NAS/CG/scripts/2012_05_21_16_49_40_018887939/../cgCL.sh: line 4: ../../../bin/cg.D.16: No such file or directory

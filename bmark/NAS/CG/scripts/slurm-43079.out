@@ -1,0 +1,104 @@
+/g/g24/rountree/local/src/power
+/var/spool/slurmd/job43079/slurm_script: line 8: cd: /g/g24/rountree/local/src/power/bmark/NAS/CG/scripts: No such file or directory
+nodes=4 ntasks=16
++ export BMARK_STRING=cg.D.16
++ BMARK_STRING=cg.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_21_16_49_39_277868411
++ mkdir 2012_05_21_16_49_39_277868411
++ cd 2012_05_21_16_49_39_277868411
++ touch out.dat
++ env
++ echo 2012_05_21_16_49_39_277868411
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ srun --nodes=4 --ntasks=4 -o host_info hostname
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 16
+srun: error: cab485: tasks 0-3: Exited with exit code 127
+srun: error: cab512: tasks 8-11: Exited with exit code 127
+srun: error: cab506: tasks 4-7: Exited with exit code 127
+srun: error: cab525: tasks 12-15: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+sh: /g/g24/rountree/local/src/power/setcpufreq.sh: No such file or directory
+nodes=4 ntasks=16
++ export BMARK_STRING=cg.D.16
++ BMARK_STRING=cg.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_21_16_49_40_018887939
++ mkdir 2012_05_21_16_49_40_018887939
++ cd 2012_05_21_16_49_40_018887939
++ touch out.dat
++ env
++ echo 2012_05_21_16_49_40_018887939
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ srun --nodes=4 --ntasks=4 -o host_info hostname
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 16
+srun: error: cab525: tasks 12-15: Exited with exit code 127
+srun: error: cab506: tasks 4-7: Exited with exit code 127
+srun: error: cab485: tasks 0-3: Exited with exit code 127
+srun: error: cab512: tasks 8-11: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+sh: /g/g24/rountree/local/src/power/setcpufreq.sh: No such file or directory
+nodes=4 ntasks=16
++ export BMARK_STRING=cg.D.16
++ BMARK_STRING=cg.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_21_16_49_40_458781588
++ mkdir 2012_05_21_16_49_40_458781588
++ cd 2012_05_21_16_49_40_458781588
++ touch out.dat
++ env
++ echo 2012_05_21_16_49_40_458781588
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ srun --nodes=4 --ntasks=4 -o host_info hostname
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 16
+srun: error: cab506: tasks 4-7: Exited with exit code 127
+srun: error: cab512: tasks 8-11: Exited with exit code 127
+srun: error: cab485: tasks 0-3: Exited with exit code 127
+srun: error: cab525: tasks 12-15: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+sh: /g/g24/rountree/local/src/power/setcpufreq.sh: No such file or directory
+nodes=4 ntasks=16
++ export BMARK_STRING=cg.D.16
++ BMARK_STRING=cg.D.16
+++ date +%Y_%m_%d_%H_%M_%S_%N
++ name=2012_05_21_16_49_40_899072236
++ mkdir 2012_05_21_16_49_40_899072236
++ cd 2012_05_21_16_49_40_899072236
++ touch out.dat
++ env
++ echo 2012_05_21_16_49_40_899072236
++ uname -a
++ srun --nodes=1 --ntasks=1 -ppbatch cat /proc/cpuinfo
++ grep MHz
++ srun --nodes=4 --ntasks=4 -o host_info hostname
++ echo 'cores: 16'
++ echo 'nodes: 4'
++ '[' 16 -le 8 ']'
++ srun --nodes=4 --ntasks=16 -ppbatch -e cg.err -o out.dat --auto-affinity=start=0,verbose,cpt=1 ../cgCL.sh 16
+srun: error: cab485: tasks 0-3: Exited with exit code 127
+srun: error: cab512: tasks 8-11: Exited with exit code 127
+srun: error: cab506: tasks 4-7: Exited with exit code 127
+srun: error: cab525: tasks 12-15: Exited with exit code 127
++ sh /g/g24/rountree/local/src/power/setcpufreq.sh 2600000 0 15
+sh: /g/g24/rountree/local/src/power/setcpufreq.sh: No such file or directory
+/var/spool/slurmd/job43079/slurm_script: line 10: cd: /g/g24/rountree/local/src/power/dummy-tmp: No such file or directory
+Resetting now...
+srun: error: cab485: tasks 0-15: Exited with exit code 2
+srun: error: cab506: tasks 16-31: Exited with exit code 2
+srun: error: cab512: tasks 32-47: Exited with exit code 2
+srun: error: cab525: tasks 48-63: Exited with exit code 2
