@@ -9,7 +9,6 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams sp 1 D 
-make[1]: Warning: File `npbparams.h' has modification time 0.00059 s in the future
 mpif77 -c  -O3 -fPIC sp.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -35,8 +34,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.1 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.1] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -51,7 +50,6 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams sp 4 D 
-make[1]: Warning: File `npbparams.h' has modification time 0.00033 s in the future
 mpif77 -c  -O3 -fPIC sp.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -77,8 +75,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.4 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.4] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -93,7 +91,6 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams sp 16 D 
-make[1]: Warning: File `npbparams.h' has modification time 0.00053 s in the future
 mpif77 -c  -O3 -fPIC sp.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -119,8 +116,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.16 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.16] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -135,7 +132,6 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams sp 36 D 
-make[1]: Warning: File `npbparams.h' has modification time 2.6e-05 s in the future
 mpif77 -c  -O3 -fPIC sp.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -161,8 +157,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.36 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.36] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -202,8 +198,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.64 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.64] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -218,7 +214,6 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams sp 121 D 
-make[1]: Warning: File `npbparams.h' has modification time 6.5e-05 s in the future
 mpif77 -c  -O3 -fPIC sp.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -244,8 +239,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.121 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.121] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -260,7 +255,6 @@ make[2]: Entering directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys
 make[2]: Nothing to be done for `all'.
 make[2]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/sys'
 ../sys/setparams sp 256 D 
-make[1]: Warning: File `npbparams.h' has modification time 0.00083 s in the future
 mpif77 -c  -O3 -fPIC sp.f
 mpif77 -c  -O3 -fPIC make_set.f
 mpif77 -c  -O3 -fPIC initialize.f
@@ -286,8 +280,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.256 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.256] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -327,8 +321,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.529 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.529] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -368,8 +362,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.1024 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.1024] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
@@ -409,8 +403,8 @@ mpif77 -c  -O3 -fPIC error.f
 mpif77 -c  -O3 -fPIC verify.f
 mpif77 -c  -O3 -fPIC setup_mpi.f
 mpif77 -O3 -fPIC  -Wl,--build-id=none -o ../bin/sp.D.2025 sp.o make_set.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o define.o copy_faces.o rhs.o lhsx.o lhsy.o lhsz.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o setup_mpi.o ../common/print_results.o ../common/timers.o -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
-ipo: error #11024: Linker command line is badly formed
-ifort: error #10014: problem during multi-file optimization compilation (code 1)
+/usr/bin/ld: cannot find -lrapl
+collect2: ld returned 1 exit status
 make[1]: *** [../bin/sp.D.2025] Error 1
 make[1]: Leaving directory `/g/g24/rountree/local/src/patki-power/bmark/NAS/SP'
 make: *** [sp] Error 2
