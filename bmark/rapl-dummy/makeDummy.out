@@ -1,4 +1,3 @@
 mpicc -o rapl-dummy rapl-dummy.c -Xlinker -rpath=/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -L/g/g24/rountree/local/src/power/rapl/libmsr_blr/lib -lrapl
 /usr/bin/ld: cannot find -lrapl
-collect2: ld returned 1 exit status
 make: *** [rapl-dummy] Error 1
