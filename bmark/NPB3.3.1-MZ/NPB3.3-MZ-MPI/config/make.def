@@ -29,15 +29,17 @@
 #---------------------------------------------------------------------------
 # This is the fortran compiler used for fortran programs
 #---------------------------------------------------------------------------
-F77 = mpif77
+#F77 = mpif77
+F77 = mpiifort
 # This links fortran programs; usually the same as ${F77}
 FLINK	= $(F77)
 
 #---------------------------------------------------------------------------
 # These macros are passed to the linker 
 #---------------------------------------------------------------------------
-F_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr_blr/lib -L$(HOME)/local/src/power/rapl/libmsr_blr/lib -lrapl
+#F_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr_blr/lib -L$(HOME)/local/src/power/rapl/libmsr_blr/lib -lrapl
 
+F_LIB =
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler 
 #---------------------------------------------------------------------------
@@ -46,14 +48,16 @@ F_INC =
 #---------------------------------------------------------------------------
 # Global *compile time* flags for Fortran programs
 #---------------------------------------------------------------------------
-FFLAGS	= -O3 -fPIC
+#FFLAGS	= -O3 -fPIC -fopenmp 
+FFLAGS	= -O3 -xavx -openmp -openmp-lib=compat -shared-intel -mcmodel=medium
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
-FLINKFLAGS = -O
+#FLINKFLAGS = -O3 -fopenmp
 
+FLINKFLAGS = -O3 -xavx -openmp -openmp-lib=compat -shared-intel -mcmodel=medium
 
 #---------------------------------------------------------------------------
 # Parallel C:
@@ -82,8 +86,9 @@ CLINK	= $(CC)
 #---------------------------------------------------------------------------
 # These macros are passed to the linker 
 #---------------------------------------------------------------------------
-C_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr_blr/lib -L$(HOME)/local/src/power/rapl/libmsr_blr/lib -lrapl
+#C_LIB  = -Xlinker -rpath=$(HOME)/local/src/power/rapl/libmsr_blr/lib -L$(HOME)/local/src/power/rapl/libmsr_blr/lib -lrapl
 
+C_LIB = 
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler 
 #---------------------------------------------------------------------------
@@ -92,13 +97,13 @@ C_INC =
 #---------------------------------------------------------------------------
 # Global *compile time* flags for C programs
 #---------------------------------------------------------------------------
-CFLAGS	= -O3 -fPIC
+CFLAGS	= -O3 -fPIC -fopenmp
 
 #---------------------------------------------------------------------------
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
-CLINKFLAGS = -O
+CLINKFLAGS = -O3 -fopenmp
 
 
 #---------------------------------------------------------------------------
