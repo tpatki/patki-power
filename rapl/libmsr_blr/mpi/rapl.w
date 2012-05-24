@@ -11,7 +11,7 @@ static int rank;
 static char hostname[1025];
 extern int msr_debug;
 static FILE* f;
-struct rapl_state_s s;
+struct rapl_state_s *s;
 char filetag[2048];
 
 static int msr_rank_mod=1;
@@ -27,20 +27,22 @@ static int msr_rank_mod=1;
 		sprintf(filetag, "%s_rapl_%d", hostname, rank); 
 		//f = safe_mkstemp(hostname, "rapl", rank);
 		//TP
-		f = safe_mkstemp(filetag);
+	//	f = safe_mkstemp(filetag);
 		init_msr();
 		disable_turbo(0);
 		disable_turbo(1);
 		//rapl_init(&s, f ,1);
 		//TP
-		rapl_init(filetag); 
+		s=rapl_init(filetag); 
 	}
 {{endfn}}
 
 {{fn foo MPI_Finalize}}
 	double elapsed;
 	if(rank%msr_rank_mod == 0){
-		rapl_finalize(&s, 1);
+		printf("I'm falling into the trap.....seg fault!\n");
+		rapl_finalize(s, 1);
+		printf("Returned from rapl-finalize successfully \n");
 	}
 	{{callfn}}
 {{endfn}}
