@@ -12,9 +12,7 @@ void handle_sig(int signum)
 {
 	//Don't usr printf in a sig handler. This is just for my testing for now. 
 	
-	printf("\nProcess %d got signal %d\n", getpid(), signum);
-
-	printf("\nI am in the signal handler.\n");
+//	printf("\nProcess %d got signal %d\n", getpid(), signum);
 
 	//Basically, do nothing if the in_handler is 1. This means someone else is
 	//Running a signal handler too. And they will exit appropriately
@@ -44,8 +42,6 @@ void register_sig()
 
 void restore_registers()
 {	 
-	printf("\n In restore_registers. ");
-
 	int package;
         
        // Reset all limits.
