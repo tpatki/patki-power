@@ -461,18 +461,6 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 	}
 
 
-	
-
-//	PATKI: 
-//	Introduce a seffault on purpose
-	s->f = NULL;
-//	Call restore defaults instead? Also, note that this does 
-//	not restore turbo back to what it was.
-//	Restore_defaults() doesn't call get_all_status()
-//	so we might have to hold off on making this change...
-//	restore_defaults();
-
-
 	for(package=0; package<NUM_PACKAGES; package++){
 		get_all_status(package, s);
 
@@ -486,6 +474,9 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 			write_msr( package, MSR_DRAM_POWER_LIMIT, 0 );
 #endif
 			*/ // These are currently locked out.
+			
+			//We had disabled turbo. The default is to leave this enabled.
+			enable_turbo(package);
 		}
 	}
 	
