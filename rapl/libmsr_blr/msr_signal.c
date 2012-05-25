@@ -1,6 +1,7 @@
 #include "msr_signal.h"
 #include "msr_core.h"
 #include "msr_rapl.h"
+#include "msr_turbo.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -55,7 +56,10 @@ void restore_registers()
                      #ifdef ARCH_062D
                          write_msr( package, MSR_DRAM_POWER_LIMIT, 0 );
                      # endif
-                   */ // These are currently locked out.
+            */ // These are currently locked out.
+	 
+	    //Disable turbo boost
+	     disable_turbo(package); 
 	}                     
 
 	//The call to finalize_msr() closes files, not sure if I need it. We shall see. 
