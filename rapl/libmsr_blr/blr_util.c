@@ -27,7 +27,7 @@ safe_mkstemp( const char *filetag ){
 }
 
 int get_env_int(const char *name, int *val){
-	char *str;
+	char *str=NULL;
 	str = getenv(name);
 
 	//PATKI: Adding another missing error check that was resulting in a random segfault!	

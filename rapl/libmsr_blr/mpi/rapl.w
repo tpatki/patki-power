@@ -13,6 +13,7 @@ extern int msr_debug;
 static FILE* f;
 struct rapl_state_s *s;
 char filetag[2048];
+int retVal = -1; 
 
 static int msr_rank_mod=-1;
 
@@ -20,12 +21,13 @@ static int msr_rank_mod=-1;
 	{{callfn}}
 	rank = -1;
 	PMPI_Comm_rank( MPI_COMM_WORLD, &rank );
-	get_env_int("MSR_RANK_MOD", &msr_rank_mod);
+	retVal = get_env_int("MSR_RANK_MOD", &msr_rank_mod);
 
-	if (msr_rank_mod <= -1){
+	if(retVal == -1){
 		printf("Error: To run an MPI program, the MSR_RANK_MOD environment variable should be set.\n"); 
 		exit(EXIT_FAILURE);
 	}
+
 	if(rank%msr_rank_mod == 0){
 		gethostname(hostname, 1024 );
 		//TP
