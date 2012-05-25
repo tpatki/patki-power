@@ -35,3 +35,4 @@ enable_bits
 .RData
 .Rhistory
 row.out
+rapl/trent/*.h.gch

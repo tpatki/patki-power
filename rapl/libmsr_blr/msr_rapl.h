@@ -148,7 +148,7 @@ struct rapl_state_s{
 	*/
 };
 
-void
+struct rapl_state_s *
 rapl_init(const char *filetag);
 
 void 

@@ -414,7 +414,7 @@ set_policy( int package, int domain, uint64_t policy ){
 }
 
 
-void
+struct rapl_state_s *
 rapl_init( const char *filetag ){
 	static char filename[4097];
 	struct rapl_state_s *s = &no_caller_rapl_state;
@@ -424,8 +424,17 @@ rapl_init( const char *filetag ){
 	}
 	snprintf( filename, 4096, "%s.rapl.out", filetag );
 	s->f = fopen( filename, "w" );
+
+	if(s->f ==NULL){
+		printf("\nError opening file: %s", filename);
+		return s; 
+	}
+
 	init_msr();
+	parse_opts();
+
 	print_rapl_state_header(s);
+
 
 	for(package=0; package<NUM_PACKAGES; package++){
 		get_all_info(  package, s);
@@ -433,16 +442,25 @@ rapl_init( const char *filetag ){
 		get_all_status(package, s);
 		gettimeofday( &(s->start[package]), NULL );
 	}
+ //Patki: Return the state variable
+ return s; 
 }
 
 void
 rapl_finalize( struct rapl_state_s *s, int reset_limits){
 
 	int package;
+
+	if(s->f == NULL){
+		printf("\n Error: File pointer should not be null. Something went wrong");
+		return;
+	}
+
 	if( s==NULL ){
 		s = &no_caller_rapl_state;
 	}
-	
+
+
 	for(package=0; package<NUM_PACKAGES; package++){
 		get_all_status(package, s);
 
@@ -456,12 +474,15 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 			write_msr( package, MSR_DRAM_POWER_LIMIT, 0 );
 #endif
 			*/ // These are currently locked out.
+			
+			//We had disabled turbo. The default is to leave this enabled.
+			enable_turbo(package);
 		}
 	}
 	
 	// Now the print statement from hell.
 	print_rapl_state(s);
-	
+
 	finalize_msr();
 }
 
@@ -586,7 +607,7 @@ print_rapl_state(struct rapl_state_s *s){
 	if( s==NULL ){
 		s = &no_caller_rapl_state;
 	}
-  
+	
 	// Now the data on the following line....
 
 

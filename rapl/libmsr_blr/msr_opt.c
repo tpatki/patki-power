@@ -18,8 +18,15 @@ msr2str( uint64_t msr ){
 	}
 }
 
-void
-parse_opts( int argc, char **argv ){
+/*PATKI: If we ever decide to write a command line interface,
+ * we can use the following prototype:
+ *
+*void
+parse_opts( int argc, char **argv )*/
+
+
+void 
+parse_opts(){
 	int cpu;
 	uint64_t msr_pkg_power_limit=-1, msr_pp0_power_limit=-1; 
 #ifdef ARCH_062D
@@ -27,16 +34,21 @@ parse_opts( int argc, char **argv ){
 #endif
 	char *env;
 
-	// TODO:  write a command-line interface.
-	argc=argc;
-	argv=argv;
+	// BLR: TODO:  write a command-line interface.
+	// PATKI: This can wait, because this eventually messes up applications
+	// that take their own command line parameters.
+	// Lets just stick to environment variables for now.	//
+	/* 
+ 	 	argc=argc;
+ 		 argv=argv;
+	*/
 
 	// First, check the environment variables.
 	env = getenv("MSR_PKG_POWER_LIMIT");
 	if(env){
 		msr_pkg_power_limit = strtoll( env, NULL, 0 );
 	}
-
+	
 	env = getenv("MSR_PP0_POWER_LIMIT");
 	if(env){
 		msr_pp0_power_limit = strtoll( env, NULL, 0 );
