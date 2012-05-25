@@ -167,6 +167,7 @@ disable_turbo(int package){
 int 
 main()
 {
+	int package;
 	init_msr();
         for(package=0; package<NUM_PACKAGES; package++){
              write_msr( package, MSR_PKG_POWER_LIMIT, APPRO_DEFAULT_PKG_POWER_LIMIT );

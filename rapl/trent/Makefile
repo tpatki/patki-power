@@ -1,6 +1,6 @@
-all: restore_defaults.c Makefile
-	gcc -Wall -O0 -o msr_restore_defaults restore_defaults.c
+all: msr_epilog.c Makefile
+	gcc -Wall -O0 -o msr_epilog msr_epilog.c
 
 clean:
-	rm -rf *.o *.gch restore_defaults
+	rm -rf *.o *.gch msr_epilog
 					
