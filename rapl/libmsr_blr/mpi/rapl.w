@@ -33,7 +33,8 @@ static int msr_rank_mod=-1;
 		//f = safe_mkstemp(hostname, "rapl", rank);
 		//TP
 	//	f = safe_mkstemp(filetag);
-		init_msr();
+ 	//	init_msr();
+		register_sig();
 		disable_turbo(0);
 		disable_turbo(1);
 		//rapl_init(&s, f ,1);
@@ -45,9 +46,7 @@ static int msr_rank_mod=-1;
 {{fn foo MPI_Finalize}}
 	double elapsed;
 	if(rank%msr_rank_mod == 0){
-		printf("I'm falling into the trap.....seg fault!\n");
 		rapl_finalize(s, 1);
-		printf("Returned from rapl-finalize successfully \n");
 	}
 	{{callfn}}
 {{endfn}}

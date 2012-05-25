@@ -5,12 +5,12 @@ rapl-icc:
 	mkdir -p ../lib
 	./wrap.py -f -g -o rapl.c rapl.w
 	mpicc $(ICC_FLAGS) -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
-	mpicc -shared -Wl,-soname,librapl.mvapich2-icc-debug-1.7.so -o ../lib/librapl.mvapich2-icc-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../msr_clocks.o rapl.o 
+	mpicc -shared -Wl,-soname,librapl.mvapich2-icc-debug-1.7.so -o ../lib/librapl.mvapich2-icc-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../msr_clocks.o rapl.o ../msr_signal.o
 rapl-gnu:
 	mkdir -p ../lib
 	./wrap.py -f -g -o rapl.c rapl.w
 	mpicc $(GNU_FLAGS) -DPIC -fPIC -I.. -DARCH_SANDY_BRIDGE -DARCH_062D -c rapl.c -o rapl.o
-	mpicc -shared -Wl,-soname,librapl.mvapich2-gnu-debug-1.7.so -o ../lib/librapl.mvapich2-gnu-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../msr_clocks.o rapl.o 
+	mpicc -shared -Wl,-soname,librapl.mvapich2-gnu-debug-1.7.so -o ../lib/librapl.mvapich2-gnu-debug-1.7.so ../msr_core.o ../msr_rapl.o ../msr_turbo.o ../blr_util.o ../msr_opt.o ../msr_clocks.o rapl.o ../msr_signal.o
 clean:
 	rm -f *.o 
 
