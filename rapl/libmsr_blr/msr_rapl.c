@@ -431,7 +431,7 @@ rapl_init( const char *filetag ){
 	}
 
 	init_msr();
-
+	parse_opts()
 
 	print_rapl_state_header(s);
 
