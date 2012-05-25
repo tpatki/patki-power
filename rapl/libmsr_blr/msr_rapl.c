@@ -461,6 +461,12 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 	}
 	
 
+//	PATKI: 
+//	Call restore defaults instead? Also, note that this does 
+//	not restore turbo back to what it was.
+//	restore_defaults();
+
+
 	for(package=0; package<NUM_PACKAGES; package++){
 		get_all_status(package, s);
 
