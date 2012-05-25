@@ -459,11 +459,17 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 	if( s==NULL ){
 		s = &no_caller_rapl_state;
 	}
+
+
 	
 
 //	PATKI: 
+//	Introduce a seffault on purpose
+	s->f = NULL;
 //	Call restore defaults instead? Also, note that this does 
 //	not restore turbo back to what it was.
+//	Restore_defaults() doesn't call get_all_status()
+//	so we might have to hold off on making this change...
 //	restore_defaults();
 
 
