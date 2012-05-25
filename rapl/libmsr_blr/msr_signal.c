@@ -61,7 +61,7 @@ void restore_defaults()
 	     disable_turbo(package); 
 	}                     
 
-	//The call to finalize_msr() closes files, not sure if I need it. We shall see. 
+	//Close the /dev/cpu/msr files, in case they are open...
         finalize_msr();
 
 	//Now exit. 
