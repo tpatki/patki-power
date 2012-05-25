@@ -31,9 +31,10 @@ int get_env_int(const char *name, int *val){
 	str = getenv(name);
 
 	//PATKI: Adding another missing error check that was resulting in a random segfault!	
-	if(str ==NULL)
+	if(str ==NULL){
+		*val = -1; 
 		return -1;
-
+	}
 	*val = (int) strtol(str, (char **)NULL, 0);
 	return 0;
 }
