@@ -4,7 +4,7 @@
 #define BLR_UTIL_H
 double ts_delta( struct timeval *start, struct timeval *stop );
 FILE * safe_mkstemp( const char *filetag );
-void get_env_int( const char *name, int *val );
+int get_env_int( const char *name, int *val );
 #define max(a,b) ((a)>=(b)?(a):(b))
 #endif // BLR_UTIL_H
 
