@@ -67,5 +67,8 @@ void restore_registers()
 	//Now exit. 
 	//printf("In_handler is %d", in_handler);
          _exit(EXIT_FAILURE);
-
+	
+	//You can't reach here, so the value of in_handler stays 1 until we exit. No one 
+	//else can get in while it is 1 
+	
 }
