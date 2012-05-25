@@ -430,8 +430,12 @@ rapl_init( const char *filetag ){
 		return s; 
 	}
 
-	init_msr();
-	parse_opts();
+// Let the get_env_variables handle this.
+// 	init_msr();
+	get_env_variables();
+
+// PATKI: Question: the following is legacy code and accesses MSRs. get_env_variables should ideally call a
+// module that handles this properly. We shall see how this turns out to be... too early to comment.
 
 	print_rapl_state_header(s);
 

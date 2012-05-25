@@ -21,12 +21,36 @@ msr2str( uint64_t msr ){
 /*PATKI: If we ever decide to write a command line interface,
  * we can use the following prototype:
  *
-*void
-parse_opts( int argc, char **argv )*/
+	// BLR: TODO:  write a command-line interface.
+	// PATKI: This can wait, because this eventually messes up applications
+	// that take their own command line parameters.
+	// Lets just stick to environment variables for now.	//
+ 
+ 	 	argc=argc;
+ 		 argv=argv;
 
+*void
+get_command_line(int argc, char **argv )*/
+
+
+/*
+ * PATKI: get_env_variables()
+ * 
+ * This module will serve as an entry point into the library functionality and will be
+ * called by rapl_init. It determine whether you want to do a dry run, a read-only-run or allow
+ * writing to msrs based on environment variables. This will call the init_msr(), set_power_bounds() module
+ * only when writing to msrs is enabled. 
+ * Also, note that finalize_msr() needs to be called only when init_msr() has been called. 
+ * So we need something that will help us check that as well.
+ */
+
+void
+get_env_variables(){
+
+}
 
 void 
-parse_opts(){
+set_power_bounds(){
 	int cpu;
 	uint64_t msr_pkg_power_limit=-1, msr_pp0_power_limit=-1; 
 #ifdef ARCH_062D
@@ -34,20 +58,11 @@ parse_opts(){
 #endif
 	char *env;
 
-	// BLR: TODO:  write a command-line interface.
-	// PATKI: This can wait, because this eventually messes up applications
-	// that take their own command line parameters.
-	// Lets just stick to environment variables for now.	//
-	/* 
- 	 	argc=argc;
- 		 argv=argv;
-	*/
 
 	// First, check the environment variables.
 	env = getenv("MSR_PKG_POWER_LIMIT");
 	if(env){
 		msr_pkg_power_limit = strtoll( env, NULL, 0 );
-	}
 	
 	env = getenv("MSR_PP0_POWER_LIMIT");
 	if(env){
