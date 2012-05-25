@@ -47,6 +47,65 @@ get_command_line(int argc, char **argv )*/
 void
 get_env_variables(){
 
+	char *env = NULL;
+
+	int dry_run_flag = 1;
+	int read_only_flag = 0;
+	int read_write_flag = 0;
+
+	env = get_env("READ_ONLY");
+	if(env == NULL){
+		//Read only flag has not been set.
+		//Ensure that it is still zero.
+		read_only_flag = 0;
+	}
+	if(env){
+		read_only_flag = strtoll(env,NULL,0);
+	}
+
+	env = get_env("READ_WRITE");
+	
+	if(env == NULL){
+		//Read_write flag has not been set.
+		//Ensure that it is still zero.
+		read_write_flag = 0;
+	}
+	if(env){
+		read_write_flag = strtoll(env,NULL,0);
+	}
+
+/* We are dealing with MSRs and need to be very careful, hence, if the 
+ * environment variables contain any thing other than 1, none of the code
+ * should run and it should default to the dry-run.
+ * The dry_run_flag is always 1.
+ * If read_write_flag is 1, it should not matter what the value of read_only_flag is. 
+ *
+ * If read_only_flag is 1, the read_write_flag has to be ZERO.
+ *
+ * */
+
+	if(dry_run_flag == 1){
+
+		/*READ_ONLY_MODE*/		
+		if(read_only_flag == 1 && read_write_flag == 0){
+			/*Need to determine what to do here. Output should probably be a file 
+ 			* with the measured power values. So, call init_msr(), 
+ 			* followed by the get_rapl_data(), followed by finalize_msr(). */ 	
+
+//			if(permissions_flag == 1)
+
+		}
+	
+		/*READ_WRITE_MODE. Care should be taken that the user has the right permissions, and
+ 		* that even if the environment variable is set, you can't write to MSRs unless 
+ 		* you have the right permissions. How do I check for this? */
+	 
+		if(read_write_flag == 1){	
+
+//			if(permissions_flag == 1)
+				set_power_bounds();	
+		}
+	}
 }
 
 void 
@@ -56,7 +115,7 @@ set_power_bounds(){
 #ifdef ARCH_062D
 	uint64_t msr_dram_power_limit=-1;
 #endif
-	char *env;
+	char *env = NULL;
 
 
 	// First, check the environment variables.
