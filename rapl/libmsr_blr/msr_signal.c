@@ -26,9 +26,9 @@ void handle_sig(int signum)
 	//non-deterministic behavior, and to be able to run our non-reentrant unsafe 
 	//library code as safely as possible.
 	
-	if(in_handler == 0)
+	if(in_handler == 0){
 		restore_registers(); 
-
+	}
 	//You should never reach this point.
 	
 	printf("\n \n In handle_sig: this is bad. If you're here, your exit call failed. ");
@@ -41,7 +41,10 @@ void register_sig()
 }
 
 void restore_registers()
-{	 
+{
+	//No one else can enter now.
+	in_handler = 1;
+
 	int package;
         
        // Reset all limits.
@@ -62,6 +65,7 @@ void restore_registers()
 //        finalize_msr();
 
 	//Now exit. 
+	//printf("In_handler is %d", in_handler);
          _exit(EXIT_FAILURE);
 
 }
