@@ -10,7 +10,7 @@
 
 void handle_sig(int signum);
 void register_sig();
-void restore_registers();
+void restore_defaults();
 #endif  // MSR_SIGNAL_H
 
 

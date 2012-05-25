@@ -27,7 +27,7 @@ void handle_sig(int signum)
 	//library code as safely as possible.
 	
 	if(in_handler == 0){
-		restore_registers(); 
+		restore_defaults(); 
 	}
 	//You should never reach this point.
 	
@@ -40,7 +40,7 @@ void register_sig()
 	signal(SIGKILL, handle_sig);
 }
 
-void restore_registers()
+void restore_defaults()
 {
 	//No one else can enter now.
 	in_handler = 1;
@@ -62,7 +62,7 @@ void restore_registers()
 	}                     
 
 	//The call to finalize_msr() closes files, not sure if I need it. We shall see. 
-//        finalize_msr();
+        finalize_msr();
 
 	//Now exit. 
 	//printf("In_handler is %d", in_handler);
