@@ -11,7 +11,7 @@
 
 static struct rapl_state_s no_caller_rapl_state;
 
-static void print_rapl_state_header(struct rapl_state_s *s);
+//static void print_rapl_state_header(struct rapl_state_s *s);
 
 double
 joules2watts( double joules, struct timeval *start, struct timeval *stop ){
@@ -418,26 +418,28 @@ struct rapl_state_s *
 rapl_init( const char *filetag ){
 	static char filename[4097];
 	struct rapl_state_s *s = &no_caller_rapl_state;
-	int package;
+
 	if( filetag == NULL ){
 		filetag = "anonymous";
 	}
+
 	snprintf( filename, 4096, "%s.rapl.out", filetag );
+
 	s->f = fopen( filename, "w" );
 
-	if(s->f ==NULL){
-		printf("\nError opening file: %s", filename);
+	if(s->f == NULL){
+		fprintf(stderr, "\nError opening file: %s", filename);
 		return s; 
 	}
 
+
 // Let the get_env_variables handle this.
-// 	init_msr();
-	get_env_variables();
+	get_env_variables(s);
 
 // PATKI: Question: the following is legacy code and accesses MSRs. get_env_variables should ideally call a
 // module that handles this properly. We shall see how this turns out to be... too early to comment.
 
-	print_rapl_state_header(s);
+/*	print_rapl_state_header(s);
 
 
 	for(package=0; package<NUM_PACKAGES; package++){
@@ -445,7 +447,10 @@ rapl_init( const char *filetag ){
 		get_all_limit( package, s);
 		get_all_status(package, s);
 		gettimeofday( &(s->start[package]), NULL );
+
 	}
+*/
+
  //Patki: Return the state variable
  return s; 
 }
@@ -486,7 +491,6 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 	
 	// Now the print statement from hell.
 	print_rapl_state(s);
-
 	finalize_msr();
 }
 

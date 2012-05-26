@@ -32,14 +32,10 @@ static int msr_rank_mod=-1;
 		gethostname(hostname, 1024 );
 		//TP
 		sprintf(filetag, "%s_rapl_%d", hostname, rank); 
-		//f = safe_mkstemp(hostname, "rapl", rank);
 		//TP
-	//	f = safe_mkstemp(filetag);
- 	//	init_msr();
 		register_sig();
-		disable_turbo(0);
-		disable_turbo(1);
-		//rapl_init(&s, f ,1);
+//		disable_turbo(0);
+//		disable_turbo(1);
 		//TP
 		s=rapl_init(filetag); 
 	}

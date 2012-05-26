@@ -9,7 +9,7 @@
 #include <stdio.h>	//   perror
 #include <unistd.h>	//   pread, pwrite
 //#include <sys/types.h>  // \ ....
-#include <sys/stat.h> 	// | open
+#include <sys/stat.h> 	// | open, fstat
 #include <fcntl.h>	// / ....
 #include <stdint.h>	// uint64_t
 #include <errno.h>
@@ -19,28 +19,56 @@
 int msr_debug;
 static int core_fd[NUM_PACKAGES][NUM_CORES_PER_PACKAGE];
 
-void
+int
 init_msr(){
 	int i,j;
 	char filename[1025];
+	struct stat statbuf;
 	static int initialized = 0;
+	int retVal;
+
 	if( initialized ){
-		return;
+		return 0;
 	}
 	for (i=0; i<NUM_PACKAGES; i++){
 		for (j=0; j<NUM_CORES_PER_PACKAGE; j++){
 			// Open the rest of the cores for core-level msrs.  
 			snprintf(filename, 1024, "/dev/cpu/%d/msr", i*NUM_CORES_PER_PACKAGE+j);
+
+			retVal = stat(filename, &statbuf);
+
+			if (retVal == -1) {
+			      snprintf(filename, 1024, "%s::%d  Error: stat failed on /dev/cpu/%d/msr, check if msr module is loaded\n", __FILE__, __LINE__, i*NUM_CORES_PER_PACKAGE+j);
+					
+				return -1; 
+			}	
+		
+			//Debug
+			fprintf(stderr, "Statbuf.mode & S_IRUSR: % \nd", statbuf.st_mode & S_IRUSR);
+
+			if(!(statbuf.st_mode & S_IRUSR) || !(statbuf.st_mode & S_IWUSR)){
+				snprintf(filename, 1024, "%s::%d  Read/write permissions denied on /dev/cpu/%d/msr\n", __FILE__, __LINE__, i*NUM_CORES_PER_PACKAGE+j);
+		
+				return -1;
+			}
+ 
+
 			core_fd[i][j] = open( filename, O_RDWR );
+
 			if(core_fd[i][j] == -1){
-				snprintf(filename, 1024, "%s::%d  Error opening /dev/cpu/%d/msr\n", __FILE__, __LINE__, i*NUM_CORES_PER_PACKAGE+j);
+				snprintf(filename, 1024, "%s::%d  Error opening /dev/cpu/%d/msr, check if msr module is loaded. \n", __FILE__, __LINE__, i*NUM_CORES_PER_PACKAGE+j);
 				perror(filename);
+		
+				return -1;
 			}
 
 		}
 		
 	}
+
 	initialized = 1;
+
+	return 0;
 }
 
 void 

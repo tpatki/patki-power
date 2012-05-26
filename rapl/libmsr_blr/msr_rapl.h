@@ -192,6 +192,11 @@ void clear_all_limits();
 // sample
 void rapl_tick();
 
+//PATKI: I don't see the reason why this was declared to be static. So I moved it here because I want to use it in msr_opt.c
+//to be able to implement read-only and read-write modes safely
+
+void print_rapl_state_header(struct rapl_state_s *s);
+
 #endif //ARCH_SANDY_BRIDGE
 
 

@@ -9,7 +9,7 @@ enum{
 	MSR_OR,
 	MSR_XOR
 };
-void init_msr();
+int init_msr();
 void finalize_msr();
 
 void write_msr(int socket, off_t msr, uint64_t val);

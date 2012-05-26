@@ -5,6 +5,7 @@
 #include "msr_rapl.h"
 #include "msr_core.h"
 #include "msr_opt.h"
+#include "msr_turbo.h"
 
 static char *
 msr2str( uint64_t msr ){
@@ -38,14 +39,15 @@ get_command_line(int argc, char **argv )*/
  * 
  * This module will serve as an entry point into the library functionality and will be
  * called by rapl_init. It determine whether you want to do a dry run, a read-only-run or allow
- * writing to msrs based on environment variables. This will call the init_msr(), set_power_bounds() module
+ * writing to msrs based on environment variables. This will call the inia_msr(), set_power_bounds() module
+                   
  * only when writing to msrs is enabled. 
  * Also, note that finalize_msr() needs to be called only when init_msr() has been called. 
  * So we need something that will help us check that as well.
  */
 
 void
-get_env_variables(){
+get_env_variables(struct rapl_state_s *s){
 
 	char *env = NULL;
 
@@ -53,7 +55,11 @@ get_env_variables(){
 	int read_only_flag = 0;
 	int read_write_flag = 0;
 
-	env = get_env("READ_ONLY");
+	int package;
+
+	int retVal = -1; 
+
+	env = getenv("READ_ONLY");
 	if(env == NULL){
 		//Read only flag has not been set.
 		//Ensure that it is still zero.
@@ -63,7 +69,7 @@ get_env_variables(){
 		read_only_flag = strtoll(env,NULL,0);
 	}
 
-	env = get_env("READ_WRITE");
+	env = getenv("READ_WRITE");
 	
 	if(env == NULL){
 		//Read_write flag has not been set.
@@ -86,13 +92,37 @@ get_env_variables(){
 
 	if(dry_run_flag == 1){
 
+              retVal = init_msr();
+              if(retVal == -1){
+                    fprintf(stderr, "Error in initialization. Exiting.\n");
+                     _exit(EXIT_FAILURE);
+              }
+		
 		/*READ_ONLY_MODE*/		
 		if(read_only_flag == 1 && read_write_flag == 0){
 			/*Need to determine what to do here. Output should probably be a file 
  			* with the measured power values. So, call init_msr(), 
  			* followed by the get_rapl_data(), followed by finalize_msr(). */ 	
 
-//			if(permissions_flag == 1)
+			fprintf(stdout, "\nIn READ-ONLY mode.\n");
+
+			//Now that the permissions are correct, first disable turbo.
+			
+			for(package=0;package<NUM_PACKAGES; package++){
+				disable_turbo(package);
+			}
+	
+//			You want to do this in here and not in rapl_init because it is safer to do it in here.
+//			Also, in the dry run, none of this info should be printed.
+//			You need to have read_msr access to be able to get the info/limit/status.
+				
+  			print_rapl_state_header(s);
+       			 for(package=0; package<NUM_PACKAGES; package++){
+                		get_all_info(  package, s);
+              			get_all_limit( package, s);
+               		 	get_all_status(package, s);
+               	 		gettimeofday( &(s->start[package]), NULL );
+       			 }
 
 		}
 	
@@ -102,11 +132,30 @@ get_env_variables(){
 	 
 		if(read_write_flag == 1){	
 
-//			if(permissions_flag == 1)
-				set_power_bounds();	
+			fprintf(stdout, "\nIn READ-WRITE mode.\n");
+
+			//Now that the permissions are correct, first disable turbo.
+			
+			for(package=0;package<NUM_PACKAGES; package++){
+				disable_turbo(package);
+			}
+	
+//			You want to do this in here and not in rapl_init because it is safer to do it in here.
+  			print_rapl_state_header(s);
+                         for(package=0; package<NUM_PACKAGES; package++){
+			        get_all_info(  package, s);
+                                get_all_limit( package, s);
+                                get_all_status(package, s);
+                                gettimeofday( &(s->start[package]), NULL );
+                         }
+
+			//Write to the POWER registers
+			set_power_bounds();	
 		}
 	}
 }
+
+
 
 void 
 set_power_bounds(){
@@ -120,19 +169,36 @@ set_power_bounds(){
 
 	// First, check the environment variables.
 	env = getenv("MSR_PKG_POWER_LIMIT");
+	
+	if(env == NULL){
+		fprintf(stderr, "Error in reading environment variable MSR_PKG_POWER_LIMIT. Using defaults.\n");
+	}
 	if(env){
 		msr_pkg_power_limit = strtoll( env, NULL, 0 );
-	
+	}	
+
+
+
 	env = getenv("MSR_PP0_POWER_LIMIT");
+	if(env == NULL){
+		fprintf(stderr, "Error in reading environment variable MSR_PP0_POWER_LIMIT. Using defaults.\n");
+	}
 	if(env){
 		msr_pp0_power_limit = strtoll( env, NULL, 0 );
 	}
+
+
 #ifdef ARCH_062D
 	env = getenv("MSR_DRAM_POWER_LIMIT");
+	if(env == NULL){
+		fprintf(stderr, "Error in reading environment variable MSR_DRAM_POWER_LIMIT. Using defaults.\n");
+	}
+
 	if(env){
 		msr_dram_power_limit = strtoll( env, NULL, 0 );
 	}
 #endif
+
 
 	// Now write the MSRs.  Zero is a valid value
 	for( cpu=0; cpu<NUM_PACKAGES; cpu++ ){
