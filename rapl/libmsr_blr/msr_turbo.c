@@ -52,6 +52,7 @@ disable_turbo(int package){
 	for(j=0; j<NUM_CORES_PER_PACKAGE; j++){
 		val[j] |= ((uint64_t)1) << 32;
 	}
+	
 	write_msr_all_cores_v( package, IA32_PERF_CTL, &val[0] );
 
 }
