@@ -10,7 +10,7 @@ SHELL = /bin/sh
 
 srcdir = .
 top_srcdir = .
-prefix = ~/local/research/libmsr
+prefix = /usr/local
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin
@@ -40,8 +40,8 @@ transform = s,x,x,
 
 bin_PROGRAMS = time
 info_TEXINFOS = time.texi
-time_SOURCES = time.c getopt.c getopt1.c error.c resuse.c version.c itimer.c\
-	getopt.h getpagesize.h resuse.h port.h wait.h itimer.h
+time_SOURCES = time.c getopt.c getopt1.c error.c resuse.c version.c \
+	getopt.h getpagesize.h resuse.h port.h wait.h
 EXTRA_DIST = texinfo.tex
 
 DISTCLEANFILES = stamp-v version.c
@@ -56,12 +56,12 @@ YACC = @YACC@
 DEFS =  -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STRING_H=1 -DRETSIGTYPE=void -DHAVE_TIMEVAL=1 -DHAVE_VPRINTF=1 -DHAVE_WAIT3=1 -DHAVE_STRERROR=1 -DHAVE_GETPAGESIZE=1  -I. -I$(srcdir) 
 CPPFLAGS = 
 CFLAGS = -g -O
-LDFLAGS = -Xlinker -rpath=$(HOME)/local/research/libmsr/lib -L$(HOME)/local/research/libmsr/lib -lmsr
+LDFLAGS = 
 LIBS = 
 
 COMPILE = $(CC) -c $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
 LINK = $(CC) $(LDFLAGS) -o $@
-time_OBJECTS = time.o getopt.o getopt1.o error.o resuse.o version.o itimer.o
+time_OBJECTS = time.o getopt.o getopt1.o error.o resuse.o version.o
 EXTRA_time_SOURCES =
 time_LDADD = $(LDADD)
 
@@ -89,7 +89,7 @@ TAR = tar
 SOURCES = $(time_SOURCES)
 OBJECTS = $(time_OBJECTS)
 
-default: caliper
+default: all
 
 
 $(srcdir)/Makefile.in: Makefile.am configure.in
@@ -140,9 +140,6 @@ distclean-compile:
 maintainer-clean-compile:
 
 time: $(time_OBJECTS) $(time_DEPENDENCIES)
-	$(LINK) $(time_OBJECTS) $(time_LDADD) $(LIBS)
-
-caliper: $(time_OBJECTS) $(time_DEPENDENCIES)
 	$(LINK) $(time_OBJECTS) $(time_LDADD) $(LIBS)
 
 version.texi: stamp-vti

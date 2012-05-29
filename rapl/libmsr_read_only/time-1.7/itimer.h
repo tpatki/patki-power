@@ -1,3 +1,0 @@
-
-int setup_itimer();
-
