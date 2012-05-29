@@ -474,7 +474,7 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 		if(reset_limits){
 			// Rest all limits.
 			// This is currently the default limit on rzmerl.
-			write_msr( package, MSR_PKG_POWER_LIMIT, 0x6845000148398 );
+			write_msr( package, MSR_PKG_POWER_LIMIT, APPRO_DEFAULT_PKG_POWER_LIMIT);
 			/*
 			write_msr( package, MSR_PP0_POWER_LIMIT, 0 );
 #ifdef ARCH_062D

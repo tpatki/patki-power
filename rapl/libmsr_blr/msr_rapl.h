@@ -49,6 +49,9 @@
  *  - ARCH_O62A
  */
 
+//Default for PKG_POWER_LIMIT
+#define APPRO_DEFAULT_PKG_POWER_LIMIT 0x6845000148398
+
 // MSRs common to 062A and 062D.
 #ifdef ARCH_SANDY_BRIDGE
 #define MSR_RAPL_POWER_UNIT             0x606   // (pkg) Section 14.7.1 "RAPL Interfaces"
