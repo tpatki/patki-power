@@ -60,6 +60,9 @@ In the READ_WRITE mode, you can clamp the PKG_LIMIT, PP0_LIMIT and DRAM_LIMIT to
 To be able to use these modes, you need to export either the READ_ONLY environment variable, or the READ_WRITE environment variable 
 appropriately and set it to 1. Note that if both the READ_ONLY and the READ_WRITE environment variables are exported, 
 the library defaults to the READ_ONLY mode. 
+
+In the READ_WRITE mode, you need to export the MSR_PKG_POWER_LIMIT, MSR_PP0_POWER_LIMIT and the MSR_DRAM_POWER_LIMIT environment variables
+to use RAPL for clamping. More information on setting these can be found in the Intel Manual, Chapter 14. Note that the default for MSR_PKG_POWER_LIMIT is 0x6845000148398 and not 0x0. Setting this to 0x0 affects turbo boost.  
 ===========================================
 
 Error messages:
