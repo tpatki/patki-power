@@ -7,6 +7,8 @@
 #include "msr_opt.h"
 #include "msr_turbo.h"
 
+
+
 static char *
 msr2str( uint64_t msr ){
 	switch(msr){
@@ -51,9 +53,6 @@ get_env_variables(struct rapl_state_s *s){
 
 	char *env = NULL;
 
-	int dry_run_flag = 1;
-	int read_only_flag = 0;
-	int read_write_flag = 0;
 
 	int package;
 
@@ -63,10 +62,10 @@ get_env_variables(struct rapl_state_s *s){
 	if(env == NULL){
 		//Read only flag has not been set.
 		//Ensure that it is still zero.
-		read_only_flag = 0;
+		s->mode.read_only_flag = 0;
 	}
 	if(env){
-		read_only_flag = strtoll(env,NULL,0);
+		s->mode.read_only_flag = strtoll(env,NULL,0);
 	}
 
 	env = getenv("READ_WRITE");
@@ -74,10 +73,10 @@ get_env_variables(struct rapl_state_s *s){
 	if(env == NULL){
 		//Read_write flag has not been set.
 		//Ensure that it is still zero.
-		read_write_flag = 0;
+		s->mode.read_write_flag = 0;
 	}
 	if(env){
-		read_write_flag = strtoll(env,NULL,0);
+		s->mode.read_write_flag = strtoll(env,NULL,0);
 	}
 
 /* We are dealing with MSRs and need to be very careful, hence, if the 
@@ -90,7 +89,7 @@ get_env_variables(struct rapl_state_s *s){
  *
  * */
 
-	if(dry_run_flag == 1){
+	if(s->mode.dry_run_flag == 1){
 
               retVal = init_msr();
               if(retVal == -1){
@@ -99,7 +98,7 @@ get_env_variables(struct rapl_state_s *s){
               }
 		
 		/*READ_ONLY_MODE*/		
-		if(read_only_flag == 1 && read_write_flag == 0){
+		if(s->mode.read_only_flag == 1 && s->mode.read_write_flag == 0){
 			/*Need to determine what to do here. Output should probably be a file 
  			* with the measured power values. So, call init_msr(), 
  			* followed by the get_rapl_data(), followed by finalize_msr(). */ 	
@@ -130,7 +129,7 @@ get_env_variables(struct rapl_state_s *s){
  		* that even if the environment variable is set, you can't write to MSRs unless 
  		* you have the right permissions. How do I check for this? */
 	 
-		if(read_write_flag == 1){	
+		if(s->mode.read_write_flag == 1){	
 
 			fprintf(stdout, "\nIn READ-WRITE mode.\n");
 

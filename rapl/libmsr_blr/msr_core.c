@@ -43,9 +43,6 @@ init_msr(){
 				return -1; 
 			}	
 		
-			//Debug
-			fprintf(stderr, "Statbuf.mode & S_IRUSR: % \nd", statbuf.st_mode & S_IRUSR);
-
 			if(!(statbuf.st_mode & S_IRUSR) || !(statbuf.st_mode & S_IWUSR)){
 				snprintf(filename, 1024, "%s::%d  Read/write permissions denied on /dev/cpu/%d/msr\n", __FILE__, __LINE__, i*NUM_CORES_PER_PACKAGE+j);
 		

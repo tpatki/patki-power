@@ -11,8 +11,6 @@
 
 static struct rapl_state_s no_caller_rapl_state;
 
-//static void print_rapl_state_header(struct rapl_state_s *s);
-
 double
 joules2watts( double joules, struct timeval *start, struct timeval *stop ){
 
@@ -419,6 +417,20 @@ rapl_init( const char *filetag ){
 	static char filename[4097];
 	struct rapl_state_s *s = &no_caller_rapl_state;
 
+	//Ensure that the default mode values are set correctly
+	//The get_env_vars will read the environment vars and
+	//determine if any changes need to be made.
+	//
+	//Note that the reason why mode is in the rapl_state struct
+	//is because we want to use only one state variable to 
+	//preserve context, and also to ensure that the mode
+	//is not directly exposed to the wrapper and
+	//is not being passed around.
+		
+	s->mode.dry_run_flag = 1;
+	s->mode.read_only_flag = 0;
+	s->mode.read_write_flag = 0;
+
 	if( filetag == NULL ){
 		filetag = "anonymous";
 	}
@@ -433,23 +445,9 @@ rapl_init( const char *filetag ){
 	}
 
 
-// Let the get_env_variables handle this.
+//Execute based on the correct mode.
+
 	get_env_variables(s);
-
-// PATKI: Question: the following is legacy code and accesses MSRs. get_env_variables should ideally call a
-// module that handles this properly. We shall see how this turns out to be... too early to comment.
-
-/*	print_rapl_state_header(s);
-
-
-	for(package=0; package<NUM_PACKAGES; package++){
-		get_all_info(  package, s);
-		get_all_limit( package, s);
-		get_all_status(package, s);
-		gettimeofday( &(s->start[package]), NULL );
-
-	}
-*/
 
  //Patki: Return the state variable
  return s; 
@@ -489,9 +487,19 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 		}
 	}
 	
-	// Now the print statement from hell.
-	print_rapl_state(s);
-	finalize_msr();
+	// Now the print statement from hell. Call this only if it is not a dry-run
+	//I.E., if we are in the read-only or the read-write modes. 
+	//Otherwise, the file should be empty.
+
+	if(s->mode.dry_run_flag == 1 && s->mode.read_only_flag ==0 && s->mode.read_write_flag == 0){
+		fprintf(stdout, "\n In dry-run mode.");
+		finalize_msr();
+	}
+	else {
+		//This is either read-only or read_write mode.
+		print_rapl_state(s);
+		finalize_msr();
+	}
 }
 
 void 
@@ -617,7 +625,6 @@ print_rapl_state(struct rapl_state_s *s){
 	}
 	
 	// Now the data on the following line....
-
 
 	for(package=0; package<NUM_PACKAGES; package++){
 

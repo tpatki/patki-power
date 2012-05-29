@@ -129,6 +129,14 @@ enum{
 	NUM_DOMAINS
 };
 
+
+
+struct mode_s{
+  int dry_run_flag;
+  int read_only_flag;
+  int read_write_flag;
+};
+
 struct rapl_state_s{
 	FILE *f;
 	struct timeval start[NUM_PACKAGES];
@@ -146,6 +154,13 @@ struct rapl_state_s{
 	double perf_status_finish[NUM_PACKAGES][NUM_DOMAINS];
 	uint64_t policy[NUM_PACKAGES][NUM_DOMAINS];
 	*/
+
+	//To preserve the mode across init/finalize calls.
+	//The reason this is not a separate structure
+	//Is that we don't want this structure to be exposed
+	//to the wrapper, and we want to be able to preserve
+	//all context with one state variable.
+	struct mode_s mode;
 };
 
 struct rapl_state_s *
