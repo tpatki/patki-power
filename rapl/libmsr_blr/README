@@ -28,6 +28,10 @@ To use this with MPI:
 For MPI programs, ensure that the MSR_RANK_MOD environment variable is exported. This variable
 determines which rank on the node will take control of writing to the MSRs in the situation 
 where there are multiple tasks running on the node. 
+
+As of now, we do not support OpenMP. However, you can create a dummy program that calls MPI_Init, and MPI_Finalize
+and uses the "execvp" sytem call to execute your OpenMP binary. We haven't tested this and do not guarantee that it
+will work.
 ===========================================
 
 To link to the library:
