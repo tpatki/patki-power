@@ -98,7 +98,7 @@ get_env_variables(struct rapl_state_s *s){
               }
 		
 		/*READ_ONLY_MODE*/		
-		if(s->mode.read_only_flag == 1 && s->mode.read_write_flag == 0){
+		if(s->mode.read_only_flag == 1){
 			/*Need to determine what to do here. Output should probably be a file 
  			* with the measured power values. So, call init_msr(), 
  			* followed by the get_rapl_data(), followed by finalize_msr(). */ 	
@@ -127,9 +127,12 @@ get_env_variables(struct rapl_state_s *s){
 	
 		/*READ_WRITE_MODE. Care should be taken that the user has the right permissions, and
  		* that even if the environment variable is set, you can't write to MSRs unless 
- 		* you have the right permissions. How do I check for this? */
+ 		* you have the right permissions. 
+ 		* Also, if both the read_write and read_only_flag are set, it should default to read_only 
+ 		* under the assumption that the use is not clear about how to use the library correctly */
 	 
-		if(s->mode.read_write_flag == 1){	
+
+		if(s->mode.read_write_flag == 1 && s->mode.read_only_flag == 0){	
 
 			fprintf(stdout, "\nIn READ-WRITE mode.\n");
 

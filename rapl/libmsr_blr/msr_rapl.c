@@ -492,7 +492,7 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 	//Otherwise, the file should be empty.
 
 	if(s->mode.dry_run_flag == 1 && s->mode.read_only_flag ==0 && s->mode.read_write_flag == 0){
-		fprintf(stdout, "\n In dry-run mode.");
+		fprintf(stdout, "\nIn DRY_RUN mode.");
 		finalize_msr();
 	}
 	else {
