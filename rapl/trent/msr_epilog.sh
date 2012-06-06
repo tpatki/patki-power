@@ -1,34 +1,42 @@
 #!/bin/bash
 
-#Bash script that uses msr-tools-1.1.2
-#to enable turbo and to set
-#the MSR_PKG_POWER_LIMIT to its default value
+#Sandy bridge processor architecture:0x062A or 0x062D. The followig definitions use the integer equivalents.
 
-
-#set -x
-
-NUM_PACKAGES=2
-NUM_CORES_PER_PACKAGE=8
+SB_FAMILY=6
+SB_MODEL_1=42  #Supports RAPL without DRAM clamping
+SB_MODEL_2=45  #Supports RAPL with DRAM clamping 
 
 IA32_PERF_CTL_ADDR=0x199
 MSR_PKG_POWER_LIMIT_ADDR=0x610
 MSR_PKG_POWER_LIMIT_DEFAULT=0x6845000148398
+TURBO_BIT=$((~(1<<32)))
 
-core=0;
-#Set bit 32 to zero. Note that this enables turbo.
-turbo_bit=$((~(1<<32)))
-while [ $core -lt $(($NUM_PACKAGES * $NUM_CORES_PER_PACKAGE)) ]
-do
+enable_turbo() {
+    local core=$1
+    local val=$(rdmsr -p $core $IA32_PERF_CTL_ADDR)
+    local newval=$(printf "%x" $(($TURBO_BIT & 0x$val)))
+    if [ $newval != $val ]; then
+        wrmsr -p $core $IA32_PERF_CTL_ADDR 0x$newval
+    fi
+}
 
-	#First Enable Turbo
-	#Read-modify-write on IA32_PERF_CTL
-	#Note that input to ./wrmsr needs to be in hex.
+set_pkg_power_limit_default() {
+    local core=$1
+    local current=$(rdmsr -p $core $MSR_PKG_POWER_LIMIT_ADDR)
+    if [ 0x$current != $MSR_PKG_POWER_LIMIT_DEFAULT ]; then
+        wrmsr -p $core $MSR_PKG_POWER_LIMIT_ADDR  $MSR_PKG_POWER_LIMIT_DEFAULT
+    fi
+}
 
-	IA32_PERF_CTL=`./rdmsr -p $core $IA32_PERF_CTL_ADDR`
-	temp=$(($turbo_bit & 0x$IA32_PERF_CTL))
-	val=`echo "ibase=10;obase=16;$temp"|bc`
-	./wrmsr -p $core $IA32_PERF_CTL_ADDR 0x$val
+family=$(cat /proc/cpuinfo | grep family | cut -d ":" -f 2 | head -n 1 | sed 's/[ \t]*//g')
+model=$(cat /proc/cpuinfo | grep model | sed -n '1~2p'| cut -d ":" -f 2 | head -n 1| sed 's/[ \t]*//g')
 
-	./wrmsr -p $core $MSR_PKG_POWER_LIMIT_ADDR $MSR_PKG_POWER_LIMIT_DEFAULT
-	core=$(($core+1));
-done 
+if [ $family -eq $SB_FAMILY ];then 
+	if [ $model -eq $SB_MODEL_1 ] || [ $model -eq $SB_MODEL_2 ]; then
+		for cpu in $(cd /dev/cpu && ls -1d [0-9]* | sort -n); do
+        		enable_turbo $cpu
+        		set_pkg_power_limit_default $cpu
+		done
+	fi
+fi
+
