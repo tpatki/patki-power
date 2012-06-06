@@ -15,8 +15,8 @@ MSR_PKG_POWER_LIMIT_ADDR=0x610
 MSR_PKG_POWER_LIMIT_DEFAULT=0x6845000148398
 
 core=0;
-#Set bit 32 to zero
-disable_turbo_bit=$((~(1<<32)))
+#Set bit 32 to zero. Note that this enables turbo.
+turbo_bit=$((~(1<<32)))
 while [ $core -lt $(($NUM_PACKAGES * $NUM_CORES_PER_PACKAGE)) ]
 do
 
@@ -25,9 +25,8 @@ do
 	#Note that input to ./wrmsr needs to be in hex.
 
 	IA32_PERF_CTL=`./rdmsr -p $core $IA32_PERF_CTL_ADDR`
-	temp=$(($disable_turbo_bit & 0x$IA32_PERF_CTL))
+	temp=$(($turbo_bit & 0x$IA32_PERF_CTL))
 	val=`echo "ibase=10;obase=16;$temp"|bc`
-	
 	./wrmsr -p $core $IA32_PERF_CTL_ADDR 0x$val
 
 	./wrmsr -p $core $MSR_PKG_POWER_LIMIT_ADDR $MSR_PKG_POWER_LIMIT_DEFAULT
