@@ -9,7 +9,7 @@ a = read.table(args[1], header=T);
 
 # plot total energy vs node and task count
 
-pkgLimit = sort(unique(a$pkg.clamp.0), decreasing = T)[3]
+pkgLimit = sort(unique(a$pkg.clamp.0), decreasing = T)[1]
 
 a$avgNodePower = rowSums(a[, c('avg.pkg.0','avg.pkg.1','avg.dram.0','avg.dram.1')])
 a$coresPerNode = a$cores / a$nodes
@@ -26,9 +26,9 @@ sel1 = intersect(sel, which(a$coresPerNode == coresPerNode[1]))
 
 plot(a$nodes[sel1],
      a$avg.time[sel1], 
-     main='total time vs nodes',
-     xlab='nodes',
-     ylab='total time (secs)',
+     main='FT Benchmark: Total time vs nodes',
+     xlab='Number of nodes',
+     ylab='Total time (secs)',
      xaxt='n',
      log='x',
      col=colors[1],
@@ -37,7 +37,7 @@ plot(a$nodes[sel1],
      )
 axis(1, at=unique(a$nodes[sel]))
 
-legend(x='bottomleft', legend=paste(coresPerNode, 'cores/node'),
+legend(x='topright', legend=paste(coresPerNode, 'cores/node'),
        col=colors, lty=1)
 
 for(i in 2:length(coresPerNode)){

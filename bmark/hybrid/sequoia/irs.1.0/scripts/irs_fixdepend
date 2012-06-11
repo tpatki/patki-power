@@ -1,0 +1,51 @@
+#!/usr/local/bin/perl -w
+
+  $me = "irs_fixdepend";
+  $dep_started = "false";
+
+  if ($#ARGV < 0) {
+    print "Usage:	irs_fixdepend Makefile\n";
+    exit;
+  }
+
+  $makefile = $ARGV[0];
+  
+  if (! (-T $makefile) ) {
+    print "$me error: Could not find ascii text file $makefile\n";
+    exit;
+  }
+
+  open(INFILE,  "<$makefile")     || die "Could not open $makefile for input";
+  open(OUTFILE, ">$makefile.tmp") || die "Could not open $makefile.tmp for output";
+
+  while (<INFILE>) {
+
+    if ($dep_started eq "false") {
+      if ( $_ =~ /DO NOT DELETE/)  {
+        $dep_started = "true";
+      }
+    }
+    else {
+      
+      if ($_ =~ /\:/) {
+        $_ =~ s/\:/)\:/;
+        $_ = "\$\(B\)\(" . $_; 
+      }
+    }
+
+    print OUTFILE $_;
+  }
+
+  close INFILE;
+  close OUTFILE;
+
+  system("mv -f $makefile.tmp $makefile");
+
+  # print "\t$me: modified dependencies to work with library objects\n";
+
+  exit;
+
+
+################################################################################
+#                          E N D   O F   F I L E
+################################################################################

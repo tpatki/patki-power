@@ -467,6 +467,7 @@ rapl_finalize( struct rapl_state_s *s, int reset_limits){
 		s = &no_caller_rapl_state;
 	}
 
+	fprintf(stdout, "\nIn rapl_finalize");
 
 	for(package=0; package<NUM_PACKAGES; package++){
 		get_all_status(package, s);

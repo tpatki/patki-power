@@ -1,0 +1,969 @@
+CWD             = $(shell pwd)
+
+USE_FAKE_CMG    = off
+OPT             = on
+DEBUG           = off
+USE_HPM         = off
+USE_GPROF       = off
+USE_TAU         = off
+USE_TAU_PDT     = off
+USE_OPENMP      = off
+STATIC_LINK     = off
+CFLAGS_CMG      = 
+
+ifeq ($(USE_FAKE_CMG),on)
+  CFLAGS_CMG    += -DCMG_FAKE 
+else
+  LIBS 		+=
+endif
+
+HOST   = $(shell hostname)
+
+ifneq (,$(findstring reddish,$(HOST)))
+	MACH = redstorm
+	CLASS = catamount
+endif
+ifneq (,$(findstring redstorm,$(HOST)))
+	MACH = redstorm
+	CLASS = catamount
+endif
+ifneq (,$(findstring up,$(HOST)))
+	MACH = up
+	CLASS = aix
+endif
+ifneq (,$(findstring berg,$(HOST)))
+	MACH = berg
+	CLASS = aix
+endif
+ifneq (,$(findstring alc,$(HOST)))
+	MACH = alc
+	CLASS = linux
+endif
+ifneq (,$(findstring alastor,$(HOST)))
+	MACH = alastor
+        CLASS = linux
+endif
+ifneq (,$(findstring hera,$(HOST)))
+	MACH = alastor
+endif
+ifneq (,$(findstring atlas,$(HOST)))
+	MACH = atlas
+	CLASS = peloton
+endif
+
+ifneq (,$(findstring thunder,$(HOST)))
+	MACH = thunder
+	CLASS = linux
+endif
+
+ifneq (,$(findstring bgl,$(HOST)))
+	MACH = bgl
+	CLASS = bgl
+endif
+
+ifneq (,$(findstring dawn,$(HOST)))
+	MACH = bgp
+	CLASS = bgp
+endif
+
+ifneq (,$(findstring vertex,$(HOST)))
+	MACH = vertex
+	CLASS = peloton
+endif
+
+ifneq (,$(findstring zeus,$(HOST)))
+	MACH = zeus
+	CLASS = peloton
+endif
+
+#ifeq ($(DEBUG),on)
+#CPPFLAGS = -DCMGDEBUG
+#endif
+
+
+# START of platform specific stuff
+
+#------------------------------------------------ ALC ----------------------------------------------------------
+ifeq ($(MACH),alc)
+
+ifeq ($(USE_GPROF),on)
+GPROF_FLAGS    += -pg -g
+endif
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS=-openmp
+else
+OPENMP_FLAGS=-openmp_stubs
+endif
+
+#------------ TAU definitions
+ifeq ($(USE_TAU),on)
+include /usr/global/tools/tau/chaos_3_x86_elan3/tau-2.16.5/i386_linux/lib/Makefile.tau-mpi-pdt
+
+PDTPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/gfparse
+CPARSE          = $(PDTDIR)/$(PDTARCHDIR)/bin/cparse
+CXXPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/cxxparse
+TAUINSTR        = $(TAUROOT)/$(CONFIG_ARCH)/bin/tau_instrumentor
+
+LIBS            = $(TAU_MPI_FLIBS) $(TAU_LIBS) $(TAU_MPI_LIBS)
+endif
+#------------ end TAU definitions
+
+CPPFLAGS += -DLINUX  -DLinux_chaos_3_x86_elan3   -DLinux -DUSE_MPI -DMPICH_SKIP_MPICXX $(GPROF_FLAGS)
+CPPFFLAGS = -DLINUX  -DLinux_chaos_3_x86_elan3   -DLinux -Dmpi -DMPI -DUSE_MPI -DMPICH_SKIP_MPICXX $(OPENMP_FLAGS) $(GPROF_FLAGS)
+
+# MPI Definitions
+MPI_INC_PATH    = -I/usr/stlocal/tools/mpi/def_ic91/include
+MPI_LIB_PATH    = -L/usr/stlocal/tools/mpi/def_ic91/lib
+MPI_LIBS        = -lmpi -lelan -lelan3 -lrmscall -lelf
+
+FLIBS           =  -lmpif90 -lifcore -lmpifarg -lompstub -lfmpi -lm
+LIBS 	       += $(MPI_LIBS)
+LIBPATH 	= 
+INCPATH 	= $(MPI_INC_PATH)
+
+CXX		= /usr/local/tools/compilers/gnu/g++-4.1.0
+CC		= /usr/local/tools/compilers/gnu/gcc-4.1.0
+F90             = /usr/local/tools/compilers/intel/mpiifort-9.1
+FPP             = /opt/intel/compiler91/bin/fpp
+
+F90FLAGS_OPT    = -FR -fPIC -O3 $(OPENMP_FLAGS)
+CXXFLAGS_OPT	= -w -fPIC -O3
+CFLAGS_OPT	= -w -fPIC -O3
+
+
+F90FLAGS_DEBUG  =  -FR -fPIC -g -std95 $(OPENMP_FLAGS)
+CXXFLAGS_DEBUG	=  -g -fPIC -Wall -ansi -pedantic -Wno-long-long
+CFLAGS_DEBUG	=  -g -fPIC -Wall
+
+ifeq ($(STATIC_LINK),on)
+AR              = ar -rv
+LD              = $(AR)
+LIB_EXT         = a
+LDFLAGS         = $(GPROF_FLAGS)
+else
+LD              = $(CXX)
+LIB_EXT         = so
+LDFLAGS         = -Wl,--warn-common -shared $(GPROF_FLAGS)
+endif
+
+LINK            = $(CXX)
+LINKFLAGS       = $(CXXFLAGS) $(GPROF_FLAGS)
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+
+# If linker generally needs lib paths..
+PLATFORM_LIBPATH_EXTRAS = 
+
+# Extra lib paths / libs for libInfrastructure.[a,so]
+PLATFORM_Infrastructure_EXTRAS = $(TAU_LIBS) $(TAU_MPI_LIBS)
+
+# Extra lib paths / libs for libTetonUtils.[a,so]
+PLATFORM_TetonUtils_EXTRAS = 
+
+# Extra lib paths / libs for SuOlsonTest
+PLATFORM_EXE_EXTRAS = -L../CMG_CLEAN/src -Xlinker -rpath -Xlinker $(CWD)/../CMG_CLEAN/src \
+	-L../cmg2Kull/sources -Xlinker -rpath -Xlinker $(CWD)/../cmg2Kull/sources\
+	-L../Teton -Xlinker -rpath -Xlinker $(CWD)/../Teton \
+	-L/usr/local/intel/compiler91/lib -Xlinker -rpath -Xlinker /usr/local/intel/compiler91/lib \
+	-L/usr/stlocal/tools/mpi/def_ic91/lib -Xlinker -rpath -Xlinker /usr/stlocal/tools/mpi/def_ic91/lib
+
+# Extra lib paths / libs for _TetonTest.so
+PLATFORM_TetonTest_EXTRAS = -L$(CWD)/../CMG_CLEAN/src -Xlinker -rpath -Xlinker $(CWD)/../CMG_CLEAN/src \
+	-L$(CWD)/../cmg2Kull/sources -Xlinker -rpath -Xlinker $(CWD)/../cmg2Kull/sources \
+	-L$(CWD)/../Teton -Xlinker -rpath -Xlinker $(CWD)/../Teton \
+	-L$(CWD)/../Install/lib -Xlinker -rpath -Xlinker $(CWD)/../Install/lib \
+	-L/usr/local/intel/compiler91/lib -Xlinker -rpath -Xlinker /usr/local/intel/compiler91/lib \
+	-L/usr/stlocal/tools/mpi/def_ic91/lib -Xlinker -rpath -Xlinker /usr/stlocal/tools/mpi/def_ic91/lib\
+	-lm -lpthread -lutil -ldl $(FLIBS)
+
+ifeq ($(USE_TAU),on)
+CPPFLAGS       += $(TAU_DEFS)
+INCPATH        += $(TAU_INCLUDE)
+
+# how to build a TAU instrumented object from a FORTRAN file in this directory
+%.o: %.F90
+	$(PDTPARSE)  $< -o$(basename $@).pdb -R free -p 
+	$(TAUINSTR) $(basename $@).pdb $< -o $(basename $@)-inst.F90 -g TAU_USER -f $(topsrcdir)/select.dat
+	$(FPP) $(CPPFFLAGS) $(INCPATH) $(basename $@)-inst.F90 > $(basename $@)-inst.f90
+	$(F90) $(F90FLAGS) -o $@ -c $(basename $@)-inst.f90
+else
+%.o: %.F90
+	$(FPP) $(CPPFFLAGS) $(INCPATH) $< > $*.f90
+	$(F90) $(F90FLAGS) -c $*.f90 -o $@
+endif
+
+endif
+
+#------------------------------------------------ ALASTOR ----------------------------------------------------------
+ifeq ($(MACH),alastor)
+CFLAGS_CMG     += 
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS    =-openmp
+FLIBS           =
+else
+OPENMP_FLAGS    = -openmp_stubs
+FLIBS           = -lompstub
+endif
+
+#------------ TAU definitions
+ifeq ($(USE_TAU),on)
+include /g/g10/bmiller/SOFTWARE/tau-2.18.1/x86_64/lib/Makefile.tau-multiplecounters-mpi-papi-pdt
+
+PDTPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/gfparse
+CPARSE          = $(PDTDIR)/$(PDTARCHDIR)/bin/cparse
+CXXPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/cxxparse
+TAUINSTR        = $(TAUROOT)/$(CONFIG_ARCH)/bin/tau_instrumentor
+
+LIBS            = $(TAU_MPI_FLIBS) $(TAU_LIBS) $(TAU_MPI_LIBS)
+endif
+#------------ end TAU definitions
+
+ifeq ($(USE_GPROF),on)
+GPROF_FLAGS    += -pg
+endif
+
+CPPFLAGS += -DLINUX   -Dchaos_4_x86_64_ib  -DLinux -DUSE_MPI -DMPICH_SKIP_MPICXX $(GPROF_FLAGS)
+CPPFFLAGS = -DLINUX   -Dchaos_4_x86_64_ib   -DLinux -Dmpi -DMPI -DUSE_MPI -DMPICH_SKIP_MPICXX $(OPENMP_FLAGS) $(GPROF_FLAGS)
+
+# MPI Definitions
+MPI_INC_PATH    = -I/usr/local/tools/mvapich-intel/include
+ifeq ($(STATIC_LINK),on)
+MPI_LIB_PATH    = -L/usr/local/tools/mvapich-intel/lib 
+MPI_LIBS        = -lfmpich -lmpichfarg -lmpich -libverbs -lpthread -libumad
+else
+MPI_LIB_PATH    = -L/usr/local/tools/mvapich-intel/lib -L/usr/local/tools/mvapich-intel/lib/shared \
+		  -Wl,-rpath,/usr/local/tools/mvapich-intel/lib/shared 
+MPI_LIBS        = -lfmpich -lmpichfarg -lmpich  -libverbs -lpthread -libumad 
+endif
+
+FLIBS          += -lifcore -lm -lc
+LIBS 	       += $(MPI_LIBS) 
+LIBPATH 	= 
+INCPATH 	= $(MPI_INC_PATH)
+
+CXX		= /usr/local/tools/icc-10.1.017/bin/icpc
+CC		= /usr/local/tools/icc-10.1.017/bin/icc
+F90             = /usr/local/tools/ifort-10.1.017/bin/ifort
+FPP             = /usr/local/tools/ifort-10.1.017/bin/fpp
+
+F90FLAGS_OPT    = -O3 -ipo -no-prec-div -fPIC $(OPENMP_FLAGS)
+CXXFLAGS_OPT	= -w -fPIC -O3
+CFLAGS_OPT	= -w -fPIC -O3
+
+F90FLAGS_DEBUG  =  -FR -fPIC -g -std95 $(OPENMP_FLAGS)
+CXXFLAGS_DEBUG	=  -g -fPIC -ansi
+CFLAGS_DEBUG	=  -g -fPIC
+
+ifeq ($(STATIC_LINK),on)
+AR              = ar -rv
+LD              = $(AR)
+LIB_EXT         = a
+LDFLAGS         = 
+else
+LD              = $(CXX)
+LIB_EXT         = so
+LDFLAGS         =  -shared
+endif
+
+LINK            = $(CXX)
+LINKFLAGS       = $(CXXFLAGS)
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+# If linker generally needs lib paths..
+PLATFORM_LIBPATH_EXTRAS = 
+
+# Extra lib paths / libs for libInfrastructure.[a,so]
+ifeq ($(STATIC_LINK),on)
+PLATFORM_Infrastructure_EXTRAS =
+else
+PLATFORM_Infrastructure_EXTRAS = $(OPENMP_FLAGS) $(MPI_LIB_PATH) $(MPI_LIBS)
+endif
+
+# Extra lib paths / libs for libTetonUtils.[a,so]
+PLATFORM_TetonUtils_EXTRAS = 
+
+# Extra lib paths / libs for SuOlsonTest
+ifeq ($(STATIC_LINK),on)
+PLATFORM_EXE_EXTRAS = $(OPENMP_FLAGS) $(GPROF_FLAGS) -L../CMG_CLEAN/src -L../cmg2Kull/sources -L../Teton\
+ 		      $(MPI_LIB_PATH) $(MPI_LIBS)
+else
+PLATFORM_EXE_EXTRAS = $(OPENMP_FLAGS) -L../CMG_CLEAN/src -Wl,-rpath,$(CWD)/../CMG_CLEAN/src \
+	-L../cmg2Kull/sources -Wl,-rpath,$(CWD)/../cmg2Kull/sources\
+	-L../Teton -Wl,-rpath,$(CWD)/../Teton $(MPI_LIB_PATH) $(MPI_LIBS) -ldl 
+endif
+
+# Extra lib paths / libs for _TetonTest.so
+PLATFORM_TetonTest_EXTRAS = $(OPENMP_FLAGS) $(MPI_LIB_PATH) -L$(CWD)/../CMG_CLEAN/src -Wl,-rpath,$(CWD)/../CMG_CLEAN/src \
+	-L$(CWD)/../cmg2Kull/sources -Wl,-rpath,$(CWD)/../cmg2Kull/sources \
+	-L$(CWD)/../Teton -Wl,-rpath,$(CWD)/../Teton \
+	-L$(CWD)/../Install/lib -Wl,-rpath,$(CWD)/../Install/lib \
+	-lm -lpthread -lutil -ldl $(FLIBS)
+
+ifeq ($(USE_TAU_PDT),on)
+CPPFLAGS       += $(TAU_DEFS)
+INCPATH        += $(TAU_INCLUDE)
+
+# how to build a TAU instrumented object from a FORTRAN file in this directory
+%.o: %.F90
+	$(PDTPARSE)  $< -o$(basename $@).pdb -R free -p 
+	$(TAUINSTR) $(basename $@).pdb $< -o $(basename $@)-inst.F90 -g TAU_USER -f $(topsrcdir)/select.dat
+	$(FPP) $(CPPFFLAGS) $(INCPATH) $(basename $@)-inst.F90 > $(basename $@)-inst.f90
+	$(F90) $(F90FLAGS) -o $@ -c $(basename $@)-inst.f90
+else
+%.o: %.F90
+	$(FPP) $(CPPFFLAGS) $(INCPATH) $< > $*.f90
+	$(F90) $(F90FLAGS) -c $*.f90 -o $@
+endif
+
+endif
+
+#------------------------------------------------ PELOTON ----------------------------------------------------------
+ifeq ($(CLASS),peloton)
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS    = -openmp
+FLIBS           = 
+else
+OPENMP_FLAGS    = -openmp_stubs
+FLIBS           = -lompstub
+endif
+
+#------------ TAU definitions
+ifeq ($(USE_TAU),on)
+#include /usr/global/tools/tau/chaos_4_x86_64_ib/tau-2.18.2/x86_64/lib/Makefile.tau-multiplecounters-mpi-papi-pdt
+include /g/g10/bmiller/SOFTWARE/tau-2.18.2/x86_64/lib/Makefile.tau-icpc-papi-mpi-pdt
+
+PDTPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/gfparse
+CPARSE          = $(PDTDIR)/$(PDTARCHDIR)/bin/cparse
+CXXPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/cxxparse
+TAUINSTR        = $(TAUROOT)/$(CONFIG_ARCH)/bin/tau_instrumentor
+
+LIBS            = $(TAU_MPI_FLIBS) $(TAU_LIBS) $(TAU_MPI_LIBS)
+endif
+#------------ end TAU definitions
+
+ifeq ($(USE_GPROF),on)
+GPROF_FLAGS    += -pg
+endif
+
+CPPFLAGS       += -DLINUX  -Dchaos_4_x86_64_ib  -DLinux -DUSE_MPI -DMPICH_SKIP_MPICXX $(GPROF_FLAGS)
+CPPFFLAGS       = -DLINUX  -Dchaos_4_x86_64_ib  -DLinux -Dmpi -DMPI -DUSE_MPI -DMPICH_SKIP_MPICXX $(OPENMP_FLAGS) $(GPROF_FLAGS)
+
+# MPI Definitions
+MPI_INC_PATH    = -I/usr/local/tools/mvapich-intel/include
+ifeq ($(STATIC_LINK),on)
+MPI_LIB_PATH    = -L/usr/local/tools/mvapich-intel/lib 
+MPI_LIBS        = -lfmpich -lmpichfarg -lmpich -libverbs -lpthread -libumad
+else
+MPI_LIB_PATH    = -L/usr/local/tools/mvapich-intel/lib -L/usr/local/tools/mvapich-intel/lib/shared \
+		  -Wl,-rpath,/usr/local/tools/mvapich-intel/lib/shared 
+MPI_LIBS        = -lfmpich -lmpichfarg -lmpich  -libverbs -lpthread -libumad 
+endif
+
+FLIBS          += -lifcore -lm -lc
+LIBS 	       += $(MPI_LIBS) 
+LIBPATH 	= 
+INCPATH 	= $(MPI_INC_PATH)
+
+CXX		= /usr/local/tools/icc-10.1.017/bin/icpc
+CC		= /usr/local/tools/icc-10.1.017/bin/icc
+F90             = /usr/local/tools/ifort-10.1.017/bin/ifort
+FPP             = /usr/local/tools/ifort-10.1.017/bin/fpp
+
+F90FLAGS_OPT    = -O3 -ipo -no-prec-div -fPIC $(OPENMP_FLAGS)
+CXXFLAGS_OPT	= -w -fPIC -O3
+CFLAGS_OPT	= -w -fPIC -O3
+
+F90FLAGS_DEBUG  =  -FR -fPIC -g -std95 $(OPENMP_FLAGS)
+CXXFLAGS_DEBUG	=  -g -fPIC -ansi
+CFLAGS_DEBUG	=  -g -fPIC
+
+ifeq ($(STATIC_LINK),on)
+AR              = ar -rv
+LD              = $(AR)
+LIB_EXT         = a
+LDFLAGS         = 
+else
+LD              = $(CXX)
+LIB_EXT         = so
+LDFLAGS         = -shared $(GPROF_FLAGS)
+ifeq ($(OPT),on)
+LDFLAGS        += $(CXXFLAGS_OPT) 
+endif
+endif
+
+LINK            = $(CXX)
+LINKFLAGS       = $(CXXFLAGS) $(GPROF_FLAGS)
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+# If linker generally needs lib paths..
+PLATFORM_LIBPATH_EXTRAS = 
+
+# Extra lib paths / libs for libInfrastructure.[a,so]
+ifeq ($(STATIC_LINK),on)
+PLATFORM_Infrastructure_EXTRAS =
+else
+PLATFORM_Infrastructure_EXTRAS = $(OPENMP_FLAGS) $(MPI_LIB_PATH) $(MPI_LIBS)
+endif
+
+# Extra lib paths / libs for libTetonUtils.[a,so]
+PLATFORM_TetonUtils_EXTRAS = 
+
+# Extra lib paths / libs for SuOlsonTest
+ifeq ($(STATIC_LINK),on)
+PLATFORM_EXE_EXTRAS = $(OPENMP_FLAGS) $(GPROF_FLAGS) -L../CMG_CLEAN/src -L../cmg2Kull/sources -L../Teton\
+ 		      $(MPI_LIB_PATH) $(MPI_LIBS)
+else
+PLATFORM_EXE_EXTRAS = $(OPENMP_FLAGS) -L../CMG_CLEAN/src -Wl,-rpath,$(CWD)/../CMG_CLEAN/src \
+	-L../cmg2Kull/sources -Wl,-rpath,$(CWD)/../cmg2Kull/sources\
+	-L../Teton -Wl,-rpath,$(CWD)/../Teton $(MPI_LIB_PATH) $(MPI_LIBS) -ldl 
+endif
+
+# Extra lib paths / libs for _TetonTest.so
+PLATFORM_TetonTest_EXTRAS = $(OPENMP_FLAGS) $(MPI_LIB_PATH) -L$(CWD)/../CMG_CLEAN/src -Wl,-rpath,$(CWD)/../CMG_CLEAN/src \
+	-L$(CWD)/../cmg2Kull/sources -Wl,-rpath,$(CWD)/../cmg2Kull/sources \
+	-L$(CWD)/../Teton -Wl,-rpath,$(CWD)/../Teton \
+	-L$(CWD)/../Install/lib -Wl,-rpath,$(CWD)/../Install/lib \
+	-lm -lpthread -lutil -ldl $(FLIBS)
+
+ifeq ($(USE_TAU_PDT),on)
+CPPFLAGS       += $(TAU_DEFS)
+INCPATH        += $(TAU_INCLUDE)
+
+# how to build a TAU instrumented object from a FORTRAN file in this directory
+%.o: %.F90
+	$(PDTPARSE)  $< -o$(basename $@).pdb -R free -p 
+	$(TAUINSTR) $(basename $@).pdb $< -o $(basename $@)-inst.F90 -g TAU_USER -f $(topsrcdir)/select.dat
+	$(F90) $(F90FLAGS) -o $@ -c $(basename $@)-inst.F90
+else
+%.o: %.F90
+	$(F90) $(F90FLAGS) -c $< -o $@
+endif
+endif
+
+#------------------------------------------------ THUNDER ----------------------------------------------------------
+ifeq ($(MACH),thunder)
+CFLAGS_CMG     += 
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS    =-openmp
+FLIBS           =
+else
+OPENMP_FLAGS    = -openmp_stubs
+FLIBS           = -lompstub
+endif
+
+CPPFLAGS += -DLINUX   -DLinux -DUSE_MPI -DMPICH_SKIP_MPICXX
+CPPFFLAGS = -DLINUX    -DLinux -Dmpi -DMPI -DUSE_MPI -DMPICH_SKIP_MPICXX
+
+# MPI Definitions
+MPI_INC_PATH    = -I/usr/lib/mpi/include
+MPI_LIB_PATH    = -L/usr/lib/mpi/lib
+MPI_LIBS        = -lmpi -lelan -lelan3 -lrmscall -lelf
+
+#FLIBS           = -lmpif90 -lmpifarg -lmpi -lmpio -lm 
+FLIBS          += -lifcore -lmpif90 -lmpifarg -lm -lc
+LIBS 		= $(MPI_LIBS) -Wl,-rpath,/usr/stlocal/tools/mpi/def_ic91/lib -L/usr/stlocal/tools/mpi/def_ic91/lib \
+                  -Wl,-rpath,/opt/intel/compiler91/lib -L/opt/intel/compiler91/lib
+LIBPATH 	= 
+INCPATH 	= $(MPI_INC_PATH)
+
+CXX		= /usr/local/tools/compilers/intel/mpiicpc-10.1
+CC		= /usr/local/tools/compilers/intel/mpiicc-10.1
+F90             = /usr/local/tools/compilers/intel/mpiifort-10.1
+FPP             = /opt/intel/compiler101_015/bin/fpp
+
+F90FLAGS_OPT    = -O3 $(OPENMP_FLAGS)
+CXXFLAGS_OPT	= -w -fPIC -O3
+CFLAGS_OPT	= -w -fPIC -O3
+
+F90FLAGS_DEBUG  =  -FR -fPIC -g -std95 $(OPENMP_FLAGS)
+CXXFLAGS_DEBUG	=  -g -fPIC -ansi
+CFLAGS_DEBUG	=  -g -fPIC
+
+ifeq ($(STATIC_LINK),on)
+AR              = ar -rv
+LD              = $(AR)
+LIB_EXT         = a
+LDFLAGS         = 
+else
+LD              = $(CXX)
+LIB_EXT         = so
+LDFLAGS         =  -shared
+endif
+
+LINK            = $(CXX)
+LINKFLAGS       = $(CXXFLAGS)
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+# If linker generally needs lib paths..
+PLATFORM_LIBPATH_EXTRAS = 
+
+# Extra lib paths / libs for libInfrastructure.[a,so]
+ifeq ($(STATIC_LINK),on)
+PLATFORM_Infrastructure_EXTRAS =
+else
+PLATFORM_Infrastructure_EXTRAS = $(OPENMP_FLAGS) 
+endif
+
+# Extra lib paths / libs for libTetonUtils.[a,so]
+PLATFORM_TetonUtils_EXTRAS = 
+
+# Extra lib paths / libs for SuOlsonTest
+ifeq ($(STATIC_LINK),on)
+PLATFORM_EXE_EXTRAS = $(OPENMP_FLAGS) -L../CMG_CLEAN/src -L../cmg2Kull/sources\
+	-L../Teton -L/usr/local/intel/compiler91/lib -L/usr/stlocal/tools/mpi/def_ic91/lib
+else
+PLATFORM_EXE_EXTRAS = $(OPENMP_FLAGS) -L../CMG_CLEAN/src -Wl,-rpath,$(CWD)/../CMG_CLEAN/src \
+	-L../cmg2Kull/sources -Wl,-rpath,$(CWD)/../cmg2Kull/sources\
+	-L../Teton -Wl,-rpath,$(CWD)/../Teton \
+	-L/usr/local/intel/compiler91/lib -Wl,-rpath,/usr/local/intel/compiler91/lib \
+	-L/usr/stlocal/tools/mpi/def_ic91/lib -Wl,-rpath,/usr/stlocal/tools/mpi/def_ic91/lib
+endif
+
+# Extra lib paths / libs for _TetonTest.so
+PLATFORM_TetonTest_EXTRAS = $(OPENMP_FLAGS) -L$(CWD)/../CMG_CLEAN/src -Wl,-rpath,$(CWD)/../CMG_CLEAN/src \
+	-L$(CWD)/../cmg2Kull/sources -Wl,-rpath,$(CWD)/../cmg2Kull/sources \
+	-L$(CWD)/../Teton -Wl,-rpath,$(CWD)/../Teton \
+	-L$(CWD)/../Install/lib -Wl,-rpath,$(CWD)/../Install/lib \
+	-L/usr/local/intel/compiler91/lib -Wl,-rpath,/usr/local/intel/compiler91/lib \
+	-L/usr/stlocal/tools/mpi/def_ic91/lib -Wl,-rpath,/usr/stlocal/tools/mpi/def_ic91/lib\
+	-lm -lpthread -lutil -ldl $(FLIBS)
+
+%.o: %.F90
+	$(FPP) $(CPPFFLAGS) $(INCPATH) $< > $*.f90
+	$(F90) $(F90FLAGS) -c $*.f90 -o $@
+endif
+
+#------------------------------------------------ UP ----------------------------------------------------------
+ifeq ($(CLASS),aix)
+
+ifeq ($(USE_TAU),on)
+include /usr/local/tools/tau/ibm64/lib/Makefile.tau-multiplecounters-mpi-papi-pdt
+
+PDTPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/f95parse
+CPARSE          = $(PDTDIR)/$(PDTARCHDIR)/bin/cparse
+CXXPARSE        = $(PDTDIR)/$(PDTARCHDIR)/bin/cxxparse
+TAUINSTR        = $(TAUROOT)/$(CONFIG_ARCH)/bin/tau_instrumentor
+
+LIBS            = $(TAU_MPI_FLIBS) $(TAU_LIBS) $(TAU_MPI_LIBS)
+CPPFLAGS       += $(TAU_DEFS)
+INCPATH         = $(TAU_INCLUDE)
+endif
+
+ifeq ($(USE_GPROF),on)
+GPROF_FLAGS    += -pg -g -qfullpath
+endif
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS    = -qsmp=omp -qnosave
+OMP_CFLAGS      = -DUSE_OPENMP -qsmp=omp
+FLIBS           = -lxlsmp
+else
+OPENMP_FLAGS    = 
+OMP_CFLAGS      = -qignprag=omp 
+FLIBS           = -lxlomp_ser 
+endif
+
+# IBM - uP machine
+CFLAGS_CMG     += -Daix_64 
+
+CPPFLAGS       +=  -DUSE_MPI    -DAIX -q64 $(GPROF_FLAGS)
+CPPFFLAGS       = -WF,-DAIX  -WF,-q64 -WF,-Dmpi -WF,-DMPI $(OPENMP_FLAGS) $(GPROF_FLAGS)
+
+# MPI Definitions
+MPI_INC_PATH    = -I/usr/lpp/ppe.poe/include
+MPI_LIB_PATH    = -L/usr/lpp/ppe.poe/lib
+MPI_LIBS        = -lmpi_r -lvtd_r -llapi_r -lpthreads
+
+FLIBS          += -lxlf90 -lxlopt -lxlf -lxlsmp 
+FLIBPATH        = -L/usr/local/tools/xlf/xlf9108/lpp/xlf/lib -L/usr/local/tools/xlf/xlf9108/lpp/xlf/lib/aix51 \
+                  -L/usr/local/tools/xlf/xlf9108/lpp/xlsmp/aix51 -L/usr/local/tools/xlf/xlf9108/lib -L/usr/lpp/xlf/lib/aix53 
+CLIBPATH        = -L/usr/local/tools/xlf/xlf9108/vac/lib/aix53
+ifeq ($(USE_GPROF),on)
+CXXLIBPATH      = -L/usr/local/tools/xlc/xlc9004/vacpp/lib/profiled/aix51 -L/usr/local/tools/xlc/xlc9004/vacpp/lib/profiled
+else
+CXXLIBPATH      = -L/usr/local/tools/xlc/xlc9004/vacpp/lib/aix53 -L/usr/local/tools/xlc/xlc9004/vacpp/lib
+endif
+
+LIBS 	       += $(MPI_LIBS) 
+LIBPATH        += 
+INCPATH        += $(MPI_INC_PATH) 
+
+PYTHON_LIB      = -L../../Install/lib/python2.6/config -lpython2.6
+ifeq ($(USE_HPM),on)
+CPPFLAGS       += -DUSE_HPM
+INCPATH        += -I/usr/local/tools/hpm/include
+LIBPATH        += -L/usr/local/tools/hpm/lib
+LIBS           += -lhpm -lpmapi
+endif
+
+CXX		= /usr/local/tools/compilers/ibm/xlC-9.0.0.4a
+CC		= /usr/local/tools/compilers/ibm/xlc-9.0.0.4
+F90             = /usr/local/tools/compilers/ibm/mpxlf90-9.1.0.8
+
+FPP             = 
+
+#F90FLAGS_OPT    = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -O5 -qipa=noobject -qipa=partition=large -qmaxmem=-1  -qnofullpath $(OPENMP_FLAGS) -qlargepage -qreport=hotlist,smplist
+F90FLAGS_OPT    = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -O3 -qhot=vector,arraypad -qcache=auto -qarch=auto -qtune=auto -qmaxmem=-1 -qnofullpath $(OPENMP_FLAGS) -qlargepage
+CXXFLAGS_OPT	= -qmaxmem=-1 -qrtti=all  -qnofullpath -O2 -w -DNDEBUG $(OMP_CFLAGS)
+CFLAGS_OPT	= -qlanglvl=stdc99 -qcpluscmt -qmaxmem=-1 -qnofullpath -O3 -w -DNDEBUG $(OMP_CFLAGS)
+
+
+F90FLAGS_DEBUG  = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -C -g -qsmp=noauto -qfullpath $(OPENMP_FLAGS)  -bnoobjreorder
+CXXFLAGS_DEBUG	= -qrtti=all -g -qfullpath $(OMP_CFLAGS)  -bnoobjreorder
+CFLAGS_DEBUG	= -qlanglvl=stdc99 -qcpluscmt -qfullpath -g $(OMP_CFLAGS) -bnoobjreorder
+
+AR              = ar -rv
+ifeq ($(STATIC_LINK),on)
+LD              = $(AR)   # static linking
+LIB_EXT         = a
+LDFLAGS         = $(GPROF_FLAGS) -X64 
+else
+LD              = $(CXX)
+LIB_EXT         = so
+LDFLAGS         = $(GPROF_FLAGS) -q64 -G -Wl,-bnoentry -Wl,-b64 -Wl,-bexpfull -Wl,-blpdata -Wl,-bernotok# dynamic linking
+endif
+
+LINK            = $(CXX)
+LINKFLAGS       = $(CXXFLAGS) $(GPROF_FLAGS) -q64 -Wl,-binitfini:poe_remote_main -Wl,-b64 -Wl,-blpdata -Wl,-brtl -qdebug=MC:MC999999 -qdebug=MBB:MBB500
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+
+ifeq ($(STATIC_LINK),on)
+PLATFORM_LIBPATH_EXTRAS =  
+PLATFORM_Infrastructure_EXTRAS =
+PLATFORM_TetonUtils_EXTRAS = 
+PLATFORM_TetonTest_EXTRAS =
+PLATFORM_EXE_EXTRAS = -L`pwd`/../CMG_CLEAN/src -L`pwd`/../cmg2Kull/sources -L`pwd` $(MPI_LIB_PATH)
+else
+PLATFORM_LIBPATH_EXTRAS =   -L`pwd`/../CMG_CLEAN/src -L`pwd`/../cmg2Kull/sources -L`pwd` $(MPI_LIB_PATH)
+PLATFORM_Infrastructure_EXTRAS = -L`pwd`/../CMG_CLEAN/src -L`pwd`/../cmg2Kull/sources -lcmgp -lc2k  $(MPI_LIBS) $(FLIBPATH) $(FLIBS) $(MPI_LIBS)
+PLATFORM_TetonUtils_EXTRAS = -L`pwd`/../CMG_CLEAN/src -L`pwd`/../cmg2Kull/sources -L`pwd` -lInfrastructure -lcmgp -lc2k $(FLIBS) $(MPI_LIBS)
+PLATFORM_TetonTest_EXTRAS = -L`pwd`/../Install/lib/pyMPI2.4 -L`pwd`/../Install/lib/python2.6/config -L`pwd`/../Teton -L`pwd`/../CMG_CLEAN/src/ -L`pwd`/../cmg2Kull/sources $(FLIBS)
+endif
+
+ifeq ($(USE_TAU_PDT),on)
+# how to build a TAU instrumented object from a FORTRAN file in this directory
+%.o: %.F90
+	$(PDTPARSE)  $< -o$(basename $@).pdb -R free -p $(CPPFLAGS)
+	$(TAUINSTR) $(basename $@).pdb $< -o $(basename $@)-inst.F90 -g TAU_USER -f $(topsrcdir)/select.dat
+	$(F90) $(F90FLAGS) -o $@ -c $(basename $@)-inst.F90
+else
+
+%.o: %.F90
+	$(F90) $(F90FLAGS) -c $< -o $@
+endif
+
+endif
+
+#------------------------------------------------ BGL ----------------------------------------------------------
+ifeq ($(MACH),bgl)
+# IBM - bgl machine
+CFLAGS_CMG     += -Daix_64 -DMPICH_IGNORE_CXX_SEEK 
+
+CPPFLAGS +=  -DMPICH_IGNORE_CXX_SEEK -DMPICH_SKIP_MPICXX -DUSE_MPI    -q32 
+CPPFFLAGS = -WF,-DMPICH_IGNORE_CXX_SEEK -WF,-DMPICH_SKIP_MPICXX   -WF,-q32 -WF,-Dmpi -WF,-DMPI 
+
+# MPI Definitions
+MPI_INC_PATH    = -I/bgl/BlueLight/ppcfloor/bglsys/include
+MPI_LIB_PATH    = -L/bgl/BlueLight/ppcfloor/bglsys/lib
+MPI_LIBS        =  -lmpich.rts -lmsglayer.rts -lrts.rts -ldevices.rts
+
+FLIBS           = -lxlf90 -lxlopt -lxlomp_ser -lxl -lxlfmath -lm -lc -lgcc
+LIBS 		= 
+LIBPATH 	= 
+
+INCPATH 	= $(MPI_INC_PATH) 
+
+CXX		= /usr/local/bin/newmpxlC
+CC		= /usr/local/bin/newmpxlc
+F90             = /usr/local/bin/newmpxlf90
+FPP             = 
+AR              = bglar -rv
+LD              = $(AR)
+
+F90FLAGS_OPT    = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -O2 -qfullpath  -qnosave -qnoextname -qarch=440
+CXXFLAGS_OPT	= -qnofullpath -qignprag=omp -qmaxmem=-1 -D__IBM_FAST_VECTOR  -O2 -w -DNDEBUG -qarch=440
+CFLAGS_OPT	= -qlanglvl=extended -qcpluscmt -qnofullpath -qignprag=omp -qmaxmem=-1 -D__IBM_FAST_VECTOR -O2 -w -DNDEBUG -qarch=440
+
+
+F90FLAGS_DEBUG  = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -g -qarch=440
+CXXFLAGS_DEBUG	= -qnofullpath -qignprag=omp -g -w  -qarch=440
+CFLAGS_DEBUG	= -qlanglvl=extended -qcpluscmt -qnofullpath -qignprag=omp -g -w -qarch=440
+
+LIB_EXT         = a
+#LDFLAGS = -G -bnoentry -b32
+#LDFLAGS = -qmkshrobj -bnoentry -b32
+LDFLAGS         = 
+LINK            = $(CXX)
+LINKFLAGS       = $(LDFLAGS)
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+PLATFORM_LIBPATH_EXTRAS =  
+PLATFORM_Infrastructure_EXTRAS =
+PLATFORM_TetonUtils_EXTRAS = 
+PLATFORM_EXE_EXTRAS = -L. -L../CMG_CLEAN/src -L../cmg2Kull/sources -L/opt/ibmcmp/xlf/bg/10.1/blrts_lib $(FLIBS)
+PLATFORM_TetonTest_EXTRAS = $(FLIBS)
+
+
+%.o: %.F90
+	$(F90) $(F90FLAGS) -c $< -o $@
+endif
+
+#------------------------------------------------ BGP ----------------------------------------------------------
+ifeq ($(MACH),bgp)
+
+ifeq ($(USE_TAU),on)
+include /usr/global/tools/tau/training/tau-2.18.2/bgp/lib/Makefile.tau-mpi-pdt
+
+LIBS            = $(TAU_MPI_FLIBS) $(TAU_LIBS) $(TAU_MPI_LIBS)
+CPPFLAGS       += $(TAU_DEFS) $(TAU_INCLUDE)
+INCPATH         = $(TAU_INCLUDE)
+endif
+
+# IBM - bgp machine
+# determine which driver ppcfloor link is currently pointing to 
+PPCFLOOR_DRIVER_NAME = $(shell ls -lt /bgsys/drivers/ppcfloor | sed "s|.*-> ||g" | sed "s|\/ppc.*||g" | sed "s|.*\/||g"  )
+
+ifeq ($(DRIVER_NAME),)
+   DRIVER_NAME=${PPCFLOOR_DRIVER_NAME}
+endif
+
+PPCFLOOR = /bgsys/drivers/${DRIVER_NAME}/ppc
+CFLAGS_CMG     += -DMPICH_IGNORE_CXX_SEEK -Dmpi -DBGP
+
+ifeq ($(USE_GPROF),on)
+GPROF_FLAGS    += -pg -g -qfullpath
+endif
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS    = -qsmp=omp -qnosave
+OMP_CFLAGS      = -DUSE_OPENMP -qsmp=omp
+FLIBS           = -lxlf90 -lxlopt -lxlsmp -lxl -lxlfmath -lm -lc -lgcc -lutil
+else
+OPENMP_FLAGS    = 
+OMP_CFLAGS      = -qignprag=omp 
+FLIBS           = -lxlf90 -lxlopt -lxlomp_ser -lxl -lxlfmath -lm -lc -lgcc -lutil
+endif
+
+CPPFLAGS +=  -DMPICH_IGNORE_CXX_SEEK -DMPICH_SKIP_MPICXX -DUSE_MPI  -DBGP  -DMPI -q32 $(OPENMP_FLAGS) -I/bgsys/drivers/ppcfloor/arch/include
+
+CPPFFLAGS = -WF,-DMPICH_IGNORE_CXX_SEEK -WF,-DMPICH_SKIP_MPICXX   -WF,-DMPI -q32 $(OPENMP_FLAGS) 
+
+# MPI Definitions
+MPI_INC_PATH    = -I$(PPCFLOOR)/comm/include
+MPI_LIB_PATH    = -L$(PPCFLOOR)/comm/lib
+MPI_LIBS        =  -lSPI.cna -lmpich.cnk -lfmpich.cnk -ldcmfcoll.cnk -ldcmf.cnk
+
+LIBS 		= $(MPI_LIBS)
+
+LIBPATH	        = -L$(PPCFLOOR)/runtime/SPI $(MPI_LIB_PATH) -L/opt/ibmcmp/xlf/bg/11.1/bglib -L$(PPCFLOOR)/gnu-linux/lib/gcc/powerpc-bgp-linux/4.1.1 -L/opt/ibmcmp/xlsmp/bg/1.7/bglib
+
+INCPATH 	= $(MPI_INC_PATH) 
+
+ifeq ($(USE_TAU),on)
+CC		= /usr/global/tools/tau/training/tau-2.18.2/bgp/bin/tau_cc.sh -tau_makefile=/usr/global/tools/tau/training/tau-2.18.2/bgp/lib/Makefile.tau-mpi-pdt -tau_options="-optVerbose -optTauSelectFile=$(topsrcdir)/select.dat"
+F90             = /usr/global/tools/tau/training/tau-2.18.2/bgp/bin/tau_f90.sh -tau_makefile=/usr/global/tools/tau/training/tau-2.18.2/bgp/lib/Makefile.tau-mpi-pdt -tau_options="-optVerbose -optTauSelectFile=$(topsrcdir)/select.dat"
+CXX		= /usr/global/tools/tau/training/tau-2.18.2/bgp/bin/tau_cxx.sh -tau_makefile=/usr/global/tools/tau/training/tau-2.18.2/bgp/lib/Makefile.tau-mpi-pdt -tau_options="-optVerbose -optTauSelectFile=$(topsrcdir)/select.dat"
+
+else
+
+CC		= $(PPCFLOOR)/comm/bin/mpixlc_r
+F90             = $(PPCFLOOR)/comm/bin/mpixlf90_r
+CXX		= $(PPCFLOOR)/comm/bin/mpixlcxx_r
+endif
+
+FPP             = 
+AR              = $(PPCFLOOR)/gnu-linux/bin/powerpc-bgp-linux-ar  -rv
+
+ifeq ($(STATIC_LINK),on)
+LD              = $(AR)
+
+F90FLAGS_OPT    = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -O2 -g -qfullpath  -qnosave -qnoextname -qarch=450d -qpic=large 
+
+CXXFLAGS_OPT	= -qnofullpath -qignprag=omp -qmaxmem=-1 -D__IBM_FAST_VECTOR  -O2 -g -w -DNDEBUG -qarch=450d $(OMP_CFLAGS) -qpic=large 
+
+CFLAGS_OPT	= -qlanglvl=extended -qcpluscmt -qnofullpath -qignprag=omp -qmaxmem=-1 -D__IBM_FAST_VECTOR -O2 -g -w -DNDEBUG -qarch=450d $(OMP_CFLAGS) -qpic=large 
+
+F90FLAGS_DEBUG  = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -g -qarch=450d -qtune=450 $(OMP_CFLAGS) -qpic=large 
+CXXFLAGS_DEBUG	= -qnofullpath -qignprag=omp -g -w  -qarch=450d  $(OMP_CFLAGS) -qpic=large 
+CFLAGS_DEBUG	= -qlanglvl=extended -qcpluscmt -qnofullpath -qignprag=omp -g -w -qarch=450d $(OMP_CFLAGS) -qpic=large 
+
+LIB_EXT         = a
+
+LDFLAGS         = $(GPROF_FLAGS)
+else
+LD              = $(CXX)
+
+F90FLAGS_OPT    = -G -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -O2 -g -qfullpath  -qnosave -qnoextname -qarch=450d -qpic=large 
+
+CXXFLAGS_OPT	= -G -qnofullpath -qignprag=omp -qmaxmem=-1 -D__IBM_FAST_VECTOR  -O2 -g -w -DNDEBUG -qarch=450d $(OMP_CFLAGS) -qpic=large 
+
+CFLAGS_OPT	= -G -qlanglvl=extended -qcpluscmt -qnofullpath -qignprag=omp -qmaxmem=-1 -D__IBM_FAST_VECTOR -O2 -g -w -DNDEBUG -qarch=450d $(OMP_CFLAGS) -qpic=large 
+
+F90FLAGS_DEBUG  = -qsuffix=cpp=F90 -qfree=f90 -qsuffix=f=f90 -g -qarch=450d -qtune=450 $(OMP_CFLAGS) -qpic=large 
+CXXFLAGS_DEBUG	= -qnofullpath -qignprag=omp -g -w  -qarch=450d  $(OMP_CFLAGS) -qpic=large 
+CFLAGS_DEBUG	= -qlanglvl=extended -qcpluscmt -qnofullpath -qignprag=omp -g -w -qarch=450d $(OMP_CFLAGS) -qpic=large 
+
+LIB_EXT         = so
+
+LDFLAGS         = -qmkshrobj -qnostaticlink -qpic=large
+LDFLAGS        += -g $(GPROF_FLAGS)
+endif
+
+
+LINK            = $(CXX)
+LINKFLAGS	= $(LDFLAGS)
+
+PYTHON_LIB	= -L$(PPCFLOOR)/gnu-linux/lib/python2.5/config -lpython2.5
+
+ifeq ($(STATIC_LINK),on)
+PLATFORM_LIBPATH_EXTRAS =  
+PLATFORM_Infrastructure_EXTRAS =
+PLATFORM_TetonUtils_EXTRAS = 
+PLATFORM_TetonTest_EXTRAS =
+PLATFORM_EXE_EXTRAS = -L`pwd`/../CMG_CLEAN/src -L`pwd`/../cmg2Kull/sources -L`pwd` $(MPI_LIB_PATH) -L$(PPCFLOOR)/runtime/SPI -L/opt/ibmcmp/xlf/bg/11.1/bglib -L$(PPCFLOOR)/gnu-linux/lib/gcc/powerpc-bgp-linux/4.1.1 -L/opt/ibmcmp/xlsmp/bg/1.7/bglib
+endif
+
+%.o: %.F90
+	$(F90) $(F90FLAGS) -c $< -o $@
+endif
+
+#------------------------------------------------ REDSTORM ----------------------------------------------------------
+ifeq ($(CLASS),catamount)
+
+ifeq ($(USE_OPENMP),on)
+OPENMP_FLAGS    = -openmp
+FLIBS           = -lopenmp
+else
+OPENMP_FLAGS=
+OPENMP_FLAGS    = 
+FLIBS           = 
+endif
+
+ifeq ($(USE_GPROF),on)
+GPROF_FLAGS    += -pg
+endif
+
+CPPFLAGS       += -DLINUX   -DLinux -DUSE_MPI -DMPICH_SKIP_MPICXX $(GPROF_FLAGS)
+CPPFFLAGS       = -DLINUX   -DLinux -Dmpi -DMPI -DUSE_MPI -DMPICH_SKIP_MPICXX $(OPENMP_FLAGS) $(GPROF_FLAGS)
+
+# MPI Definitions
+MPI_INC_PATH    = -I/opt/xt-mpt/1.5.52/mpich2-64/P2/include
+MPI_LIB_PATH    = 
+MPI_LIBS        = 
+
+FLIBS          += -L/opt/xt-mpt/1.5.52/mpich2-64/P2/lib -L/opt/acml/3.6.1/pgi64/lib -L/opt/xt-libsci/10.0.0/pgi/cnos64/lib -L/opt/xt-mpt/1.5.52/sma/P2/lib -L/opt/xt-catamount/1.5.52/lib/cnos64 -L/opt/xt-pe/1.5.52/lib/cnos64 -L/opt/xt-libc/1.5.52/amd64/lib -L/opt/xt-os/1.5.52/lib/cnos64 -L/opt/xt-service/1.5.52/lib/cnos64 -L/opt/pgi/6.2-5/linux86-64/6.2/lib/cray/catamount -L/opt/pgi/6.2-5/linux86-64/6.2/lib -L/opt/gcc/3.2.3/lib/gcc-lib/x86_64-suse-linux/3.2.3/ -lmpichf90 -lsci -lacml -lsma -lmpichf90 -lmpich -llustre -lpgf90 -lpgf90_rpm1 -lpgf902 -lpgf90rtl -lpgftnrtl -lqk_pgc -lm -lcatamount -lsysio -lportals -lc -lC -lgcc
+LIBS 	       += $(MPI_LIBS) 
+LIBPATH 	= $(MPI_LIB_PATH)
+INCPATH        += $(MPI_INC_PATH)
+
+CXX		= CC
+CC		= cc
+F90             = ftn
+FPP             = ftn
+
+F90FLAGS_OPT    = -O3 $(OPENMP_FLAGS)
+CXXFLAGS_OPT	= -O3  
+CFLAGS_OPT	= -O3
+
+
+F90FLAGS_DEBUG  =  -g $(OPENMP_FLAGS)
+CXXFLAGS_DEBUG	=  -g -Wall -ansi -pedantic -Wno-long-long
+CFLAGS_DEBUG	=  -g -Wall
+
+ifeq ($(STATIC_LINK),on)
+AR              = ar -rv
+LD              = $(AR)
+LIB_EXT         = a
+LDFLAGS         = $(GPROF_FLAGS)
+else
+LD              = $(CXX)
+LIB_EXT         = so
+LDFLAGS         = -Wl,--warn-common -shared $(GPROF_FLAGS)
+endif
+
+LINK            = $(CXX)
+LINKFLAGS       = $(CXXFLAGS)  $(GPROF_FLAGS)
+
+#
+# These PLATFORM_*_EXTRAS flags are to add additional paths/libs for building 
+# libInfrastructure.so, libTetonUtils.so and _TetonTest.so
+#
+PLATFORM_LIBPATH_EXTRAS =  
+PLATFORM_Infrastructure_EXTRAS =
+PLATFORM_TetonUtils_EXTRAS =
+PLATFORM_EXE_EXTRAS = -L. -L../CMG_CLEAN/src -L../cmg2Kull/sources
+PLATFORM_TetonTest_EXTRAS =
+
+# gnu make macro to build correct library link line entry
+linkLineEntry   = -L$(1)
+
+%.o: %.F90
+	$(F90) $(F90FLAGS) -c $< -o $@
+endif
+
+# END of platform specific stuff
+
+#------------------------------------------------ END ----------------------------------------------------------
+
+
+CXXFLAGS = $(CFLAGS_CMG) $(INCPATH)
+CFLAGS = $(CFLAGS_CMG) $(INCPATH)
+F90FLAGS = $(INCPATH)
+
+ifeq ($(OPT),on)
+  CXXFLAGS += $(CXXFLAGS_OPT) 
+  CFLAGS += $(CFLAGS_OPT) 
+  F90FLAGS += $(F90FLAGS_OPT) 
+endif
+
+ifeq ($(DEBUG),on)
+  CXXFLAGS += $(CXXFLAGS_DEBUG) 
+  CFLAGS += $(CFLAGS_DEBUG) 
+  F90FLAGS += $(F90FLAGS_DEBUG) 
+endif
+
+F90FLAGS +=  $(CPPFFLAGS)
+
+ifeq ($(USE_TAU_PDT),on)
+%.o : %.cc
+	$(CXXPARSE) $< -o $(basename $@).pdb $(INCPATH) $(CPPFLAGS)
+	$(TAUINSTR) $(basename $@).pdb $< -o $(basename $@).inst.cc -g TAU_USER -f $(topsrcdir)/select.dat
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -o $@ -c $(basename $@).inst.cc
+
+%.o : %.c
+	$(CPARSE) $< -o $(basename $@).pdb $(INCPATH) $(CPPFLAGS)
+	$(TAUINSTR) $(basename $@).pdb $< -o $(basename $@).inst.c -g TAU_USER -f $(topsrcdir)/select.dat
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $(basename $@).inst.c
+
+else
+%.o : %.cc
+	$(CXX) -c $(CXXFLAGS) $(CPPFLAGS) $< -o $@
+
+endif
+%.d: %.cc
+	g++ -c $(CFLAGS_CMG) $(CPPFLAGS) $(INCPATH) $< -MM -MF $@
+
+

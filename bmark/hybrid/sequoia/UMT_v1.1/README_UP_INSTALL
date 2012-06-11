@@ -1,0 +1,36 @@
+
+----------------------------- python Instructions ------------------------------------------
+
+On uP, the python configure line is a bit more complicated than usual.  Otherwise, normal configure, gmake, gmake install pattern followed.
+
+Python installation:
+#installing python
+1. cd Install
+2. tar -xvzf Python-2.6.tar.gz
+3. cd Python-2.6
+4. ./configure --disable-ipv6 --prefix=`pwd`/.. --with-cxx=/usr/local/tools/compilers/ibm/xlC-9.0.0.4a --with-cxx-main=/usr/local/tools/compilers/ibm/xlC-9.0.0.4a --with-gcc=/usr/local/tools/compilers/ibm/xlc-9.0.0.4
+5. gmake; gmake altinstall
+
+
+----------------------------- pyMPI Instructions ------------------------------------------
+
+pyMPI is a bit more complicated on uP.  We're building runtime loader enabled binaries on this platform and I'm not willing to muck with the configure system.  So here's the hacks on aix.  After the package is configured, made and installed, we build a shared lib from the .o files and relink the executable to use the shared library and runtime loader.  
+
+#installing pyMPI
+1. tar -xvzf pyMPI-2.4b5.tar.gz
+2. cd pyMPI-2.4b5
+
+pyMPI configure line:
+
+> ./configure --prefix=`pwd`/.. --exec-prefix=`pwd`/.. --with-python=`pwd`/../bin/python2.6 CC=/usr/local/tools/compilers/ibm/mpxlc-9.0.0.4 CXX=/usr/local/tools/compilers/ibm/mpxlC-9.0.0.4a CFLAGS=-q64 CXXFLAGS=-q64 LDFLAGS="-L/usr/local/tools/xlc/xlc9004/vacpp/lib -Wl,-brtl -Wl,-blpdata"
+
+> gmake; gmake install
+
+> /usr/local/tools/compilers/ibm/mpxlc-9.0.0.4  -q64 -Wl,-b64 -G -Wl,-bexpfull -o libpyMPI.so pyMPI_banner.o pyMPI_cart.o pyMPI_configuration.o pyMPI_comm.o pyMPI_comm_asynchronous.o pyMPI_comm_collective.o pyMPI_comm_io.o pyMPI_comm_map.o pyMPI_comm_message.o pyMPI_comm_misc.o pyMPI_distutils.o pyMPI_file.o pyMPI_init.o pyMPI_initialize.o pyMPI_isatty.o pyMPI_main.o pyMPI_pickle.o pyMPI_pipes.o pyMPI_rco.o pyMPI_readline.o pyMPI_recv.o pyMPI_reductions.o pyMPI_request.o pyMPI_signals.o pyMPI_site.o pyMPI_send.o pyMPI_shared_file.o pyMPI_status.o pyMPI_sysmods.o pyMPI_user_banner.o pyMPI_user_directory.o pyMPI_user_fini.o pyMPI_user_init.o pyMPI_user_startup.o pyMPI_util.o -L`pwd`/../lib/python2.6/config -lpython2.6
+
+> cp libpyMPI.so ../lib/pyMPI2.4/
+
+> /usr/local/tools/compilers/ibm/mpxlc-9.0.0.4 -q64 -Wl,-b64 -L/usr/local/tools/xlc/xlc9004/vacpp/lib -Wl,-brtl -o pyMPI  pyMPI.o -L`pwd`/../lib/pyMPI2.4 -lpyMPI -Wl,-bE:pyMPI.exp -L/usr/local/tools/xlc/xlc9004/vacpp/lib -Wl,-brtl -Wl,-blpdata -lm  -L`pwd`/../lib/python2.6/config -lpython2.6 -L/usr/local/tools/xlc/xlc9004/vacpp/lib  -lld   -ldl
+
+> cp pyMPI ../bin
+> cp ../bin/pyMPI ../bin/pyMPI2.4

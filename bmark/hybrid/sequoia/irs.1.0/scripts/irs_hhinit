@@ -1,0 +1,75 @@
+#!/usr/local/bin/perl
+
+$script_name = "irs_hhinit";
+$scripts_dir = $0;
+$scripts_dir =~ s/$script_name$//;
+
+push (@INC, $scripts_dir);
+push (@INC, $scripts_dir . "/require");
+
+require("slurp_file.pl");
+require("read_ln.pl");
+
+$hhfile = shift @ARGV;
+
+@grepout = `grep -l HH_INIT $hhfile`;
+if (! @grepout) {
+   exit;
+}
+
+&slurp_file ($hhfile);
+
+$scratchfile = $hhfile . "scratch";
+open (SFH, ">$scratchfile");
+
+while () {
+
+   $line = &read_ln;
+   last if ($line eq '--EOF--');
+
+   if ($line =~ m#^.*;.*/\*\s*HH_EXTERN#) {
+      print SFH "extern $line";
+      next;
+   }
+
+   if ($line =~ m#^(.*);.*/\*\s*HH_INIT#) {
+
+      $lhs = $1;
+      $rhs = $';
+      if ($rhs =~ m#\*/#) {
+         $rhs = "$`;\n";
+         $done = 'TRUE';
+      }
+      else {
+         $done = '';
+      }
+      
+      print SFH "$lhs = $rhs";
+
+      while (! $done) {
+
+         $_ = &read_ln;
+         die 'logic error in irs_hhinit' if ($_ eq '--EOF--');
+
+         if (m#\*/#) {
+            print SFH "$`;\n";
+            $done = 'TRUE';
+         }
+         else {
+            print SFH;
+         }
+
+      }
+
+   }
+
+   else {
+
+      print SFH $line;
+
+   }
+
+}
+close (SFH);
+system ("mv $hhfile $hhfile~");
+system ("mv $scratchfile $hhfile");

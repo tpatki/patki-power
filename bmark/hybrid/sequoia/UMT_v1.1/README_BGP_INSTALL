@@ -1,0 +1,31 @@
+Make sure that your environment variable OBJECT_MODE is set to 32 prior to starting.
+
+To determine the current driver used on the machine:
+
+ls -lt /bgsys/drivers/ppcfloor | sed "s|.*-> ||g" | sed "s|\/ppc.*||g" | sed "s|.*\/||g"
+
+This is used in the LD_LIBRARY_PATH below for the pyMPI build
+
+
+----------------------------- python Instructions ------------------------------------------
+
+Just link to an existing build:
+
+cd Install
+ln -s  /bgsys/drivers/ppcfloor/gnu-linux/include/python2.5 python2.5
+
+----------------------------- pyMPI Instructions ------------------------------------------
+
+setenv LD_LIBRARY_PATH /lib:/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/gnu-linux/powerpc-bgp-linux/lib:/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/gnu-linux/lib:/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/gnu-linux/lib/python2.5:/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/gnu-linux/lib/python2.5/distutils:$LD_LIBRARY_PATH
+
+./configure --prefix=`pwd`/.. --exec-prefix=`pwd`/.. --with-python=/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/gnu-linux/bin/python2.5 CC=/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/comm/bin/mpicc  CXX=/bgsys/drivers/V1R3M0_460_2008-081112P/ppc/comm/bin/mpicxx CFLAGS=" -g -O3" CXXFLAGS="-g -O3" LDFLAGS=" -g -O3 "
+
+make install
+
+unsetenv LD_LIBRARY_PATH
+
+
+
+To run python script runSuOlson.py :
+
+mpirun -np 8192 -mode SMP -cwd `pwd` -exe ../Install/bin/pyMPI -nofree -args "runSuOlson.py"

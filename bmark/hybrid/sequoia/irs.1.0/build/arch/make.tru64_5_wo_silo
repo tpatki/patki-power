@@ -1,0 +1,128 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION standard compile on LC tru64_5 system WITHOUT SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= /usr/local/gnu/bin/make -j 4
+
+#-----------------------------------------------------------------------
+# Library and include paths
+#-----------------------------------------------------------------------
+
+BASE_LIBPATH	= -L../libs -L/usr/lib 
+BASE_INCPATH	= -I../.. -I../../includes -I/usr/local/include -I/usr/include
+BASE_LIBS	= -lc -lm
+
+
+#SILO_DEFINE     = -DSILO
+#SILO_LIBS	= -lsilo
+#SILO_LIBPATH	= -L/usr/local/apps/lib
+#SILO_INCPATH	= -I/usr/local/apps/include
+
+#-----------------------------------------------------------------------
+# Gang Scheduling:  If gang scheduling does not exist on this platform
+#                   comment out all the following GANG_ assignments
+#-----------------------------------------------------------------------
+
+GANG_LIBS       = -lgs
+GANG_LIBPATH    =
+GANG_INCPATH    =
+
+#-----------------------------------------------------------------------
+# MPI Library:  If you do not wish to compile with MPI
+#               comment out all the following MPI_ assignments
+#-----------------------------------------------------------------------
+
+MPI_DEFINE	= -DCOMMPI
+MPI_LIBS	= -lmpich
+MPI_LIBPATH	= -L/usr/local/mpi/lib/
+MPI_INCPATH	= -I/usr/local/mpi/include/
+
+#-----------------------------------------------------------------------
+# OPENMP Library:  If you do not wish to compile with OPENMP
+#                  comment out all the following OPENMP_ assignments
+#-----------------------------------------------------------------------
+
+#OPENMP_DEFINE	= -DOPENMP
+#OPENMP_LIBS	=
+#OPENMP_LIBPATH	=
+#OPENMP_INCPATH	=
+
+#-----------------------------------------------------------------------
+# READLINE Library:  If you do not wish to compile with READLINE
+#                    comment out all the following READLINE_ assignments
+#-----------------------------------------------------------------------
+
+#READLINE_DEFINE  = -DREADLINE
+#READLINE_LIBS    = -lreadline -ltermcap
+#READLINE_LIBPATH =
+#READLINE_INCPATH = -I/usr/local/include/readline
+
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+OTHER_LIBS	= -ldnet_stub -lots
+OTHER_LIBPATH	=
+OTHER_INCPATH	=
+
+DEFINES_BASE	= -DUNIX  -DFUNCTION_TIMERS -Dosf1
+
+IRS_LIBS	=	$(SILO_LIBS) \
+			$(READLINE_LIBS) \
+			$(MPI_LIBS) \
+			$(GANG_LIBS) \
+			$(OPENMP_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH	=	$(BASE_INCPATH) \
+			$(SILO_INCPATH) \
+			$(MPI_INCPATH) \
+			$(GANG_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(READLINE_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH	=	$(BASE_LIBPATH) \
+			$(SILO_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(GANG_LIBPATH) \
+			$(OPENMP_LIBPATH) \
+			$(READLINE_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) \
+			$(MPI_DEFINE) $(SILO_DEFINE) \
+			$(OPENMP_DEFINE) \
+			$(READLINE_DEFINE) \
+			$(OTHER_DEFINE)
+
+
+#-----------------------------------------------------------------------
+# Compiler and link flags
+#-----------------------------------------------------------------------
+
+CC		= cc
+LINK		= cc
+
+CC_PRE		= cc
+LINK_PRE	= cc
+
+CC_FLAGS_OPT	= -c -C -O5 -std1 -g3 -arch ev56 -unroll 4 -ieee \
+			-ifo -fp_reorder -non_shared -om -WL,-om_dead_code
+CC_FLAGS_DEB	= -c -C -std1 -g -trapuv -fptm u -scope_safe -ieee \
+			-verbose -warnprotos -portable -non_shared \
+	-msg_enable defunct,obsolescent,performance,questcode
+
+CC_FLAGS_PRE	= -P
+CC_FLAGS_POST	= -c -C -std1 -g -trapuv -fptm u -scope_safe
+
+F77		= f77
+F77_FLAGS_OPT	= -c -O2 -r8 -Nn4200
+F77_FLAGS_DEB	= -c -r8 -Nn4200
+
+LINK_FLAGS_OPT	= -non_shared
+LINK_FLAGS_DEB	= -non_shared
+
+ARCHIVE		= ar rv
+ARCHIVE_X	= ar x
+

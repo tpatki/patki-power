@@ -1,0 +1,15 @@
+
+
+Total tracks          =          267902590.0
+
+
+progTime              =                 4.93 sec
+
+
+Total tracks per sec. =          54365647.26
+
+
+avg. esc. prob.       =              .262930
+
+
+std dev               =              .000478

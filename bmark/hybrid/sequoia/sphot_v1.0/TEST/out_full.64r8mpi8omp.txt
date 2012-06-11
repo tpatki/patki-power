@@ -1,0 +1,2973 @@
+Run number:    1
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238261        7006        .7435E+18               .9745E+14
+
+nabs   =     172352
+nesc   =      62751
+ntrac  =    4195865
+nlost  =          7
+ncen   =       3151
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263438
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3774E+14
+       2                   68              .2127E+15
+       3                  374              .1165E+16
+       4                  854              .2664E+16
+       5                  585              .1826E+16
+       6                  664              .2074E+16
+       7                 1802              .5629E+16
+       8                 3134              .9768E+16
+       9                 8411              .2625E+17
+      10                20042              .6254E+17
+      11                25704              .8022E+17
+      12                 1101              .3443E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .9745E+14    .5379E+18    .1958E+18    .9837E+16    .2178E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4289337E+01
+
+     number of tracks       =    4195865
+     time/track (microsec)  =    .1022277E+01
+-------------------------------------------------
+Run number:    2
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238199        7043        .7435E+18              -.1799E+14
+
+nabs   =     172527
+nesc   =      62578
+ntrac  =    4181327
+nlost  =          4
+ncen   =       3090
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262827
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3749E+14
+       2                   84              .2633E+15
+       3                  388              .1209E+16
+       4                  832              .2594E+16
+       5                  563              .1760E+16
+       6                  640              .2006E+16
+       7                 1676              .5238E+16
+       8                 3077              .9607E+16
+       9                 8444              .2637E+17
+      10                20083              .6270E+17
+      11                25679              .8009E+17
+      12                 1100              .3453E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1799E+14    .5385E+18    .1953E+18    .9650E+16    .1241E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4270795E+01
+
+     number of tracks       =    4181327
+     time/track (microsec)  =    .1021397E+01
+-------------------------------------------------
+Run number:    3
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238288        7037        .7435E+18               .7320E+12
+
+nabs   =     172351
+nesc   =      62746
+ntrac  =    4191809
+nlost  =         11
+ncen   =       3180
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263373
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   16              .4960E+14
+       2                   72              .2241E+15
+       3                  380              .1186E+16
+       4                  810              .2523E+16
+       5                  615              .1917E+16
+       6                  643              .1997E+16
+       7                 1753              .5476E+16
+       8                 3224              .1008E+17
+       9                 8340              .2601E+17
+      10                20152              .6286E+17
+      11                25634              .8003E+17
+      12                 1107              .3461E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .7320E+12    .5377E+18    .1958E+18    .9925E+16    .3425E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4281858E+01
+
+     number of tracks       =    4191809
+     time/track (microsec)  =    .1021482E+01
+-------------------------------------------------
+Run number:    4
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238267        7064        .7435E+18              -.8351E+14
+
+nabs   =     172470
+nesc   =      62607
+ntrac  =    4183320
+nlost  =          2
+ncen   =       3188
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262645
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3739E+14
+       2                   76              .2367E+15
+       3                  401              .1250E+16
+       4                  799              .2492E+16
+       5                  544              .1708E+16
+       6                  660              .2068E+16
+       7                 1687              .5253E+16
+       8                 3136              .9766E+16
+       9                 8481              .2646E+17
+      10                20063              .6257E+17
+      11                25634              .7996E+17
+      12                 1114              .3446E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.8351E+14    .5382E+18    .1952E+18    .9958E+16    .6209E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4274854E+01
+
+     number of tracks       =    4183320
+     time/track (microsec)  =    .1021881E+01
+-------------------------------------------------
+Run number:    5
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238209        7059        .7435E+18              -.6791E+14
+
+nabs   =     172454
+nesc   =      62578
+ntrac  =    4183589
+nlost  =          7
+ncen   =       3170
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262828
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3476E+14
+       2                   73              .2284E+15
+       3                  357              .1114E+16
+       4                  816              .2544E+16
+       5                  570              .1778E+16
+       6                  611              .1913E+16
+       7                 1799              .5616E+16
+       8                 3141              .9825E+16
+       9                 8391              .2617E+17
+      10                20108              .6277E+17
+      11                25626              .7996E+17
+      12                 1075              .3377E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.6791E+14    .5381E+18    .1953E+18    .9898E+16    .2185E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4272247E+01
+
+     number of tracks       =    4183589
+     time/track (microsec)  =    .1021192E+01
+-------------------------------------------------
+Run number:    6
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238304        7064        .7435E+18              -.8351E+14
+
+nabs   =     172367
+nesc   =      62783
+ntrac  =    4191824
+nlost  =          8
+ncen   =       3146
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263401
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3728E+14
+       2                   68              .2120E+15
+       3                  405              .1268E+16
+       4                  838              .2614E+16
+       5                  576              .1800E+16
+       6                  628              .1961E+16
+       7                 1768              .5519E+16
+       8                 3159              .9843E+16
+       9                 8505              .2655E+17
+      10                20107              .6267E+17
+      11                25621              .7997E+17
+      12                 1096              .3399E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.8351E+14    .5377E+18    .1958E+18    .9812E+16    .2490E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4280078E+01
+
+     number of tracks       =    4191824
+     time/track (microsec)  =    .1021054E+01
+-------------------------------------------------
+Run number:    7
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238360        6982        .7435E+18               .1723E+15
+
+nabs   =     172474
+nesc   =      62816
+ntrac  =    4199833
+nlost  =         12
+ncen   =       3058
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263382
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   14              .4376E+14
+       2                   92              .2855E+15
+       3                  357              .1112E+16
+       4                  807              .2517E+16
+       5                  590              .1836E+16
+       6                  637              .1989E+16
+       7                 1741              .5404E+16
+       8                 3155              .9813E+16
+       9                 8572              .2672E+17
+      10                20135              .6278E+17
+      11                25614              .7992E+17
+      12                 1102              .3461E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1723E+15    .5382E+18    .1959E+18    .9534E+16    .3720E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4285675E+01
+
+     number of tracks       =    4199833
+     time/track (microsec)  =    .1020439E+01
+-------------------------------------------------
+Run number:    8
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238241        7062        .7435E+18              -.7727E+14
+
+nabs   =     172518
+nesc   =      62546
+ntrac  =    4177790
+nlost  =          7
+ncen   =       3170
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262591
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3438E+14
+       2                   68              .2126E+15
+       3                  386              .1205E+16
+       4                  799              .2493E+16
+       5                  564              .1755E+16
+       6                  643              .1993E+16
+       7                 1751              .5468E+16
+       8                 3122              .9738E+16
+       9                 8370              .2612E+17
+      10                20094              .6267E+17
+      11                25627              .8006E+17
+      12                 1111              .3437E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.7727E+14    .5383E+18    .1952E+18    .9887E+16    .2172E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4266178E+01
+
+     number of tracks       =    4177790
+     time/track (microsec)  =    .1021157E+01
+-------------------------------------------------
+Run number:    9
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238305        7032        .7435E+18               .1633E+14
+
+nabs   =     172562
+nesc   =      62498
+ntrac  =    4193447
+nlost  =         11
+ncen   =       3234
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262217
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   13              .4055E+14
+       2                   82              .2574E+15
+       3                  372              .1161E+16
+       4                  732              .2284E+16
+       5                  564              .1759E+16
+       6                  652              .2043E+16
+       7                 1751              .5462E+16
+       8                 3175              .9897E+16
+       9                 8386              .2616E+17
+      10                20011              .6245E+17
+      11                25634              .7998E+17
+      12                 1126              .3469E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1633E+14    .5384E+18    .1950E+18    .1010E+17    .3409E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251177E+01
+
+     number of tracks       =    4193447
+     time/track (microsec)  =    .1013767E+01
+-------------------------------------------------
+Run number:   10
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238264        7028        .7435E+18               .2881E+14
+
+nabs   =     172392
+nesc   =      62728
+ntrac  =    4186751
+nlost  =          6
+ncen   =       3138
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263305
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   19              .5942E+14
+       2                   69              .2134E+15
+       3                  401              .1252E+16
+       4                  809              .2525E+16
+       5                  564              .1763E+16
+       6                  705              .2205E+16
+       7                 1796              .5605E+16
+       8                 3125              .9766E+16
+       9                 8366              .2609E+17
+      10                20121              .6275E+17
+      11                25637              .8003E+17
+      12                 1116              .3480E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .2881E+14    .5380E+18    .1957E+18    .9782E+16    .1874E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4248841E+01
+
+     number of tracks       =    4186751
+     time/track (microsec)  =    .1014830E+01
+-------------------------------------------------
+Run number:   11
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238294        6980        .7435E+18               .1786E+15
+
+nabs   =     172572
+nesc   =      62639
+ntrac  =    4186052
+nlost  =          6
+ncen   =       3077
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262889
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4675E+14
+       2                   93              .2915E+15
+       3                  343              .1071E+16
+       4                  816              .2546E+16
+       5                  565              .1765E+16
+       6                  645              .2027E+16
+       7                 1763              .5499E+16
+       8                 3129              .9741E+16
+       9                 8402              .2618E+17
+      10                20082              .6267E+17
+      11                25666              .8013E+17
+      12                 1120              .3483E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1786E+15    .5386E+18    .1955E+18    .9604E+16    .1864E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4245825E+01
+
+     number of tracks       =    4186052
+     time/track (microsec)  =    .1014279E+01
+-------------------------------------------------
+Run number:   12
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238298        7036        .7435E+18               .3852E+13
+
+nabs   =     172655
+nesc   =      62544
+ntrac  =    4184326
+nlost  =          6
+ncen   =       3093
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262426
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3452E+14
+       2                   74              .2290E+15
+       3                  381              .1186E+16
+       4                  783              .2442E+16
+       5                  581              .1817E+16
+       6                  623              .1930E+16
+       7                 1741              .5426E+16
+       8                 3127              .9752E+16
+       9                 8381              .2616E+17
+      10                20097              .6269E+17
+      11                25623              .7996E+17
+      12                 1122              .3486E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .3852E+13    .5387E+18    .1951E+18    .9646E+16    .1835E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4242197E+01
+
+     number of tracks       =    4184326
+     time/track (microsec)  =    .1013830E+01
+-------------------------------------------------
+Run number:   13
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238326        7029        .7435E+18               .2569E+14
+
+nabs   =     172615
+nesc   =      62622
+ntrac  =    4179937
+nlost  =          6
+ncen   =       3083
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262827
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   17              .5254E+14
+       2                   81              .2518E+15
+       3                  377              .1178E+16
+       4                  855              .2665E+16
+       5                  559              .1747E+16
+       6                  650              .2032E+16
+       7                 1710              .5330E+16
+       8                 3129              .9759E+16
+       9                 8406              .2622E+17
+      10                20113              .6276E+17
+      11                25618              .7998E+17
+      12                 1107              .3462E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .2569E+14    .5384E+18    .1954E+18    .9627E+16    .1888E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4235061E+01
+
+     number of tracks       =    4179937
+     time/track (microsec)  =    .1013188E+01
+-------------------------------------------------
+Run number:   14
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238259        7041        .7435E+18              -.1175E+14
+
+nabs   =     172403
+nesc   =      62703
+ntrac  =    4188776
+nlost  =          7
+ncen   =       3146
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263293
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   14              .4390E+14
+       2                   66              .2050E+15
+       3                  373              .1165E+16
+       4                  806              .2516E+16
+       5                  581              .1809E+16
+       6                  679              .2120E+16
+       7                 1787              .5579E+16
+       8                 3188              .9978E+16
+       9                 8350              .2604E+17
+      10                20121              .6279E+17
+      11                25632              .8001E+17
+      12                 1106              .3471E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1175E+14    .5379E+18    .1957E+18    .9811E+16    .2174E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4339604E+01
+
+     number of tracks       =    4188776
+     time/track (microsec)  =    .1036008E+01
+-------------------------------------------------
+Run number:   15
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238244        7038        .7435E+18              -.2388E+13
+
+nabs   =     172470
+nesc   =      62610
+ntrac  =    4181276
+nlost  =          7
+ncen   =       3157
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262934
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4722E+14
+       2                   72              .2239E+15
+       3                  364              .1136E+16
+       4                  828              .2587E+16
+       5                  568              .1767E+16
+       6                  628              .1972E+16
+       7                 1802              .5625E+16
+       8                 3110              .9706E+16
+       9                 8298              .2589E+17
+      10                20243              .6317E+17
+      11                25561              .7984E+17
+      12                 1121              .3481E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.2388E+13    .5381E+18    .1954E+18    .9850E+16    .2188E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4235625E+01
+
+     number of tracks       =    4181276
+     time/track (microsec)  =    .1012998E+01
+-------------------------------------------------
+Run number:   16
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238268        7061        .7435E+18              -.7415E+14
+
+nabs   =     172378
+nesc   =      62815
+ntrac  =    4193489
+nlost  =         12
+ncen   =       3063
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263692
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3770E+14
+       2                   76              .2370E+15
+       3                  362              .1130E+16
+       4                  866              .2701E+16
+       5                  559              .1749E+16
+       6                  646              .2003E+16
+       7                 1758              .5481E+16
+       8                 3222              .1005E+17
+       9                 8311              .2596E+17
+      10                20197              .6305E+17
+      11                25697              .8017E+17
+      12                 1109              .3461E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.7415E+14    .5378E+18    .1960E+18    .9557E+16    .3765E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251957E+01
+
+     number of tracks       =    4193489
+     time/track (microsec)  =    .1013943E+01
+-------------------------------------------------
+Run number:   17
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238348        7012        .7435E+18               .7873E+14
+
+nabs   =     172563
+nesc   =      62669
+ntrac  =    4190134
+nlost  =          9
+ncen   =       3107
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262913
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3728E+14
+       2                   87              .2713E+15
+       3                  371              .1157E+16
+       4                  816              .2546E+16
+       5                  551              .1716E+16
+       6                  631              .1963E+16
+       7                 1733              .5398E+16
+       8                 3119              .9720E+16
+       9                 8447              .2634E+17
+      10                20108              .6278E+17
+      11                25670              .8008E+17
+      12                 1124              .3502E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .7873E+14    .5383E+18    .1955E+18    .9691E+16    .2793E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251463E+01
+
+     number of tracks       =    4190134
+     time/track (microsec)  =    .1014637E+01
+-------------------------------------------------
+Run number:   18
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238306        6990        .7435E+18               .1474E+15
+
+nabs   =     172638
+nesc   =      62670
+ntrac  =    4188564
+nlost  =          6
+ncen   =       2992
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263027
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   20              .6183E+14
+       2                   85              .2653E+15
+       3                  352              .1096E+16
+       4                  763              .2382E+16
+       5                  576              .1801E+16
+       6                  627              .1965E+16
+       7                 1758              .5494E+16
+       8                 3153              .9831E+16
+       9                 8418              .2626E+17
+      10                20117              .6280E+17
+      11                25680              .8013E+17
+      12                 1121              .3482E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1474E+15    .5387E+18    .1956E+18    .9329E+16    .1890E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4249790E+01
+
+     number of tracks       =    4188564
+     time/track (microsec)  =    .1014618E+01
+-------------------------------------------------
+Run number:   19
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238338        7029        .7435E+18               .2569E+14
+
+nabs   =     172569
+nesc   =      62673
+ntrac  =    4182891
+nlost  =          9
+ncen   =       3087
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262855
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   10              .3131E+14
+       2                   83              .2573E+15
+       3                  384              .1195E+16
+       4                  779              .2429E+16
+       5                  560              .1746E+16
+       6                  667              .2081E+16
+       7                 1799              .5607E+16
+       8                 3164              .9872E+16
+       9                 8444              .2633E+17
+      10                20037              .6251E+17
+      11                25634              .7996E+17
+      12                 1112              .3439E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .2569E+14    .5384E+18    .1955E+18    .9641E+16    .2832E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4238482E+01
+
+     number of tracks       =    4182891
+     time/track (microsec)  =    .1013290E+01
+-------------------------------------------------
+Run number:   20
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238358        7007        .7435E+18               .9433E+14
+
+nabs   =     172550
+nesc   =      62663
+ntrac  =    4187321
+nlost  =         10
+ncen   =       3135
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262874
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    7              .2183E+14
+       2                   86              .2690E+15
+       3                  382              .1192E+16
+       4                  834              .2602E+16
+       5                  585              .1832E+16
+       6                  634              .1974E+16
+       7                 1764              .5503E+16
+       8                 3153              .9841E+16
+       9                 8342              .2603E+17
+      10                20141              .6284E+17
+      11                25631              .7995E+17
+      12                 1104              .3433E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .9433E+14    .5383E+18    .1955E+18    .9778E+16    .3215E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4249181E+01
+
+     number of tracks       =    4187321
+     time/track (microsec)  =    .1014773E+01
+-------------------------------------------------
+Run number:   21
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238230        7047        .7435E+18              -.3047E+14
+
+nabs   =     172369
+nesc   =      62766
+ntrac  =    4184115
+nlost  =          3
+ncen   =       3092
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263560
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   13              .4075E+14
+       2                   70              .2175E+15
+       3                  390              .1217E+16
+       4                  854              .2665E+16
+       5                  520              .1629E+16
+       6                  657              .2057E+16
+       7                 1738              .5401E+16
+       8                 3243              .1012E+17
+       9                 8394              .2619E+17
+      10                20144              .6292E+17
+      11                25614              .7991E+17
+      12                 1129              .3519E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.3047E+14    .5379E+18    .1959E+18    .9653E+16    .9331E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4245894E+01
+
+     number of tracks       =    4184115
+     time/track (microsec)  =    .1014765E+01
+-------------------------------------------------
+Run number:   22
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238290        7025        .7435E+18               .3817E+14
+
+nabs   =     172352
+nesc   =      62768
+ntrac  =    4182074
+nlost  =          6
+ncen   =       3164
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263412
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3405E+14
+       2                   70              .2169E+15
+       3                  373              .1164E+16
+       4                  870              .2714E+16
+       5                  612              .1913E+16
+       6                  664              .2070E+16
+       7                 1751              .5460E+16
+       8                 3254              .1014E+17
+       9                 8287              .2588E+17
+      10                20152              .6288E+17
+      11                25612              .7991E+17
+      12                 1112              .3453E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .3817E+14    .5378E+18    .1958E+18    .9883E+16    .1869E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4334435E+01
+
+     number of tracks       =    4182074
+     time/track (microsec)  =    .1036432E+01
+-------------------------------------------------
+Run number:   23
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238229        7054        .7435E+18              -.5231E+14
+
+nabs   =     172337
+nesc   =      62703
+ntrac  =    4178272
+nlost  =          9
+ncen   =       3180
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263091
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   18              .5657E+14
+       2                   80              .2484E+15
+       3                  387              .1207E+16
+       4                  842              .2625E+16
+       5                  580              .1807E+16
+       6                  641              .1981E+16
+       7                 1753              .5452E+16
+       8                 3148              .9826E+16
+       9                 8366              .2610E+17
+      10                20132              .6282E+17
+      11                25649              .7999E+17
+      12                 1107              .3441E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.5231E+14    .5379E+18    .1955E+18    .9923E+16    .2813E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4239059E+01
+
+     number of tracks       =    4178272
+     time/track (microsec)  =    .1014548E+01
+-------------------------------------------------
+Run number:   24
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238290        7017        .7435E+18               .6313E+14
+
+nabs   =     172458
+nesc   =      62718
+ntrac  =    4180640
+nlost  =          4
+ncen   =       3110
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263236
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3427E+14
+       2                   73              .2284E+15
+       3                  395              .1232E+16
+       4                  829              .2586E+16
+       5                  582              .1813E+16
+       6                  648              .2029E+16
+       7                 1666              .5192E+16
+       8                 3177              .9906E+16
+       9                 8493              .2652E+17
+      10                20147              .6286E+17
+      11                25594              .7982E+17
+      12                 1103              .3482E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .6313E+14    .5381E+18    .1957E+18    .9702E+16    .1331E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4238038E+01
+
+     number of tracks       =    4180640
+     time/track (microsec)  =    .1013730E+01
+-------------------------------------------------
+Run number:   25
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238340        6993        .7435E+18               .1380E+15
+
+nabs   =     172507
+nesc   =      62701
+ntrac  =    4187928
+nlost  =         10
+ncen   =       3122
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263060
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4672E+14
+       2                   82              .2558E+15
+       3                  377              .1177E+16
+       4                  854              .2662E+16
+       5                  567              .1768E+16
+       6                  634              .1976E+16
+       7                 1777              .5537E+16
+       8                 3146              .9800E+16
+       9                 8421              .2627E+17
+      10                20119              .6281E+17
+      11                25593              .7987E+17
+      12                 1116              .3443E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1380E+15    .5382E+18    .1956E+18    .9747E+16    .3125E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4247771E+01
+
+     number of tracks       =    4187928
+     time/track (microsec)  =    .1014290E+01
+-------------------------------------------------
+Run number:   26
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238247        7057        .7435E+18              -.6167E+14
+
+nabs   =     172531
+nesc   =      62635
+ntrac  =    4197012
+nlost  =          8
+ncen   =       3073
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262847
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   13              .4027E+14
+       2                   81              .2535E+15
+       3                  395              .1228E+16
+       4                  840              .2621E+16
+       5                  587              .1832E+16
+       6                  658              .2056E+16
+       7                 1723              .5379E+16
+       8                 3146              .9810E+16
+       9                 8407              .2621E+17
+      10                20033              .6250E+17
+      11                25642              .7999E+17
+      12                 1110              .3464E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.6167E+14    .5384E+18    .1954E+18    .9596E+16    .2464E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4253980E+01
+
+     number of tracks       =    4197012
+     time/track (microsec)  =    .1013573E+01
+-------------------------------------------------
+Run number:   27
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238270        7028        .7435E+18               .2881E+14
+
+nabs   =     172310
+nesc   =      62865
+ntrac  =    4193121
+nlost  =          9
+ncen   =       3086
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263799
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   16              .4979E+14
+       2                   87              .2708E+15
+       3                  374              .1165E+16
+       4                  810              .2528E+16
+       5                  576              .1807E+16
+       6                  644              .2032E+16
+       7                 1836              .5711E+16
+       8                 3158              .9841E+16
+       9                 8513              .2654E+17
+      10                20127              .6281E+17
+      11                25627              .7995E+17
+      12                 1097              .3400E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .2881E+14    .5377E+18    .1961E+18    .9646E+16    .2815E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251691E+01
+
+     number of tracks       =    4193121
+     time/track (microsec)  =    .1013968E+01
+-------------------------------------------------
+Run number:   28
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238272        7003        .7435E+18               .1068E+15
+
+nabs   =     172596
+nesc   =      62580
+ntrac  =    4188732
+nlost  =          6
+ncen   =       3090
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262750
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   17              .5351E+14
+       2                   79              .2469E+15
+       3                  392              .1225E+16
+       4                  844              .2633E+16
+       5                  594              .1847E+16
+       6                  580              .1803E+16
+       7                 1782              .5579E+16
+       8                 3095              .9657E+16
+       9                 8392              .2623E+17
+      10                20098              .6272E+17
+      11                25605              .7988E+17
+      12                 1102              .3456E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1068E+15    .5386E+18    .1953E+18    .9650E+16    .1867E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4246363E+01
+
+     number of tracks       =    4188732
+     time/track (microsec)  =    .1013759E+01
+-------------------------------------------------
+Run number:   29
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238246        7032        .7435E+18               .1633E+14
+
+nabs   =     172510
+nesc   =      62590
+ntrac  =    4185214
+nlost  =          7
+ncen   =       3139
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262876
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3773E+14
+       2                   80              .2496E+15
+       3                  381              .1188E+16
+       4                  837              .2616E+16
+       5                  579              .1808E+16
+       6                  678              .2118E+16
+       7                 1700              .5299E+16
+       8                 3205              .1003E+17
+       9                 8391              .2616E+17
+      10                20007              .6245E+17
+      11                25600              .7995E+17
+      12                 1120              .3500E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1633E+14    .5383E+18    .1954E+18    .9796E+16    .2101E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4239130E+01
+
+     number of tracks       =    4185214
+     time/track (microsec)  =    .1012883E+01
+-------------------------------------------------
+Run number:   30
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238305        7015        .7435E+18               .6937E+14
+
+nabs   =     172519
+nesc   =      62643
+ntrac  =    4182036
+nlost  =          4
+ncen   =       3139
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262900
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   16              .4964E+14
+       2                   77              .2383E+15
+       3                  368              .1146E+16
+       4                  831              .2591E+16
+       5                  553              .1728E+16
+       6                  643              .2004E+16
+       7                 1726              .5403E+16
+       8                 3203              .9984E+16
+       9                 8477              .2646E+17
+      10                19994              .6238E+17
+      11                25637              .7999E+17
+      12                 1118              .3489E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .6937E+14    .5383E+18    .1955E+18    .9797E+16    .1194E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4333877E+01
+
+     number of tracks       =    4182036
+     time/track (microsec)  =    .1036308E+01
+-------------------------------------------------
+Run number:   31
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238317        7058        .7435E+18              -.6479E+14
+
+nabs   =     172585
+nesc   =      62649
+ntrac  =    4178747
+nlost  =         11
+ncen   =       3072
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262909
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3784E+14
+       2                   89              .2798E+15
+       3                  367              .1143E+16
+       4                  823              .2569E+16
+       5                  590              .1840E+16
+       6                  695              .2154E+16
+       7                 1712              .5338E+16
+       8                 3111              .9720E+16
+       9                 8402              .2620E+17
+      10                20142              .6287E+17
+      11                25605              .7989E+17
+      12                 1101              .3438E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.6479E+14    .5383E+18    .1955E+18    .9586E+16    .3464E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4231927E+01
+
+     number of tracks       =    4178747
+     time/track (microsec)  =    .1012726E+01
+-------------------------------------------------
+Run number:   32
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238254        7058        .7435E+18              -.6479E+14
+
+nabs   =     172520
+nesc   =      62689
+ntrac  =    4192653
+nlost  =          2
+ncen   =       3043
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263072
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   18              .5606E+14
+       2                   81              .2532E+15
+       3                  379              .1185E+16
+       4                  824              .2567E+16
+       5                  595              .1852E+16
+       6                  661              .2054E+16
+       7                 1780              .5555E+16
+       8                 3134              .9786E+16
+       9                 8369              .2610E+17
+      10                20050              .6252E+17
+      11                25700              .8018E+17
+      12                 1098              .3444E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.6479E+14    .5383E+18    .1956E+18    .9496E+16    .6286E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4253020E+01
+
+     number of tracks       =    4192653
+     time/track (microsec)  =    .1014398E+01
+-------------------------------------------------
+Run number:   33
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238298        7003        .7435E+18               .1068E+15
+
+nabs   =     172574
+nesc   =      62618
+ntrac  =    4184935
+nlost  =          5
+ncen   =       3101
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262821
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   20              .6225E+14
+       2                   82              .2562E+15
+       3                  365              .1144E+16
+       4                  865              .2699E+16
+       5                  543              .1696E+16
+       6                  596              .1861E+16
+       7                 1751              .5478E+16
+       8                 3203              .9985E+16
+       9                 8444              .2633E+17
+      10                20053              .6262E+17
+      11                25594              .7984E+17
+      12                 1102              .3438E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1068E+15    .5385E+18    .1954E+18    .9675E+16    .1588E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4246914E+01
+
+     number of tracks       =    4184935
+     time/track (microsec)  =    .1014810E+01
+-------------------------------------------------
+Run number:   34
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238291        7028        .7435E+18               .2881E+14
+
+nabs   =     172616
+nesc   =      62584
+ntrac  =    4189041
+nlost  =          3
+ncen   =       3088
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262680
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   16              .5025E+14
+       2                   63              .1961E+15
+       3                  355              .1107E+16
+       4                  839              .2620E+16
+       5                  570              .1788E+16
+       6                  601              .1876E+16
+       7                 1829              .5691E+16
+       8                 3070              .9599E+16
+       9                 8394              .2620E+17
+      10                20080              .6266E+17
+      11                25655              .8004E+17
+      12                 1112              .3468E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .2881E+14    .5386E+18    .1953E+18    .9628E+16    .9270E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4247817E+01
+
+     number of tracks       =    4189041
+     time/track (microsec)  =    .1014031E+01
+-------------------------------------------------
+Run number:   35
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238285        7075        .7435E+18              -.1178E+15
+
+nabs   =     172541
+nesc   =      62570
+ntrac  =    4183720
+nlost  =          6
+ncen   =       3168
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262489
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   21              .6563E+14
+       2                   80              .2491E+15
+       3                  380              .1187E+16
+       4                  823              .2572E+16
+       5                  583              .1820E+16
+       6                  597              .1865E+16
+       7                 1711              .5330E+16
+       8                 3155              .9861E+16
+       9                 8479              .2643E+17
+      10                20015              .6240E+17
+      11                25618              .7994E+17
+      12                 1108              .3431E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1178E+15    .5383E+18    .1951E+18    .9877E+16    .1865E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4236186E+01
+
+     number of tracks       =    4183720
+     time/track (microsec)  =    .1012540E+01
+-------------------------------------------------
+Run number:   36
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238257        7032        .7435E+18               .1633E+14
+
+nabs   =     172615
+nesc   =      62475
+ntrac  =    4171390
+nlost  =          3
+ncen   =       3164
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262225
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    8              .2605E+14
+       2                   80              .2512E+15
+       3                  373              .1162E+16
+       4                  839              .2615E+16
+       5                  588              .1834E+16
+       6                  629              .1961E+16
+       7                 1697              .5283E+16
+       8                 3122              .9740E+16
+       9                 8424              .2631E+17
+      10                19946              .6225E+17
+      11                25658              .8006E+17
+      12                 1111              .3439E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1633E+14    .5387E+18    .1949E+18    .9858E+16    .9407E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4225671E+01
+
+     number of tracks       =    4171390
+     time/track (microsec)  =    .1013013E+01
+-------------------------------------------------
+Run number:   37
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238274        7060        .7435E+18              -.7103E+14
+
+nabs   =     172459
+nesc   =      62728
+ntrac  =    4179690
+nlost  =          6
+ncen   =       3081
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263146
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   21              .6550E+14
+       2                   70              .2186E+15
+       3                  368              .1148E+16
+       4                  832              .2599E+16
+       5                  559              .1741E+16
+       6                  627              .1950E+16
+       7                 1810              .5633E+16
+       8                 3173              .9895E+16
+       9                 8330              .2601E+17
+      10                20163              .6287E+17
+      11                25667              .8006E+17
+      12                 1108              .3440E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.7103E+14    .5381E+18    .1956E+18    .9596E+16    .1843E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4236922E+01
+
+     number of tracks       =    4179690
+     time/track (microsec)  =    .1013693E+01
+-------------------------------------------------
+Run number:   38
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238257        7035        .7435E+18               .6972E+13
+
+nabs   =     172456
+nesc   =      62651
+ntrac  =    4187136
+nlost  =          5
+ncen   =       3145
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263037
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   13              .4063E+14
+       2                   78              .2441E+15
+       3                  374              .1168E+16
+       4                  829              .2589E+16
+       5                  553              .1727E+16
+       6                  607              .1907E+16
+       7                 1756              .5474E+16
+       8                 3122              .9769E+16
+       9                 8452              .2639E+17
+      10                20073              .6267E+17
+      11                25658              .8006E+17
+      12                 1136              .3504E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .6972E+13    .5381E+18    .1955E+18    .9814E+16    .1575E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4334570E+01
+
+     number of tracks       =    4187136
+     time/track (microsec)  =    .1035211E+01
+-------------------------------------------------
+Run number:   39
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238282        7048        .7435E+18              -.3359E+14
+
+nabs   =     172538
+nesc   =      62627
+ntrac  =    4187411
+nlost  =          6
+ncen   =       3111
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262803
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    8              .2510E+14
+       2                   75              .2336E+15
+       3                  343              .1070E+16
+       4                  810              .2531E+16
+       5                  572              .1785E+16
+       6                  644              .2009E+16
+       7                 1730              .5385E+16
+       8                 3154              .9865E+16
+       9                 8544              .2667E+17
+      10                19989              .6236E+17
+      11                25662              .8003E+17
+      12                 1096              .3404E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.3359E+14    .5383E+18    .1954E+18    .9715E+16    .1861E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4242315E+01
+
+     number of tracks       =    4187411
+     time/track (microsec)  =    .1013112E+01
+-------------------------------------------------
+Run number:   40
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238218        7031        .7435E+18               .1945E+14
+
+nabs   =     172218
+nesc   =      62876
+ntrac  =    4189108
+nlost  =          7
+ncen   =       3117
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263948
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3750E+14
+       2                   81              .2518E+15
+       3                  376              .1175E+16
+       4                  784              .2448E+16
+       5                  610              .1898E+16
+       6                  610              .1910E+16
+       7                 1720              .5390E+16
+       8                 3241              .1015E+17
+       9                 8493              .2650E+17
+      10                20187              .6299E+17
+      11                25619              .7991E+17
+      12                 1143              .3516E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1945E+14    .5375E+18    .1962E+18    .9734E+16    .2202E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4245424E+01
+
+     number of tracks       =    4189108
+     time/track (microsec)  =    .1013443E+01
+-------------------------------------------------
+Run number:   41
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238309        6979        .7435E+18               .1817E+15
+
+nabs   =     172430
+nesc   =      62747
+ntrac  =    4186720
+nlost  =          5
+ncen   =       3127
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263393
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    8              .2484E+14
+       2                   69              .2144E+15
+       3                  364              .1135E+16
+       4                  816              .2546E+16
+       5                  598              .1868E+16
+       6                  631              .1965E+16
+       7                 1761              .5506E+16
+       8                 3242              .1012E+17
+       9                 8379              .2617E+17
+      10                20094              .6272E+17
+      11                25666              .8009E+17
+      12                 1119              .3474E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1817E+15    .5380E+18    .1958E+18    .9740E+16    .1572E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4249617E+01
+
+     number of tracks       =    4186720
+     time/track (microsec)  =    .1015023E+01
+-------------------------------------------------
+Run number:   42
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238390        7038        .7435E+18              -.2388E+13
+
+nabs   =     172565
+nesc   =      62719
+ntrac  =    4184392
+nlost  =          6
+ncen   =       3100
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262959
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   20              .6254E+14
+       2                   78              .2420E+15
+       3                  375              .1168E+16
+       4                  883              .2755E+16
+       5                  589              .1839E+16
+       6                  629              .1960E+16
+       7                 1690              .5265E+16
+       8                 3223              .1006E+17
+       9                 8379              .2615E+17
+      10                20097              .6267E+17
+      11                25629              .7997E+17
+      12                 1127              .3456E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.2388E+13    .5382E+18    .1956E+18    .9671E+16    .1875E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4241866E+01
+
+     number of tracks       =    4184392
+     time/track (microsec)  =    .1013735E+01
+-------------------------------------------------
+Run number:   43
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238330        7043        .7435E+18              -.1799E+14
+
+nabs   =     172514
+nesc   =      62671
+ntrac  =    4190551
+nlost  =          8
+ncen   =       3137
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262926
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    6              .1855E+14
+       2                   66              .2076E+15
+       3                  379              .1184E+16
+       4                  796              .2485E+16
+       5                  592              .1848E+16
+       6                  688              .2140E+16
+       7                 1764              .5487E+16
+       8                 3190              .9954E+16
+       9                 8472              .2641E+17
+      10                20017              .6247E+17
+      11                25607              .7987E+17
+      12                 1094              .3434E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1799E+14    .5381E+18    .1955E+18    .9787E+16    .2531E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4249309E+01
+
+     number of tracks       =    4190551
+     time/track (microsec)  =    .1014022E+01
+-------------------------------------------------
+Run number:   44
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238272        7057        .7435E+18              -.6167E+14
+
+nabs   =     172288
+nesc   =      62818
+ntrac  =    4196754
+nlost  =          7
+ncen   =       3159
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263662
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   12              .3784E+14
+       2                   75              .2349E+15
+       3                  378              .1177E+16
+       4                  808              .2520E+16
+       5                  585              .1824E+16
+       6                  665              .2080E+16
+       7                 1796              .5637E+16
+       8                 3190              .9965E+16
+       9                 8398              .2621E+17
+      10                20152              .6284E+17
+      11                25647              .8002E+17
+      12                 1112              .3458E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.6167E+14    .5375E+18    .1960E+18    .9852E+16    .2189E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251059E+01
+
+     number of tracks       =    4196754
+     time/track (microsec)  =    .1012940E+01
+-------------------------------------------------
+Run number:   45
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238320        7002        .7435E+18               .1099E+15
+
+nabs   =     172636
+nesc   =      62563
+ntrac  =    4181690
+nlost  =          2
+ncen   =       3119
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262492
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3423E+14
+       2                   87              .2713E+15
+       3                  403              .1257E+16
+       4                  833              .2603E+16
+       5                  581              .1816E+16
+       6                  600              .1869E+16
+       7                 1783              .5552E+16
+       8                 3078              .9592E+16
+       9                 8358              .2609E+17
+      10                20097              .6268E+17
+      11                25615              .7994E+17
+      12                 1117              .3472E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1099E+15    .5386E+18    .1952E+18    .9744E+16    .6207E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4238684E+01
+
+     number of tracks       =    4181690
+     time/track (microsec)  =    .1013629E+01
+-------------------------------------------------
+Run number:   46
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238182        7033        .7435E+18               .1321E+14
+
+nabs   =     172216
+nesc   =      62781
+ntrac  =    4176862
+nlost  =         12
+ncen   =       3173
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263643
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3411E+14
+       2                   80              .2497E+15
+       3                  409              .1277E+16
+       4                  802              .2501E+16
+       5                  558              .1736E+16
+       6                  700              .2194E+16
+       7                 1729              .5393E+16
+       8                 3186              .9961E+16
+       9                 8411              .2626E+17
+      10                20190              .6300E+17
+      11                25607              .7989E+17
+      12                 1098              .3423E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1321E+14    .5376E+18    .1959E+18    .9897E+16    .3677E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4327997E+01
+
+     number of tracks       =    4176862
+     time/track (microsec)  =    .1036184E+01
+-------------------------------------------------
+Run number:   47
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238278        7047        .7435E+18              -.3047E+14
+
+nabs   =     172559
+nesc   =      62641
+ntrac  =    4177831
+nlost  =          7
+ncen   =       3071
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262860
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4695E+14
+       2                   62              .1926E+15
+       3                  382              .1190E+16
+       4                  821              .2565E+16
+       5                  609              .1900E+16
+       6                  642              .2007E+16
+       7                 1772              .5538E+16
+       8                 3150              .9814E+16
+       9                 8364              .2613E+17
+      10                20063              .6258E+17
+      11                25637              .7996E+17
+      12                 1124              .3498E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.3047E+14    .5384E+18    .1954E+18    .9561E+16    .2151E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4232317E+01
+
+     number of tracks       =    4177831
+     time/track (microsec)  =    .1013042E+01
+-------------------------------------------------
+Run number:   48
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238317        6991        .7435E+18               .1443E+15
+
+nabs   =     172479
+nesc   =      62694
+ntrac  =    4187515
+nlost  =          9
+ncen   =       3135
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262912
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    9              .2799E+14
+       2                   61              .1904E+15
+       3                  366              .1144E+16
+       4                  886              .2764E+16
+       5                  577              .1807E+16
+       6                  647              .2011E+16
+       7                 1649              .5143E+16
+       8                 3133              .9766E+16
+       9                 8496              .2649E+17
+      10                20128              .6279E+17
+      11                25614              .7985E+17
+      12                 1128              .3505E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1443E+15    .5383E+18    .1955E+18    .9778E+16    .2689E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4250148E+01
+
+     number of tracks       =    4187515
+     time/track (microsec)  =    .1014957E+01
+-------------------------------------------------
+Run number:   49
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238327        7036        .7435E+18               .3852E+13
+
+nabs   =     172588
+nesc   =      62650
+ntrac  =    4182776
+nlost  =          6
+ncen   =       3083
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262849
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   10              .3123E+14
+       2                   67              .2099E+15
+       3                  376              .1176E+16
+       4                  795              .2483E+16
+       5                  593              .1854E+16
+       6                  658              .2043E+16
+       7                 1729              .5384E+16
+       8                 3168              .9876E+16
+       9                 8382              .2614E+17
+      10                20167              .6289E+17
+      11                25618              .7994E+17
+      12                 1087              .3421E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .3852E+13    .5384E+18    .1954E+18    .9624E+16    .1857E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4243452E+01
+
+     number of tracks       =    4182776
+     time/track (microsec)  =    .1014506E+01
+-------------------------------------------------
+Run number:   50
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238336        7037        .7435E+18               .7320E+12
+
+nabs   =     172654
+nesc   =      62594
+ntrac  =    4181114
+nlost  =         10
+ncen   =       3078
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262644
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   14              .4356E+14
+       2                   69              .2168E+15
+       3                  368              .1145E+16
+       4                  812              .2534E+16
+       5                  598              .1862E+16
+       6                  636              .1986E+16
+       7                 1659              .5168E+16
+       8                 3197              .9976E+16
+       9                 8463              .2638E+17
+      10                19992              .6242E+17
+      11                25675              .8007E+17
+      12                 1111              .3498E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .7320E+12    .5385E+18    .1953E+18    .9604E+16    .3219E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4228781E+01
+
+     number of tracks       =    4181114
+     time/track (microsec)  =    .1011400E+01
+-------------------------------------------------
+Run number:   51
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238228        7057        .7435E+18              -.6167E+14
+
+nabs   =     172523
+nesc   =      62652
+ntrac  =    4185265
+nlost  =         10
+ncen   =       3043
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263009
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4686E+14
+       2                   86              .2691E+15
+       3                  386              .1205E+16
+       4                  806              .2515E+16
+       5                  576              .1790E+16
+       6                  636              .1967E+16
+       7                 1660              .5183E+16
+       8                 3201              .1001E+17
+       9                 8434              .2630E+17
+      10                20117              .6278E+17
+      11                25625              .7995E+17
+      12                 1110              .3478E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.6167E+14    .5384E+18    .1955E+18    .9489E+16    .3076E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4219969E+01
+
+     number of tracks       =    4185265
+     time/track (microsec)  =    .1008292E+01
+-------------------------------------------------
+Run number:   52
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238310        7085        .7435E+18              -.1490E+15
+
+nabs   =     172630
+nesc   =      62533
+ntrac  =    4192259
+nlost  =          4
+ncen   =       3143
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262338
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3425E+14
+       2                   72              .2245E+15
+       3                  388              .1211E+16
+       4                  769              .2398E+16
+       5                  581              .1811E+16
+       6                  637              .2009E+16
+       7                 1699              .5306E+16
+       8                 3150              .9799E+16
+       9                 8404              .2622E+17
+      10                20130              .6279E+17
+      11                25583              .7980E+17
+      12                 1109              .3460E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1490E+15    .5384E+18    .1951E+18    .9809E+16    .1264E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4245757E+01
+
+     number of tracks       =    4192259
+     time/track (microsec)  =    .1012761E+01
+-------------------------------------------------
+Run number:   53
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238326        7010        .7435E+18               .8497E+14
+
+nabs   =     172567
+nesc   =      62720
+ntrac  =    4190349
+nlost  =          2
+ncen   =       3037
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263100
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    6              .1865E+14
+       2                   88              .2741E+15
+       3                  363              .1132E+16
+       4                  794              .2478E+16
+       5                  584              .1822E+16
+       6                  614              .1912E+16
+       7                 1754              .5474E+16
+       8                 3142              .9773E+16
+       9                 8410              .2625E+17
+      10                20149              .6286E+17
+      11                25695              .8015E+17
+      12                 1121              .3486E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .8497E+14    .5384E+18    .1956E+18    .9478E+16    .6260E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4240579E+01
+
+     number of tracks       =    4190349
+     time/track (microsec)  =    .1011987E+01
+-------------------------------------------------
+Run number:   54
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238461        6987        .7435E+18               .1567E+15
+
+nabs   =     172678
+nesc   =      62763
+ntrac  =    4189748
+nlost  =          5
+ncen   =       3015
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263093
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   25              .7782E+14
+       2                   88              .2770E+15
+       3                  363              .1129E+16
+       4                  798              .2488E+16
+       5                  581              .1812E+16
+       6                  644              .2013E+16
+       7                 1742              .5426E+16
+       8                 3221              .1007E+17
+       9                 8416              .2621E+17
+      10                20112              .6271E+17
+      11                25657              .8008E+17
+      12                 1116              .3441E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .1567E+15    .5385E+18    .1957E+18    .9411E+16    .1544E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4334423E+01
+
+     number of tracks       =    4189748
+     time/track (microsec)  =    .1034531E+01
+-------------------------------------------------
+Run number:   55
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238288        7071        .7435E+18              -.1053E+15
+
+nabs   =     172661
+nesc   =      62479
+ntrac  =    4184484
+nlost  =          9
+ncen   =       3139
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262094
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4673E+14
+       2                   78              .2444E+15
+       3                  361              .1129E+16
+       4                  839              .2618E+16
+       5                  575              .1794E+16
+       6                  596              .1852E+16
+       7                 1711              .5320E+16
+       8                 3125              .9751E+16
+       9                 8353              .2603E+17
+      10                20064              .6255E+17
+      11                25652              .8007E+17
+      12                 1110              .3456E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1053E+15    .5387E+18    .1949E+18    .9798E+16    .2775E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4242428E+01
+
+     number of tracks       =    4184484
+     time/track (microsec)  =    .1013847E+01
+-------------------------------------------------
+Run number:   56
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238221        7056        .7435E+18              -.5855E+14
+
+nabs   =     172407
+nesc   =      62798
+ntrac  =    4184478
+nlost  =          9
+ncen   =       3007
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263813
+ std =            .000903
+
+ energy group     # bundles escaping     energy (kev)     
+       1                    7              .2194E+14
+       2                   71              .2214E+15
+       3                  394              .1227E+16
+       4                  837              .2617E+16
+       5                  610              .1901E+16
+       6                  649              .2030E+16
+       7                 1741              .5442E+16
+       8                 3247              .1014E+17
+       9                 8352              .2608E+17
+      10                20123              .6281E+17
+      11                25664              .8016E+17
+      12                 1103              .3437E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.5855E+14    .5379E+18    .1961E+18    .9386E+16    .2873E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4242470E+01
+
+     number of tracks       =    4184478
+     time/track (microsec)  =    .1013859E+01
+-------------------------------------------------
+Run number:   57
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238286        7041        .7435E+18              -.1175E+14
+
+nabs   =     172373
+nesc   =      62816
+ntrac  =    4184107
+nlost  =          4
+ncen   =       3093
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .263508
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   14              .4372E+14
+       2                   84              .2637E+15
+       3                  373              .1164E+16
+       4                  793              .2476E+16
+       5                  575              .1795E+16
+       6                  616              .1912E+16
+       7                 1739              .5417E+16
+       8                 3175              .9891E+16
+       9                 8470              .2640E+17
+      10                20204              .6297E+17
+      11                25672              .8013E+17
+      12                 1101              .3444E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1175E+14    .5379E+18    .1959E+18    .9656E+16    .1250E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251769E+01
+
+     number of tracks       =    4184107
+     time/track (microsec)  =    .1016171E+01
+-------------------------------------------------
+Run number:   58
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238291        7075        .7435E+18              -.1178E+15
+
+nabs   =     172805
+nesc   =      62257
+ntrac  =    4184477
+nlost  =          6
+ncen   =       3223
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .261290
+ std =            .000900
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   18              .5586E+14
+       2                   82              .2538E+15
+       3                  358              .1117E+16
+       4                  804              .2512E+16
+       5                  586              .1829E+16
+       6                  634              .1974E+16
+       7                 1730              .5393E+16
+       8                 3091              .9651E+16
+       9                 8307              .2594E+17
+      10                19904              .6211E+17
+      11                25629              .7997E+17
+      12                 1114              .3453E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.1178E+15    .5390E+18    .1943E+18    .1006E+17    .1884E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4246013E+01
+
+     number of tracks       =    4184477
+     time/track (microsec)  =    .1014706E+01
+-------------------------------------------------
+Run number:   59
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238291        7049        .7435E+18              -.3671E+14
+
+nabs   =     172593
+nesc   =      62532
+ntrac  =    4187827
+nlost  =         12
+ncen   =       3154
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262338
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   15              .4712E+14
+       2                   89              .2760E+15
+       3                  379              .1181E+16
+       4                  819              .2553E+16
+       5                  551              .1727E+16
+       6                  628              .1962E+16
+       7                 1689              .5257E+16
+       8                 3104              .9688E+16
+       9                 8384              .2613E+17
+      10                20127              .6278E+17
+      11                25637              .7999E+17
+      12                 1110              .3458E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18   -.3671E+14    .5385E+18    .1950E+18    .9827E+16    .3704E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4248111E+01
+
+     number of tracks       =    4187827
+     time/track (microsec)  =    .1014395E+01
+-------------------------------------------------
+Run number:   60
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238393        7028        .7435E+18               .2881E+14
+
+nabs   =     172735
+nesc   =      62456
+ntrac  =    4181644
+nlost  =         12
+ncen   =       3190
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .261914
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   11              .3427E+14
+       2                   75              .2346E+15
+       3                  361              .1127E+16
+       4                  792              .2468E+16
+       5                  584              .1823E+16
+       6                  613              .1903E+16
+       7                 1750              .5455E+16
+       8                 3133              .9772E+16
+       9                 8372              .2613E+17
+      10                20061              .6257E+17
+      11                25615              .7988E+17
+      12                 1089              .3411E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .2881E+14    .5387E+18    .1948E+18    .9949E+16    .3747E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4251482E+01
+
+     number of tracks       =    4181644
+     time/track (microsec)  =    .1016701E+01
+-------------------------------------------------
+Run number:   61
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238300        7019        .7435E+18               .5689E+14
+
+nabs   =     172607
+nesc   =      62562
+ntrac  =    4184523
+nlost  =          3
+ncen   =       3128
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262499
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   10              .3109E+14
+       2                   67              .2087E+15
+       3                  377              .1176E+16
+       4                  806              .2514E+16
+       5                  554              .1725E+16
+       6                  624              .1951E+16
+       7                 1739              .5437E+16
+       8                 3139              .9802E+16
+       9                 8436              .2634E+17
+      10                20069              .6260E+17
+      11                25655              .8000E+17
+      12                 1086              .3387E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .5689E+14    .5386E+18    .1952E+18    .9754E+16    .9502E+13
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4247170E+01
+
+     number of tracks       =    4184523
+     time/track (microsec)  =    .1014971E+01
+-------------------------------------------------
+Run number:   62
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238357        7026        .7435E+18               .3505E+14
+
+nabs   =     172549
+nesc   =      62639
+ntrac  =    4180042
+nlost  =          6
+ncen   =       3163
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262756
+ std =            .000902
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   18              .5563E+14
+       2                   74              .2304E+15
+       3                  371              .1156E+16
+       4                  819              .2555E+16
+       5                  561              .1745E+16
+       6                  666              .2064E+16
+       7                 1762              .5489E+16
+       8                 3197              .9976E+16
+       9                 8407              .2623E+17
+      10                20081              .6265E+17
+      11                25593              .7984E+17
+      12                 1090              .3414E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .3505E+14    .5382E+18    .1954E+18    .9859E+16    .1892E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4337081E+01
+
+     number of tracks       =    4180042
+     time/track (microsec)  =    .1037569E+01
+-------------------------------------------------
+Run number:   63
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238307        7017        .7435E+18               .6313E+14
+
+nabs   =     172654
+nesc   =      62594
+ntrac  =    4185213
+nlost  =          6
+ncen   =       3053
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262524
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   18              .5668E+14
+       2                   75              .2342E+15
+       3                  341              .1064E+16
+       4                  874              .2727E+16
+       5                  558              .1746E+16
+       6                  590              .1840E+16
+       7                 1717              .5384E+16
+       8                 3114              .9706E+16
+       9                 8366              .2611E+17
+      10                20122              .6274E+17
+      11                25681              .8010E+17
+      12                 1138              .3480E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .6313E+14    .5388E+18    .1952E+18    .9522E+16    .1821E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4246877E+01
+
+     number of tracks       =    4185213
+     time/track (microsec)  =    .1014734E+01
+-------------------------------------------------
+Run number:   64
+
+
+
+                    plankian source:
+  # emitted   # killed   energy emitted (kev)   energy gained via rr
+   238363        7013        .7435E+18               .7561E+14
+
+nabs   =     172626
+nesc   =      62581
+ntrac  =    4190673
+nlost  =          7
+ncen   =       3149
+nscat  =          0
+nrr    =          0
+nsplit =  268435455
+
+ escape prob =    .262509
+ std =            .000901
+
+ energy group     # bundles escaping     energy (kev)     
+       1                   10              .3122E+14
+       2                   80              .2490E+15
+       3                  389              .1211E+16
+       4                  818              .2551E+16
+       5                  587              .1830E+16
+       6                  670              .2086E+16
+       7                 1702              .5295E+16
+       8                 3132              .9754E+16
+       9                 8456              .2641E+17
+      10                20036              .6247E+17
+      11                25598              .7986E+17
+      12                 1103              .3484E+16
+
+                    energy balance (kev):
+   emitted    lost via rr    absorbed     escaped     censused       lost
+  .7435E+18    .7561E+14    .5385E+18    .1952E+18    .9817E+16    .2193E+14
+
+
+     generation time (sec)  =    .2346985E+00
+     execution time  (sec)  =    .4248827E+01
+
+     number of tracks       =    4190673
+     time/track (microsec)  =    .1013877E+01
+-------------------------------------------------
+
+
+numMPItasks =        8
+loopTime =   4.342622
+progTime =   4.593445
+
+
+
+
+
+
+SUMMARY:
+-------
+Run #     # part.    # tracks  esc. prob.     time  1st ranf last ranf
+       1   238261     4195865     .263438   4.2893  .5801136  .1785459
+       2   238199     4181327     .262827   4.2708  .4346865  .7525125
+       3   238288     4191809     .263373   4.2819  .4195815  .6203553
+       4   238267     4183320     .262645   4.2749  .4100565  .4166662
+       5   238209     4183589     .262828   4.2722  .3968038  .5555587
+       6   238304     4191824     .263401   4.2801  .1582850  .9620534
+       7   238360     4199833     .263382   4.2857  .6689197  .6321388
+       8   238241     4177790     .262591   4.2662  .1667541  .0472052
+       9   238305     4193447     .262217   4.2512  .4699131  .1745381
+      10   238264     4186751     .263305   4.2488  .1122038  .4676733
+      11   238294     4186052     .262889   4.2458  .2296646  .0369849
+      12   238298     4184326     .262426   4.2422  .4821536  .6822780
+      13   238326     4179937     .262827   4.2351  .5343827  .4515935
+      14   238259     4188776     .263293   4.3396  .5477540  .9596174
+      15   238244     4181276     .262934   4.2356  .2123695  .5855969
+      16   238268     4193489     .263692   4.2520  .5871557  .9161059
+      17   238348     4190134     .262913   4.2515  .7746948  .7026154
+      18   238306     4188564     .263027   4.2498  .7702698  .4058941
+      19   238338     4182891     .262855   4.2385  .7268032  .4782867
+      20   238358     4187321     .262874   4.2492  .1194416  .7909157
+      21   238230     4184115     .263560   4.2459  .9494202  .5835909
+      22   238290     4182074     .263412   4.3344  .9965844  .2141309
+      23   238229     4178272     .263091   4.2391  .0343954  .7993653
+      24   238290     4180640     .263236   4.2380  .6988555  .8408824
+      25   238340     4187928     .263060   4.2478  .6720704  .1361470
+      26   238247     4197012     .262847   4.2540  .7796607  .4672286
+      27   238270     4193121     .263799   4.2517  .0668629  .3014498
+      28   238272     4188732     .262750   4.2464  .1522995  .7609324
+      29   238246     4185214     .262876   4.2391  .7732298  .0435403
+      30   238305     4182036     .262900   4.3339  .2096058  .3636605
+      31   238317     4178747     .262909   4.2319  .4935410  .5105216
+      32   238254     4192653     .263072   4.2530  .6531017  .6948253
+      33   238298     4184935     .262821   4.2469  .1882500  .8475469
+      34   238291     4189041     .262680   4.2478  .5917075  .7773989
+      35   238285     4183720     .262489   4.2362  .5383884  .9765207
+      36   238257     4171390     .262225   4.2257  .0845761  .1949544
+      37   238274     4179690     .263146   4.2369  .1458535  .7195538
+      38   238257     4187136     .263037   4.3346  .1160513  .0975691
+      39   238282     4187411     .262803   4.2423  .7751200  .7220229
+      40   238218     4189108     .263948   4.2454  .2754554  .2236434
+      41   238309     4186720     .263393   4.2496  .1734926  .9790219
+      42   238390     4184392     .262959   4.2419  .0017357  .8219136
+      43   238330     4190551     .262926   4.2493  .7943378  .6492229
+      44   238272     4196754     .263662   4.2511  .1243416  .4397295
+      45   238320     4181690     .262492   4.2387  .4953780  .6481194
+      46   238182     4176862     .263643   4.3280  .6162362  .3126632
+      47   238278     4177831     .262860   4.2323  .3812993  .1307090
+      48   238317     4187515     .262912   4.2501  .3320557  .8957595
+      49   238327     4182776     .262849   4.2435  .0014076  .7800200
+      50   238336     4181114     .262644   4.2288  .0941032  .2807895
+      51   238228     4185265     .263009   4.2200  .9209799  .9963366
+      52   238310     4192259     .262338   4.2458  .3580595  .5938425
+      53   238326     4190349     .263100   4.2406  .6449226  .1433676
+      54   238461     4189748     .263093   4.3344  .0284523  .4755571
+      55   238288     4184484     .262094   4.2424  .2247628  .8396262
+      56   238221     4184478     .263813   4.2425  .7357537  .9480310
+      57   238286     4184107     .263508   4.2518  .7319749  .7819845
+      58   238291     4184477     .261290   4.2460  .9656385  .3384968
+      59   238291     4187827     .262338   4.2481  .7293290  .8072296
+      60   238393     4181644     .261914   4.2515  .0097092  .4434336
+      61   238300     4184523     .262499   4.2472  .2547438  .0526591
+      62   238357     4180042     .262756   4.3371  .8426431  .4630762
+      63   238307     4185213     .262524   4.2469  .7445349  .5497007
+      64   238363     4190673     .262509   4.2488  .8465341  .8555258
+-------------------------------------------------------------------
+ave:       238291     4185977     .262930   4.2579
+std:           49        5407   .00047769    .0299
+ratio:     .00021    .0012917   .00181678  .007027
+
+
+allocate time:                              .000923
+random number seed generation time:         .001023
+max. global copy time:                      .001272
+estimated single CPU time:                   272.76
+number of MPI tasks:                              8
+number of threads per MPI task:                   8
+loop speedup:                               62.7518
+program speedup:                            59.3792
+efficiency:                                   .9278

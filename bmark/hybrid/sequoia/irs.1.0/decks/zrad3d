@@ -1,0 +1,286 @@
+*
+* $Id: zrad3d,v 1.1 2007/07/12 16:01:00 dawson Exp $
+*
+
+*  3D Radiation Weak Scaling Study Performance Problem:
+*  This is a 1 block problem, suitable for testing with a single CPU
+*  or run on more CPU's and each will have that same amount of work.
+*
+
+*
+*  THIS INPUT FILE ASSUMES THE NUMBER OF PROCESSORS IS AN INTEGER CUBED
+*  THAT IS, 1^3, 2^3, 3^3, 4^3, 5^3, ETC. OR 1, 8, 27, 64, 125, ETC.
+*  THE NUMBER OF CELLS PER DOMAIN IS 25^3.  DOUBLE IT FOR BIG SIZE.
+*
+
+*
+*  Choose how many processors this problem will use.
+*  Valid choices are 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, etc.
+*  Our typical scaling study includes these choices:
+*  0008 0027 0064 0125 0216 0343 0512 0729 1000 1331 1728 2197 2744 3375 4096 \
+*  4913 5832 6859 8000 9261
+*  10648 12167 13824 15625 17576 19683 21952 24389 27000 29791 32768
+*
+
+
+   if { NDOMS < 1} 
+
+      echo "!!!!!!!!!!!!!!!!!!!!!!! RUN ERROR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+      echo ""
+      echo "User Error: You must specify '-def NDOMS=9999' on the command line"
+      echo "            Where 9999 is the number of domains for the problem"
+      echo ""
+      echo "            If running non-threaded, this should be set to "
+      echo "               to the number of processors you are running on"
+      echo ""
+      echo "            If running threaded, sufficient NDOMS should be "
+      echo "               specified to keep all the threads busy"
+      echo ""
+      echo "            Example: Running non-threaded on 8 processors"
+      echo "                     with 8 mpi processes"
+      echo ""
+      echo "                     srun -N 2 -n 8 -p pdebug ./irs zrad3d -k 8mpi_0thr -def NDOMS=8"
+      echo ""
+      echo "            Example: Running threaded on 8 processors "
+      echo "                     with 2 mpi processes and with OMP_NUM_THREADS "
+      echo "                     set to 4 so that each mpi process runs 4 threads."
+      echo ""
+      echo "                     srun -N 2 -n 2 -p pdebug ./irs -threads zrad3d -k 2mpi_4thr -def NDOMS=8"
+      echo ""
+      echo ""
+      echo "!!!!!!!!!!!!!!!!!!!!!!! RUN ERROR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+      quit
+      done
+   endif
+
+
+   if { NCPUS < 1}
+      echo ""
+      echo "NCPUS not specified, assuming NCPUS is equal to NDOMS.  Setting NCPUS to ",eval {NDOMS}
+      echo ""
+      def NCPUS {NDOMS}
+   endif 
+
+   if { NZONES_PER_DOM_SIDE < 1}
+      echo ""
+      echo "NZONES_PER_DOM_SIDE not specified, defaulting to 25 zones per domain side"
+      echo ""
+      def NZONES_PER_DOM_SIDE {25}
+   endif 
+
+   echo ""
+   echo "User Specified NDOMS = ",eval {NDOMS}
+   echo "User Specified NCPUS = ",eval {NCPUS}
+   echo "User Specified NZONES_PER_DOM_SIDE = ",eval {NZONES_PER_DOM_SIDE}
+   echo ""
+
+   boxid x00 zrad3d
+
+*
+*  set code options
+*
+   set ndims  3
+   set cstop  3
+   set deltat 1.0e-4
+   set dtmin  1.0e-20
+   set dtmax  1.0e-4
+   set tstop  0.001
+
+   if { NDOMS > 575 }
+      set nblkx { NDOMS + 1 }
+   endif
+
+   set rdifitx  100000
+   set rdifepsx 1.0e-10
+   set dtemin   0.5
+   set dtefc    0.2
+   set dtrmin   0.5
+   set dtrfc    0.2
+
+   set iftmode   1
+*   set ifdivgrad 1
+   set ngroup    1
+*   set ifprecon  2
+
+   doneset
+
+*
+*  define regions symbolically
+*
+   def GAS  1
+
+*
+*  Equation of state and opacity definitions
+*
+   region GAS
+      eos  form 5  0.666666 refd 1.0  abar 1.0  zbar 1.0
+      opacity rosseland 1 1.0  planck 1 1.0e6
+
+*
+*  user-defined parameters
+*
+   def third {1.0/3.0}
+   def NDOMS_PER_SIDE {int( (NDOMS ^ third) + 0.5 )}
+   def ZONES_PER_SIDE {NZONES_PER_DOM_SIDE * NDOMS_PER_SIDE}
+   def ZONES_PER_DOMAIN {NZONES_PER_DOM_SIDE * NZONES_PER_DOM_SIDE * NZONES_PER_DOM_SIDE}
+   def in  1
+   def jn  1
+   def kn  1
+   def ix {ZONES_PER_SIDE + 1}
+   def jx {ZONES_PER_SIDE + 1}
+   def kx {ZONES_PER_SIDE + 1}
+   def zonecount {(ix-in)*(jx-jn)*(kx-kn)}
+
+   echo "Deck Calculated NDOMS_PER_SIDE = ",eval {NDOMS_PER_SIDE}
+   echo "Deck Calculated ZONES_PER_SIDE = ",eval {ZONES_PER_SIDE}
+*
+*  Define 3-D Mesh
+*
+   blocks
+      block  ix jx kx
+      blkdiv domains = (NDOMS_PER_SIDE x NDOMS_PER_SIDE x NDOMS_PER_SIDE)
+   done
+
+   fill() = i x 0.0 5.0
+   fill() = j y 0.0 5.0
+   fill() = k z 0.0 5.0
+
+*
+* define node lists
+*
+   nodelist imin   = :0(in,jn:jx,kn:kx)
+   nodelist imax   = :0(ix,jn:jx,kn:kx)
+   nodelist jmin   = :0(in:ix,jn,kn:kx)
+   nodelist jmax   = :0(in:ix,jx,kn:kx)
+   nodelist kmin   = :0(in:ix,jn:jx,kn)
+   nodelist kmax   = :0(in:ix,jn:jx,kx)
+   nodelist source = :0(in,jn:jx-,kn:kx-)
+   nodelist all    = :0(in:ix,jn:jx,kn:kx)
+
+*
+*  fill out zonal quantities
+*
+   zone(all)    = GAS 0.5 0.001
+   zone(source) = GAS 0.5 1.0
+
+   fillvar(all) = trad func {0.125 * (5.0 - 0.3 * meshx))}
+   fillvar(all) = tmat func {0.125 * (5.0 - 0.3 * meshx))}
+
+*
+*  bc's
+*
+   bc(imin) = xvcnst
+   bc(imax) = xvcnst
+   bc(jmin) = yvcnst norad
+   bc(jmax) = yvcnst norad
+   bc(kmin) = zvcnst norad
+   bc(kmax) = zvcnst norad
+
+*
+*  temperature source
+*
+   src(source) = tsrc 2
+      0.0    1.0
+      1.0e6  1.0
+
+*
+*  generate
+*
+   gen
+
+   echo " "
+   echo "generation completed"
+   echo " "
+
+   def rdifitsum 0
+   def benchmark 0.0
+   def scale     {1.0e6 * NDOMS / zonecount}
+   def wall0     {walltime}
+   def walllast  {walltime}
+
+   cyc 1 1 1
+      query_timer(xmain)
+   endmsg
+
+   cycleplot 1 99999 1
+      tplot walltime
+      tplot eval {walldiff}
+      tplot eval {rdifitsum+rdifit}
+      tplot eval {scale * (walltime-wall0) / (rdifitsum+rdifit)}
+   endmsg
+
+   cycleplot 1 99999 1
+      tplot deltat
+      tplot cycle
+      tplot rdifit
+   endmsg
+
+   cycleplot 2 99999 1
+      tplot query_timer(xmain) vs cycle
+   endmsg
+
+   cyc 0 99999 1
+      def rdifitsum {rdifitsum + rdifit}
+      def benchmark {scale * (walltime-wall0) / (rdifitsum+0.0)}
+      def walldiff {walltime - walllast}
+      def walllast {walltime}
+      echo "-----------------------------"
+      echo "rdifit - ",eval {rdifit}
+      ptc
+      echo "-----------------------------"
+   endmsg
+
+   def checktime {walltime+30}
+   when {walltime > checktime}
+      def checktime {walltime + 30}
+      echo "walltime               = ",eval{walltime}
+      echo "iiterations last cycle = ",eval{rdifit}
+      echo "iterations total       = ",eval{rdifitsum}
+      ptc
+   endmsg
+
+   atexit
+
+      def fom_num {NCPUS * 1.0e6}
+      def fom {fom_num/benchmark}
+      echo " "
+      echo " "
+
+*      echo "BENCHMARK NCPUS = ",eval{NCPUS}
+
+      echo "BENCHMARK microseconds per zone-iteration = ",eval{benchmark}
+      echo "BENCHMARK FOM = ",eval{fom}
+
+*      echo "BENCHMARK rdifitx = ",eval{rdifitx}
+*      echo "BENCHMARK rdifit  = ",eval{rdifit}
+*      echo "BENCHMARK rdifitsum = ",eval{rdifitsum}
+
+
+      if {rdifit < rdifitx} 
+        echo "BENCHMARK CORRECTNESS : PASSED"
+      endif
+
+      if {rdifit >= rdifitx} 
+        echo "BENCHMARK CORRECTNESS : FAILED"
+      endif
+
+      echo ""
+
+*      tpamp
+*      timers
+   endmsg
+
+   echo " "
+   echo "INITIAL Setup NCPUS                  = ",eval {NCPUS}
+   echo "INITIAL Setup NZONES PER DOMAIN SIDE = ",eval {NZONES_PER_DOM_SIDE}
+   echo "INITIAL Setup ZONES PER DOMAIN       = ",eval {ZONES_PER_DOMAIN}
+   echo "INITIAL Setup TOTAL NDOMS            = ",eval {NDOMS}
+   echo "INITIAL Setup TOTAL ZONECOUNT        = ",eval {zonecount}
+   echo "INITIAL Setup TOTAL NDOMS PER SIDE   = ",eval {NDOMS_PER_SIDE}
+   echo "INITIAL Setup TOTAL ZONES PER SIDE   = ",eval {ZONES_PER_SIDE}
+   echo " "
+
+   run
+   quit
+
+done

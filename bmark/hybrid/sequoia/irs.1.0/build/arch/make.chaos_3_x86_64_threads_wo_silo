@@ -1,0 +1,60 @@
+
+#-----------------------------------------------------------------------
+# DESCRIPTION threaded compile on LC chaos_3_x86_64_ib machines WITHOUT SILO
+#-----------------------------------------------------------------------
+
+GMAKE		= make -j 4
+
+CC		= /usr/local/bin/mpiicc
+LINK		= /usr/local/bin/mpiicc -static
+
+BASE_LIBPATH    = -L../libs -L/usr/lib \
+                -L/usr/local/intel/compiler91_64/lib
+
+BASE_INCPATH    = -I../.. -I../../includes -I/usr/local/include \
+                -I/usr/local/apps/include \
+
+BASE_LIBS       = 
+
+MPI_DEFINE      = -DCOMMPI
+MPI_LIBS        = 
+MPI_LIBPATH     = 
+MPI_INCPATH     = 
+
+OPENMP_DEFINE   = -DOPENMP -DOMP2COMPILER
+OPENMP_LIBS     = 
+OPENMP_LIBPATH  =
+OPENMP_INCPATH  =
+
+OTHER_LIBS 	=
+OTHER_LIBPATH 	=
+OTHER_INCPATH 	= 
+
+DEFINES_BASE	= -DUNIX -DFUNCTION_TIMERS -Dlinux
+
+IRS_LIBS 	=       $(MPI_LIBS) \
+			$(BASE_LIBS) \
+			$(OTHER_LIBS)
+
+IRS_INCPATH 	= 	$(BASE_INCPATH) \
+			$(MPI_INCPATH) \
+			$(OPENMP_INCPATH) \
+			$(OTHER_INCPATH)
+
+IRS_LIBPATH 	= 	$(BASE_LIBPATH) \
+			$(MPI_LIBPATH) \
+			$(OTHER_LIBPATH)
+
+IRS_DEFINES	=	$(DEFINES_BASE) $(MPI_DEFINE) $(OPENMP_DEFINE)
+
+
+
+CC_FLAGS_OPT    = -c    -O2 -openmp -openmp_report2
+CC_FLAGS_DEB    = -c -g -O2 -openmp -openmp_report2
+
+LINK_FLAGS_OPT	=    -O2 -openmp -openmp_report2
+LINK_FLAGS_DEB	= -g -O2 -openmp -openmp_report2
+
+ARCHIVE		= ar rc
+ARCHIVE_X	= ar x
+

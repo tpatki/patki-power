@@ -1,0 +1,472 @@
+#! /usr/local/bin/perl -w
+
+  $option_force    = "off";
+  $option_makemake = "off";
+
+  use Cwd;
+
+  # $realme = $0;
+  $me = "irs_build";
+  $homedir = cwd();
+
+  local(@all_files) = ();
+  local(@sorted_files) = ();
+  local($tstr) = "";
+
+  #-----------------------------------------------------------------------------
+  # Verify the arguments to this perl script
+  #-----------------------------------------------------------------------------
+  if    ($#ARGV >= 1) {
+    $build_dir = $ARGV[0];
+    $check_dir = $ARGV[1];
+  }
+  else {
+    die "\n\tUsage: $me build_dir check_dir [-force] [-makemake] \n";
+  }
+
+  #-----------------------------------------------------------------------------
+  # Save any further arguments as options (which must begin with an -)
+  #-----------------------------------------------------------------------------
+  for ($i=2; $i<=$#ARGV; $i++) {
+ 
+    if ($ARGV[$i] =~ /^-force$/i) {
+      print "\n -force option set : existing build files and links will be replaced\n";
+      $option_force = "on";
+    }
+    elsif ($ARGV[$i] =~ /^-makemake$/i) {
+      print "\n -makemake option set : new source level makefiles will be generated\n";
+      $option_makemake = "on";
+    }
+    else {
+      print "\n\tUnknown option : $ARGV[$i]\n";
+      die   "\n\tUsage: $me build_dir check_dir [-force] [-makemake] \n";
+    }
+  }
+
+  #-----------------------------------------------------------------------------
+  # If the check out space specified was a relative path, then change
+  # it to an absolute path name.
+  #
+  # This helps so that the same code can be used to build a build directory
+  # in /usr/tmp with an abolute path to the check out space or
+  # in ~/irs with a relative path to the check out space.
+  #
+  # Do the same with the build space being created.
+  #-----------------------------------------------------------------------------
+  if (!($check_dir =~ /^\//)) {
+    $check_dir = $homedir . "/" . $check_dir;
+  }
+
+  if (!($build_dir =~ /^\//)) {
+    $build_dir = $homedir . "/" . $build_dir;
+  }
+
+  if (-d  $build_dir) {
+
+    if ($option_force eq "off") {
+
+      print "\n\tBuild directory $build_dir already exists.\n\t" .
+            "\n\tAs a precaution, this script by default only creates" .
+            "\n\ta NEW build directory, so as not to inadvertently" .
+            "\n\tcorrupt an existing directory.\n\t" .
+            "\n\tYou may override this default and force the build" .
+            "\n\tover the existing directory by specifying\n\t" .
+            "\n\t$me $ARGV[0] $ARGV[1] -force\n\n";
+      exit;
+    }
+  }
+
+  if (!-d $check_dir) {
+    print "\nCheck out $check_dir does not exist\n\t";
+    exit;
+  }
+
+  #-----------------------------------------------------------------------------
+  # Verify the checkout directory specified contains an includes and sources
+  # directory
+  #
+  # Get a list of all files in the sources directory
+  # Get a list of all files in the includes directory
+  # Get a list of all files in the build/arch directory
+  #-----------------------------------------------------------------------------
+  if (chdir $check_dir) {
+      
+    if (!-d "includes")   { die "\nCheck out $check_dir/includes does not exist\n\t"; }
+    if (!-d "sources")    { die "\nCheck out $check_dir/sources  does not exist\n\t"; }
+    if (!-d "scripts")    { die "\nCheck out $check_dir/scripts  does not exist\n\t"; }
+    if (!-d "build")      { die "\nCheck out $check_dir/build  does not exist\n\t"; }
+    if (!-d "build/arch") { die "\nCheck out $check_dir/build/arch  does not exist\n\t"; }
+
+    #---------------------------------------------------------------------------
+    #
+    #---------------------------------------------------------------------------
+    opendir THISDIR,  "sources" or die "Could not open source directory";
+    @srcdirs = grep !/^CVS$/,  
+               grep !/^\./, 
+               readdir THISDIR;
+    closedir THISDIR;
+
+    opendir THISDIR, "includes" or die "Could not open includes directory";
+    @incfiles = grep !/~$/, 
+                grep !/\.00?$/, 
+                grep !/^CVS$/, 
+                grep !/^\./, 
+                grep !/\.hh$/,
+                readdir THISDIR;
+    closedir THISDIR;
+
+    if (! chdir "build") { die "\nCould not change into 'build' directory\n"; }
+    opendir THISDIR, "arch" or die "Could not open arch directory";
+    @archfiles = grep !/~$/, 
+                 grep !/\.00?$/, 
+                 grep !/^CVS$/, 
+                 grep !/^\./, 
+                 readdir THISDIR;
+    closedir THISDIR;
+    if (! chdir "..") { die "\nCould not change into directory '..'\n"; }
+
+    #---------------------------------------------------------------------------
+    # Remove any files which are not directories from the sources directory list
+    #---------------------------------------------------------------------------
+    if (! chdir "sources") { die "\nCould not change into 'sources' directory\n"; }
+
+    for ($i=0; $i<= $#srcdirs;  $i++) {
+      if (!-d $srcdirs[$i]) { 
+        # print "Ignoring $srcdirs[$i] file in sources directory\n"; 
+        splice(@srcdirs, $i, 1)  
+      }
+    }
+
+    if (! chdir "..") { die "\nCould not change into directory '..'\n"; }
+
+  }
+  else {
+    die "\nCould not enter directory $check_dir";
+  }
+
+  #-----------------------------------------------------------------------------
+  # Make the main directory structure within the build directory
+  #-----------------------------------------------------------------------------
+  &create_dir($build_dir,"");
+  chdir ($build_dir);
+
+  &create_dir("build",$build_dir);
+  &create_dir("debug",$build_dir);
+  &create_dir("includes",$build_dir);
+  &create_dir("sources",$build_dir);
+
+  #-----------------------------------------------------------------------------
+  # Build the sub-directories within the sources directory of the build space
+  #-----------------------------------------------------------------------------
+  chdir ("sources");
+  for ($i=0; $i<= $#srcdirs;  $i++) {
+
+    &create_dir($srcdirs[$i], $build_dir . "/sources");
+  }
+
+  #-----------------------------------------------------------------------------
+  # Loop over each source directory, change into it 
+  # Remove files from the array of files that we don't need to create links to
+  #  (such as *.bak and *.000 and CVS, ...)
+  #  Save this shortened list of files in temparray.
+  #-----------------------------------------------------------------------------
+  for ($i=0; $i<= $#srcdirs;  $i++) {
+
+    if (!chdir $check_dir) { die "\nCould not change into '$check_dir' directory\n"; }
+    if (!chdir "sources")  { die "\nCould not change into 'sources' directory\n"; }
+
+    opendir THISDIR,  "$srcdirs[$i]"  or die "error with directory $srcdirs[$i]";
+    @temparray = grep !/Makefile.*.bak/, 
+                 grep !/~$/, 
+                 grep !/\.00?$/, 
+                 grep !/^CVS$/, 
+                 grep !/^\.\.?$/, 
+                 readdir THISDIR;
+    closedir THISDIR;
+
+    if (!chdir $build_dir)     { die "\nCould not change into '$build_dir' directory\n"; }
+    if (!chdir "sources")      { die "\nCould not change into 'sources' directory\n"; }
+    if (!chdir "$srcdirs[$i]") { die "\nCould not change into '$srcdirs[$i]' directory\n"; }
+
+    #---------------------------------------------------------------------------
+    # Make each the symbolic links to the .c source files within the sources
+    # subdirectories
+    #
+    # Create the links of the .c files from the build space to the checkout space
+    #
+    # Add the list of .c files to the all_files array.  This will be used
+    # for the mccabe toolset.
+    #---------------------------------------------------------------------------
+    for ($j=0; $j<=$#temparray; $j++) {
+
+      $tstr = $check_dir . "/sources" . "/" . $srcdirs[$i] . "/" . $temparray[$j];
+
+      #-------------------------------------------------------------------------
+      # If the makemake option is on, don't link the Makefile.  It will be 
+      # regenerated anew.  Otherwise, link it in as well as all other files.
+      #-------------------------------------------------------------------------
+      if ($option_makemake eq "on") {
+
+        if (!($temparray[$j] =~ /Makefile/)) {
+          &create_link($tstr, $temparray[$j], "sources/" . $srcdirs[$i]);
+        }
+      }
+      else {
+        &create_link($tstr, $temparray[$j], "sources/" . $srcdirs[$i]);
+      }
+    
+      $tstr = "$temparray[$j]";  
+
+      #-------------------------------------------------------------------------
+      # This array will be used to build the irs.pcf file.  Some files and
+      # directories we don't want to instrument, thus the -NONINST clause
+      #-------------------------------------------------------------------------
+      if ($tstr =~ /\.c$/)  {
+
+        chop($tstr);
+        $tstr .= "inst.i";
+
+#        push(@all_files,$tstr);
+
+        if ( ($srcdirs[$i] eq "genrd")			||
+             ($srcdirs[$i] eq "hash")   		|| 
+             ($srcdirs[$i] eq "parm")			||
+             ($srcdirs[$i] eq "rgst")   		||
+             ($srcdirs[$i] eq "timers")		||
+             ($srcdirs[$i] eq "objects")		||
+             ($tstr        eq "checkpara.inst.i")	||
+             ($tstr        eq "expressions.inst.i")	||
+             ($tstr        eq "getcpu.inst.i")		||
+             ($tstr        eq "getversion.inst.i")	||
+             ($tstr        eq "initget.inst.i")	||
+             ($tstr        eq "main.inst.i") 		||
+             ($tstr        eq "modules.inst.i")	||
+             ($tstr        eq "setup_attrs.inst.i")	||
+             ($tstr        eq "userexitfn.inst.i")	
+           ) {
+
+          $tstr .= " -NONINST";
+
+          push(@all_files,$tstr);
+        }
+        else {
+          push(@all_files,$tstr);
+        }
+
+      }
+    }
+
+    #---------------------------------------------------------------------------
+    # If the -makemake option was selected, create the Makefile in the sources
+    # subdirectory
+    #---------------------------------------------------------------------------
+    if ($option_makemake eq "on") {
+
+      system("irs_makemake -links") 
+        && die "could not execute 'irs_makemake -links' command";
+    }
+
+  }
+
+  #-----------------------------------------------------------------------------
+  # Make each the symbolic links to the files within the includes directory
+  #-----------------------------------------------------------------------------
+  chdir ($build_dir);
+  chdir ("includes");
+  
+  for ($i=0; $i<= $#incfiles;  $i++) {
+
+    $tstr = $check_dir . "/includes" . "/" . $incfiles[$i];
+
+    &create_link($tstr, $incfiles[$i], "includes");
+  }
+
+  #-----------------------------------------------------------------------------
+  # Change into the build directory
+  #-----------------------------------------------------------------------------
+  chdir ($build_dir);
+  chdir ("build");
+
+  #-----------------------------------------------------------------------------
+  # Add the rgst_types.i file to the list of files to instrument
+  # Create the pcf file for use by McCabe tools.
+  # 
+  # If the irs.pcf file already exists, append the files to it. This is useful
+  # when the -force option is used.
+  # 
+  #-----------------------------------------------------------------------------
+  if (-e "irs.pcf") {
+    open(TEMPFH,">>irs.pcf") || die "\nCould not open file 'irs.pcf'\n";
+  }
+  else {
+    open(TEMPFH,">irs.pcf") || die "\nCould not create file 'irs.pcf'\n";
+
+    printf TEMPFH "PROGRAM irs\n";
+    printf TEMPFH "DIR     pre\n";
+    printf TEMPFH "INSTDIR inst\n";
+
+    # $tstr = "rgst_types.inst.i -NONINST ";  
+    $tstr = "rgst_types.inst.i ";  
+    push(@all_files,$tstr);
+  }
+
+  @sorted_files = sort {lc($a) cmp lc($b) } @all_files;
+
+  foreach $tstr (@sorted_files) {
+    if (!($tstr =~ /cheetahstub/)) {
+      printf TEMPFH "irs_c $tstr\n";
+    }
+  }
+
+  close TEMPFH;
+
+  #-----------------------------------------------------------------------------
+  # Create the irs.ckw file for use by McCabe tools
+  #-----------------------------------------------------------------------------
+  open(TEMPFH,">irs.ckw") || die "\nCound not create file 'irs.ckw'\n";
+  printf TEMPFH "__const\n";
+  close TEMPFH;
+
+  #-----------------------------------------------------------------------------
+  # Create the irs.scf file for use by McCabe tools
+  #-----------------------------------------------------------------------------
+  open(TEMPFH,">irs.scf") || die "\nCound not create file 'irs.scf'\n";
+  printf TEMPFH "PARSE   irs_c cfork *.i INST -suppress -npp -halstead -param -data -mc -pathvec -ckw irs.ckw\n";
+  printf TEMPFH "INSTLIB cfork il5base.c instlib.c\n";
+  close TEMPFH;
+
+  #-----------------------------------------------------------------------------
+  # Create the user.def file for use by McCabe tools
+  #-----------------------------------------------------------------------------
+  open(TEMPFH,">user.def") || die "\nCound not create file 'user.def'\n";
+  printf TEMPFH "REPOSDIR       ./repos\n";
+  printf TEMPFH "CACHEPATHLIMIT	200\n";
+  printf TEMPFH "USECACHING     PATHLIMIT\n";
+  close TEMPFH;
+
+  #-----------------------------------------------------------------------------
+  # Make each symbolic link in the build and build/arch directory
+  #-----------------------------------------------------------------------------
+  &create_link($check_dir . "/build/Makefile.header", "Makefile.header", "build");
+  &create_link($check_dir . "/build/Makefile.targets","Makefile.targets","build");
+
+  &create_dir("arch","build");
+
+  chdir ("arch");
+  for ($i=0; $i<= $#archfiles;  $i++) {
+
+    $tstr = $check_dir . "/build/arch" . "/" . $archfiles[$i];
+
+    &create_link($tstr, $archfiles[$i], "build/arch");
+  }
+
+################################################################################
+# SUBROUTINE create_dir
+#
+# Check to see if the directory exists.
+# If it does not, then create it.
+# If '-force' was specified, then print message stating that this directory
+#    is being added.
+#
+# NOTE: curr_dir is only used for printing messages -- it should be the
+#       current directory in which the new directory will be created.
+################################################################################
+sub create_dir
+{
+  local ($dir) = $_[0];
+  local ($curr_dir) = $_[1];
+
+  if (-e $dir) {
+    if (!(-d $dir)) {
+      die "\n$curr_dir/$dir is not a directory";
+    }
+  }
+  else {
+    mkdir ($dir,0777);
+    if ($option_force eq "on") {
+      print "  Adding directory $curr_dir/$dir\n";
+    }                     
+  }
+}
+
+################################################################################
+# SUBROUTINE create_link
+#
+# Create a symbolic link
+#
+# If force was specified:
+#    If the file already exists AND it is a link AND it is the same
+#       link, then do nothing.
+#    Else replace the file with the new link (and notify user of this)
+#
+# If force was not specified:
+#    If the file already exists, verify it is a link
+#    Else make the link
+#
+################################################################################
+sub create_link
+{
+  local ($from)     = $_[0];
+  local ($to)       = $_[1];
+  local ($curr_dir) = $_[2];
+
+  local $create_link_flag = "true";
+
+  if ($option_force eq "on") {
+    if (-e $to) {
+      if (-l $to) {
+
+        symlink $from, "mytemplink";
+        ($dev1, $ino1, $uid1, $gid1) = (stat "mytemplink") [0,1,4,5];
+#        print "$curr_dir/mytemplink: dev1 = $dev1, ino1 = $ino1, uid1 = $uid1, gid1 = $gid1\n";
+
+        ($dev2, $ino2, $uid2, $gid2) = (stat $to) [0,1,4,5];
+#        print "$curr_dir/$to: dev2 = $dev2, ino2 = $ino2, uid2 = $uid2, gid2 = $gid2\n";
+
+        unlink ("mytemplink");
+
+        if (   ($dev1 == $dev2) && ($ino1 == $ino2)
+            && ($uid1 == $uid2) && ($gid1 == $gid2)) {
+
+          $create_link_flag = "false";  # This link is OK, don't replace it
+        }
+        else {
+
+          unlink $to;
+#          print "\n  Removing link $curr_dir/$to it will be replaced with new link\n";
+        }
+      }
+      else {
+        unlink $to;
+#        print "\n  Removing $curr_dir/$to because it is not a link\n";      
+      }
+    }
+
+    if ($create_link_flag eq "true") {
+      symlink $from, $to;
+      print "  Adding link $curr_dir/$to --> $from\n";
+    }
+  }
+  else {
+    if (-e $to) {
+      if (!(-l $to)) { die "\n $curr_dir/$to is not a simbolic link"; }
+    }
+    else {
+      symlink $from, $to;
+    }
+  }
+
+#      ($dev,$ino,$mode,$nlink,$uid,$gid,$rdev,$size,$atime,$mtime,
+#         $ctime,$blksize,$blocks) = stat "templink";
+#
+#      print "templink INFO\n";
+#      print "\tdev = $dev, ino = $ino, mode = $mode, nlink = $nlink\n";
+#      print "\tuid = $uid, gid = $gid, rdev = $rdev, size  = $size\n";
+#      print "\tatime = $atime, mtime = $mtime, ctime = $ctime\n";
+#      print "\tblksize = $blksize, blocks = $blocks\n";
+
+}
+
+#-------------------------------------------------------------------------------
+# end of file
+#-------------------------------------------------------------------------------

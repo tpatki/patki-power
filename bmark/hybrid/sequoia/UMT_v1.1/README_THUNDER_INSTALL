@@ -1,0 +1,23 @@
+Steps to install python and pyMPI on Thunder
+
+#installing python
+1. cd Install
+2. tar -xvzf Python-2.6.tar.gz
+3. cd Python-2.6
+4. configure --enable-shared --prefix=${PWD}/.. --exec-prefix=${PWD}/.. CC=/usr/local/tools/compilers/intel/icc-9.1 CXX=/usr/local/tools/compilers/intel/icpc-9.1
+5. make
+6. make altinstall
+7. cd ..
+8. rm -rf Python-2.6
+
+#installing pyMPI
+9. setenv LD_LIBRARY_PATH ${PWD}/lib:${LD_LIBRARY_PATH}
+10. tar -xvzf pyMPI-2.4b5.tar.gz
+11. cd pyMPI-2.4b5
+12. configure --prefix=${PWD}/.. --with-python=${PWD}/../bin/python2.6 CC=/usr/local/tools/compilers/intel/mpiicc-9.1
+13. make
+14. make install
+15. cd ..
+16. rm -rf pyMPI-2.4b5
+
+--Aaron Black
